@@ -2,11 +2,11 @@ Launch Bay Next
 ===============
 Another squad builder...?
 
-Well, I've had LBN available since the release of X-Wing Second Edition, a bit further down the path I found out that I could reuse most of my components from the app (written in React Native) to be used on the web!
+Well, I've had the Launch Bay Next mobile app available since the release of X-Wing Second Edition and a bit further down the path I found out that I could reuse most of my components from the app (written in React Native) to be used on the web!
 
 Said and done, I did a quick conversion of some key components and this is it...
 
-It's not even close on par feature-wise with the mobile app, but most features probably be available here also (at some point).
+It's not even close on par feature-wise with the mobile app, but most features will probably be available here also (at some point).
 
 
 Building
