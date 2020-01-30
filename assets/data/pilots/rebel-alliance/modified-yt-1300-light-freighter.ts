@@ -1,0 +1,180 @@
+import { ShipType } from '../../../../types';
+
+const t: ShipType = {
+  name: 'Modified YT-1300 Light Freighter',
+  xws: 'modifiedyt1300lightfreighter',
+  ffg: 1,
+  size: 'Large',
+  dial: [
+    '1BW',
+    '1FB',
+    '1NW',
+    '2TW',
+    '2BB',
+    '2FB',
+    '2NB',
+    '2YW',
+    '3LR',
+    '3TW',
+    '3BW',
+    '3FB',
+    '3NW',
+    '3YW',
+    '3PR',
+    '4FW',
+    '4KR',
+  ],
+  faction: 'Rebel Alliance',
+  stats: [
+    { arc: 'Double Turret Arc', type: 'attack', value: 3 },
+    { type: 'agility', value: 1 },
+    { type: 'hull', value: 8 },
+    { type: 'shields', value: 5 },
+  ],
+  actions: [
+    { difficulty: 'White', type: 'Focus' },
+    { difficulty: 'White', type: 'Lock' },
+    { difficulty: 'Red', type: 'Boost' },
+    { difficulty: 'White', type: 'Rotate Arc' },
+  ],
+  icon: 'https://sb-cdn.fantasyflightgames.com/ship_types/I_Falcon.png',
+  pilots: [
+    {
+      name: 'Chewbacca',
+      caption: 'The Mighty',
+      initiative: 4,
+      limited: 1,
+      cost: 71,
+      xws: 'chewbacca',
+      ability:
+        'Before you would be dealt a faceup damage card, you may spend 1 [Charge] to be dealt the card facedown instead.',
+      image:
+        'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_71.png',
+      charges: { value: 1, recovers: 1 },
+      slots: [
+        'Talent',
+        'Missile',
+        'Crew',
+        'Crew',
+        'Gunner',
+        'Modification',
+        'Modification',
+        'Title',
+      ],
+      artwork:
+        'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_71.jpg',
+      ffg: 71,
+      hyperspace: true,
+      epic: true,
+    },
+    {
+      name: 'Han Solo',
+      caption: 'Scoundrel for Hire',
+      initiative: 6,
+      limited: 1,
+      cost: 80,
+      xws: 'hansolo-modifiedyt1300lightfreighter',
+      ability:
+        'After you roll dice, if you are at range 0-1 of an obstacle, you may reroll all of your dice. This does not count as rerolling for the purpose of other effects.',
+      image:
+        'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_69.png',
+      slots: [
+        'Talent',
+        'Missile',
+        'Crew',
+        'Crew',
+        'Gunner',
+        'Modification',
+        'Modification',
+        'Title',
+      ],
+      artwork:
+        'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_69.jpg',
+      ffg: 69,
+      hyperspace: true,
+      epic: true,
+    },
+    {
+      name: 'Lando Calrissian',
+      caption: 'General of the Alliance',
+      initiative: 5,
+      limited: 1,
+      cost: 79,
+      xws: 'landocalrissian-modifiedyt1300lightfreighter',
+      ability:
+        'After you fully execute a blue maneuver, you may choose a friendly ship at range 0-3. That ship may perform an action.',
+      image:
+        'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_70.png',
+      slots: [
+        'Talent',
+        'Missile',
+        'Crew',
+        'Crew',
+        'Gunner',
+        'Modification',
+        'Modification',
+        'Title',
+      ],
+      artwork:
+        'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_70.jpg',
+      ffg: 70,
+      hyperspace: true,
+      epic: true,
+    },
+    {
+      name: 'Outer Rim Smuggler',
+      initiative: 1,
+      limited: 0,
+      cost: 67,
+      xws: 'outerrimsmuggler',
+      text:
+        'Known for its durability and modular design, the YT-1300 is one of the most popular, widely used, and extensively customized freighters in the galaxy.',
+      image:
+        'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_72.png',
+      slots: [
+        'Missile',
+        'Crew',
+        'Crew',
+        'Gunner',
+        'Modification',
+        'Modification',
+        'Title',
+      ],
+      artwork:
+        'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_72.jpg',
+      ffg: 72,
+      hyperspace: false,
+      epic: true,
+    },
+    {
+      name: 'Leia Organa',
+      xws: 'leiaorgana',
+      initiative: 5,
+      limited: 1,
+      caption: 'There Is Another',
+      hyperspace: true,
+      epic: true,
+      force: { value: 1, recovers: 1, side: ['light'] },
+      slots: [
+        'Force Power',
+        'Missile',
+        'Crew',
+        'Crew',
+        'Gunner',
+        'Modification',
+        'Modification',
+        'Title',
+      ],
+      ability:
+        'After a friendly ship fully executes a red maneuver, if it is at range 0-3, you may spend 1 [Force]. If you do, that ship gains 1 focus token or recovers 1 [Force].',
+      cost: 79,
+      ffg: 630,
+      artwork:
+        'https://sb-cdn.fantasyflightgames.com/card_art/dc207b5c5f00a98e0fad8dc3905373f9.jpg',
+      image:
+        'https://sb-cdn.fantasyflightgames.com/card_images/en/677d75036109127dc27d524b902b35ae.png',
+    },
+  ],
+};
+
+export default t;

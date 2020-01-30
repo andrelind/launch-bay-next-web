@@ -1,0 +1,37 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "noEmit": true,
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "preserve",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "typeRoots": ["node_modules/@types", "@types"],
+    "lib": ["dom", "es2015", "es2016"],
+    "outDir": ".next",
+    "baseUrl": ".",
+    "paths": {
+      "@actions/*": ["actions/*"],
+      "@api/*": ["api/*"],
+      "@components/*": ["components/*"],
+      "@lib/*": ["passport/*"],
+      "@reducers/*": ["reducers/*"],
+      "@store/*": ["store/*"]
+    },
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "exclude": [".next", "scripts/**/*.*"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+}

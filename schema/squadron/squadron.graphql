@@ -1,0 +1,106 @@
+
+type Squadron {
+  uid: ID!
+  name: String
+  faction: String
+  format: String
+  version: String
+  description: String
+  cost: Int
+  favourite: Boolean
+  createdDatestamp: Float
+  wins: Int
+  losses: Int
+  pilots: [Pilot]
+}
+
+type Pilot {
+  uid: ID!
+  name: String
+  ship: String
+  cost: Int
+  upgrades: Upgrade
+}
+
+type Upgrade {
+  astromech: [String]
+  cannon: [String]
+  cargo: [String]
+  command: [String]
+  configuration: [String]
+  crew: [String]
+  device: [String]
+  forcepower: [String]
+  gunner: [String]
+  hardpoint: [String]
+  illicit: [String]
+  missile: [String]
+  modification: [String]
+  sensor: [String]
+  tacticalrelay: [String]
+  talent: [String]
+  team: [String]
+  tech: [String]
+  title: [String]
+  torpedo: [String]
+  turret: [String]
+}
+
+extend type Query {
+  squadron(uid: ID!): Squadron
+  squadrons: [Squadron]
+  removed: [ID]
+}
+
+
+input SquadronInput {
+  uid: ID!
+  name: String
+  faction: String
+  format: String
+  version: String
+  description: String
+  cost: Int
+  favourite: Boolean
+  createdDatestamp: Float
+  wins: Int
+  losses: Int
+  pilots: [PilotInput]
+}
+
+input PilotInput {
+  uid: ID!
+  name: String
+  ship: String
+  cost: Int
+  upgrades: UpgradeInput
+}
+
+input UpgradeInput {
+  astromech: [String]
+  cannon: [String]
+  cargo: [String]
+  command: [String]
+  configuration: [String]
+  crew: [String]
+  device: [String]
+  forcepower: [String]
+  gunner: [String]
+  hardpoint: [String]
+  illicit: [String]
+  missile: [String]
+  modification: [String]
+  sensor: [String]
+  tacticalrelay: [String]
+  talent: [String]
+  team: [String]
+  tech: [String]
+  title: [String]
+  torpedo: [String]
+  turret: [String]
+}
+
+extend type Mutation {
+  set(squadron: SquadronInput): Response
+  remove(uid: ID): TimestampResponse
+}

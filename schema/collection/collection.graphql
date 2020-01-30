@@ -1,0 +1,26 @@
+type Collection {
+  expansions: [CollectionItem]
+  ships: [CollectionItem]
+  pilots: [CollectionItem]
+  upgrades: [CollectionItem]
+  timestamp: Int
+}
+
+type CollectionItem {
+  id: String
+  count: Int
+}
+
+extend type Query {
+  collection: Collection
+}
+
+
+input CollectionItemInput {
+  id: String
+  count: Int
+}
+
+extend type Mutation {
+  collection(expansions: [CollectionItemInput], ships: [CollectionItemInput], pilots: [CollectionItemInput], upgrades: [CollectionItemInput]): TimestampResponse
+}

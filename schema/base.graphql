@@ -1,0 +1,21 @@
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+type Query {
+  _ : Boolean
+}
+
+type Mutation {
+  _ : Boolean
+}
+
+type TimestampResponse {
+  success: Boolean
+  timestamp: Int
+}
+
+type Response {
+  success: Boolean
+}

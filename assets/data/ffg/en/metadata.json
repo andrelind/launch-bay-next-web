@@ -1,0 +1,863 @@
+{
+  "supported_languages": [
+    {
+      "id": "en",
+      "name": "English"
+    },
+    {
+      "id": "zh-hans",
+      "name": "Chinese"
+    },
+    {
+      "id": "zh-hant",
+      "name": "Chinese (Traditional)"
+    },
+    {
+      "id": "fr",
+      "name": "French"
+    },
+    {
+      "id": "de",
+      "name": "German"
+    },
+    {
+      "id": "it",
+      "name": "Italian"
+    },
+    {
+      "id": "pl",
+      "name": "Polish"
+    },
+    {
+      "id": "pt",
+      "name": "Portuguese"
+    },
+    {
+      "id": "es",
+      "name": "Spanish"
+    }
+  ],
+  "force_affiliation": [
+    {
+      "id": 1,
+      "name": "Dark"
+    },
+    {
+      "id": 2,
+      "name": "Light"
+    }
+  ],
+  "ship_size": [
+    {
+      "id": 1,
+      "name": "Small"
+    },
+    {
+      "id": 2,
+      "name": "Medium"
+    },
+    {
+      "id": 3,
+      "name": "Large"
+    }
+  ],
+  "ship_types": [
+    {
+      "id": 69,
+      "name": "TIE/ba Interceptor",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Vonregs-First-Order-TIE-Interceptor.png"
+    },
+    {
+      "id": 4,
+      "name": "Scurrg H-6 bomber",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Scurrg.png"
+    },
+    {
+      "id": 5,
+      "name": "YT-2400 Light Freighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_YT-2400.png"
+    },
+    {
+      "id": 6,
+      "name": "Auzituck Gunship",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Auzituck.png"
+    },
+    {
+      "id": 7,
+      "name": "Kihraxz Fighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Kihraxz.png"
+    },
+    {
+      "id": 10,
+      "name": "<italic>Firespray</italic>-class Patrol Craft",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_FIrespray.png"
+    },
+    {
+      "id": 11,
+      "name": "TIE/ln Fighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_TIEFighter.png"
+    },
+    {
+      "id": 47,
+      "name": "Customized YT-1300 Light Freighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_CustomizedYT-1300.png"
+    },
+    {
+      "id": 49,
+      "name": "TIE/fo Fighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_TIEfo.png"
+    },
+    {
+      "id": 56,
+      "name": "Modified TIE/ln Fighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_MiningGuild_TIE.png"
+    },
+    {
+      "id": 57,
+      "name": "Scavenged YT-1300 Light Freighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Falcon_Resistance.png"
+    },
+    {
+      "id": 70,
+      "name": "<italic>Fireball</italic>",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Fireball.png"
+    },
+    {
+      "id": 1,
+      "name": "Modified YT-1300 Light Freighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Falcon.png"
+    },
+    {
+      "id": 8,
+      "name": "<italic>Sheathipede</italic>-class Shuttle",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Sheathipede.png"
+    },
+    {
+      "id": 9,
+      "name": "Quadrijet Transfer Spacetug",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Quadjumper.png"
+    },
+    {
+      "id": 50,
+      "name": "TIE/sf Fighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_TIEsf.png"
+    },
+    {
+      "id": 51,
+      "name": "<italic>Upsilon</italic>-class Shuttle",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_UpsilonShuttle.png"
+    },
+    {
+      "id": 52,
+      "name": "TIE/vn Silencer",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_TIESilencer.png"
+    },
+    {
+      "id": 53,
+      "name": "T-70 X-wing",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_X-wing-T70.png"
+    },
+    {
+      "id": 54,
+      "name": "RZ-2 A-wing",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_RZ-2_A-wing.png"
+    },
+    {
+      "id": 55,
+      "name": "MG-100 StarFortress",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_StarFortress.png"
+    },
+    {
+      "id": 64,
+      "name": "Resistance Transport",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Resistance_Transport.png"
+    },
+    {
+      "id": 68,
+      "name": "BTL-B Y-wing",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_BTL-B_Ywing.png"
+    },
+    {
+      "id": 31,
+      "name": "ARC-170 Starfighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Arc-170.png"
+    },
+    {
+      "id": 33,
+      "name": "T-65 X-wing",
+      "description": "Test",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_X-wing-T65.png"
+    },
+    {
+      "id": 34,
+      "name": "HWK-290 Light Freighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_HWK-290.png"
+    },
+    {
+      "id": 35,
+      "name": "RZ-1 A-wing",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_A-wing.png"
+    },
+    {
+      "id": 36,
+      "name": "Fang Fighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_FangFighter.png"
+    },
+    {
+      "id": 40,
+      "name": "E-wing",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_E-wing.png"
+    },
+    {
+      "id": 43,
+      "name": "TIE Reaper",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_TIEReaper.png"
+    },
+    {
+      "id": 44,
+      "name": "M3-A Interceptor",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Scyk.png"
+    },
+    {
+      "id": 45,
+      "name": "JumpMaster 5000",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Jumpmaster.png"
+    },
+    {
+      "id": 48,
+      "name": "Escape Craft",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_EscapeShuttle.png"
+    },
+    {
+      "id": 65,
+      "name": "Resistance Transport Pod",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Resistance_Transport_Cockpit_Pod.png"
+    },
+    {
+      "id": 12,
+      "name": "BTL-A4 Y-wing",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Y-wing.png"
+    },
+    {
+      "id": 22,
+      "name": "G-1A Starfighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_MistHunter.png"
+    },
+    {
+      "id": 23,
+      "name": "VCX-100 Light Freighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Ghost.png"
+    },
+    {
+      "id": 24,
+      "name": "YV-666 Light Freighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_YV-666.png"
+    },
+    {
+      "id": 26,
+      "name": "<italic>Lambda</italic>-class T-4a Shuttle",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Lambda.png"
+    },
+    {
+      "id": 27,
+      "name": "TIE/ph Phantom",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_TIEPhantom.png"
+    },
+    {
+      "id": 28,
+      "name": "VT-49 Decimator",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Decimator.png"
+    },
+    {
+      "id": 29,
+      "name": "TIE/ag Aggressor",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_TIEAggressor.png"
+    },
+    {
+      "id": 30,
+      "name": "BTL-S8 K-wing",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_K-wing.png"
+    },
+    {
+      "id": 32,
+      "name": "Attack Shuttle",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_AttackShuttle.png"
+    },
+    {
+      "id": 66,
+      "name": "<italic>Hyena</italic>-class Droid Bomber",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Hyena.png"
+    },
+    {
+      "id": 38,
+      "name": "Z-95-AF4 Headhunter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Z-95.png"
+    },
+    {
+      "id": 39,
+      "name": "M12-L Kimogila Fighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Kimogila.png"
+    },
+    {
+      "id": 41,
+      "name": "TIE/in Interceptor",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_TIEInterceptor.png"
+    },
+    {
+      "id": 42,
+      "name": "<italic>Lancer</italic>-class Pursuit Craft",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_ShadowCaster.png"
+    },
+    {
+      "id": 58,
+      "name": "Belbullab-22 Starfighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Belbullab-22.png"
+    },
+    {
+      "id": 63,
+      "name": "Naboo Royal N-1 Starfighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Royal_Naboo_N-1_Starfighter.png"
+    },
+    {
+      "id": 67,
+      "name": "<italic>Nantex</italic>-class Starfighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Nantex_Class_Starfighter.png"
+    },
+    {
+      "id": 3,
+      "name": "<italic>StarViper</italic>-class Attack Platform",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_StarViper.png"
+    },
+    {
+      "id": 13,
+      "name": "TIE Advanced x1",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_TIEAdvanced.png"
+    },
+    {
+      "id": 14,
+      "name": "<italic>Alpha</italic>-class Star Wing",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_AlphaStarwing.png"
+    },
+    {
+      "id": 15,
+      "name": "UT-60D U-wing",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_U-wing.png"
+    },
+    {
+      "id": 16,
+      "name": "TIE/sk Striker",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_TIEStriker.png"
+    },
+    {
+      "id": 17,
+      "name": "A/SF-01 B-wing",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_B-wing.png"
+    },
+    {
+      "id": 18,
+      "name": "TIE/D Defender",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_TIEDefender.png"
+    },
+    {
+      "id": 19,
+      "name": "TIE/sa Bomber",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_TIEBomber.png"
+    },
+    {
+      "id": 20,
+      "name": "TIE/ca Punisher",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_TIEPunisher.png"
+    },
+    {
+      "id": 21,
+      "name": "Aggressor Assault Fighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_IG-2000.png"
+    },
+    {
+      "id": 25,
+      "name": "TIE Advanced v1",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_TIEAdvancedPrototype.png"
+    },
+    {
+      "id": 59,
+      "name": "<italic>Vulture</italic>-class Droid Fighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_VultureDroid.png"
+    },
+    {
+      "id": 60,
+      "name": "Sith Infiltrator",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_SithInfiltrator.png"
+    },
+    {
+      "id": 61,
+      "name": "Delta-7 <italic>Aethersprite</italic>",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Delta-7.png"
+    },
+    {
+      "id": 62,
+      "name": "V-19 Torrent Starfighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_V-19Torrent.png"
+    }
+  ],
+  "card_stats": [
+    {
+      "id": 1,
+      "name": "Agility",
+      "description": "Movement speed",
+      "icon": "https://sb-cdn.fantasyflightgames.com/card_stats/S_Agility.png",
+      "color": "#6ABE46",
+      "groups": [
+        "agility"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Hull",
+      "description": "Defence",
+      "icon": "https://sb-cdn.fantasyflightgames.com/card_stats/S_Hull.png",
+      "color": "#F0E531",
+      "groups": [
+        "hull"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Shields",
+      "description": "Shield value",
+      "icon": "https://sb-cdn.fantasyflightgames.com/card_stats/S_Shield.png",
+      "color": "#82D1E1",
+      "groups": [
+        "shield"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Force",
+      "description": "Force capacity",
+      "icon": "https://sb-cdn.fantasyflightgames.com/card_stats/S_Force.png",
+      "color": "#C4A0CA",
+      "groups": [
+        "force",
+        "charge"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Charge",
+      "description": "Charge value",
+      "icon": "https://sb-cdn.fantasyflightgames.com/card_stats/S_Charge.png",
+      "color": "#FDBF10",
+      "groups": [
+        "charge"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Dual Mobile Arc",
+      "description": "Dual Mobile Arc value",
+      "icon": "https://sb-cdn.fantasyflightgames.com/card_stats/S_DualMobileArc.png",
+      "color": "#ED3638",
+      "groups": [
+        "attack"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Front 180 Arc",
+      "description": "Front 180 value",
+      "icon": "https://sb-cdn.fantasyflightgames.com/card_stats/S_Front180.png",
+      "color": "#ED3638",
+      "groups": [
+        "attack"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Front Arc",
+      "description": "Front Arc value",
+      "icon": "https://sb-cdn.fantasyflightgames.com/card_stats/S_FrontArc.png",
+      "color": "#ED3638",
+      "groups": [
+        "attack"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Front Bullseye Arc",
+      "description": "Front Bullseye value",
+      "icon": "https://sb-cdn.fantasyflightgames.com/card_stats/S_FrontBullseye.png",
+      "color": "#ED3638",
+      "groups": [
+        "attack"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Mobile Arc",
+      "description": "Mobile Arc value",
+      "icon": "https://sb-cdn.fantasyflightgames.com/card_stats/S_MobileArc.png",
+      "color": "#ED3638",
+      "groups": [
+        "attack"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Rear Arc",
+      "description": "Rear Arc value",
+      "icon": "https://sb-cdn.fantasyflightgames.com/card_stats/S_RearArc.png",
+      "color": "#ED3638",
+      "groups": [
+        "attack"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Weapon Range No Bonus",
+      "description": "Weapon Range for missiles and torpedoes",
+      "icon": "https://sb-cdn.fantasyflightgames.com/card_stats/SR_NoBonus.png",
+      "color": "#FFFFFF",
+      "groups": [
+        "special_attack"
+      ]
+    }
+  ],
+  "card_types": [
+    {
+      "id": 1,
+      "name": "Pilot"
+    },
+    {
+      "id": 2,
+      "name": "Upgrade"
+    }
+  ],
+  "factions": [
+    {
+      "id": 2,
+      "name": "Galactic Empire",
+      "description": "At the height of its power, the Imperial Navy deployed a wide range of ships and exceptional pilots in its effort to bring order to the galaxy and crush the Rebellion. Commanding the resources and manpower of countless star systems, the Empire will spare no expense to ensure it reigns supreme. Whether you’re flying mass-produced TIEs, powerful and lumbering shuttles, or more experimental starfighters, the Galactic Empire in <italic>X-Wing Second Edition</italic> invites you to hold the galaxy in your fist.",
+      "icon": "https://sb-cdn.fantasyflightgames.com/factions/Imperial.png",
+      "banner_mobile": "https://sb-cdn.fantasyflightgames.com/factions/banners/mobile/Imperial.png",
+      "banner": "https://sb-cdn.fantasyflightgames.com/factions/banners/web/Imperial.png",
+      "ship_art": "https://sb-cdn.fantasyflightgames.com/factions/ship_arts/web/ImperialFactionPageImage.png",
+      "ship_art_mobile": "https://sb-cdn.fantasyflightgames.com/factions/ship_arts/mobile/ImperialFactionPageImage.png"
+    },
+    {
+      "id": 4,
+      "name": "Resistance",
+      "description": "The Resistance is the only line of defense against the rising tide of the nefarious First Order. Like the Alliance to Restore the Republic before them, the pilots of the Resistance often find themselves outnumbered and outgunned. Fortunately, the Resistance has some of the most advanced starfighters from the entire <italic>Star Wars</italic> saga at their disposal. With the Resistance Conversion Kit, your First Edition versions of these ships can be added to your <italic>X-Wing Second Edition</italic> squadrons right away.",
+      "icon": "https://sb-cdn.fantasyflightgames.com/factions/ResistanceIcon.png",
+      "banner_mobile": "https://sb-cdn.fantasyflightgames.com/factions/banners/mobile/ResistanceBannerMobile.png",
+      "banner": "https://sb-cdn.fantasyflightgames.com/factions/banners/web/ResistanceBannerWeb.png",
+      "ship_art": "https://sb-cdn.fantasyflightgames.com/factions/ship_arts/web/ResistanceShipArt.png",
+      "ship_art_mobile": "https://sb-cdn.fantasyflightgames.com/factions/ship_arts/mobile/ResistanceShipArtMobile.png"
+    },
+    {
+      "id": 5,
+      "name": "First Order",
+      "description": "As you might expect from the successor to the Galactic Empire, the First Order fields a variety of starfighters based on classic Imperial designs. Far from simply rehashing these older ships, though, First Order fighters feature a number of refinements that give them the edge in their fight against the loathsome Resistance.",
+      "icon": "https://sb-cdn.fantasyflightgames.com/factions/FirstOrderIcon.png",
+      "banner_mobile": "https://sb-cdn.fantasyflightgames.com/factions/banners/mobile/FirstOrderBannerMobile.png",
+      "banner": "https://sb-cdn.fantasyflightgames.com/factions/banners/web/FirstOrderBannerWeb.png",
+      "ship_art": "https://sb-cdn.fantasyflightgames.com/factions/ship_arts/web/FirstOrderShipArt.png",
+      "ship_art_mobile": "https://sb-cdn.fantasyflightgames.com/factions/ship_arts/mobile/FirstOrderShipArtMobile.png"
+    },
+    {
+      "id": 1,
+      "name": "Rebel Alliance",
+      "description": "Whether they're flying against a massive battlestation like the Death Star or facing wave after wave of TIE fighters, the pilots of the Rebel Alliance are no strangers to long odds. Despite this, the brave band of smugglers, pilots, soldiers, and spies continues to strike out against the tyranny of the Galactic Empire whenever and wherever they can. When you fight for the Rebellion in <italic>X-Wing Second Edition</italic>, you’re fighting for freedom across the galaxy—while flying some of the saga’s most iconic ships.",
+      "icon": "https://sb-cdn.fantasyflightgames.com/factions/Rebel.png",
+      "banner_mobile": "https://sb-cdn.fantasyflightgames.com/factions/banners/mobile/Rebel.png",
+      "banner": "https://sb-cdn.fantasyflightgames.com/factions/banners/web/Rebel.png",
+      "ship_art": "https://sb-cdn.fantasyflightgames.com/factions/ship_arts/web/RebelFactionPageImage.png",
+      "ship_art_mobile": "https://sb-cdn.fantasyflightgames.com/factions/ship_arts/mobile/RebelFactionPageImage.png"
+    },
+    {
+      "id": 6,
+      "name": "Galactic Republic",
+      "description": "War! The Galactic Republic reels from the blow dealt by the the fledgling Separatist Alliance. But even in this age of uncertainty and disunion, heroes arise. Legendary Jedi Knights Obi-Wan Kenobi and Anakin Skywalker valiantly lead dedicated clone pilots into battle against the forces of tyranny and chaos!",
+      "icon": "https://sb-cdn.fantasyflightgames.com/factions/RepublicIcon.png",
+      "banner_mobile": "https://sb-cdn.fantasyflightgames.com/factions/banners/mobile/RepublicBannerMobile.png",
+      "banner": "https://sb-cdn.fantasyflightgames.com/factions/banners/web/RepublicBannerWeb.png",
+      "ship_art": "https://sb-cdn.fantasyflightgames.com/factions/ship_arts/web/RepublicShipArt.png",
+      "ship_art_mobile": "https://sb-cdn.fantasyflightgames.com/factions/ship_arts/mobile/RepublicShipArtMobile.png"
+    },
+    {
+      "id": 7,
+      "name": "Separatist Alliance",
+      "description": "The Separatist Alliance has driven a spike into the heart of the galaxy, splintering the once-unified worlds with chaos, tyranny, and fear. At the heart of this offensive is the dastardly General Grievous, commanding endless legions of droid fighters.",
+      "icon": "https://sb-cdn.fantasyflightgames.com/factions/SeparatistIcon.png",
+      "banner_mobile": "https://sb-cdn.fantasyflightgames.com/factions/banners/mobile/SeparatistBannerMobile.png",
+      "banner": "https://sb-cdn.fantasyflightgames.com/factions/banners/web/SeparatistBannerWeb.png",
+      "ship_art": "https://sb-cdn.fantasyflightgames.com/factions/ship_arts/web/SeparatistShipArt.png",
+      "ship_art_mobile": "https://sb-cdn.fantasyflightgames.com/factions/ship_arts/mobile/SeparatistShipArtMobile.png"
+    },
+    {
+      "id": 3,
+      "name": "Scum and Villainy",
+      "description": "Driven by their desire for profit, bounty hunters, mercenaries, and every variety of scum will relentlessly pursue their quarry to the farthest reaches of the galaxy. Far from the uniform ranks of the Rebellion or the Empire, these lawless renegades often inject their own style and flair into their squadrons—and they’re no stranger to using dangerous, illicit means to upgrade their ships. By playing Scum and Villainy in <italic>X-Wing Second Edition</italic>, you’ll send a clear signal that you’re out for blood and money.",
+      "icon": "https://sb-cdn.fantasyflightgames.com/factions/Scum.png",
+      "banner_mobile": "https://sb-cdn.fantasyflightgames.com/factions/banners/mobile/Scum.png",
+      "banner": "https://sb-cdn.fantasyflightgames.com/factions/banners/web/Scum.png",
+      "ship_art": "https://sb-cdn.fantasyflightgames.com/factions/ship_arts/web/ScumFactionPageImage.png",
+      "ship_art_mobile": "https://sb-cdn.fantasyflightgames.com/factions/ship_arts/mobile/ScumFactionPageImage.png"
+    }
+  ],
+  "card_action_types": [
+    {
+      "id": 1,
+      "name": "Boost",
+      "description": "",
+      "font_icon": "0xF2043"
+    },
+    {
+      "id": 2,
+      "name": "Focus",
+      "description": "",
+      "font_icon": "0xF2040"
+    },
+    {
+      "id": 3,
+      "name": "Evade",
+      "description": "",
+      "font_icon": "0xF2044"
+    },
+    {
+      "id": 4,
+      "name": "Lock",
+      "description": "",
+      "font_icon": "0xF2041"
+    },
+    {
+      "id": 5,
+      "name": "BarrelRoll",
+      "description": "",
+      "font_icon": "0xF2042"
+    },
+    {
+      "id": 6,
+      "name": "Reinforce",
+      "description": "",
+      "font_icon": "0xF2047"
+    },
+    {
+      "id": 7,
+      "name": "Cloak",
+      "description": "",
+      "font_icon": "0xF2045"
+    },
+    {
+      "id": 8,
+      "name": "Coordinate",
+      "description": "",
+      "font_icon": "0xF2048"
+    },
+    {
+      "id": 9,
+      "name": "Calculate",
+      "description": "",
+      "font_icon": "0xF2225"
+    },
+    {
+      "id": 10,
+      "name": "Jam",
+      "description": "",
+      "font_icon": "0xF2049"
+    },
+    {
+      "id": 12,
+      "name": "Reload",
+      "description": "",
+      "font_icon": "0xF2223"
+    },
+    {
+      "id": 13,
+      "name": "Slam",
+      "description": "",
+      "font_icon": "0xF204A"
+    },
+    {
+      "id": 14,
+      "name": "Rotate",
+      "description": "",
+      "font_icon": "0xF206B"
+    }
+  ],
+  "upgrade_types": [
+    {
+      "id": 5,
+      "name": "Torpedo",
+      "description": "",
+      "font_icon": "0xF204F"
+    },
+    {
+      "id": 6,
+      "name": "Missile",
+      "description": "",
+      "font_icon": "0xF2050"
+    },
+    {
+      "id": 8,
+      "name": "Crew",
+      "description": "",
+      "font_icon": "0xF2052"
+    },
+    {
+      "id": 10,
+      "name": "Astromech",
+      "description": "",
+      "font_icon": "0xF2054"
+    },
+    {
+      "id": 12,
+      "name": "Device",
+      "description": "",
+      "font_icon": "0xF2056"
+    },
+    {
+      "id": 13,
+      "name": "Illicit",
+      "description": "",
+      "font_icon": "0xF2058"
+    },
+    {
+      "id": 14,
+      "name": "Modification",
+      "description": "",
+      "font_icon": "0xF2059"
+    },
+    {
+      "id": 15,
+      "name": "Title",
+      "description": "",
+      "font_icon": "0xF205A"
+    },
+    {
+      "id": 16,
+      "name": "Gunner",
+      "description": "",
+      "font_icon": "0xF2226"
+    },
+    {
+      "id": 17,
+      "name": "Force Power",
+      "description": "",
+      "font_icon": "0xF2222"
+    },
+    {
+      "id": 18,
+      "name": "Configuration",
+      "description": "",
+      "font_icon": "0xF2221"
+    },
+    {
+      "id": 19,
+      "name": "Tech",
+      "description": "",
+      "font_icon": "0xF205B"
+    },
+    {
+      "id": 999,
+      "name": "Special",
+      "description": "",
+      "font_icon": "0xF2404"
+    },
+    {
+      "id": 1000,
+      "name": "Tactical Relay",
+      "description": "",
+      "font_icon": "f2402"
+    },
+    {
+      "id": 1,
+      "name": "Talent",
+      "description": "",
+      "font_icon": "0xF204B"
+    },
+    {
+      "id": 2,
+      "name": "Sensor",
+      "description": "",
+      "font_icon": "0xF204C"
+    },
+    {
+      "id": 3,
+      "name": "Cannon",
+      "description": "",
+      "font_icon": "0xF204D"
+    },
+    {
+      "id": 4,
+      "name": "Turret",
+      "description": "",
+      "font_icon": "0xF204E"
+    }
+  ]
+}

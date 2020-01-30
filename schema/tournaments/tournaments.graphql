@@ -1,0 +1,69 @@
+scalar JSON
+
+type Tournament {
+  uid: ID!
+  name: String
+  date: Int
+  format: String
+  placement: Int
+  numberOfPlayers: Int
+  squadron: JSON
+  games: [Game]
+  version: String
+}
+
+type Game {
+  uid: ID!
+  gameType: String
+  bye: Boolean
+  win: Boolean
+  round: Int
+  score: Int
+  notes: String
+  opponent: Opponent
+}
+
+type Opponent {
+  name: String
+  score: Int
+  squadron: JSON
+}
+
+extend type Query {
+  tournaments: [Tournament]
+  removedTournaments: [ID]
+}
+
+input TournamentInput {
+  uid: ID!
+  name: String
+  date: Int
+  format: String
+  placement: Int
+  numberOfPlayers: Int
+  squadron: JSON
+  games: [GameInput]
+  version: String
+}
+
+input GameInput {
+  uid: ID!
+  gameType: String
+  bye: Boolean
+  win: Boolean
+  round: Int
+  score: Int
+  notes: String
+  opponent: OpponentInput
+}
+
+input OpponentInput {
+  name: String
+  score: Int
+  squadron: JSON
+}
+
+extend type Mutation {
+  setTournament(tournament: TournamentInput): Response
+  removeTournament(uid: ID): TimestampResponse
+}

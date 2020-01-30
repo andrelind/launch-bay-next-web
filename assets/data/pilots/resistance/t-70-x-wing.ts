@@ -1,0 +1,374 @@
+import { ShipType } from '../../../../types';
+
+const t: ShipType = {
+  name: 'T-70 X-wing',
+  xws: 't70xwing',
+  ffg: 53,
+  size: 'Small',
+  dial: [
+    '1BB',
+    '1FB',
+    '1NB',
+    '2TW',
+    '2BB',
+    '2FB',
+    '2NB',
+    '2YW',
+    '3ER',
+    '3TW',
+    '3BW',
+    '3FB',
+    '3NW',
+    '3YW',
+    '3RR',
+    '4FW',
+    '4KR',
+  ],
+  faction: 'Resistance',
+  stats: [
+    { arc: 'Front Arc', type: 'attack', value: 3 },
+    { type: 'agility', value: 2 },
+    { type: 'hull', value: 4 },
+    { type: 'shields', value: 3 },
+  ],
+  actions: [
+    { difficulty: 'White', type: 'Focus' },
+    { difficulty: 'White', type: 'Lock' },
+    { difficulty: 'White', type: 'Boost' },
+  ],
+  icon: 'https://sb-cdn.fantasyflightgames.com/ship_types/I_X-wing-T70.png',
+  pilots: [
+    {
+      name: 'Poe Dameron',
+      caption: 'Trigger-Happy Flyboy',
+      initiative: 6,
+      limited: 1,
+      xws: 'poedameron',
+      ability:
+        'After you perform an action, you may spend 1 [Charge] to perform a white action, treating it as red.',
+      shipAbility: {
+        name: 'Weapon Hardpoint',
+        text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
+        slotOptions: ['Cannon', 'Torpedo', 'Missile'],
+      },
+      image:
+        'https://sb-cdn.fantasyflightgames.com/card_images/en/14c504c0815213a66010c4013d9296ee.png',
+      artwork:
+        'https://sb-cdn.fantasyflightgames.com/card_art/cb8efd0b723b8ceb0c35b7a64b309bf2.jpg',
+      cost: 68,
+      charges: { value: 1, recovers: 1 },
+      slots: [
+        'Talent',
+        'Tech',
+        'Astromech',
+        'Modification',
+        'Configuration',
+        'Title',
+      ],
+      ffg: 418,
+      hyperspace: true,
+      epic: true,
+    },
+    {
+      name: 'Blue Squadron Rookie',
+      initiative: 1,
+      limited: 0,
+      xws: 'bluesquadronrookie',
+      text:
+        "The Incom-FreiTek T-70 X-Wing was designed to improve upon the tactical flexibility of the venerable T-65. The starfighter's advanced droid socket is compatible with a wide array of astromechs, and its modular weapons pods allow ground crews to tailor its payload for specific missions.",
+      shipAbility: {
+        name: 'Weapon Hardpoint',
+        text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
+        slotOptions: ['Cannon', 'Torpedo', 'Missile'],
+      },
+      image:
+        'https://sb-cdn.fantasyflightgames.com/card_images/en/a82a39a4c9baf883fbc6ae353abdd2ec.png',
+      artwork:
+        'https://sb-cdn.fantasyflightgames.com/card_art/8ceeaf3d985f16da8b8d5a1ebc49ea2b.jpg',
+      cost: 42,
+      slots: ['Tech', 'Astromech', 'Modification', 'Configuration', 'Title'],
+      ffg: 426,
+      hyperspace: true,
+      epic: true,
+    },
+    {
+      name: 'Red Squadron Expert',
+      initiative: 3,
+      limited: 0,
+      xws: 'redsquadronexpert',
+      text:
+        'Although the bulk of the Resistance Starfighter Corps is made up of young volunteers from the New Republic, their ranks are bolstered by veterans of the Galactic Civil War determined to finish what they started decades ago.',
+      shipAbility: {
+        name: 'Weapon Hardpoint',
+        text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
+        slotOptions: ['Cannon', 'Torpedo', 'Missile'],
+      },
+      image:
+        'https://sb-cdn.fantasyflightgames.com/card_images/en/58967d94cfef285c4df2fdbb77fd0502.png',
+      artwork:
+        'https://sb-cdn.fantasyflightgames.com/card_art/0e847453270afe089ea331316f7b7731.jpg',
+      cost: 44,
+      slots: [
+        'Talent',
+        'Tech',
+        'Astromech',
+        'Modification',
+        'Configuration',
+        'Title',
+      ],
+      ffg: 425,
+      hyperspace: true,
+      epic: true,
+    },
+    {
+      name: 'Black Squadron Ace',
+      initiative: 4,
+      limited: 0,
+      xws: 'blacksquadronace-t70xwing',
+      text:
+        "During the Cold War, Poe Dameron's Black Squadron conducted daring covert operations against the First Order in defiance of treaties ratified by the New Republic Senate.",
+      shipAbility: {
+        name: 'Weapon Hardpoint',
+        text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
+        slotOptions: ['Cannon', 'Torpedo', 'Missile'],
+      },
+      image:
+        'https://sb-cdn.fantasyflightgames.com/card_images/en/d2b6a5166b3fd985df5d1941408b58e1.png',
+      artwork:
+        'https://sb-cdn.fantasyflightgames.com/card_art/e75228d8174f7879c51157fdd9b26e61.jpg',
+      cost: 47,
+      slots: [
+        'Talent',
+        'Tech',
+        'Astromech',
+        'Modification',
+        'Configuration',
+        'Title',
+      ],
+      ffg: 451,
+      hyperspace: true,
+      epic: true,
+    },
+    {
+      name: 'Ello Asty',
+      caption: 'Born to Ill',
+      initiative: 5,
+      limited: 1,
+      xws: 'elloasty',
+      ability:
+        'After you reveal a red Tallon Roll ([Tallon Roll Left] or [Tallon Roll Right]) maneuver, if you have 2 or fewer stress tokens, treat that maneuver as white.',
+      shipAbility: {
+        name: 'Weapon Hardpoint',
+        text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
+        slotOptions: ['Cannon', 'Torpedo', 'Missile'],
+      },
+      cost: 55,
+      slots: [
+        'Talent',
+        'Tech',
+        'Astromech',
+        'Modification',
+        'Configuration',
+        'Title',
+      ],
+      image:
+        'https://sb-cdn.fantasyflightgames.com/card_images/en/f77180ae05fd919a0dff2225380246a6.png',
+      artwork:
+        'https://sb-cdn.fantasyflightgames.com/card_art/ff73537d7ab2f063e7a510c05013269e.jpg',
+      ffg: 419,
+      hyperspace: false,
+      epic: true,
+    },
+    {
+      name: 'Joph Seastriker',
+      caption: 'Reckless Bodyguard',
+      initiative: 3,
+      limited: 1,
+      xws: 'jophseastriker',
+      ability: 'After you lose 1 shield, gain 1 evade token.',
+      shipAbility: {
+        name: 'Weapon Hardpoint',
+        text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
+        slotOptions: ['Cannon', 'Torpedo', 'Missile'],
+      },
+      cost: 51,
+      slots: [
+        'Talent',
+        'Tech',
+        'Astromech',
+        'Modification',
+        'Configuration',
+        'Title',
+      ],
+      image:
+        'https://sb-cdn.fantasyflightgames.com/card_images/en/df85f5b77e16363a05c8f68792440166.png',
+      artwork:
+        'https://sb-cdn.fantasyflightgames.com/card_art/b5b43d179b039649e764e6bd4f212a29.jpg',
+      ffg: 424,
+      hyperspace: true,
+      epic: true,
+    },
+    {
+      name: 'Kare Kun',
+      caption: 'Woman of Action',
+      initiative: 4,
+      limited: 1,
+      xws: 'karekun',
+      ability:
+        'While you boost, you may use the (1 [Turn Left]) or (1 [Turn Right]) template instead.',
+      shipAbility: {
+        name: 'Weapon Hardpoint',
+        text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
+        slotOptions: ['Cannon', 'Torpedo', 'Missile'],
+      },
+      cost: 51,
+      slots: [
+        'Talent',
+        'Tech',
+        'Astromech',
+        'Modification',
+        'Configuration',
+        'Title',
+      ],
+      image:
+        'https://sb-cdn.fantasyflightgames.com/card_images/en/6edb8ed4cbf882bf6dbe7a37b5981d85.png',
+      artwork:
+        'https://sb-cdn.fantasyflightgames.com/card_art/f121bc27f2b283258a65d348bcafe40d.jpg',
+      ffg: 421,
+      hyperspace: true,
+      epic: true,
+    },
+    {
+      name: 'Lieutenant Bastian',
+      caption: 'Optimistic Analyst',
+      initiative: 2,
+      limited: 1,
+      xws: 'lieutenantbastian',
+      ability:
+        'After a ship at range 1-2 is dealt a damage card, you may acquire a lock on that ship.',
+      shipAbility: {
+        name: 'Weapon Hardpoint',
+        text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
+        slotOptions: ['Cannon', 'Torpedo', 'Missile'],
+      },
+      image:
+        'https://sb-cdn.fantasyflightgames.com/card_images/en/3f43d6b3c6e87bde6a681e9d4421dec8.png',
+      artwork:
+        'https://sb-cdn.fantasyflightgames.com/card_art/52f96e7e98dc51c1280052514e303704.jpg',
+      cost: 47,
+      slots: ['Tech', 'Astromech', 'Modification', 'Configuration', 'Title'],
+      ffg: 449,
+      hyperspace: true,
+      epic: true,
+    },
+    {
+      name: 'Nien Nunb',
+      caption: 'Sarcastic Survivor',
+      initiative: 5,
+      limited: 1,
+      xws: 'niennunb',
+      ability:
+        'After you gain a stress token, if there is an enemy ship in your [Front Arc] at range 0-1, you may remove that stress token.',
+      shipAbility: {
+        name: 'Weapon Hardpoint',
+        text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
+        slotOptions: ['Cannon', 'Torpedo', 'Missile'],
+      },
+      cost: 55,
+      slots: [
+        'Talent',
+        'Tech',
+        'Astromech',
+        'Modification',
+        'Configuration',
+        'Title',
+      ],
+      image:
+        'https://sb-cdn.fantasyflightgames.com/card_images/en/00a3c393a33b33168bc61e47749e1474.png',
+      artwork:
+        'https://sb-cdn.fantasyflightgames.com/card_art/5daa441317975eb576396af36e852f74.jpg',
+      ffg: 420,
+      hyperspace: true,
+      epic: true,
+    },
+    {
+      name: 'Jaycris Tubbs',
+      caption: 'Loving Father',
+      initiative: 1,
+      limited: 1,
+      xws: 'jaycristubbs',
+      ability:
+        'After you fully execute a blue maneuver, you may choose a friendly ship at range 0-1. If you do, that ship removes 1 stress token.',
+      shipAbility: {
+        name: 'Weapon Hardpoint',
+        text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
+        slotOptions: ['Cannon', 'Torpedo', 'Missile'],
+      },
+      image:
+        'https://sb-cdn.fantasyflightgames.com/card_images/en/5f3abacb9a081f5a3ca42f7a30da0e6c.png',
+      artwork:
+        'https://sb-cdn.fantasyflightgames.com/card_art/8874efb312a64da49889c66f96338f9c.jpg',
+      cost: 48,
+      slots: ['Tech', 'Astromech', 'Modification', 'Configuration', 'Title'],
+      ffg: 450,
+      hyperspace: true,
+      epic: true,
+    },
+    {
+      name: 'Jessika Pava',
+      caption: 'The Great Destroyer',
+      initiative: 3,
+      limited: 1,
+      xws: 'jessikapava',
+      ability:
+        'While you defend or perform an attack, you may spend 1 [Charge] or 1 non-recurring [Charge] from your equipped [Astromech] upgrade to reroll up to 1 of your dice for each other friendly ship at range 0-1.',
+      shipAbility: {
+        name: 'Weapon Hardpoint',
+        text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
+        slotOptions: ['Cannon', 'Torpedo', 'Missile'],
+      },
+      image:
+        'https://sb-cdn.fantasyflightgames.com/card_images/en/bc26d8864f421f1362473aa4982108ba.png',
+      artwork:
+        'https://sb-cdn.fantasyflightgames.com/card_art/05c48dc381e54c6951d3ee42d3587577.jpg',
+      cost: 51,
+      charges: { value: 1, recovers: 1 },
+      slots: ['Tech', 'Astromech', 'Modification', 'Configuration', 'Title'],
+      ffg: 423,
+      hyperspace: true,
+      epic: true,
+    },
+    {
+      name: 'Temmin Wexley',
+      caption: 'Snap',
+      initiative: 4,
+      limited: 1,
+      xws: 'temminwexley',
+      ability:
+        'After you fully execute a speed 2-4 maneuver, you may perform a [Boost] action.',
+      shipAbility: {
+        name: 'Weapon Hardpoint',
+        text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
+        slotOptions: ['Cannon', 'Torpedo', 'Missile'],
+      },
+      image:
+        'https://sb-cdn.fantasyflightgames.com/card_images/en/bb98b7ea3a580542b586a9999fd352c9.png',
+      artwork:
+        'https://sb-cdn.fantasyflightgames.com/card_art/6acd118b12a34136d4d1df6c765a0deb.jpg',
+      cost: 53,
+      slots: [
+        'Talent',
+        'Tech',
+        'Astromech',
+        'Modification',
+        'Configuration',
+        'Title',
+      ],
+      ffg: 422,
+      hyperspace: true,
+      epic: true,
+    },
+  ],
+};
+
+export default t;

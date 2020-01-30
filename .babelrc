@@ -1,0 +1,25 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "styled-components",
+      { "ssr": true, "displayName": true, "preprocess": false }
+    ],
+    ["react-native-web", { "commonjs": true }],
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "@actions": "./actions",
+          "@api": "./api",
+          "@components": "./components",
+          "@lib": "./lib",
+          "@reducers": "./reducers",
+          "@store": "./store"
+        },
+        "extensions": [".js", ".jsx", ".json", ".ts", ".tsx"]
+      }
+    ]
+  ]
+}

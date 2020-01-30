@@ -1,0 +1,28 @@
+
+type Blueprint {
+  uid: ID!
+  faction: String
+  nick: String
+  name: String
+  ship: String
+  upgrades: Upgrade
+}
+
+extend type Query {
+  blueprints: [Blueprint]
+  removedBlueprints: [ID]
+}
+
+input BlueprintInput {
+  uid: ID!
+  faction: String
+  nick: String
+  name: String
+  ship: String
+  upgrades: UpgradeInput
+}
+
+extend type Mutation {
+  blueprint(blueprint: BlueprintInput): Response
+  removeBlueprint(uid: ID): TimestampResponse
+}
