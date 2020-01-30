@@ -7,7 +7,8 @@
     "dev": "nodemon",
     "build": "next build && tsc && tsc --project tsconfig.server.json && copyfiles ./schema/**.graphql ./schema/**/**.graphql ./.next",
     "start": "node .next/server -p $PORT",
-    "postinstall": "node scripts/post-install.js"
+    "postinstall": "node scripts/post-install.js",
+    "test": "tsc --noemit"
   },
   "keywords": [],
   "author": "",
