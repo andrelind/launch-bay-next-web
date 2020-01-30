@@ -1,4 +1,5 @@
 Launch Bay Next
+![Typescript Checker](https://github.com/andrelind/launch-bay-next-web/workflows/Typescript%20Checker/badge.svg?branch=master)
 ===============
 Another squad builder...?
 
