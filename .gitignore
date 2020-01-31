@@ -9,6 +9,3 @@ build/
 
 # MACOS
 .DS_Store
-
-# GITHUB
-.github/
