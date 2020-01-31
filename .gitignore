@@ -3,3 +3,9 @@ dist/
 build/
 .env
 .next/
+
+# VSCODE
+.vscode/
+
+# MACOS
+.DS_Store
