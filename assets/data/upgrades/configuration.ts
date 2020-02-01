@@ -335,7 +335,6 @@ const t: UpgradeBase[] = [
             },
             value: 1,
           },
-          { action: { type: 'Reload', difficulty: 'Red' }, value: 1 },
         ],
         ffg: 645,
         image:
@@ -345,17 +344,18 @@ const t: UpgradeBase[] = [
         title: 'Stabilized S-foils (Closed)',
         type: 'Configuration',
         ability:
-          'After you perform an attack, you may spend your lock on the defender to perform a bonus [Cannon] attack against that ship using a [Cannon] upgrade you have not attacked with this turn.\n\nBefore you activate, if you are not critically damaged, you may flip this card.',
+          'Before you activate, if you are not critically damaged, you may flip this card.',
         slots: ['Configuration'],
         grants: [
           {
             action: {
               type: 'Barrel Roll',
               difficulty: 'White',
-              linked: { type: 'Lock', difficulty: 'Red' },
+              linked: { type: 'Evade', difficulty: 'Red' },
             },
             value: 1,
           },
+          { action: { type: 'Reload', difficulty: 'Red' }, value: 1 },
         ],
         ffg: 646,
         image:

@@ -127,7 +127,7 @@ export const t: Source[] = [
         precognitivereflexes: 1,
         targetingcomputer: 1,
         k2so: 1,
-        stabilizedsfoils: 1,
+        stabilizedsfoils: 2,
         magpulsewarheads: 1,
         coaxiumhyperfuel: 1,
       },

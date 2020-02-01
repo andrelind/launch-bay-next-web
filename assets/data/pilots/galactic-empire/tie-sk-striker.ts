@@ -170,27 +170,6 @@ const t: ShipType = {
       hyperspace: true,
       epic: true,
     },
-    {
-      name: '"Vagabond"',
-      caption: 'Destitute Demolitionist',
-      initiative: 2,
-      limited: 1,
-      cost: 35,
-      xws: 'vagabond',
-      ability:
-        'After you fully execute a maneuver using your Adaptive Ailerons, if you are not stressed, you may drop 1 device.',
-      shipAbility: {
-        name: 'Adaptive Ailerons',
-        text:
-          'Before you reveal your dial, if you are not stressed, you must execute a white (1 [Bank Left]), (1 [Straight]), or (1 [Bank Right]) maneuver.',
-      },
-      slots: ['Talent', 'Gunner', 'Device', 'Modification'],
-      hyperspace: true,
-      epic: true,
-      ffg: 633,
-      image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/en/e1b12f8287593ebaf960561c2febffe4.png',
-    },
   ],
 };
 

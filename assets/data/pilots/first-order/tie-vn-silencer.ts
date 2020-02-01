@@ -156,28 +156,6 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: '"Rush"',
-      xws: 'rush',
-      caption: 'Adrenaline Junkie',
-      initiative: 2,
-      limited: 1,
-      cost: 57,
-      ability: 'While you are damaged, treat your initiative as 6.',
-      shipAbility: {
-        name: 'Autothrusters',
-        text:
-          'After you perform an action, you may perform a red [Barrel Roll] or red [Boost] action.',
-      },
-      slots: ['Tech', 'Torpedo', 'Missile'],
-      image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/en/886d715885da65bdf10ad7c68e4d0a93.png',
-      artwork:
-        'https://sb-cdn.fantasyflightgames.com/card_art/3778411ec66e33951231314e909b981d.jpg',
-      ffg: 643,
-      hyperspace: true,
-      epic: true,
-    },
-    {
       name: 'Sienar-Jaemus Engineer',
       xws: 'sienarjaemusengineer',
       initiative: 1,
@@ -212,7 +190,7 @@ const t: ShipType = {
         text:
           'After you perform an action, you may perform a red [Barrel Roll] or red [Boost] action.',
       },
-      slots: ['Talent', 'Tech', 'Torpedo', 'Missile'],
+      slots: ['Tech', 'Torpedo', 'Missile'],
       image:
         'https://sb-cdn.fantasyflightgames.com/card_images/en/886d715885da65bdf10ad7c68e4d0a93.png',
       artwork:
