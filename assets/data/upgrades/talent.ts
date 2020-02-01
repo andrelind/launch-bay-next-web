@@ -625,7 +625,7 @@ const t: UpgradeBase[] = [
         title: 'Proud Tradition',
         type: 'Talent',
         ability:
-          '<strong>Setup:</strong> Equip this side faceup.\n\nWhile you have 2 or fewer stress tokens, you may perform [Focus] actions even while stressed.\n\nAfter you perform an attack, if you are stressed, the defender may pend 1 focus token or suffer 1 [Critical Hit] damage to flip this card.',
+          '<strong>Setup:</strong> Equip this side faceup.\n\nWhile you have 2 or fewer stress tokens, you may perform [Focus] actions even while stressed.\n\nAfter you perform an attack, if you are stressed, the defender may spend 1 focus token or suffer 1 [Critical Hit] damage to flip this card.',
         slots: ['Talent'],
         ffg: 653,
         image:

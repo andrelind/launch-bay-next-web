@@ -63,12 +63,6 @@
   ],
   "ship_types": [
     {
-      "id": 69,
-      "name": "TIE/ba Interceptor",
-      "description": "",
-      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Vonregs-First-Order-TIE-Interceptor.png"
-    },
-    {
       "id": 4,
       "name": "Scurrg H-6 bomber",
       "description": "",
@@ -129,10 +123,10 @@
       "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Falcon_Resistance.png"
     },
     {
-      "id": 70,
-      "name": "<italic>Fireball</italic>",
+      "id": 69,
+      "name": "TIE/ba Interceptor",
       "description": "",
-      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Fireball.png"
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Vonregs-First-Order-TIE-Interceptor.png"
     },
     {
       "id": 1,
@@ -201,6 +195,12 @@
       "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_BTL-B_Ywing.png"
     },
     {
+      "id": 12,
+      "name": "BTL-A4 Y-wing",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Y-wing.png"
+    },
+    {
       "id": 31,
       "name": "ARC-170 Starfighter",
       "description": "",
@@ -267,10 +267,10 @@
       "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Resistance_Transport_Cockpit_Pod.png"
     },
     {
-      "id": 12,
-      "name": "BTL-A4 Y-wing",
+      "id": 70,
+      "name": "<italic>Fireball</italic>",
       "description": "",
-      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Y-wing.png"
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Fireball.png"
     },
     {
       "id": 22,
@@ -333,6 +333,24 @@
       "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Hyena.png"
     },
     {
+      "id": 58,
+      "name": "Belbullab-22 Starfighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Belbullab-22.png"
+    },
+    {
+      "id": 63,
+      "name": "Naboo Royal N-1 Starfighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Royal_Naboo_N-1_Starfighter.png"
+    },
+    {
+      "id": 67,
+      "name": "<italic>Nantex</italic>-class Starfighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Nantex_Class_Starfighter.png"
+    },
+    {
       "id": 38,
       "name": "Z-95-AF4 Headhunter",
       "description": "",
@@ -355,24 +373,6 @@
       "name": "<italic>Lancer</italic>-class Pursuit Craft",
       "description": "",
       "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_ShadowCaster.png"
-    },
-    {
-      "id": 58,
-      "name": "Belbullab-22 Starfighter",
-      "description": "",
-      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Belbullab-22.png"
-    },
-    {
-      "id": 63,
-      "name": "Naboo Royal N-1 Starfighter",
-      "description": "",
-      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Royal_Naboo_N-1_Starfighter.png"
-    },
-    {
-      "id": 67,
-      "name": "<italic>Nantex</italic>-class Starfighter",
-      "description": "",
-      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Nantex_Class_Starfighter.png"
     },
     {
       "id": 3,
@@ -441,6 +441,12 @@
       "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_TIEAdvancedPrototype.png"
     },
     {
+      "id": 62,
+      "name": "V-19 Torrent Starfighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_V-19Torrent.png"
+    },
+    {
       "id": 59,
       "name": "<italic>Vulture</italic>-class Droid Fighter",
       "description": "",
@@ -457,12 +463,6 @@
       "name": "Delta-7 <italic>Aethersprite</italic>",
       "description": "",
       "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Delta-7.png"
-    },
-    {
-      "id": 62,
-      "name": "V-19 Torrent Starfighter",
-      "description": "",
-      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_V-19Torrent.png"
     }
   ],
   "card_stats": [
@@ -758,6 +758,30 @@
       "font_icon": "0xF204F"
     },
     {
+      "id": 1,
+      "name": "Talent",
+      "description": "",
+      "font_icon": "0xF204B"
+    },
+    {
+      "id": 2,
+      "name": "Sensor",
+      "description": "",
+      "font_icon": "0xF204C"
+    },
+    {
+      "id": 3,
+      "name": "Cannon",
+      "description": "",
+      "font_icon": "0xF204D"
+    },
+    {
+      "id": 4,
+      "name": "Turret",
+      "description": "",
+      "font_icon": "0xF204E"
+    },
+    {
       "id": 6,
       "name": "Missile",
       "description": "",
@@ -834,30 +858,6 @@
       "name": "Tactical Relay",
       "description": "",
       "font_icon": "f2402"
-    },
-    {
-      "id": 1,
-      "name": "Talent",
-      "description": "",
-      "font_icon": "0xF204B"
-    },
-    {
-      "id": 2,
-      "name": "Sensor",
-      "description": "",
-      "font_icon": "0xF204C"
-    },
-    {
-      "id": 3,
-      "name": "Cannon",
-      "description": "",
-      "font_icon": "0xF204D"
-    },
-    {
-      "id": 4,
-      "name": "Turret",
-      "description": "",
-      "font_icon": "0xF204E"
     }
   ]
 }

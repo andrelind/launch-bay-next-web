@@ -1837,6 +1837,7 @@ const t: UpgradeBase[] = [
         ffg: -1,
       },
     ],
+    restrictions: [{ factions: ['Galactic Republic'] }],
     cost: { value: 0 },
   },
 ];
