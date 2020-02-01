@@ -106,7 +106,7 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: 'Vagabond',
+      name: '"Vagabond"',
       caption: 'Destitute Demolitionist',
       initiative: 2,
       limited: 1,
@@ -122,6 +122,9 @@ const t: ShipType = {
       slots: ['Talent', 'Gunner', 'Device', 'Modification'],
       hyperspace: true,
       epic: true,
+      ffg: 633,
+      image:
+        'https://sb-cdn.fantasyflightgames.com/card_images/en/e1b12f8287593ebaf960561c2febffe4.png',
     },
     {
       name: 'Black Squadron Scout',

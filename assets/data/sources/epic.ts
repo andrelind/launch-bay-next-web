@@ -109,10 +109,7 @@ export const t: Source[] = [
     released: true,
     contents: {
       ships: { cr90corelliancorvette: 1 },
-      pilots: {
-        alderaanianguard: 1,
-        republicjudiciary: 1,
-      },
+      pilots: { alderaanianguard: 1, republicjudiciary: 1 },
       upgrades: {
         carlistrieekan: 1,
         jandodonna: 1,
@@ -153,10 +150,7 @@ export const t: Source[] = [
     released: true,
     contents: {
       ships: { croccruiser: 1 },
-      pilots: {
-        separatistprivateers: 1,
-        syndicatesmugglers: 1,
-      },
+      pilots: { separatistprivateers: 1, syndicatesmugglers: 1 },
       upgrades: {
         azimorigan: 1,
         stalwartcaptain: 1,
@@ -205,10 +199,7 @@ export const t: Source[] = [
     released: true,
     contents: {
       ships: { raiderclasscorvette: 1 },
-      pilots: {
-        firstordercollaborators: 1,
-        outerrimpatrol: 1,
-      },
+      pilots: { firstordercollaborators: 1, outerrimpatrol: 1 },
       upgrades: {
         admiralozzel: 1,
         captainneeda: 1,

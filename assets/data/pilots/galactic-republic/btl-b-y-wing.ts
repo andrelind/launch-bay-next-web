@@ -221,7 +221,7 @@ const t: ShipType = {
       initiative: 2,
       limited: 1,
       ability:
-        'While a friendly ship at range 0–3 defends, it may roll 1 additional defense die for each friendly bomb at range 0–1 of it.',
+        'While a friendly ship at range 0-3 defends, it may roll 1 additional defense die for each friendly bomb or mine at range 0-1 of it.',
       shipAbility: {
         name: 'Plated Hull',
         text:

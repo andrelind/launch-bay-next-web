@@ -276,7 +276,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Mag-Pulse Warheads',
         type: 'Missile',
-        slots: ['Missile', 'Missile'],
+        slots: ['Missile'],
         ability:
           'Attack ([Lock]): Spend 1 [Charge]. If this attack hits, the defender suffers 1 [Critical Hit] damage and gains 1 deplete and 1 jam token. Then cancel all [Hit]/[Critical Hit] results.',
         charges: { value: 2, recovers: 0 },

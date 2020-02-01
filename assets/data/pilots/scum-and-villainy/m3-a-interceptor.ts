@@ -228,6 +228,7 @@ const t: ShipType = {
       shipAbility: {
         name: 'Weapon Hardpoint',
         text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
+        slotOptions: ['Cannon', 'Torpedo', 'Missile'],
       },
       caption: 'Tilted Droid',
       hyperspace: true,

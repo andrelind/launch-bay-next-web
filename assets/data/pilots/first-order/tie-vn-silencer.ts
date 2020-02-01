@@ -158,7 +158,7 @@ const t: ShipType = {
     {
       name: '"Rush"',
       xws: 'rush',
-      caption: 'Wrathful Wingmate',
+      caption: 'Adrenaline Junkie',
       initiative: 2,
       limited: 1,
       cost: 57,
@@ -170,10 +170,10 @@ const t: ShipType = {
       },
       slots: ['Tech', 'Torpedo', 'Missile'],
       image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/en/d90d3057ead18b5df5f6de55a199a4cd.png',
+        'https://sb-cdn.fantasyflightgames.com/card_images/en/886d715885da65bdf10ad7c68e4d0a93.png',
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/3778411ec66e33951231314e909b981d.jpg',
-      ffg: 456,
+      ffg: 643,
       hyperspace: true,
       epic: true,
     },
