@@ -236,6 +236,12 @@ const t: ShipType = {
       slots: ['Modification'],
       ability:
         'After you defend, each other ship at range 0 suffers 1 [Critical Hit] damage.',
+      shipActions: [
+        { difficulty: 'White', type: 'Calculate' },
+        { difficulty: 'White', type: 'Evade' },
+        { difficulty: 'White', type: 'Lock' },
+        { difficulty: 'White', type: 'Barrel Roll' },
+      ],
       cost: 28,
       ffg: 636,
       artwork:

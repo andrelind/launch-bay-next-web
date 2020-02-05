@@ -138,6 +138,12 @@ const t: ShipType = {
         text:
           'Setup: You are dealt 1 facedown damage card. After you perform a [Slam] action, you may expose 1 damage card to remove 1 disarm token.',
       },
+      shipActions: [
+        { difficulty: 'White', type: 'Calculate' },
+        { difficulty: 'White', type: 'Evade' },
+        { difficulty: 'White', type: 'Barrel Roll' },
+        { difficulty: 'White', type: 'SLAM' },
+      ],
       cost: 29,
       slots: [
         'Missile',

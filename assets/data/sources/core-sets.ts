@@ -118,7 +118,7 @@ export const t: Source[] = [
         patternanalyzer: 1,
         brilliantevasion: 1,
         passivesensors: 1,
-        autoblasters: 1,
+        autoblasters: 2,
         diamondboronmissiles: 1,
         plasmatorpedoes: 1,
         angleddeflectors: 1,

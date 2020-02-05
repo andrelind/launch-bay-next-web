@@ -244,6 +244,11 @@ const t: ShipType = {
       ability: 'After you gain a stress token, gain 1 calculate token.',
       image:
         'https://sb-cdn.fantasyflightgames.com/card_images/en/c65da3d5378ec32bd024325dbd80b3d6.png',
+      shipActions: [
+        { difficulty: 'White', type: 'Calculate' },
+        { difficulty: 'White', type: 'Lock' },
+        { difficulty: 'Red', type: 'Coordinate' },
+      ],
       slots: [
         'Talent',
         'Sensor',

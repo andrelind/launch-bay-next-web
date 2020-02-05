@@ -162,7 +162,7 @@ const t: ShipType = {
         text:
           'You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. You must treat the [Front Arc] requirement of your equipped [Missile] upgrades as [Single Turret Arc].',
       },
-      slots: ['Sensor', 'Tech', 'Missile', 'Gunner', 'Modification'],
+      slots: ['Talent', 'Sensor', 'Tech', 'Missile', 'Gunner', 'Modification'],
       image:
         'https://sb-cdn.fantasyflightgames.com/card_images/en/b823438eb2b32a407bf6a757a4ecb7d5.png',
       artwork:
@@ -187,7 +187,7 @@ const t: ShipType = {
         text:
           'You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. You must treat the [Front Arc] requirement of your equipped [Missile] upgrades as [Single Turret Arc].',
       },
-      slots: ['Sensor', 'Tech', 'Missile', 'Gunner', 'Modification'],
+      slots: ['Talent', 'Sensor', 'Tech', 'Missile', 'Gunner', 'Modification'],
       image:
         'https://sb-cdn.fantasyflightgames.com/card_images/en/7c0bc32446e17991aff226d0fcab7b19.png',
       artwork:

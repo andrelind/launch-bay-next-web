@@ -173,11 +173,12 @@ const t: UpgradeBase[] = [
         title: 'Stalwart Captain',
         ability:
           'After you are destroyed, you are not removed until the end of the End Phase.',
-        slots: ['Command'],
+        slots: ['Command', 'Crew'],
         ffg: -1,
       },
     ],
     cost: { value: 6 },
+    restrictions: [{ baseSizes: ['Huge'] }],
     hyperspace: false,
     epic: true,
   },
