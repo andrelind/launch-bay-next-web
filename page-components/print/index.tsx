@@ -56,7 +56,9 @@ const PrintPage = ({ squadron, mode }: Props) => {
             flexDirection: 'column',
           }}
         >
-          <Title>{squadron.name}</Title>
+          <Title>
+            {squadron.name} [{squadron.format}]
+          </Title>
           <Title>{squadron.cost} points</Title>
         </div>
         <QRCode

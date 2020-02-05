@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 
 export const Block = styled.div`
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+  display: block;
   background-color: white;
 `;
 
@@ -35,9 +33,7 @@ export const Text = styled.span`
 `;
 
 export const ShipWrapper = styled.div`
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+  display: block;
   page-break-after: auto;
   page-break-before: auto;
   page-break-inside: avoid;
