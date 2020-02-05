@@ -795,6 +795,10 @@ const t: {
     '18': 'configuration',
     '19': 'tech',
     '1000': 'tacticalrelay',
+    '99': 'cargo',
+    '98': 'command',
+    '97': 'hardpoint',
+    '96': 'team',
   },
   translations: [
     { ffg: '<hit>', xws: '[Hit]' },

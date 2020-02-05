@@ -304,6 +304,9 @@ const t: UpgradeBase[] = [
           { slot: 'Cannon', value: 1 },
           { slot: 'Turret', value: 1 },
           { slot: 'Missile', value: 1 },
+          { stat: 'hull', value: 2 },
+          { stat: 'shields', value: -2 },
+          { stat: 'energy', value: 1 },
         ],
         image:
           'https://sb-cdn.fantasyflightgames.com/card_images/en/c23a0130bad7330c0abb6218745910aa.png',

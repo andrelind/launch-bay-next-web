@@ -791,7 +791,12 @@ const t: UpgradeBase[] = [
         ability:
           'Add [Cargo] slot. During the End Phase, you may recover 1 additional [Shield] or [Energy].',
         slots: ['Title'],
-        grants: [{ slot: 'Cargo', value: 1 }],
+        grants: [
+          { slot: 'Cargo', value: 1 },
+          { stat: 'hull', value: 3 },
+          { stat: 'shields', value: -1 },
+          { stat: 'energy', value: -1 },
+        ],
         ffg: -1,
       },
     ],
@@ -812,7 +817,7 @@ const t: UpgradeBase[] = [
         title: 'Liberator',
         type: 'Title',
         ability:
-          'You can dock up to 2 small ships. After a ship deploys from you, it may perform a [Focus] or [Barell Roll] action.',
+          'You can dock up to 2 small ships. After a ship deploys from you, it may perform a [Focus] or [Barrel Roll] action.',
         slots: ['Title'],
         grants: [{ stat: 'energy', value: 1 }],
         ffg: -1,
@@ -918,6 +923,7 @@ const t: UpgradeBase[] = [
         grants: [
           { slot: 'Team', value: 1 },
           { slot: 'Cargo', value: 1 },
+          { stat: 'energy', value: 1 },
         ],
         slots: ['Title'],
         ffg: -1,

@@ -186,7 +186,7 @@ const t: UpgradeBase[] = [
         title: 'Quick-Release Locks',
         type: 'Illicit',
         ability:
-          "During the System Phase, you may spend 1 [Charge] to place 1 cargo crate drift in your [Back Arc] at range 0. It cannot overlap a ship this way. This card's [Charge] cannot be recovered.",
+          "During the System Phase, you may spend 1 [Charge] to place 1 cargo crate drift in your [Rear Arc] at range 0. It cannot overlap a ship this way. This card's [Charge] cannot be recovered.",
         charges: { value: 2, recovers: 0 },
         slots: ['Illicit'],
         ffg: -1,
