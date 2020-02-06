@@ -210,6 +210,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Cluster Mines',
         type: 'Device',
+        charges: { value: 1, recovers: 0 },
         ability:
           "Mine During the System Phase, you may spend 1 [Charge] to drop a Cluster Mine set using the (1 [Straight]) template. This card's [Charge] cannot be recovered.",
         slots: ['Device'],
@@ -230,6 +231,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Ion Bombs',
         type: 'Device',
+        charges: { value: 2, recovers: 0 },
         ability:
           'Bomb During the System Phase, you may spend 1 [Charge] to drop an Ion Bomb using the (1 [Straight]) template.',
         slots: ['Device'],
