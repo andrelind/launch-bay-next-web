@@ -736,7 +736,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 2 },
     restrictions: [{ factions: ['Rebel Alliance'] }],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
