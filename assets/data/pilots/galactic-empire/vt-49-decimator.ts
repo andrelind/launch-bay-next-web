@@ -129,6 +129,7 @@ const t: ShipType = {
       xws: 'mornakee',
       ability:
         'During the End Phase, you may spend 1 [Charge] to flip 1 of your reinforce tokens to your other full arc instead of removing it.',
+      charges: { value: 3, recovers: 0 },
       slots: [
         'Talent',
         'Torpedo',
