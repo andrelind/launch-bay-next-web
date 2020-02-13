@@ -40,7 +40,7 @@ export const t: Source[] = [
       },
       upgrades: {
         admiralozzel: 1,
-        azimorigan: 1,
+        azmorigan: 1,
         captainneeda: 1,
         carlistrieekan: 1,
         jandodonna: 1,
