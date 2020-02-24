@@ -214,6 +214,12 @@ const t: UpgradeBase[] = [
         ability:
           "Mine During the System Phase, you may spend 1 [Charge] to drop a Cluster Mine set using the (1 [Straight]) template. This card's [Charge] cannot be recovered.",
         slots: ['Device'],
+        device: {
+          name: 'Cluster Mines',
+          type: 'Mine',
+          effect:
+            'A Cluster Mine Set consists of 3 individual Cluster Mine devices. \n\nWhen a Cluster Mines set is placed, the center Cluster Mine is placed as normal, then two additional Cluster Mines are placed in the recesses as shown. After a ship overlaps or moves through any individual Cluster Mine, it detonates. Other Cluster Mines in the set that were not overlapped or moved through do not detonate.\n\nWhen each of these devices detonates, that ship rolls 2 attack dice. That ship then suffers 1 [Hit]/[Critical Hit] damage for each matching result.',
+        },
         ffg: 648,
         image:
           'https://sb-cdn.fantasyflightgames.com/card_images/en/c27f0dcda78915239450bedf5b931d86.png',
