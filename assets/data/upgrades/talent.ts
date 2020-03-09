@@ -10,7 +10,7 @@ const t: UpgradeBase[] = [
         title: 'Composure',
         type: 'Talent',
         ability:
-          'After you fail an action, if you have no green tokens, you may perform a [Focus] action.',
+          'After you fail an action, if you have no green tokens, you may perform a [Focus] action. If you do, you cannot perform additional actions this round.',
         slots: ['Talent'],
         image:
           'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_156.png',

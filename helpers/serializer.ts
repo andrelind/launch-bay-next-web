@@ -88,11 +88,13 @@ export const deserialize = (o: string, uid?: string): SquadronXWS => {
   o = rep('(', '[', o);
   o = rep(')', ']', o);
   o = rep("'", '"', o);
+  o = rep('""', '"', o);
 
   if (o[0] !== '[') {
     o = `[${o}]`;
   }
 
+  console.log(o);
   const d = JSON.parse(o);
   const [name, cost, faction, format, ...pilots] = d;
 

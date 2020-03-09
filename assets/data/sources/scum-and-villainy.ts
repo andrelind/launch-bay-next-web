@@ -382,7 +382,7 @@ export const t: Source[] = [
     wave: 6,
     released: true,
     contents: {
-      ships: { m3aihoundstoothnterceptor: 1 },
+      ships: { yv666lightfreighter: 1, z95af4headhunter: 1 },
       pilots: {
         nashtahpup: 1,
         bossk: 1,

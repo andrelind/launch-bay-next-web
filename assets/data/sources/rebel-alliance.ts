@@ -378,6 +378,7 @@ export const t: Source[] = [
         juke: 1,
         concussionmissiles: 1,
         protonrockets: 1,
+        intimidation: 1,
       },
     },
   },

@@ -26,7 +26,7 @@ const t: ShipType = {
     { type: 'agility', value: 0 },
     { type: 'hull', value: 12 },
     { type: 'shields', value: 4, recovers: 2 },
-    { type: 'energy', value: 7, recovers: 2 },
+    { type: 'energy', value: 4, recovers: 2 },
   ],
   actions: [
     { difficulty: 'White', type: 'Focus' },
