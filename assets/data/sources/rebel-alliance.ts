@@ -79,6 +79,9 @@ export const t: Source[] = [
         dashrendar: 1,
         leebo: 1,
         wildspacefringer: 2,
+        thanekyrell: 1,
+        norrawexley: 1,
+        evaanverlaine: 1
       },
       upgrades: {
         crackshot: 2,
