@@ -52,7 +52,10 @@ export const t: Source[] = [
     contents: {
       ships: {},
       pilots: {},
-      upgrades: { riggedcargochute: 1, protonbombs: 1, sparepartscanisters: 1 },
+      upgrades: {
+        riggedcargochute: 1,
+        sparepartscanisters: 1 
+      },
     },
   },
   {
@@ -66,14 +69,15 @@ export const t: Source[] = [
       pilots: {},
       upgrades: {
         clustermines: 1,
-        trajectorysimulator: 1,
+        trajectorysimulator: 2,
         seismiccharges: 1,
         ionbombs: 1,
         bombletgenerator: 1,
         connernets: 1,
         proximitymines: 1,
         electroprotonbomb: 1,
-        delayedfuses: 1,
+        delayedfuses: 2,
+        protonbombs: 1,
       },
     },
   },
