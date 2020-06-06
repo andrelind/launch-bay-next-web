@@ -22,7 +22,7 @@
     "@zeit/next-bundle-analyzer": "^0.1.2",
     "@zeit/next-css": "^1.0.1",
     "apisauce": "^1.1.1",
-    "apollo-server-express": "^2.9.16",
+    "apollo-server-express": "^2.14.2",
     "babel-plugin-module-resolver": "^4.0.0",
     "bluebird": "^3.7.2",
     "color": "^3.1.2",
