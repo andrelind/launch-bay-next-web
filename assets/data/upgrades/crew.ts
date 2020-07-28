@@ -21,7 +21,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 1 },
     restrictions: [{ factions: ['Rebel Alliance'] }],
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
   },
   {
@@ -44,7 +44,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 1 },
     restrictions: [{ factions: ['Rebel Alliance'] }],
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
   },
   {
@@ -127,9 +127,9 @@ const t: UpgradeBase[] = [
         title: 'Agent Kallus',
         type: 'Crew',
         ability:
-          'Setup: Assign the Hunted condition to 1 enemy ship. While you perform an attack against the ship with the Hunted condition, you may change 1 of your [Focus] results to a [Hit] result.',
+          'Setup: After placing forces, assign the Hunted condition to 1 enemy ship. While you perform an attack against the ship with the Hunted condition, you may change 1 of your [Focus] results to a [Hit] result.',
         image:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_110.png',
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/5e9b30fb5a437355afd9d17d8700bd9c.png',
         conditions: ['hunted'],
         slots: ['Crew'],
         artwork:
@@ -760,7 +760,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 12 },
     restrictions: [{ factions: ['Rebel Alliance'] }],
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
   },
   {
@@ -1199,7 +1199,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     restrictions: [{ factions: ['Rebel Alliance'] }],
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
   },
   {
@@ -1245,17 +1245,7 @@ const t: UpgradeBase[] = [
     ],
     cost: {
       variable: 'initiative',
-      values: {
-        '0': 2,
-        '1': 3,
-        '2': 4,
-        '3': 5,
-        '4': 6,
-        '5': 7,
-        '6': 8,
-        '7': 8,
-        '8': 9,
-      },
+      values: { '0': 2, '1': 3, '2': 4, '3': 5, '4': 6, '5': 7, '6': 8 },
     },
     hyperspace: false,
     epic: true,

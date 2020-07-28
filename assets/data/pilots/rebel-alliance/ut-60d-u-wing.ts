@@ -258,7 +258,7 @@ const t: ShipType = {
         'Configuration',
       ],
       ffg: 629,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
   ],

@@ -44,7 +44,7 @@ const t: ShipType = {
       caption: 'Dry-Witted Droid',
       initiative: 3,
       limited: 1,
-      cost: 81,
+      cost: 76,
       xws: 'leebo',
       ability:
         'After you defend or perform an attack, if you spent a calculate token, gain 1 calculate token.',
@@ -73,7 +73,7 @@ const t: ShipType = {
       caption: 'Hotshot Mercenary',
       initiative: 5,
       limited: 1,
-      cost: 91,
+      cost: 85,
       xws: 'dashrendar',
       ability: 'While you move, you ignore obstacles.',
       image:
@@ -102,7 +102,7 @@ const t: ShipType = {
       name: 'Wild Space Fringer',
       initiative: 1,
       limited: 0,
-      cost: 77,
+      cost: 72,
       xws: 'wildspacefringer',
       text:
         'Although stock YT-2400 light freighters have plenty of room for cargo, that space is often annexed to support modified weapon systems and oversized engines.',

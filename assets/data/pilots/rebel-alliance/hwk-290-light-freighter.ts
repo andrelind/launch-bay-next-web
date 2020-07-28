@@ -76,7 +76,7 @@ const t: ShipType = {
       caption: 'Relentless Operative',
       initiative: 3,
       limited: 1,
-      cost: 34,
+      cost: 33,
       xws: 'kylekatarn',
       ability:
         'At the start of the Engagement Phase, you may transfer 1 of your focus tokens to a friendly ship in your firing arc.',
@@ -100,7 +100,7 @@ const t: ShipType = {
       name: 'Rebel Scout',
       initiative: 2,
       limited: 0,
-      cost: 30,
+      cost: 29,
       xws: 'rebelscout',
       text:
         'Designed to look like a bird in flight by the Corellian Engineering Corporation, "hawk" series ships are exemplary transport craft. Swift and rugged, the HWK-290 is often employed by Rebel agents as a mobile base of operations.',

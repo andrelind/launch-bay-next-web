@@ -74,7 +74,7 @@ const t: ShipType = {
       caption: 'Bravo Leader',
       hyperspace: true,
       epic: true,
-      cost: 42,
+      cost: 45,
       slots: ['Talent', 'Sensor', 'Torpedo', 'Astromech'],
       ffg: 557,
       image:

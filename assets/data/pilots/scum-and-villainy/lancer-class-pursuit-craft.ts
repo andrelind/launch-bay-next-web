@@ -44,7 +44,7 @@ const t: ShipType = {
       caption: 'Force of Her Own',
       initiative: 4,
       limited: 1,
-      cost: 72,
+      cost: 69,
       xws: 'asajjventress',
       ability:
         'At the start of the Engagement Phase, you may choose 1 enemy ship in your [Single Turret Arc] at range 0-2 and spend 1 [Force]. If you do, that ship gains 1 stress token unless it removes 1 green token.',
@@ -70,7 +70,7 @@ const t: ShipType = {
       caption: 'Black Sun Contractor',
       initiative: 5,
       limited: 1,
-      cost: 69,
+      cost: 67,
       xws: 'ketsuonyo',
       ability:
         'At the start of the Engagement Phase, you may choose 1 ship in both your [Front Arc] and [Single Turret Arc] at range 0-1. If you do, that ship gains 1 tractor token.',
@@ -88,7 +88,7 @@ const t: ShipType = {
       caption: 'Artistic Saboteur',
       initiative: 3,
       limited: 1,
-      cost: 61,
+      cost: 59,
       xws: 'sabinewren-lancerclasspursuitcraft',
       ability:
         'While you defend, if the attacker is in your [Single Turret Arc] at range 0-2, you may add 1 [Focus] result to your dice results.',
@@ -105,7 +105,7 @@ const t: ShipType = {
       name: 'Shadowport Hunter',
       initiative: 2,
       limited: 0,
-      cost: 56,
+      cost: 55,
       xws: 'shadowporthunter',
       text:
         'Crime syndicates augment the lethal skills of their loyal contractors with the best technology available, like the fast and formidable Lancer-class pursuit craft.',

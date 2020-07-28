@@ -43,7 +43,7 @@ const t: ShipType = {
       caption: 'Spectre-3',
       initiative: 2,
       limited: 1,
-      cost: 68,
+      cost: 67,
       xws: 'chopper',
       ability:
         'At the start of the Engagement Phase, each enemy ship at range 0 gains 2 jam tokens.',
@@ -105,7 +105,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_73.jpg',
       ffg: 73,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -113,7 +113,7 @@ const t: ShipType = {
       caption: 'Spectre-1',
       initiative: 3,
       limited: 1,
-      cost: 80,
+      cost: 76,
       xws: 'kananjarrus',
       ability:
         'While a friendly ship in your firing arc defends, you may spend 1 [Force]. If you do, the attacker rolls 1 fewer attack die.',
@@ -139,7 +139,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_74.jpg',
       ffg: 74,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -184,7 +184,7 @@ const t: ShipType = {
           "While you have a docked ship, you have a primary [Rear Arc] weapon with an attack value equal to your docked ship's primary [Front Arc] attack value.",
       },
       caption: 'Fulcrum',
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
       slots: [
         'Talent',
@@ -199,7 +199,7 @@ const t: ShipType = {
       ],
       ability:
         'While you defend, if the attacker modified any attack dice, you may roll 1 additional defense die.',
-      cost: 69,
+      cost: 68,
       ffg: 631,
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/af4c16c8955bddf75d5eb7723c7a5f2d.jpg',

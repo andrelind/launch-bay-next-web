@@ -58,7 +58,7 @@ const t: ShipType = {
       caption: "Darth Vader's Shuttle Pilot",
       initiative: 3,
       limited: 1,
-      cost: 48,
+      cost: 49,
       xws: 'coloneljendon',
       ability:
         'At the start of the Activation Phase, you may spend 1 [Charge]. If you do, while friendly ships acquire locks this round, they must acquire locks beyond range 3 instead of at range 0-3.',

@@ -222,7 +222,7 @@ const t: ShipType = {
     },
     {
       name: 'G4R-G0R V/M',
-      xws: 'g4rgorvm',
+      xws: 'g4rg0rvm',
       initiative: 0,
       limited: 1,
       shipAbility: {

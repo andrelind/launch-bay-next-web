@@ -23,7 +23,7 @@ const t: UpgradeBase[] = [
     restrictions: [{ factions: ['Separatist Alliance'] }],
     hyperspace: true,
     epic: true,
-    cost: { value: 10 },
+    cost: { value: 11 },
   },
   {
     name: 'TV-94',
@@ -86,7 +86,7 @@ const t: UpgradeBase[] = [
     restrictions: [{ factions: ['Separatist Alliance'] }],
     hyperspace: true,
     epic: true,
-    cost: { value: 9 },
+    cost: { value: 11 },
   },
 ];
 

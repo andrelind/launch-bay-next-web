@@ -125,7 +125,7 @@ const t: ShipType = {
     {
       name: '0-66',
       xws: '066',
-      cost: 51,
+      cost: 49,
       slots: [
         'Talent',
         'Torpedo',

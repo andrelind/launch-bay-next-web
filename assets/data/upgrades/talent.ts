@@ -13,7 +13,7 @@ const t: UpgradeBase[] = [
           'After you fail an action, if you have no green tokens, you may perform a [Focus] action. If you do, you cannot perform additional actions this round.',
         slots: ['Talent'],
         image:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_156.png',
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/73927eb0dc7bc2bb0de194f1af1dead2.png',
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_156.jpg',
         ffg: 381,
@@ -43,7 +43,7 @@ const t: UpgradeBase[] = [
         ffg: 230,
       },
     ],
-    cost: { value: 1 },
+    cost: { value: 2 },
     hyperspace: false,
     epic: true,
   },
@@ -304,7 +304,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 1 },
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
   },
   {
@@ -392,7 +392,7 @@ const t: UpgradeBase[] = [
         ffg: 243,
       },
     ],
-    cost: { value: 5 },
+    cost: { value: 4 },
     restrictions: [{ action: { type: 'Reload' } }],
     hyperspace: false,
     epic: true,
@@ -562,7 +562,7 @@ const t: UpgradeBase[] = [
     restrictions: [{ chassis: ['nantexclassstarfighter'] }],
     cost: {
       variable: 'initiative',
-      values: { '1': 12, '2': 12, '3': 12, '4': 14, '5': 21, '6': 28 },
+      values: { '0': 21, '1': 21, '2': 21, '3': 21, '4': 21, '5': 24, '6': 28 },
     },
   },
   {
@@ -613,7 +613,7 @@ const t: UpgradeBase[] = [
     ],
     cost: {
       variable: 'size',
-      values: { Small: 7, Medium: 8, Large: 9, Huge: 200 },
+      values: { Small: 8, Medium: 9, Large: 10, Huge: 200 },
     },
   },
   {

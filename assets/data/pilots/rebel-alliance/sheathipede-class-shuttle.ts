@@ -42,7 +42,7 @@ const t: ShipType = {
       caption: 'Spectre-4',
       initiative: 2,
       limited: 1,
-      cost: 34,
+      cost: 33,
       xws: 'zeborrelios-sheathipedeclassshuttle',
       ability:
         'While you defend, [Critical Hit] results are neutralized before [Hit] results.',
@@ -57,7 +57,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_40.jpg',
       ffg: 40,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -92,7 +92,7 @@ const t: ShipType = {
       caption: 'Spectre-6',
       initiative: 3,
       limited: 1,
-      cost: 42,
+      cost: 40,
       xws: 'ezrabridger-sheathipedeclassshuttle',
       ability:
         'While you defend or perform an attack, if you are stressed, you may spend 1 [Force] to change up to 2 of your [Focus] results to [Evade]/[Hit] results.',
@@ -108,7 +108,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_39.jpg',
       ffg: 39,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -119,9 +119,9 @@ const t: ShipType = {
       cost: 50,
       xws: 'fennrau-sheathipedeclassshuttle',
       ability:
-        'After an enemy ship in your firing arc engages, if you are not stressed, you may gain 1 stress token. If you do, that ship cannot spend tokens to modify dice while it performs an attack during this phase.',
+        'Before an enemy ship in your firing arc engages, if you are not stressed, you may gain 1 stress token. If you do, that ship cannot spend tokens to modify dice while it performs an attack during this phase.',
       image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_38.png',
+        'https://sb-cdn.fantasyflightgames.com/card_images/en/43140025bc61b3e64ef6831987cafb2c.png',
       shipAbility: {
         name: 'Comms Shuttle',
         text:

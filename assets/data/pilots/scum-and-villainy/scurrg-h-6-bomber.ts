@@ -42,7 +42,7 @@ const t: ShipType = {
       caption: 'Captain of the Lok Revenants',
       initiative: 5,
       limited: 1,
-      cost: 48,
+      cost: 47,
       xws: 'captainnym',
       ability:
         'Before a friendly bomb or mine would detonate, you may spend 1 [Charge] to prevent it from detonating. While you defend against an attack obstructed by a bomb or mine, roll 1 additional defense die.',

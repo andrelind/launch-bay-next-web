@@ -44,7 +44,7 @@ const t: ShipType = {
       name: 'Freighter Captain',
       initiative: 1,
       limited: 0,
-      cost: 46,
+      cost: 41,
       xws: 'freightercaptain',
       text:
         'Many spacers make a living traveling the Outer Rim, where the difference between smuggler and legitimate merchant is often murky. On the outskirts of civilization, buyers are rarely so discerning to ask where merchandise came from, at least as long as the price is low enough.',
@@ -70,7 +70,7 @@ const t: ShipType = {
       caption: 'The Corellian Kid',
       initiative: 6,
       limited: 1,
-      cost: 54,
+      cost: 48,
       xws: 'hansolo',
       ability:
         'While you defend or perform a primary attack, if the attack is obstructed by an obstacle, you may roll 1 additional die.',
@@ -89,7 +89,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_222.jpg',
       ffg: 222,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -97,7 +97,7 @@ const t: ShipType = {
       caption: 'Droid Revolutionary',
       initiative: 2,
       limited: 1,
-      cost: 47,
+      cost: 41,
       xws: 'l337',
       ability:
         'If you are not shielded, decrease the difficulty of your bank ([Bank Left] and [Bank Right]) maneuvers.',
@@ -121,7 +121,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_224.jpg',
       ffg: 224,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -129,7 +129,7 @@ const t: ShipType = {
       caption: 'Smooth-talking Gambler',
       initiative: 4,
       limited: 1,
-      cost: 49,
+      cost: 42,
       xws: 'landocalrissian',
       ability:
         'After you roll dice, if you are not stressed, you may gain 1 stress token to reroll all of your blank results.',

@@ -56,7 +56,7 @@ const t: ShipType = {
         "While you perform a primary attack, if you are not in the defender's firing arc, you may reroll up to 2 attack dice.",
       image:
         'https://sb-cdn.fantasyflightgames.com/card_images/en/9e4a215e799a9e7ad1853d19d149dd20.png',
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
       cost: 44,
       slots: ['Talent', 'Tactical Relay', 'Title', 'Modification'],
@@ -74,7 +74,7 @@ const t: ShipType = {
         'While you perform a primary attack, you may reroll 1 attack die for each calculating friendly ship at range 1 of the defender.',
       image:
         'https://sb-cdn.fantasyflightgames.com/card_images/en/68cbd6082683fe17778f829555f23a26.png',
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
       cost: 42,
       slots: ['Talent', 'Tactical Relay', 'Title', 'Modification'],
@@ -105,7 +105,7 @@ const t: ShipType = {
           type: 'Boost',
         },
       ],
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
       cost: 35,
       slots: ['Tactical Relay', 'Title', 'Modification'],
@@ -145,7 +145,7 @@ const t: ShipType = {
         'https://sb-cdn.fantasyflightgames.com/card_images/en/ceb7a3bc406ff17be5dee5de62b39195.png',
       text:
         'With its powerful engines, devastating triple laser cannons, and high customizability, the Belbullab-22 is the chosen craft of several elite Separatist Alliance pilots, including the infamous General Grievous.',
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
   ],

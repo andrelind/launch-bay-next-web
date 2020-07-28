@@ -68,7 +68,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_172.jpg',
       ffg: 172,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -86,7 +86,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_170.jpg',
       ffg: 170,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -104,7 +104,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_169.jpg',
       ffg: 169,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -127,7 +127,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_171.jpg',
       ffg: 171,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -145,7 +145,7 @@ const t: ShipType = {
           "After you deploy, you may acquire a lock on a ship the friendly Hound's Tooth has locked.",
       },
       slots: ['Talent', 'Missile', 'Illicit', 'Modification'],
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
       ffg: 635,
     },

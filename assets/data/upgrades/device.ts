@@ -55,8 +55,8 @@ const t: UpgradeBase[] = [
         ffg: 393,
       },
     ],
-    cost: { value: 6 },
-    hyperspace: false,
+    cost: { value: 5 },
+    hyperspace: true,
     epic: true,
   },
   {
@@ -200,7 +200,7 @@ const t: UpgradeBase[] = [
     hyperspace: false,
     epic: true,
     restrictions: [{ action: { type: 'Reload' } }],
-    cost: { value: 12 },
+    cost: { value: 11 },
   },
   {
     name: 'Cluster Mines',
@@ -248,7 +248,7 @@ const t: UpgradeBase[] = [
     ],
     hyperspace: true,
     epic: true,
-    cost: { value: 6 },
+    cost: { value: 5 },
   },
 ];
 

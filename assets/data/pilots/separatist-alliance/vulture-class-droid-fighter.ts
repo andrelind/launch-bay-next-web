@@ -55,7 +55,7 @@ const t: ShipType = {
         'https://sb-cdn.fantasyflightgames.com/card_images/en/4d8ed38f907fb4869611add738abda11.png',
       hyperspace: true,
       epic: true,
-      cost: 19,
+      cost: 20,
       slots: ['Missile', 'Modification', 'Configuration'],
       ffg: 498,
       artwork:
@@ -146,7 +146,7 @@ const t: ShipType = {
         'https://sb-cdn.fantasyflightgames.com/card_images/en/64e75b9a1024ac0c909634e62e165b2e.png',
       hyperspace: true,
       epic: true,
-      cost: 21,
+      cost: 22,
       slots: ['Missile', 'Modification', 'Configuration'],
       ffg: 497,
       artwork:

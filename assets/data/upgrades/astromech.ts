@@ -87,7 +87,7 @@ const t: UpgradeBase[] = [
         ffg: 324,
       },
     ],
-    cost: { variable: 'agility', values: { '0': 4, '1': 6, '2': 8, '3': 10 } },
+    cost: { variable: 'agility', values: { '0': 4, '1': 6, '2': 8, '3': 12 } },
     restrictions: [{ factions: ['Rebel Alliance'] }],
     hyperspace: true,
     epic: true,
@@ -328,7 +328,7 @@ const t: UpgradeBase[] = [
       values: { '0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6 },
     },
     restrictions: [{ factions: ['Resistance'] }],
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
   },
   {
@@ -351,7 +351,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 7 },
     restrictions: [{ factions: ['Resistance'] }],
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
   },
   {
@@ -374,7 +374,7 @@ const t: UpgradeBase[] = [
     restrictions: [{ factions: ['Galactic Republic'] }],
     hyperspace: true,
     epic: true,
-    cost: { value: 4 },
+    cost: { value: 2 },
   },
   {
     name: 'R4-P17',
@@ -417,7 +417,7 @@ const t: UpgradeBase[] = [
     restrictions: [{ factions: ['Galactic Republic'] }],
     hyperspace: false,
     epic: true,
-    cost: { value: 5 },
+    cost: { value: 3 },
   },
   {
     name: 'R2-C4',

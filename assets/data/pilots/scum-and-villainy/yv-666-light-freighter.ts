@@ -41,7 +41,7 @@ const t: ShipType = {
       caption: 'Fearsome Hunter',
       initiative: 4,
       limited: 1,
-      cost: 62,
+      cost: 60,
       xws: 'bossk',
       ability:
         'While you perform a primary attack, after the Neutralize Results step, you may spend 1 [Critical Hit] result to add 2 [Hit] results.',
@@ -68,7 +68,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_210.jpg',
       ffg: 210,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -76,7 +76,7 @@ const t: ShipType = {
       caption: 'Martial Artist',
       initiative: 3,
       limited: 1,
-      cost: 57,
+      cost: 56,
       xws: 'lattsrazzi',
       ability:
         'At the start of the Engagement Phase, you may choose a ship at range 1 and spend a lock you have on that ship. If you do, that ship gains 1 tractor token.',
@@ -96,7 +96,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_212.jpg',
       ffg: 212,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -132,7 +132,7 @@ const t: ShipType = {
       name: 'Trandoshan Slaver',
       initiative: 2,
       limited: 0,
-      cost: 52,
+      cost: 51,
       xws: 'trandoshanslaver',
       text:
         'The spacious triple-decker design of the YV-666 makes it popular among bounty hunters and slavers, who often retrofit an entire deck for prisoner transport.',

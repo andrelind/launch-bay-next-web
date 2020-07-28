@@ -160,7 +160,7 @@ const t: ShipType = {
       xws: 'sienarjaemusengineer',
       initiative: 1,
       limited: 0,
-      cost: 51,
+      cost: 48,
       text:
         'Developed by Sienar-Jaemus Fleet Systems as a successor to the vaunted TIE Defender, the TIE/vn Silencer incorporates bleeding-edge technologies developed at research facilities hidden in the Unknown Regions.',
       shipAbility: {

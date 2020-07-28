@@ -95,7 +95,7 @@ const t: ShipType = {
       cost: 55,
       xws: 'norrawexley',
       ability:
-        'While you defend, if there is an enemy ship at range 0-1, you may add 1 [Evade] result to your dice results.',
+        'While you defend, if there is an enemy ship at range 0-1, add 1 [Evade] result to your dice results.',
       image:
         'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_65.png',
       slots: [

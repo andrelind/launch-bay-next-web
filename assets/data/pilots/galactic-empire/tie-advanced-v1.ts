@@ -55,7 +55,7 @@ const t: ShipType = {
       name: 'Baron of the Empire',
       initiative: 3,
       limited: 0,
-      cost: 30,
+      cost: 28,
       xws: 'baronoftheempire',
       text:
         "Sienar Fleet System's TIE Advanced v1 is a groundbreaking starfighter design, featuring upgraded engines, a missile launcher, and folding s-foils.",
@@ -65,7 +65,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_101.jpg',
       ffg: 101,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -91,7 +91,7 @@ const t: ShipType = {
       name: 'Inquisitor',
       initiative: 3,
       limited: 0,
-      cost: 35,
+      cost: 36,
       xws: 'inquisitor',
       text:
         "The fearsome Inquisitors are given a great deal of autonomy and access to the Empire's latest technology, like the prototype TIE Advanced v1.",
@@ -121,7 +121,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_100.jpg',
       ffg: 100,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -137,7 +137,7 @@ const t: ShipType = {
         'https://sb-cdn.fantasyflightgames.com/card_images/en/01a02a00ef5aad21bc1f0a58028136ec.png',
       force: { value: 2, recovers: 1, side: ['dark'] },
       slots: ['Force Power', 'Sensor', 'Missile'],
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
       ffg: 632,
     },

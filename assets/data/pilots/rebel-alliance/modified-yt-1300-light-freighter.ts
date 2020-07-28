@@ -44,7 +44,7 @@ const t: ShipType = {
       caption: 'The Mighty',
       initiative: 4,
       limited: 1,
-      cost: 71,
+      cost: 70,
       xws: 'chewbacca',
       ability:
         'Before you would be dealt a faceup damage card, you may spend 1 [Charge] to be dealt the card facedown instead.',
@@ -72,7 +72,7 @@ const t: ShipType = {
       caption: 'Scoundrel for Hire',
       initiative: 6,
       limited: 1,
-      cost: 80,
+      cost: 79,
       xws: 'hansolo-modifiedyt1300lightfreighter',
       ability:
         'After you roll dice, if you are at range 0-1 of an obstacle, you may reroll all of your dice. This does not count as rerolling for the purpose of other effects.',
@@ -99,7 +99,7 @@ const t: ShipType = {
       caption: 'General of the Alliance',
       initiative: 5,
       limited: 1,
-      cost: 79,
+      cost: 78,
       xws: 'landocalrissian-modifiedyt1300lightfreighter',
       ability:
         'After you fully execute a blue maneuver, you may choose a friendly ship at range 0-3. That ship may perform an action.',
@@ -167,7 +167,7 @@ const t: ShipType = {
       ],
       ability:
         'After a friendly ship fully executes a red maneuver, if it is at range 0-3, you may spend 1 [Force]. If you do, that ship gains 1 focus token or recovers 1 [Force].',
-      cost: 79,
+      cost: 77,
       ffg: 630,
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/dc207b5c5f00a98e0fad8dc3905373f9.jpg',

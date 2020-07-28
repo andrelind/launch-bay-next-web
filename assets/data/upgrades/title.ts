@@ -104,7 +104,7 @@ const t: UpgradeBase[] = [
       { factions: ['Rebel Alliance'] },
       { chassis: ['vcx100lightfreighter'] },
     ],
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
   },
   {
@@ -159,7 +159,7 @@ const t: UpgradeBase[] = [
       { factions: ['Scum and Villainy'] },
       { chassis: ['yv666lightfreighter'] },
     ],
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
   },
   {
@@ -197,10 +197,10 @@ const t: UpgradeBase[] = [
         title: "Lando's Millennium Falcon",
         type: 'Title',
         ability:
-          '1 Escape Craft may dock with you. While you have an escape craft docked, you may spend its shields as if they were on your ship card. While you perform a primary attack against a stressed ship, roll 1 additional attack die.',
+          '1 Escape Craft may dock with you. While you have an escape craft docked, you may treat its shields as if they were on your ship card. While you perform a primary attack against a stressed ship, roll 1 additional attack die.',
         slots: ['Title'],
         image:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_164.png',
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/96b50606e65bfe308b9e75a03d9a1884.png',
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_164.jpg',
         ffg: 390,
@@ -211,7 +211,7 @@ const t: UpgradeBase[] = [
       { factions: ['Scum and Villainy'] },
       { chassis: ['customizedyt1300lightfreighter'] },
     ],
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
   },
   {
@@ -238,7 +238,7 @@ const t: UpgradeBase[] = [
       { factions: ['Scum and Villainy'] },
       { chassis: ['firesprayclasspatrolcraft'] },
     ],
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
   },
   {
@@ -332,7 +332,7 @@ const t: UpgradeBase[] = [
         title: 'Outrider',
         type: 'Title',
         ability:
-          'While you perform an obstructed attack, the defender rolls 1 fewer defense die. After you fully execute a maneuver, if you moved through or overlapped an obstacle, you may remove 1 of your red or orange tokens.',
+          'While you perform an attack that is obstructed by an obstacle, the defender rolls 1 fewer defense die. After you fully execute a maneuver, if you moved through or overlapped an obstacle, you may remove 1 of your red or orange tokens.',
         image:
           'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_105.png',
         slots: ['Title'],
@@ -371,7 +371,7 @@ const t: UpgradeBase[] = [
       { factions: ['Rebel Alliance'] },
       { chassis: ['attackshuttle', 'sheathipedeclassshuttle'] },
     ],
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
   },
   {
@@ -475,7 +475,7 @@ const t: UpgradeBase[] = [
         ffg: 379,
       },
     ],
-    cost: { value: 1 },
+    cost: { value: 5 },
     restrictions: [
       { factions: ['Scum and Villainy'] },
       { chassis: ['firesprayclasspatrolcraft'] },
@@ -558,7 +558,7 @@ const t: UpgradeBase[] = [
       { factions: ['Separatist Alliance'] },
       { chassis: ['belbullab22starfighter'] },
     ],
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
     cost: { value: 6 },
   },
@@ -1092,7 +1092,7 @@ const t: UpgradeBase[] = [
         title: "Kaz's Fireball",
         type: 'Title',
         ability:
-          'Before you resolve <strong>Explosion with Wings</strong>, you may search the damage deck and choose a damage card. You are dealt that card. Then shuffle the deck.',
+          '<strong>Setup:</strong> When you resolve <strong>Explosion with Wings</strong>, you may search the damage deck and choose a damage card with the <strong>Ship</strong> trait, you are dealt that card instead. Then, shuffle the damage deck.\n\nYou can perform actions on damage cards even when ionized.',
         slots: ['Title'],
         ffg: 655,
         image:

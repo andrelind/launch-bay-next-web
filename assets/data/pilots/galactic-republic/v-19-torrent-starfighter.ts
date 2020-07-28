@@ -52,7 +52,7 @@ const t: ShipType = {
         'https://sb-cdn.fantasyflightgames.com/card_images/en/76c1228dd4c70dc4e56ac99284a11b0f.png',
       hyperspace: false,
       epic: true,
-      cost: 33,
+      cost: 30,
       slots: ['Talent', 'Missile', 'Modification'],
       ffg: 517,
       artwork:
@@ -68,9 +68,9 @@ const t: ShipType = {
         'After you fully execute a red maneuver or perform a red action, if there is an enemy ship in your [Bullseye Arc], you may acquire a lock on that ship.',
       image:
         'https://sb-cdn.fantasyflightgames.com/card_images/en/9ecf7600f20da9a9eff5d3e244934ccb.png',
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
-      cost: 34,
+      cost: 31,
       slots: ['Talent', 'Missile', 'Modification'],
       ffg: 516,
       artwork:
@@ -86,9 +86,9 @@ const t: ShipType = {
         'After a friendly small or medium ship fully executes a speed 3-4 maneuver, if it is at range 0-1, it may perform a red [Boost] action.',
       image:
         'https://sb-cdn.fantasyflightgames.com/card_images/en/8ae255235c0c1d3892344fb43fcab773.png',
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
-      cost: 31,
+      cost: 28,
       slots: ['Talent', 'Missile', 'Modification'],
       ffg: 519,
       artwork:
@@ -106,7 +106,7 @@ const t: ShipType = {
         'https://sb-cdn.fantasyflightgames.com/card_images/en/89ade203dec6b0fa5ed6360aae3b3022.png',
       hyperspace: false,
       epic: true,
-      cost: 32,
+      cost: 29,
       slots: ['Talent', 'Missile', 'Modification'],
       ffg: 518,
       artwork:
@@ -122,9 +122,9 @@ const t: ShipType = {
         'After a friendly ship at range 1-2 performs an attack against an enemy ship in your [Front Arc], you may perform a [Focus] action.',
       image:
         'https://sb-cdn.fantasyflightgames.com/card_images/en/a457cc2ab3038736cb37541ad94b9b34.png',
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
-      cost: 29,
+      cost: 27,
       slots: ['Missile', 'Modification'],
       ffg: 520,
       artwork:
@@ -139,9 +139,9 @@ const t: ShipType = {
         "Blue Squadron's elite clone pilots are trained to fly their V-19s in conjunction with Jedi and often support famous commanders such as Anakin Skywalker and Ahsoka Tano.",
       image:
         'https://sb-cdn.fantasyflightgames.com/card_images/en/77b2dfdca20865d8d667c41539a7356e.png',
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
-      cost: 27,
+      cost: 26,
       slots: ['Talent', 'Missile', 'Modification'],
       ffg: 521,
       artwork:

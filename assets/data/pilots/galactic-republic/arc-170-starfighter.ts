@@ -75,7 +75,7 @@ const t: ShipType = {
     {
       name: '"Odd Ball"',
       xws: 'oddball-arc170starfighter',
-      cost: 51,
+      cost: 49,
       slots: [
         'Talent',
         'Torpedo',
