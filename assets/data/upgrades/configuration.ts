@@ -228,7 +228,7 @@ const t: UpgradeBase[] = [
     ],
     cost: {
       variable: 'initiative',
-      values: { '0': 14, '1': 15, '2': 16, '3': 17, '4': 18, '5': 19, '6': 20 },
+      values: { '0': 14, '1': 15, '2': 16, '3': 15, '4': 18, '5': 21, '6': 24 },
     },
     restrictions: [{ chassis: ['delta7aethersprite'] }],
     hyperspace: false,
