@@ -25,8 +25,8 @@ const t: ShipType = {
     { arc: 'Front Arc', type: 'attack', value: 3 },
     { type: 'agility', value: 0 },
     { type: 'hull', value: 12 },
-    { type: 'shields', value: 4, recovers: 2 },
-    { type: 'energy', value: 4, recovers: 2 },
+    { type: 'shields', value: 4, recovers: 1 },
+    { type: 'energy', value: 4, recovers: 1 },
   ],
   actions: [
     { difficulty: 'White', type: 'Focus' },
