@@ -59,7 +59,7 @@ const t: ShipType = {
       caption: 'Clone Wars Veteran',
       initiative: 2,
       limited: 1,
-      cost: 30,
+      cost: 29,
       xws: 'captainrex',
       ability:
         'After you perform an attack, assign the Suppressive Fire condition to the defender.',
@@ -78,7 +78,7 @@ const t: ShipType = {
       caption: 'Spectre-6',
       initiative: 3,
       limited: 1,
-      cost: 31,
+      cost: 30,
       xws: 'ezrabridger-tielnfighter',
       ability:
         'While you defend or perform an attack, if you are stressed, you may spend 1 [Force] to change up to 2 of your [Focus] results to [Evade] or [Hit] results.',
@@ -97,7 +97,7 @@ const t: ShipType = {
       caption: 'Spectre-5',
       initiative: 3,
       limited: 1,
-      cost: 29,
+      cost: 28,
       xws: 'sabinewren-tielnfighter',
       ability:
         'Before you activate, you may perform a [Barrel Roll] or [Boost] action.',

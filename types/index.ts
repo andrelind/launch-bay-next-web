@@ -225,6 +225,7 @@ export type Squadron = {
   favourite: boolean;
   wins: number;
   losses: number;
+  tags?: string[];
   created: Date;
   ships: Ship[];
   version?: string;
@@ -315,6 +316,7 @@ export type SquadronXWS = {
   cost: number;
   faction: Faction;
   favourite: boolean;
+  tags?: string[];
   format: Format;
   wins?: number;
   losses?: number;
@@ -394,4 +396,31 @@ export type Opponent = {
   name: string | undefined;
   score: number | undefined;
   squadron: Squadron | undefined;
+};
+
+export type PilotChange = {
+  xws: string;
+  chassis: string;
+  faction: Faction;
+  prev: {
+    cost: number;
+    hyperspace: boolean;
+  };
+  current: {
+    cost: number;
+    hyperspace: boolean;
+  };
+};
+
+export type UpgradeChange = {
+  xws: string;
+  slot: Slot;
+  prev: {
+    cost: UpgradeCost;
+    hyperspace: boolean;
+  };
+  current: {
+    cost: UpgradeCost;
+    hyperspace: boolean;
+  };
 };

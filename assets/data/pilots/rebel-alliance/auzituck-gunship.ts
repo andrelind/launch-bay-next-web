@@ -40,7 +40,7 @@ const t: ShipType = {
       name: 'Kashyyyk Defender',
       initiative: 1,
       limited: 0,
-      cost: 44,
+      cost: 42,
       xws: 'kashyyykdefender',
       text:
         'Equipped with three wide-range Sureggi twin laser cannons, the Auzituck gunship acts as a powerful deterrent to slaver operations in the Kashyyyk system.',
@@ -58,7 +58,7 @@ const t: ShipType = {
       caption: 'Escaped Gladiator',
       initiative: 3,
       limited: 1,
-      cost: 52,
+      cost: 51,
       xws: 'lowhhrick',
       ability:
         'After a friendly ship at range 0-1 becomes the defender, you may spend 1 reinforce token. If you do, that ship gains 1 evade token.',
@@ -76,7 +76,7 @@ const t: ShipType = {
       caption: 'Wookiee Chief',
       initiative: 4,
       limited: 1,
-      cost: 56,
+      cost: 54,
       xws: 'wullffwarro',
       ability:
         'While you perform a primary attack, if you are damaged, you may roll 1 additional attack die.',

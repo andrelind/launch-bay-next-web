@@ -63,7 +63,7 @@ const t: ShipType = {
       caption: 'Defiant Duelist',
       initiative: 6,
       limited: 1,
-      cost: 45,
+      cost: 47,
       xws: 'quickdraw',
       ability:
         'After you lose a shield, you may spend 1 [Charge]. If you do, you may perform a bonus primary attack.',
@@ -153,7 +153,7 @@ const t: ShipType = {
       name: 'Lieutenant LeHuse',
       initiative: 5,
       limited: 1,
-      cost: 39,
+      cost: 38,
       xws: 'lieutenantlehuse',
       text:
         "While you perform an attack, you may spend another friendly ship's lock on the defender to reroll any number of your results.",

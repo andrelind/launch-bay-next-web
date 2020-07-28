@@ -66,7 +66,7 @@ const t: ShipType = {
       caption: 'Heavy Hitter',
       initiative: 4,
       limited: 1,
-      cost: 42,
+      cost: 40,
       xws: 'mirandadoni',
       ability:
         'While you perform a primary attack, you may either spend 1 shield to roll 1 additional attack die or, if you are not shielded, you may roll 1 fewer attack die to recover 1 shield.',

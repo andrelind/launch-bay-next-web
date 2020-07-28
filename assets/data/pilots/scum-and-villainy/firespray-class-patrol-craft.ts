@@ -45,7 +45,7 @@ const t: ShipType = {
       caption: 'Notorious Bounty Hunter',
       initiative: 5,
       limited: 1,
-      cost: 85,
+      cost: 86,
       xws: 'bobafett',
       ability:
         'While you defend or perform an attack, you may reroll 1 of your dice for each enemy ship at range 0-1.',

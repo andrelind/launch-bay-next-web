@@ -8,7 +8,7 @@ import tieadvancedx1 from './tie-advanced-x1';
 import tieagaggressor from './tie-ag-aggressor';
 import tiecapunisher from './tie-ca-punisher';
 import tieddefender from './tie-d-defender';
-import tieininterceptor from './tie-interceptor';
+import tieininterceptor from './tie-in-interceptor';
 import tielnfighter from './tie-ln-fighter';
 import tiephphantom from './tie-ph-phantom';
 import tiereaper from './tie-reaper';

@@ -28,8 +28,8 @@ const t: UpgradeBase[] = [
         ffg: 260,
       },
     ],
-    cost: { value: 3 },
-    hyperspace: false,
+    cost: { value: 2 },
+    hyperspace: true,
     epic: true,
   },
   {

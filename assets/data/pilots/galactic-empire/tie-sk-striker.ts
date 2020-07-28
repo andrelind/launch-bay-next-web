@@ -41,7 +41,7 @@ const t: ShipType = {
       caption: 'Death Defier',
       initiative: 4,
       limited: 1,
-      cost: 44,
+      cost: 43,
       xws: 'countdown',
       ability:
         'While you defend, after the Neutralize Results step, if you are not stressed, you may suffer 1 [Hit] damage and gain 1 stress token. If you do, cancel all dice results.',
@@ -64,7 +64,7 @@ const t: ShipType = {
       caption: 'Urbane Ace',
       initiative: 5,
       limited: 1,
-      cost: 42,
+      cost: 44,
       xws: 'duchess',
       ability:
         'You may choose not to use your Adaptive Ailerons. You may use your Adaptive Ailerons even while stressed.',
@@ -87,7 +87,7 @@ const t: ShipType = {
       caption: 'Confident Gambler',
       initiative: 4,
       limited: 1,
-      cost: 44,
+      cost: 43,
       xws: 'puresabacc',
       ability:
         'While you perform an attack, if you have 1 or fewer damage cards, you may roll 1 additional attack die.',
@@ -106,31 +106,10 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: '"Vagabond"',
-      caption: 'Destitute Demolitionist',
-      initiative: 2,
-      limited: 1,
-      cost: 35,
-      xws: 'vagabond',
-      ability:
-        'After you fully execute a maneuver using your Adaptive Ailerons, if you are not stressed, you may drop 1 device.',
-      shipAbility: {
-        name: 'Adaptive Ailerons',
-        text:
-          'Before you reveal your dial, if you are not stressed, you must execute a white (1 [Bank Left]), (1 [Straight]), or (1 [Bank Right]) maneuver.',
-      },
-      slots: ['Talent', 'Gunner', 'Device', 'Modification'],
-      hyperspace: true,
-      epic: true,
-      ffg: 633,
-      image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/en/e1b12f8287593ebaf960561c2febffe4.png',
-    },
-    {
       name: 'Black Squadron Scout',
       initiative: 3,
       limited: 0,
-      cost: 34,
+      cost: 33,
       xws: 'blacksquadronscout',
       text:
         'These heavily armed atmospheric craft employ their specialized moveable wings to gain additional speed and maneuverability.',
@@ -169,6 +148,27 @@ const t: ShipType = {
       ffg: 121,
       hyperspace: true,
       epic: true,
+    },
+    {
+      name: '"Vagabond"',
+      caption: 'Destitute Demolitionist',
+      initiative: 2,
+      limited: 1,
+      cost: 34,
+      xws: 'vagabond',
+      ability:
+        'After you fully execute a maneuver using your Adaptive Ailerons, if you are not stressed, you may drop 1 device.',
+      shipAbility: {
+        name: 'Adaptive Ailerons',
+        text:
+          'Before you reveal your dial, if you are not stressed, you must execute a white (1 [Bank Left]), (1 [Straight]), or (1 [Bank Right]) maneuver.',
+      },
+      slots: ['Talent', 'Gunner', 'Device', 'Modification'],
+      hyperspace: true,
+      epic: true,
+      ffg: 633,
+      image:
+        'https://sb-cdn.fantasyflightgames.com/card_images/en/e1b12f8287593ebaf960561c2febffe4.png',
     },
   ],
 };

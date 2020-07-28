@@ -68,10 +68,6 @@ export const t: Source[] = [
         rearadmiralchiraneau: 1,
         captainoicunn: 1,
         patrolleader: 2,
-        vedfoslo: 1,
-        delmeeko: 1,
-        gideonhask: 1,
-        seynmarana: 1
       },
       upgrades: {
         crackshot: 3,

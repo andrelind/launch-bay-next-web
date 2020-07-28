@@ -45,7 +45,7 @@ const t: ShipType = {
       caption: 'Contingency Planner',
       initiative: 2,
       limited: 1,
-      cost: 29,
+      cost: 28,
       xws: 'doubleedge',
       ability:
         'After you perform a [Turret] or [Missile] attack that misses, you may perform a bonus attack using a different weapon.',
@@ -70,7 +70,7 @@ const t: ShipType = {
       caption: 'Innate Deadeye',
       initiative: 4,
       limited: 1,
-      cost: 31,
+      cost: 30,
       xws: 'lieutenantkestal',
       ability:
         "While you perform an attack, after the defender rolls defense dice, you may spend 1 focus token to cancel all of the defender's blank/[Focus] results.",

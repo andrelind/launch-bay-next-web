@@ -51,7 +51,7 @@ const t: ShipType = {
       caption: 'Outer Rim Mercenary',
       initiative: 4,
       limited: 1,
-      cost: 33,
+      cost: 31,
       xws: 'dacebonearm',
       ability:
         'After an enemy ship at range 0-3 receives at least 1 ion token, you may spend 3 [Charge]. If you do, that ship gains 2 additional ion tokens.',
@@ -103,7 +103,7 @@ const t: ShipType = {
       name: 'Spice Runner',
       initiative: 1,
       limited: 0,
-      cost: 30,
+      cost: 28,
       xws: 'spicerunner',
       text:
         'Though its cargo space is limited compared to other light freighters, the small, swift HWK-290 is a favorite choice of smugglers who specialize in discreetly transporting precious goods.',

@@ -48,7 +48,7 @@ const t: ShipType = {
         'https://sb-cdn.fantasyflightgames.com/card_images/en/6b6a3bb8049699e2d66fe09531e8bc00.png',
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/514351d5c41a8341ea5da5673269d917.jpg',
-      cost: 52,
+      cost: 51,
       slots: [
         'Sensor',
         'Tech',
@@ -75,7 +75,7 @@ const t: ShipType = {
         'https://sb-cdn.fantasyflightgames.com/card_images/en/b386dc25736682ebc785b15551de903b.png',
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/d927ccf08a9444340378449fe71e9f70.jpg',
-      cost: 54,
+      cost: 52,
       slots: [
         'Sensor',
         'Tech',
@@ -102,7 +102,7 @@ const t: ShipType = {
         'https://sb-cdn.fantasyflightgames.com/card_images/en/0d494986a24e6c55efae066a43161b0d.png',
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/511b878f719e9fa59a50cdf980d10ead.jpg',
-      cost: 56,
+      cost: 54,
       slots: [
         'Sensor',
         'Tech',
@@ -129,7 +129,7 @@ const t: ShipType = {
         'https://sb-cdn.fantasyflightgames.com/card_images/en/c9189c7e510b4d734d4d78c4f595010f.png',
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/74ca7444aec38cb0034b67b04f6aaa76.jpg',
-      cost: 58,
+      cost: 56,
       conditions: ['rattled'],
       slots: [
         'Sensor',
@@ -157,7 +157,7 @@ const t: ShipType = {
         'https://sb-cdn.fantasyflightgames.com/card_images/en/f58fe0b57dc4a9c878627f0fea9cf1ef.png',
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/bbac51ca4ba44f26d90a53b6c5db5e2c.jpg',
-      cost: 60,
+      cost: 58,
       slots: [
         'Sensor',
         'Tech',
@@ -184,7 +184,7 @@ const t: ShipType = {
         'https://sb-cdn.fantasyflightgames.com/card_images/en/43d9a0555f719a4cbe1ffe905fd38c46.png',
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/dafd2937accc362f766ca0da3308ccbc.jpg',
-      cost: 60,
+      cost: 58,
       slots: [
         'Sensor',
         'Tech',
@@ -207,7 +207,7 @@ const t: ShipType = {
       xws: 'paigetico',
       ability:
         'After you drop a device, you may spend 1 [Charge] to drop an additional device.',
-      cost: 60,
+      cost: 58,
       charges: { value: 1, recovers: 1 },
       slots: [
         'Talent',

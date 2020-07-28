@@ -52,7 +52,7 @@ const t: ShipType = {
       text:
         'Designed for the unique physiology of Geonosian pilots, Nantex-class starfighters are capable of maneuvers that would rip most ships—and pilots—apart.',
       slots: ['Talent'],
-      cost: 34,
+      cost: 29,
       ffg: 609,
       image:
         'https://sb-cdn.fantasyflightgames.com/card_images/en/e97a0ae22847e0b71d920a0df9dfcfab.png',
@@ -72,7 +72,7 @@ const t: ShipType = {
       hyperspace: true,
       epic: true,
       slots: ['Talent', 'Talent'],
-      cost: 54,
+      cost: 45,
       ffg: 604,
       caption: "Archduke's Enforcer",
       image:
@@ -93,7 +93,7 @@ const t: ShipType = {
       hyperspace: true,
       epic: true,
       slots: ['Talent', 'Talent'],
-      cost: 40,
+      cost: 36,
       ffg: 605,
       caption: 'Hive Guard Captain',
       image:
@@ -114,7 +114,7 @@ const t: ShipType = {
       hyperspace: true,
       epic: true,
       slots: ['Talent', 'Talent'],
-      cost: 39,
+      cost: 34,
       ffg: 606,
       caption: 'Opportunistic Ace',
       image:
@@ -135,7 +135,7 @@ const t: ShipType = {
       hyperspace: true,
       epic: true,
       slots: ['Talent', 'Modification'],
-      cost: 36,
+      cost: 28,
       ffg: 607,
       caption: 'Handy Engineer',
       image:
@@ -143,7 +143,7 @@ const t: ShipType = {
     },
     {
       name: 'Petranaki Arena Ace',
-      cost: 38,
+      cost: 30,
       ffg: 608,
       initiative: 4,
       artwork:

@@ -441,12 +441,6 @@
       "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_TIEAdvancedPrototype.png"
     },
     {
-      "id": 62,
-      "name": "V-19 Torrent Starfighter",
-      "description": "",
-      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_V-19Torrent.png"
-    },
-    {
       "id": 59,
       "name": "<italic>Vulture</italic>-class Droid Fighter",
       "description": "",
@@ -463,6 +457,12 @@
       "name": "Delta-7 <italic>Aethersprite</italic>",
       "description": "",
       "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_Delta-7.png"
+    },
+    {
+      "id": 62,
+      "name": "V-19 Torrent Starfighter",
+      "description": "",
+      "icon": "https://sb-cdn.fantasyflightgames.com/ship_types/I_V-19Torrent.png"
     }
   ],
   "card_stats": [
@@ -752,12 +752,6 @@
   ],
   "upgrade_types": [
     {
-      "id": 5,
-      "name": "Torpedo",
-      "description": "",
-      "font_icon": "0xF204F"
-    },
-    {
       "id": 1,
       "name": "Talent",
       "description": "",
@@ -780,6 +774,12 @@
       "name": "Turret",
       "description": "",
       "font_icon": "0xF204E"
+    },
+    {
+      "id": 5,
+      "name": "Torpedo",
+      "description": "",
+      "font_icon": "0xF204F"
     },
     {
       "id": 6,

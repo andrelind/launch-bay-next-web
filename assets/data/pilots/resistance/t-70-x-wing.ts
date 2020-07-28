@@ -55,7 +55,7 @@ const t: ShipType = {
         'https://sb-cdn.fantasyflightgames.com/card_images/en/14c504c0815213a66010c4013d9296ee.png',
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/cb8efd0b723b8ceb0c35b7a64b309bf2.jpg',
-      cost: 68,
+      cost: 67,
       charges: { value: 1, recovers: 1 },
       slots: [
         'Talent',
@@ -176,7 +176,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/ff73537d7ab2f063e7a510c05013269e.jpg',
       ffg: 419,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -191,7 +191,7 @@ const t: ShipType = {
         text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
         slotOptions: ['Cannon', 'Torpedo', 'Missile'],
       },
-      cost: 51,
+      cost: 49,
       slots: [
         'Talent',
         'Tech',

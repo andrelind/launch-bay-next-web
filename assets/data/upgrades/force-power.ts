@@ -192,7 +192,7 @@ const t: UpgradeBase[] = [
     ],
     cost: {
       variable: 'initiative',
-      values: { '0': 0, '1': 2, '2': 4, '3': 6, '4': 8, '5': 10, '6': 12 },
+      values: { '0': 0, '1': 0, '2': 2, '3': 4, '4': 6, '5': 8, '6': 10 },
     },
     restrictions: [{ factions: ['Galactic Republic'] }],
     hyperspace: true,
@@ -244,7 +244,7 @@ const t: UpgradeBase[] = [
     restrictions: [{ baseSizes: ['Small'] }],
     cost: {
       variable: 'initiative',
-      values: { '1': 3, '2': 3, '3': 4, '4': 7, '5': 10, '6': 13 },
+      values: { '0': 3, '1': 3, '2': 3, '3': 4, '4': 7, '5': 10, '6': 13 },
     },
     hyperspace: false,
     epic: true,

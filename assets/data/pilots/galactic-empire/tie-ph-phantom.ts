@@ -67,7 +67,7 @@ const t: ShipType = {
       caption: 'Soft-Spoken Slayer',
       initiative: 5,
       limited: 1,
-      cost: 57,
+      cost: 60,
       xws: 'whisper',
       ability: 'After you perform an attack that hits, gain 1 evade token.',
       image:

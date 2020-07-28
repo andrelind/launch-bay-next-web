@@ -46,7 +46,7 @@ const t: ShipType = {
       caption: 'Contemplative Commander',
       initiative: 4,
       limited: 1,
-      cost: 84,
+      cost: 82,
       xws: 'colonelvessery',
       ability:
         'While you perform an attack against a locked ship, after you roll attack dice, you may acquire a lock on the defender.',
@@ -69,7 +69,7 @@ const t: ShipType = {
       caption: 'Cutthroat Politico',
       initiative: 4,
       limited: 1,
-      cost: 82,
+      cost: 80,
       xws: 'countessryad',
       ability:
         'While you would execute a [Straight] maneuver, you may increase the difficulty of the maneuver. If you do, execute it as a [Koiogran Turn] maneuver instead.',
@@ -136,7 +136,7 @@ const t: ShipType = {
       caption: 'Onyx Leader',
       initiative: 5,
       limited: 1,
-      cost: 81,
+      cost: 79,
       xws: 'rexlerbrath',
       ability:
         "After you perform an attack that hits, if you are evading, expose 1 of the defender's damage cards.",

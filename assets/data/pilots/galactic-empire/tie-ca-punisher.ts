@@ -47,7 +47,7 @@ const t: ShipType = {
       caption: 'Dexterous Bombardier',
       initiative: 4,
       limited: 1,
-      cost: 44,
+      cost: 43,
       xws: 'deathrain',
       ability: 'After you drop or launch a device, you may perform an action.',
       image:
@@ -73,7 +73,7 @@ const t: ShipType = {
       caption: 'Adrenaline Junkie',
       initiative: 5,
       limited: 1,
-      cost: 52,
+      cost: 51,
       xws: 'redline',
       ability:
         'You can maintain up to 2 locks. After you perform an action, you may acquire a lock.',
@@ -99,7 +99,7 @@ const t: ShipType = {
       name: 'Cutlass Squadron Pilot',
       initiative: 2,
       limited: 0,
-      cost: 36,
+      cost: 35,
       xws: 'cutlasssquadronpilot',
       text:
         "The TIE punisher's design builds upon the success of the TIE bomber, adding shielding, a second bomb chute, and three additional ordnance pods, each equipped with a twin ion engine.",

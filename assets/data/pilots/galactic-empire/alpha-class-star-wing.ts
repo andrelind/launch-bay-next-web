@@ -41,7 +41,7 @@ const t: ShipType = {
       caption: 'Brash Noble',
       initiative: 3,
       limited: 1,
-      cost: 37,
+      cost: 36,
       xws: 'lieutenantkarsabi',
       ability:
         'After you gain a disarm token, if you are not stressed, you may gain 1 stress token to remove 1 disarm token.',
@@ -66,7 +66,7 @@ const t: ShipType = {
       caption: 'Pragmatic Survivor',
       initiative: 4,
       limited: 1,
-      cost: 41,
+      cost: 40,
       xws: 'majorvynder',
       ability:
         'While you defend, if you are disarmed, roll 1 additional defense die.',
@@ -107,7 +107,7 @@ const t: ShipType = {
       name: 'Rho Squadron Pilot',
       initiative: 3,
       limited: 0,
-      cost: 35,
+      cost: 34,
       xws: 'rhosquadronpilot',
       text:
         'The elite pilots of Rho Squadron instill terror in the Rebellion, using both the Xg-1 assault configuration and Os-1 arsenal loadout of the Alpha-class star wing to devastating effect.',

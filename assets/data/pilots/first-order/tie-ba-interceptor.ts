@@ -48,7 +48,7 @@ const t: ShipType = {
       caption: 'Red Baron',
       initiative: 6,
       limited: 1,
-      cost: 57,
+      cost: 55,
       xws: 'majorvonreg',
       ability:
         'During the System Phase, you may choose 1 enemy ship in your [Bullseye Arc]. That ship gains 1 deplete or strain token of your choice.',
@@ -69,7 +69,7 @@ const t: ShipType = {
       caption: 'Trick of the Light',
       initiative: 5,
       limited: 1,
-      cost: 54,
+      cost: 53,
       xws: 'holo',
       ability:
         'At the start of the Engagement Phase, you must transfer 1 of your tokens to another friendly ship at range 0-2.',
@@ -92,7 +92,7 @@ const t: ShipType = {
       caption: 'Dying Flame',
       initiative: 4,
       limited: 1,
-      cost: 52,
+      cost: 48,
       xws: 'ember',
       ability:
         'While you perform an attack, if there is a damaged ship friendly to the defender at range 0-1 of the defender, the defender cannot spend focus or calculate tokens.',
@@ -112,7 +112,7 @@ const t: ShipType = {
       name: 'First Order Provocateur',
       initiative: 3,
       limited: 0,
-      cost: 45,
+      cost: 41,
       xws: 'firstorderprovocateur',
       shipAbility: {
         name: 'Fine-Tuned Thrusters',

@@ -60,7 +60,7 @@ const t: ShipType = {
         'Device',
         'Modification',
       ],
-      cost: 32,
+      cost: 31,
       ffg: 602,
     },
     {
@@ -87,7 +87,7 @@ const t: ShipType = {
         'Device',
         'Modification',
       ],
-      cost: 60,
+      cost: 55,
       ffg: 596,
       caption: 'Hero of the Republic',
       image:
@@ -122,7 +122,7 @@ const t: ShipType = {
         'Device',
         'Modification',
       ],
-      cost: 35,
+      cost: 32,
       ffg: 600,
       caption: 'Bucket of Bolts',
       image:
@@ -152,10 +152,10 @@ const t: ShipType = {
         'Device',
         'Modification',
       ],
-      cost: 44,
+      cost: 42,
       ffg: 597,
       image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/en/3b260355bd12266e08ff25ec16d278fe.png',
+        'https://sb-cdn.fantasyflightgames.com/card_images/en/8f1d65004c763b48293d1324a49c563a.png',
     },
     {
       name: '"Matchstick"',
@@ -227,7 +227,7 @@ const t: ShipType = {
         text:
           'While you defend, if you are not critically damaged, change 1 [Critical Hit] result to a [Hit] result.',
       },
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
       slots: [
         'Turret',
@@ -237,11 +237,11 @@ const t: ShipType = {
         'Device',
         'Modification',
       ],
-      cost: 32,
+      cost: 29,
       ffg: 601,
       caption: 'Payload Specialist',
       image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/en/8ac74252d260a910a7990e6e806aa612.png',
+        'https://sb-cdn.fantasyflightgames.com/card_images/en/3b34b6fc25db55b66654d355c7f514eb.png',
     },
     {
       name: 'Red Squadron Bomber',
@@ -265,7 +265,7 @@ const t: ShipType = {
         'Device',
         'Modification',
       ],
-      cost: 30,
+      cost: 29,
       ffg: 603,
       image:
         'https://sb-cdn.fantasyflightgames.com/card_images/en/692a1f1d4b5f5370dad7cacf2f19d699.png',

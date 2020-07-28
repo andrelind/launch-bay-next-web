@@ -124,7 +124,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_9.jpg',
       ffg: 9,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -222,7 +222,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_8.jpg',
       ffg: 8,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
