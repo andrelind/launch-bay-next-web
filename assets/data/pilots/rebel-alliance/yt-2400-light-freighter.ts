@@ -61,7 +61,14 @@ const t: ShipType = {
         text:
           'While you perform a primary attack at attack range 0-1, do not apply the range 0-1 bonus and roll 1 fewer attack die.',
       },
-      slots: ['Missile', 'Gunner', 'Illicit', 'Modification', 'Title'],
+      slots: [
+        'Talent',
+        'Missile',
+        'Gunner',
+        'Illicit',
+        'Modification',
+        'Title',
+      ],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_78.jpg',
       ffg: 78,

@@ -328,18 +328,6 @@ const t: UpgradeChange[] = [
     current: { cost: { value: 6 }, hyperspace: true },
   },
   {
-    xws: 'hullupgrade',
-    slot: 'Modification',
-    prev: {
-      cost: { variable: 'agility', values: { '0': 2, '1': 3, '2': 5, '3': 7 } },
-      hyperspace: true,
-    },
-    current: {
-      cost: { variable: 'agility', values: { '0': 2, '1': 3, '2': 6, '3': 7 } },
-      hyperspace: true,
-    },
-  },
-  {
     xws: 'connernets',
     slot: 'Device',
     prev: { cost: { value: 6 }, hyperspace: false },

@@ -140,7 +140,7 @@ const t: UpgradeBase[] = [
         ffg: 297,
       },
     ],
-    cost: { variable: 'agility', values: { '0': 2, '1': 3, '2': 6, '3': 7 } },
+    cost: { variable: 'agility', values: { '0': 2, '1': 3, '2': 5, '3': 7 } },
     hyperspace: true,
     epic: true,
   },
