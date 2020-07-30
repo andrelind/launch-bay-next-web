@@ -1,7 +1,12 @@
 import { toggleMinimize } from '@actions/misc';
 import LogoComponent from '@components/logo';
 import SquadronComponent from '@components/squadron';
-import { faCompress, faExpand, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+import {
+  faCompress,
+  faExpand,
+  faMoon,
+  faSun,
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { AppState } from '@store/state';
 import { darkgrey, yellow } from 'assets/colors';
@@ -17,7 +22,14 @@ import { Faction } from 'types';
 import useDarkMode from 'use-dark-mode';
 
 import { factions } from '../../helpers/enums';
-import { Block, ContentWrapper, Footer, Icon, LogoWrapper, RouteButton } from './styles';
+import {
+  Block,
+  ContentWrapper,
+  Footer,
+  Icon,
+  LogoWrapper,
+  RouteButton,
+} from './styles';
 
 type Props = {
   darkMode: boolean;
@@ -150,6 +162,11 @@ const SideBarComponent = ({ darkMode }: Props) => {
               style={{ marginLeft: 5, width: 13, height: 13 }}
             />
           </div>
+        </div>
+        <div
+          style={{ display: 'flex', justifyContent: 'center', marginBottom: 5 }}
+        >
+          <a href={'/privacy'}>Privacy Policy</a>
         </div>
       </Footer>
     </Block>
