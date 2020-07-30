@@ -258,7 +258,7 @@ const t: UpgradeChange[] = [
     current: {
       cost: {
         variable: 'size',
-        values: { Small: 7, Medium: 6, Large: 5, Huge: 200 },
+        values: { Small: 7, Medium: 6, Large: 5, Huge: 4 },
       },
       hyperspace: true,
     },
@@ -270,7 +270,7 @@ const t: UpgradeChange[] = [
     current: {
       cost: {
         variable: 'size',
-        values: { Small: 12, Medium: 9, Large: 7, Huge: 200 },
+        values: { Small: 12, Medium: 9, Large: 7, Huge: 7 },
       },
       hyperspace: false,
     },
@@ -374,24 +374,6 @@ const t: UpgradeChange[] = [
     slot: 'Talent',
     prev: { cost: { value: 5 }, hyperspace: false },
     current: { cost: { value: 4 }, hyperspace: false },
-  },
-  {
-    xws: 'snapshot',
-    slot: 'Talent',
-    prev: {
-      cost: {
-        variable: 'size',
-        values: { Small: 7, Medium: 8, Large: 9, Huge: 200 },
-      },
-      hyperspace: true,
-    },
-    current: {
-      cost: {
-        variable: 'size',
-        values: { Small: 8, Medium: 9, Large: 10, Huge: 200 },
-      },
-      hyperspace: true,
-    },
   },
   {
     xws: 'targetingsynchronizer',

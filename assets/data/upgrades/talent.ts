@@ -613,7 +613,7 @@ const t: UpgradeBase[] = [
     ],
     cost: {
       variable: 'size',
-      values: { Small: 8, Medium: 9, Large: 10, Huge: 200 },
+      values: { Small: 7, Medium: 8, Large: 9, Huge: 12 },
     },
   },
   {

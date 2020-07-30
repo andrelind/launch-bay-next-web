@@ -109,7 +109,17 @@ const t: UpgradeBase[] = [
     ],
     cost: {
       variable: 'initiative',
-      values: { '0': 2, '1': 2, '2': 2, '3': 2, '4': 2, '5': 4, '6': 6 },
+      values: {
+        '0': 2,
+        '1': 2,
+        '2': 2,
+        '3': 2,
+        '4': 2,
+        '5': 4,
+        '6': 6,
+        '7': 8,
+        '8': 10,
+      },
     },
     hyperspace: true,
     epic: true,
