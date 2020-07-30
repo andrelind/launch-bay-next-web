@@ -166,7 +166,9 @@ const SideBarComponent = ({ darkMode }: Props) => {
         <div
           style={{ display: 'flex', justifyContent: 'center', marginBottom: 5 }}
         >
-          <a href={'/privacy'}>Privacy Policy</a>
+          <Link href={'/privacy'}>
+            <RouteButton style={{ height: 20 }}>Privacy Policy</RouteButton>
+          </Link>
         </div>
       </Footer>
     </Block>
