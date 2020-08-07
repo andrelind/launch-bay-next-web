@@ -87,7 +87,7 @@ const t: UpgradeBase[] = [
         ffg: 324,
       },
     ],
-    cost: { variable: 'agility', values: { '0': 4, '1': 6, '2': 8, '3': 12 } },
+    cost: { variable: 'agility', values: { '0': 4, '1': 6, '2': 8, '3': 10 } },
     restrictions: [{ factions: ['Rebel Alliance'] }],
     hyperspace: true,
     epic: true,
@@ -472,6 +472,7 @@ const t: UpgradeBase[] = [
         ability:
           '<strong>Setup</strong>: Equip this side faceup. \n\nAfter you execute a maneuver, you may spend 1 [Charge] to perform a red [Evade] action, even while stressed.\n\nDuring the End Phase, if this card has 0 active [Charge], flip it. ',
         slots: ['Astromech'],
+        charges: { value: 2, recovers: 0 },
         ffg: 618,
         image:
           'https://sb-cdn.fantasyflightgames.com/card_images/en/cde74a191d82775eacf2e273e855ef5f.png',

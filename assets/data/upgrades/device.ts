@@ -241,6 +241,12 @@ const t: UpgradeBase[] = [
         ability:
           'Bomb During the System Phase, you may spend 1 [Charge] to drop an Ion Bomb using the (1 [Straight]) template.',
         slots: ['Device'],
+        device: {
+          name: 'Ion Bombs',
+          type: 'Bomb',
+          effect:
+            'At the end of the Activation Phase, this device detonates.\n\nWhen this device detonates, each ship and remote at range 0-1 gains 3 ion tokens, and each remote at range 0-1 suffers 1 [Hit] damage.',
+        },
         ffg: 649,
         image:
           'https://sb-cdn.fantasyflightgames.com/card_images/en/e4c43791c16aea639f2e811c16d1dbcf.png',
