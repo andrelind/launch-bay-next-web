@@ -53,6 +53,7 @@ const resolvers = {
           await current.save();
           return { success: true };
         } catch (error) {
+          console.error(error);
           return { success: false };
         }
       }
@@ -66,6 +67,7 @@ const resolvers = {
         await object.save();
         return { success: true };
       } catch (error) {
+        console.error(error);
         return { success: false };
       }
     },

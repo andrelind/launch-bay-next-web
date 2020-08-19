@@ -2,10 +2,16 @@ import { SYNC_SQUADS } from 'actions/sync';
 import { USER_DID_LOGIN } from 'actions/user';
 import { call, put, select, takeEvery } from 'redux-saga/effects';
 
-import { ADD_SYNCED_BLUEPRINT, REMOVE_SYNCED_BLUEPRINT } from '../actions/blueprints';
+import {
+  ADD_SYNCED_BLUEPRINT,
+  REMOVE_SYNCED_BLUEPRINT,
+} from '../actions/blueprints';
 import { SET_COLLECTION } from '../actions/collection';
 import { IMPORT_SQUADRON, REMOVE_SQUADRON } from '../actions/squadrons';
-import { ADD_SYNCED_TOURNAMENT, REMOVE_SYNCED_TOURNAMENT } from '../actions/tournaments';
+import {
+  ADD_SYNCED_TOURNAMENT,
+  REMOVE_SYNCED_TOURNAMENT,
+} from '../actions/tournaments';
 import api from '../api';
 import { compareVersions } from '../helpers/versioning';
 import { UserState } from '../reducers/user';
