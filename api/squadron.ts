@@ -10,10 +10,10 @@ export const setSquadron = async (
   }
 
   const query = `mutation ($squadron: SquadronInput!) {
-      set(squadron: $squadron) {
-        success
-      }
-    }`;
+    set(squadron: $squadron) {
+      success
+    }
+  }`;
 
   const s = {
     uid: squadron.uid,
@@ -27,6 +27,7 @@ export const setSquadron = async (
     createdDatestamp: squadron.createdDatestamp,
     wins: squadron.wins || 0,
     losses: squadron.losses || 0,
+    tags: squadron.tags || [],
     pilots: squadron.pilots.map(p => ({
       uid: p.uid,
       name: p.name,
