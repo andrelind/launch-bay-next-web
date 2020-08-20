@@ -48,7 +48,7 @@ module.exports = withBundleAnalyzer(
       };
     },
     env: {
-      MONGODB_URI: process.env.MONGODB_URI,
+      DB_URI: process.env.DB_URI,
       FACEBOOK_ID: process.env.FACEBOOK_ID,
       FACEBOOK_SECRET: process.env.FACEBOOK_SECRET,
       GOOGLE_ID: process.env.GOOGLE_ID,
