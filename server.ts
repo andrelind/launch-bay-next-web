@@ -21,8 +21,8 @@ const handle = n.getRequestHandler();
 // Setup mongoose
 mongoose.set('useCreateIndex', true);
 mongoose.Promise = require('bluebird');
-if (process.env.MONGODB_URI) {
-  mongoose.connect(process.env.MONGODB_URI).then(() => {
+if (process.env.DB_URI) {
+  mongoose.connect(process.env.DB_URI).then(() => {
     console.log('Connected to DB');
   });
 } else {
