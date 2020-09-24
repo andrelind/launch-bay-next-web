@@ -349,6 +349,27 @@
       "description": "Enhance your squadron options and launch new pilots with the <italic>Hotshots and Aces Reinforcements Pack</italic>! With upgrades available to all factions and new pilots for numerous ships in the Rebel, Imperial, Scum, Resistance, and First Order factions, you can now add iconic characters like Leia Organa, Captain Phasma, and K-2SO to your squads.",
       "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ66_HotshotsAndAces.png",
       "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/hotshots-and-aces-reinforcements-pack/"
+    },
+    {
+      "id": 51,
+      "name": "<italic>Xi</italic>-class Shuttle",
+      "description": "The First Order's agents are scattered across the galaxy, from enclaves in the Unknown Regions to pockets of sympathizers within the New Republic. The Xi-class light shuttle is swift and lightly armed, suited to conveying First Order VIPs quickly but surreptitiously from base to base. It can also serve as a command craft, directing forces in raids before the attackers slip away into the depths of space once again.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ69_XiClassShuttle.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/xi-class-light-shuttle-expansion-pack/"
+    },
+    {
+      "id": 52,
+      "name": "Laat/i Gunship",
+      "description": "A durable, reliable workhorse capable of serving in a wide array of environments, the LAAT/i gunship is renowned for getting the job done. Whether making precision drops of clone troopers on contested worlds, supporting Republic formations with interlaced fire in atmospheric battles, or engaging starfighters in the depths of space, the LAAT/i can be outfitted for nearly any role or battlefield.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ70_LAATiGunship.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/laati-gunship-expansion-pack/"
+    },
+    {
+      "id": 53,
+      "name": "HMP Droid Gunship",
+      "description": "A menacing silhouette slides overhead, repulsorlifts humming ominously and eyes glowing with malevolence. The HMP gunship's presence invokes fear thanks to predatory droid intelligence and an unpredictable capacity to strafe targets with devastating missile pods, bombs, and a wide-sweeping array of laser cannons.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ71_HMPGunship.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/hmp-droid-gunship-expansion-pack/"
     }
   ]
 }

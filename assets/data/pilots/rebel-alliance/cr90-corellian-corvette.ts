@@ -1,7 +1,7 @@
 import { ShipType } from '../../../../types';
 
 const t: ShipType = {
-  name: 'CR90 Corellian Corvette',
+  name: { en: 'CR90 Corellian Corvette' },
   xws: 'cr90corelliancorvette',
   size: 'Huge',
   dial: [
@@ -35,20 +35,24 @@ const t: ShipType = {
     { difficulty: 'Red', type: 'Coordinate' },
     { difficulty: 'White', type: 'Jam' },
   ],
+  ability: {
+    name: { en: 'Broadside Batteries' },
+    text: {
+      en: 'You can acquire locks and perform primary attacks at range 1-4.',
+    },
+  },
   pilots: [
     {
-      name: 'Alderaanian Guard',
-      text:
-        'A craft used since before the Clone Wars, the CR90 corvette is favored by the Royal House of Alderaan for its versatility.',
+      name: { en: 'Alderaanian Guard' },
+      text: {
+        en:
+          'A craft used since before the Clone Wars, the CR90 corvette is favored by the Royal House of Alderaan for its versatility.',
+      },
       initiative: 8,
       engagement: 0,
       limited: 0,
       cost: 146,
       xws: 'alderaanianguard',
-      shipAbility: {
-        name: 'Broadside Batteries',
-        text: 'You can acquire locks and perform primary attacks at range 1-4.',
-      },
       slots: [
         'Command',
         'Hardpoint',

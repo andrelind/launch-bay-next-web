@@ -16,7 +16,12 @@ import FormatComponent from '@components/format';
 import { InputComponent } from '@components/input';
 import PilotComponent from '@components/pilot';
 import ShipType from '@components/ship-type';
-import { faCopy, faEdit, faShareSquare, faTimes } from '@fortawesome/free-solid-svg-icons';
+import {
+  faCopy,
+  faEdit,
+  faShareSquare,
+  faTimes,
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button, Menu, MenuItem } from '@material-ui/core';
 import { AppState } from '@store/state';
@@ -42,7 +47,14 @@ import Page from '../components/page';
 import Select from '../components/select';
 import Unit from '../components/unit';
 import { Faction, Ship, Slot, Upgrade } from '../types';
-import { getUpgrades, loadShips, pilotOptions, PilotValue, shipForXws, ShipValue } from './loader';
+import {
+  getUpgrades,
+  loadShips,
+  pilotOptions,
+  PilotValue,
+  shipForXws,
+  ShipValue,
+} from './loader';
 import { renderHardpoint, renderUpgrade } from './render';
 import {
   Block,
@@ -93,14 +105,14 @@ const EditPage = ({ uid, onShowMenu }: Props) => {
   const p: { [s: string]: Slot } = {};
   squadron.ships.forEach(s => {
     if (
-      s.pilot.shipAbility &&
+      s.ability &&
       s.upgrades &&
-      s.pilot.shipAbility.slotOptions &&
-      s.pilot.shipAbility.slotOptions.find(
+      s.ability.slotOptions &&
+      s.ability.slotOptions.find(
         sl => s.upgrades && s.upgrades[keyFromSlot(sl)]
       )
     ) {
-      p[s.uid] = s.pilot.shipAbility.slotOptions.find(
+      p[s.uid] = s.ability.slotOptions.find(
         sl => s.upgrades && s.upgrades[keyFromSlot(sl)]
       );
     }
@@ -256,10 +268,10 @@ const EditPage = ({ uid, onShowMenu }: Props) => {
       <Block>
         {squadron.ships.map((s, i) => {
           const showHardpointPicker =
-            s.pilot.shipAbility &&
+            s.ability &&
             s.upgrades &&
-            s.pilot.shipAbility.slotOptions &&
-            !s.pilot.shipAbility.slotOptions.find(
+            s.ability.slotOptions &&
+            !s.ability.slotOptions.find(
               sl => s.upgrades && s.upgrades[keyFromSlot(sl)]
             );
 

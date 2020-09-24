@@ -5,6 +5,9 @@ import hyenaclassdroidbomber from './hyena-class-droid-bomber';
 import nantexclassstarfighter from './nantex-class-starfighter';
 import sithinfiltrator from './sith-infiltrator';
 import vultureclassdroidfighter from './vulture-class-droid-fighter';
+import droidtrifighter from './droid-tri-fighter';
+import firesprayclasspatrolcraft from './firespray-class-patrol-craft';
+import hmpdroidgunship from './hmp-droid-gunship';
 
 const ships: { [s: string]: ShipType } = {
   belbullab22starfighter,
@@ -13,6 +16,9 @@ const ships: { [s: string]: ShipType } = {
   nantexclassstarfighter,
   sithinfiltrator,
   vultureclassdroidfighter,
+  droidtrifighter,
+  firesprayclasspatrolcraft,
+  hmpdroidgunship,
 };
 
 export default ships;

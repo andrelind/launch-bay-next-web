@@ -19,6 +19,7 @@ import tech from './tech';
 import title from './title';
 import torpedo from './torpedo';
 import turret from './turret';
+import hyperdrive from './hyperdrive';
 
 export default {
   astromech,
@@ -31,6 +32,7 @@ export default {
   forcepower,
   gunner,
   hardpoint,
+  hyperdrive,
   illicit,
   missile,
   modification,

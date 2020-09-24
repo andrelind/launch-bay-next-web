@@ -102,6 +102,7 @@ export const t: Source[] = [
         leiaorgana: 1,
         nomlumb: 1,
         ronithblario: 1,
+        'bossk-z95af4headhunter': 1,
       },
       upgrades: {
         '000': 1,

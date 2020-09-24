@@ -7,6 +7,19 @@ export type Action = {
   };
 };
 
+export type Language = 'de' | 'en' | 'es' | 'fr' | 'it' | 'pl' | 'pt' | 'zh';
+
+export type Translation = {
+  en: string;
+  de?: string;
+  es?: string;
+  fr?: string;
+  it?: string;
+  pl?: string;
+  pt?: string;
+  zh?: string;
+};
+
 export type ActionType =
   | 'Barrel Roll'
   | 'Boost'
@@ -73,20 +86,19 @@ export type FactionKey =
 export type Format = 'Extended' | 'Hyperspace' | 'Epic';
 
 export type Pilot = {
-  name: string;
-  caption?: string;
+  name: Translation;
+  caption?: Translation;
   xws: string;
   cost: number;
   initiative: number;
   limited: number;
-  ability?: string;
-  text?: string;
-  image?: string;
+  ability?: Translation;
+  text?: Translation;
+  image?: Translation;
   artwork?: string;
   slots: Slot[];
   conditions?: string[];
   shipActions?: Action[];
-  shipAbility?: { name: string; text: string; slotOptions?: Slot[] };
   force?: { value: number; recovers: number; side: Side[] };
   charges?: { value: number; recovers: number };
   sides?: Side[];
@@ -109,7 +121,7 @@ export type Restrictions = {
   factions?: Faction[];
   sides?: Side[];
   solitary?: boolean;
-  initiative?: number;
+  initiative?: { min?: number; max?: number };
   stat?: { type: StatType; value: number };
   'non-limited'?: boolean;
 };
@@ -133,13 +145,18 @@ export type ShipType = ShipBase & {
 };
 
 export type ShipBase = {
-  name: string;
+  name: Translation;
   xws: string;
   size: Size;
   dial: string[];
   faction: Faction;
   stats: Stat[];
   actions: Action[];
+  ability?: {
+    name: Translation;
+    text: Translation;
+    slotOptions?: Slot[];
+  };
   available?: number;
   ffg?: number;
   icon?: string | void;
@@ -157,6 +174,7 @@ export type Slot =
   | 'Force Power'
   | 'Gunner'
   | 'Hardpoint'
+  | 'Hyperdrive'
   | 'Illicit'
   | 'Missile'
   | 'Modification'
@@ -181,6 +199,7 @@ export type SlotKey =
   | 'forcepower'
   | 'gunner'
   | 'hardpoint'
+  | 'hyperdrive'
   | 'illicit'
   | 'missile'
   | 'modification'
@@ -248,7 +267,6 @@ export type GrantTest =
   | { type: 'attack'; value: Action; arc: Arc; amount: number };
 
 export type UpgradeBase = {
-  name: string;
   xws: string;
   limited: number;
   cost: UpgradeCost;
@@ -285,13 +303,13 @@ export type UpgradeCost =
 
 export type UpgradeSide = {
   ffg: number;
-  title: string;
+  title: Translation;
   type: Slot;
-  ability?: string;
-  text?: string;
+  ability?: Translation;
+  text?: Translation;
   slots: Slot[];
   actions?: Action[];
-  image?: string;
+  image?: Translation;
   artwork?: string;
   attack?: {
     arc: Arc;

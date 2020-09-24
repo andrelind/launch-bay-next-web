@@ -1,0 +1,97 @@
+import { ShipType } from '../../../../types';
+
+const t: ShipType = {
+  name: { en: 'Firespray-class Patrol Craft' },
+  xws: 'firesprayclasspatrolcraft',
+  size: 'Medium',
+  dial: [
+    '1TW',
+    '1BB',
+    '1FB',
+    '1NB',
+    '1YW',
+    '2TW',
+    '2BW',
+    '2FB',
+    '2NW',
+    '2YW',
+    '3ER',
+    '3BW',
+    '3FB',
+    '3NW',
+    '3RR',
+    '4FW',
+    '4KR',
+  ],
+  faction: 'Separatist Alliance',
+  stats: [
+    { arc: 'Front Arc', type: 'attack', value: 3 },
+    { arc: 'Rear Arc', type: 'attack', value: 3 },
+    { type: 'agility', value: 2 },
+    { type: 'hull', value: 6 },
+    { type: 'shields', value: 4 },
+  ],
+  actions: [
+    { difficulty: 'White', type: 'Focus' },
+    { difficulty: 'White', type: 'Lock' },
+    { difficulty: 'Red', type: 'Reinforce' },
+    { difficulty: 'White', type: 'Boost' },
+  ],
+  icon: 'https://sb-cdn.fantasyflightgames.com/ship_types/I_FIrespray.png',
+  pilots: [
+    {
+      name: { en: 'Jango Fett' },
+      caption: { en: 'Simple Man' },
+      initiative: 6,
+      limited: 1,
+      xws: 'jangofett',
+      ability: {
+        en:
+          "While you defend or perform a primary attack, if the difficulty of your revealed maneuver is less than that of the enemy ship's, you may change 1 of the enemy ship's [Focus] results to a blank result.",
+      },
+      hyperspace: false,
+      epic: false,
+      slots: [],
+      cost: 200,
+    },
+    {
+      xws: 'zamwesell',
+      name: { en: 'Zam Wesell' },
+      caption: { en: '???' },
+      cost: 200,
+      initiative: 5,
+      limited: 1,
+      ability: { en: 'Setup: ' },
+      slots: [],
+      hyperspace: false,
+      epic: false,
+    },
+    {
+      xws: 'bobafett-separatist',
+      name: { en: 'Boba Fett' },
+      caption: { en: '???' },
+      cost: 200,
+      initiative: 3,
+      limited: 1,
+      ability: {
+        en:
+          'While you defend, if... friendly ships at range... change 1 of your... [Focus]...',
+      },
+      slots: [],
+      hyperspace: false,
+      epic: false,
+    },
+    {
+      xws: 'fs_2',
+      name: { en: '?FS_2?' },
+      cost: 200,
+      initiative: 2,
+      limited: 0,
+      slots: [],
+      hyperspace: false,
+      epic: false,
+    },
+  ],
+};
+
+export default t;

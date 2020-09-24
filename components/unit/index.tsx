@@ -10,7 +10,18 @@ import Dial from '../dial';
 import Error from '../error';
 import FormattedText from '../formatted-text';
 import ShipStats from '../ship-stats';
-import { Block, Count, Name, Points, ShipIcon, ShipText, ShipWrapper, StatsWrapper, TopWrapper, Upgrades } from './styles';
+import {
+  Block,
+  Count,
+  Name,
+  Points,
+  ShipIcon,
+  ShipText,
+  ShipWrapper,
+  StatsWrapper,
+  TopWrapper,
+  Upgrades,
+} from './styles';
 
 type Props = {
   ship: Ship;
@@ -37,7 +48,7 @@ const Unit = ({
   slotKeys.forEach(key => {
     const slots = ship.upgrades && ship.upgrades[key];
     if (slots) {
-      upgrades.push(...slots.map(u => u.name));
+      upgrades.push(...slots.map(u => u.sides[0].title.en));
     }
   });
 
@@ -113,16 +124,16 @@ const Unit = ({
       </StatsWrapper>
 
       {!minimized && ship.pilot.ability && (
-        <FormattedText text={ship.pilot.ability} />
+        <FormattedText text={ship.pilot.ability.en} />
       )}
-      {!minimized && ship.pilot.shipAbility && (
-        <Ability ability={ship.pilot.shipAbility} style={{ marginTop: 5 }} />
+      {!minimized && ship.ability && (
+        <Ability ability={ship.ability} style={{ marginTop: 5 }} />
       )}
       {!minimized &&
         !ship.pilot.ability &&
-        !ship.pilot.shipAbility &&
+        !ship.ability &&
         ship.pilot.text && (
-          <FormattedText text={ship.pilot.text} fontStyle="italic" />
+          <FormattedText text={ship.pilot.text.en} fontStyle="italic" />
         )}
 
       {!minimized &&

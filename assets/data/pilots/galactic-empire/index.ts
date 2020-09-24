@@ -15,6 +15,7 @@ import tiereaper from './tie-reaper';
 import tiesabomber from './tie-sa-bomber';
 import tieskstriker from './tie-sk-striker';
 import vt49decimator from './vt-49-decimator';
+import tierbheavy from './tie-rb-heavy';
 
 const ships: { [s: string]: ShipType } = {
   alphaclassstarwing,
@@ -33,6 +34,7 @@ const ships: { [s: string]: ShipType } = {
   tiesabomber,
   tieskstriker,
   vt49decimator,
+  tierbheavy,
 };
 
 export default ships;

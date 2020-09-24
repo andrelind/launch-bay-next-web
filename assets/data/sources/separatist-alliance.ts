@@ -162,6 +162,31 @@ export const t: Source[] = [
       },
     },
   },
+  {
+    ffg: 53,
+    xws: 'hmpdroidgunship',
+    name: 'HMP Droid Gunship',
+    wave: 7,
+    released: true,
+    contents: {
+      ships: {},
+      pilots: {
+        dgs047: 1,
+        separatistpredator: 1,
+        baktoiddrone: 1,
+        dgs286: 1,
+        onderonoppressor: 1,
+        geonosianprototype: 1,
+      },
+      upgrades: {
+        syncedlasercannons: 1,
+        multimissilepods: 1,
+        kalani: 1,
+        concussionbombs: 1,
+        repulsorliftstabilizers: 1,
+      },
+    },
+  },
 ];
 
 export default t;

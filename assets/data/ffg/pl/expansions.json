@@ -1,0 +1,375 @@
+{
+  "extensions": [
+    {
+      "id": 1,
+      "name": "Zestaw podstawowy",
+      "description": "<italic>Zestaw podstawowy do drugiej edycji gry X-Wing</italic> zawiera dwie figurki myśliwców TIE/ln i jedną figurkę X-winga T-65 oraz wszystkie niezbędne elementy potrzebne do rozgrywki w postaci wzorników manewrów, tarcz manewrów, kart, kości oraz instrukcji.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ01_small.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/x-wing-second-edition/"
+    },
+    {
+      "id": 2,
+      "name": "Renegaci Sawa",
+      "description": "<italic>Zestaw dodatkowy Renegaci Sawa</italic> zawiera dwie nowe figurki statków — X-winga T-65 oraz U-winga. Oba modele pomalowane są w czaro-białe barwy charakterystyczne dla partyzanckich jednostek Sawa Gerrery.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ02_small.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/saws-renegades-expansion-pack/"
+    },
+    {
+      "id": 3,
+      "name": "TIE Reaper",
+      "description": "<italic>Zestaw dodatkowy TIE Reaper</italic> do drugiej edycji gry X-Wing zawiera groźnie wyglądającą figurkę oraz karty statków i rozwinięć, dzięki którym można dołączyć tę niezwykle skuteczną jednostkę do eskadry Imperium.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ03_small.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/tie-reaper-expansion-pack/"
+    },
+    {
+      "id": 4,
+      "name": "Zestaw konwertujący Sojusz Rebeliantów",
+      "description": "<italic>Zestaw konwertujący Sojusz Rebeliantów</italic> zawiera karty, żetony, tarcze manewrów oraz podstawki, które pozwolą przystosować statki Sojuszu Rebeliantów z pierwszej edycji do rozgrywek w drugą edycję.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ06_small.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/rebel-alliance-conversion-kit/"
+    },
+    {
+      "id": 5,
+      "name": "Zestaw konwertujący Imperium Galaktyczne",
+      "description": "<italic>Zestaw konwertujący Imperium Galaktyczne</italic> zawiera karty, żetony, tarcze manewrów oraz podstawki, które pozwolą przystosować statki Imperium Galaktycznego z pierwszej edycji do rozgrywek w drugą edycję.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ07_small.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/galactic-empire-conversion-kit/"
+    },
+    {
+      "id": 6,
+      "name": "Zestaw konwertujący Szumowiny i nikczemnicy",
+      "description": "<italic>Zestaw konwertujący Szumowiny i nikczemnicy</italic> zawiera karty, żetony, tarcze manewrów oraz podstawki, które pozwolą przystosować statki szumowin z pierwszej edycji do rozgrywek w drugą edycję.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ08_small.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/scum-and-villainy-conversion-kit/"
+    },
+    {
+      "id": 7,
+      "name": "X-wing T-65",
+      "description": "<italic>Zestaw dodatkowy X-Wing T-65</italic> zawiera pomalowaną figurkę, tarczę manewrów oraz wszystkie niezbędne karty statków i rozwinięć, dzięki którym ten słynny myśliwiec może dołączyć do gwiezdnych zmagań.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ12_small.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/t-65-x-wing-expansion-pack/"
+    },
+    {
+      "id": 8,
+      "name": "Y-wing BTL-A4",
+      "description": "<italic>Zestaw dodatkowy Y-Wing BTL-A4 </italic> zawiera pomalowaną figurkę oraz wszystkie niezbędne karty statków i rozwinięć, dzięki którym można dołączyć tę potężną jednostkę do eskadry Rebeliantów.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ13_small.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/btl-a4-y-wing-expansion-pack/"
+    },
+    {
+      "id": 9,
+      "name": "Myśliwiec TIE/ln",
+      "description": "<italic>Zestaw dodatkowy Myśliwiec TIE/ln</italic> zawiera pomalowaną figurkę oraz wszystkie niezbędne karty statków i rozwinięć, dzięki którym można dołączyć tę siejącą postrach jednostkę do eskadry Imperium.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ14_small.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/tieln-fighter-expansion-pack/"
+    },
+    {
+      "id": 10,
+      "name": "TIE Advanced x1",
+      "description": "<italic>Zestaw dodatkowy TIE Advanced x1</italic> zawiera figurkę nowego TIE Advanced x1 oraz wszystkie niezbędne karty statków i rozwinięć, dzięki którym można dołączyć tę jednostkę do eskadry.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ15_small.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/tie-advanced-x1-expansion-pack/"
+    },
+    {
+      "id": 11,
+      "name": "<italics>Slave I</italics>",
+      "description": "<italic>Zestaw dodatkowy Slave I</italic> zawiera pomalowaną figurkę, tarczę manewrów oraz wszystkie niezbędne karty statków i rozwinięć, dzięki którym można dołączyć tę wszechstronną jednostkę do eskadry.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ16_small.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/x-wing-second-edition-slave-i-expansion-pack/"
+    },
+    {
+      "id": 12,
+      "name": "Myśliwiec Fang",
+      "description": "<italic>Zestaw dodatkowy Myśliwiec Fang</italic> zawiera pomalowaną figurkę myśliwca Fang, tarczę manewrów, żetony oraz wszystkie niezbędne karty statków i rozwinięć, dzięki którym można dołączyć jedną z tych zabójczych jednostek do eskadry.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ17_small.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/fang-fighter-expansion-pack/"
+    },
+    {
+      "id": 13,
+      "name": "<italic>Sokół Millenium</italic> Lando Calrissiana",
+      "description": "The Lando’s <italic>Millennium Falcon</italic> Expansion Pack contains a fully-assembled, pre-painted customized YT-1300 light freighter miniature, including a detachable Escape Craft miniature that can be piloted as a separate ship. Also included are the ship cards, upgrade cards, and maneuver dials you need to add the <italic>Falcon</italic> and its Escape Craft to your squadron.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ04_small.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/landos-millennium-falcon-expansion-pack/"
+    },
+    {
+      "id": 14,
+      "name": "Zestaw konwertujący Najwyższy Porządek",
+      "description": "<italic>Zestaw konwertujący Najwyższy Porządek</italic> zawiera karty, żetony, tarcze manewrów i podstawki, dzięki którym przeniesiesz swoją kolekcję statków Najwyższego Porządku z pierwszej edycji do drugiej edycji gry X-Wing.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ18_FirstOrderConversionKit.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/first-order-conversion-kit/"
+    },
+    {
+      "id": 15,
+      "name": "Zestaw konwertujący Ruch Oporu",
+      "description": "<italic>Zestaw konwertujący Ruch Oporu</italic> zawiera karty, żetony, tarcze manewrów i podstawki, dzięki którym przeniesiesz swoją kolekcję statków Ruchu Oporu z pierwszej edycji do drugiej edycji gry X-Wing.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ19_ResistanceConversionKit.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/resistance-conversion-kit/"
+    },
+    {
+      "id": 16,
+      "name": "A-wing RZ-2",
+      "description": "<italic>Zestaw dodatkowy A-wing RZ-2</italic> do drugiej edycji gry X-Wing zawiera pięknie pomalowaną figurkę A-winga RZ-2, którą możesz dołączyć do swojej eskadry wraz tarczą manewrów oraz kartami statku i rozwinięć, aby stawić czoła najlepszym pilotom Najwyższego Porządku!",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ22_RZ-2A-wing.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/rz-2-wing-expansion-pack/"
+    },
+    {
+      "id": 17,
+      "name": "Myśliwiec TIE Gildii Wydobywczej",
+      "description": "<italic>Zestaw dodatkowy Myśliwiec TIE Gildii Wydobywczej</italic> do drugiej edycji gry X-Wing zawiera pięknie pomalowaną figurkę, tarczę manewrów oraz karty statków i rozwinięć, dzięki którym ochronisz swoje operacje górnicze, zapewniając sobie stały strumień zysków.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ23_MiningGuildTIE.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/mining-guild-tie-expansion-pack/"
+    },
+    {
+      "id": 18,
+      "name": "X-wing T-70",
+      "description": "The <italic>T-70 X-Wing Expansion Pack</italic> for X-Wing Second Edition includes a beautifully-painted T-70 X-wing miniature for you to add to your squadron, a maneuver dial, and all the ship and upgrade cards you need to grow your Resistance forces.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ25_T-70X-wing.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/x-wing-second-edition-t-70-x-wing-expansion-pack/"
+    },
+    {
+      "id": 19,
+      "name": "Myśliwiec TIE/fo",
+      "description": "The <italic>TIE/fo Fighter Expansion Pack</italic> includes one beautifully pre-painted miniature and all the ship and upgrade cards you need, giving you all the raw power to begin rebuilding the Empire.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ26_TIEfo.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/x-wing-second-edition-tiefo-fighter-expansion-pack/"
+    },
+    {
+      "id": 20,
+      "name": "Pakiet eskadry Słudzy Wojny",
+      "description": "Ten <italic>pakiet eskadry</italic> zawiera wszystkie elementy potrzebne do korzystania z jednego myśliwca gwiezdnego Belbullab-22 i dwóch droidów-myśliwców klasy <italic>Vulture</italic> w grze <italic>X-Wing</italic>. Znajdziesz w nim trzy tarcze manewrów, niezbędne żetony, nowe karty statków i sporą gamę kart rozwinięć - w tym przedruki wielu neutralnych kart.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ29_ServantsOfStrife.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/servants-strife-squadron-pack/"
+    },
+    {
+      "id": 21,
+      "name": "Pakiet eskadry Strażnicy Republiki",
+      "description": "Ten <italic>pakiet eskadry</italic> zawierza wszystko, czego potrzebujesz do stworzenia własnej eskadry statków Republiki Galaktycznej. Znajdziesz w nim jedną figurkę Delta-7 Aethersprite, dwie figurki statków V-19 Torrent, trzy tarcze manewrów, niezbędne żetony, kilka nowych rozwinięć Mocy i sporo innych kart rozwinięć - w tym przedruki wielu neutralnych kart.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ32_GuardiansOfTheRepublic.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/guardians-republic-squadron-pack/"
+    },
+    {
+      "id": 22,
+      "name": "Zestaw dodatkowy Infiltrator Sithów",
+      "description": "W tym <italic>zestawie dodatkowym</italic> znajdziesz pięciu pilotów, w tym samego Darth Maula, dwadzieścia kart rozwinięć, które pozwolą w pełni wykorzystać potencjał statku, oraz niezbędne żetony i tarcze manewrów, których użyjesz ruszając na własne tajne misje.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ30_SithInfiltrator.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/sith-infiltrator-expansion-pack/"
+    },
+    {
+      "id": 23,
+      "name": "Zestaw dodatkowy Droid-myśliwiec klasy <italic>Vulture</italic>",
+      "description": "Ten <italic>zestaw dodatkowy</italic> zawiera pięknie pomalowaną figurkę droida-myśliwca klasy <italic>Vulture</italic>. Pięć kart statków pozwoli wyposażyć Twojego droida w wybrane oprogramowanie, a pięć kart rozwinięć zapewni jeszcze więcej swobody podczas tworzenia eskadry.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ31_VultureDroid.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/vulture-class-droid-fighter-expansion/"
+    },
+    {
+      "id": 24,
+      "name": "Zestaw dodatkowy Delta-7 <italic>Aethersprite</italic>",
+      "description": "Pięć kart statków - w tym czterech unikalnych pilotów - z <italic>zestawu dodatkowego Delta-7 Aethersprite</italic> zasili Twoje eskadry Republiki Galaktycznej nowymi Jedi, np. Anakinem Skywalkerem. Zestaw zawiera również sześć kart rozwinięć, aby jeszcze lepiej wykorzystać potencjał statków i pilotów Jedi.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ34_Delta7.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/delta-7-aethersprite-expansion/"
+    },
+    {
+      "id": 25,
+      "name": "Zestaw dodatkowy Myśliwiec gwiezdny ARC-170",
+      "description": "Ten <italic>zestaw dodatkowy</italic> sprawi, że do Twoich batalii w grze <italic>X-Wing</italic> dołączy jeden myśliwiec gwiezdny ARC-170. Oprócz pięknie pomalowanej figurki zestaw zawiera sześciu pilotów-klonów broniących Republiki oraz 14 kart rozwinięć, dzięki którym wyposażysz swój statek w ciężką broń, strzelców i załogantów.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ33_ARC170.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/arc-170-starfighter-expansion-pack/"
+    },
+    {
+      "id": 26,
+      "name": "Zestaw dodatkowy TIE/sk Striker",
+      "description": "Tan <italic>zestaw dodatkowy</italic> zapewni Ci nowe możliwości tworzenia imperialnych eskadr. Oprócz pięknie pomalowanej figurki TIE/sk Strikera zestaw zawiera między innymi pięć kart pilotów walczących dla Imperium oraz pięć kart rozwinięć, dzięki którym jeszcze lepiej zoptymalizujesz swoje eskadry.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ38_TIE_Striker.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/tiesk-striker-expansion-pack/"
+    },
+    {
+      "id": 27,
+      "name": "Zestaw dodatkowy Z-95-AF4 Łowca Głów",
+      "description": "Ten <italic>zestaw dodatkowy</italic> wszystkie elementy potrzebne do korzystania ze statku Z-95-AF4 Łowca Głów, w tym pięknie pomalowaną figurkę, tarczę manewrów, cztery karty statków, pięć kart rozwinięć i niezbędne żetony.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ34_Z-95Headhunter.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/z-95-af4-headhunter-expansion-pack/"
+    },
+    {
+      "id": 28,
+      "name": "Zestaw dodatkowy Myśliwiec N-1 Korpusu Królewskiego Naboo",
+      "description": "Oprócz pięknie pomalowanej figurki <italic>Myśliwca N-1 Korpusu Królewskiego Naboo</italic> zestaw zawiera niezbędne żetony, tarczę manewrów, sześć kart statków oraz siedem kart rozwinięć, które pomogą okiełznać zawrotną prędkość tych maszyn i pomogą chronić planetę Naboo.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ40_Naboo_Royal_N1_Fighter.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/naboo-royal-n-1-starfighter-expansion-pack/"
+    },
+    {
+      "id": 29,
+      "name": "Zestaw dodatkowy Droid-bombowiec klasy <italic>Hyena</italic>",
+      "description": "Droidy-bombowce klasy <italic>Hyena<italic> stosują tę samą taktykę roju co droidy klasy <italic>Vulture</italic>, zapewniając siłom Separatystów nowe możliwości taktyczne. W tym zestawie znajdziesz między innymi sześć kart statków, dziesięć kart rozwinięć i dwie karty szybkiego tworzenia, dzięki którym potężnie wzrośnie siła ognia twoich eskadr Separatystów.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ41_Hyena_Bomber.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/hyena-class-droid-bomber-expansion-pack/"
+    },
+    {
+      "id": 30,
+      "name": "Zestaw dodatkowy Transportowiec Ruchu Oporu",
+      "description": "Niniejszy zestaw zawiera stworzony na zamówienie prom używany przez Ruch Oporu zarówno jako transportowiec jak i statek bojowy. Oprócz figurki Transportowca Ruchu Oporu i Kapsuły transportowca Ruchu Oporu w pudełku znajdziesz karty kilku najważniejszych dowódców tej frakcji, którzy dołączą do twojej załogi, ośmiu gotowych do walki pilotów i cztery karty szybkiego tworzenia, dzięki którym natychmiast ruszysz w ogień bitwy.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ45_Resistance_Transport.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/resistance-transport-expansion-pack/"
+    },
+    {
+      "id": 31,
+      "name": "A/SF-01 B-wing",
+      "description": "The <italic>B-Wing Expansion Pack</italic> contains a stunning miniature at 1/270 scale, a maneuver dial, all necesssary tokens, four ship cards, and a devastating arsenal of five upgrade cards.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ42_ASF01-B-wing.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/sf-01-b-wing-expansion-pack/"
+    },
+    {
+      "id": 32,
+      "name": "VT-49 Decimator",
+      "description": "With the <italic>VT-49 Decimator Expansion Pack</italic>, you can bring a single VT-49 Decimator to your Galactic Empire squadrons. In addition to one pre-painted and finely detailed VT-49 miniature, you’ll also find three ship cards, as well as a selection of thirteen reprinted upgrade cards, giving you the freedom to add vital crew and deadly devices to your ship.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ43_VT-19_Decimator.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/vt-49-expansion-pack/"
+    },
+    {
+      "id": 33,
+      "name": "TIE/sf Fighter",
+      "description": "Equipped with a Heavy Weapon Turret that can be rotated between its front and rear arcs, the TIE/sf is a threat from multiple angles. On top of the TIE/sf miniature, the <italic>TIE/sf Fighter Expansion Pack</italic> also contains four TIE/sf ship cards identical to those in the First Order Conversion Kit, six upgrade cards, and two new Quick Build cards.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ44_TIE_sf.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/tiesf-fighter-expansion-pack/"
+    },
+    {
+      "id": 34,
+      "name": "TIE Silencer",
+      "description": "Niniejszy zestaw wzmocnieni twoją eskadrę Najwyższego Porządku tym złowrogim statkiem. W pudełku znajdziesz pomalowaną figurkę, sześć kart statków (te same, co w zestawie konwertującym Najwyższego porządku) oraz pięć kart rozwinięć doskonale dopasowanych do stylu walki TIE Silencera.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ27_TIE_Silencer.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/tievn-silencer-expansion-pack/"
+    },
+    {
+      "id": 35,
+      "name": "<italic>Sokół Millennium</italic>",
+      "description": "Ten zestaw pozwoli ci pokierować w walce legendarnym <italic>Sokołem Millenium</italic>. Oprócz imponującej figurki znajdziesz w pudełku cztery karty statków (te same, co w zestawie konwertującym Sojuszu Rebeliantów) czternaście kart rozwinięć pozwalających dostosować tę wyjątkową maszynę do twojego stylu gry. Dwie karty szybkiego tworzenia ułatwią dobranie odpowiednich pilotów, aby bezzwłocznie rzucić się w wir walki.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ39_Millennium_Falcon.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/x-wing-second-edition-millennium-falcon-expansion-pack/"
+    },
+    {
+      "id": 36,
+      "name": "Myśliwiec gwiezdny klasy Nantex",
+      "description": "Zwinny myśliwiec gwiezdny klasy Nantex korzysta z zaawansowanej sieci wiązek ściągających, aby wykonywać nieprawdopodobne manewry i zwiększyć precyzję namierzania swoich wieżyczek laserowych. Zawarte w tym zestawie sześć kart statków, sześć kart rozwinięć, dwie karty szybkiego tworzenia, kilka żetonów i tarcza manewrów pozwolą ci szybko wysłać do boju ten unikalny statek.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ47_Nantex_Starfighter.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/nantex-class-starfighter-expansion-pack/"
+    },
+    {
+      "id": 37,
+      "name": "Y-wing BTL-B",
+      "description": "Opancerzony kadłub i obrotowa wieżyczka sprawiają, że Y-wing BTL-B może służyć siłom Republiki zarówno do eskorty, jak i w ofensywach. Niniejszy zestaw zawiera figurkę, osiem kart statków, dziesięć kart rozwinięć i cztery karty szybkiego tworzenia, dzięki którym dodasz tę potężną maszynę do swojej eskadry Republiki Galaktycznej.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ48_BTL-B_Y-wing.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/btl-b-y-wing-expansion-pack/"
+    },
+    {
+      "id": 38,
+      "name": "Duch i Upiór II",
+      "description": "Wytrzymały lekki frachtowiec VCX-100 i zwrotny prom klasy Sheathipede mogą walczyć wspólnie jako zadokowana para albo rozdzielić się, aby atakować z różnych stron naraz. Z takimi bohaterami w kokpicie jak Hera Syndulla, Kanan Jarrus czy Ezra Bridger statki te mogą stać się najmocniejszymi atutami Rebelii. Zestaw zawiera między innymi osiem kart statków, szesnaście kart rozwinięć i cztery karty szybkiego tworzenia, które umożliwią skuteczne użycie tych potężnych maszyn w gwiezdnych potyczkach.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ49_Ghost.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/x-wing-second-edition-ghost-expansion-pack/"
+    },
+    {
+      "id": 39,
+      "name": "Myśliwiec TIE Inkwizytora",
+      "description": "TIE Advanced v1 to eksperymentalna jednostka zarezerwowana dla elitarnych agentów Imperium takich jak przerażający Inkwizytorzy. Zastosowano w niej wiele nowatorskich rozwiązań, zapewniając doświadczonym pilotom śmiercionośną przewagę na polu walki. Cztery karty statków, pięć kart rozwinięć i dwie karty szybkiego tworzenia sprawią, że ta jednostka błyskawicznie znajdzie swoje miejsce w twojej imperialnej eskadrze.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ50_InquisitorsTIE.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/x-wing-second-edition-inquisitors-tie-expansion-pack/"
+    },
+    {
+      "id": 40,
+      "name": "Karząca Ręka",
+      "description": "W tym zestawie znajduje się wszystko, co niezbędne, aby dodać do twojej eskadry Szumowin statek JumpMaster 5000. W pogoni za zyskiem do Dengara dołączy trzech pilotów z arsenałem dwunastu kart rozwinięć. Dwie karty szybkiego tworzenia ułatwią efektywne rozdysponowanie punktów i skuteczne wykorzystanie statku w walce.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ51_PunishingOne.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/x-wing-second-edition-punishing-one-expansion-pack/"
+    },
+    {
+      "id": 41,
+      "name": "M3-A Interceptor",
+      "description": "M3-A Interceptor to lekka i zwrotna jednostka ciesząca się powodzeniem wśród kartelów i syndykatów. Modułowy punkt podczepienia pozwala wyposażyć ten myśliwiec w niszczycielskie torpedy, potężne działa i inną broń, która stanowi zagrożenie dla znacznie większych statków. Oprócz figurki w barwach syndykatu Czarnego Słońca zestaw zawiera osiem kart statków, pięć kart rozwinięć i cztery karty szybkiego tworzenia.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ52_M3-A_Scyk.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/x-wing-second-edition-m3-interceptor-expansion-pack/"
+    },
+    {
+      "id": 42,
+      "name": "<italic>Hound's Tooth</italic>",
+      "description": "The <italic>Hound’s Tooth Expansion Pack</italic> contains everything you need to start your own bounty hunting career, including a YV-666 light freighter miniature and a Z-95-AF4 Headhunter miniature painted in the striking Nashtah Pup scheme. Joining these miniatures are six ship cards—four for the YV-666 and two for the Z-95-AF4 Headhunter—and fourteen upgrade cards. Finally, three Quick Build Cards give you even more options for deploying your YV-666.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ58_HoundsTooth.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/x-wing-second-edition-hounds-tooth-expansion-pack/"
+    },
+    {
+      "id": 43,
+      "name": "TIE/ln Interceptor",
+      "description": "The <italic>TIE/in Interceptor Expansion Pack</italic> gives you the chance to put the legendary Soontir Fel and three other pilots at the controls of this swift and deadly craft. Joining them are five upgrade cards that give these elite pilots even more advantages in the thick of a space battle. Finally, two Quick Build cards provide useful combinations of pilots and upgrades, allowing you to test all of the TIE/in interceptor’s capabilities.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ59_TIEInterceptor.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/x-wing-second-edition-tie-interceptor-expansion-pack/"
+    },
+    {
+      "id": 44,
+      "name": "TIE/D Defender",
+      "description": "Within the <italic>TIE/D Defender Expansion Pack</italic>, you’ll find everything you need to bulk up your Imperial squadrons, including a TIE/D defender miniature, five ship cards, and four upgrade cards that invite you to outfit your ship with new systems, missiles, and cannons. Meanwhile, two Quick Build cards provide exciting combinations of pilots and upgrades, inviting you to see everything the ship can do.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ60_TIEDefender.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/x-wing-second-edition-tied-defender-expansion-pack/"
+    },
+    {
+      "id": 45,
+      "name": "RZ-1 A-wing",
+      "description": "The <italic>RZ-1 A-Wing Expansion Pack</italic> includes everything you need to add one of these speedy ships to your Rebel Alliance squadrons. An RZ-1 A-wing miniature painted in the colors of Phoenix Squadron is accompanied by four ship cards representing the Rebel pilots willing to take on the challenge of flying this craft. You can improve these pilots’ capabilities in battle with five upgrade cards of your choosing, or you can take the recommendations of two Quick Build cards for even more ways to use your RZ-1 A-wing.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ61_A-wing.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/x-wing-second-edition-rz-1-wing-expansion-pack/"
+    },
+    {
+      "id": 46,
+      "name": "Major Vonreg's TIE",
+      "description": "As the personal ship of the First Order elite ace Major Baron Elrik Vonreg, the Sienar-Jaemus Fleet Systems TIE/ba Baron Space Superiority Interceptor strikes fear in the hearts of even the most grizzled Resistance pilots. \r\nWithin this expansion, you’ll find six pilots ready to fight for the First Order, as well as six upgrade cards to fine-tune your TIE/ba interceptor’s capabilities. Accompanying these are two Quick Build cards with pre-built combinations of pilots and upgrades to help you get flying right away.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ62_VonregsTIE.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/major-vonregs-tie-expansion-pack/"
+    },
+    {
+      "id": 47,
+      "name": "Fireball",
+      "description": "A labor of love to the crew of Jarek Yeager’s garage, the Fireball is a highly combustible, scratch-built racing ship. Flown by undercover Resistance operative Kazuda Xiono, this explosion with wings is able to push the limit around the course before living up to its name.\r\nThe <italic>Fireball Expansion Pack</italic> contains everything you need to add one of these swift ships to your Resistance squadrons, including one Fireball miniature, four ship cards, and seven upgrade cards. Additionally, two Quick Build cards help you easily combine pilots and upgrades and get your Fireball to the start line as quickly as possible.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ63_Fireball.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/fireball-expansion-pack/"
+    },
+    {
+      "id": 48,
+      "name": "Never Tell Me the Odds Obstacle Pack",
+      "description": "In addition to asteroids, debris fields, and gas clouds, the <italic>Never Tell Me the Odds Obstacles Pack</italic> contains six environment cards that reflect a few of the strange and terrifying places a space battle could erupt. Each environment card changes the placement or rules around obstacles, adding variety to your X-Wing games!",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ64_NeverTellMeTheOdds.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/never-tell-me-odds-obstacles-pack/"
+    },
+    {
+      "id": 49,
+      "name": "Fully Loaded Devices Pack",
+      "description": "Set the timer and brace for detonation! The <italic>Fully Loaded Devices Pack</italic> collects numerous devices for X-Wing, giving you access to a vast arsenal of options for your squadrons. In addition to the upgrade cards and tokens for Proximity Mines, Conner Nets, Ion Bombs, and more, this devices pack contains six environment cards that use devices as part of setup. With these cards, you can battle in deadly minefields, fly your ships through star fields riddled with unexploded ordnance, or even maneuver to avoid continuous bombardments!",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ65_FullyLoaded.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/fully-loaded-devices-pack/"
+    },
+    {
+      "id": 50,
+      "name": "Hotshots and Aces Reinforcement Pack",
+      "description": "Enhance your squadron options and launch new pilots with the <italic>Hotshots and Aces Reinforcements Pack</italic>! With upgrades available to all factions and new pilots for numerous ships in the Rebel, Imperial, Scum, Resistance, and First Order factions, you can now add iconic characters like Leia Organa, Captain Phasma, and K-2SO to your squads.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ66_HotshotsAndAces.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/hotshots-and-aces-reinforcements-pack/"
+    },
+    {
+      "id": 51,
+      "name": "<italic>Xi</italic>-class Shuttle",
+      "description": "The First Order's agents are scattered across the galaxy, from enclaves in the Unknown Regions to pockets of sympathizers within the New Republic. The Xi-class light shuttle is swift and lightly armed, suited to conveying First Order VIPs quickly but surreptitiously from base to base. It can also serve as a command craft, directing forces in raids before the attackers slip away into the depths of space once again.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ69_XiClassShuttle.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/xi-class-light-shuttle-expansion-pack/"
+    },
+    {
+      "id": 52,
+      "name": "Laat/i Gunship",
+      "description": "A durable, reliable workhorse capable of serving in a wide array of environments, the LAAT/i gunship is renowned for getting the job done. Whether making precision drops of clone troopers on contested worlds, supporting Republic formations with interlaced fire in atmospheric battles, or engaging starfighters in the depths of space, the LAAT/i can be outfitted for nearly any role or battlefield.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ70_LAATiGunship.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/laati-gunship-expansion-pack/"
+    },
+    {
+      "id": 53,
+      "name": "HMP Droid Gunship",
+      "description": "A menacing silhouette slides overhead, repulsorlifts humming ominously and eyes glowing with malevolence. The HMP gunship's presence invokes fear thanks to predatory droid intelligence and an unpredictable capacity to strafe targets with devastating missile pods, bombs, and a wide-sweeping array of laser cannons.",
+      "cover": "https://sb-cdn.fantasyflightgames.com/covers/SWZ71_HMPGunship.png",
+      "url": "https://www.fantasyflightgames.com/en/products/x-wing-second-edition/products/hmp-droid-gunship-expansion-pack/"
+    }
+  ]
+}

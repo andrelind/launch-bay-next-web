@@ -183,6 +183,30 @@ export const t: Source[] = [
       },
     },
   },
+  {
+    ffg: 52,
+    xws: 'laatigunship',
+    name: 'Laat/i Gunship',
+    wave: 7,
+    released: true,
+    contents: {
+      ships: {},
+      pilots: { warthog: 1, hound: 1, '212thbattalionpilot': 1, hawk: 1 },
+      upgrades: {
+        deadeyeshot: 1,
+        multimissilepods: 1,
+        aaylasecura: 1,
+        kitfisto: 1,
+        plokoon: 1,
+        yoda: 1,
+        fives: 1,
+        wolfpack: 1,
+        clonecaptainrex: 1,
+        ghostcompany: 1,
+        suppressivegunner: 1,
+      },
+    },
+  },
 ];
 
 export default t;

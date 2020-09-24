@@ -100,10 +100,10 @@ const UpgradeComponent = ({
         </MultipleSlotWrapper>
 
         {!minimized && upgradeSide.ability && (
-          <FormattedText text={upgradeSide.ability} />
+          <FormattedText text={upgradeSide.ability.en} />
         )}
         {!minimized && upgradeSide.text && (
-          <FormattedText text={upgradeSide.text} fontStyle="italic" />
+          <FormattedText text={upgradeSide.text.en} fontStyle="italic" />
         )}
 
         {!minimized && device && (

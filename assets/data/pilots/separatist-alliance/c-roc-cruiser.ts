@@ -1,7 +1,7 @@
 import { ShipType } from '../../../../types';
 
 const t: ShipType = {
-  name: 'C-ROC Cruiser',
+  name: { en: 'C-ROC Cruiser' },
   xws: 'croccruiser',
   size: 'Huge',
   dial: [
@@ -35,21 +35,25 @@ const t: ShipType = {
     { difficulty: 'Red', type: 'Coordinate' },
     { difficulty: 'White', type: 'Jam' },
   ],
+  ability: {
+    name: { en: 'Overdrive Burners' },
+    text: {
+      en:
+        'While you defend, if your revealed maneuver is speed 3-5, roll 1 additional defense die.',
+    },
+  },
   pilots: [
     {
-      name: 'Separatist Privateers',
-      text:
-        'The Separatist Alliance makes use of all manner of unsavory contacts in its fight against the Galactic Republic, including corsairs and criminal cartels.',
+      name: { en: 'Separatist Privateers' },
+      text: {
+        en:
+          'The Separatist Alliance makes use of all manner of unsavory contacts in its fight against the Galactic Republic, including corsairs and criminal cartels.',
+      },
       initiative: 7,
       engagement: 1,
       limited: 0,
       cost: 58,
       xws: 'separatistprivateers',
-      shipAbility: {
-        name: 'Overdrive Burners',
-        text:
-          'While you defend, if your revealed maneuver is speed 3-5, roll 1 additional defense die.',
-      },
       slots: [
         'Command',
         'Hardpoint',

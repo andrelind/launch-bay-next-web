@@ -50,10 +50,10 @@ export const loadShips = (squadron: Squadron): ShipValue[] => {
       //   }
       //   return true;
       // })
-      .sort((a, b) => a.name.localeCompare(b.name))
+      .sort((a, b) => a.name.en.localeCompare(b.name.en))
       .map(s => ({
         value: s.xws,
-        label: s.name,
+        label: s.name.en,
         ship: {
           ...s,
           pilots: s.pilots.filter((p: Pilot) => {
@@ -77,7 +77,7 @@ export const shipForXws = (squadron: Squadron, shipXws: string): ShipValue => {
     .find(s => s.xws === shipXws);
   return {
     value: ship.xws,
-    label: ship.name,
+    label: ship.name.en,
     ship,
   };
 };
@@ -93,7 +93,7 @@ export const pilotForXws = (
   const pilot = ship.pilots.find(p => p.xws === pilotWxs);
   return {
     value: pilot.xws,
-    label: pilot.name,
+    label: pilot.name.en,
     pilot,
   };
 };
@@ -101,7 +101,7 @@ export const pilotForXws = (
 export const pilotOptions = (value: ShipValue): PilotValue[] => {
   return value.ship.pilots
     .map((p: Pilot) => ({
-      value: p.name,
+      value: p.name.en,
       label: `${p.initiative} - ${p.name} [${p.cost}]`,
       pilot: p,
     }))
@@ -115,9 +115,9 @@ export const pilotOptions = (value: ShipValue): PilotValue[] => {
       } else if (a.pilot.cost > b.pilot.cost) {
         return -1;
       }
-      return a.pilot.name
+      return a.pilot.name.en
         .toLowerCase()
-        .localeCompare(b.pilot.name.toLowerCase());
+        .localeCompare(b.pilot.name.en.toLowerCase());
     });
 };
 
@@ -346,8 +346,12 @@ export const upgradesForSlot = (
       } else if (a.finalCost > b.finalCost) {
         return 1;
       }
-      return a.name.localeCompare(b.name);
+      return a.sides[0].title.en.localeCompare(b.sides[0].title.en);
     });
 
-  return data.map(u => ({ label: u.name, value: u.xws, upgrade: u }));
+  return data.map(u => ({
+    label: u.sides[0].title.en,
+    value: u.xws,
+    upgrade: u,
+  }));
 };
