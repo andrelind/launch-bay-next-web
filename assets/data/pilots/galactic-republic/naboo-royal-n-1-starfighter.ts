@@ -1,7 +1,16 @@
 import { ShipType } from '../../../../types';
 
 const t: ShipType = {
-  name: 'Naboo Royal N-1 Starfighter',
+  name: {
+    en: 'Naboo Royal N-1 Starfighter',
+    de: 'Königlicher N-1-Sternenjäger von Naboo',
+    fr: 'Chasseur Royal Naboo N-1',
+    it: 'Astrocaccia Reale Naboo N-1',
+    pl: 'Myśliwiec N-1 Korpusu Królewskiego Naboo',
+    pt: 'Naboo Royal N-1 Starfighter',
+    zh: 'Naboo Royal N-1 Starfighter',
+    es: 'Caza estelar real N-1 de Naboo',
+  },
   xws: 'nabooroyaln1starfighter',
   size: 'Small',
   dial: [
@@ -36,17 +45,67 @@ const t: ShipType = {
     { difficulty: 'White', type: 'Barrel Roll' },
     { difficulty: 'White', type: 'Boost' },
   ],
+  ability: {
+    name: {
+      en: 'Full Throttle',
+      de: 'Vollgas',
+      fr: 'Plein Gaz',
+      es: 'Aceleración máxima',
+      it: 'A Tutta Velocità',
+      pl: 'Pełny ciąg',
+      pt: 'Full Throttle',
+      zh: 'Full Throttle',
+    },
+    text: {
+      en:
+        'After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action.',
+      de:
+        'Nachdem du ein Manöver mit Geschwindigkeit 3-5 vollständig ausgeführt hast, darfst du eine [Evade] -Aktion durchführen.',
+      fr:
+        'après avoir entièrement exécuté une manœuvre à vitesse 3-5, vous pouvez effectuer une action [Evade].',
+      es:
+        'Después de que ejecutes completamente una maniobra de velocidad 3-5, puedes realizar una acción [Evade] .',
+      it:
+        'Dopo aver eseguito completamente una manovra a velocità 3-5, puoi effettuare 1 azione [Evade].',
+      pl:
+        'Gdy wykonasz pełny manewr o prędkości 3-5, możesz wykonać akcję [Evade].',
+      pt:
+        'After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action.',
+      zh:
+        'After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action.',
+    },
+  },
   pilots: [
     {
-      name: 'Anakin Skywalker',
+      name: {
+        en: 'Anakin Skywalker',
+        de: 'Anakin Skywalker',
+        fr: 'Anakin Skywalker',
+        es: 'Anakin Skywalker',
+        it: 'Anakin Skywalker',
+        pl: 'Anakin Skywalker',
+        pt: 'Anakin Skywalker',
+        zh: 'Anakin Skywalker',
+      },
       initiative: 4,
       limited: 1,
-      ability:
-        'Before you reveal your maneuver, you may spend 1 [Force] to barrel roll (this is not an action).',
-      shipAbility: {
-        name: 'Full Throttle',
-        text:
-          'After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action.',
+      ability: {
+        en:
+          'Before you reveal your maneuver, you may spend 1 [Force] to barrel roll (this is not an action).',
+        de:
+          'Bevor du dein Manöver aufdeckst, darfst du 1 [Force] ausgeben, um eine Fassrolle zu fliegen (dies ist keine Aktion).',
+        fr:
+          "Avant de révéler votre manœuvre, vous pouvez dépenser 1 [Force] pour effectuer un tonneau (ce n'est pas une action).",
+        es:
+          'Antes de que reveles tu maniobra, puedes gastar 1 [Force] para llevar a cabo un tonel volado (esto no es una acción).',
+        it:
+          "Prima di rivelare la tua manovra, puoi spendere 1 [Force] per effettuare un avvitamento (questa non è considerata un'azione).",
+        pl:
+          'Zanim odsłonisz swój manewr, możesz wydać 1 [Force], aby wykonać beczkę (to nie jest akcja).',
+        pt:
+          'Before you reveal your maneuver, you may spend 1 [Force] to barrel roll (this is not an action).',
+        zh:
+          'Before you reveal your maneuver, you may spend 1 [Force] to barrel roll (this is not an action).',
       },
       xws: 'anakinskywalker-nabooroyaln1starfighter',
       hyperspace: true,
@@ -55,114 +114,355 @@ const t: ShipType = {
       slots: ['Talent', 'Sensor', 'Torpedo', 'Astromech'],
       force: { value: 1, recovers: 1, side: ['light'] },
       ffg: 558,
-      caption: 'Hero of Naboo',
-      image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/en/21e28ea4e8784dce5a554a33888d8be0.png',
+      caption: {
+        en: 'Hero of Naboo',
+        de: 'Held von Naboo',
+        fr: 'Héros de Naboo',
+        es: 'Héroe de Naboo',
+        it: 'Eroe di Naboo',
+        pl: 'Bohater Naboo',
+        pt: 'Hero of Naboo',
+        zh: 'Hero of Naboo',
+      },
+      image: {
+        en:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/21e28ea4e8784dce5a554a33888d8be0.png',
+        de:
+          'https://sb-cdn.fantasyflightgames.com/card_images/de/8569f27596c2b45110f0e5b7b267025a.png',
+        fr:
+          'https://sb-cdn.fantasyflightgames.com/card_images/fr/25604ecdffd2d4d1c3d75fb2fcdbf859.png',
+        es:
+          'https://sb-cdn.fantasyflightgames.com/card_images/es/44f3f2d8c58a20aac6bb64105f6fe23b.png',
+        it:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/21e28ea4e8784dce5a554a33888d8be0.png',
+        pl:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/21e28ea4e8784dce5a554a33888d8be0.png',
+        pt:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/21e28ea4e8784dce5a554a33888d8be0.png',
+        zh:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/21e28ea4e8784dce5a554a33888d8be0.png',
+      },
     },
     {
-      name: 'Ric Olié',
+      name: {
+        en: 'Ric Olié',
+        de: 'Ric Olié',
+        fr: 'Ric Olié',
+        es: 'Ric Olié',
+        it: 'Ric Olié',
+        pl: 'Ric Olié',
+        pt: 'Ric Olié',
+        zh: 'Ric Olié',
+      },
       xws: 'ricolie',
       initiative: 5,
       limited: 1,
-      shipAbility: {
-        name: 'Full Throttle',
-        text:
-          'After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action.',
+      ability: {
+        en:
+          "While you defend or perform a primary attack, if the speed of your revealed maneuver is higher than the enemy ship's, roll 1 additional die.",
+        de:
+          'Solange du verteidigst oder einen Primärangriff durchführst, falls die Geschwindigkeit deines aufgedeckten Manövers höher als die des feindlichen Schiffes ist, wirf 1 zusätzlichen Würfel.',
+        fr:
+          'Tant que vous défendez ou effectuez une attaque principale, si la vitesse de votre manœuvre révélée est plus élevée que celle du vaisseau ennemi, lancez 1 dé supplémentaire.',
+        es:
+          'Mientras te defiendes o efectúas un ataque principal, si la velocidad de tu maniobra revelada es superior a la de la nave enemiga, tira 1 dado adicional.',
+        it:
+          'Mentre difendi o effettui un attacco primario, se la velocità della tua manovra rivelata è superiore a quella della nave nemica, tira 1 dado aggiuntivo.',
+        pl:
+          'Gdy się bronisz albo wykonujesz atak podstawowy, jeżeli prędkość twojego odsłoniętego manewru jest większa niż prędkość wrogiego statku, z którym walczysz, rzucasz 1 dodatkową kością.',
+        pt:
+          "While you defend or perform a primary attack, if the speed of your revealed maneuver is higher than the enemy ship's, roll 1 additional die.",
+        zh:
+          "While you defend or perform a primary attack, if the speed of your revealed maneuver is higher than the enemy ship's, roll 1 additional die.",
       },
-      ability:
-        "While you defend or perform a primary attack, if the speed of your revealed maneuver is higher than the enemy ship's, roll 1 additional die.",
-      caption: 'Bravo Leader',
+      caption: {
+        en: 'Bravo Leader',
+        de: 'Bravo Eins',
+        fr: 'Leader Bravo',
+        es: 'Jefe Bravo',
+        it: 'Capo Bravo',
+        pl: 'Dowódca Bravo',
+        pt: 'Bravo Leader',
+        zh: 'Bravo Leader',
+      },
       hyperspace: true,
       epic: true,
       cost: 45,
       slots: ['Talent', 'Sensor', 'Torpedo', 'Astromech'],
       ffg: 557,
-      image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/en/87829b7b808c535eb1e2c8314b04971a.png',
+      image: {
+        en:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/87829b7b808c535eb1e2c8314b04971a.png',
+        de:
+          'https://sb-cdn.fantasyflightgames.com/card_images/de/9c649278d7280b1dbe49e62c3dc66fe7.png',
+        fr:
+          'https://sb-cdn.fantasyflightgames.com/card_images/fr/8be9555742ebf6d49d4bd0ad6318cade.png',
+        es:
+          'https://sb-cdn.fantasyflightgames.com/card_images/es/a227add4cd2370a3ccc656047ae2fbc0.png',
+        it:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/87829b7b808c535eb1e2c8314b04971a.png',
+        pl:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/87829b7b808c535eb1e2c8314b04971a.png',
+        pt:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/87829b7b808c535eb1e2c8314b04971a.png',
+        zh:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/87829b7b808c535eb1e2c8314b04971a.png',
+      },
     },
     {
-      name: 'Padmé Amidala',
+      name: {
+        en: 'Padmé Amidala',
+        de: 'Padmé Amidala',
+        fr: 'Padmé Amidala',
+        es: 'Padmé Amidala',
+        it: 'Padmé Amidala',
+        pl: 'Padmé Amidala',
+        pt: 'Padmé Amidala',
+        zh: 'Padmé Amidala',
+      },
       xws: 'padmeamidala',
       initiative: 4,
       limited: 1,
-      shipAbility: {
-        name: 'Full Throttle',
-        text:
-          'After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action.',
+      caption: {
+        en: 'Aggressive Negotiator',
+        de: 'Aggressive Verhandlungsführerin',
+        fr: 'Négociatrice Agressive',
+        es: 'Negociadora agresiva',
+        it: 'Combattiva Negoziatrice',
+        pl: 'Bezkompromisowa negocjator',
+        pt: 'Aggressive Negotiator',
+        zh: 'Aggressive Negotiator',
       },
-      caption: 'Aggressive Negotiator',
       hyperspace: true,
       epic: true,
-      ability:
-        'While an enemy ship in your [Front Arc] defends or performs an attack, that ship can modify only 1 [Focus] result (other results can still be modified).',
+      ability: {
+        en:
+          'While an enemy ship in your [Front Arc] defends or performs an attack, that ship can modify only 1 [Focus] result (other results can still be modified).',
+        de:
+          'Solange ein feindliches Schiff in deinem [Front Arc] verteidigt oder einen Angriff durchführt, kann jenes Schiff nur 1 [Focus] -Ergebnis modifizieren (andere Ergebnisse können weiterhin modifiziert werden).',
+        fr:
+          "Tant qu'un vaisseau ennemi dans votre [Front Arc] défend ou effectue une attaque, ce vaisseau ennemi ne peut modifier que 1 seul résultat [Focus] (les autres résultats peuvent toujours être modifiés).",
+        es:
+          'Mientras una nave enemiga en tu [Front Arc] se defiende o efectúa un ataque, esa nave sólo puede modificar 1 resultado [Focus] (los otros resultados siguen pudiendo ser modificados).',
+        it:
+          'Mentre una nave nemica nel tuo [Front Arc] difende o effettua un attacco, quella nave può modificare 1 solo risultato [Focus] (gli altri risultati possono comunque essere modificati).',
+        pl:
+          'Gdy wrogi statek w twojej [Front Arc] broni się albo wykonuje atak, wolno mu zmodyfikować tylko 1 wynik [Focus] (inne rodzaje wyników mogą być modyfikowane).',
+        pt:
+          'While an enemy ship in your [Front Arc] defends or performs an attack, that ship can modify only 1 [Focus] result (other results can still be modified).',
+        zh:
+          'While an enemy ship in your [Front Arc] defends or performs an attack, that ship can modify only 1 [Focus] result (other results can still be modified).',
+      },
       cost: 45,
       slots: ['Talent', 'Sensor', 'Torpedo', 'Astromech'],
       ffg: 559,
-      image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/en/3bc6bb14d0c80011145a36c132550298.png',
+      image: {
+        en:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/3bc6bb14d0c80011145a36c132550298.png',
+        de:
+          'https://sb-cdn.fantasyflightgames.com/card_images/de/273801cd83c7bdcf47b641153a2e3e3c.png',
+        fr:
+          'https://sb-cdn.fantasyflightgames.com/card_images/fr/1c48e663dbedc429c868aedf97225182.png',
+        es:
+          'https://sb-cdn.fantasyflightgames.com/card_images/es/bd7a52fcadfbeefd75d5165ccf002011.png',
+        it:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/3bc6bb14d0c80011145a36c132550298.png',
+        pl:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/3bc6bb14d0c80011145a36c132550298.png',
+        pt:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/3bc6bb14d0c80011145a36c132550298.png',
+        zh:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/3bc6bb14d0c80011145a36c132550298.png',
+      },
     },
     {
-      name: 'Dineé Ellberger',
+      name: {
+        en: 'Dineé Ellberger',
+        de: 'Dineé Ellberger',
+        fr: 'Dineé Ellberger',
+        es: 'Dineé Ellberger',
+        it: 'Dineé Ellberger',
+        pl: 'Dineé Ellberger',
+        pt: 'Dineé Ellberger',
+        zh: 'Dineé Ellberger',
+      },
       xws: 'dineeellberger',
       initiative: 3,
       limited: 1,
-      shipAbility: {
-        name: 'Full Throttle',
-        text:
-          'After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action.',
+      ability: {
+        en:
+          "While you defend or perform an attack, if the speed of your revealed maneuver is the same as the enemy ship's, that ship's dice cannot be modified.",
+        de:
+          'Solange du verteidigst oder einen Angriff durchführst, falls dein aufgedecktes Manöver dieselbe Geschwindigkeit hat wie das des feindlichen Schiffes, können die Würfel jenes Schiffes nicht modifiziert werden.',
+        fr:
+          'Tant que vous défendez ou effectuez une attaque, si la vitesse de votre manœuvre révélée est identique à celle du vaisseau ennemi, les dés de ce vaisseau ennemi ne peuvent pas être modifiés.',
+        es:
+          'Mientras te defiendes o efectúas un ataque, si la velocidad de tu maniobra revelada es la misma que la de la nave enemiga, los dados de esa nave no pueden ser modificados.',
+        it:
+          'Mentre difendi o effettui un attacco, se la velocità della tua manovra rivelata è pari a quella della nave nemica, i dadi di quella nave non possono essere modificati.',
+        pl:
+          'Gdy się bronisz albo wykonujesz atak, a prędkość twojego odsłoniętego manewru jest taka sama jak prędkość wrogiego statku, z którym walczysz, jego kości nie mogą być modyfikowane.',
+        pt:
+          "While you defend or perform an attack, if the speed of your revealed maneuver is the same as the enemy ship's, that ship's dice cannot be modified.",
+        zh:
+          "While you defend or perform an attack, if the speed of your revealed maneuver is the same as the enemy ship's, that ship's dice cannot be modified.",
       },
-      ability:
-        "While you defend or perform an attack, if the speed of your revealed maneuver is the same as the enemy ship's, that ship's dice cannot be modified.",
       hyperspace: true,
       epic: true,
       cost: 38,
       slots: ['Talent', 'Sensor', 'Torpedo', 'Astromech'],
       ffg: 560,
-      caption: 'Bravo Five',
-      image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/en/06e0863851b95dba4874b211e05661cc.png',
+      caption: {
+        en: 'Bravo Five',
+        de: 'Bravo Fünf',
+        fr: 'Bravo Cinq',
+        es: 'Bravo Cinco',
+        it: 'Bravo Cinque',
+        pl: 'Bravo Pięć',
+        pt: 'Bravo Five',
+        zh: 'Bravo Five',
+      },
+      image: {
+        en:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/06e0863851b95dba4874b211e05661cc.png',
+        de:
+          'https://sb-cdn.fantasyflightgames.com/card_images/de/ea77fb5eba6ae94dbeda0ebcc94a8abf.png',
+        fr:
+          'https://sb-cdn.fantasyflightgames.com/card_images/fr/bc37104269a82e00f8c6ec17776393e0.png',
+        es:
+          'https://sb-cdn.fantasyflightgames.com/card_images/es/bf4f02f9d34e3a004302a03fe239f41f.png',
+        it:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/06e0863851b95dba4874b211e05661cc.png',
+        pl:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/06e0863851b95dba4874b211e05661cc.png',
+        pt:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/06e0863851b95dba4874b211e05661cc.png',
+        zh:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/06e0863851b95dba4874b211e05661cc.png',
+      },
     },
     {
-      name: 'Bravo Flight Officer',
+      name: {
+        en: 'Bravo Flight Officer',
+        de: 'Flugoffizier der Bravo-Staffel',
+        fr: "Officier de l'Escadron Bravo",
+        es: 'Oficial de la Escuadrilla Bravo',
+        it: 'Ufficiale della Squadriglia Bravo',
+        pl: 'Oficer Eskadry Bravo',
+        pt: 'Bravo Flight Officer',
+        zh: 'Bravo Flight Officer',
+      },
       xws: 'bravoflightofficer',
       initiative: 2,
       limited: 0,
-      shipAbility: {
-        name: 'Full Throttle',
-        text:
-          'After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action.',
+      text: {
+        en:
+          'The volunteer pilots of the Royal Naboo Security Force are dedicated to protecting the people and ideals of their homeworld, and trust their Queen to send them into battle only when all other options have failed.',
+        de:
+          'Die freiwilligen Piloten der Königlichen Sicherheitskräfte von Naboo haben sich dem Schutz des Volkes und der Ideale ihrer Heimatwelt verschrieben und vertrauen darauf, dass ihre Königin sie nur als letzten Ausweg ins Gefecht schicken wird.',
+        fr:
+          'Les pilotes volontaires des Forces Royales de Sécurité de Naboo sont déterminés à protéger le peuple et les idéaux de leur monde natal, et font confiance à leur Reine pour les envoyer au combat seulement quand toutes les autres options ont échoué.',
+        es:
+          'Los pilotos voluntarios de la Fuerza de Seguridad Real de Naboo están entregados a la protección de la gente y los ideales de su mundo natal, y están plenamente convencidos de que su Reina sólo los envía a combatir cuando todas las demás opciones han fracasado.',
+        it:
+          "I piloti volontari della Forza di Sicurezza Reale di Naboo hanno il compito di proteggere il popolo e gli ideali del loro mondo d'origine e sanno che la loro Regina li invierà in battaglia solo quando tutte le altre opzioni saranno fallite.",
+        pl:
+          'Piloci Królewskich Sił Bezpieczeństwa Naboo to w większości ochotnicy, którzy poświęcili się ochronie swoich rodaków i ideałów rodzimej planety. Całkowicie ufają swojej Królowej i wiedzą, że zostaną wysłani do walki tylko wtedy, gdy inne sposoby zawiodą.',
+        pt:
+          'The volunteer pilots of the Royal Naboo Security Force are dedicated to protecting the people and ideals of their homeworld, and trust their Queen to send them into battle only when all other options have failed.',
+        zh:
+          'The volunteer pilots of the Royal Naboo Security Force are dedicated to protecting the people and ideals of their homeworld, and trust their Queen to send them into battle only when all other options have failed.',
       },
-      text:
-        'The volunteer pilots of the Royal Naboo Security Force are dedicated to protecting the people and ideals of their homeworld, and trust their Queen to send them into battle only when all other options have failed.',
       hyperspace: true,
       epic: true,
       cost: 33,
       slots: ['Sensor', 'Torpedo', 'Astromech'],
       ffg: 562,
-      image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/en/274db1f70ed4da939b9440837a30c39a.png',
+      image: {
+        en:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/274db1f70ed4da939b9440837a30c39a.png',
+        de:
+          'https://sb-cdn.fantasyflightgames.com/card_images/de/b578cba22373b1bf0e00bfaa4d814c97.png',
+        fr:
+          'https://sb-cdn.fantasyflightgames.com/card_images/fr/f79ab5fd73d127aa56b24a4664c1d78d.png',
+        es:
+          'https://sb-cdn.fantasyflightgames.com/card_images/es/0895de1d67425b433b4b1aed2e56d435.png',
+        it:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/274db1f70ed4da939b9440837a30c39a.png',
+        pl:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/274db1f70ed4da939b9440837a30c39a.png',
+        pt:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/274db1f70ed4da939b9440837a30c39a.png',
+        zh:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/274db1f70ed4da939b9440837a30c39a.png',
+      },
     },
     {
-      name: 'Naboo Handmaiden',
+      name: {
+        en: 'Naboo Handmaiden',
+        de: 'Zofe von Naboo',
+        fr: 'Servante de Naboo',
+        es: 'Doncella de Naboo',
+        it: 'Ancella di Naboo',
+        pl: 'Służka z Naboo',
+        pt: 'Naboo Handmaiden',
+        zh: 'Naboo Handmaiden',
+      },
       xws: 'naboohandmaiden',
       initiative: 1,
       limited: 2,
-      shipAbility: {
-        name: 'Full Throttle',
-        text:
-          'After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action.',
+      ability: {
+        en:
+          'Setup: After placing forces, assign the Decoyed condition to 1 friendly ship other than Naboo Handmaiden.',
+        de:
+          'Aufbau:Nachdem die Streitkräfte platziert worden sind, ordne 1 anderem befreundeten Schiff als Zofe von Nabooden Zustand Durch ein Double geschütztzu.',
+        fr:
+          "Mise en Place : après avoir placé les forces, assignez l'état Dupé à 1 vaisseau allié autre que Servante de Naboo.",
+        es:
+          'Preparación: Después de desplegar las fuerzas, asigna el Estado Custodiado a 1 nave aliada que no sea una Doncella de Naboo.',
+        it:
+          'Preparazione: Dopo il passo "Collocare le Forze", assegna la condizione Sosia a 1 nave amica che non sia l\'Ancella di Naboo.',
+        pl:
+          'Przygotowanie gry: Po rozmieszczeniu sił przypisz stan Odwrócenie uwagi do 1 przyjaznego statku innego niż Służka z Naboo.',
+        pt:
+          'Setup: After placing forces, assign the Decoyed condition to 1 friendly ship other than Naboo Handmaiden.',
+        zh:
+          'Setup: After placing forces, assign the Decoyed condition to 1 friendly ship other than Naboo Handmaiden.',
       },
-      ability:
-        'Setup: After placing forces, assign the Decoyed condition to 1 friendly ship other than Naboo Handmaiden.',
       conditions: ['decoyed'],
       hyperspace: true,
       epic: true,
       cost: 42,
       slots: ['Sensor', 'Torpedo', 'Astromech'],
       ffg: 561,
-      caption: 'Regal Ruse',
-      image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/en/4493fe57050175b6a75e3a13e7553b1e.png',
+      caption: {
+        en: 'Regal Ruse',
+        de: 'Double der Königin',
+        fr: 'Stratagème Royal',
+        es: 'Ardid regio',
+        it: 'Stratagemma Reale',
+        pl: 'Królewski podstęp',
+        pt: 'Regal Ruse',
+        zh: 'Regal Ruse',
+      },
+      image: {
+        en:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/4493fe57050175b6a75e3a13e7553b1e.png',
+        de:
+          'https://sb-cdn.fantasyflightgames.com/card_images/de/fe61ef2d02753d830c381aebff8f50b5.png',
+        fr:
+          'https://sb-cdn.fantasyflightgames.com/card_images/fr/79f241bbbed18d133f797ed080f169e9.png',
+        es:
+          'https://sb-cdn.fantasyflightgames.com/card_images/es/42e3da6869abf8aebf1429a4e9bb274b.png',
+        it:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/4493fe57050175b6a75e3a13e7553b1e.png',
+        pl:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/4493fe57050175b6a75e3a13e7553b1e.png',
+        pt:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/4493fe57050175b6a75e3a13e7553b1e.png',
+        zh:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/4493fe57050175b6a75e3a13e7553b1e.png',
+      },
     },
   ],
   ffg: 63,

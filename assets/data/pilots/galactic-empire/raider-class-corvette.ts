@@ -1,7 +1,7 @@
 import { ShipType } from '../../../../types';
 
 const t: ShipType = {
-  name: 'Raider-class Corvette',
+  name: { en: 'Raider-class Corvette' },
   xws: 'raiderclasscorvette',
   size: 'Huge',
   dial: [
@@ -35,21 +35,25 @@ const t: ShipType = {
     { difficulty: 'White', type: 'Coordinate' },
     { difficulty: 'White', type: 'Jam' },
   ],
+  ability: {
+    name: { en: 'Concentrated Batteries' },
+    text: {
+      en:
+        'While you perform a primary, [Torpedo] or [Missile] attack, if the defender is in your [Bullseye Arc], roll 1 additional die.',
+    },
+  },
   pilots: [
     {
-      name: 'Outer Rim Patrol',
-      text:
-        'Capable of carrying four TIE fighters and operating independently for long periods of time, the Gozanti-class cruiser is a common sight in the skies of downtrodden worlds across the Outer Rim.',
+      name: { en: 'Outer Rim Patrol' },
+      text: {
+        en:
+          'Capable of carrying four TIE fighters and operating independently for long periods of time, the Gozanti-class cruiser is a common sight in the skies of downtrodden worlds across the Outer Rim.',
+      },
       initiative: 8,
       engagement: 0,
       limited: 0,
       cost: 146,
       xws: 'outerrimpatrol',
-      shipAbility: {
-        name: 'Concentrated Batteries',
-        text:
-          'While you perform a primary, [Torpedo] or [Missile] attack, if the defender is in your [Bullseye Arc], roll 1 additional die.',
-      },
       slots: [
         'Torpedo',
         'Missile',

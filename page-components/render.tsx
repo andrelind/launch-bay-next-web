@@ -108,22 +108,22 @@ export const renderUpgrade = (
           const needle = input.toLowerCase();
 
           const checkSide = (side: UpgradeSide) => {
-            if (side.title.toLowerCase().indexOf(needle) >= 0) {
+            if (side.title.en.toLowerCase().indexOf(needle) >= 0) {
               return true;
             } else if (
               side.ability &&
-              side.ability.toLowerCase().indexOf(needle) >= 0
+              side.ability.en.toLowerCase().indexOf(needle) >= 0
             ) {
               return true;
             } else if (
               side.text &&
-              side.text.toLowerCase().indexOf(needle) >= 0
+              side.text.en.toLowerCase().indexOf(needle) >= 0
             ) {
               return true;
             }
           };
 
-          if (u.name.toLowerCase().indexOf(needle) >= 0) {
+          if (u.sides[0].title.en.toLowerCase().indexOf(needle) >= 0) {
             return true;
           } else if (checkSide(u.sides[0])) {
             return true;

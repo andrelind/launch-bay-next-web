@@ -1,7 +1,7 @@
 import { ShipType } from '../../../../types';
 
 const t: ShipType = {
-  name: 'CR90 Corellian Corvette',
+  name: { en: 'CR90 Corellian Corvette' },
   xws: 'cr90corelliancorvette',
   size: 'Huge',
   dial: [
@@ -36,20 +36,24 @@ const t: ShipType = {
     { difficulty: 'Red', type: 'Coordinate' },
     { difficulty: 'White', type: 'Jam' },
   ],
+  ability: {
+    name: { en: 'Broadside Batteries' },
+    text: {
+      en: 'You can acquire locks and perform primary attacks at range 1-4.',
+    },
+  },
   pilots: [
     {
-      name: 'Republic Judiciary',
-      text:
-        'The Galactic Republic uses small, swift warships such as the CR90 corvette to respond rapidly to Separatist incursions across the galaxy.',
+      name: { en: 'Republic Judiciary' },
+      text: {
+        en:
+          'The Galactic Republic uses small, swift warships such as the CR90 corvette to respond rapidly to Separatist incursions across the galaxy.',
+      },
       initiative: 8,
       engagement: 0,
       limited: 0,
       cost: 146,
       xws: 'republicjudiciary',
-      shipAbility: {
-        name: 'Broadside Batteries',
-        text: 'You can acquire locks and perform primary attacks at range 1-4.',
-      },
       slots: [
         'Command',
         'Hardpoint',

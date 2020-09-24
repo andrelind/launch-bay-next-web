@@ -1,7 +1,16 @@
 import { ShipType } from '../../../../types';
 
 const t: ShipType = {
-  name: 'Nantex-class Starfighter',
+  name: {
+    en: 'Nantex-class Starfighter',
+    de: 'Sternenjäger der Nantex-Klasse',
+    fr: 'Chasseur de classe Nantex',
+    it: 'Nantex-class Starfighter',
+    pl: 'Myśliwiec gwiezdny klasy Nantex',
+    pt: 'Nantex-class Starfighter',
+    zh: 'Nantex-class Starfighter',
+    es: 'Caza estelar clase Nantex',
+  },
   xws: 'nantexclassstarfighter',
   size: 'Small',
   dial: [
@@ -36,127 +45,409 @@ const t: ShipType = {
     { difficulty: 'White', type: 'Focus' },
     { difficulty: 'White', type: 'Evade' },
   ],
+  ability: {
+    name: {
+      en: 'Pinpoint Tractor Array',
+      de: 'Fangstrahl-Zielsystem',
+      fr: 'Dispositif Tracteur de Précision',
+      es: 'Campos de tracción de alta precisión',
+      it: 'Pinpoint Tractor Array',
+      pl: 'Precyzyjna wiązka ściągająca',
+      pt: 'Pinpoint Tractor Array',
+      zh: 'Pinpoint Tractor Array',
+    },
+    text: {
+      en:
+        'You cannot rotate your [Single Turret Arc] to your [Rear Arc]. After you execute a maneuver, you may gain 1 tractor token to perform a [Rotate Arc] action.',
+      de:
+        'Du kannst deinen [Single Turret Arc] nicht auf deinen [Rear Arc]rotieren. Nachdem du ein Manöver ausgeführt hast, darfst du 1 Fangstrahlmarker erhalten, um eine [Rotate Arc] -Aktion durchzuführen.',
+      fr:
+        'vous ne pouvez pas faire pivoter votre [Single Turret Arc] vers votre [Rear Arc]. Après avoir exécuté une manœuvre, vous pouvez gagner 1 marqueur de rayon tracteur pour effectuer une action [Rotate Arc].',
+      es:
+        'No puedes reorientar tu [Single Turret Arc] hacia tu [Rear Arc]. Después de que ejecutes una maniobra, puedes recibir 1 ficha de Campo de tracción para realizar una acción [Rotate Arc].',
+      it:
+        'You cannot rotate your [Single Turret Arc] to your [Rear Arc]. After you execute a maneuver, you may gain 1 tractor token to perform a [Rotate Arc] action.',
+      pl:
+        'Nie możesz obracać swojego wskaźnika [Single Turret Arc] na twoją [Rear Arc]. Gdy wykonasz manewr, możesz otrzymać 1 żeton wiązki ściągającej, aby wykonać akcję [Rotate Arc].',
+      pt:
+        'You cannot rotate your [Single Turret Arc] to your [Rear Arc]. After you execute a maneuver, you may gain 1 tractor token to perform a [Rotate Arc] action.',
+      zh:
+        'You cannot rotate your [Single Turret Arc] to your [Rear Arc]. After you execute a maneuver, you may gain 1 tractor token to perform a [Rotate Arc] action.',
+    },
+  },
   pilots: [
     {
-      name: 'Stalgasin Hive Guard',
+      name: {
+        en: 'Stalgasin Hive Guard',
+        de: 'Schwarmgarde der Stalgasin-Kolonie',
+        fr: 'Garde de la Ruche Stalgasin',
+        es: 'Guardia de la Colmena Stalgasin',
+        it: 'Stalgasin Hive Guard',
+        pl: 'Strażnik Ula Stalgasin',
+        pt: 'Stalgasin Hive Guard',
+        zh: 'Stalgasin Hive Guard',
+      },
       initiative: 3,
       limited: 0,
       xws: 'stalgasinhiveguard',
-      shipAbility: {
-        name: 'Pinpoint Tractor Array',
-        text:
-          'You cannot rotate your [Single Turret Arc] to your [Rear Arc]. After you execute a maneuver, you may gain 1 tractor token to perform a [Rotate Arc] action.',
-      },
       hyperspace: true,
       epic: true,
-      text:
-        'Designed for the unique physiology of Geonosian pilots, Nantex-class starfighters are capable of maneuvers that would rip most ships—and pilots—apart.',
+      text: {
+        en:
+          'Designed for the unique physiology of Geonosian pilots, Nantex-class starfighters are capable of maneuvers that would rip most ships—and pilots—apart.',
+        de:
+          'Speziell auf die physiologischen Besonderheiten der Geonosianer angepasst, kann der Sternenjäger der Nantex-Klasse Manöver fliegen, welche die meisten anderen Schiffe - und ihre Piloten - auseinanderreißen würden.',
+        fr:
+          'Conçu pour la physiologie spécifique des pilotes Géonosiens, les chasseurs de classe Nantex sont capables de manœuvres qui briseraient la plupart des vaisseaux et des pilotes.',
+        es:
+          'Diseñados para la particular fisiología de los pilotos geonosianos, los cazas estelares de clase Nantex son capaces de efectuar maniobras que harían pedazos a la mayoría de naves y pilotos.',
+        it:
+          'Designed for the unique physiology of Geonosian pilots, Nantex-class starfighters are capable of maneuvers that would rip most ships—and pilots—apart.',
+        pl:
+          'Przy projektowaniu myśliwca gwiezdnego klasy Nantex uwzględniono niezwykłą fizjologię geonosjańskich pilotów, umożliwiając wykonywanie manewrów, które dla zwykłego statku - i pilota - skończyłyby się rozerwaniem na kawałki.',
+        pt:
+          'Designed for the unique physiology of Geonosian pilots, Nantex-class starfighters are capable of maneuvers that would rip most ships—and pilots—apart.',
+        zh:
+          'Designed for the unique physiology of Geonosian pilots, Nantex-class starfighters are capable of maneuvers that would rip most ships—and pilots—apart.',
+      },
       slots: ['Talent'],
       cost: 29,
       ffg: 609,
-      image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/en/e97a0ae22847e0b71d920a0df9dfcfab.png',
+      image: {
+        en:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/e97a0ae22847e0b71d920a0df9dfcfab.png',
+        de:
+          'https://sb-cdn.fantasyflightgames.com/card_images/de/fba8f2a1121e7a39d843121bf379df90.png',
+        fr:
+          'https://sb-cdn.fantasyflightgames.com/card_images/fr/884a0027ebc7f28f65d6f5f64281762f.png',
+        es:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/e97a0ae22847e0b71d920a0df9dfcfab.png',
+        it:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/e97a0ae22847e0b71d920a0df9dfcfab.png',
+        pl:
+          'https://sb-cdn.fantasyflightgames.com/card_images/pl/0bff72101f2344e081497118cf9a131a.png',
+        pt:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/e97a0ae22847e0b71d920a0df9dfcfab.png',
+        zh:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/e97a0ae22847e0b71d920a0df9dfcfab.png',
+      },
     },
     {
-      name: 'Sun Fac',
+      name: {
+        en: 'Sun Fac',
+        de: 'Sun Fac',
+        fr: 'Sun Fac',
+        es: 'Sun Fac',
+        it: 'Sun Fac',
+        pl: 'Sun Fac',
+        pt: 'Sun Fac',
+        zh: 'Sun Fac',
+      },
       initiative: 6,
       limited: 1,
       xws: 'sunfac',
-      ability:
-        'While you perform a primary attack, if the defender is tractored, roll 1 additional attack die.',
-      shipAbility: {
-        name: 'Pinpoint Tractor Array',
-        text:
-          'You cannot rotate your [Single Turret Arc] to your [Rear Arc]. After you execute a maneuver, you may gain 1 tractor token to perform a [Rotate Arc] action.',
+      ability: {
+        en:
+          'While you perform a primary attack, if the defender is tractored, roll 1 additional attack die.',
+        de:
+          'Solange du einen Primärangriff durchführst, falls der Verteidiger gefangen ist, wirf 1 zusätzlichen Angriffswürfel.',
+        fr:
+          "Tant que vous effectuez une attaque principale, si le défenseur est tracté, lancez 1 dé d'attaque supplémentaire.",
+        es:
+          'Mientras efectúas un ataque principal, si el defensor está atrapado en un campo de tracción, tiras 1 dado de ataque adicional.',
+        it:
+          'While you perform a primary attack, if the defender is tractored, roll 1 additional attack die.',
+        pl:
+          'Gdy wykonujesz atak podstawowy i obrońca posiada żeton wiązki ściągającej, rzucasz 1 dodatkową kością ataku.',
+        pt:
+          'While you perform a primary attack, if the defender is tractored, roll 1 additional attack die.',
+        zh:
+          'While you perform a primary attack, if the defender is tractored, roll 1 additional attack die.',
       },
       hyperspace: true,
       epic: true,
       slots: ['Talent', 'Talent'],
       cost: 45,
       ffg: 604,
-      caption: "Archduke's Enforcer",
-      image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/en/42265df53c90026a58ac96b0acd3c1f8.png',
+      caption: {
+        en: "Archduke's Enforcer",
+        de: 'Vollstrecker des Erzherzogs',
+        fr: "Homme de Main de l'Archiduc",
+        es: 'Lugarteniente del Archiduque',
+        it: "Archduke's Enforcer",
+        pl: 'Egzekutor Arcyksięcia',
+        pt: "Archduke's Enforcer",
+        zh: "Archduke's Enforcer",
+      },
+      image: {
+        en:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/42265df53c90026a58ac96b0acd3c1f8.png',
+        de:
+          'https://sb-cdn.fantasyflightgames.com/card_images/de/c8f7697c72d05a75d51bc9cf3f827da3.png',
+        fr:
+          'https://sb-cdn.fantasyflightgames.com/card_images/fr/417e99d35528cace4854ccda95817ffb.png',
+        es:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/42265df53c90026a58ac96b0acd3c1f8.png',
+        it:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/42265df53c90026a58ac96b0acd3c1f8.png',
+        pl:
+          'https://sb-cdn.fantasyflightgames.com/card_images/pl/3f71bd14fbef5a3a539b997ae31ff303.png',
+        pt:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/42265df53c90026a58ac96b0acd3c1f8.png',
+        zh:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/42265df53c90026a58ac96b0acd3c1f8.png',
+      },
     },
     {
-      name: 'Berwer Kret',
+      name: {
+        en: 'Berwer Kret',
+        de: 'Berwer Kret',
+        fr: 'Berwer Kret',
+        es: 'Berwer Kret',
+        it: 'Berwer Kret',
+        pl: 'Berwer Kret',
+        pt: 'Berwer Kret',
+        zh: 'Berwer Kret',
+      },
       xws: 'berwerkret',
       initiative: 5,
       limited: 1,
-      ability:
-        'After you perform an attack that hits, each friendly ship with [Calculate] on its action bar and a lock on the defender may perform a red [Calculate] action.',
-      shipAbility: {
-        name: 'Pinpoint Tractor Array',
-        text:
-          'You cannot rotate your [Single Turret Arc] to your [Rear Arc]. After you execute a maneuver, you may gain 1 tractor token to perform a [Rotate Arc] action.',
+      ability: {
+        en:
+          'After you perform an attack that hits, each friendly ship with [Calculate] on its action bar and a lock on the defender may perform a red [Calculate] action.',
+        de:
+          'Nachdem du einen Angriff durchgeführt hast, der getroffen hat, darf jedes befreundete Schiff mit [Calculate] in seiner Aktionsleiste, das den Verteidiger als Ziel erfasst hat, eine rote [Calculate] -Aktion durchführen.',
+        fr:
+          "Après que vous avez effectué une attaque qui touche, chaque vaisseau allié avec [Calculate] dans sa barre d'action et un verrouillage sur le défenseur peut effectuer une action [Calculate] rouge.",
+        es:
+          'Después de que efectúes un ataque que impacte, toda nave aliada con [Calculate] en su barra de acciones y un Blanco fijado sobre el defensor puede realizar una acción [Calculate] roja.',
+        it:
+          'After you perform an attack that hits, each friendly ship with [Calculate] on its action bar and a lock on the defender may perform a red [Calculate] action.',
+        pl:
+          'Gdy wykonasz atak, który trafił, każdy przyjazny statek, który ma namierzenie na obrońcy i [Calculate] na pasku akcji, może wykonać czerwoną akcję [Calculate].',
+        pt:
+          'After you perform an attack that hits, each friendly ship with [Calculate] on its action bar and a lock on the defender may perform a red [Calculate] action.',
+        zh:
+          'After you perform an attack that hits, each friendly ship with [Calculate] on its action bar and a lock on the defender may perform a red [Calculate] action.',
       },
       hyperspace: true,
       epic: true,
       slots: ['Talent', 'Talent'],
       cost: 36,
       ffg: 605,
-      caption: 'Hive Guard Captain',
-      image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/en/f1c76ce6ff266c23099686392efef565.png',
+      caption: {
+        en: 'Hive Guard Captain',
+        de: 'Captain der Schwarmgarde',
+        fr: 'Capitaine de la Garde de la Ruche',
+        es: 'Capitán de la guardia de la colmena',
+        it: 'Hive Guard Captain',
+        pl: 'Kapitan Gwardii Ula',
+        pt: 'Hive Guard Captain',
+        zh: 'Hive Guard Captain',
+      },
+      image: {
+        en:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/f1c76ce6ff266c23099686392efef565.png',
+        de:
+          'https://sb-cdn.fantasyflightgames.com/card_images/de/380f5538eb37b202bbf9e4c7ecb74163.png',
+        fr:
+          'https://sb-cdn.fantasyflightgames.com/card_images/fr/a66583a77d812a6df7b4af95054df44c.png',
+        es:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/f1c76ce6ff266c23099686392efef565.png',
+        it:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/f1c76ce6ff266c23099686392efef565.png',
+        pl:
+          'https://sb-cdn.fantasyflightgames.com/card_images/pl/f4b6ddfdfcf8fafeb16339295c3fd8a6.png',
+        pt:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/f1c76ce6ff266c23099686392efef565.png',
+        zh:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/f1c76ce6ff266c23099686392efef565.png',
+      },
     },
     {
-      name: 'Chertek',
+      name: {
+        en: 'Chertek',
+        de: 'Chertek',
+        fr: 'Chertek',
+        es: 'Chertek',
+        it: 'Chertek',
+        pl: 'Chertek',
+        pt: 'Chertek',
+        zh: 'Chertek',
+      },
       xws: 'chertek',
       initiative: 4,
       limited: 1,
-      ability:
-        'While you perform a primary attack, if the defender is tractored, you may reroll up to 2 attack dice.',
-      shipAbility: {
-        name: 'Pinpoint Tractor Array',
-        text:
-          'You cannot rotate your [Single Turret Arc] to your [Rear Arc]. After you execute a maneuver, you may gain 1 tractor token to perform a [Rotate Arc] action.',
+      ability: {
+        en:
+          'While you perform a primary attack, if the defender is tractored, you may reroll up to 2 attack dice.',
+        de:
+          'Solange du einen Primärangriff durchführst, falls der Verteidiger gefangen ist, darfst du bis zu 2 Angriffswürfel neu werfen.',
+        fr:
+          "Tant que vous effectuez une attaque principale, si le défenseur est tracté, vous pouvez relancer jusqu'à 2 dés d'attaque.",
+        es:
+          'Mientras efectúas un ataque principal, si el defensor está atrapado en un campo de tracción, puedes volver a tirar hasta 2 dados de ataque.',
+        it:
+          'While you perform a primary attack, if the defender is tractored, you may reroll up to 2 attack dice.',
+        pl:
+          'Gdy wykonujesz atak podstawowy i obrońca posiada żeton wiązki ściągającej, możesz przerzucić maksymalnie 2 kości ataku.',
+        pt:
+          'While you perform a primary attack, if the defender is tractored, you may reroll up to 2 attack dice.',
+        zh:
+          'While you perform a primary attack, if the defender is tractored, you may reroll up to 2 attack dice.',
       },
       hyperspace: true,
       epic: true,
       slots: ['Talent', 'Talent'],
       cost: 34,
       ffg: 606,
-      caption: 'Opportunistic Ace',
-      image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/en/07504533be45d13cb82d71ea11d234f7.png',
+      caption: {
+        en: 'Opportunistic Ace',
+        de: 'Opportunistisches Fliegerass',
+        fr: 'As Opportuniste',
+        es: 'As oportunista',
+        it: 'Opportunistic Ace',
+        pl: 'Oportunistyczny as',
+        pt: 'Opportunistic Ace',
+        zh: 'Opportunistic Ace',
+      },
+      image: {
+        en:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/07504533be45d13cb82d71ea11d234f7.png',
+        de:
+          'https://sb-cdn.fantasyflightgames.com/card_images/de/c15f1bd62e41b929cba729fddeb8d551.png',
+        fr:
+          'https://sb-cdn.fantasyflightgames.com/card_images/fr/be9c4c5427d5f044b96a6890b06734f4.png',
+        es:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/07504533be45d13cb82d71ea11d234f7.png',
+        it:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/07504533be45d13cb82d71ea11d234f7.png',
+        pl:
+          'https://sb-cdn.fantasyflightgames.com/card_images/pl/96f2e2dc90dc0bb871ab55c6244fa3cc.png',
+        pt:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/07504533be45d13cb82d71ea11d234f7.png',
+        zh:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/07504533be45d13cb82d71ea11d234f7.png',
+      },
     },
     {
-      name: 'Gorgol',
+      name: {
+        en: 'Gorgol',
+        de: 'Gorgol',
+        fr: 'Gorgol',
+        es: 'Gorgol',
+        it: 'Gorgol',
+        pl: 'Gorgol',
+        pt: 'Gorgol',
+        zh: 'Gorgol',
+      },
       xws: 'gorgol',
       initiative: 2,
       limited: 1,
-      ability:
-        'During the System Phase, you may gain 1 disarm token and choose a friendly ship at range 1-2. If you do, it gains 1 tractor token, then repairs 1 of its faceup Ship trait damage cards.',
-      shipAbility: {
-        name: 'Pinpoint Tractor Array',
-        text:
-          'You cannot rotate your [Single Turret Arc] to your [Rear Arc]. After you execute a maneuver, you may gain 1 tractor token to perform a [Rotate Arc] action.',
+      ability: {
+        en:
+          'During the System Phase, you may gain 1 disarm token and choose a friendly ship at range 1-2. If you do, it gains 1 tractor token, then repairs 1 of its faceup Ship trait damage cards.',
+        de:
+          'Während der Systemphase darfst du 1 Entwaffnet-Marker erhalten und ein befreundetes Schiff in Reichweite 1-2 wählen. Falls du das tust, erhält es 1 Fangstrahlmarker, dann repariert es 1 seiner offenen Schiff -Schadenskarten.',
+        fr:
+          'Pendant la phase de système, vous pouvez gagner 1 marqueur de désarmement et choisir un vaisseau allié à porté 1-2. Dans ce cas, il gagne 1 marqueur de rayon tracteur, puis il répare 1 de ses cartes de dégât face visible Vaisseau.',
+        es:
+          'Durante la fase de Sistemas, puedes recibir 1 ficha de Desarme y elegir una nave aliada que tengas a alcance 1-2. Si lo haces, esa nave recibe 1 ficha de Campo de tracción, y luego repara 1 de de sus cartas de Daño con el atributo Nave .',
+        it:
+          'During the System Phase, you may gain 1 disarm token and choose a friendly ship at range 1-2. If you do, it gains 1 tractor token, then repairs 1 of its faceup Ship trait damage cards.',
+        pl:
+          'W fazie systemowej możesz otrzymać 1 żeton rozbrojenia i wskazać przyjazny statek w zasięgu 1-2. Jeżeli tak zrobisz, wskazany statek otrzymuje 1 żeton wiązki ściągającej, a następnie naprawia 1 ze swoich odkrytych kart uszkodzeń Statek.',
+        pt:
+          'During the System Phase, you may gain 1 disarm token and choose a friendly ship at range 1-2. If you do, it gains 1 tractor token, then repairs 1 of its faceup Ship trait damage cards.',
+        zh:
+          'During the System Phase, you may gain 1 disarm token and choose a friendly ship at range 1-2. If you do, it gains 1 tractor token, then repairs 1 of its faceup Ship trait damage cards.',
       },
       hyperspace: true,
       epic: true,
       slots: ['Talent', 'Modification'],
       cost: 28,
       ffg: 607,
-      caption: 'Handy Engineer',
-      image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/en/d2d0764f83a2740f407082e934986ff2.png',
+      caption: {
+        en: 'Handy Engineer',
+        de: 'Geschickter Ingenieur',
+        fr: 'Ingénieur Habile',
+        es: 'Ingeniero mañoso',
+        it: 'Handy Engineer',
+        pl: 'Wprawny inżynier',
+        pt: 'Handy Engineer',
+        zh: 'Handy Engineer',
+      },
+      image: {
+        en:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/d2d0764f83a2740f407082e934986ff2.png',
+        de:
+          'https://sb-cdn.fantasyflightgames.com/card_images/de/f9de58c8a35d383aa960f44b907ab334.png',
+        fr:
+          'https://sb-cdn.fantasyflightgames.com/card_images/fr/a48cd26e303a1d96d07773af4b04840a.png',
+        es:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/d2d0764f83a2740f407082e934986ff2.png',
+        it:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/d2d0764f83a2740f407082e934986ff2.png',
+        pl:
+          'https://sb-cdn.fantasyflightgames.com/card_images/pl/b750a5f67d4d4342a0658f65fceab2f7.png',
+        pt:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/d2d0764f83a2740f407082e934986ff2.png',
+        zh:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/d2d0764f83a2740f407082e934986ff2.png',
+      },
     },
     {
-      name: 'Petranaki Arena Ace',
+      name: {
+        en: 'Petranaki Arena Ace',
+        de: 'Ass der Petranaki-Arena',
+        fr: "As de l'Arène Petranaki",
+        es: 'As del coliseo Petranaki',
+        it: 'Petranaki Arena Ace',
+        pl: 'As Areny Petranaki',
+        pt: 'Petranaki Arena Ace',
+        zh: 'Petranaki Arena Ace',
+      },
       cost: 30,
       ffg: 608,
       initiative: 4,
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/5c32b5d481ad922be7a0ec4a3743d1d6.jpg',
-      image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/en/d2d62b6070fdf59b58db79aadb845d54.png',
-      shipAbility: {
-        name: 'Pinpoint Tractor Array',
-        text:
-          'You cannot rotate your [Single Turret Arc] to your [Rear Arc]. After you execute a maneuver, you may gain 1 tractor token to perform a [Rotate Arc] action.',
+      image: {
+        en:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/d2d62b6070fdf59b58db79aadb845d54.png',
+        de:
+          'https://sb-cdn.fantasyflightgames.com/card_images/de/3d33f0fc6d7c77b564839eb02f0e5f63.png',
+        fr:
+          'https://sb-cdn.fantasyflightgames.com/card_images/fr/be49dfe97e043e5ff975af89566065af.png',
+        es:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/d2d62b6070fdf59b58db79aadb845d54.png',
+        it:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/d2d62b6070fdf59b58db79aadb845d54.png',
+        pl:
+          'https://sb-cdn.fantasyflightgames.com/card_images/pl/cc342b65f75e200877a345ec574319c7.png',
+        pt:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/d2d62b6070fdf59b58db79aadb845d54.png',
+        zh:
+          'https://sb-cdn.fantasyflightgames.com/card_images/en/d2d62b6070fdf59b58db79aadb845d54.png',
       },
-      text:
-        'The Petranaki Arena is a massive edifice on Geonosis that was a key site in the first battle of the Clone Wars.',
+      text: {
+        en:
+          'The Petranaki Arena is a massive edifice on Geonosis that was a key site in the first battle of the Clone Wars.',
+        de:
+          'Die Petranaki-Arena ist ein gewaltiges Bauwerk auf dem Planeten Geonosis und der Ort, an dem die erste Schlacht der Klonkriege geschlagen wurde.',
+        fr:
+          "L'Arène de Petranaki est un gigantesque édifice de Géonosis qui a été le lieu principal de la première bataille de la Guerre des Clones.",
+        es:
+          'El coliseo Petranaki es un edificio gigantesco de Geonosis que fue un lugar clave en la primera batalla de las Guerras Clon.',
+        it:
+          'The Petranaki Arena is a massive edifice on Geonosis that was a key site in the first battle of the Clone Wars.',
+        pl:
+          'Arena Petranaki to ogromna budowla na Geonosis i kluczowe miejsce związane z początkiem Wojen Klonów.',
+        pt:
+          'The Petranaki Arena is a massive edifice on Geonosis that was a key site in the first battle of the Clone Wars.',
+        zh:
+          'The Petranaki Arena is a massive edifice on Geonosis that was a key site in the first battle of the Clone Wars.',
+      },
       hyperspace: true,
       epic: true,
       limited: 0,

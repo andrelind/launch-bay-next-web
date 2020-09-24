@@ -237,13 +237,13 @@ export const exportAsText = (squadron: Squadron) => {
   let text = `${squadron.name}\n`;
 
   squadron.ships.map(ship => {
-    text += `\n(${ship.pilot.cost}) ${ship.pilot.name} [${ship.name}]`;
+    text += `\n(${ship.pilot.cost}) ${ship.pilot.name.en} [${ship.name.en}]`;
 
     slotKeys.forEach(key => {
       const up = ship.upgrades && ship.upgrades[key];
       if (up) {
         up.forEach(u => {
-          text += `\n(${u.finalCost}) ${u.name}`;
+          text += `\n(${u.finalCost}) ${u.sides[0].title.en}`;
         });
       }
     });
@@ -261,13 +261,13 @@ export const exportAsTTS = (squadron: Squadron) => {
   let text = '';
 
   squadron.ships.map(ship => {
-    text += ship.pilot.name;
+    text += ship.pilot.name.en;
 
     slotKeys.forEach(key => {
       const up = ship.upgrades && ship.upgrades[key];
       if (up) {
         up.forEach(u => {
-          text += ` + ${u.name}`;
+          text += ` + ${u.sides[0].title.en}`;
         });
       }
     });

@@ -1,7 +1,16 @@
 import { ShipType } from '../../../../types';
 
 const t: ShipType = {
-  name: 'BTL-S8 K-wing',
+  name: {
+    en: 'BTL-S8 K-wing',
+    de: 'BTL-S8-K-Flügler',
+    fr: 'K-wing BTL-S8',
+    it: 'Ala-K BTL-S8',
+    pl: 'K-wing BTL-S8',
+    pt: 'K-wing BTL-S8',
+    zh: 'BTL-S8 K-wing',
+    es: 'BTL-S8 Ala-K',
+  },
   xws: 'btls8kwing',
   ffg: 30,
   size: 'Medium',
@@ -35,25 +44,75 @@ const t: ShipType = {
   icon: 'https://sb-cdn.fantasyflightgames.com/ship_types/I_K-wing.png',
   pilots: [
     {
-      name: 'Esege Tuketu',
-      caption: 'Selfless Hero',
+      name: {
+        en: 'Esege Tuketu',
+        de: 'Esege Tuketu',
+        fr: 'Esege Tuketu',
+        es: 'Esege Tuketu',
+        it: 'Esege Tuketu',
+        pl: 'Esege Tuketu',
+        pt: 'Esege Tuketu',
+        zh: 'Esege Tuketu',
+      },
+      caption: {
+        en: 'Selfless Hero',
+        de: 'Selbstloser Held',
+        fr: 'Héros Altruiste',
+        es: 'Héroe abnegado',
+        it: 'Eroe Altruista',
+        pl: 'Bezinteresowny bohater',
+        pt: 'Herói Altruísta',
+        zh: 'Selfless Hero',
+      },
       initiative: 3,
       limited: 1,
       cost: 44,
       xws: 'esegetuketu',
-      ability:
-        'While a friendly ship at range 0-2 defends or performs an attack, it may spend your focus tokens as if that ship has them.',
-      image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_63.png',
+      ability: {
+        en:
+          'While a friendly ship at range 0-2 defends or performs an attack, it may spend your focus tokens as if that ship has them.',
+        de:
+          'Solange ein befreundetes Schiff in Reichweite 0-2 verteidigt oder einen Angriff durchführt, darf es deine Fokusmarker ausgeben, als ob jenes Schiff sie hätte.',
+        fr:
+          "Tant qu'un vaisseau allié à portée 0-2 défend ou effectue une attaque, il peut dépenser vos marqueurs de concentration comme s'ils étaient à lui.",
+        es:
+          'Mientras una nave aliada que tienes a alcance 0-2 se defiende o efectúa un ataque, esa nave puede gastar tus fichas de Concentración como si fueran suyas.',
+        it:
+          'Mentre una nave amica a gittata 0-2 difende o effettua un attacco, può spendere i tuoi segnalini concentrazione come se fossero i suoi.',
+        pl:
+          'Gdy przyjazny statek w zasięgu 0-2 broni się albo wykonuje atak, może wydawać twoje żetony skupienia, jak gdyby były jego.',
+        pt:
+          'Quando uma nave amiga em alcance0-2 defender ou realizar um ataque,ela pode gastar as suas fichas defoco como se fossem dela.',
+        zh:
+          'While a friendly ship at range 0-2 defends or performs an attack, it may spend your focus tokens as if that ship has them.',
+      },
+      image: {
+        en:
+          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_63.png',
+        de:
+          'https://sb-cdn.fantasyflightgames.com/card_images/de/c867c80941ac77abc3448872745cd440.png',
+        fr:
+          'https://sb-cdn.fantasyflightgames.com/card_images/fr/7054e783e64c4ccfb4bd13207086455a.png',
+        es:
+          'https://sb-cdn.fantasyflightgames.com/card_images/es/01e7dd2164cb94a5754b07b4a4821206.png',
+        it:
+          'https://sb-cdn.fantasyflightgames.com/card_images/it/2bbd8822733b71de92e6b17630311dc3.png',
+        pl:
+          'https://sb-cdn.fantasyflightgames.com/card_images/pl/423755da4d82b2dad945a08f8854e6d0.png',
+        pt:
+          'https://sb-cdn.fantasyflightgames.com/card_images/pt/ba7c090f107e43ac80117bc9945636f9.png',
+        zh:
+          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_63.png',
+      },
       slots: [
         'Torpedo',
         'Missile',
         'Missile',
-        'Gunner',
         'Crew',
         'Device',
         'Device',
         'Modification',
+        'Gunner',
       ],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_63.jpg',
@@ -62,25 +121,75 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: 'Miranda Doni',
-      caption: 'Heavy Hitter',
+      name: {
+        en: 'Miranda Doni',
+        de: 'Miranda Doni',
+        fr: 'Miranda Doni',
+        es: 'Miranda Doni',
+        it: 'Miranda Doni',
+        pl: 'Miranda Doni',
+        pt: 'Miranda Doni',
+        zh: 'Miranda Doni',
+      },
+      caption: {
+        en: 'Heavy Hitter',
+        de: 'Schweres Geschütz',
+        fr: 'Poids Lourd',
+        es: 'Peso pesado',
+        it: 'Pesantemente Armata',
+        pl: 'Ciężkie wsparcie',
+        pt: 'Atacante Pesado',
+        zh: 'Heavy Hitter',
+      },
       initiative: 4,
       limited: 1,
       cost: 40,
       xws: 'mirandadoni',
-      ability:
-        'While you perform a primary attack, you may either spend 1 shield to roll 1 additional attack die or, if you are not shielded, you may roll 1 fewer attack die to recover 1 shield.',
-      image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_62.png',
+      ability: {
+        en:
+          'While you perform a primary attack, you may either spend 1 shield to roll 1 additional attack die or, if you are not shielded, you may roll 1 fewer attack die to recover 1 shield.',
+        de:
+          'Solange du einen Primärangriff durchführst, darfst du entweder 1 Schild ausgeben, um 1 zusätzlichen Angriffswürfel zu werfen, oder, falls du keine Schilde hast, du darfst 1 Angriffswürfel weniger werfen, um 1 Schild wiederherzustellen.',
+        fr:
+          "Tant que vous effectuez une attaque principale, vous pouvez soit dépenser 1 bouclier pour lancer 1 dé d'attaque supplémentaire, soit, si vous n'êtes pas protégé, vous pouvez lancer 1 dé d'attaque en moins pour récupérer 1 bouclier.",
+        es:
+          'Mientras efectúas un ataque principal, puedes optar por gastar 1 escudo para tirar 1 dado de ataque adicional o, si no estás protegido por escudos, puedes tirar 1 dado de ataque menos para recuperar 1 escudo.',
+        it:
+          'Mentre effettui un attacco primario, puoi spendere 1 scudo per ripetere il tiro di 1 dado di attacco oppure, se non possiedi scudi attivi, puoi tirare 1 dado di attacco in meno per recuperare 1 scudo.',
+        pl:
+          'Gdy wykonujesz atak podstawowy, możesz wydać 1 osłonę, aby rzucić 1 dodatkową kością ataku albo, jeżeli nie masz aktywnych osłon, rzucić 1 kością ataku mniej, aby odzyskać 1 osłonę.',
+        pt:
+          'Quando realizar um ataque primário, você pode gastar 1 escudo para rolar 1 dado de ataque adicional ou, se não tiver escudos, você pode rolar 1 dado de ataque a menos para recuperar 1 escudo.',
+        zh:
+          'While you perform a primary attack, you may either spend 1 shield to roll 1 additional attack die or, if you are not shielded, you may roll 1 fewer attack die to recover 1 shield.',
+      },
+      image: {
+        en:
+          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_62.png',
+        de:
+          'https://sb-cdn.fantasyflightgames.com/card_images/de/c78baa4d39c4420406e8245beb6f59ec.png',
+        fr:
+          'https://sb-cdn.fantasyflightgames.com/card_images/fr/6fdbf9fa5ba29707de370a59f38f7927.png',
+        es:
+          'https://sb-cdn.fantasyflightgames.com/card_images/es/d2e580198cc790d019dba1f75ef59235.png',
+        it:
+          'https://sb-cdn.fantasyflightgames.com/card_images/it/a434ef18d1d4764d2efaa2c6621d5016.png',
+        pl:
+          'https://sb-cdn.fantasyflightgames.com/card_images/pl/f782b7c3607ec19514636bf936db6e76.png',
+        pt:
+          'https://sb-cdn.fantasyflightgames.com/card_images/pt/5c9f92d2be5b2b9bc27e06be63564688.png',
+        zh:
+          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_62.png',
+      },
       slots: [
         'Torpedo',
         'Missile',
         'Missile',
-        'Gunner',
         'Crew',
         'Device',
         'Device',
         'Modification',
+        'Gunner',
       ],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_62.jpg',
@@ -89,24 +198,65 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: 'Warden Squadron Pilot',
+      name: {
+        en: 'Warden Squadron Pilot',
+        de: 'Pilot der Beschützer-Staffel',
+        fr: "Pilote de l'Escadron Warden",
+        es: 'Piloto del Escuadrón Custodio',
+        it: 'Pilota della Squadriglia Warden',
+        pl: 'Pilot Eskadry Strażników',
+        pt: 'Piloto do Esq. Protetor',
+        zh: 'Warden Squadron Pilot',
+      },
       initiative: 2,
       limited: 0,
       cost: 38,
       xws: 'wardensquadronpilot',
-      text:
-        "Koensayr Manufacturing's K-wing boasts an advanced SubLight Acceleration Motor and an unprecedented 18 hard points, granting it unrivaled speed and firepower.",
-      image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_64.png',
+      text: {
+        en:
+          "Koensayr Manufacturing's K-wing boasts an advanced SubLight Acceleration Motor and an unprecedented 18 hard points, granting it unrivaled speed and firepower.",
+        de:
+          'Der K-Flügler von Koensayr zeichnet sich durch einen topmodernen Sublicht-Antriebsmotor (kurz: SLAM) sowie beispiellose achtzehn Waffenaufhängungen aus. Was Geschwindigkeit und Feuerkraft anbelangt, steht er außer Konkurrenz.',
+        fr:
+          "Le K-wing de Koensayr Manufacturing peut s'enorgueillir de son moteur à accélération subluminique avancé et de dix-huit points d'emport, ce qui lui confère une vitesse et une puissance de feu inégalées.",
+        es:
+          'El Ala-K de Koensayr está provisto de un avanzado motor de aceleración sublumínica y dieciocho ensamblajes, cualidades inéditas que le confieren una velocidad y potencia de fuego inigualables.',
+        it:
+          "L'Ala-K della Koensayr Manufacturing vantava un evoluto Motore ad Accelerazione Subluce (SLAM) e montava ben 18 innesti armati, un'attrezzatura che gli forniva velocità e potenza di fuoco ineguagliate.",
+        pl:
+          'Produkowany przez Koensayr Manufacturing K-Wing ma zaawansowany napęd podświetlny (SubLight Acceleration Motor) i 18 punktów podczepienia, dzięki czemu dysponuje niezrównaną prędkością i siłą ognia.',
+        pt:
+          'A K-wing fabricada pela Koensayr Manufacturing dispunha de um avançado Motor de Aceleração Sub-Luz (SLAM) e incríveis 18 pontos de encaixe, garantindo velocidade e poder de fogo sem igual.',
+        zh:
+          "Koensayr Manufacturing's K-wing boasts an advanced SubLight Acceleration Motor and an unprecedented 18 hard points, granting it unrivaled speed and firepower.",
+      },
+      image: {
+        en:
+          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_64.png',
+        de:
+          'https://sb-cdn.fantasyflightgames.com/card_images/de/f085b2ad35a27b3c24bf677220800543.png',
+        fr:
+          'https://sb-cdn.fantasyflightgames.com/card_images/fr/abe0f53aedb85ccf2ec232123af366b5.png',
+        es:
+          'https://sb-cdn.fantasyflightgames.com/card_images/es/29fd0e08b16ae326602e073f93c52bc4.png',
+        it:
+          'https://sb-cdn.fantasyflightgames.com/card_images/it/10f27d3e1b0c2ac014b383490a45134e.png',
+        pl:
+          'https://sb-cdn.fantasyflightgames.com/card_images/pl/f63bde8d7ffb8ddfd05ea3a77764adb4.png',
+        pt:
+          'https://sb-cdn.fantasyflightgames.com/card_images/pt/5a57620652cd91d3c09c189c1ee36a63.png',
+        zh:
+          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_64.png',
+      },
       slots: [
         'Torpedo',
         'Missile',
         'Missile',
-        'Gunner',
         'Crew',
         'Device',
         'Device',
         'Modification',
+        'Gunner',
       ],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_64.jpg',

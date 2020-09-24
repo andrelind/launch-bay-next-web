@@ -1,7 +1,7 @@
 import { ShipType } from '../../../../types';
 
 const t: ShipType = {
-  name: 'Gozanti-class Cruiser',
+  name: { en: 'Gozanti-class Cruiser' },
   xws: 'gozanticlasscruiser',
   size: 'Huge',
   dial: [
@@ -32,20 +32,22 @@ const t: ShipType = {
     { difficulty: 'Red', type: 'Coordinate' },
     { difficulty: 'White', type: 'Jam' },
   ],
+  ability: {
+    name: { en: 'Docking Clamps' },
+    text: { en: 'You can dock up to 4 small ships.' },
+  },
   pilots: [
     {
-      name: 'First Order Sympathizers',
-      text:
-        'Capable of carrying four TIE fighters and operating independently for long periods of time, the Gozanti-class cruiser is a common sight in the skies of downtrodden worlds across the Outer Rim.',
+      name: { en: 'First Order Sympathizers' },
+      text: {
+        en:
+          'Capable of carrying four TIE fighters and operating independently for long periods of time, the Gozanti-class cruiser is a common sight in the skies of downtrodden worlds across the Outer Rim.',
+      },
       initiative: 7,
       engagement: 0,
       limited: 0,
       cost: 60,
-      xws: 'firstordersympathizer',
-      shipAbility: {
-        name: 'Docking Clamps',
-        text: 'You can dock up to 4 small ships.',
-      },
+      xws: 'firstordersympathizers',
       slots: [
         'Command',
         'Hardpoint',

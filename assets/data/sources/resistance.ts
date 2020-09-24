@@ -238,6 +238,7 @@ export const t: Source[] = [
         kazsfireball: 1,
         magpulsewarheads: 1,
         coaxiumhyperfuel: 1,
+        advancedslam: 1,
       },
     },
   },

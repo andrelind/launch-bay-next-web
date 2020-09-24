@@ -1,7 +1,7 @@
 import { ShipType } from '../../../../types';
 
 const t: ShipType = {
-  name: 'GR-75 Medium Transport',
+  name: { en: 'GR-75 Medium Transport' },
   xws: 'gr75mediumtransport',
   size: 'Huge',
   dial: [
@@ -32,21 +32,25 @@ const t: ShipType = {
     { difficulty: 'Red', type: 'Lock' },
     { difficulty: 'Red', type: 'Reinforce' },
   ],
+  ability: {
+    name: { en: 'Resupply Craft' },
+    text: {
+      en:
+        'After another friendly ship at range 0-1 performs an action, you may spend 1 [Energy]. If you do, it removes 1 orange or red token, or recovers 1 shield.',
+    },
+  },
   pilots: [
     {
-      name: 'Echo Base Evacuees',
-      text:
-        'A craft used since before the Clone Wars, the CR90 corvette is favored by the Royal House of Alderaan for its versatility.',
+      name: { en: 'Echo Base Evacuees' },
+      text: {
+        en:
+          'A craft used since before the Clone Wars, the CR90 corvette is favored by the Royal House of Alderaan for its versatility.',
+      },
       initiative: 7,
       engagement: 1,
       limited: 0,
       cost: 55,
       xws: 'echobaseevacuees',
-      shipAbility: {
-        name: 'Resupply Craft',
-        text:
-          'After another friendly ship at range 0-1 performs an action, you may spend 1 [Energy]. If you do, it removes 1 orange or red token, or recovers 1 shield.',
-      },
       slots: [
         'Command',
         'Hardpoint',

@@ -90,9 +90,9 @@ const PilotComponent = ({
         </MiddleWrapper>
       )}
 
-      {pilot.ability && <FormattedText text={pilot.ability} />}
+      {pilot.ability && <FormattedText text={pilot.ability.en} />}
       {!minimized && pilot.text && (
-        <FormattedText text={pilot.text} fontStyle="italic" />
+        <FormattedText text={pilot.text.en} fontStyle="italic" />
       )}
 
       {pilot.conditions &&

@@ -1,7 +1,7 @@
 import { ShipType } from '../../../../types';
 
 const t: ShipType = {
-  name: 'C-ROC Cruiser',
+  name: { en: 'C-ROC Cruiser' },
   xws: 'croccruiser',
   size: 'Huge',
   dial: [
@@ -35,21 +35,25 @@ const t: ShipType = {
     { difficulty: 'Red', type: 'Coordinate' },
     { difficulty: 'White', type: 'Jam' },
   ],
+  ability: {
+    name: { en: 'Overdrive Burners' },
+    text: {
+      en:
+        'While you defend, if your revealed maneuver is speed 3-5, roll 1 additional defense die.',
+    },
+  },
   pilots: [
     {
-      name: 'Syndicate Smugglers',
-      text:
-        'Vessels like the C-ROC Cruiser allow criminal operations across the Outer Rim to move massive amounts of illicit materials, or project power to bully small colonies into compliance.',
+      name: { en: 'Syndicate Smugglers' },
+      text: {
+        en:
+          'Vessels like the C-ROC Cruiser allow criminal operations across the Outer Rim to move massive amounts of illicit materials, or project power to bully small colonies into compliance.',
+      },
       initiative: 7,
       engagement: 1,
       limited: 0,
       cost: 58,
       xws: 'syndicatesmugglers',
-      shipAbility: {
-        name: 'Overdrive Burners',
-        text:
-          'While you defend, if your revealed maneuver is speed 3-5, roll 1 additional defense die.',
-      },
       slots: [
         'Command',
         'Hardpoint',

@@ -206,6 +206,30 @@ export const t: Source[] = [
       },
     },
   },
+  {
+    ffg: 51,
+    xws: 'xiclassshuttle',
+    name: 'Xi-class Shuttle',
+    wave: 7,
+    released: true,
+    contents: {
+      ships: {},
+      pilots: {
+        commandermalarus: 1,
+        gideonhask: 1,
+        agentterex: 1,
+        firstordercourier: 1,
+      },
+      upgrades: {
+        deadeyeshot: 1,
+        automatedtargetpriority: 1,
+        sensorbuoysuite: 1,
+        commandermalarus: 1,
+        agentterex: 1,
+        commanderpyre: 1,
+      },
+    },
+  },
 ];
 
 export default t;
