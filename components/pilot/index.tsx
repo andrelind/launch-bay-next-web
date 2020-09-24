@@ -55,7 +55,7 @@ const PilotComponent = ({
 
           <Name>
             {pilot.limited > 0 && `${'•'.repeat(pilot.limited)} `}
-            {pilot.name}
+            {pilot.name.en}
             {count !== undefined && <Count> ({count})</Count>}
           </Name>
         </View>
@@ -65,7 +65,7 @@ const PilotComponent = ({
       {ship && (
         <ShipWrapper>
           <ShipIcon icon={ship.xws} />
-          <ShipText>{ship.name}</ShipText>
+          <ShipText>{ship.name.en}</ShipText>
         </ShipWrapper>
       )}
 

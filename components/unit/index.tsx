@@ -78,14 +78,14 @@ const Unit = ({
           {(!hideName || minimized) && (
             <Name thin={thinName}>
               {ship.pilot.limited > 0 && `${'•'.repeat(ship.pilot.limited)} `}
-              {ship.pilot.name}
+              {ship.pilot.name.en}
               {count !== undefined && <Count> ({count})</Count>}
             </Name>
           )}
           {!minimized && (
             <ShipWrapper>
               <ShipIcon icon={ship.xws} />
-              <ShipText>{ship.name}</ShipText>
+              <ShipText>{ship.name.en}</ShipText>
             </ShipWrapper>
           )}
         </div>
