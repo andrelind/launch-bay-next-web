@@ -74,7 +74,7 @@ const UpgradeComponent = ({
         <MultipleSlotWrapper>
           <Name>
             {upgrade.limited > 0 && `${'•'.repeat(upgrade.limited)} `}
-            {upgradeSide.title}
+            {upgradeSide.title.en}
             {count !== undefined && <Count> ({count})</Count>}
           </Name>
 

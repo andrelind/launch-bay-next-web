@@ -27,7 +27,7 @@ export const ShipTypeComponent = ({ shipType, count, minimized }: Props) => {
       <LeftWrapper>
         <ShipIcon icon={shipType.xws} />
         <PilotName>
-          {shipType.name}
+          {shipType.name.en}
           {count !== undefined && <Count> ({count})</Count>}
         </PilotName>
         <BaseSize size={shipType.size} />
