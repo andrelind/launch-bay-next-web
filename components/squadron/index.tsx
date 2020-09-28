@@ -1,3 +1,4 @@
+import { useLocalized } from 'helpers/i18n';
 import { useRouter } from 'next/router';
 import React from 'react';
 
@@ -22,6 +23,8 @@ type Props = {
 };
 
 const SquadronComponent = ({ squadron, toggleFavouriteSquad }: Props) => {
+  const { t } = useLocalized();
+
   const getUnique = (units: Ship[]) => {
     if (units.length === 0) {
       return undefined;
@@ -40,9 +43,9 @@ const SquadronComponent = ({ squadron, toggleFavouriteSquad }: Props) => {
           unit => unit.pilot.xws === u.xws
         )[0].pilot;
         if (u.count > 1) {
-          return `${u.count}x ${name}`;
+          return `${u.count}x ${t(name)}`;
         }
-        return name;
+        return t(name);
       })
       .join(', ');
   };
