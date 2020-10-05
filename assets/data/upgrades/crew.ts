@@ -4860,7 +4860,7 @@ const t: UpgradeBase[] = [
     limited: 1,
     xws: 'plokoon',
     hyperspace: true,
-    epic: false,
+    epic: true,
     sides: [
       {
         title: {
@@ -4893,6 +4893,10 @@ const t: UpgradeBase[] = [
         },
         type: 'Crew',
         slots: ['Crew'],
+        force: { value: 1, recovers: 1, side: ['light'] },
+        grants: [
+          { action: { type: 'Reinforce', difficulty: 'Purple' }, value: 1 },
+        ],
         ffg: 677,
         image: {
           en:
@@ -4953,6 +4957,17 @@ const t: UpgradeBase[] = [
             'Mientras una nave enemiga situada en tu [Bullseye Arc] efectúa un ataque, si el defensor es aliado tuyo y lo tienes a alcance 0-2, ese defensor puede cambiar 1 resultado de cara vacía por un resultado [Focus].',
         },
         slots: ['Crew'],
+        force: { value: 1, recovers: 1, side: ['light'] },
+        grants: [
+          {
+            action: {
+              type: 'Focus',
+              difficulty: 'White',
+              linked: { type: 'Coordinate', difficulty: 'Purple' },
+            },
+            value: 1,
+          },
+        ],
         ffg: 675,
         image: {
           en:
@@ -4975,7 +4990,7 @@ const t: UpgradeBase[] = [
       },
     ],
     hyperspace: true,
-    epic: false,
+    epic: true,
     restrictions: [{ factions: ['Galactic Republic'] }],
   },
   {
@@ -5087,7 +5102,7 @@ const t: UpgradeBase[] = [
       },
     ],
     hyperspace: true,
-    epic: false,
+    epic: true,
     restrictions: [{ factions: ['First Order'] }],
   },
   {
@@ -5199,7 +5214,7 @@ const t: UpgradeBase[] = [
       },
     ],
     hyperspace: true,
-    epic: false,
+    epic: true,
     restrictions: [{ factions: ['First Order'] }],
   },
   {
@@ -5260,7 +5275,7 @@ const t: UpgradeBase[] = [
       },
     ],
     hyperspace: true,
-    epic: false,
+    epic: true,
     restrictions: [{ factions: ['First Order'] }],
   },
   {
@@ -5321,7 +5336,7 @@ const t: UpgradeBase[] = [
       },
     ],
     hyperspace: true,
-    epic: false,
+    epic: true,
     restrictions: [{ factions: ['Galactic Republic'] }],
   },
   {
@@ -5382,7 +5397,7 @@ const t: UpgradeBase[] = [
       },
     ],
     hyperspace: true,
-    epic: false,
+    epic: true,
     restrictions: [
       { factions: ['Galactic Republic'] },
       { action: { type: 'Rotate Arc' } },
@@ -5405,7 +5420,7 @@ const t: UpgradeBase[] = [
       },
     ],
     hyperspace: false,
-    epic: false,
+    epic: true,
   },
   {
     xws: 'kitfisto',
@@ -5466,7 +5481,7 @@ const t: UpgradeBase[] = [
       },
     ],
     hyperspace: true,
-    epic: false,
+    epic: true,
     restrictions: [{ factions: ['Galactic Republic'] }],
   },
   {
@@ -5527,7 +5542,7 @@ const t: UpgradeBase[] = [
       },
     ],
     hyperspace: true,
-    epic: false,
+    epic: true,
     restrictions: [{ factions: ['Galactic Republic'] }],
   },
   {
@@ -5589,7 +5604,7 @@ const t: UpgradeBase[] = [
       },
     ],
     hyperspace: true,
-    epic: false,
+    epic: true,
     restrictions: [{ factions: ['Galactic Republic'] }],
   },
 ];

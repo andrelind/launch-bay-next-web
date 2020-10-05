@@ -85,7 +85,7 @@ const t: ShipType = {
           'Tan bien capacitada para las ofensivas espaciales como para los combates atmosféricos, la cañonera LAAT/i transporta tropas de la República a los frentes de batalla en planetas asediados por los separatistas.',
       },
       hyperspace: true,
-      epic: false,
+      epic: true,
       slots: [
         'Missile',
         'Missile',

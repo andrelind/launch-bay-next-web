@@ -89,7 +89,7 @@ const t: ShipType = {
           'Cargada de municiones explosivas y protegida por escudos de rayos, una cañonera droide es capaz de arrasar con igual eficiencia formaciones de infantería y cazas estelares de la República.',
       },
       hyperspace: true,
-      epic: false,
+      epic: true,
       slots: [
         'Missile',
         'Missile',
@@ -173,7 +173,7 @@ const t: ShipType = {
         'Tactical Relay',
       ],
       hyperspace: true,
-      epic: false,
+      epic: true,
       ffg: 664,
       image: {
         en:
@@ -247,7 +247,7 @@ const t: ShipType = {
         'Tactical Relay',
       ],
       hyperspace: true,
-      epic: false,
+      epic: true,
       ffg: 665,
       image: {
         en:
@@ -321,7 +321,7 @@ const t: ShipType = {
         'Tactical Relay',
       ],
       hyperspace: true,
-      epic: false,
+      epic: true,
       ffg: 668,
       image: {
         en:
@@ -395,7 +395,7 @@ const t: ShipType = {
         'Tactical Relay',
       ],
       hyperspace: true,
-      epic: false,
+      epic: true,
       ffg: 666,
       image: {
         en:
@@ -441,7 +441,7 @@ const t: ShipType = {
         'Tactical Relay',
       ],
       hyperspace: true,
-      epic: false,
+      epic: true,
       ffg: 669,
       image: {
         en:

@@ -2,28 +2,49 @@ import { PilotChange } from '../../types';
 
 const t: PilotChange[] = [
   {
-    xws: 'gideonhask-xiclasslightshuttle',
+    xws: 'commandermalarus',
     chassis: 'xiclasslightshuttle',
     faction: 'First Order',
-    prev: { cost: 0, hyperspace: false },
+    prev: { cost: 200, hyperspace: false },
+    current: { cost: 43, hyperspace: true },
+  },
+  {
+    xws: 'gideonhask',
+    chassis: 'xiclasslightshuttle',
+    faction: 'First Order',
+    prev: { cost: 200, hyperspace: false },
     current: { cost: 40, hyperspace: true },
   },
   {
-    xws: 'laat-l4',
+    xws: 'agentterex',
+    chassis: 'xiclasslightshuttle',
+    faction: 'First Order',
+    prev: { cost: 200, hyperspace: false },
+    current: { cost: 42, hyperspace: true },
+  },
+  {
+    xws: 'firstordercourier',
+    chassis: 'xiclasslightshuttle',
+    faction: 'First Order',
+    prev: { cost: 200, hyperspace: false },
+    current: { cost: 38, hyperspace: true },
+  },
+  {
+    xws: 'hawk',
     chassis: 'laatigunship',
     faction: 'Galactic Republic',
     prev: { cost: 200, hyperspace: false },
     current: { cost: 55, hyperspace: true },
   },
   {
-    xws: 'laat-l3',
+    xws: 'warthog',
     chassis: 'laatigunship',
     faction: 'Galactic Republic',
     prev: { cost: 200, hyperspace: false },
     current: { cost: 54, hyperspace: true },
   },
   {
-    xws: 'laat-l2',
+    xws: 'hound',
     chassis: 'laatigunship',
     faction: 'Galactic Republic',
     prev: { cost: 200, hyperspace: false },
@@ -33,7 +54,7 @@ const t: PilotChange[] = [
     xws: '212thbattalionpilot',
     chassis: 'laatigunship',
     faction: 'Galactic Republic',
-    prev: { cost: 0, hyperspace: false },
+    prev: { cost: 200, hyperspace: false },
     current: { cost: 51, hyperspace: true },
   },
   {

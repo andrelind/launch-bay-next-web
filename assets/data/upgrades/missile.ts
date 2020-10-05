@@ -693,7 +693,7 @@ const t: UpgradeBase[] = [
     limited: 0,
     xws: 'multimissilepods',
     hyperspace: true,
-    epic: false,
+    epic: true,
     sides: [
       {
         ability: {
@@ -726,6 +726,14 @@ const t: UpgradeBase[] = [
         },
         type: 'Missile',
         slots: ['Missile', 'Missile'],
+        attack: {
+          arc: 'Full Front Arc',
+          value: 2,
+          minrange: 1,
+          maxrange: 2,
+          ordnance: true,
+        },
+        charges: { value: 5, recovers: 0 },
         ffg: 673,
         image: {
           en:

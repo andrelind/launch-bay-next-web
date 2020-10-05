@@ -405,6 +405,13 @@ const t: UpgradeBase[] = [
             'Ataque: Si estás calculando, el defensor no aplica el modificador por alcance.',
         },
         slots: ['Cannon', 'Cannon'],
+        attack: {
+          arc: 'Front Arc',
+          value: 3,
+          minrange: 2,
+          maxrange: 3,
+          ordnance: false,
+        },
         ffg: 674,
         image: {
           en:
@@ -427,7 +434,7 @@ const t: UpgradeBase[] = [
       },
     ],
     hyperspace: true,
-    epic: false,
+    epic: true,
   },
 ];
 
