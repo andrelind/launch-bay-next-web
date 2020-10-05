@@ -190,7 +190,7 @@ export const t: Source[] = [
     wave: 7,
     released: true,
     contents: {
-      ships: {},
+      ships: { laatigunship: 1 },
       pilots: { warthog: 1, hound: 1, '212thbattalionpilot': 1, hawk: 1 },
       upgrades: {
         deadeyeshot: 1,
@@ -204,6 +204,9 @@ export const t: Source[] = [
         clonecaptainrex: 1,
         ghostcompany: 1,
         suppressivegunner: 1,
+        agilegunner: 1,
+        concussionmissiles: 1,
+        ionmissiles: 1,
       },
     },
   },

@@ -562,7 +562,7 @@ const t: UpgradeBase[] = [
       },
     ],
     hyperspace: true,
-    epic: false,
+    epic: true,
     restrictions: [{ initiative: { max: 3 } }],
   },
   {
@@ -623,8 +623,8 @@ const t: UpgradeBase[] = [
       },
     ],
     hyperspace: true,
-    epic: false,
-    restrictions: [{ factions: ['First Order'] }, {}],
+    epic: true,
+    restrictions: [{ factions: ['First Order'] }],
   },
 ];
 

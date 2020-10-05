@@ -284,6 +284,7 @@ const t: UpgradeBase[] = [
             'Después de que una nave enemiga ejecute una maniobra, si está situada en el [Bullseye Arc] de una nave aliada que tienes a alcance 0-3, puedes gastar 1 [Charge]. Si lo haces, esa nave aliada obtiene un Blanco fijado sobre esa nave enemiga, y luego recibe 1 ficha de Tensión.',
         },
         slots: ['Tactical Relay'],
+        charges: { value: 3, recovers: 3 },
         ffg: 682,
         image: {
           en:
@@ -306,7 +307,7 @@ const t: UpgradeBase[] = [
       },
     ],
     hyperspace: true,
-    epic: false,
+    epic: true,
     restrictions: [{ factions: ['Separatist Alliance'] }],
   },
 ];
