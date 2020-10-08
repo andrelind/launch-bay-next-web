@@ -45,7 +45,7 @@ const t: ShipType = {
   ],
   pilots: [
     {
-      xws: 'commandermalarus',
+      xws: 'commandermalarus-xiclasslightshuttle',
       ffg: 656,
       name: {
         en: 'Commander Malarus',
@@ -111,7 +111,7 @@ const t: ShipType = {
       },
     },
     {
-      xws: 'gideonhask',
+      xws: 'gideonhask-xiclasslightshuttle',
       ffg: 657,
       name: {
         en: 'Gideon Hask',

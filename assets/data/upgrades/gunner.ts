@@ -879,7 +879,10 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 9 },
-    restrictions: [{ factions: ['First Order'] }],
+    restrictions: [
+      { factions: ['First Order'] },
+      { chassis: ['tiesffighter'] },
+    ],
     hyperspace: true,
     epic: true,
   },

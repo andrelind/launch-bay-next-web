@@ -5375,6 +5375,16 @@ const t: UpgradeBase[] = [
             'Después de que efectúes un ataque principal, si estás concentrado, puedes efectuar un ataque [Single Turret Arc] contra una nave a la que no hayas atacado en esta ronda como un ataque adicional.',
         },
         slots: ['Crew', 'Gunner'],
+        grants: [
+          {
+            action: {
+              type: 'Rotate Arc',
+              difficulty: 'White',
+              linked: { type: 'Focus', difficulty: 'Red' },
+            },
+            value: 1,
+          },
+        ],
         ffg: 681,
         image: {
           en:
@@ -5458,6 +5468,7 @@ const t: UpgradeBase[] = [
             'Al comienzo de la fase de Enfrentamiento, puedes elegir 1 nave aliada que tengas a alcance 0-1 y gastar 1 [Force]. Si lo haces, esa nave puede realizar una acción [Evade] roja.',
         },
         force: { value: 1, recovers: 1, side: ['light'] },
+        grants: [{ action: { type: 'Evade', difficulty: 'Purple' }, value: 1 }],
         slots: ['Crew'],
         ffg: 676,
         image: {
@@ -5581,6 +5592,9 @@ const t: UpgradeBase[] = [
             'Después de que otra nave aliada que tengas a alcance 0-2 ejecute completamente una maniobra violeta o realice una acción violeta, puedes gastar 1 [Force]. Si lo haces, esa nave recupera 1 [Force].',
         },
         force: { value: 2, recovers: 1, side: ['light'] },
+        grants: [
+          { action: { type: 'Coordinate', difficulty: 'Purple' }, value: 1 },
+        ],
         slots: ['Crew'],
         ffg: 678,
         image: {
