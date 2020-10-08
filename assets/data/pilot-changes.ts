@@ -2,14 +2,14 @@ import { PilotChange } from '../../types';
 
 const t: PilotChange[] = [
   {
-    xws: 'commandermalarus',
+    xws: 'commandermalarus-xiclasslightshuttle',
     chassis: 'xiclasslightshuttle',
     faction: 'First Order',
     prev: { cost: 200, hyperspace: false },
     current: { cost: 43, hyperspace: true },
   },
   {
-    xws: 'gideonhask',
+    xws: 'gideonhask-xiclasslightshuttle',
     chassis: 'xiclasslightshuttle',
     faction: 'First Order',
     prev: { cost: 200, hyperspace: false },

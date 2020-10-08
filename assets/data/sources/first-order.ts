@@ -213,10 +213,10 @@ export const t: Source[] = [
     wave: 7,
     released: true,
     contents: {
-      ships: { xiclassshuttle: 1 },
+      ships: { xiclasslightshuttle: 1 },
       pilots: {
-        commandermalarus: 1,
-        gideonhask: 1,
+        'commandermalarus-xiclasslightshuttle': 1,
+        'gideonhask-xiclasslightshuttle': 1,
         agentterex: 1,
         firstordercourier: 1,
       },

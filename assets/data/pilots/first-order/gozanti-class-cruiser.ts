@@ -44,7 +44,7 @@ const t: ShipType = {
           'Capable of carrying four TIE fighters and operating independently for long periods of time, the Gozanti-class cruiser is a common sight in the skies of downtrodden worlds across the Outer Rim.',
       },
       initiative: 7,
-      engagement: 0,
+      engagement: 1,
       limited: 0,
       cost: 60,
       xws: 'firstordersympathizers',
