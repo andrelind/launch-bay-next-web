@@ -1076,7 +1076,10 @@ const t: UpgradeBase[] = [
   {
     xws: 'overdrivethruster',
     limited: 1,
-    cost: { value: 200 },
+    cost: {
+      variable: 'initiative',
+      values: { '0': 3, '1': 3, '2': 3, '3': 3, '4': 4, '5': 5, '6': 6 },
+    },
     sides: [
       {
         title: { en: 'Overdrive Thruster' },
@@ -1089,8 +1092,8 @@ const t: UpgradeBase[] = [
         ffg: -1,
       },
     ],
-    hyperspace: false,
-    epic: false,
+    hyperspace: true,
+    epic: true,
     restrictions: [{ chassis: ['t70xwing'] }],
   },
 ];

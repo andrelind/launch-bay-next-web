@@ -1050,7 +1050,7 @@ const t: UpgradeBase[] = [
   {
     xws: 'maneuverassistmgk300',
     limited: 0,
-    cost: { value: 200 },
+    cost: { value: 2 },
     sides: [
       {
         title: { en: 'Maneuver-Assist MGK-300' },
@@ -1063,14 +1063,14 @@ const t: UpgradeBase[] = [
         ffg: -1,
       },
     ],
-    hyperspace: false,
-    epic: false,
+    hyperspace: true,
+    epic: true,
     restrictions: [{ chassis: ['tierbheavy'] }],
   },
   {
     xws: 'targetassistmgk300',
     limited: 0,
-    cost: { value: 200 },
+    cost: { value: 3 },
     sides: [
       {
         title: { en: 'Target-Assist MGK-300' },
@@ -1083,8 +1083,8 @@ const t: UpgradeBase[] = [
         ffg: -1,
       },
     ],
-    hyperspace: false,
-    epic: false,
+    hyperspace: true,
+    epic: true,
     restrictions: [{ chassis: ['tierbheavy'] }],
   },
   {

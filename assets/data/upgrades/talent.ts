@@ -1652,7 +1652,7 @@ const t: UpgradeBase[] = [
     ],
     cost: {
       variable: 'size',
-      values: { Small: 7, Medium: 8, Large: 9, Huge: 12 },
+      values: { Small: 7, Medium: 8, Large: 9, Huge: 200 },
     },
   },
   {
@@ -1823,7 +1823,7 @@ const t: UpgradeBase[] = [
   {
     xws: 'ionlimiteroverride',
     limited: 0,
-    cost: { value: 200 },
+    cost: { value: 3 },
     sides: [
       {
         title: { en: 'Ion Limiter Override' },
@@ -1836,8 +1836,8 @@ const t: UpgradeBase[] = [
         ffg: -1,
       },
     ],
-    hyperspace: false,
-    epic: false,
+    hyperspace: true,
+    epic: true,
     restrictions: [
       {
         chassis: [
@@ -1883,7 +1883,7 @@ const t: UpgradeBase[] = [
   {
     xws: 'starbirdslash',
     limited: 0,
-    cost: { value: 200 },
+    cost: { value: 1 },
     sides: [
       {
         title: { en: 'Starbird Slash' },
@@ -1896,29 +1896,29 @@ const t: UpgradeBase[] = [
         ffg: -1,
       },
     ],
-    hyperspace: false,
-    epic: false,
+    hyperspace: true,
+    epic: true,
     restrictions: [{ chassis: ['rz1awing', 'rz2awing'] }],
   },
   {
     xws: 'backwardstailslide',
     limited: 0,
-    cost: { value: 200 },
+    cost: { value: 2 },
     sides: [
       {
         title: { en: 'Backwards Tailslide' },
         type: 'Talent',
         ability: {
           en:
-            'While you boost or barrel roll, if your equipped [Configuration] upgrade has the "(Closed)" side faceup, you can move though and overlap obstacles.  After you boost or barrel roll through an obstacle, if you are not at range 0 of it, gain 1 evade token.',
+            'While you boost or barrel roll, if your equipped [Configuration] upgrade has the "(Closed)" side faceup, you can move through and overlap obstacles.  After you boost or barrel roll through an obstacle, if you are not at range 0 of it, gain 1 evade token.',
         },
         slots: ['Talent'],
         ffg: -1,
       },
     ],
-    hyperspace: false,
-    epic: false,
-    restrictions: [{ chassis: ['t65xwing', 't70xwing'] }, {}],
+    hyperspace: true,
+    epic: true,
+    restrictions: [{ chassis: ['t65xwing', 't70xwing'] }],
   },
 ];
 

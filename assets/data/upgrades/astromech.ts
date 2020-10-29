@@ -1452,27 +1452,27 @@ const t: UpgradeBase[] = [
   {
     xws: 'r2d2-resistance',
     limited: 1,
-    cost: { value: 200 },
+    cost: { value: 6 },
     sides: [
       {
         title: { en: 'R2-D2' },
         type: 'Astromech',
         ability: {
           en:
-            'During the End Phase, you may spend 1 [Charge] and 1 {SHIELD} to remove 1 red token.  During the End Phase, if you have no active {SHIELD}, you may spend 1 [Charge] to recover 1 {SHIELD} and gain 1 deplete token.',
+            'During the End Phase, you may spend 1 [Charge] and 1 [Shield] to remove 1 red token.  During the End Phase, if you have no active [Shield], you may spend 1 [Charge] to recover 1 [Shield] and gain 1 deplete token.',
         },
         slots: ['Astromech'],
         ffg: -1,
       },
     ],
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
     restrictions: [{ factions: ['Resistance'] }],
   },
   {
     xws: 'r6d8',
     limited: 1,
-    cost: { value: 200 },
+    cost: { value: 4 },
     sides: [
       {
         title: { en: 'R6-D8' },
@@ -1485,7 +1485,7 @@ const t: UpgradeBase[] = [
         ffg: -1,
       },
     ],
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
     restrictions: [{ factions: ['Resistance'] }],
   },

@@ -1009,7 +1009,7 @@ const t: UpgradeBase[] = [
     ],
     cost: {
       variable: 'size',
-      values: { Small: 12, Medium: 9, Large: 7, Huge: 7 },
+      values: { Small: 12, Medium: 9, Large: 7, Huge: 200 },
     },
     restrictions: [{ action: { type: 'Rotate Arc' } }],
     hyperspace: false,

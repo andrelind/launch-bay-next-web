@@ -349,7 +349,7 @@ const t: UpgradeBase[] = [
   {
     xws: 'underslungblastercannon',
     limited: 0,
-    cost: { value: 200 },
+    cost: { value: 3 },
     sides: [
       {
         title: { en: 'Underslung Blaster Cannon' },
@@ -362,10 +362,10 @@ const t: UpgradeBase[] = [
         ffg: -1,
       },
     ],
-    hyperspace: false,
-    epic: false,
+    hyperspace: true,
+    epic: true,
     restrictions: [
-      { factions: ['Resistance'] },
+      { factions: ['Resistance', 'Rebel Alliance'] },
       { chassis: ['t65xwing', 't70xwing'] },
     ],
   },
