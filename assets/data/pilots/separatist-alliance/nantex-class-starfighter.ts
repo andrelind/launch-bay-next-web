@@ -111,7 +111,7 @@ const t: ShipType = {
           'Designed for the unique physiology of Geonosian pilots, Nantex-class starfighters are capable of maneuvers that would rip most ships—and pilots—apart.',
       },
       slots: ['Talent'],
-      cost: 29,
+      cost: 33,
       ffg: 609,
       image: {
         en:
@@ -233,7 +233,7 @@ const t: ShipType = {
       hyperspace: true,
       epic: true,
       slots: ['Talent', 'Talent'],
-      cost: 36,
+      cost: 37,
       ffg: 605,
       caption: {
         en: 'Hive Guard Captain',
@@ -299,7 +299,7 @@ const t: ShipType = {
       hyperspace: true,
       epic: true,
       slots: ['Talent', 'Talent'],
-      cost: 34,
+      cost: 36,
       ffg: 606,
       caption: {
         en: 'Opportunistic Ace',
@@ -365,7 +365,7 @@ const t: ShipType = {
       hyperspace: true,
       epic: true,
       slots: ['Talent', 'Modification'],
-      cost: 28,
+      cost: 32,
       ffg: 607,
       caption: {
         en: 'Handy Engineer',
@@ -407,7 +407,7 @@ const t: ShipType = {
         pt: 'Petranaki Arena Ace',
         zh: 'Petranaki Arena Ace',
       },
-      cost: 30,
+      cost: 35,
       ffg: 608,
       initiative: 4,
       artwork:
