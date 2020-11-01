@@ -1856,6 +1856,8 @@ const t: UpgradeBase[] = [
           'tiesffighter',
           'tievnsilencer',
           'tiebainterceptor',
+          'tierbheavy',
+          'miningguildtie',
         ],
       },
     ],

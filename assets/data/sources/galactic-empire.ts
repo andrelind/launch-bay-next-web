@@ -342,6 +342,41 @@ export const t: Source[] = [
       },
     },
   },
+  {
+    ffg: 44,
+    xws: 'tieddefender',
+    name: 'TIE/D Defender',
+    wave: 6,
+    released: true,
+    contents: {
+      ships: { tieddefender: 1 },
+      pilots: {
+        rexlerbrath: 1,
+        colonelvessery: 1,
+        countessryad: 1,
+        onyxsquadronace: 1,
+        deltasquadronpilot: 1,
+      },
+      upgrades: {
+        elusive: 1,
+        advancedsensors: 1,
+        tractorbeam: 1,
+        ionmissiles: 1,
+      },
+    },
+  },
+  {
+    ffg: -1,
+    xws: 'tierbheavy',
+    name: 'TIE/rb Heavy',
+    wave: 7,
+    released: true,
+    contents: {
+      ships: { tierbheavy: 1 },
+      pilots: {},
+      upgrades: {},
+    },
+  },
 ];
 
 export default t;

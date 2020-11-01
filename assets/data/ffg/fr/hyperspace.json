@@ -426,6 +426,146 @@
       "ship_type": 33
     },
     {
+      "id": 605,
+      "faction_id": 7,
+      "card_set_ids": [
+        36
+      ],
+      "card_type_id": 1,
+      "available_actions": [
+        {
+          "id": 55803,
+          "base_action_id": 2,
+          "related_action_id": null,
+          "base_action_side_effect": null,
+          "related_action_side_effect": null
+        },
+        {
+          "id": 55804,
+          "base_action_id": 3,
+          "related_action_id": null,
+          "base_action_side_effect": null,
+          "related_action_side_effect": null
+        }
+      ],
+      "statistics": [
+        {
+          "id": 64157,
+          "statistic_id": 11,
+          "value": "3",
+          "recurring": false
+        },
+        {
+          "id": 64158,
+          "statistic_id": 12,
+          "value": "2",
+          "recurring": false
+        },
+        {
+          "id": 64159,
+          "statistic_id": 1,
+          "value": "3",
+          "recurring": false
+        },
+        {
+          "id": 64160,
+          "statistic_id": 2,
+          "value": "4",
+          "recurring": false
+        }
+      ],
+      "available_upgrades": [
+        1,
+        1
+      ],
+      "restrictions": [],
+      "upgrade_types": [],
+      "weapon_range": null,
+      "image": "https://sb-cdn.fantasyflightgames.com/card_art/8466283eeb7d476744913f5d9d69e745.jpg",
+      "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/fr/a66583a77d812a6df7b4af95054df44c.png",
+      "name": "•Berwer Kret",
+      "subtitle": "Capitaine de la Garde de la Ruche",
+      "ability_text": "<smallbody>Après que vous avez effectué une attaque qui touche, chaque vaisseau allié avec <calculate> dans sa barre d’action et un verrouillage sur le défenseur peut effectuer une action<nonbreak><calculate><nonbreak>rouge.</smallbody><return><shipability><sabold>Dispositif Tracteur de Précision :</sabold> vous ne pouvez pas faire pivoter votre <turretarc> vers votre <reararc>. Après avoir exécuté une manœuvre, vous pouvez gagner 1<nonbreak>marqueur de rayon tracteur pour effectuer une action<nonbreak><rotate>.</shipability>",
+      "cost": "37",
+      "ship_ability_text": "",
+      "ship_size": 1,
+      "force_side": null,
+      "initiative": 5,
+      "weapon_no_bonus": false,
+      "ffg_id": "XW_P_358",
+      "ship_type": 67
+    },
+    {
+      "id": 606,
+      "faction_id": 7,
+      "card_set_ids": [
+        36
+      ],
+      "card_type_id": 1,
+      "available_actions": [
+        {
+          "id": 55805,
+          "base_action_id": 2,
+          "related_action_id": null,
+          "base_action_side_effect": null,
+          "related_action_side_effect": null
+        },
+        {
+          "id": 55806,
+          "base_action_id": 3,
+          "related_action_id": null,
+          "base_action_side_effect": null,
+          "related_action_side_effect": null
+        }
+      ],
+      "statistics": [
+        {
+          "id": 64161,
+          "statistic_id": 11,
+          "value": "3",
+          "recurring": false
+        },
+        {
+          "id": 64162,
+          "statistic_id": 12,
+          "value": "2",
+          "recurring": false
+        },
+        {
+          "id": 64163,
+          "statistic_id": 1,
+          "value": "3",
+          "recurring": false
+        },
+        {
+          "id": 64164,
+          "statistic_id": 2,
+          "value": "4",
+          "recurring": false
+        }
+      ],
+      "available_upgrades": [
+        1,
+        1
+      ],
+      "restrictions": [],
+      "upgrade_types": [],
+      "weapon_range": null,
+      "image": "https://sb-cdn.fantasyflightgames.com/card_art/fc7fff6c1e6eb73ff6ae10768f5491a7.jpg",
+      "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/fr/be9c4c5427d5f044b96a6890b06734f4.png",
+      "name": "•Chertek",
+      "subtitle": "As Opportuniste",
+      "ability_text": "<smallbody>Tant que vous effectuez une attaque principale, si le défenseur est tracté, vous pouvez relancer jusqu’à 2 dés d’attaque.</smallbody><return><shipability><sabold>Dispositif Tracteur de Précision :</sabold> vous ne pouvez pas faire pivoter votre <turretarc> vers votre <reararc>. Après avoir exécuté une manœuvre, vous pouvez gagner 1<nonbreak>marqueur de rayon tracteur pour effectuer une action<nonbreak><rotate>.</shipability>",
+      "cost": "36",
+      "ship_ability_text": "",
+      "ship_size": 1,
+      "force_side": null,
+      "initiative": 4,
+      "weapon_no_bonus": false,
+      "ffg_id": "XW_P_359",
+      "ship_type": 67
+    },
+    {
       "id": 23,
       "faction_id": 1,
       "card_set_ids": [
@@ -15636,7 +15776,7 @@
       "ship_type": 67
     },
     {
-      "id": 605,
+      "id": 609,
       "faction_id": 7,
       "card_set_ids": [
         36
@@ -15644,14 +15784,14 @@
       "card_type_id": 1,
       "available_actions": [
         {
-          "id": 55803,
+          "id": 55811,
           "base_action_id": 2,
           "related_action_id": null,
           "base_action_side_effect": null,
           "related_action_side_effect": null
         },
         {
-          "id": 55804,
+          "id": 55812,
           "base_action_id": 3,
           "related_action_id": null,
           "base_action_side_effect": null,
@@ -15660,53 +15800,52 @@
       ],
       "statistics": [
         {
-          "id": 64157,
+          "id": 64173,
           "statistic_id": 11,
           "value": "3",
           "recurring": false
         },
         {
-          "id": 64158,
+          "id": 64174,
           "statistic_id": 12,
           "value": "2",
           "recurring": false
         },
         {
-          "id": 64159,
+          "id": 64175,
           "statistic_id": 1,
           "value": "3",
           "recurring": false
         },
         {
-          "id": 64160,
+          "id": 64176,
           "statistic_id": 2,
           "value": "4",
           "recurring": false
         }
       ],
       "available_upgrades": [
-        1,
         1
       ],
       "restrictions": [],
       "upgrade_types": [],
       "weapon_range": null,
-      "image": "https://sb-cdn.fantasyflightgames.com/card_art/8466283eeb7d476744913f5d9d69e745.jpg",
-      "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/fr/a66583a77d812a6df7b4af95054df44c.png",
-      "name": "•Berwer Kret",
-      "subtitle": "Capitaine de la Garde de la Ruche",
-      "ability_text": "<smallbody>Après que vous avez effectué une attaque qui touche, chaque vaisseau allié avec <calculate> dans sa barre d’action et un verrouillage sur le défenseur peut effectuer une action<nonbreak><calculate><nonbreak>rouge.</smallbody><return><shipability><sabold>Dispositif Tracteur de Précision :</sabold> vous ne pouvez pas faire pivoter votre <turretarc> vers votre <reararc>. Après avoir exécuté une manœuvre, vous pouvez gagner 1<nonbreak>marqueur de rayon tracteur pour effectuer une action<nonbreak><rotate>.</shipability>",
-      "cost": "36",
-      "ship_ability_text": null,
+      "image": "https://sb-cdn.fantasyflightgames.com/card_art/62c29b8b7f82e37980d58b39023a800a.jpg",
+      "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/fr/884a0027ebc7f28f65d6f5f64281762f.png",
+      "name": "Garde de la Ruche Stalgasin",
+      "subtitle": null,
+      "ability_text": "<flavor>Conçu pour la physiologie spécifique des pilotes Géonosiens, les chasseurs de classe <untalic>Nantex</untalic> sont capables de manœuvres qui briseraient la plupart des vaisseaux et des pilotes.</flavor><return><shipability><sabold>Dispositif Tracteur de Précision :</sabold> vous ne pouvez pas faire pivoter votre <turretarc> vers votre <reararc>. Après avoir exécuté une manœuvre, vous pouvez gagner 1<nonbreak>marqueur de rayon tracteur pour effectuer une action<nonbreak><rotate>.</shipability>",
+      "cost": "33",
+      "ship_ability_text": "",
       "ship_size": 1,
       "force_side": null,
-      "initiative": 5,
+      "initiative": 3,
       "weapon_no_bonus": false,
-      "ffg_id": "XW_P_358",
+      "ffg_id": "XW_P_362",
       "ship_type": 67
     },
     {
-      "id": 606,
+      "id": 608,
       "faction_id": 7,
       "card_set_ids": [
         36
@@ -15714,14 +15853,14 @@
       "card_type_id": 1,
       "available_actions": [
         {
-          "id": 55805,
+          "id": 55809,
           "base_action_id": 2,
           "related_action_id": null,
           "base_action_side_effect": null,
           "related_action_side_effect": null
         },
         {
-          "id": 55806,
+          "id": 55810,
           "base_action_id": 3,
           "related_action_id": null,
           "base_action_side_effect": null,
@@ -15730,25 +15869,25 @@
       ],
       "statistics": [
         {
-          "id": 64161,
+          "id": 64169,
           "statistic_id": 11,
           "value": "3",
           "recurring": false
         },
         {
-          "id": 64162,
+          "id": 64170,
           "statistic_id": 12,
           "value": "2",
           "recurring": false
         },
         {
-          "id": 64163,
+          "id": 64171,
           "statistic_id": 1,
           "value": "3",
           "recurring": false
         },
         {
-          "id": 64164,
+          "id": 64172,
           "statistic_id": 2,
           "value": "4",
           "recurring": false
@@ -15761,18 +15900,18 @@
       "restrictions": [],
       "upgrade_types": [],
       "weapon_range": null,
-      "image": "https://sb-cdn.fantasyflightgames.com/card_art/fc7fff6c1e6eb73ff6ae10768f5491a7.jpg",
-      "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/fr/be9c4c5427d5f044b96a6890b06734f4.png",
-      "name": "•Chertek",
-      "subtitle": "As Opportuniste",
-      "ability_text": "<smallbody>Tant que vous effectuez une attaque principale, si le défenseur est tracté, vous pouvez relancer jusqu’à 2 dés d’attaque.</smallbody><return><shipability><sabold>Dispositif Tracteur de Précision :</sabold> vous ne pouvez pas faire pivoter votre <turretarc> vers votre <reararc>. Après avoir exécuté une manœuvre, vous pouvez gagner 1<nonbreak>marqueur de rayon tracteur pour effectuer une action<nonbreak><rotate>.</shipability>",
-      "cost": "34",
-      "ship_ability_text": null,
+      "image": "https://sb-cdn.fantasyflightgames.com/card_art/5c32b5d481ad922be7a0ec4a3743d1d6.jpg",
+      "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/fr/be49dfe97e043e5ff975af89566065af.png",
+      "name": "As de l’Arène Petranaki",
+      "subtitle": null,
+      "ability_text": "<flavor>L’Arène de Petranaki est un gigantesque édifice de Géonosis qui a été le lieu principal de la première bataille de la Guerre des Clones.</flavor><return><shipability><sabold>Dispositif Tracteur de Précision :</sabold> vous ne pouvez pas faire pivoter votre <turretarc> vers votre <reararc>. Après avoir exécuté une manœuvre, vous pouvez gagner 1<nonbreak>marqueur de rayon tracteur pour effectuer une action<nonbreak><rotate>.</shipability>",
+      "cost": "35",
+      "ship_ability_text": "",
       "ship_size": 1,
       "force_side": null,
       "initiative": 4,
       "weapon_no_bonus": false,
-      "ffg_id": "XW_P_359",
+      "ffg_id": "XW_P_361",
       "ship_type": 67
     },
     {
@@ -15836,152 +15975,13 @@
       "name": "•Gorgol",
       "subtitle": "Ingénieur Habile",
       "ability_text": "<smallbody>Pendant la phase de système, vous pouvez gagner 1<nonbreak>marqueur de désarmement et choisir un vaisseau allié à porté<nonbreak>1–2. Dans ce cas, il gagne 1<nonbreak>marqueur de rayon tracteur, puis il répare 1 de ses cartes de dégât face visible <bitalic> Vaisseau</bitalic>.</smallbody><return><shipability><sabold>Dispositif Tracteur de Précision :</sabold> vous ne pouvez pas faire pivoter votre <turretarc> vers votre <reararc>. Après avoir exécuté une manœuvre, vous pouvez gagner 1<nonbreak>marqueur de rayon tracteur pour effectuer une action<nonbreak><rotate>.</shipability>",
-      "cost": "28",
-      "ship_ability_text": null,
+      "cost": "32",
+      "ship_ability_text": "",
       "ship_size": 1,
       "force_side": null,
       "initiative": 2,
       "weapon_no_bonus": false,
       "ffg_id": "XW_P_360",
-      "ship_type": 67
-    },
-    {
-      "id": 608,
-      "faction_id": 7,
-      "card_set_ids": [
-        36
-      ],
-      "card_type_id": 1,
-      "available_actions": [
-        {
-          "id": 55809,
-          "base_action_id": 2,
-          "related_action_id": null,
-          "base_action_side_effect": null,
-          "related_action_side_effect": null
-        },
-        {
-          "id": 55810,
-          "base_action_id": 3,
-          "related_action_id": null,
-          "base_action_side_effect": null,
-          "related_action_side_effect": null
-        }
-      ],
-      "statistics": [
-        {
-          "id": 64169,
-          "statistic_id": 11,
-          "value": "3",
-          "recurring": false
-        },
-        {
-          "id": 64170,
-          "statistic_id": 12,
-          "value": "2",
-          "recurring": false
-        },
-        {
-          "id": 64171,
-          "statistic_id": 1,
-          "value": "3",
-          "recurring": false
-        },
-        {
-          "id": 64172,
-          "statistic_id": 2,
-          "value": "4",
-          "recurring": false
-        }
-      ],
-      "available_upgrades": [
-        1,
-        1
-      ],
-      "restrictions": [],
-      "upgrade_types": [],
-      "weapon_range": null,
-      "image": "https://sb-cdn.fantasyflightgames.com/card_art/5c32b5d481ad922be7a0ec4a3743d1d6.jpg",
-      "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/fr/be49dfe97e043e5ff975af89566065af.png",
-      "name": "As de l’Arène Petranaki",
-      "subtitle": "",
-      "ability_text": "<flavor>L’Arène de Petranaki est un gigantesque édifice de Géonosis qui a été le lieu principal de la première bataille de la Guerre des Clones.</flavor><return><shipability><sabold>Dispositif Tracteur de Précision :</sabold> vous ne pouvez pas faire pivoter votre <turretarc> vers votre <reararc>. Après avoir exécuté une manœuvre, vous pouvez gagner 1<nonbreak>marqueur de rayon tracteur pour effectuer une action<nonbreak><rotate>.</shipability>",
-      "cost": "30",
-      "ship_ability_text": null,
-      "ship_size": 1,
-      "force_side": null,
-      "initiative": 4,
-      "weapon_no_bonus": false,
-      "ffg_id": "XW_P_361",
-      "ship_type": 67
-    },
-    {
-      "id": 609,
-      "faction_id": 7,
-      "card_set_ids": [
-        36
-      ],
-      "card_type_id": 1,
-      "available_actions": [
-        {
-          "id": 55811,
-          "base_action_id": 2,
-          "related_action_id": null,
-          "base_action_side_effect": null,
-          "related_action_side_effect": null
-        },
-        {
-          "id": 55812,
-          "base_action_id": 3,
-          "related_action_id": null,
-          "base_action_side_effect": null,
-          "related_action_side_effect": null
-        }
-      ],
-      "statistics": [
-        {
-          "id": 64173,
-          "statistic_id": 11,
-          "value": "3",
-          "recurring": false
-        },
-        {
-          "id": 64174,
-          "statistic_id": 12,
-          "value": "2",
-          "recurring": false
-        },
-        {
-          "id": 64175,
-          "statistic_id": 1,
-          "value": "3",
-          "recurring": false
-        },
-        {
-          "id": 64176,
-          "statistic_id": 2,
-          "value": "4",
-          "recurring": false
-        }
-      ],
-      "available_upgrades": [
-        1
-      ],
-      "restrictions": [],
-      "upgrade_types": [],
-      "weapon_range": null,
-      "image": "https://sb-cdn.fantasyflightgames.com/card_art/62c29b8b7f82e37980d58b39023a800a.jpg",
-      "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/fr/884a0027ebc7f28f65d6f5f64281762f.png",
-      "name": "Garde de la Ruche Stalgasin",
-      "subtitle": "",
-      "ability_text": "<flavor>Conçu pour la physiologie spécifique des pilotes Géonosiens, les chasseurs de classe <untalic>Nantex</untalic> sont capables de manœuvres qui briseraient la plupart des vaisseaux et des pilotes.</flavor><return><shipability><sabold>Dispositif Tracteur de Précision :</sabold> vous ne pouvez pas faire pivoter votre <turretarc> vers votre <reararc>. Après avoir exécuté une manœuvre, vous pouvez gagner 1<nonbreak>marqueur de rayon tracteur pour effectuer une action<nonbreak><rotate>.</shipability>",
-      "cost": "29",
-      "ship_ability_text": null,
-      "ship_size": 1,
-      "force_side": null,
-      "initiative": 3,
-      "weapon_no_bonus": false,
-      "ffg_id": "XW_P_362",
       "ship_type": 67
     },
     {

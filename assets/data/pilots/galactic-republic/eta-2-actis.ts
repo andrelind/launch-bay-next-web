@@ -42,7 +42,7 @@ const t: ShipType = {
     name: { en: 'Intuitive Controls' },
     text: {
       en:
-        'Durint the System Phase, you may perform a purple [Barrel Roll] or purple [Boost] action.',
+        'During the System Phase, you may perform a purple [Barrel Roll] or purple [Boost] action.',
     },
   },
   pilots: [

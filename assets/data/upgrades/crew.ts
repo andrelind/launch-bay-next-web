@@ -5085,7 +5085,7 @@ const t: UpgradeBase[] = [
           en:
             'During the System Phase, roll 1 attack die. On a [Hit] or [Critical Hit] result, gain 1 calculate token. Otherwise gain 1 jam token. Action: Transfer 1 calculate token or 1 jam token to a ship at range 0-3.',
           de:
-            'During the System Phase, roll 1 attack die. On a [Hit] or [Critical Hit] result, gain 1 calculate token. Otherwise gain 1 jam token. Action: Transfer 1 calculate token or 1 jam token to a ship at range 0-3.',
+            'Wirf während der Systemphase 1 Angriffswürfel. Bei einem [Hit]- oder [Critical Hit]-Ergebnis erhältst du 1 Berechnungsmarker. Ansonsten erhältst du 1 Störsignalmarker. Aktion: Transferiere 1 Berechnungs- oder 1 Störsignalmarker auf ein Schiff in Reichweite 0-3.',
           fr:
             "Pendant la phase de système, lancez 1 dé d'attaque. Sur un résultat [Hit] ou [Critical Hit], gagnez 1 marqueur de calcul. Sinon, gagnez 1 marqueur de brouillage. Action : transférez 1 marqueur de calcul ou de brouillage à un vaisseau à portée 0-3.",
           it:
@@ -5165,8 +5165,8 @@ const t: UpgradeBase[] = [
         ffg: 683,
         title: {
           en: 'Commander Malarus (Perfected)',
-          de: 'Commander Malarus (Perfected)',
-          fr: 'Commander Malarus (Perfected)',
+          de: 'Commander Malarus (Vollendet)',
+          fr: 'Commandant Malarus (Sublimée)',
           it: 'Commander Malarus (Perfected)',
           pl: 'Commander Malarus (Perfected)',
           pt: 'Commander Malarus (Perfected)',
@@ -5197,9 +5197,9 @@ const t: UpgradeBase[] = [
           en:
             'While you perform an attack, if the defender is in your [Bullseye Arc], you must convert all [Focus] results to [Hit] results and gain 1 stress token. Then, if you have 2 or more stress tokens, suffer 1 [Hit] damage.',
           de:
-            'While you perform an attack, if the defender is in your [Bullseye Arc], you must convert all [Focus] results to [Hit] results and gain 1 stress token. Then, if you have 2 or more stress tokens, suffer 1 [Hit] damage.',
+            'Solange du einen Angriff durchführst, falls der Verteidiger in deinem [Bullseye Arc] ist, musst du alle [Focus]-Ergebnisse in [Hit]-Ergebnisse ändern und 1 Stressmarker erhalten. Dann, falls du 2 oder mehr Stressmarker hast, erleidest du 1 [Hit]-Schaden.',
           fr:
-            'While you perform an attack, if the defender is in your [Bullseye Arc], you must convert all [Focus] results to [Hit] results and gain 1 stress token. Then, if you have 2 or more stress tokens, suffer 1 [Hit] damage.',
+            'Tant que vous effectuez une attaque, si le défenseur est dans votre [Bullseye Arc], vous devez convertir tous vos résultats [Focus] en résultats [Hit] et gagner 1 marqueur de stress. Puis, si vous avez au moins 2 marqueurs de stress, subissez 1 dégât [Hit].',
           it:
             'While you perform an attack, if the defender is in your [Bullseye Arc], you must convert all [Focus] results to [Hit] results and gain 1 stress token. Then, if you have 2 or more stress tokens, suffer 1 [Hit] damage.',
           pl:
