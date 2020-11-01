@@ -35,7 +35,7 @@ export const ShipWrapper = styled.div<Props>`
 export const TopWrapper = styled.div`
   flex: 2;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
 `;
 
 export const TopFlexer = styled.div`

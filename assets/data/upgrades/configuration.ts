@@ -1094,8 +1094,8 @@ const t: UpgradeBase[] = [
         ffg: 692,
         title: {
           en: 'Repulsorlift Stabilizers (Inactive)',
-          de: 'Repulsorlift Stabilizers (Inactive)',
-          fr: 'Repulsorlift Stabilizers (Inactive)',
+          de: 'Repulsorlift-Stabilisatoren (Inaktiv)',
+          fr: 'Stabilisateurs de Répulseurs (Inactifs)',
           it: 'Repulsorlift Stabilizers (Inactive)',
           pl: 'Repulsorlift Stabilizers (Inactive)',
           pt: 'Repulsorlift Stabilizers (Inactive)',
@@ -1126,9 +1126,9 @@ const t: UpgradeBase[] = [
           en:
             'Setup: Equip this side faceup. Reduce the difficulty of your straight ([Straight]) maneuvers. After you fully execute a maneuver, you may flip this card.',
           de:
-            'Setup: Equip this side faceup. Reduce the difficulty of your straight ([Straight]) maneuvers. After you fully execute a maneuver, you may flip this card.',
+            'Aufbau: Rüste diese Seite offen aus. Verringere die Schwierigkeit deiner Geradenmanöver ([Straight]). Nachdem du ein Manöver vollständig ausgeführt hast, darfst du diese Karte umdrehen.',
           fr:
-            'Setup: Equip this side faceup. Reduce the difficulty of your straight ([Straight]) maneuvers. After you fully execute a maneuver, you may flip this card.',
+            'Mise en Place : à équiper avec cette face visible. Diminuez la difficulté de vos manœuvres en ligne droite ([Straight]). Après avoir entièrement exécuté une manœuvre, vous pouvez retourner cette carte.',
           it:
             'Setup: Equip this side faceup. Reduce the difficulty of your straight ([Straight]) maneuvers. After you fully execute a maneuver, you may flip this card.',
           pl:

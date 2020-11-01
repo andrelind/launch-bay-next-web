@@ -1146,6 +1146,146 @@
       "ship_type": 40
     },
     {
+      "id": 605,
+      "faction_id": 7,
+      "card_set_ids": [
+        36
+      ],
+      "card_type_id": 1,
+      "available_actions": [
+        {
+          "id": 55803,
+          "base_action_id": 2,
+          "related_action_id": null,
+          "base_action_side_effect": null,
+          "related_action_side_effect": null
+        },
+        {
+          "id": 55804,
+          "base_action_id": 3,
+          "related_action_id": null,
+          "base_action_side_effect": null,
+          "related_action_side_effect": null
+        }
+      ],
+      "statistics": [
+        {
+          "id": 64157,
+          "statistic_id": 11,
+          "value": "3",
+          "recurring": false
+        },
+        {
+          "id": 64158,
+          "statistic_id": 12,
+          "value": "2",
+          "recurring": false
+        },
+        {
+          "id": 64159,
+          "statistic_id": 1,
+          "value": "3",
+          "recurring": false
+        },
+        {
+          "id": 64160,
+          "statistic_id": 2,
+          "value": "4",
+          "recurring": false
+        }
+      ],
+      "available_upgrades": [
+        1,
+        1
+      ],
+      "restrictions": [],
+      "upgrade_types": [],
+      "weapon_range": null,
+      "image": "https://sb-cdn.fantasyflightgames.com/card_art/8466283eeb7d476744913f5d9d69e745.jpg",
+      "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/de/380f5538eb37b202bbf9e4c7ecb74163.png",
+      "name": "•Berwer Kret",
+      "subtitle": "Captain der Schwarmgarde",
+      "ability_text": "<smallbody>Nachdem du einen Angriff durchgeführt hast, der getroffen hat, darf jedes befreundete Schiff mit <calculate> in seiner Aktionsleiste, das den Verteidiger als Ziel erfasst hat, eine rote<nonbreak><calculate><nonbreak>-Aktion durchführen. </smallbody><return><shipability><sabold>Fangstrahl-Zielsystem:</sabold> Du kannst deinen <turretarc> nicht auf deinen <reararc>rotieren. Nachdem du ein Manöver ausgeführt hast, darfst du 1 Fangstrahlmarker erhalten, um eine<nonbreak><rotate><nonbreak>-Aktion durchzuführen.</shipability>",
+      "cost": "37",
+      "ship_ability_text": "",
+      "ship_size": 1,
+      "force_side": null,
+      "initiative": 5,
+      "weapon_no_bonus": false,
+      "ffg_id": "XW_P_358",
+      "ship_type": 67
+    },
+    {
+      "id": 606,
+      "faction_id": 7,
+      "card_set_ids": [
+        36
+      ],
+      "card_type_id": 1,
+      "available_actions": [
+        {
+          "id": 55805,
+          "base_action_id": 2,
+          "related_action_id": null,
+          "base_action_side_effect": null,
+          "related_action_side_effect": null
+        },
+        {
+          "id": 55806,
+          "base_action_id": 3,
+          "related_action_id": null,
+          "base_action_side_effect": null,
+          "related_action_side_effect": null
+        }
+      ],
+      "statistics": [
+        {
+          "id": 64161,
+          "statistic_id": 11,
+          "value": "3",
+          "recurring": false
+        },
+        {
+          "id": 64162,
+          "statistic_id": 12,
+          "value": "2",
+          "recurring": false
+        },
+        {
+          "id": 64163,
+          "statistic_id": 1,
+          "value": "3",
+          "recurring": false
+        },
+        {
+          "id": 64164,
+          "statistic_id": 2,
+          "value": "4",
+          "recurring": false
+        }
+      ],
+      "available_upgrades": [
+        1,
+        1
+      ],
+      "restrictions": [],
+      "upgrade_types": [],
+      "weapon_range": null,
+      "image": "https://sb-cdn.fantasyflightgames.com/card_art/fc7fff6c1e6eb73ff6ae10768f5491a7.jpg",
+      "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/de/c15f1bd62e41b929cba729fddeb8d551.png",
+      "name": "•Chertek",
+      "subtitle": "Opportunistisches Fliegerass",
+      "ability_text": "<smallbody>Solange du einen Primärangriff durchführst, falls der Verteidiger gefangen ist, darfst du bis zu 2<nonbreak>Angriffswürfel neu werfen.</smallbody><return><shipability><sabold>Pinpoint Tractor Array:</sabold> You cannot rotate your <turretarc> to your <reararc>. After you execute a maneuver, you may gain 1<nonbreak>tractor token to perform a<nonbreak><rotate><nonbreak>action.</shipability>",
+      "cost": "36",
+      "ship_ability_text": "",
+      "ship_size": 1,
+      "force_side": null,
+      "initiative": 4,
+      "weapon_no_bonus": false,
+      "ffg_id": "XW_P_359",
+      "ship_type": 67
+    },
+    {
       "id": 51,
       "faction_id": 1,
       "card_set_ids": [
@@ -30050,7 +30190,7 @@
       "ship_type": 67
     },
     {
-      "id": 605,
+      "id": 609,
       "faction_id": 7,
       "card_set_ids": [
         36
@@ -30058,14 +30198,14 @@
       "card_type_id": 1,
       "available_actions": [
         {
-          "id": 55803,
+          "id": 55811,
           "base_action_id": 2,
           "related_action_id": null,
           "base_action_side_effect": null,
           "related_action_side_effect": null
         },
         {
-          "id": 55804,
+          "id": 55812,
           "base_action_id": 3,
           "related_action_id": null,
           "base_action_side_effect": null,
@@ -30074,53 +30214,52 @@
       ],
       "statistics": [
         {
-          "id": 64157,
+          "id": 64173,
           "statistic_id": 11,
           "value": "3",
           "recurring": false
         },
         {
-          "id": 64158,
+          "id": 64174,
           "statistic_id": 12,
           "value": "2",
           "recurring": false
         },
         {
-          "id": 64159,
+          "id": 64175,
           "statistic_id": 1,
           "value": "3",
           "recurring": false
         },
         {
-          "id": 64160,
+          "id": 64176,
           "statistic_id": 2,
           "value": "4",
           "recurring": false
         }
       ],
       "available_upgrades": [
-        1,
         1
       ],
       "restrictions": [],
       "upgrade_types": [],
       "weapon_range": null,
-      "image": "https://sb-cdn.fantasyflightgames.com/card_art/8466283eeb7d476744913f5d9d69e745.jpg",
-      "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/de/380f5538eb37b202bbf9e4c7ecb74163.png",
-      "name": "•Berwer Kret",
-      "subtitle": "Captain der Schwarmgarde",
-      "ability_text": "<smallbody>Nachdem du einen Angriff durchgeführt hast, der getroffen hat, darf jedes befreundete Schiff mit <calculate> in seiner Aktionsleiste, das den Verteidiger als Ziel erfasst hat, eine rote<nonbreak><calculate><nonbreak>-Aktion durchführen. </smallbody><return><shipability><sabold>Fangstrahl-Zielsystem:</sabold> Du kannst deinen <turretarc> nicht auf deinen <reararc>rotieren. Nachdem du ein Manöver ausgeführt hast, darfst du 1 Fangstrahlmarker erhalten, um eine<nonbreak><rotate><nonbreak>-Aktion durchzuführen.</shipability>",
-      "cost": "36",
-      "ship_ability_text": null,
+      "image": "https://sb-cdn.fantasyflightgames.com/card_art/62c29b8b7f82e37980d58b39023a800a.jpg",
+      "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/de/fba8f2a1121e7a39d843121bf379df90.png",
+      "name": "Schwarmgarde der Stalgasin-Kolonie ",
+      "subtitle": null,
+      "ability_text": "<flavor>Speziell auf die physiologischen Besonderheiten der Geonosianer angepasst, kann der Sternenjäger der <untalic>Nantex</untalic>-Klasse Manöver fliegen, welche die meisten anderen Schiffe – und ihre Piloten – auseinanderreißen würden.</flavor> <return><shipability><sabold>Fangstrahl-Zielsystem:</sabold> Du kannst deinen <turretarc> nicht auf deinen <reararc>rotieren. Nachdem du ein Manöver ausgeführt hast, darfst du 1 Fangstrahlmarker erhalten, um eine<nonbreak><rotate><nonbreak>-Aktion durchzuführen.</shipability>",
+      "cost": "33",
+      "ship_ability_text": "",
       "ship_size": 1,
       "force_side": null,
-      "initiative": 5,
+      "initiative": 3,
       "weapon_no_bonus": false,
-      "ffg_id": "XW_P_358",
+      "ffg_id": "XW_P_362",
       "ship_type": 67
     },
     {
-      "id": 606,
+      "id": 608,
       "faction_id": 7,
       "card_set_ids": [
         36
@@ -30128,14 +30267,14 @@
       "card_type_id": 1,
       "available_actions": [
         {
-          "id": 55805,
+          "id": 55809,
           "base_action_id": 2,
           "related_action_id": null,
           "base_action_side_effect": null,
           "related_action_side_effect": null
         },
         {
-          "id": 55806,
+          "id": 55810,
           "base_action_id": 3,
           "related_action_id": null,
           "base_action_side_effect": null,
@@ -30144,25 +30283,25 @@
       ],
       "statistics": [
         {
-          "id": 64161,
+          "id": 64169,
           "statistic_id": 11,
           "value": "3",
           "recurring": false
         },
         {
-          "id": 64162,
+          "id": 64170,
           "statistic_id": 12,
           "value": "2",
           "recurring": false
         },
         {
-          "id": 64163,
+          "id": 64171,
           "statistic_id": 1,
           "value": "3",
           "recurring": false
         },
         {
-          "id": 64164,
+          "id": 64172,
           "statistic_id": 2,
           "value": "4",
           "recurring": false
@@ -30175,18 +30314,18 @@
       "restrictions": [],
       "upgrade_types": [],
       "weapon_range": null,
-      "image": "https://sb-cdn.fantasyflightgames.com/card_art/fc7fff6c1e6eb73ff6ae10768f5491a7.jpg",
-      "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/de/c15f1bd62e41b929cba729fddeb8d551.png",
-      "name": "•Chertek",
-      "subtitle": "Opportunistisches Fliegerass",
-      "ability_text": "<smallbody>Solange du einen Primärangriff durchführst, falls der Verteidiger gefangen ist, darfst du bis zu 2<nonbreak>Angriffswürfel neu werfen.</smallbody><return><shipability><sabold>Pinpoint Tractor Array:</sabold> You cannot rotate your <turretarc> to your <reararc>. After you execute a maneuver, you may gain 1<nonbreak>tractor token to perform a<nonbreak><rotate><nonbreak>action.</shipability>",
-      "cost": "34",
-      "ship_ability_text": null,
+      "image": "https://sb-cdn.fantasyflightgames.com/card_art/5c32b5d481ad922be7a0ec4a3743d1d6.jpg",
+      "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/de/3d33f0fc6d7c77b564839eb02f0e5f63.png",
+      "name": "Ass der Petranaki-Arena",
+      "subtitle": null,
+      "ability_text": "<flavor>Die Petranaki-Arena ist ein gewaltiges Bauwerk auf dem Planeten Geonosis und der Ort, an dem die erste Schlacht der Klonkriege geschlagen wurde.</flavor> <return><shipability><sabold>Fangstrahl-Zielsystem:</sabold> Du kannst deinen <turretarc> nicht auf deinen <reararc>rotieren. Nachdem du ein Manöver ausgeführt hast, darfst du 1 Fangstrahlmarker erhalten, um eine<nonbreak><rotate><nonbreak>-Aktion durchzuführen.</shipability>",
+      "cost": "35",
+      "ship_ability_text": "",
       "ship_size": 1,
       "force_side": null,
       "initiative": 4,
       "weapon_no_bonus": false,
-      "ffg_id": "XW_P_359",
+      "ffg_id": "XW_P_361",
       "ship_type": 67
     },
     {
@@ -30250,152 +30389,13 @@
       "name": "•Gorgol",
       "subtitle": "Geschickter Ingenieur",
       "ability_text": "<smallbody>Während der Systemphase darfst du 1 Entwaffnet-Marker erhalten und ein befreundetes Schiff in Reichweite<nonbreak>1–2 wählen. Falls du das tust, erhält es 1<nonbreak>Fangstrahlmarker, dann repariert es 1 seiner offenen <bitalic>Schiff</bitalic><nonbreak>-Schadenskarten.</smallbody><return><shipability><sabold>Fangstrahl-Zielsystem:</sabold> Du kannst deinen <turretarc> nicht auf deinen <reararc>rotieren. Nachdem du ein Manöver ausgeführt hast, darfst du 1 Fangstrahlmarker erhalten, um eine<nonbreak><rotate><nonbreak>-Aktion durchzuführen.</shipability>",
-      "cost": "28",
-      "ship_ability_text": null,
+      "cost": "32",
+      "ship_ability_text": "",
       "ship_size": 1,
       "force_side": null,
       "initiative": 2,
       "weapon_no_bonus": false,
       "ffg_id": "XW_P_360",
-      "ship_type": 67
-    },
-    {
-      "id": 608,
-      "faction_id": 7,
-      "card_set_ids": [
-        36
-      ],
-      "card_type_id": 1,
-      "available_actions": [
-        {
-          "id": 55809,
-          "base_action_id": 2,
-          "related_action_id": null,
-          "base_action_side_effect": null,
-          "related_action_side_effect": null
-        },
-        {
-          "id": 55810,
-          "base_action_id": 3,
-          "related_action_id": null,
-          "base_action_side_effect": null,
-          "related_action_side_effect": null
-        }
-      ],
-      "statistics": [
-        {
-          "id": 64169,
-          "statistic_id": 11,
-          "value": "3",
-          "recurring": false
-        },
-        {
-          "id": 64170,
-          "statistic_id": 12,
-          "value": "2",
-          "recurring": false
-        },
-        {
-          "id": 64171,
-          "statistic_id": 1,
-          "value": "3",
-          "recurring": false
-        },
-        {
-          "id": 64172,
-          "statistic_id": 2,
-          "value": "4",
-          "recurring": false
-        }
-      ],
-      "available_upgrades": [
-        1,
-        1
-      ],
-      "restrictions": [],
-      "upgrade_types": [],
-      "weapon_range": null,
-      "image": "https://sb-cdn.fantasyflightgames.com/card_art/5c32b5d481ad922be7a0ec4a3743d1d6.jpg",
-      "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/de/3d33f0fc6d7c77b564839eb02f0e5f63.png",
-      "name": "Ass der Petranaki-Arena",
-      "subtitle": "",
-      "ability_text": "<flavor>Die Petranaki-Arena ist ein gewaltiges Bauwerk auf dem Planeten Geonosis und der Ort, an dem die erste Schlacht der Klonkriege geschlagen wurde.</flavor> <return><shipability><sabold>Fangstrahl-Zielsystem:</sabold> Du kannst deinen <turretarc> nicht auf deinen <reararc>rotieren. Nachdem du ein Manöver ausgeführt hast, darfst du 1 Fangstrahlmarker erhalten, um eine<nonbreak><rotate><nonbreak>-Aktion durchzuführen.</shipability>",
-      "cost": "30",
-      "ship_ability_text": null,
-      "ship_size": 1,
-      "force_side": null,
-      "initiative": 4,
-      "weapon_no_bonus": false,
-      "ffg_id": "XW_P_361",
-      "ship_type": 67
-    },
-    {
-      "id": 609,
-      "faction_id": 7,
-      "card_set_ids": [
-        36
-      ],
-      "card_type_id": 1,
-      "available_actions": [
-        {
-          "id": 55811,
-          "base_action_id": 2,
-          "related_action_id": null,
-          "base_action_side_effect": null,
-          "related_action_side_effect": null
-        },
-        {
-          "id": 55812,
-          "base_action_id": 3,
-          "related_action_id": null,
-          "base_action_side_effect": null,
-          "related_action_side_effect": null
-        }
-      ],
-      "statistics": [
-        {
-          "id": 64173,
-          "statistic_id": 11,
-          "value": "3",
-          "recurring": false
-        },
-        {
-          "id": 64174,
-          "statistic_id": 12,
-          "value": "2",
-          "recurring": false
-        },
-        {
-          "id": 64175,
-          "statistic_id": 1,
-          "value": "3",
-          "recurring": false
-        },
-        {
-          "id": 64176,
-          "statistic_id": 2,
-          "value": "4",
-          "recurring": false
-        }
-      ],
-      "available_upgrades": [
-        1
-      ],
-      "restrictions": [],
-      "upgrade_types": [],
-      "weapon_range": null,
-      "image": "https://sb-cdn.fantasyflightgames.com/card_art/62c29b8b7f82e37980d58b39023a800a.jpg",
-      "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/de/fba8f2a1121e7a39d843121bf379df90.png",
-      "name": "Schwarmgarde der Stalgasin-Kolonie ",
-      "subtitle": "",
-      "ability_text": "<flavor>Speziell auf die physiologischen Besonderheiten der Geonosianer angepasst, kann der Sternenjäger der <untalic>Nantex</untalic>-Klasse Manöver fliegen, welche die meisten anderen Schiffe – und ihre Piloten – auseinanderreißen würden.</flavor> <return><shipability><sabold>Fangstrahl-Zielsystem:</sabold> Du kannst deinen <turretarc> nicht auf deinen <reararc>rotieren. Nachdem du ein Manöver ausgeführt hast, darfst du 1 Fangstrahlmarker erhalten, um eine<nonbreak><rotate><nonbreak>-Aktion durchzuführen.</shipability>",
-      "cost": "29",
-      "ship_ability_text": null,
-      "ship_size": 1,
-      "force_side": null,
-      "initiative": 3,
-      "weapon_no_bonus": false,
-      "ffg_id": "XW_P_362",
       "ship_type": 67
     },
     {

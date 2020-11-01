@@ -1,4 +1,4 @@
-const icons: { [s: string]: string } = {
+export const icons: { [s: string]: string } = {
   agility: '^',
   astromech: 'A',
   attack: '%',
@@ -169,12 +169,14 @@ const icons: { [s: string]: string } = {
   unique: 'u',
 };
 
-export default (icon?: string) => {
+const d =  (icon?: string) => {
   if (!icon) {
     return;
   }
   return icons[icon.toLowerCase()] || 'Æ';
 };
+
+export default d;
 
 const shipMap: { [s: string]: string } = {
   aggressorassaultfighter: 'i',

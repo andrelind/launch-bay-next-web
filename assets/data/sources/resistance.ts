@@ -242,6 +242,18 @@ export const t: Source[] = [
       },
     },
   },
+  {
+    ffg: -1,
+    xws: 'heraldsofhope',
+    name: 'Heralds of Hope Squadron Pack',
+    wave: 7,
+    released: true,
+    contents: {
+      ships: { t70xwing: 2, rx2awing: 1 },
+      pilots: {},
+      upgrades: {},
+    },
+  },
 ];
 
 export default t;

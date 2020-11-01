@@ -1146,6 +1146,146 @@
       "ship_type": 40
     },
     {
+      "id": 605,
+      "faction_id": 7,
+      "card_set_ids": [
+        36
+      ],
+      "card_type_id": 1,
+      "available_actions": [
+        {
+          "id": 55803,
+          "base_action_id": 2,
+          "related_action_id": null,
+          "base_action_side_effect": null,
+          "related_action_side_effect": null
+        },
+        {
+          "id": 55804,
+          "base_action_id": 3,
+          "related_action_id": null,
+          "base_action_side_effect": null,
+          "related_action_side_effect": null
+        }
+      ],
+      "statistics": [
+        {
+          "id": 64157,
+          "statistic_id": 11,
+          "value": "3",
+          "recurring": false
+        },
+        {
+          "id": 64158,
+          "statistic_id": 12,
+          "value": "2",
+          "recurring": false
+        },
+        {
+          "id": 64159,
+          "statistic_id": 1,
+          "value": "3",
+          "recurring": false
+        },
+        {
+          "id": 64160,
+          "statistic_id": 2,
+          "value": "4",
+          "recurring": false
+        }
+      ],
+      "available_upgrades": [
+        1,
+        1
+      ],
+      "restrictions": [],
+      "upgrade_types": [],
+      "weapon_range": null,
+      "image": "https://sb-cdn.fantasyflightgames.com/card_art/8466283eeb7d476744913f5d9d69e745.jpg",
+      "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/pl/f4b6ddfdfcf8fafeb16339295c3fd8a6.png",
+      "name": "•Berwer Kret",
+      "subtitle": "Kapitan Gwardii Ula",
+      "ability_text": "<smallbody>Gdy wykonasz atak, który trafił, każdy przyjazny statek, który ma namierzenie na obrońcy i<nonbreak><calculate><nonbreak>na pasku akcji, może wykonać czerwoną akcję<nonbreak><calculate>.</smallbody><return><shipability><sabold>Precyzyjna wiązka ściągająca:</sabold> Nie możesz obracać swojego wskaźnika <turretarc> na twoją <reararc>. Gdy wykonasz manewr, możesz otrzymać 1<nonbreak>żeton wiązki ściągającej, aby wykonać akcję <rotate>.</shipability>",
+      "cost": "37",
+      "ship_ability_text": "",
+      "ship_size": 1,
+      "force_side": null,
+      "initiative": 5,
+      "weapon_no_bonus": false,
+      "ffg_id": "XW_P_358",
+      "ship_type": 67
+    },
+    {
+      "id": 606,
+      "faction_id": 7,
+      "card_set_ids": [
+        36
+      ],
+      "card_type_id": 1,
+      "available_actions": [
+        {
+          "id": 55805,
+          "base_action_id": 2,
+          "related_action_id": null,
+          "base_action_side_effect": null,
+          "related_action_side_effect": null
+        },
+        {
+          "id": 55806,
+          "base_action_id": 3,
+          "related_action_id": null,
+          "base_action_side_effect": null,
+          "related_action_side_effect": null
+        }
+      ],
+      "statistics": [
+        {
+          "id": 64161,
+          "statistic_id": 11,
+          "value": "3",
+          "recurring": false
+        },
+        {
+          "id": 64162,
+          "statistic_id": 12,
+          "value": "2",
+          "recurring": false
+        },
+        {
+          "id": 64163,
+          "statistic_id": 1,
+          "value": "3",
+          "recurring": false
+        },
+        {
+          "id": 64164,
+          "statistic_id": 2,
+          "value": "4",
+          "recurring": false
+        }
+      ],
+      "available_upgrades": [
+        1,
+        1
+      ],
+      "restrictions": [],
+      "upgrade_types": [],
+      "weapon_range": null,
+      "image": "https://sb-cdn.fantasyflightgames.com/card_art/fc7fff6c1e6eb73ff6ae10768f5491a7.jpg",
+      "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/pl/96f2e2dc90dc0bb871ab55c6244fa3cc.png",
+      "name": "•Chertek",
+      "subtitle": "Oportunistyczny as",
+      "ability_text": "<smallbody>Gdy wykonujesz atak podstawowy i<nonbreak>obrońca posiada żeton wiązki ściągającej, możesz przerzucić maksymalnie 2<nonbreak>kości ataku.</smallbody><return><shipability><sabold>Precyzyjna wiązka ściągająca:</sabold> Nie możesz obracać swojego wskaźnika <turretarc> na twoją <reararc>. Gdy wykonasz manewr, możesz otrzymać 1<nonbreak>żeton wiązki ściągającej, aby wykonać akcję <rotate>.</shipability>",
+      "cost": "36",
+      "ship_ability_text": "",
+      "ship_size": 1,
+      "force_side": null,
+      "initiative": 4,
+      "weapon_no_bonus": false,
+      "ffg_id": "XW_P_359",
+      "ship_type": 67
+    },
+    {
       "id": 51,
       "faction_id": 1,
       "card_set_ids": [
@@ -30050,7 +30190,7 @@
       "ship_type": 67
     },
     {
-      "id": 605,
+      "id": 609,
       "faction_id": 7,
       "card_set_ids": [
         36
@@ -30058,14 +30198,14 @@
       "card_type_id": 1,
       "available_actions": [
         {
-          "id": 55803,
+          "id": 55811,
           "base_action_id": 2,
           "related_action_id": null,
           "base_action_side_effect": null,
           "related_action_side_effect": null
         },
         {
-          "id": 55804,
+          "id": 55812,
           "base_action_id": 3,
           "related_action_id": null,
           "base_action_side_effect": null,
@@ -30074,53 +30214,52 @@
       ],
       "statistics": [
         {
-          "id": 64157,
+          "id": 64173,
           "statistic_id": 11,
           "value": "3",
           "recurring": false
         },
         {
-          "id": 64158,
+          "id": 64174,
           "statistic_id": 12,
           "value": "2",
           "recurring": false
         },
         {
-          "id": 64159,
+          "id": 64175,
           "statistic_id": 1,
           "value": "3",
           "recurring": false
         },
         {
-          "id": 64160,
+          "id": 64176,
           "statistic_id": 2,
           "value": "4",
           "recurring": false
         }
       ],
       "available_upgrades": [
-        1,
         1
       ],
       "restrictions": [],
       "upgrade_types": [],
       "weapon_range": null,
-      "image": "https://sb-cdn.fantasyflightgames.com/card_art/8466283eeb7d476744913f5d9d69e745.jpg",
-      "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/pl/f4b6ddfdfcf8fafeb16339295c3fd8a6.png",
-      "name": "•Berwer Kret",
-      "subtitle": "Kapitan Gwardii Ula",
-      "ability_text": "<smallbody>Gdy wykonasz atak, który trafił, każdy przyjazny statek, który ma namierzenie na obrońcy i<nonbreak><calculate><nonbreak>na pasku akcji, może wykonać czerwoną akcję<nonbreak><calculate>.</smallbody><return><shipability><sabold>Precyzyjna wiązka ściągająca:</sabold> Nie możesz obracać swojego wskaźnika <turretarc> na twoją <reararc>. Gdy wykonasz manewr, możesz otrzymać 1<nonbreak>żeton wiązki ściągającej, aby wykonać akcję <rotate>.</shipability>",
-      "cost": "36",
-      "ship_ability_text": null,
+      "image": "https://sb-cdn.fantasyflightgames.com/card_art/62c29b8b7f82e37980d58b39023a800a.jpg",
+      "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/pl/0bff72101f2344e081497118cf9a131a.png",
+      "name": "Strażnik Ula Stalgasin",
+      "subtitle": null,
+      "ability_text": "<flavor>Przy projektowaniu myśliwca gwiezdnego klasy <untalic>Nantex</untalic> uwzględniono niezwykłą fizjologię geonosjańskich pilotów, umożliwiając wykonywanie manewrów, które dla zwykłego statku – i pilota – skończyłyby się rozerwaniem na kawałki.</flavor><return><shipability><sabold>Precyzyjna wiązka ściągająca:</sabold> Nie możesz obracać swojego wskaźnika <turretarc> na twoją <reararc>. Gdy wykonasz manewr, możesz otrzymać 1<nonbreak>żeton wiązki ściągającej, aby wykonać akcję <rotate>.</shipability>",
+      "cost": "33",
+      "ship_ability_text": "",
       "ship_size": 1,
       "force_side": null,
-      "initiative": 5,
+      "initiative": 3,
       "weapon_no_bonus": false,
-      "ffg_id": "XW_P_358",
+      "ffg_id": "XW_P_362",
       "ship_type": 67
     },
     {
-      "id": 606,
+      "id": 608,
       "faction_id": 7,
       "card_set_ids": [
         36
@@ -30128,14 +30267,14 @@
       "card_type_id": 1,
       "available_actions": [
         {
-          "id": 55805,
+          "id": 55809,
           "base_action_id": 2,
           "related_action_id": null,
           "base_action_side_effect": null,
           "related_action_side_effect": null
         },
         {
-          "id": 55806,
+          "id": 55810,
           "base_action_id": 3,
           "related_action_id": null,
           "base_action_side_effect": null,
@@ -30144,25 +30283,25 @@
       ],
       "statistics": [
         {
-          "id": 64161,
+          "id": 64169,
           "statistic_id": 11,
           "value": "3",
           "recurring": false
         },
         {
-          "id": 64162,
+          "id": 64170,
           "statistic_id": 12,
           "value": "2",
           "recurring": false
         },
         {
-          "id": 64163,
+          "id": 64171,
           "statistic_id": 1,
           "value": "3",
           "recurring": false
         },
         {
-          "id": 64164,
+          "id": 64172,
           "statistic_id": 2,
           "value": "4",
           "recurring": false
@@ -30175,18 +30314,18 @@
       "restrictions": [],
       "upgrade_types": [],
       "weapon_range": null,
-      "image": "https://sb-cdn.fantasyflightgames.com/card_art/fc7fff6c1e6eb73ff6ae10768f5491a7.jpg",
-      "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/pl/96f2e2dc90dc0bb871ab55c6244fa3cc.png",
-      "name": "•Chertek",
-      "subtitle": "Oportunistyczny as",
-      "ability_text": "<smallbody>Gdy wykonujesz atak podstawowy i<nonbreak>obrońca posiada żeton wiązki ściągającej, możesz przerzucić maksymalnie 2<nonbreak>kości ataku.</smallbody><return><shipability><sabold>Precyzyjna wiązka ściągająca:</sabold> Nie możesz obracać swojego wskaźnika <turretarc> na twoją <reararc>. Gdy wykonasz manewr, możesz otrzymać 1<nonbreak>żeton wiązki ściągającej, aby wykonać akcję <rotate>.</shipability>",
-      "cost": "34",
-      "ship_ability_text": null,
+      "image": "https://sb-cdn.fantasyflightgames.com/card_art/5c32b5d481ad922be7a0ec4a3743d1d6.jpg",
+      "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/pl/cc342b65f75e200877a345ec574319c7.png",
+      "name": "As Areny Petranaki",
+      "subtitle": null,
+      "ability_text": "<flavor>Arena Petranaki to ogromna budowla na Geonosis i kluczowe miejsce związane z początkiem Wojen Klonów.</flavor><return><shipability><sabold>Precyzyjna wiązka ściągająca:</sabold> Nie możesz obracać swojego wskaźnika <turretarc> na twoją <reararc>. Gdy wykonasz manewr, możesz otrzymać 1<nonbreak>żeton wiązki ściągającej, aby wykonać akcję <rotate>.</shipability>",
+      "cost": "35",
+      "ship_ability_text": "",
       "ship_size": 1,
       "force_side": null,
       "initiative": 4,
       "weapon_no_bonus": false,
-      "ffg_id": "XW_P_359",
+      "ffg_id": "XW_P_361",
       "ship_type": 67
     },
     {
@@ -30250,152 +30389,13 @@
       "name": "•Gorgol",
       "subtitle": "Wprawny inżynier",
       "ability_text": "<smallbody>W fazie systemowej możesz otrzymać 1<nonbreak>żeton rozbrojenia i<nonbreak>wskazać przyjazny statek w<nonbreak>zasięgu 1–2. Jeżeli tak zrobisz, wskazany statek otrzymuje 1<nonbreak>żeton wiązki ściągającej, a<nonbreak>następnie naprawia 1<nonbreak>ze swoich odkrytych kart uszkodzeń Statek.</smallbody><return><shipability><sabold>Precyzyjna wiązka ściągająca:</sabold> Nie możesz obracać swojego wskaźnika <turretarc> na twoją <reararc>. Gdy wykonasz manewr, możesz otrzymać 1<nonbreak>żeton wiązki ściągającej, aby wykonać akcję <rotate>.</shipability>",
-      "cost": "28",
-      "ship_ability_text": null,
+      "cost": "32",
+      "ship_ability_text": "",
       "ship_size": 1,
       "force_side": null,
       "initiative": 2,
       "weapon_no_bonus": false,
       "ffg_id": "XW_P_360",
-      "ship_type": 67
-    },
-    {
-      "id": 608,
-      "faction_id": 7,
-      "card_set_ids": [
-        36
-      ],
-      "card_type_id": 1,
-      "available_actions": [
-        {
-          "id": 55809,
-          "base_action_id": 2,
-          "related_action_id": null,
-          "base_action_side_effect": null,
-          "related_action_side_effect": null
-        },
-        {
-          "id": 55810,
-          "base_action_id": 3,
-          "related_action_id": null,
-          "base_action_side_effect": null,
-          "related_action_side_effect": null
-        }
-      ],
-      "statistics": [
-        {
-          "id": 64169,
-          "statistic_id": 11,
-          "value": "3",
-          "recurring": false
-        },
-        {
-          "id": 64170,
-          "statistic_id": 12,
-          "value": "2",
-          "recurring": false
-        },
-        {
-          "id": 64171,
-          "statistic_id": 1,
-          "value": "3",
-          "recurring": false
-        },
-        {
-          "id": 64172,
-          "statistic_id": 2,
-          "value": "4",
-          "recurring": false
-        }
-      ],
-      "available_upgrades": [
-        1,
-        1
-      ],
-      "restrictions": [],
-      "upgrade_types": [],
-      "weapon_range": null,
-      "image": "https://sb-cdn.fantasyflightgames.com/card_art/5c32b5d481ad922be7a0ec4a3743d1d6.jpg",
-      "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/pl/cc342b65f75e200877a345ec574319c7.png",
-      "name": "As Areny Petranaki",
-      "subtitle": "",
-      "ability_text": "<flavor>Arena Petranaki to ogromna budowla na Geonosis i kluczowe miejsce związane z początkiem Wojen Klonów.</flavor><return><shipability><sabold>Precyzyjna wiązka ściągająca:</sabold> Nie możesz obracać swojego wskaźnika <turretarc> na twoją <reararc>. Gdy wykonasz manewr, możesz otrzymać 1<nonbreak>żeton wiązki ściągającej, aby wykonać akcję <rotate>.</shipability>",
-      "cost": "30",
-      "ship_ability_text": null,
-      "ship_size": 1,
-      "force_side": null,
-      "initiative": 4,
-      "weapon_no_bonus": false,
-      "ffg_id": "XW_P_361",
-      "ship_type": 67
-    },
-    {
-      "id": 609,
-      "faction_id": 7,
-      "card_set_ids": [
-        36
-      ],
-      "card_type_id": 1,
-      "available_actions": [
-        {
-          "id": 55811,
-          "base_action_id": 2,
-          "related_action_id": null,
-          "base_action_side_effect": null,
-          "related_action_side_effect": null
-        },
-        {
-          "id": 55812,
-          "base_action_id": 3,
-          "related_action_id": null,
-          "base_action_side_effect": null,
-          "related_action_side_effect": null
-        }
-      ],
-      "statistics": [
-        {
-          "id": 64173,
-          "statistic_id": 11,
-          "value": "3",
-          "recurring": false
-        },
-        {
-          "id": 64174,
-          "statistic_id": 12,
-          "value": "2",
-          "recurring": false
-        },
-        {
-          "id": 64175,
-          "statistic_id": 1,
-          "value": "3",
-          "recurring": false
-        },
-        {
-          "id": 64176,
-          "statistic_id": 2,
-          "value": "4",
-          "recurring": false
-        }
-      ],
-      "available_upgrades": [
-        1
-      ],
-      "restrictions": [],
-      "upgrade_types": [],
-      "weapon_range": null,
-      "image": "https://sb-cdn.fantasyflightgames.com/card_art/62c29b8b7f82e37980d58b39023a800a.jpg",
-      "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/pl/0bff72101f2344e081497118cf9a131a.png",
-      "name": "Strażnik Ula Stalgasin",
-      "subtitle": "",
-      "ability_text": "<flavor>Przy projektowaniu myśliwca gwiezdnego klasy <untalic>Nantex</untalic> uwzględniono niezwykłą fizjologię geonosjańskich pilotów, umożliwiając wykonywanie manewrów, które dla zwykłego statku – i pilota – skończyłyby się rozerwaniem na kawałki.</flavor><return><shipability><sabold>Precyzyjna wiązka ściągająca:</sabold> Nie możesz obracać swojego wskaźnika <turretarc> na twoją <reararc>. Gdy wykonasz manewr, możesz otrzymać 1<nonbreak>żeton wiązki ściągającej, aby wykonać akcję <rotate>.</shipability>",
-      "cost": "29",
-      "ship_ability_text": null,
-      "ship_size": 1,
-      "force_side": null,
-      "initiative": 3,
-      "weapon_no_bonus": false,
-      "ffg_id": "XW_P_362",
       "ship_type": 67
     },
     {
