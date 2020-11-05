@@ -1,11 +1,7 @@
 import React from "react";
-import { purple, red, yellow } from "../assets/colors";
-import conditionData from "../assets/data/conditions";
 import { Upgrade } from "../types";
 import Error from "./error";
 import XwingFont from "./fonts/xwing";
-import FormattedText from "./formatted-text";
-import Grants from "./grants";
 
 type Props = {
   upgrade: Upgrade;
@@ -22,8 +18,8 @@ const UpgradeComponent = ({
   showType,
   count,
   limitWarning,
-  minimized,
-}: Props) => {
+}: // minimized,
+Props) => {
   let errorText;
   if (limitWarning) {
     errorText = `Only ${upgrade.limited} allowed in a squadron`;
@@ -33,7 +29,8 @@ const UpgradeComponent = ({
   if (!upgradeSide) {
     upgradeSide = upgrade.sides[0];
   }
-  const { attack, charges, force, device, conditions, grants } = upgradeSide;
+  // const { force } = upgradeSide;
+  // const { attack, charges, force, device, conditions, grants } = upgradeSide;
 
   return (
     <div className="flex flex-1 flex-row items-center">
@@ -42,45 +39,49 @@ const UpgradeComponent = ({
           {upgradeSide.slots.map((s, i) => (
             <XwingFont className="mr-1" key={`${s}_${i}`} icon={s} />
           ))}
+
+          {/* {force && (
+            <div className="flex flex-row items-center">
+              <XwingFont icon="Force Power" color={purple} />
+              {force.recovers === 1 && (
+                <XwingFont icon="recurring" color={purple} />
+              )}
+              <span className="text-xs sm:text-sm" style={{ color: purple }}>
+                {force.value}
+              </span>
+            </div>
+          )} */}
+          {/*
+          {charges && (
+            <div className="flex flex-row items-center ml-1">
+              <XwingFont icon="charge" color={yellow} />
+              {charges.recovers === 1 && (
+                <XwingFont
+                  icon="recurring"
+                  className="text-xs sm:text-sm"
+                  color={yellow}
+                />
+              )}
+              <span className="text-xs sm:text-sm" style={{ color: yellow }}>
+                {charges.value}
+              </span>
+            </div>
+          )} */}
         </div>
       )}
 
-      <div className="flex flex-1 flex-col justify-center mx-1">
+      <div className="flex flex-1 flex-col justify-center mx-1 text-xs sm:text-sm">
         <div className="flex flex-row items-center">
-          <span className="text-xs sm:text-sm font-medium break-words">
+          <span className="font-medium break-words">
             {upgrade.limited > 0 && `${"•".repeat(upgrade.limited)} `}
             {upgradeSide.title.en}
             {count !== undefined && (
               <span className="text-grey-400"> ({count})</span>
             )}
           </span>
-
-          {force && (
-            <div className="flex flex-row items-center ">
-              <XwingFont icon="Force Power" color={purple} />
-              {force.recovers === 1 && (
-                <XwingFont icon="recurring" color={purple} />
-              )}
-              <span className="text-sm" style={{ color: purple }}>
-                {force.value}
-              </span>
-            </div>
-          )}
-
-          {charges && (
-            <div className="flex flex-row items-center ml-1">
-              <XwingFont icon="charge" color={yellow} />
-              {charges.recovers === 1 && (
-                <XwingFont icon="recurring" color={yellow} />
-              )}
-              <span className="text-sm" style={{ color: yellow }}>
-                {charges.value}
-              </span>
-            </div>
-          )}
         </div>
 
-        {!minimized && upgradeSide.ability && (
+        {/* {!minimized && upgradeSide.ability && (
           <FormattedText text={upgradeSide.ability.en} />
         )}
         {!minimized && upgradeSide.text && (
@@ -101,14 +102,16 @@ const UpgradeComponent = ({
                 text={`<strong>${condition?.name}:</strong> ${condition?.ability}`}
               />
             );
-          })}
+          })} */}
 
         {errorText && <Error text={errorText} />}
       </div>
 
       <div className="flex flex-col items-end ml-1">
-        <span className="text-sm font-medium">{upgrade.finalCost}</span>
-        {!minimized && attack && attack.ordnance && (
+        <span className="text-xs sm:text-sm font-medium">
+          {upgrade.finalCost}
+        </span>
+        {/* {!minimized && attack && attack.ordnance && (
           <XwingFont icon="ordnance" />
         )}
         {!minimized && attack && (
@@ -124,7 +127,7 @@ const UpgradeComponent = ({
             </span>
           </div>
         )}
-        {!minimized && grants && <Grants grants={grants} />}
+        {!minimized && grants && <Grants grants={grants} />} */}
       </div>
     </div>
   );

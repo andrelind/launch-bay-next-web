@@ -19,14 +19,14 @@ export const renderHardpoint = (
 ) => {
   const SingleValue = () => (
     <div className="flex flex-1">
-      <div className="flex flex-1 flex-row items-center">
+      <div className="flex flex-1 flex-row items-center text-xs sm:text-sm">
         <div className="flex flex-col justify-center">
           <XwingFont className="mr-1" icon={"Hardpoint"} />
         </div>
 
         <div className="flex flex-1 flex-col justify-center mx-1">
           <div className="flex flex-row items-center">
-            <span className="text-sm ">{"Hardpoint"}</span>
+            <span>{"Hardpoint"}</span>
           </div>
         </div>
       </div>
@@ -44,7 +44,7 @@ export const renderHardpoint = (
 
           <div className="flex flex-1 flex-col justify-center mx-1">
             <div className="flex flex-row items-center">
-              <span className="text-sm font-medium">
+              <span className="text-xs sm:text-sm">
                 {data.label || "Hardpoint"}
               </span>
             </div>
@@ -65,7 +65,7 @@ export const renderHardpoint = (
 
           <div className="flex flex-1 flex-col justify-center mx-1">
             <div className="flex flex-row items-center">
-              <span className="text-sm ">{"Hardpoint"}</span>
+              <span className="text-xs sm:text-sm">{"Hardpoint"}</span>
             </div>
           </div>
         </div>
@@ -148,7 +148,7 @@ export const renderUpgrade = (
     <components.Placeholder {...props}>
       <span>
         <XwingFont icon={props.children} className="mr-1" />
-        <span className="text-sm mx-1">{props.children}</span>
+        <span className="text-xs sm:text-sm mx-1">{props.children}</span>
       </span>
     </components.Placeholder>
   );

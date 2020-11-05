@@ -35,12 +35,12 @@ const styles = (theme: ThemeInterface) => ({
   placeholder: (styles: any) => ({
     ...styles,
     color: theme.text,
-    marginLeft: 0,
-    padding: "2px 4px",
+    padding: 0,
+    margin: 0,
   }),
   valueContainer: (styles: any) => ({
     ...styles,
-    padding: "2px 4px",
+    // padding: "2px 4px",
   }),
   option: (styles: any, { isDisabled, isFocused, isSelected }: any) => ({
     ...styles,
