@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import useDarkMode from "use-dark-mode";
 import { darkgrey, yellow } from "../../assets/colors";
 import SquadronComponent from "../../components/squadron";
@@ -32,7 +32,7 @@ type Props = {
 };
 
 const SideBarComponent = ({ darkMode }: Props) => {
-  const { value, enable, disable } = useDarkMode(darkMode);
+  const { value } = useDarkMode(darkMode);
   const jwt = useJWT();
 
   const squadrons = useSelector((s: AppState) =>
@@ -42,7 +42,6 @@ const SideBarComponent = ({ darkMode }: Props) => {
   const theme = useTheme();
   const router = useRouter();
   const minimized = useMinimized("index");
-  const dispatch = useDispatch();
 
   const getColor = (faction: Faction) => {
     if (faction === "Galactic Empire" || faction === "First Order") {
