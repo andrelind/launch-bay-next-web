@@ -1,7 +1,6 @@
-import { Strategy } from 'passport-facebook';
-
-import { registerUser } from '../../api/user';
-import appConfig from '../config';
+import { Strategy } from "passport-facebook";
+import { registerUser } from "../../requests/user";
+import appConfig from "../config";
 
 const strategy = new Strategy(
   appConfig.facebook,
@@ -13,7 +12,7 @@ const strategy = new Strategy(
         profile.emails && profile.emails.length > 0
           ? profile.emails[0].value
           : undefined,
-      provider: 'Facebook',
+      provider: "Facebook",
       jwt: null,
     });
 

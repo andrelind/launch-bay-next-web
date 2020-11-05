@@ -1,19 +1,18 @@
-import { call, select, takeEvery } from 'redux-saga/effects';
-
-import { REMOVE_SQUADRON, RemoveSquadronAction } from '../../actions/squadrons';
-import { deleteSquadron } from '../../api/squadron';
-import { UserState } from '../../reducers/user';
-import { AppState } from '../../store/state';
+import { call, select, takeEvery } from "redux-saga/effects";
+import { RemoveSquadronAction, REMOVE_SQUADRON } from "../../actions/squadrons";
+import { UserState } from "../../reducers/user";
+import { deleteSquadron } from "../../requests/squadron";
+import { AppState } from "../../store/state";
 
 const getUser = (state: AppState) => state.app.user;
 
 function* deleteSquad(action: RemoveSquadronAction) {
   try {
-    console.log('DELETE SQUADRON', action);
+    console.log("DELETE SQUADRON", action);
 
     const uid = action.squadronUid;
     if (!uid) {
-      console.log('DELETE SQUADRON: NO UID');
+      console.log("DELETE SQUADRON: NO UID");
       return;
     }
 
@@ -30,9 +29,9 @@ function* deleteSquad(action: RemoveSquadronAction) {
       result.data.remove.success === true
     ) {
       // Success
-      console.log('DELETE SQUADRON: SUCCESS');
+      console.log("DELETE SQUADRON: SUCCESS");
     } else {
-      console.log('DELETE SQUADRON: FAILED', result);
+      console.log("DELETE SQUADRON: FAILED", result);
     }
   } catch (e) {
     console.error(e);

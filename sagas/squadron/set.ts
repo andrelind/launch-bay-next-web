@@ -16,8 +16,8 @@ import {
   TOGGLE_FAVOURITE_SQUADRON,
   TOGGLE_FORMAT_SQUADRON,
 } from "../../actions/squadrons";
-import { setSquadron } from "../../api/squadron";
 import { UserState } from "../../reducers/user";
+import { setSquadron } from "../../requests/squadron";
 import { AppState } from "../../store/state";
 import { SquadronXWS } from "../../types";
 

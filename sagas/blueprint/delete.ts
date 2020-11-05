@@ -1,9 +1,11 @@
-import { call, select, takeEvery } from 'redux-saga/effects';
-
-import { REMOVE_BLUEPRINT, RemoveBlueprintAction } from '../../actions/blueprints';
-import { deleteBlueprint } from '../../api/blueprints';
-import { UserState } from '../../reducers/user';
-import { AppState } from '../../store/state';
+import { call, select, takeEvery } from "redux-saga/effects";
+import {
+  RemoveBlueprintAction,
+  REMOVE_BLUEPRINT,
+} from "../../actions/blueprints";
+import { UserState } from "../../reducers/user";
+import { deleteBlueprint } from "../../requests/blueprints";
+import { AppState } from "../../store/state";
 
 const getUser = (state: AppState) => state.app.user || {};
 
@@ -14,11 +16,11 @@ function* removeBlueprint(action: RemoveBlueprintAction) {
       return;
     }
 
-    console.log('DELETE BLUEPRINT');
+    console.log("DELETE BLUEPRINT");
 
     const { uid } = action;
     if (!uid) {
-      console.log('DELETE BLUEPRINT: NO UID');
+      console.log("DELETE BLUEPRINT: NO UID");
       return;
     }
 
@@ -31,9 +33,9 @@ function* removeBlueprint(action: RemoveBlueprintAction) {
     ) {
       // Success
       // console.log('SUCCESS', { result });
-      console.log('DELETE BLUEPRINT: SUCCESS');
+      console.log("DELETE BLUEPRINT: SUCCESS");
     } else {
-      console.log('DELETE BLUEPRINT', { result });
+      console.log("DELETE BLUEPRINT", { result });
     }
   } catch (e) {
     console.error(e);

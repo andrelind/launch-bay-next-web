@@ -1,10 +1,15 @@
-import { call, select, takeEvery } from 'redux-saga/effects';
-
-import { ADD_TOURNAMENT, EDIT_GAME, REMOVE_GAME, SET_NUMBER_OF_PLAYERS, SET_PLACEMENT } from '../../actions/tournaments';
-import { setTournament } from '../../api/tournaments';
-import { UserState } from '../../reducers/user';
-import { AppState } from '../../store/state';
-import { Tournament } from '../../types';
+import { call, select, takeEvery } from "redux-saga/effects";
+import {
+  ADD_TOURNAMENT,
+  EDIT_GAME,
+  REMOVE_GAME,
+  SET_NUMBER_OF_PLAYERS,
+  SET_PLACEMENT,
+} from "../../actions/tournaments";
+import { UserState } from "../../reducers/user";
+import { setTournament } from "../../requests/tournaments";
+import { AppState } from "../../store/state";
+import { Tournament } from "../../types";
 
 const getUser = (state: AppState) => state.app.user || {};
 const getTournaments = (state: AppState) => state.app.tournaments.list;
@@ -14,7 +19,7 @@ const getTournaments = (state: AppState) => state.app.tournaments.list;
   */
 function* setTournamentSaga(action: any): any {
   try {
-    console.log('SET TOURNAMENT', action);
+    console.log("SET TOURNAMENT", action);
 
     const tournaments: Tournament[] = yield select(getTournaments);
     const uid =
@@ -23,14 +28,14 @@ function* setTournamentSaga(action: any): any {
         : action.tournamentUid || tournaments[tournaments.length - 1].uid;
 
     if (!uid) {
-      console.log('SET TOURNAMENT: UID NOT FOUND', uid);
+      console.log("SET TOURNAMENT: UID NOT FOUND", uid);
       return;
     }
 
-    console.log('SET TOURNAMENT: TOURNAMENTS', tournaments);
-    const tournament: Tournament = tournaments.filter(s => s.uid === uid)[0];
+    console.log("SET TOURNAMENT: TOURNAMENTS", tournaments);
+    const tournament: Tournament = tournaments.filter((s) => s.uid === uid)[0];
     if (!tournament) {
-      console.log('SET TOURNAMENT: NOT FOUND', uid);
+      console.log("SET TOURNAMENT: NOT FOUND", uid);
       return;
     }
 
@@ -47,9 +52,9 @@ function* setTournamentSaga(action: any): any {
       result.data.setTournament.success === true
     ) {
       // Success
-      console.log('SET TOURNAMENT: SUCCESS');
+      console.log("SET TOURNAMENT: SUCCESS");
     } else {
-      console.log('SET TOURNAMENT: FAILED', result);
+      console.log("SET TOURNAMENT: FAILED", result);
     }
   } catch (e) {
     console.error(e);

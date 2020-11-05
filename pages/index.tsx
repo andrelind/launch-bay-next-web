@@ -17,7 +17,6 @@ import {
 } from "../actions/squadrons";
 import { fullSync } from "../actions/sync";
 import { userDidLogin } from "../actions/user";
-import { sync } from "../api/sync";
 import { buttonBlue, red } from "../assets/colors";
 import { Layout } from "../components/layout";
 import PilotComponent from "../components/pilot";
@@ -37,6 +36,7 @@ import {
   ShipValue,
 } from "../page-components/loader";
 import { renderHardpoint, renderUpgrade } from "../page-components/render";
+import { sync } from "../requests/sync";
 import { AppState } from "../store/state";
 import { Faction, Ship, Slot, Upgrade } from "../types";
 
@@ -335,8 +335,12 @@ EditPage.getInitialProps = async ({ store, query, req }) => {
   // console.log(ctx);
 
   const appStore: Store<AppState, AnyAction> = store;
-  const { getState, dispatch } = appStore;
-  const state = getState();
+  console.log({ appStore });
+  const { dispatch } = appStore;
+  const state = appStore.getState?.();
+  if (!state) {
+    console.log("No state");
+  }
 
   // @ts-ignore
   if (req && req.user) {

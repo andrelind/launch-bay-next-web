@@ -1,10 +1,9 @@
-import { call, select, takeEvery } from 'redux-saga/effects';
-
-import { SAVE_BLUEPRINT } from '../../actions/blueprints';
-import { setBlueprint } from '../../api/blueprints';
-import { UserState } from '../../reducers/user';
-import { AppState } from '../../store/state';
-import { BluePrint } from '../../types';
+import { call, select, takeEvery } from "redux-saga/effects";
+import { SAVE_BLUEPRINT } from "../../actions/blueprints";
+import { UserState } from "../../reducers/user";
+import { setBlueprint } from "../../requests/blueprints";
+import { AppState } from "../../store/state";
+import { BluePrint } from "../../types";
 
 const getUser = (state: AppState) => state.app.user || {};
 const getBlueprints = (state: AppState) => state.app.blueprints || {};
@@ -16,18 +15,18 @@ function* setBlueprintSaga(): any {
       return;
     }
 
-    console.log('SET BLUEPRINT');
+    console.log("SET BLUEPRINT");
 
     const blueprints: BluePrint[] = yield select(getBlueprints);
     const { uid } = blueprints[blueprints.length - 1];
     if (!uid) {
-      console.log('SET BLUEPRINT: NO UID');
+      console.log("SET BLUEPRINT: NO UID");
       return;
     }
 
-    const blueprint = blueprints.filter(s => s.uid === uid)[0];
+    const blueprint = blueprints.filter((s) => s.uid === uid)[0];
     if (!blueprint) {
-      console.log('SET BLUEPRINT: BLUEPRINT NOT FOUND');
+      console.log("SET BLUEPRINT: BLUEPRINT NOT FOUND");
       return;
     }
 
@@ -40,10 +39,10 @@ function* setBlueprintSaga(): any {
       result.data.blueprint.success === true
     ) {
       // Success
-      console.log('SET BLUEPRINT: SUCCESS');
+      console.log("SET BLUEPRINT: SUCCESS");
     } else {
       // console.log(result);
-      console.log('SET BLUEPRINT: FAIL', result);
+      console.log("SET BLUEPRINT: FAIL", result);
     }
   } catch (e) {
     console.error(e);

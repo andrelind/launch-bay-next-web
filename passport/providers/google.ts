@@ -1,5 +1,5 @@
 import { OAuth2Strategy } from "passport-google-oauth";
-import { registerUser } from "../../api/user";
+import { registerUser } from "../../requests/user";
 import appConfig from "../config";
 
 const strategy = new OAuth2Strategy(
