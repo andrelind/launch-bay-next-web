@@ -11,14 +11,12 @@ const fs = require("fs");
 // fs.writeFileSync(path, fixed, 'utf8');
 // console.log('Patched react-native-web'); // eslint-disable-line
 
-// fs.rm("static/fonts/xwing-miniatures-ships.ttf");
 fs.copyFileSync(
   "node_modules/xwing-miniatures-font/dist/xwing-miniatures-ships.ttf",
-  "static/fonts/xwing-miniatures-ships.ttf"
+  "public/static/fonts/xwing-miniatures-ships.ttf"
 );
 
-// fs.rm("static/fonts/xwing-miniatures.ttf");
 fs.copyFileSync(
   "node_modules/xwing-miniatures-font/dist/xwing-miniatures.ttf",
-  "static/fonts/xwing-miniatures.ttf"
+  "public/static/fonts/xwing-miniatures.ttf"
 );

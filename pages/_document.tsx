@@ -33,7 +33,7 @@ export default class MyDocument extends Document<Props> {
               __html: `
                 @font-face {
                   font-family: 'x-wing-ships';
-                    src: url('/static/fonts/xwing-miniatures-ships.ttf');
+                    src: url('/public/static/fonts/xwing-miniatures-ships.ttf');
                     font-display: auto;
                     font-weight: normal;
                     font-style: normal;
@@ -41,7 +41,7 @@ export default class MyDocument extends Document<Props> {
 
                 @font-face {
                   font-family: 'xwing-miniatures';
-                    src: url('/static/fonts/xwing-miniatures.ttf');
+                    src: url('/public/static/fonts/xwing-miniatures.ttf');
                     font-display: auto;
                     font-weight: normal;
                     font-style: normal;
