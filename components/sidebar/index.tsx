@@ -7,14 +7,11 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { setCookie } from "nookies";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import useDarkMode from "use-dark-mode";
-import { toggleMinimize } from "../../actions/misc";
 import { darkgrey, yellow } from "../../assets/colors";
 import SquadronComponent from "../../components/squadron";
-import { SwitchComponent } from "../../components/switch";
 import { factions } from "../../helpers/enums";
 import { useJWT, useMinimized, useTheme } from "../../helpers/hooks";
 import { loadSquadron } from "../../helpers/unit";
@@ -129,12 +126,12 @@ const SideBarComponent = ({ darkMode }: Props) => {
               color={value ? darkgrey : yellow}
               style={{ marginRight: 5, width: 13, height: 13 }}
             />
-            <SwitchComponent
+            {/* <SwitchComponent
               value={value}
               onChange={(c) => {
                 c ? enable() : disable();
               }}
-            />
+            /> */}
             <FontAwesomeIcon
               icon={faMoon}
               color={value ? yellow : darkgrey}
@@ -148,13 +145,13 @@ const SideBarComponent = ({ darkMode }: Props) => {
               color={!minimized ? darkgrey : yellow}
               style={{ marginRight: 5, width: 13, height: 13 }}
             />
-            <SwitchComponent
+            {/* <SwitchComponent
               value={!minimized}
               onChange={(value) => {
                 setCookie(undefined, "minimized", `${!value}`, {});
                 dispatch(toggleMinimize("index"));
               }}
-            />
+            /> */}
             <FontAwesomeIcon
               icon={faExpand}
               color={!minimized ? yellow : darkgrey}
