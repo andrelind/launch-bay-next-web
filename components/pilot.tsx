@@ -1,10 +1,9 @@
 import React from "react";
-import conditionData from "../../assets/data/conditions";
-import { Pilot } from "../../types";
-import Error from "../error";
-import XwingFont from "../fonts/xwing";
-import FormattedText from "../formatted-text";
-import { Count, SlotWrapper } from "./styles";
+import conditionData from "../assets/data/conditions";
+import { Pilot } from "../types";
+import Error from "./error";
+import XwingFont from "./fonts/xwing";
+import FormattedText from "./formatted-text";
 
 type Props = {
   pilot: Pilot;
@@ -34,7 +33,9 @@ const PilotComponent = ({ pilot, count, limitWarning, minimized }: Props) => {
           <span className="italic text-gray-400 text-xs">
             {pilot.caption?.en}
           </span>
-          {count !== undefined && <Count> ({count})</Count>}
+          {count !== undefined && (
+            <span className="text-gray-400"> ({count})</span>
+          )}
         </div>
         <span className="font-medium">{pilot.cost}</span>
       </div>
@@ -56,11 +57,11 @@ const PilotComponent = ({ pilot, count, limitWarning, minimized }: Props) => {
             );
           })}
 
-        <SlotWrapper>
+        <div className="flex flex-row">
           {pilot.slots.map((slot, i) => (
             <XwingFont key={`${slot}_${i}`} icon={slot} />
           ))}
-        </SlotWrapper>
+        </div>
       </div>
       {errorText && <Error text={errorText} />}
     </div>

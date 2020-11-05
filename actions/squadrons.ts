@@ -1,31 +1,64 @@
-import { Faction, Format, Slot, SquadronXWS, Upgrade, UpgradeXWS } from '../types';
+import { v4 as uuid } from "uuid";
+import {
+  Faction,
+  Format,
+  Slot,
+  SquadronXWS,
+  Upgrade,
+  UpgradeXWS,
+} from "../types";
 
-export const IMPORT_SQUADRON: 'IMPORT_SQUADRON' = 'IMPORT_SQUADRON';
-export const ADD_SQUADRON: 'ADD_SQUADRON' = 'ADD_SQUADRON';
-export const REMOVE_SQUADRON: 'REMOVE_SQUADRON' = 'REMOVE_SQUADRON';
-export const RENAME_SQUADRON: 'RENAME_SQUADRON' = 'RENAME_SQUADRON';
-export const COPY_SQUADRON: 'COPY_SQUADRON' = 'COPY_SQUADRON';
-export const TOGGLE_FAVOURITE_SQUADRON: 'TOGGLE_FAVOURITE_SQUADRON' =
-  'TOGGLE_FAVOURITE_SQUADRON';
-export const TOGGLE_FORMAT_SQUADRON: 'TOGGLE_FORMAT_SQUADRON' =
-  'TOGGLE_FORMAT_SQUADRON';
+export const RESET_LOADED_SQUADRONS: "RESET_LOADED_SQUADRONS" =
+  "RESET_LOADED_SQUADRONS";
+export const UPDATE_LOADED_SQUADRON: "UPDATE_LOADED_SQUADRON" =
+  "UPDATE_LOADED_SQUADRON";
+export const REMOVE_LOADED_SQUADRON: "REMOVE_LOADED_SQUADRON" =
+  "REMOVE_LOADED_SQUADRON";
 
-export const INCREASE_SQUADRON_WINS: 'INCREASE_SQUADRON_WINS' =
-  'INCREASE_SQUADRON_WINS';
-export const DECREASE_SQUADRON_WINS: 'DECREASE_SQUADRON_WINS' =
-  'DECREASE_SQUADRON_WINS';
-export const INCREASE_SQUADRON_LOSSES: 'INCREASE_SQUADRON_LOSSES' =
-  'INCREASE_SQUADRON_LOSSES';
-export const DECREASE_SQUADRON_LOSSES: 'DECREASE_SQUADRON_LOSSES' =
-  'DECREASE_SQUADRON_LOSSES';
+export type ResetLoadedSquadronsAction = {
+  type: typeof RESET_LOADED_SQUADRONS;
+};
 
-export const ADD_SHIP: 'ADD_SHIP' = 'ADD_SHIP';
-export const COPY_SHIP: 'COPY_SHIP' = 'COPY_SHIP';
-export const REMOVE_SHIP: 'REMOVE_SHIP' = 'REMOVE_SHIP';
-export const CHANGE_PILOT: 'CHANGE_PILOT' = 'CHANGE_PILOT';
-export const SET_UPGRADE: 'SET_UPGRADE' = 'SET_UPGRADE';
+export type UpdateLoadedSquadronAction = {
+  type: typeof UPDATE_LOADED_SQUADRON;
+  squadronXws: SquadronXWS[];
+};
 
-/* 
+export type RemoveLoadedSquadronAction = {
+  type: typeof REMOVE_LOADED_SQUADRON;
+  squadronUid: string;
+};
+
+export const IMPORT_SQUADRON: "IMPORT_SQUADRON" = "IMPORT_SQUADRON";
+export const ADD_SQUADRON: "ADD_SQUADRON" = "ADD_SQUADRON";
+export const REMOVE_SQUADRON: "REMOVE_SQUADRON" = "REMOVE_SQUADRON";
+export const RENAME_SQUADRON: "RENAME_SQUADRON" = "RENAME_SQUADRON";
+export const COPY_SQUADRON: "COPY_SQUADRON" = "COPY_SQUADRON";
+
+export const TOGGLE_FORMAT_SQUADRON: "TOGGLE_FORMAT_SQUADRON" =
+  "TOGGLE_FORMAT_SQUADRON";
+
+export const INCREASE_SQUADRON_WINS: "INCREASE_SQUADRON_WINS" =
+  "INCREASE_SQUADRON_WINS";
+export const DECREASE_SQUADRON_WINS: "DECREASE_SQUADRON_WINS" =
+  "DECREASE_SQUADRON_WINS";
+export const INCREASE_SQUADRON_LOSSES: "INCREASE_SQUADRON_LOSSES" =
+  "INCREASE_SQUADRON_LOSSES";
+export const DECREASE_SQUADRON_LOSSES: "DECREASE_SQUADRON_LOSSES" =
+  "DECREASE_SQUADRON_LOSSES";
+export const SET_SQUADRON_TAGS: "SET_SQUADRON_TAGS" = "SET_SQUADRON_TAGS";
+
+export const ADD_SHIP: "ADD_SHIP" = "ADD_SHIP";
+export const COPY_SHIP: "COPY_SHIP" = "COPY_SHIP";
+export const REMOVE_SHIP: "REMOVE_SHIP" = "REMOVE_SHIP";
+export const CHANGE_PILOT: "CHANGE_PILOT" = "CHANGE_PILOT";
+export const SET_UPGRADE: "SET_UPGRADE" = "SET_UPGRADE";
+
+export type SyncSquadsAction = {
+  type: "SYNC_SQUADS";
+};
+
+/*
   Squadron Actions
 */
 
@@ -49,11 +82,6 @@ export type RenameSquadronAction = {
 
 export type CopySquadronAction = {
   type: typeof COPY_SQUADRON;
-  squadronUid: string;
-};
-
-export type ToggleFavouriteSquadronAction = {
-  type: typeof TOGGLE_FAVOURITE_SQUADRON;
   squadronUid: string;
 };
 
@@ -91,7 +119,13 @@ export type DecreaseSquadronLossAction = {
   squadronUid: string;
 };
 
-/* 
+export type SetSquadronTagsAction = {
+  type: typeof SET_SQUADRON_TAGS;
+  squadronUid: string;
+  tags: string[];
+};
+
+/*
   Unit Actions
 */
 
@@ -124,7 +158,7 @@ export type ChangePilotAction = {
   hasForce: boolean;
 };
 
-/* 
+/*
   Upgrade Actions
 */
 
@@ -138,6 +172,10 @@ export type SetUpgradeAction = {
 };
 
 export type Action =
+  | ResetLoadedSquadronsAction
+  | UpdateLoadedSquadronAction
+  | RemoveLoadedSquadronAction
+  | SyncSquadsAction
   | AddSquadronAction
   | ImportSquadronAction
   | RenameSquadronAction
@@ -146,7 +184,7 @@ export type Action =
   | DecreaseSquadronWinsAction
   | IncreaseSquadronLossAction
   | DecreaseSquadronLossAction
-  | ToggleFavouriteSquadronAction
+  | SetSquadronTagsAction
   | ToggleFormatSquadronAction
   | RemoveSquadronAction
   | AddShipAction
@@ -156,12 +194,12 @@ export type Action =
   | SetUpgradeAction;
 
 export const addSquadron = (
-  uid: string,
   faction: Faction,
-  format: Format
+  format: Format,
+  uid?: string
 ): AddSquadronAction => ({
   type: ADD_SQUADRON,
-  uid,
+  uid: uid || uuid(),
   faction,
   format,
 });
@@ -203,13 +241,6 @@ export const removeShip = (
   type: REMOVE_SHIP,
   squadronUid,
   unitUid,
-});
-
-export const toggleFavourite = (
-  squadronUid: string
-): ToggleFavouriteSquadronAction => ({
-  type: TOGGLE_FAVOURITE_SQUADRON,
-  squadronUid,
 });
 
 export const setUpgrade = (
@@ -265,6 +296,15 @@ export const decreaseLosses = (
 ): DecreaseSquadronLossAction => ({
   type: DECREASE_SQUADRON_LOSSES,
   squadronUid,
+});
+
+export const setSquadronTagsAction = (
+  squadronUid: string,
+  tags: string[]
+): SetSquadronTagsAction => ({
+  type: SET_SQUADRON_TAGS,
+  squadronUid,
+  tags,
 });
 
 export const addShipAction = (

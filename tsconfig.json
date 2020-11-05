@@ -19,5 +19,5 @@
     "target": "esnext"
   },
   "exclude": [".next", "scripts/**/*.*"],
-  "include": ["**/*.ts", "**/*.tsx"]
+  "include": ["**/*.ts", "**/*.tsx", "components/select"]
 }

@@ -3,9 +3,11 @@ import pilotData from "../assets/data/pilots";
 import upgradeData from "../assets/data/upgrades";
 import {
   Faction,
+  Format,
   PilotXWS,
   Ship,
   ShipType,
+  Slot,
   SlotKey,
   Squadron,
   SquadronXWS,
@@ -15,7 +17,8 @@ import {
   UpgradeCostSize,
   UpgradeCostValue,
 } from "../types";
-import { slotKeys } from "./enums";
+import { keyFromSlot } from "./convert";
+import { allSlots, slotKeys } from "./enums";
 
 export const pilotExists = (faction: Faction, pilotXws: PilotXWS) => {
   const ship = pilotData[faction][pilotXws.ship];
@@ -29,7 +32,7 @@ export const upgradeExists = (slot: SlotKey, xws: string) => {
   return upgradeData[slot].filter((u) => u.xws === xws)[0] !== undefined;
 };
 
-export const getShip = (
+const getShip = (
   pilotXws: PilotXWS,
   faction: Faction,
   skipLoadingUpgrades: boolean = false
@@ -60,7 +63,7 @@ export const getShip = (
   return ship;
 };
 
-export const loadSquadron = (xws?: SquadronXWS) => {
+export const loadSquadron = (xws?: SquadronXWS): Squadron | undefined => {
   if (!xws) {
     return undefined;
   }
@@ -74,6 +77,7 @@ export const loadSquadron = (xws?: SquadronXWS) => {
     favourite: xws.favourite || false,
     wins: xws.wins || 0,
     losses: xws.losses || 0,
+    tags: xws.tags || [],
     created: xws.createdDatestamp ? new Date(xws.createdDatestamp) : new Date(),
     version: xws.version,
     ships: xws.pilots
@@ -233,4 +237,103 @@ export const copyPilot = (pilot: PilotXWS): PilotXWS => {
   newUnit.uid = uuid();
 
   return newUnit;
+};
+
+export const freeSlotsForShip = (ship: Ship) => {
+  // Start with loading the ship
+  const shipType: ShipType = JSON.parse(
+    JSON.stringify(pilotData[ship.faction][ship.xws])
+  );
+  const pilot = shipType.pilots.find((p) => p.xws === ship.pilot.xws);
+
+  // Get all available slots from ship
+  const freeSlots: { [key in Slot]?: number } = {};
+  pilot?.slots.forEach((slot) => {
+    freeSlots[slot] = freeSlots[slot] ? freeSlots[slot]! + 1 : 1;
+  });
+
+  // Now load each and every upgrade and +/- on free slots
+  allSlots.forEach((slot) => {
+    const upgrades = ship.upgrades?.[keyFromSlot(slot)];
+    if (!upgrades) {
+      return;
+    }
+
+    upgrades.forEach((u) => {
+      // Remove each slot used
+      u.sides[0].slots.forEach((us) => {
+        freeSlots[us] = freeSlots[us] ? freeSlots[us]! - 1 : -1;
+      });
+
+      // Add for each slot granted
+      u.sides[0].grants?.forEach((g) => {
+        if (!g.slot) {
+          return;
+        }
+        freeSlots[g.slot] = freeSlots[g.slot]
+          ? freeSlots[g.slot]! + g.value
+          : g.value;
+      });
+    });
+  });
+
+  return freeSlots;
+};
+
+export const cleanupUpgrades = (
+  upgrades: { [key in SlotKey]?: string[] } = {},
+  ship: Ship,
+  format: Format
+) => {
+  const usedSlots = freeSlotsForShip(ship);
+  Object.keys(usedSlots).forEach((s) => {
+    const slot = s as Slot;
+    let count = usedSlots[slot]!;
+
+    if (format === "Epic" && slot === "Command") {
+      // Command slots for Epic is ok
+      count = 0;
+    } else if (
+      (slot === "Torpedo" || slot === "Cannon" || slot === "Missile") &&
+      (ship.xws === "t70xwing" || ship.xws === "m3ainterceptor")
+    ) {
+      // Weapon hardpoint, this is ok...
+      count = 0;
+    }
+
+    while (count < 0) {
+      // We need to remove something...
+      if (upgrades[keyFromSlot(slot)]?.length) {
+        // Just remove from here while we can...
+        upgrades[keyFromSlot(slot)]!.splice(
+          upgrades[keyFromSlot(slot)]!.length - 1,
+          1
+        );
+        count += 1;
+      } else if (ship.upgrades) {
+        // Remove upgrades that occupy this kind of slot...
+        Object.keys(ship.upgrades).forEach((key) => {
+          const ups = ship.upgrades?.[key as SlotKey];
+          if (!ups) {
+            return;
+          }
+          ups.forEach((upgrade, index) => {
+            if (upgrade.sides[0].slots.includes(slot) && count < 0) {
+              // Remove this one...
+              upgrades[key as SlotKey]!.splice(index, 1);
+              count += 1;
+            }
+          });
+        });
+      }
+    }
+  });
+
+  slotKeys.forEach((s) => {
+    if (upgrades[s] && upgrades[s]?.length === 0) {
+      delete upgrades[s];
+    }
+  });
+
+  return upgrades;
 };

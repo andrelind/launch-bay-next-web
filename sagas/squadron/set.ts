@@ -13,7 +13,6 @@ import {
   REMOVE_SHIP,
   RENAME_SQUADRON,
   SET_UPGRADE,
-  TOGGLE_FAVOURITE_SQUADRON,
   TOGGLE_FORMAT_SQUADRON,
 } from "../../actions/squadrons";
 import { UserState } from "../../reducers/user";
@@ -86,7 +85,6 @@ function* saga(): any {
       REMOVE_SHIP,
       CHANGE_PILOT,
       SET_UPGRADE,
-      TOGGLE_FAVOURITE_SQUADRON,
       TOGGLE_FORMAT_SQUADRON,
       INCREASE_SQUADRON_WINS,
       DECREASE_SQUADRON_WINS,

@@ -1,7 +1,8 @@
 import { useRouter } from "next/router";
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import { colorForFaction } from "../helpers/colors";
 import { factions } from "../helpers/enums";
+import { useJWT } from "../helpers/hooks";
 import { deserialize } from "../helpers/serializer";
 import { Faction, Format } from "../types";
 import XwingFont from "./fonts/xwing";
@@ -22,6 +23,8 @@ export const Layout: FC<Props> = ({
   children,
 }) => {
   const router = useRouter();
+  const jwt = useJWT();
+  const [showMenu, setShowMenu] = useState(false);
 
   const getSelectedFaction = () => {
     const lbx = router.query.lbx;
@@ -53,7 +56,11 @@ export const Layout: FC<Props> = ({
                             ? "px-3 py-2 rounded-md text-sm font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700"
                             : "px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700";
                         return (
-                          <a href={`/?faction=${f}`} className={classes}>
+                          <a
+                            key={f}
+                            href={`/?faction=${f}`}
+                            className={classes}
+                          >
                             <XwingFont
                               icon={f}
                               className="text-xl"
@@ -118,26 +125,30 @@ export const Layout: FC<Props> = ({
                   --> */}
                       <div className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg hidden">
                         <div className="py-1 rounded-md bg-white shadow-xs">
-                          <a
-                            href="#"
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                          >
-                            Your Profile
-                          </a>
-
-                          <a
-                            href="#"
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                          >
-                            Settings
-                          </a>
-
-                          <a
-                            href="#"
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                          >
-                            Sign out
-                          </a>
+                          {jwt && (
+                            <a
+                              href="/logout"
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                            >
+                              Logout
+                            </a>
+                          )}
+                          {!jwt && (
+                            <a
+                              href="/api/auth/facebook"
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                            >
+                              Login with Facebook
+                            </a>
+                          )}
+                          {!jwt && (
+                            <a
+                              href="/api/auth/google"
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                            >
+                              Login with Google
+                            </a>
+                          )}
                         </div>
                       </div>
                     </div>
@@ -145,7 +156,10 @@ export const Layout: FC<Props> = ({
                 </div>
                 <div className="-mr-2 flex md:hidden">
                   {/* <!-- Mobile menu button --> */}
-                  <button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white">
+                  <button
+                    onClick={() => setShowMenu(!showMenu)}
+                    className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
+                  >
                     {/* <!-- Menu open: "hidden", Menu closed: "block" --> */}
                     <svg
                       className="block h-6 w-6"
@@ -185,48 +199,32 @@ export const Layout: FC<Props> = ({
 
         Open: "block", closed: "hidden"
       --> */}
-          <div className="hidden border-b border-gray-700 md:hidden">
-            <div className="px-2 py-3 space-y-1 sm:px-3">
-              {factions.map((f) => (
-                <button key={f} onClick={() => router.push(`/?faction=${f}`)}>
-                  <XwingFont icon={f} />
-                </button>
-              ))}
 
-              <a
-                href="#"
-                className="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700"
-              >
-                Dashboard
-              </a>
-
-              <a
-                href="#"
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
-              >
-                Team
-              </a>
-
-              <a
-                href="#"
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
-              >
-                Projects
-              </a>
-
-              <a
-                href="#"
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
-              >
-                Calendar
-              </a>
-
-              <a
-                href="#"
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
-              >
-                Reports
-              </a>
+          <div
+            className={`${
+              showMenu ? "block" : "hidden"
+            } border-b border-gray-700 md:hidden`}
+          >
+            <div className="px-2 py-3 space-y-1 sm:px-3 grid grid-cols-7">
+              {factions.map((f) => {
+                const classes =
+                  selectedFaction === f
+                    ? "block text-center py-2 rounded-md text-base font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700"
+                    : "block text-center py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700";
+                return (
+                  <a key={f} href={`/?faction=${f}`} className={classes}>
+                    <XwingFont
+                      icon={f}
+                      className="text-xl"
+                      color={
+                        f !== "First Order" && f !== "Galactic Empire"
+                          ? colorForFaction(f)
+                          : undefined
+                      }
+                    />
+                  </a>
+                );
+              })}
             </div>
             <div className="pt-4 pb-3 border-t border-gray-700">
               <div className="flex items-center px-5 space-x-3">
@@ -252,29 +250,33 @@ export const Layout: FC<Props> = ({
                 aria-orientation="vertical"
                 aria-labelledby="user-menu"
               >
-                <a
-                  href="#"
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
-                  role="menuitem"
-                >
-                  Your Profile
-                </a>
-
-                <a
-                  href="#"
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
-                  role="menuitem"
-                >
-                  Settings
-                </a>
-
-                <a
-                  href="#"
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
-                  role="menuitem"
-                >
-                  Sign out
-                </a>
+                {jwt && (
+                  <a
+                    href="/logout"
+                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+                    role="menuitem"
+                  >
+                    Logout
+                  </a>
+                )}
+                {!jwt && (
+                  <a
+                    href="/api/auth/facebook"
+                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+                    role="menuitem"
+                  >
+                    Login with Facebook
+                  </a>
+                )}
+                {!jwt && (
+                  <a
+                    href="/api/auth/google"
+                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+                    role="menuitem"
+                  >
+                    Login with Google
+                  </a>
+                )}
               </div>
             </div>
           </div>
@@ -324,11 +326,7 @@ export const Layout: FC<Props> = ({
 
       <main className="-mt-32">
         <div className="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
-          {/* <!-- Replace with your content --> */}
-          {/* <div className="bg-white rounded-lg shadow px-5 py-6 sm:px-6"> */}
           {children}
-          {/* </div> */}
-          {/* <!-- /End replace --> */}
         </div>
       </main>
     </div>

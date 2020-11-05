@@ -52,7 +52,7 @@ export default class MyDocument extends Document<Props> {
           />
         </Head>
 
-        <body style={{ margin: 0 }}>
+        <body>
           <Main />
           <div id="select-portal" />
           <div id="modal" />

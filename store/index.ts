@@ -24,7 +24,7 @@ const reducer = (state: any, action: any) => {
       ...action.payload, // apply delta from hydration
     };
     // if (state.count.count) nextState.count.count = state.count.count // preserve count value on client side navigation
-    return nextState;
+    return rootReducer(nextState, action);
   } else {
     return rootReducer(state, action);
   }

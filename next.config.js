@@ -7,4 +7,17 @@ module.exports = {
     GOOGLE_SECRET: process.env.GOOGLE_SECRET,
     JWT_SECRET: process.env.JWT_SECRET,
   },
+  async headers() {
+    return [
+      {
+        source: "/.well-known/apple-app-site-association",
+        headers: [
+          {
+            key: "Content-Type",
+            value: "application/json",
+          },
+        ],
+      },
+    ];
+  },
 };

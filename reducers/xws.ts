@@ -1,6 +1,6 @@
 import { v4 as uuid } from "uuid";
-import { Actions } from "../actions/";
 import {
+  Action,
   ADD_SHIP,
   ADD_SQUADRON,
   CHANGE_PILOT,
@@ -14,14 +14,17 @@ import {
   REMOVE_SHIP,
   REMOVE_SQUADRON,
   RENAME_SQUADRON,
+  SET_SQUADRON_TAGS,
   SET_UPGRADE,
-  TOGGLE_FAVOURITE_SQUADRON,
   TOGGLE_FORMAT_SQUADRON,
 } from "../actions/squadrons";
-import { FULL_SYNC } from "../actions/sync";
 import { keyFromSlot } from "../helpers/convert";
-import { allSlots } from "../helpers/enums";
-import { loadPilot, pointsForSquadron } from "../helpers/unit";
+import {
+  cleanupUpgrades,
+  copyPilot,
+  loadPilot,
+  pointsForSquadron,
+} from "../helpers/unit";
 import { bumpMinor, bumpPatch } from "../helpers/versioning";
 import { PilotXWS, Ship, SquadronXWS } from "../types";
 
@@ -31,19 +34,11 @@ const initialState: SquadronXWS[] = [];
 
 export default function onAction(
   state: State = initialState,
-  action: Actions
+  action: Action
 ): State {
   if (!action.type) {
     return state;
   }
-
-  // const squadronList = [];
-  // state.forEach(s => {
-  //   if (squadronList.filter(x => x.uid === s.uid).length === 0) {
-  //     squadronList.push(s);
-  //   }
-  // });
-  // state = squadronList;
 
   switch (action.type) {
     case ADD_SQUADRON: {
@@ -54,18 +49,13 @@ export default function onAction(
         format: action.format,
         favourite: false,
         pilots: [],
+        tags: [],
         cost: 0,
         createdDatestamp: new Date().getTime(),
         version: "2.0.0",
       };
 
-      return [...state.filter((s) => s.pilots.length > 0), s];
-    }
-
-    case FULL_SYNC: {
-      const { squadrons } = action.payload;
-
-      return [...state, ...squadrons];
+      return [...state, s];
     }
 
     case IMPORT_SQUADRON: {
@@ -80,10 +70,12 @@ export default function onAction(
         }
       });
 
+      console.log("IMPORTING", squadron);
+
       // Replace current object?
       if (state.filter((s) => s.uid === squadron.uid).length > 0) {
         const old = state.filter((s) => s.uid === squadron.uid)[0];
-        state[state.indexOf(old)] = squadron;
+        state[state.indexOf(old)] = { ...squadron };
         return [...state];
       }
 
@@ -91,7 +83,6 @@ export default function onAction(
     }
 
     case RENAME_SQUADRON: {
-      // FIXME
       const { squadronUid, name } = action;
       const squadron = state.filter((s) => s.uid === squadronUid)[0];
       if (!squadron) {
@@ -100,7 +91,17 @@ export default function onAction(
       squadron.name = name;
       squadron.version = bumpPatch(squadron.version || "2.0.0");
 
-      return [...state];
+      return state.map((squadron) => {
+        if (squadron.uid !== squadronUid) {
+          return squadron;
+        }
+
+        const edit = { ...squadron };
+        edit.name = name;
+        edit.version = bumpMinor(edit.version || "2.0.0");
+
+        return edit;
+      });
     }
 
     case COPY_SQUADRON: {
@@ -125,42 +126,33 @@ export default function onAction(
       return [...state, copy];
     }
 
-    case TOGGLE_FAVOURITE_SQUADRON: {
-      // FIXME
-      const { squadronUid } = action;
-      const squadron = state.filter((s) => s.uid === squadronUid)[0];
-      if (!squadron) {
-        return state;
-      }
-
-      squadron.favourite = !squadron.favourite;
-      squadron.version = bumpPatch(squadron.version || "2.0.0");
-
-      return [...state];
-    }
     case TOGGLE_FORMAT_SQUADRON: {
-      // FIXME
       const { squadronUid } = action;
-      const squadron = state.filter((s) => s.uid === squadronUid)[0];
-      if (!squadron) {
-        return state;
-      }
 
-      switch (squadron.format) {
-        case "Extended":
-          squadron.format = "Hyperspace";
-          break;
-        case "Hyperspace":
-          squadron.format = "Epic";
-          break;
-        case "Epic":
-          squadron.format = "Extended";
-          break;
-      }
+      return state.map((squadron) => {
+        if (squadron.uid !== squadronUid) {
+          return squadron;
+        }
 
-      squadron.version = bumpPatch(squadron.version || "2.0.0");
+        const edit = { ...squadron };
+        switch (edit.format) {
+          case "Hyperspace":
+            edit.format = "Extended";
+            break;
+          case "Extended":
+            edit.format = "Epic";
+            break;
+          case "Epic":
+            edit.format = "Hyperspace";
+            break;
+          default:
+            edit.format = "Hyperspace";
+            break;
+        }
+        edit.version = bumpMinor(edit.version || "2.0.0");
 
-      return [...state];
+        return edit;
+      });
     }
 
     case REMOVE_SQUADRON: {
@@ -207,14 +199,14 @@ export default function onAction(
           return squadron;
         }
 
-        const edit = { ...squadron };
-        const pilot = Object.assign(
-          {},
-          squadron.pilots.find((p) => p.uid === unitUid)
-        );
-        pilot.uid = uuid();
+        const edit: SquadronXWS = JSON.parse(JSON.stringify(squadron));
 
-        edit.pilots = [...edit.pilots, pilot];
+        const pilot = edit.pilots.find((p) => p.uid === unitUid);
+        if (!pilot) {
+          return squadron;
+        }
+
+        edit.pilots = [...edit.pilots, copyPilot(pilot)];
         edit.cost = pointsForSquadron(edit);
         edit.version = bumpMinor(edit.version || "2.0.0");
 
@@ -233,7 +225,8 @@ export default function onAction(
           return squadron;
         }
 
-        const edit = { ...squadron };
+        const edit: SquadronXWS = JSON.parse(JSON.stringify(squadron));
+
         edit.pilots = edit.pilots.filter((p) => p.uid !== unitUid);
         edit.cost = pointsForSquadron(edit);
         edit.version = bumpMinor(edit.version || "2.0.0");
@@ -243,55 +236,42 @@ export default function onAction(
     }
 
     case CHANGE_PILOT: {
-      // FIXME
       if (!action.squadronUid || !action.shipUid || !action.pilotXws) {
         return state;
       }
 
       const { squadronUid, shipUid } = action;
-      const squadron = state.find((s) => s.uid === squadronUid);
-      if (!squadron) {
-        return state;
-      }
-      const pilot = squadron.pilots.find((p) => p.uid === shipUid);
-      if (!pilot) {
-        return state;
-      }
 
-      const newPilot = loadPilot(
-        { ...pilot, name: action.pilotXws },
-        squadron.faction
-      );
-
-      allSlots.forEach((slot) => {
-        const key = keyFromSlot(slot);
-        // Ta bort de som inte finns alls på nya skeppet
-        const count = newPilot.pilot.slots.filter((s) => s === slot).length;
-        if (pilot.upgrades && pilot.upgrades[key]) {
-          // Ta bort tills det är samma count
-          while (pilot.upgrades[key]?.length || 0 > count) {
-            pilot.upgrades[key]?.pop();
-          }
-          if (count === 0) {
-            delete pilot.upgrades[key];
-          }
+      return state.map((squadron) => {
+        if (squadron.uid !== squadronUid) {
+          return squadron;
         }
+
+        const edit: SquadronXWS = JSON.parse(JSON.stringify(squadron));
+        const pilot = edit.pilots.find((p) => p.uid === shipUid);
+        if (!pilot) {
+          return squadron;
+        }
+
+        pilot.name = action.pilotXws;
+
+        if (!action.hasForce && pilot.upgrades) {
+          delete pilot.upgrades.forcepower;
+        }
+        if (!action.hasTalent && pilot.upgrades) {
+          delete pilot.upgrades.talent;
+        }
+
+        // Make sure we have correct amount of upgrades
+        const ship = loadPilot(pilot, edit.faction);
+        pilot.upgrades = cleanupUpgrades(pilot.upgrades, ship, edit.format);
+
+        edit.pilots = [...edit.pilots];
+        edit.cost = pointsForSquadron(edit);
+        edit.version = bumpMinor(edit.version || "2.0.0");
+
+        return edit;
       });
-
-      pilot.name = action.pilotXws;
-
-      if (!action.hasForce && pilot.upgrades) {
-        delete pilot.upgrades.forcepower;
-      }
-      if (!action.hasTalent && pilot.upgrades) {
-        delete pilot.upgrades.talent;
-      }
-
-      squadron.pilots = [...squadron.pilots];
-      squadron.cost = pointsForSquadron(squadron);
-      squadron.version = bumpMinor(squadron.version || "2.0.0");
-
-      return [...state];
     }
 
     case SET_UPGRADE: {
@@ -309,7 +289,7 @@ export default function onAction(
         const edit = JSON.parse(JSON.stringify(squadron));
         const slotKey = keyFromSlot(slot);
 
-        const unit = edit.pilots.filter((p: PilotXWS) => p.uid === unitUid)[0];
+        const unit = edit.pilots.find((p: PilotXWS) => p.uid === unitUid);
         if (!unit || !slotKey) {
           return squadron;
         }
@@ -318,24 +298,28 @@ export default function onAction(
         }
 
         if (!upgrade) {
-          if (unit.upgrades[slotKey]) {
-            unit.upgrades[slotKey].splice(slotIndex, 1);
+          if (unit.upgrades[keyFromSlot(slot)]) {
+            unit.upgrades[keyFromSlot(slot)].splice(slotIndex, 1);
 
-            if (unit.upgrades[slotKey].length === 0) {
-              delete unit.upgrades[slotKey];
+            if (unit.upgrades[keyFromSlot(slot)].length === 0) {
+              delete unit.upgrades[keyFromSlot(slot)];
             }
           }
         } else {
-          if (!unit.upgrades[slotKey]) {
-            unit.upgrades[slotKey] = [];
+          if (!unit.upgrades[keyFromSlot(slot)]) {
+            unit.upgrades[keyFromSlot(slot)] = [];
           }
-          if (slotIndex > unit.upgrades[slotKey].length) {
-            unit.upgrades[slotKey].push(upgrade.xws);
+          if (slotIndex > unit.upgrades[keyFromSlot(slot)].length) {
+            unit.upgrades[keyFromSlot(slot)].push(upgrade.xws);
           } else {
-            unit.upgrades[slotKey][slotIndex] = upgrade.xws;
+            unit.upgrades[keyFromSlot(slot)][slotIndex] = upgrade.xws;
           }
         }
-        console.log({ edit, slotIndex });
+
+        // Make sure we have correct amount of upgrades
+        const ship = loadPilot(unit, squadron.faction);
+        unit.upgrades = cleanupUpgrades(unit.upgrades, ship, squadron.format);
+
         edit.cost = pointsForSquadron(edit);
         edit.version = bumpPatch(edit.version || "2.0.0");
 
@@ -402,6 +386,25 @@ export default function onAction(
       squadron.version = bumpPatch(squadron.version || "2.0.0");
 
       return [...state];
+    }
+
+    case SET_SQUADRON_TAGS: {
+      if (!action.squadronUid) {
+        return state;
+      }
+
+      const { squadronUid, tags } = action;
+
+      return state.map((squadron) => {
+        if (squadron.uid !== squadronUid) {
+          return squadron;
+        }
+
+        const edit: SquadronXWS = JSON.parse(JSON.stringify(squadron));
+        edit.tags = tags;
+        edit.version = bumpPatch(edit.version || "2.0.0");
+        return edit;
+      });
     }
 
     default:

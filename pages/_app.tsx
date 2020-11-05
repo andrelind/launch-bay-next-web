@@ -1,43 +1,33 @@
-import App, { AppContext, AppProps } from "next/app";
-import React, { FC } from "react";
+import App, { AppContext, AppInitialProps } from "next/app";
+import React from "react";
 import { ThemeProvider } from "styled-components";
 import themes, { GlobalStyles } from "../page-components/theme";
-import "../static/css/tailwind.css";
+import "../public/static/css/tailwind.css";
 import { wrapper } from "../store";
 
-interface Props extends AppProps {
-  // darkTheme: boolean;
+class LaunchBayNextApp extends App<AppInitialProps> {
+  public static getInitialProps = async ({ Component, ctx }: AppContext) => {
+    return {
+      pageProps: {
+        // Call page-level getInitialProps
+        ...(Component.getInitialProps
+          ? await Component.getInitialProps(ctx)
+          : {}),
+      },
+    };
+  };
+
+  public render() {
+    const { Component, pageProps } = this.props;
+
+    return (
+      <ThemeProvider theme={themes.light}>
+        <GlobalStyles />
+
+        <Component {...pageProps} />
+      </ThemeProvider>
+    );
+  }
 }
-
-const LaunchBayNextApp: FC<Props> = ({ Component, pageProps }) => {
-  // const { value } = useDarkMode(darkTheme, {
-  //   onChange: (val) =>
-  //     setCookie(undefined, "theme", val ? "light" : "dark", {}),
-  // });
-
-  // const theme =
-  //   value && router.pathname !== "/print" ? themes.dark : themes.light;
-
-  return (
-    <ThemeProvider theme={themes.light}>
-      <GlobalStyles />
-
-      <Component {...pageProps} />
-    </ThemeProvider>
-  );
-};
-
-// @ts-ignore
-LaunchBayNextApp.getInitialProps = async (ctx: AppContext) => {
-  return App.getInitialProps(ctx);
-};
-
-// @ts-ignore
-// LaunchBayNextApp.getInitialProps = async (ctx: AppContext) => {
-//   const app = await App.getInitialProps(ctx);
-//   // const { theme } = parseCookies(ctx.ctx);
-//   return { ...app, darkTheme: false };
-//   // return { ...app, darkTheme: theme === "dark" || theme === undefined };
-// };
 
 export default wrapper.withRedux(LaunchBayNextApp);

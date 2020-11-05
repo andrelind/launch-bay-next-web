@@ -59,7 +59,6 @@ type Props = {
 const EditPage: NextPage<Props> = ({ uid }) => {
   // const router = useRouter();
   const dispatch = useDispatch();
-  //   const theme = useTheme();
 
   const xws = useSquadronXWS(uid);
   const squadron = loadSquadron(xws);
@@ -127,27 +126,11 @@ const EditPage: NextPage<Props> = ({ uid }) => {
   return (
     <Layout
       name={name}
-      points={squadron.cost}
+      points={xws.cost}
       format={squadron.format}
       onChangeFormat={() => dispatch(toggleFormat(squadron.uid))}
     >
-      {/* <TopRow>
-        <TitleEnd>
-          <Button
-            color={"secondary"}
-            aria-controls="simple-menu"
-            aria-haspopup="true"
-            onClick={(event) => setAnchorEl(event.currentTarget)}
-            endIcon={
-              <FontAwesomeIcon
-                icon={faShareSquare}
-                style={{ height: 15, width: 15 }}
-              />
-            }
-          >
-            Actions
-          </Button>
-          <Menu
+      {/* <Menu
             id="simple-menu"
             anchorEl={anchorEl}
             keepMounted
@@ -206,8 +189,7 @@ const EditPage: NextPage<Props> = ({ uid }) => {
               Delete squadron
             </MenuItem>
           </Menu>
-        </TitleEnd>
-      </TopRow> */}
+         */}
 
       <div className="flex flex-1 flex-col">
         {squadron.ships.map((s) => {
@@ -230,7 +212,7 @@ const EditPage: NextPage<Props> = ({ uid }) => {
           return (
             <div
               key={s.uid}
-              className="my-2 bg-white rounded-lg shadow px-2 py-4 md:px-5 relative"
+              className="my-2 bg-white rounded-lg shadow px-2 py-6 md:px-5 md:py-4 relative"
             >
               <div className="divide-y divide-gray-200">
                 <Select
@@ -251,8 +233,8 @@ const EditPage: NextPage<Props> = ({ uid }) => {
                         squadron.uid,
                         s.uid,
                         p.pilot.xws,
-                        s.pilot.slots.find((s) => s === "Force Power") !== null,
-                        s.pilot.slots.find((s) => s === "Talent") !== null
+                        Boolean(s.pilot.slots.find((s) => s === "Force Power")),
+                        Boolean(s.pilot.slots.find((s) => s === "Talent"))
                       )
                     );
                   }}
@@ -361,11 +343,7 @@ EditPage.getInitialProps = async ({ store, query, req }) => {
     } else {
       // Skapa helt ny
       uid = dispatch(
-        addSquadron(
-          uid as string,
-          (faction || "Rebel Alliance") as Faction,
-          "Hyperspace"
-        )
+        addSquadron((faction || "Rebel Alliance") as Faction, "Hyperspace")
       ).uid;
     }
   }
