@@ -1,8 +1,7 @@
-import React from 'react';
-
-import { blue, green, pink, purple, red, yellow } from '../../assets/colors';
-import { Difficulty, Grant } from '../../types';
-import { Arrow, Block, Icon, Text, Wrapper } from './styles';
+import React from "react";
+import { blue, green, pink, purple, red, yellow } from "../../assets/colors";
+import { Difficulty, Grant } from "../../types";
+import { Arrow, Block, Icon, Text, Wrapper } from "./styles";
 
 type Props = {
   grants: Grant[];
@@ -10,15 +9,15 @@ type Props = {
 
 const colorForType = (type: string | void) => {
   switch (type) {
-    case 'attack':
+    case "attack":
       return red;
-    case 'agility':
+    case "agility":
       return green;
-    case 'hull':
+    case "hull":
       return yellow;
-    case 'shields':
+    case "shields":
       return blue;
-    case 'energy':
+    case "energy":
       return pink;
     default:
       break;
@@ -26,8 +25,8 @@ const colorForType = (type: string | void) => {
 };
 
 const colorForDifficulty = (difficulty: Difficulty) => {
-  if (difficulty === 'Red') return red;
-  if (difficulty === 'Purple') return purple;
+  if (difficulty === "Red") return red;
+  if (difficulty === "Purple") return purple;
   return undefined;
 };
 
@@ -49,11 +48,7 @@ const GrantsComponent = ({ grants }: Props) => {
               <Text style={{ color: colorForType(grant.stat) }}>
                 {mod(grant)}
               </Text>
-              <Icon
-                icon={grant.stat}
-                style={{ color: colorForType(grant.stat) }}
-                color={colorForType(grant.stat)}
-              />
+              <Icon icon={grant.stat} color={colorForType(grant.stat)} />
             </Wrapper>
           )}
           {grant.action && (

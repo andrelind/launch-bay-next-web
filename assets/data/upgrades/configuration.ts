@@ -1059,6 +1059,17 @@ const t: UpgradeBase[] = [
           en:
             'Reduce the difficulty of your speed 3 straight ([Straight]) and bank ([Bank Left] or [Bank Right]) maneuvers.',
         },
+        grants: [
+          { action: { type: 'Calculate', difficulty: 'White' }, value: 1 },
+          {
+            action: {
+              type: 'Barrel Roll',
+              difficulty: 'White',
+              linked: { type: 'Calculate', difficulty: 'Red' },
+            },
+            value: 1,
+          },
+        ],
         slots: ['Configuration'],
         ffg: -1,
       },
@@ -1079,6 +1090,17 @@ const t: UpgradeBase[] = [
           en:
             'Before you engage, if you have no green tokens and you are not stressed, gain 1 calculate token for each enemy ship at range 2-3 in your firing arc, to a maximum of 2.',
         },
+        grants: [
+          { action: { type: 'Calculate', difficulty: 'White' }, value: 1 },
+          {
+            action: {
+              type: 'Rotate Arc',
+              difficulty: 'White',
+              linked: { type: 'Calculate', difficulty: 'White' },
+            },
+            value: 1,
+          },
+        ],
         slots: ['Configuration'],
         ffg: -1,
       },

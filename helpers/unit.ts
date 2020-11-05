@@ -1,7 +1,6 @@
-import uuid from 'uuid/v4';
-
-import pilotData from '../assets/data/pilots';
-import upgradeData from '../assets/data/upgrades';
+import { v4 as uuid } from "uuid";
+import pilotData from "../assets/data/pilots";
+import upgradeData from "../assets/data/upgrades";
 import {
   Faction,
   PilotXWS,
@@ -15,19 +14,19 @@ import {
   UpgradeCostInitiative,
   UpgradeCostSize,
   UpgradeCostValue,
-} from '../types';
-import { slotKeys } from './enums';
+} from "../types";
+import { slotKeys } from "./enums";
 
 export const pilotExists = (faction: Faction, pilotXws: PilotXWS) => {
   const ship = pilotData[faction][pilotXws.ship];
   if (ship === undefined) {
     return false;
   }
-  return ship.pilots.filter(p => p.xws === pilotXws.name)[0] !== undefined;
+  return ship.pilots.filter((p) => p.xws === pilotXws.name)[0] !== undefined;
 };
 
 export const upgradeExists = (slot: SlotKey, xws: string) => {
-  return upgradeData[slot].filter(u => u.xws === xws)[0] !== undefined;
+  return upgradeData[slot].filter((u) => u.xws === xws)[0] !== undefined;
 };
 
 export const getShip = (
@@ -43,43 +42,43 @@ export const getShip = (
   const ship: Ship = {
     ...rest,
     uid: pilotXws.uid || uuid(),
-    pilot: shipType.pilots.filter(p => p.xws === pilotXws.name)[0],
+    pilot: shipType.pilots.filter((p) => p.xws === pilotXws.name)[0],
     upgrades: {},
     pointsWithUpgrades: 0,
   };
 
-  slotKeys.forEach(key => {
+  slotKeys.forEach((key) => {
     const up = pilotXws.upgrades ? pilotXws.upgrades[key] : undefined;
     if (up && !skipLoadingUpgrades) {
       // @ts-ignore
       ship.upgrades[key] = up
-        .filter(xws => upgradeExists(key, xws))
-        .map(u => loadUpgrade(u, key, ship, pilotXws, faction));
+        .filter((xws) => upgradeExists(key, xws))
+        .map((u) => loadUpgrade(u, key, ship, pilotXws, faction));
     }
   });
 
   return ship;
 };
 
-export const loadSquadron = (xws: SquadronXWS) => {
+export const loadSquadron = (xws?: SquadronXWS) => {
   if (!xws) {
-    return null;
+    return undefined;
   }
 
   const squadron: Squadron = {
     uid: xws.uid || uuid(),
-    name: xws.name || '',
+    name: xws.name || "",
     cost: xws.cost || 0,
     faction: xws.faction,
-    format: xws.format || 'Hyperspace',
+    format: xws.format || "Hyperspace",
     favourite: xws.favourite || false,
     wins: xws.wins || 0,
     losses: xws.losses || 0,
     created: xws.createdDatestamp ? new Date(xws.createdDatestamp) : new Date(),
     version: xws.version,
     ships: xws.pilots
-      .filter(p => pilotExists(xws.faction, p))
-      .map(p => loadPilot(p, xws.faction)),
+      .filter((p) => pilotExists(xws.faction, p))
+      .map((p) => loadPilot(p, xws.faction)),
   };
 
   squadron.cost = pointsForSquadron(xws);
@@ -101,13 +100,13 @@ export const loadUpgrade = (
   faction: Faction
 ): Upgrade => {
   const upgrade: Upgrade = JSON.parse(
-    JSON.stringify(upgradeData[slot].filter(u => u.xws === xws)[0])
+    JSON.stringify(upgradeData[slot].filter((u) => u.xws === xws)[0])
   );
 
   upgrade.finalCost = pointsForUpgrade(upgrade.cost, pilotXws, faction);
 
   if (upgrade.sides[0].grants) {
-    upgrade.sides[0].grants.forEach(g => {
+    upgrade.sides[0].grants.forEach((g) => {
       const { slot, stat, action, side } = g;
       if (slot) {
         if (g.value > 0) {
@@ -120,11 +119,11 @@ export const loadUpgrade = (
           ship.pilot.slots.splice(ship.pilot.slots.indexOf(slot), 1);
         }
       } else if (stat) {
-        const stats = ship.stats.filter(s => s.type === stat);
+        const stats = ship.stats.filter((s) => s.type === stat);
         if (stats.length === 0 && g.value > 0) {
           ship.stats.push({ type: stat, value: g.value });
         } else {
-          stats.forEach(s => (s.value += g.value));
+          stats.forEach((s) => (s.value += g.value));
         }
       } else if (action) {
         if (g.value > 0) {
@@ -135,11 +134,11 @@ export const loadUpgrade = (
           }
         } else if (ship.pilot && ship.pilot.shipActions) {
           const a = ship.pilot.shipActions.filter(
-            b => b.type === action.type
+            (b) => b.type === action.type
           )[0];
           ship.pilot.shipActions.splice(ship.pilot.shipActions.indexOf(a), 1);
         } else {
-          const a = ship.actions.filter(b => b.type === action.type)[0];
+          const a = ship.actions.filter((b) => b.type === action.type)[0];
           ship.actions.splice(ship.actions.indexOf(a), 1);
         }
       } else if (side && ship.pilot) {
@@ -175,8 +174,8 @@ export const loadUpgrade = (
 
 export const pointsForSquadron = (squadron: SquadronXWS): number => {
   return squadron.pilots
-    .filter(pilot => pilotExists(squadron.faction, pilot))
-    .map(pilot => pointsForPilot(pilot, squadron.faction))
+    .filter((pilot) => pilotExists(squadron.faction, pilot))
+    .map((pilot) => pointsForPilot(pilot, squadron.faction))
     .reduce((s, p) => s + p, 0);
 };
 
@@ -192,10 +191,10 @@ export const pointsForPilot = (
 
   return (
     slotKeys
-      .map(key => {
+      .map((key) => {
         const upgrade = ship.upgrades && ship.upgrades[key];
         if (upgrade) {
-          return upgrade.map(u => u.finalCost).reduce((s, p) => s + p, 0);
+          return upgrade.map((u) => u.finalCost).reduce((s, p) => s + p, 0);
         }
         return 0;
       })
@@ -213,16 +212,16 @@ export const pointsForUpgrade = (
   if (cost.value) {
     return (cost as UpgradeCostValue).value;
   }
-  if (cost.variable && cost.variable === 'agility') {
+  if (cost.variable && cost.variable === "agility") {
     const typedCost = cost as UpgradeCostAgility;
-    const agility = ship.stats.find(s => s.type === 'agility');
+    const agility = ship.stats.find((s) => s.type === "agility");
     if (agility) {
       return typedCost.values[agility.value];
     }
-  } else if (cost.variable && cost.variable === 'initiative') {
+  } else if (cost.variable && cost.variable === "initiative") {
     const typedCost = cost as UpgradeCostInitiative;
     return typedCost.values[ship.pilot.initiative];
-  } else if (cost.variable && cost.variable === 'size') {
+  } else if (cost.variable && cost.variable === "size") {
     const typedCost = cost as UpgradeCostSize;
     return typedCost.values[ship.size];
   }

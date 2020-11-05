@@ -1,18 +1,17 @@
-import { useRoute } from '@react-navigation/core';
-import { useContext } from 'react';
-import { useSelector } from 'react-redux';
-import { ThemeContext } from 'styled-components';
+import { useRoute } from "@react-navigation/core";
+import { useContext } from "react";
+import { useSelector } from "react-redux";
+import { ThemeContext } from "styled-components";
+import { dark } from "../page-components/theme";
+import { AppState } from "../store/state";
+import { Squadron } from "../types";
+import { loadSquadron } from "./unit";
 
-import { dark } from '../page-components/theme';
-import { AppState } from '../store/state';
-import { Squadron } from '../types';
-import { loadSquadron } from './unit';
-
-export const useJWT = (): string | void =>
+export const useJWT = (): string | null | undefined =>
   useSelector((s: AppState) => s.app.user.jwt);
 
 export const useSquadronXWS = (uid: string) => {
-  return useSelector((s: AppState) => s.app.xws.find(x => x.uid === uid));
+  return useSelector((s: AppState) => s.app.xws.find((x) => x.uid === uid));
 };
 
 export const useSquadron = (uid: string): Squadron | undefined => {
@@ -28,17 +27,17 @@ export const useShip = (squadron?: Squadron) => {
     return undefined;
   }
   const { unitUid } = params;
-  const ship = squadron.ships.find(s => s.uid === unitUid);
+  const ship = squadron.ships.find((s) => s.uid === unitUid);
 
   // Add a Command slot for epic ships that doesn't already have one...
   if (
-    squadron.format === 'Epic' &&
+    squadron.format === "Epic" &&
     ship &&
-    !ship.pilot.slots.find(s => s === 'Command') &&
+    !ship.pilot.slots.find((s) => s === "Command") &&
     ship.upgrades &&
     !ship.upgrades.command
   ) {
-    ship.pilot.slots = [...ship.pilot.slots, 'Command'];
+    ship.pilot.slots = [...ship.pilot.slots, "Command"];
   }
   return ship;
 };
@@ -49,13 +48,13 @@ export const useTournament = () => {
     return undefined;
   }
   return useSelector((s: AppState) =>
-    s.app.tournaments.list.find(t => t.uid === params.tournamentUid)
+    s.app.tournaments.list.find((t) => t.uid === params.tournamentUid)
   );
 };
 
 export const useMinimized = (screenName: string) => {
   return useSelector((s: AppState) =>
-    s.app.misc.minimized ? s.app.misc.minimized[screenName] || false : false
+    s.app.misc.minimized ? s.app.misc.minimized[screenName] || true : true
   );
 };
 

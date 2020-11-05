@@ -910,7 +910,7 @@ const t: ShipType = {
       epic: true,
     },
     {
-      xws: 'poedameron-resistancecommander',
+      xws: 'poedameron-swz68',
       name: { en: 'Poe Dameron' },
       caption: { en: 'Resistance Commander' },
       cost: 65,
@@ -933,7 +933,7 @@ const t: ShipType = {
       epic: true,
     },
     {
-      xws: 'temminwexley-blacktwo',
+      xws: 'temminwexley-swz68',
       name: { en: 'Temmin Wexley' },
       caption: { en: 'Black Two' },
       cost: 54,

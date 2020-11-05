@@ -1,5 +1,5 @@
-import { NextApiRequest, NextApiResponse } from 'next';
-import passport from 'passport';
+import { NextApiRequest, NextApiResponse } from "next";
+import passport from "passport";
 
 const handler = (req: NextApiRequest, res: NextApiResponse) => {
   const { provider } = req.query;
@@ -7,8 +7,8 @@ const handler = (req: NextApiRequest, res: NextApiResponse) => {
     return { statusCode: 404 };
   }
 
-  passport.authenticate(provider)(req, res, (...args) => {
-    console.log('passport authenticated', args);
+  passport.authenticate(provider)(req, res, (...args: any) => {
+    console.log("passport authenticated", args);
   });
 };
 

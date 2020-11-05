@@ -1,5 +1,5 @@
-import { NextApiRequest, NextApiResponse } from 'next';
-import passport from 'passport';
+import { NextApiRequest, NextApiResponse } from "next";
+import passport from "passport";
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const { provider } = req.query;
@@ -8,10 +8,10 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   }
 
   passport.authenticate(provider, {
-    failureRedirect: '/',
-    successRedirect: '/',
-  })(req, res, (...args) => {
-    console.log('auth callback', args);
+    failureRedirect: "/",
+    successRedirect: "/",
+  })(req, res, (...args: any) => {
+    console.log("auth callback", args);
     return true;
   });
 };

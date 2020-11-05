@@ -5,7 +5,6 @@
       "styled-components",
       { "ssr": true, "displayName": true, "preprocess": false }
     ],
-    ["react-native-web", { "commonjs": true }],
     [
       "module-resolver",
       {

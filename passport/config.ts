@@ -1,5 +1,5 @@
-import { StrategyOption as FacebookStrategy } from 'passport-facebook';
-import { StrategyOption as GoogleStrategy } from 'passport-google-oauth';
+import { StrategyOption as FacebookStrategy } from "passport-facebook";
+import { IOAuthStrategyOption as GoogleStrategy } from "passport-google-oauth";
 
 export interface AppConfig {
   isDevelopment: boolean;
@@ -15,12 +15,12 @@ const getOAuthUrls: (
   callbackURL: `${hostName}/api/auth/callback/${app}`,
 });
 
-const isDevelopment = process.env.NODE_ENV !== 'production';
+const isDevelopment = process.env.NODE_ENV !== "production";
 if (isDevelopment) {
-  require('dotenv').config();
+  require("dotenv").config();
 }
 
-const hostingURL = process.env.HOSTING_URL || 'http://localhost:3000';
+const hostingURL = process.env.HOSTING_URL || "http://localhost:3000";
 
 const appConfig: AppConfig = {
   isDevelopment,
@@ -28,14 +28,15 @@ const appConfig: AppConfig = {
   facebook: {
     clientID: process.env.FACEBOOK_ID as string,
     clientSecret: process.env.FACEBOOK_SECRET as string,
-    ...getOAuthUrls(hostingURL, 'facebook'),
-    profileFields: ['id', 'displayName', 'email'],
+    ...getOAuthUrls(hostingURL, "facebook"),
+    profileFields: ["id", "displayName", "email"],
   },
   google: {
     clientID: process.env.GOOGLE_ID as string,
     clientSecret: process.env.GOOGLE_SECRET as string,
-    ...getOAuthUrls(hostingURL, 'google'),
-    scope: ['profile', 'email'],
+    ...getOAuthUrls(hostingURL, "google"),
+    // @ts-ignore
+    scope: ["profile", "email"],
   },
 };
 

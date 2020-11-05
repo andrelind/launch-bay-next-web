@@ -1,15 +1,13 @@
-// @flow
-import UUID from 'uuid/v4';
-
-import { slotKeys } from '../helpers/enums';
-import { BluePrint, SlotKey } from '../types';
+import { v4 as UUID } from "uuid";
 import {
   Action,
   ADD_SYNCED_BLUEPRINT,
   REMOVE_BLUEPRINT,
   REMOVE_SYNCED_BLUEPRINT,
   SAVE_BLUEPRINT,
-} from '../actions/blueprints';
+} from "../actions/blueprints";
+import { slotKeys } from "../helpers/enums";
+import { BluePrint, SlotKey } from "../types";
 
 export type State = BluePrint[];
 
@@ -25,13 +23,13 @@ export default function onAction(state: State = initialState, action: Action) {
       }
       const upgrades: { [key in SlotKey]?: string[] } = {};
       if (ship.upgrades) {
-        slotKeys.forEach(key => {
+        slotKeys.forEach((key) => {
           const shipUpgrades = ship.upgrades && ship.upgrades[key];
           if (!shipUpgrades) {
             return;
           }
 
-          upgrades[key] = shipUpgrades.map(u => u.xws);
+          upgrades[key] = shipUpgrades.map((u) => u.xws);
         });
       }
 
@@ -39,12 +37,12 @@ export default function onAction(state: State = initialState, action: Action) {
         {},
         {
           uid: UUID(),
-          nick: action.name || 'No name',
+          nick: action.name || "No name",
           faction: action.faction,
           name: action.ship.pilot.xws,
           ship: action.ship.xws,
           upgrades,
-        },
+        }
       );
 
       return [...state, unitCopy];
@@ -56,7 +54,7 @@ export default function onAction(state: State = initialState, action: Action) {
         return;
       }
 
-      return [...state.filter(u => u.uid !== uid)];
+      return [...state.filter((u) => u.uid !== uid)];
     }
 
     case ADD_SYNCED_BLUEPRINT: {
@@ -68,7 +66,7 @@ export default function onAction(state: State = initialState, action: Action) {
       if (!uid) {
         return;
       }
-      return [...state.filter(u => u.uid !== uid)];
+      return [...state.filter((u) => u.uid !== uid)];
     }
 
     default:

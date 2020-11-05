@@ -1,4 +1,4 @@
-// const fs = require('fs');
+const fs = require("fs");
 
 // const path =
 //   './node_modules/react-primitives/lib/injection/react-native-web.js';
@@ -10,3 +10,15 @@
 
 // fs.writeFileSync(path, fixed, 'utf8');
 // console.log('Patched react-native-web'); // eslint-disable-line
+
+// fs.rm("static/fonts/xwing-miniatures-ships.ttf");
+fs.copyFileSync(
+  "node_modules/xwing-miniatures-font/dist/xwing-miniatures-ships.ttf",
+  "static/fonts/xwing-miniatures-ships.ttf"
+);
+
+// fs.rm("static/fonts/xwing-miniatures.ttf");
+fs.copyFileSync(
+  "node_modules/xwing-miniatures-font/dist/xwing-miniatures.ttf",
+  "static/fonts/xwing-miniatures.ttf"
+);

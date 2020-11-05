@@ -1,5 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
-
+import { createGlobalStyle } from "styled-components";
 import colors, {
   black,
   buttonBlue,
@@ -16,10 +15,10 @@ import colors, {
   search,
   selection,
   yellow,
-} from '../assets/colors';
+} from "../assets/colors";
 
 export const GlobalStyles = createGlobalStyle`
-    html {
+    /* html {
         font-size: 14px;
     }
     body {
@@ -27,6 +26,9 @@ export const GlobalStyles = createGlobalStyle`
         font-size: 1.0em;
         color: ${colors.black};
         -webkit-font-smoothing: antialiased;
+    } */
+    body {
+      background-color: #F4F5F7;
     }
 
     @font-face {
@@ -45,13 +47,13 @@ export const GlobalStyles = createGlobalStyle`
       font-style: normal;
     }
 
-    @media print { 
-      html, body { 
+    @media print {
+      html, body {
         /* height: auto !important;  */
-        overflow: visible !important; 
+        overflow: visible !important;
       }
       #bg {
-        height: auto !important; 
+        height: auto !important;
         background-color: white !important;
         -webkit-print-color-adjust: exact;
       }
@@ -59,15 +61,15 @@ export const GlobalStyles = createGlobalStyle`
   `;
 
 export const dark = {
-  statusBar: 'light-content',
+  statusBar: "light-content",
   background: black,
   backgroundSecondary: darkheader,
-  text: 'white',
+  text: "white",
   textSecondary: darkgrey,
   favourite: yellow,
-  nonFavourite: darkgrey + 'A0',
+  nonFavourite: darkgrey + "A0",
   button: buttonBlue,
-  menuBackground: 'white',
+  menuBackground: "white",
   menuLine: buttonBlue,
   menuText: black,
   line: black,
@@ -83,17 +85,17 @@ export const dark = {
 };
 
 export const light = {
-  statusBar: 'dark-content',
-  background: 'white',
+  statusBar: "dark-content",
+  background: "white",
   backgroundSecondary: header,
   text: black,
   textSecondary: darkgrey,
   favourite: yellow,
-  nonFavourite: darkgrey + 'A0',
+  nonFavourite: darkgrey + "A0",
   button: buttonBlue,
   menuBackground: menu,
   menuLine: buttonBlue,
-  menuText: 'white',
+  menuText: "white",
   line: darkgrey,
   unread: red,
   navigationBarIcons: search,
@@ -108,7 +110,7 @@ export const light = {
 
 export type ThemeInterface = typeof dark;
 
-declare module 'styled-components' {
+declare module "styled-components" {
   export interface DefaultTheme extends ThemeInterface {}
 }
 

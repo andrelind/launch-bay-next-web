@@ -1,10 +1,10 @@
-import { SquadronXWS } from 'types';
+import { SquadronXWS } from "../types";
 
-export const SYNC_SQUADS = 'SYNC_SQUADS';
-export const FULL_SYNC = 'FULL_SYNC';
+export const SYNC_SQUADS = "SYNC_SQUADS";
+export const FULL_SYNC = "FULL_SYNC";
 
 export type SyncSquadsAction = {
-  type: 'SYNC_SQUADS';
+  type: "SYNC_SQUADS";
 };
 
 export type FullSyncAction = {

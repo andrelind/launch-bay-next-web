@@ -1,10 +1,9 @@
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { red } from 'assets/colors';
-import React from 'react';
-import useMedia from 'use-media';
-
-import { Block, BorderedBackground, NavBar } from './styles';
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import useMedia from "use-media";
+import { red } from "../../assets/colors";
+import { Block, BorderedBackground, NavBar } from "./styles";
 
 type Props = {
   children?: any;
@@ -20,7 +19,7 @@ const Page = ({ children, onShowMenu }: Props) => {
           <FontAwesomeIcon
             icon={faBars}
             color={red}
-            style={{ height: 20, width: 20, padding: 10, cursor: 'pointer' }}
+            style={{ height: 20, width: 20, padding: 10, cursor: "pointer" }}
             onClick={onShowMenu}
           />
         </NavBar>

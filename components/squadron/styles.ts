@@ -1,8 +1,7 @@
-import { xfade } from '@components/sidebar/styles';
-import { Star } from 'react-feather';
-import styled from 'styled-components';
-
-import XWing from '../fonts/xwing';
+import { Star } from "react-feather";
+import styled from "styled-components";
+import { xfade } from "../../components/sidebar/styles";
+import XWing from "../fonts/xwing";
 
 export const Block = styled.div`
   flex-direction: row;
@@ -41,23 +40,23 @@ export const RowWrapper = styled.div`
 `;
 
 export const SquadronName = styled.span`
-  color: ${p => p.theme.text};
+  color: ${(p) => p.theme.text};
   font-weight: 600;
 `;
 
 export const WinLoss = styled.span`
-  color: ${p => p.theme.textSecondary};
+  color: ${(p) => p.theme.textSecondary};
   font-weight: 400;
   font-size: 13px;
 `;
 
 export const Points = styled.span`
-  color: ${p => p.theme.text};
+  color: ${(p) => p.theme.text};
   font-weight: bold;
 `;
 
 export const Pilots = styled.span`
-  color: ${p => p.theme.textSecondary};
+  color: ${(p) => p.theme.textSecondary};
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -72,7 +71,7 @@ type Props = {
 };
 
 export const FavIcon = styled(Star)<Props>`
-  color: ${p => (p.favourite ? p.theme.favourite : p.theme.nonFavourite)};
+  color: ${(p) => (p.favourite ? p.theme.favourite : p.theme.nonFavourite)};
   background-color: transparent;
   font-size: 18px;
 `;

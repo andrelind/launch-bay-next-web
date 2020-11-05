@@ -1,10 +1,9 @@
-import { pointsForUpgrade } from 'helpers/unit';
-
-import pilotData from '../assets/data/pilots';
-import upgradeData from '../assets/data/upgrades';
-import { keyFromSlot } from '../helpers/convert';
-import { allSlots, slotKeys } from '../helpers/enums';
-import { Pilot, Ship, ShipType, Slot, Squadron, Upgrade } from '../types';
+import pilotData from "../assets/data/pilots";
+import upgradeData from "../assets/data/upgrades";
+import { keyFromSlot } from "../helpers/convert";
+import { allSlots, slotKeys } from "../helpers/enums";
+import { pointsForUpgrade } from "../helpers/unit";
+import { Pilot, Ship, ShipType, Slot, Squadron, Upgrade } from "../types";
 
 export type ShipValue = {
   ship: ShipType;
@@ -32,15 +31,15 @@ export type UpgradeValue = {
 export const loadShips = (squadron: Squadron): ShipValue[] => {
   return (
     Object.keys(pilotData[squadron.faction])
-      .map(key => pilotData[squadron.faction][key])
+      .map((key) => pilotData[squadron.faction][key])
       .filter((s: ShipType) => {
         switch (squadron.format) {
-          case 'Extended':
-            return s.size !== 'Huge';
-          case 'Hyperspace':
-            return s.pilots.filter(p => p.hyperspace).length > 0;
-          case 'Epic':
-            return s.pilots.filter(p => p.epic).length > 0;
+          case "Extended":
+            return s.size !== "Huge";
+          case "Hyperspace":
+            return s.pilots.filter((p) => p.hyperspace).length > 0;
+          case "Epic":
+            return s.pilots.filter((p) => p.epic).length > 0;
         }
       })
       // .filter(p => {
@@ -51,18 +50,18 @@ export const loadShips = (squadron: Squadron): ShipValue[] => {
       //   return true;
       // })
       .sort((a, b) => a.name.en.localeCompare(b.name.en))
-      .map(s => ({
+      .map((s) => ({
         value: s.xws,
         label: s.name.en,
         ship: {
           ...s,
           pilots: s.pilots.filter((p: Pilot) => {
             switch (squadron.format) {
-              case 'Extended':
+              case "Extended":
                 return true;
-              case 'Hyperspace':
+              case "Hyperspace":
                 return p.hyperspace;
-              case 'Epic':
+              case "Epic":
                 return p.epic;
             }
           }),
@@ -71,10 +70,13 @@ export const loadShips = (squadron: Squadron): ShipValue[] => {
   );
 };
 
-export const shipForXws = (squadron: Squadron, shipXws: string): ShipValue => {
+export const shipForXws = (squadron: Squadron, shipXws: string) => {
   const ship = Object.keys(pilotData[squadron.faction])
-    .map(key => pilotData[squadron.faction][key])
-    .find(s => s.xws === shipXws);
+    .map((key) => pilotData[squadron.faction][key])
+    .find((s) => s.xws === shipXws);
+  if (!ship) {
+    return;
+  }
   return {
     value: ship.xws,
     label: ship.name.en,
@@ -86,11 +88,19 @@ export const pilotForXws = (
   squadron: Squadron,
   shipXws: string,
   pilotWxs: string
-): PilotValue => {
+) => {
   const ship = Object.keys(pilotData[squadron.faction])
-    .map(key => pilotData[squadron.faction][key])
-    .find(s => s.xws === shipXws);
-  const pilot = ship.pilots.find(p => p.xws === pilotWxs);
+    .map((key) => pilotData[squadron.faction][key])
+    .find((s) => s.xws === shipXws);
+  if (!ship) {
+    return;
+  }
+
+  const pilot = ship.pilots.find((p) => p.xws === pilotWxs);
+
+  if (!pilot) {
+    return;
+  }
   return {
     value: pilot.xws,
     label: pilot.name.en,
@@ -98,7 +108,10 @@ export const pilotForXws = (
   };
 };
 
-export const pilotOptions = (value: ShipValue): PilotValue[] => {
+export const pilotOptions = (value?: ShipValue): PilotValue[] => {
+  if (!value) {
+    return [];
+  }
   return value.ship.pilots
     .map((p: Pilot) => ({
       value: p.name.en,
@@ -129,10 +142,10 @@ export const getUpgrades = (
   const checked: { [s: string]: number } = {};
 
   if (
-    squadron.format === 'Epic' &&
-    !ship.pilot.slots.find(s => s === 'Command')
+    squadron.format === "Epic" &&
+    !ship.pilot.slots.find((s) => s === "Command")
   ) {
-    ship.pilot.slots = [...ship.pilot.slots, 'Command'];
+    ship.pilot.slots = [...ship.pilot.slots, "Command"];
   }
   ship.pilot.slots = [...ship.pilot.slots, ...extraSlots];
 
@@ -150,19 +163,20 @@ export const getUpgrades = (
   //   ship.pilot.slots = [...ship.pilot.slots, slot];
   // }
 
-  return ship.pilot.slots.map(slot => {
+  return ship.pilot.slots.map((slot) => {
     const key = keyFromSlot(slot);
     const i = checked[key] !== undefined ? checked[key] : 0;
     checked[key] = i + 1;
 
     if (ship.upgrades && ship.upgrades[key]) {
-      return { slot, upgrade: ship.upgrades[key][i] };
+      return { slot, upgrade: ship.upgrades[key]?.[i] };
     } else {
-      return { slot, upgrade: null };
+      return { slot, upgrade: undefined };
     }
   });
 };
 
+// FIXME: Lägg in i core från appen
 export const upgradesForSlot = (
   squadron: Squadron,
   ship: Ship,
@@ -170,29 +184,29 @@ export const upgradesForSlot = (
 ): UpgradeValue[] => {
   // const { navigation, collection, showUnavailable } ;
 
-  const freeSlots = {};
-  allSlots.map(s => {
-    const count = ship.pilot.slots.filter(is => is === s).length;
+  const freeSlots: { [s: string]: number } = {};
+  allSlots.map((s) => {
+    const count = ship.pilot.slots.filter((is) => is === s).length;
     freeSlots[s] = count;
   });
 
   const data = upgradeData[keyFromSlot(slot)]
-    .map(u => ({
+    .map((u) => ({
       ...u,
       finalCost: pointsForUpgrade(
         u.cost,
-        { uid: '', ship: ship.xws, name: ship.pilot.xws },
+        { uid: "", ship: ship.xws, name: ship.pilot.xws },
         ship.faction
       ),
       available: 0,
     }))
     .filter((u: Upgrade) => {
       switch (squadron.format) {
-        case 'Extended':
+        case "Extended":
           return true;
-        case 'Hyperspace':
+        case "Hyperspace":
           return u.hyperspace;
-        case 'Epic':
+        case "Epic":
           return u.epic;
       }
     })
@@ -208,9 +222,9 @@ export const upgradesForSlot = (
       //   return false;
       // }
 
-      const neededSlots = {};
-      allSlots.map(s => {
-        neededSlots[s] = u.sides[0].slots.filter(is => is === s).length;
+      const neededSlots: { [s: string]: number } = {};
+      allSlots.map((s) => {
+        neededSlots[s] = u.sides[0].slots.filter((is) => is === s).length;
       });
 
       for (var i = 0; i < allSlots.length; i++) {
@@ -245,15 +259,16 @@ export const upgradesForSlot = (
           found = true;
         } else if (
           res.arcs &&
-          res.arcs.filter(a => ship.stats.filter(s => s.arc === a).length > 0)
-            .length > 0
+          res.arcs.filter(
+            (a) => ship.stats.filter((s) => s.arc === a).length > 0
+          ).length > 0
         ) {
           found = true;
         } else if (
           res.action &&
           ship.pilot &&
           ship.pilot.shipActions &&
-          ship.pilot.shipActions.find(a => {
+          ship.pilot.shipActions.find((a) => {
             if (!res.action) {
               return false;
             }
@@ -271,7 +286,7 @@ export const upgradesForSlot = (
           res.action &&
           ship.actions &&
           !ship.pilot.shipActions &&
-          ship.actions.find(a => {
+          ship.actions.find((a) => {
             if (!res.action) {
               return false;
             }
@@ -288,7 +303,7 @@ export const upgradesForSlot = (
         } else if (
           res.sides &&
           res.sides.find(
-            s => ship.pilot.sides && ship.pilot.sides.indexOf(s) >= 0
+            (s) => ship.pilot.sides && ship.pilot.sides.indexOf(s) >= 0
           )
         ) {
           found = true;
@@ -296,15 +311,15 @@ export const upgradesForSlot = (
           res.equipped &&
           ship.upgrades &&
           res.equipped.filter(
-            e => ship.upgrades && ship.upgrades[keyFromSlot(e)]
+            (e) => ship.upgrades && ship.upgrades[keyFromSlot(e)]
           ).length === res.equipped.length
         ) {
           found = true;
-        } else if (res['non-limited'] && ship.pilot.limited === 0) {
+        } else if (res["non-limited"] && ship.pilot.limited === 0) {
           found = true;
         } else if (
           ship.stats.find(
-            s =>
+            (s) =>
               res.stat && s.type === res.stat.type && s.value >= res.stat.value
           )
         ) {
@@ -314,18 +329,18 @@ export const upgradesForSlot = (
         }
 
         if (res.character) {
-          squadron.ships.forEach(ship => {
+          squadron.ships.forEach((ship) => {
             if (res.character && res.character.indexOf(ship.pilot.xws) >= 0) {
               found = true;
             } else if (res.character) {
-              res.character.forEach(c => {
-                slotKeys.forEach(key => {
+              res.character.forEach((c) => {
+                slotKeys.forEach((key) => {
                   // We need to check all the upgrades also...
                   const upgrades = ship.upgrades && ship.upgrades[key];
                   if (!upgrades) {
                     return false;
                   }
-                  if (upgrades.find(u => u.xws === c)) {
+                  if (upgrades.find((u) => u.xws === c)) {
                     found = true;
                   }
                 });
@@ -349,7 +364,7 @@ export const upgradesForSlot = (
       return a.sides[0].title.en.localeCompare(b.sides[0].title.en);
     });
 
-  return data.map(u => ({
+  return data.map((u) => ({
     label: u.sides[0].title.en,
     value: u.xws,
     upgrade: u,

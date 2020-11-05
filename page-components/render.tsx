@@ -1,12 +1,11 @@
-import { setUpgrade } from '@actions/squadrons';
-import UpgradeComponent from '@components/upgrade';
-import { useDispatch } from 'react-redux';
-import { components } from 'react-select';
-
-import Select from '../components/select';
-import { Ship, Slot, Squadron, UpgradeSide } from '../types';
-import { SlotValue, upgradesForSlot, UpgradeValue } from './loader';
-import { Icon, RowStyle } from './styles';
+import { useDispatch } from "react-redux";
+import { components } from "react-select";
+import { setUpgrade } from "../actions/squadrons";
+import XwingFont from "../components/fonts/xwing";
+import Select from "../components/select";
+import UpgradeComponent from "../components/upgrade";
+import { Ship, Slot, Squadron, UpgradeSide } from "../types";
+import { SlotValue, upgradesForSlot, UpgradeValue } from "./loader";
 
 export type HardpointValue = {
   label: Slot;
@@ -14,29 +13,93 @@ export type HardpointValue = {
 };
 
 export const renderHardpoint = (
-  value: Slot | void,
+  value: Slot | null,
   squadron: Squadron,
-  onChange: (value: Slot) => void
-) => (
-  <div style={{ padding: 1, display: 'flex', flex: 1 }}>
+  onChange: (value: Slot | null) => void
+) => {
+  const SingleValue = () => (
+    <div className="flex flex-1">
+      <div className="flex flex-1 flex-row items-center">
+        <div className="flex flex-col justify-center">
+          <XwingFont className="mr-1" icon={"Hardpoint"} />
+        </div>
+
+        <div className="flex flex-1 flex-col justify-center mx-1">
+          <div className="flex flex-row items-center">
+            <span className="text-sm ">{"Hardpoint"}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  const Option = ({ data, ...rest }: any) => (
+    // @ts-ignore
+    <components.Option {...rest}>
+      <div className="flex flex-1">
+        <div className="flex flex-1 flex-row items-center">
+          <div className="flex flex-col justify-center">
+            <XwingFont className="mr-1" icon={data.label || "Hardpoint"} />
+          </div>
+
+          <div className="flex flex-1 flex-col justify-center mx-1">
+            <div className="flex flex-row items-center">
+              <span className="text-sm font-medium">
+                {data.label || "Hardpoint"}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </components.Option>
+  );
+
+  const Placeholder = (props: any) => (
+    // @ts-ignore
+    <components.Placeholder {...props}>
+      <div className="flex flex-1">
+        <div className="flex flex-1 flex-row items-center">
+          <div className="flex flex-col justify-center">
+            <XwingFont className="mr-1" icon={"Hardpoint"} />
+          </div>
+
+          <div className="flex flex-1 flex-col justify-center mx-1">
+            <div className="flex flex-row items-center">
+              <span className="text-sm ">{"Hardpoint"}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </components.Placeholder>
+  );
+
+  return (
     <Select
-      components={{ IndicatorSeparator: null }}
+      components={{
+        SingleValue,
+        Option,
+        Placeholder,
+        IndicatorSeparator: null,
+        DropdownIndicator: null,
+      }}
       instanceId={`hardpointPicker`}
       key={`hardpointPicker`}
-      placeholder={'Hardpoint'}
+      placeholder={"Hardpoint"}
       faction={squadron.faction}
+      // @ts-ignore
       value={value && { value: value, label: value }}
       isClearable
+      // @ts-ignore
       onChange={(newValue?: HardpointValue) =>
         newValue ? onChange(newValue.value) : onChange(null)
       }
-      options={['Cannon', 'Missile', 'Torpedo'].map(s => ({
+      options={["Cannon", "Missile", "Torpedo"].map((s) => ({
         value: s,
         label: s,
       }))}
     />
-  </div>
-);
+  );
+};
 
 export const renderUpgrade = (
   value: SlotValue,
@@ -48,11 +111,11 @@ export const renderUpgrade = (
   const dispatch = useDispatch();
 
   const v = value.upgrade
-    ? { label: '', value: '', upgrade: value.upgrade }
+    ? { label: "", value: "", upgrade: value.upgrade }
     : undefined;
 
   const SingleValue = ({ data }: any) => (
-    <RowStyle>
+    <div className="flex flex-1">
       <UpgradeComponent
         upgrade={data.upgrade}
         showType={true}
@@ -60,103 +123,103 @@ export const renderUpgrade = (
         count={undefined}
         minimized={minimized}
       />
-    </RowStyle>
+    </div>
   );
 
-  const Option = ({ data, ...rest }) => (
+  const Option = ({ data, ...rest }: any) => (
     // @ts-ignore
     <components.Option {...rest}>
-      <RowStyle key={data.upgrade.uid}>
+      <div className="flex flex-1" key={data.upgrade.uid}>
         <UpgradeComponent
-          upgrade={data.upgrade || ''}
+          upgrade={data.upgrade || ""}
           showType={true}
           side={0}
           count={undefined}
           minimized={minimized}
         />
-      </RowStyle>
+      </div>
     </components.Option>
   );
 
-  const Placeholder = props => (
+  const Placeholder = (props: any) => (
     // @ts-ignore
     <components.Placeholder {...props}>
-      <div>
-        <Icon icon={props.children} />
-        <span style={{ marginLeft: 4, fontSize: 13 }}>{props.children}</span>
-      </div>
+      <span>
+        <XwingFont icon={props.children} className="mr-1" />
+        <span className="text-sm mx-1">{props.children}</span>
+      </span>
     </components.Placeholder>
   );
 
   return (
-    <div style={{ padding: 1, display: 'flex', flex: 1 }}>
-      <Select
-        components={{
-          SingleValue,
-          Option,
-          Placeholder,
-          IndicatorSeparator: null,
-        }}
-        instanceId={`selectUpgrade_${index}`}
-        key={`${value.slot}_${index}`}
-        placeholder={value.slot}
-        faction={squadron.faction}
-        value={v}
-        isClearable
-        filterOption={({ data }, input) => {
-          const u = (data as UpgradeValue).upgrade;
-          const needle = input.toLowerCase();
+    <Select
+      components={{
+        SingleValue,
+        Option,
+        Placeholder,
+        IndicatorSeparator: null,
+        DropdownIndicator: null,
+      }}
+      instanceId={`selectUpgrade_${index}`}
+      key={`${value.slot}_${index}`}
+      placeholder={value.slot}
+      faction={squadron.faction}
+      value={v}
+      isClearable
+      filterOption={({ data }, input) => {
+        const u = (data as UpgradeValue).upgrade;
+        const needle = input.toLowerCase();
 
-          const checkSide = (side: UpgradeSide) => {
-            if (side.title.en.toLowerCase().indexOf(needle) >= 0) {
-              return true;
-            } else if (
-              side.ability &&
-              side.ability.en.toLowerCase().indexOf(needle) >= 0
-            ) {
-              return true;
-            } else if (
-              side.text &&
-              side.text.en.toLowerCase().indexOf(needle) >= 0
-            ) {
-              return true;
-            }
-          };
-
-          if (u.sides[0].title.en.toLowerCase().indexOf(needle) >= 0) {
+        const checkSide = (side: UpgradeSide) => {
+          if (side.title.en.toLowerCase().indexOf(needle) >= 0) {
             return true;
-          } else if (checkSide(u.sides[0])) {
+          } else if (
+            side.ability &&
+            side.ability.en.toLowerCase().indexOf(needle) >= 0
+          ) {
             return true;
-          } else if (u.sides.length > 1 && checkSide(u.sides[1])) {
+          } else if (
+            side.text &&
+            side.text.en.toLowerCase().indexOf(needle) >= 0
+          ) {
             return true;
           }
-          return false;
-        }}
-        onChange={(newValue?: UpgradeValue) => {
-          const getSlotIndex = () => {
-            let slotIndex = 0;
-            for (let i = 0; i < ship.pilot.slots.length; i++) {
-              if (ship.pilot.slots[i] === value.slot) {
-                if (i === index) {
-                  return slotIndex;
-                }
-                slotIndex += 1;
+        };
+
+        if (u.sides[0].title.en.toLowerCase().indexOf(needle) >= 0) {
+          return true;
+        } else if (checkSide(u.sides[0])) {
+          return true;
+        } else if (u.sides.length > 1 && checkSide(u.sides[1])) {
+          return true;
+        }
+        return false;
+      }}
+      // @ts-ignore
+      onChange={(newValue?: UpgradeValue) => {
+        const getSlotIndex = () => {
+          let slotIndex = 0;
+          for (let i = 0; i < ship.pilot.slots.length; i++) {
+            if (ship.pilot.slots[i] === value.slot) {
+              if (i === index) {
+                return slotIndex;
               }
+              slotIndex += 1;
             }
-            return 0;
-          };
-          dispatch(
-            setUpgrade(
-              squadron.uid,
-              ship.uid,
-              value.slot,
-              getSlotIndex(),
-              newValue ? newValue.upgrade : undefined
-            )
-          );
-        }}
-        options={upgradesForSlot(squadron, ship, value.slot)}
-      />
-    </div>
+          }
+          return 0;
+        };
+        dispatch(
+          setUpgrade(
+            squadron.uid,
+            ship.uid,
+            value.slot,
+            getSlotIndex(),
+            newValue ? newValue.upgrade : undefined
+          )
+        );
+      }}
+      options={upgradesForSlot(squadron, ship, value.slot)}
+    />
   );
 };

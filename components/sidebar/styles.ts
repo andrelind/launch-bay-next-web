@@ -1,7 +1,6 @@
-import { buttonBlue } from 'assets/colors';
-import styled, { keyframes } from 'styled-components';
-
-import XWing from '../fonts/xwing';
+import styled, { keyframes } from "styled-components";
+import { buttonBlue } from "../../assets/colors";
+import XWing from "../fonts/xwing";
 
 interface Props {
   active?: boolean;
@@ -23,12 +22,12 @@ export const Block = styled.div`
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background-color: ${p => p.theme.background};
+  background-color: ${(p) => p.theme.background};
   width: 200px;
 `;
 
 export const LogoWrapper = styled.div`
-  background-color: ${p => p.theme.background};
+  background-color: ${(p) => p.theme.background};
   padding-top: 15px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -44,7 +43,7 @@ export const RouteButton = styled.div`
   color: white;
   height: 40px;
   animation: ${xfade} 1s 0s;
-  background-color: ${(p: Props) => (p.active ? '#ffffff33' : 'transparent')};
+  background-color: ${(p: Props) => (p.active ? "#ffffff33" : "transparent")};
   :hover {
     background-color: #ffffff33;
   }
@@ -75,6 +74,6 @@ export const A = styled.a`
 export const Icon = styled(XWing)`
   font-size: 18px;
   align-self: center;
-  color: ${p => p.theme.unread};
+  color: ${(p) => p.theme.unread};
   margin: 0 5px;
 `;

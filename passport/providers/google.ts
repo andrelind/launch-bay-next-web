@@ -1,16 +1,17 @@
-import { OAuth2Strategy } from 'passport-google-oauth';
-
-import { registerUser } from '../../api/user';
-import appConfig from '../config';
+import { OAuth2Strategy } from "passport-google-oauth";
+import { registerUser } from "../../api/user";
+import appConfig from "../config";
 
 const strategy = new OAuth2Strategy(
+  // @ts-ignore
   appConfig.google,
+  // @ts-ignore
   async (_accessToken, _refreshToken, profile, cb) => {
     const result: any = await registerUser({
       id: profile.id,
       name: profile.displayName,
       email: profile.emails.length > 0 ? profile.emails[0].value : undefined,
-      provider: 'Google',
+      provider: "Google",
       jwt: null,
     });
 

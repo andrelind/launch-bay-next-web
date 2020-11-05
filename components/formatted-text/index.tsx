@@ -1,52 +1,42 @@
-import React from 'react';
-
-import { useTheme } from '../../helpers/hooks';
-import textHelper from '../../helpers/text';
-import XwingFont from '../fonts/xwing';
+import React, { FC } from "react";
+import textHelper from "../../helpers/text";
+import XwingFont from "../fonts/xwing";
 
 type Props = {
   text: string;
   color?: string;
-  fontSize?: number;
-  fontStyle?: 'italic' | 'normal';
+  fontStyle?: "italic" | "normal";
 };
 
-export const FormattedText = ({ text, color, fontSize, fontStyle }: Props) => {
-  const theme = useTheme();
-
+export const FormattedText: FC<Props> = ({ text, color, fontStyle }) => {
   const content = textHelper(text);
 
   return (
     <span
-      style={{
-        color: color || theme.text,
-        flex: 1,
-        fontSize: fontSize || 13,
-        fontStyle,
-        paddingTop: 5,
-      }}
+      className={`text-sm font-normal pt-1 mr-1 ${
+        fontStyle === "italic" && "italic"
+      }`}
+      style={{ color }}
     >
       {content.map((item, index) => {
         switch (item.type) {
-          case 'text':
+          case "text":
             return item.text;
-          case 'strong':
+          case "strong":
             return (
               <span
-                key={item.type + '_' + index}
-                style={{ fontWeight: 'bold' }}
+                key={item.type + "_" + index}
+                style={{ fontWeight: "bold" }}
               >
                 {item.text}
               </span>
             );
-          case 'icon': {
-            let size = fontSize ? fontSize + 3 : 15;
-
+          case "icon": {
             return (
               <XwingFont
-                key={item.type + '_' + index}
-                style={{ fontSize: size }}
+                key={item.type + "_" + index}
                 icon={item.text}
+                className="mx-1"
               />
             );
           }

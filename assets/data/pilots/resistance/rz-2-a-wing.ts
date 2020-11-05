@@ -657,7 +657,7 @@ const t: ShipType = {
         en:
           'After you partially execute a maneuver, you may gain 1 strain token to rotate 90° or 180°.',
       },
-      slots: ['Talent', 'Tech', 'Missile'],
+      slots: ['Talent', 'Talent', 'Tech', 'Missile'],
       hyperspace: true,
       epic: true,
     },

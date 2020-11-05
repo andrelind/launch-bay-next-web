@@ -1,36 +1,39 @@
-import color from 'color';
-import { useTheme } from 'helpers/hooks';
-import { ThemeInterface } from 'page-components/theme';
-import React from 'react';
-import Select from 'react-select';
-import { Props } from 'react-select/src/Select';
-
-import { colorForFaction } from '../../helpers/colors';
-import { Faction } from '../../types';
+import color from "color";
+import React, { FC } from "react";
+import Select from "react-select";
+import { Props as SelectProps } from "react-select/src/Select";
+import { colorForFaction } from "../../helpers/colors";
+import { useTheme } from "../../helpers/hooks";
+import { ThemeInterface } from "../../page-components/theme";
+import { Faction } from "../../types";
 
 const styles = (theme: ThemeInterface) => ({
-  container: styles => ({
+  container: (styles: any) => ({
     ...styles,
-    display: 'flex',
+    display: "flex",
     flex: 1,
   }),
-  control: styles => ({
+  control: (styles: any) => ({
     ...styles,
     backgroundColor: theme.background,
     borderColor: theme.background,
     marginTop: 1,
     marginBottom: 1,
-    display: 'flex',
+    display: "flex",
     flex: 1,
   }),
-  input: styles => ({ ...styles, color: theme.text }),
-  menu: styles => ({
+  input: (styles: any) => ({ ...styles, color: theme.text }),
+  menu: (styles: any) => ({
     ...styles,
     zIndex: 999,
     backgroundColor: theme.background,
   }),
-  placeholder: styles => ({ ...styles, color: theme.text, marginLeft: 0 }),
-  option: (styles, { isDisabled, isFocused, isSelected }) => ({
+  placeholder: (styles: any) => ({
+    ...styles,
+    color: theme.text,
+    marginLeft: 0,
+  }),
+  option: (styles: any, { isDisabled, isFocused, isSelected }: any) => ({
     ...styles,
     color: isDisabled
       ? theme.text
@@ -39,11 +42,11 @@ const styles = (theme: ThemeInterface) => ({
       : isFocused
       ? theme.menuText
       : theme.text,
-    cursor: isDisabled ? 'not-allowed' : 'pointer',
+    cursor: isDisabled ? "not-allowed" : "pointer",
     // display: 'flex',
     // flex: 1,
   }),
-  singleValue: styles => ({
+  singleValue: (styles: any) => ({
     ...styles,
     color: theme.text,
     // display: 'flex',
@@ -51,11 +54,11 @@ const styles = (theme: ThemeInterface) => ({
   }),
 });
 
-interface SelectProps extends Props {
+interface Props extends SelectProps {
   faction?: Faction;
 }
 
-export const SelectComponent = ({ faction, ...rest }: SelectProps) => {
+export const SelectComponent: FC<Props> = ({ faction, ...rest }) => {
   const theme = useTheme();
   return (
     <Select
@@ -68,16 +71,16 @@ export const SelectComponent = ({ faction, ...rest }: SelectProps) => {
         padding: 4,
         colors: {
           ...t.colors,
-          primary75: color(colorForFaction(faction || 'Rebel Alliance'))
+          primary75: color(colorForFaction(faction || "Rebel Alliance"))
             .lighten(0.75)
             .string(),
-          primary50: color(colorForFaction(faction || 'Rebel Alliance'))
+          primary50: color(colorForFaction(faction || "Rebel Alliance"))
             .lighten(0.5)
             .string(),
-          primary25: color(colorForFaction(faction || 'Rebel Alliance'))
+          primary25: color(colorForFaction(faction || "Rebel Alliance"))
             .lighten(0.15)
             .string(),
-          primary: color(colorForFaction(faction || 'Rebel Alliance'))
+          primary: color(colorForFaction(faction || "Rebel Alliance"))
             .lighten(0.25)
             .string(),
         },

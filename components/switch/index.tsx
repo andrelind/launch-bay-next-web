@@ -1,5 +1,5 @@
-import { darkgrey } from 'assets/colors';
-import Switch from 'react-switch';
+import Switch from "react-switch";
+import { darkgrey } from "../../assets/colors";
 
 type Props = {
   value: boolean;

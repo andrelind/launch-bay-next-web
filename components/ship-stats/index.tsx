@@ -1,8 +1,15 @@
-import React from 'react';
-
-import { blue, green, orange, pink, purple, red, yellow } from '../../assets/colors';
-import { Stat } from '../../types';
-import { Block, Icon, Text, Wrapper } from './styles';
+import React from "react";
+import {
+  blue,
+  green,
+  orange,
+  pink,
+  purple,
+  red,
+  yellow,
+} from "../../assets/colors";
+import { Stat } from "../../types";
+import { Block, Icon, Text, Wrapper } from "./styles";
 
 type Props = {
   initiative?: number;
@@ -13,23 +20,23 @@ type Props = {
   minimized: boolean;
 };
 
-const colorForType = (type: string) => {
+export const colorForType = (type: string) => {
   switch (type) {
-    case 'attack':
+    case "attack":
       return red;
-    case 'agility':
+    case "agility":
       return green;
-    case 'hull':
+    case "hull":
       return yellow;
-    case 'initiative':
+    case "initiative":
       return orange;
-    case 'shields':
+    case "shields":
       return blue;
-    case 'Force Power':
+    case "Force Power":
       return purple;
-    case 'charge':
+    case "charge":
       return yellow;
-    case 'energy':
+    case "energy":
       return pink;
 
     default:
@@ -52,11 +59,11 @@ const renderValue = (
           {recovers.length > 0 && (
             <div
               style={{
-                position: 'absolute',
+                position: "absolute",
                 right: -4,
                 top: -2,
-                display: 'flex',
-                flexDirection: 'column',
+                display: "flex",
+                flexDirection: "column",
               }}
             >
               {recovers.map((_, i) => (
@@ -64,7 +71,6 @@ const renderValue = (
                   key={`${type}_${data.value}_${i}`}
                   icon="recurring"
                   color={color}
-                  style={{ height: 5, marginTop: -2 }}
                 />
               ))}
             </div>
@@ -89,13 +95,13 @@ const ShipStats = ({
       <Text
         minimized={minimized}
         style={{
-          color: colorForType('initiative'),
+          color: colorForType("initiative"),
         }}
       >
         {initiative}
         {engagement !== undefined && (
           <Text style={{ fontSize: 12 }}>
-            {' / '}
+            {" / "}
             {engagement}
           </Text>
         )}
@@ -103,10 +109,10 @@ const ShipStats = ({
     )}
 
     {stats &&
-      stats.map(stat => {
-        if (stat.type === 'attack' && stat.arc) {
+      stats.map((stat) => {
+        if (stat.type === "attack" && stat.arc) {
           return (
-            <Wrapper key={`${stat.type}_${stat.value}_${stat.arc || ''}`}>
+            <Wrapper key={`${stat.type}_${stat.value}_${stat.arc || ""}`}>
               <Icon minimized={minimized} icon={stat.arc} color={red} />
               <Text
                 minimized={minimized}
@@ -118,8 +124,8 @@ const ShipStats = ({
         return renderValue(stat, stat.type, minimized);
       })}
 
-    {charges && renderValue(charges, 'charge', minimized)}
-    {force && renderValue(force, 'Force Power', minimized)}
+    {charges && renderValue(charges, "charge", minimized)}
+    {force && renderValue(force, "Force Power", minimized)}
   </Block>
 );
 

@@ -1,37 +1,23 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
-    "noEmit": true,
-    "target": "esnext",
-    "module": "esnext",
-    "jsx": "preserve",
     "allowJs": true,
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "lib": ["dom", "es2017"],
+    "module": "esnext",
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "removeComments": false,
-    "preserveConstEnums": true,
-    "sourceMap": true,
-    "skipLibCheck": true,
-    "typeRoots": ["node_modules/@types", "@types"],
-    "lib": ["dom", "es2015", "es2016"],
-    "outDir": ".next",
-    "baseUrl": ".",
-    "paths": {
-      "@actions/*": ["actions/*"],
-      "@api/*": ["api/*"],
-      "@components/*": ["components/*"],
-      "@lib/*": ["passport/*"],
-      "@reducers/*": ["reducers/*"],
-      "@store/*": ["store/*"]
-    },
-    "strict": false,
-    "forceConsistentCasingInFileNames": true,
-    "esModuleInterop": true,
     "resolveJsonModule": true,
-    "isolatedModules": true
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "esnext"
   },
   "exclude": [".next", "scripts/**/*.*"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "include": ["**/*.ts", "**/*.tsx"]
 }

@@ -1,27 +1,26 @@
-import { toggleMinimize } from '@actions/misc';
-import LogoComponent from '@components/logo';
-import SquadronComponent from '@components/squadron';
 import {
   faCompress,
   faExpand,
   faMoon,
   faSun,
-} from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { AppState } from '@store/state';
-import { darkgrey, yellow } from 'assets/colors';
-import { SwitchComponent } from 'components/switch';
-import { useJWT, useMinimized, useTheme } from 'helpers/hooks';
-import { loadSquadron } from 'helpers/unit';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { setCookie } from 'nookies';
-import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { Faction } from 'types';
-import useDarkMode from 'use-dark-mode';
-
-import { factions } from '../../helpers/enums';
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { setCookie } from "nookies";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import useDarkMode from "use-dark-mode";
+import { toggleMinimize } from "../../actions/misc";
+import { darkgrey, yellow } from "../../assets/colors";
+import SquadronComponent from "../../components/squadron";
+import { SwitchComponent } from "../../components/switch";
+import { factions } from "../../helpers/enums";
+import { useJWT, useMinimized, useTheme } from "../../helpers/hooks";
+import { loadSquadron } from "../../helpers/unit";
+import { AppState } from "../../store/state";
+import { Faction } from "../../types";
+import LogoComponent from "../logo";
 import {
   Block,
   ContentWrapper,
@@ -29,7 +28,7 @@ import {
   Icon,
   LogoWrapper,
   RouteButton,
-} from './styles';
+} from "./styles";
 
 type Props = {
   darkMode: boolean;
@@ -40,16 +39,16 @@ const SideBarComponent = ({ darkMode }: Props) => {
   const jwt = useJWT();
 
   const squadrons = useSelector((s: AppState) =>
-    s.app.xws.map(x => loadSquadron(x))
+    s.app.xws.map((x) => loadSquadron(x))
   );
 
   const theme = useTheme();
   const router = useRouter();
-  const minimized = useMinimized('index');
+  const minimized = useMinimized("index");
   const dispatch = useDispatch();
 
   const getColor = (faction: Faction) => {
-    if (faction === 'Galactic Empire' || faction === 'First Order') {
+    if (faction === "Galactic Empire" || faction === "First Order") {
       return theme.text;
     }
     return undefined;
@@ -62,53 +61,53 @@ const SideBarComponent = ({ darkMode }: Props) => {
       </LogoWrapper>
 
       <ContentWrapper>
-        {factions.map(f => (
+        {factions.map((f) => (
           <RouteButton
             key={f}
             style={{ margin: 0 }}
             onClick={() => router.push(`/?faction=${f}`)}
           >
-            <Icon style={{ cursor: 'pointer' }} icon={f} color={getColor(f)} />
+            <Icon className="cursor-pointer" icon={f} color={getColor(f)} />
           </RouteButton>
         ))}
       </ContentWrapper>
 
       <div
         style={{
-          display: 'flex',
+          display: "flex",
           flex: 1,
-          flexDirection: 'column',
-          maxHeight: '80vh',
-          overflow: 'auto',
+          flexDirection: "column",
+          maxHeight: "80vh",
+          overflow: "auto",
         }}
       >
-        {squadrons.map(s => (
-          <SquadronComponent key={s.uid} squadron={s} />
-        ))}
+        {squadrons.map(
+          (s) => s && <SquadronComponent key={s.uid} squadron={s} />
+        )}
       </div>
 
       <Footer>
         {jwt && (
-          <Link href={'/logout'}>
+          <Link href={"/logout"}>
             <RouteButton>Logout</RouteButton>
           </Link>
         )}
 
         <div
           style={{
-            alignItems: 'center',
-            display: 'flex',
-            justifyContent: 'center',
+            alignItems: "center",
+            display: "flex",
+            justifyContent: "center",
             marginBottom: 10,
           }}
         >
           {!jwt && (
-            <Link href={'/api/auth/facebook'}>
+            <Link href={"/api/auth/facebook"}>
               <RouteButton>Facebook</RouteButton>
             </Link>
           )}
           {!jwt && (
-            <Link href={'/api/auth/google'}>
+            <Link href={"/api/auth/google"}>
               <RouteButton>Google</RouteButton>
             </Link>
           )}
@@ -116,15 +115,15 @@ const SideBarComponent = ({ darkMode }: Props) => {
 
         <div
           style={{
-            alignItems: 'center',
-            display: 'flex',
-            justifyContent: 'space-between',
+            alignItems: "center",
+            display: "flex",
+            justifyContent: "space-between",
             marginBottom: 10,
             marginLeft: 5,
             marginRight: 5,
           }}
         >
-          <div style={{ display: 'flex', alignItems: 'center' }}>
+          <div style={{ display: "flex", alignItems: "center" }}>
             <FontAwesomeIcon
               icon={faSun}
               color={value ? darkgrey : yellow}
@@ -132,7 +131,7 @@ const SideBarComponent = ({ darkMode }: Props) => {
             />
             <SwitchComponent
               value={value}
-              onChange={c => {
+              onChange={(c) => {
                 c ? enable() : disable();
               }}
             />
@@ -143,7 +142,7 @@ const SideBarComponent = ({ darkMode }: Props) => {
             />
           </div>
 
-          <div style={{ display: 'flex', alignItems: 'center' }}>
+          <div style={{ display: "flex", alignItems: "center" }}>
             <FontAwesomeIcon
               icon={faCompress}
               color={!minimized ? darkgrey : yellow}
@@ -151,9 +150,9 @@ const SideBarComponent = ({ darkMode }: Props) => {
             />
             <SwitchComponent
               value={!minimized}
-              onChange={value => {
-                setCookie(undefined, 'minimized', `${!value}`, {});
-                dispatch(toggleMinimize('index'));
+              onChange={(value) => {
+                setCookie(undefined, "minimized", `${!value}`, {});
+                dispatch(toggleMinimize("index"));
               }}
             />
             <FontAwesomeIcon
@@ -164,9 +163,9 @@ const SideBarComponent = ({ darkMode }: Props) => {
           </div>
         </div>
         <div
-          style={{ display: 'flex', justifyContent: 'center', marginBottom: 5 }}
+          style={{ display: "flex", justifyContent: "center", marginBottom: 5 }}
         >
-          <Link href={'/privacy'}>
+          <Link href={"/privacy"}>
             <RouteButton style={{ height: 20 }}>Privacy Policy</RouteButton>
           </Link>
         </div>

@@ -1,9 +1,8 @@
-import { useLocalized } from 'helpers/i18n';
-import { useRouter } from 'next/router';
-import React from 'react';
-
-import { Ship, Squadron } from '../../types';
-import FormatComponent from '../format';
+import { useRouter } from "next/router";
+import React from "react";
+import { useLocalized } from "../../helpers/i18n";
+import { Ship, Squadron } from "../../types";
+import FormatComponent from "../format";
 import {
   Block,
   ContentWrapper,
@@ -15,7 +14,7 @@ import {
   RowWrapper,
   SquadronName,
   WinLoss,
-} from './styles';
+} from "./styles";
 
 type Props = {
   squadron: Squadron;
@@ -30,27 +29,27 @@ const SquadronComponent = ({ squadron, toggleFavouriteSquad }: Props) => {
       return undefined;
     }
 
-    const all = units.map(u => u.pilot.xws);
+    const all = units.map((u) => u.pilot.xws);
     const unique = [...new Set(all)];
-    const fullCount = unique.map(u => ({
+    const fullCount = unique.map((u) => ({
       xws: u,
-      count: all.filter(a => a === u).length,
+      count: all.filter((a) => a === u).length,
     }));
 
     return fullCount
-      .map(u => {
+      .map((u) => {
         const { name } = units.filter(
-          unit => unit.pilot.xws === u.xws
+          (unit) => unit.pilot.xws === u.xws
         )[0].pilot;
         if (u.count > 1) {
           return `${u.count}x ${t(name)}`;
         }
         return t(name);
       })
-      .join(', ');
+      .join(", ");
   };
 
-  const joinedPilots = getUnique(squadron.ships) || '';
+  const joinedPilots = getUnique(squadron.ships) || "";
   const router = useRouter();
 
   return (
@@ -78,7 +77,7 @@ const SquadronComponent = ({ squadron, toggleFavouriteSquad }: Props) => {
               // hitSlop={{ top: 10, left: 10, bottom: 10, right: 10 }}
               onClick={toggleFavouriteSquad}
             >
-              <FavIcon favourite={squadron.favourite} name={'star'} />
+              <FavIcon favourite={squadron.favourite} name={"star"} />
             </FavButton>
           )}
         </RowWrapper>

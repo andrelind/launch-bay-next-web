@@ -1,11 +1,11 @@
-import { Action, Provider, USER_DID_LOGIN, USER_LOGOUT } from '../actions/user';
+import { Action, Provider, USER_DID_LOGIN, USER_LOGOUT } from "../actions/user";
 
 export type UserState = {
   id?: string;
   name?: string;
   provider?: Provider;
   email?: string;
-  jwt: string | void;
+  jwt: string | null | undefined;
 };
 
 const initialState = {

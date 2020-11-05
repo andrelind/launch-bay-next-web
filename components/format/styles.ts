@@ -1,13 +1,13 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import styled from 'styled-components';
-import { Format } from 'types';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styled from "styled-components";
+import { Format } from "../../types";
 
 export const Wrapper = styled.div`
   flex-direction: row;
   align-items: center;
-  margin-top: ${p => (p.onClick ? '5px' : '0px')};
+  margin-top: ${(p) => (p.onClick ? "5px" : "0px")};
   display: flex;
-  cursor: ${p => (p.onClick ? 'pointer' : 'auto')};
+  cursor: ${(p) => (p.onClick ? "pointer" : "auto")};
 `;
 
 export type TextProps = {
@@ -15,13 +15,13 @@ export type TextProps = {
 };
 
 export const Text = styled.span<TextProps>`
-  color: ${p => {
+  color: ${(p) => {
     switch (p.format) {
-      case 'Extended':
+      case "Extended":
         return p.theme.colors.red;
-      case 'Hyperspace':
+      case "Hyperspace":
         return p.theme.colors.blue;
-      case 'Epic':
+      case "Epic":
         return p.theme.colors.yellow;
     }
   }};
@@ -30,13 +30,13 @@ export const Text = styled.span<TextProps>`
 `;
 
 export const Icon = styled(FontAwesomeIcon)<TextProps>`
-  color: ${p => {
+  color: ${(p) => {
     switch (p.format) {
-      case 'Extended':
+      case "Extended":
         return p.theme.colors.red;
-      case 'Hyperspace':
+      case "Hyperspace":
         return p.theme.colors.blue;
-      case 'Epic':
+      case "Epic":
         return p.theme.colors.yellow;
     }
   }};

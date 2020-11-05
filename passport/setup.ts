@@ -1,7 +1,6 @@
-import expressSession from 'cookie-session';
-import passport from 'passport';
-
-import { facebook, google } from './providers';
+import expressSession from "cookie-session";
+import passport from "passport";
+import { facebook, google } from "./providers";
 
 passport.serializeUser((user: any, done) => {
   done(null, { ...user });
@@ -15,11 +14,11 @@ passport.deserializeUser(async (serializedUser, done) => {
 });
 
 const newExpressSession = expressSession({
-  secret: 'nix',
+  secret: "nix",
   overwrite: true,
 });
 
-export default app => {
+export default (app: any) => {
   app.use(newExpressSession);
   app.use(passport.initialize());
   app.use(passport.session());

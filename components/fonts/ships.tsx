@@ -1,15 +1,16 @@
-import React from 'react';
-
-import { shipIcons } from '../../helpers/icon';
-import { XWingShip } from './styles';
+import React from "react";
+import { shipIcons } from "../../helpers/icon";
 
 type Props = {
   icon: string;
-  style?: React.CSSProperties;
+  color?: string;
+  className?: string;
 };
 
-export const ShipFont = ({ icon, style }: Props) => {
-  return <XWingShip style={{ ...style }}>{shipIcons(icon)}</XWingShip>;
-};
+export const ShipFont = ({ icon, color, className }: Props) => (
+  <span className={`font-ships text-md ${className}`} style={{ color }}>
+    {shipIcons(icon)}
+  </span>
+);
 
 export default ShipFont;

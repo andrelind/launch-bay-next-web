@@ -1,5 +1,4 @@
-import { call, select, takeEvery } from 'redux-saga/effects';
-
+import { call, select, takeEvery } from "redux-saga/effects";
 import {
   ADD_SHIP,
   ADD_SQUADRON,
@@ -16,11 +15,11 @@ import {
   SET_UPGRADE,
   TOGGLE_FAVOURITE_SQUADRON,
   TOGGLE_FORMAT_SQUADRON,
-} from '../../actions/squadrons';
-import { setSquadron } from '../../api/squadron';
-import { UserState } from '../../reducers/user';
-import { AppState } from '../../store/state';
-import { SquadronXWS } from '../../types';
+} from "../../actions/squadrons";
+import { setSquadron } from "../../api/squadron";
+import { UserState } from "../../reducers/user";
+import { AppState } from "../../store/state";
+import { SquadronXWS } from "../../types";
 
 const getUser = (state: AppState) => state.app.user || {};
 const getSquadronXws = (state: AppState) => state.app.xws;
@@ -33,19 +32,23 @@ function* setSquad(action: any): any {
     // console.log('SET SQUADRON', action);
 
     const squadrons: SquadronXWS[] = yield select(getSquadronXws);
+    if (!squadrons.length) {
+      return;
+    }
+
     const uid =
       action.type === COPY_SQUADRON
         ? squadrons[squadrons.length - 1].uid
         : action.squadronUid || squadrons[squadrons.length - 1].uid;
 
     if (!uid) {
-      console.log('SET SQUADRON: UID NOT FOUND', uid);
+      console.log("SET SQUADRON: UID NOT FOUND", uid);
       return;
     }
 
-    const squadron: SquadronXWS = squadrons.filter(s => s.uid === uid)[0];
+    const squadron: SquadronXWS = squadrons.filter((s) => s.uid === uid)[0];
     if (!squadron) {
-      console.log('SET SQUADRON: NOT FOUND', uid);
+      console.log("SET SQUADRON: NOT FOUND", uid);
       return;
     }
 
@@ -64,7 +67,7 @@ function* setSquad(action: any): any {
       // Success
       // console.log('SET SQUADRON: SUCCESS');
     } else {
-      console.log('SET SQUADRON: FAILED', result);
+      console.log("SET SQUADRON: FAILED", result);
     }
   } catch (e) {
     console.error(e);

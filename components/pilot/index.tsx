@@ -1,118 +1,69 @@
-import React from 'react';
-import { View } from 'react-native';
-
-import conditionData from '../../assets/data/conditions';
-import { Pilot, ShipType } from '../../types';
-import Actions from '../actions';
-import Dial from '../dial';
-import Error from '../error';
-import FormattedText from '../formatted-text';
-import ShipStats from '../ship-stats';
-import {
-  Block,
-  Count,
-  Icon,
-  MiddleWrapper,
-  Name,
-  NameWrapper,
-  ShipIcon,
-  ShipText,
-  ShipWrapper,
-  SlotWrapper,
-} from './styles';
+import React from "react";
+import conditionData from "../../assets/data/conditions";
+import { Pilot } from "../../types";
+import Error from "../error";
+import XwingFont from "../fonts/xwing";
+import FormattedText from "../formatted-text";
+import { Count, SlotWrapper } from "./styles";
 
 type Props = {
   pilot: Pilot;
-  ship?: ShipType;
   count?: number;
-  showDial?: boolean;
   limitWarning?: boolean;
   minimized: boolean;
 };
 
-const PilotComponent = ({
-  pilot,
-  ship,
-  count,
-  showDial = false,
-  limitWarning,
-  minimized,
-}: Props) => {
+const PilotComponent = ({ pilot, count, limitWarning, minimized }: Props) => {
   let errorText;
   if (limitWarning) {
     errorText = `Only ${pilot.limited} allowed in a squadron`;
   }
 
   return (
-    <Block>
-      <NameWrapper>
-        <View style={{ flexDirection: 'row' }}>
-          {minimized && (
-            <View style={{ marginRight: 5 }}>
-              <ShipStats initiative={pilot.initiative} minimized={minimized} />
-            </View>
-          )}
+    <div className="flex flex-1 flex-col">
+      <div className="flex flex-1 flex-row justify-between items-center text-sm ">
+        <div className="flex flex-row items-end">
+          <span className="font-medium text-orange-400 mr-1">
+            {pilot.initiative}
+          </span>
 
-          <Name>
-            {pilot.limited > 0 && `${'•'.repeat(pilot.limited)} `}
+          <span className="font-medium mr-1">
+            {pilot.limited > 0 && `${"•".repeat(pilot.limited)} `}
             {pilot.name.en}
-            {count !== undefined && <Count> ({count})</Count>}
-          </Name>
-        </View>
-        <Name>{pilot.cost}</Name>
-      </NameWrapper>
+          </span>
+          <span className="italic text-gray-400 text-xs">
+            {pilot.caption?.en}
+          </span>
+          {count !== undefined && <Count> ({count})</Count>}
+        </div>
+        <span className="font-medium">{pilot.cost}</span>
+      </div>
 
-      {ship && (
-        <ShipWrapper>
-          <ShipIcon icon={ship.xws} />
-          <ShipText>{ship.name.en}</ShipText>
-        </ShipWrapper>
-      )}
+      <div className="flex flex-row items-center">
+        {pilot.ability && <FormattedText text={pilot.ability.en} />}
+        {!minimized && pilot.text && (
+          <FormattedText text={pilot.text.en} fontStyle="italic" />
+        )}
 
-      {!minimized && (
-        <MiddleWrapper>
-          {ship && (
-            <ShipStats
-              stats={ship.stats}
-              initiative={pilot.initiative}
-              charges={pilot.charges}
-              force={pilot.force}
-              minimized={false}
-            />
-          )}
-          {ship && showDial && <Dial dial={ship.dial} />}
-          {pilot.shipActions && (
-            <Actions minimized={minimized} actions={pilot.shipActions} />
-          )}
-          {!pilot.shipActions && ship && (
-            <Actions minimized={minimized} actions={ship.actions} />
-          )}
-        </MiddleWrapper>
-      )}
+        {pilot.conditions &&
+          pilot.conditions.map((c) => {
+            const condition = conditionData.filter((cc) => cc.xws === c)[0];
+            return (
+              <FormattedText
+                key={c}
+                text={`<strong>${condition.name}:</strong> ${condition.ability}`}
+              />
+            );
+          })}
 
-      {pilot.ability && <FormattedText text={pilot.ability.en} />}
-      {!minimized && pilot.text && (
-        <FormattedText text={pilot.text.en} fontStyle="italic" />
-      )}
-
-      {pilot.conditions &&
-        pilot.conditions.map(c => {
-          const condition = conditionData.filter(cc => cc.xws === c)[0];
-          return (
-            <FormattedText
-              key={c}
-              text={`<strong>${condition.name}:</strong> ${condition.ability}`}
-            />
-          );
-        })}
-
-      <SlotWrapper>
-        {pilot.slots.map((slot, i) => (
-          <Icon key={`${slot}_${i}`} icon={slot} />
-        ))}
-      </SlotWrapper>
+        <SlotWrapper>
+          {pilot.slots.map((slot, i) => (
+            <XwingFont key={`${slot}_${i}`} icon={slot} />
+          ))}
+        </SlotWrapper>
+      </div>
       {errorText && <Error text={errorText} />}
-    </Block>
+    </div>
   );
 };
 
