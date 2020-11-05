@@ -9,7 +9,6 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 import { useSelector } from "react-redux";
-import useDarkMode from "use-dark-mode";
 import { darkgrey, yellow } from "../../assets/colors";
 import SquadronComponent from "../../components/squadron";
 import { factions } from "../../helpers/enums";
@@ -31,8 +30,7 @@ type Props = {
   darkMode: boolean;
 };
 
-const SideBarComponent = ({ darkMode }: Props) => {
-  const { value } = useDarkMode(darkMode);
+const SideBarComponent = ({}: Props) => {
   const jwt = useJWT();
 
   const squadrons = useSelector((s: AppState) =>
@@ -122,7 +120,7 @@ const SideBarComponent = ({ darkMode }: Props) => {
           <div style={{ display: "flex", alignItems: "center" }}>
             <FontAwesomeIcon
               icon={faSun}
-              color={value ? darkgrey : yellow}
+              color={yellow}
               style={{ marginRight: 5, width: 13, height: 13 }}
             />
             {/* <SwitchComponent
@@ -133,7 +131,7 @@ const SideBarComponent = ({ darkMode }: Props) => {
             /> */}
             <FontAwesomeIcon
               icon={faMoon}
-              color={value ? yellow : darkgrey}
+              color={darkgrey}
               style={{ marginLeft: 5, width: 13, height: 13 }}
             />
           </div>

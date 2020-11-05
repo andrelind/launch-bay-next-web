@@ -1,6 +1,5 @@
-import React from 'react';
-
-import { Block, Icon, Text } from './styles';
+import React from "react";
+import { Block, Text } from "./styles";
 
 type Props = {
   text: string;
@@ -9,7 +8,8 @@ type Props = {
 
 const Error = ({ text, textColor }: Props) => (
   <Block>
-    <Icon name="alert-triangle" />
+    {/* <Icon name="alert-triangle" /> */}
+    <span>TRIANGLE</span>
     <Text textColor={textColor}>{text}</Text>
   </Block>
 );

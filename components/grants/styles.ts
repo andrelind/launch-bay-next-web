@@ -1,7 +1,5 @@
-import { ChevronRight } from 'react-feather';
-import styled from 'styled-components';
-
-import XWing from '../fonts/xwing';
+import styled from "styled-components";
+import XWing from "../fonts/xwing";
 
 export const Block = styled.div`
   align-items: flex-end;
@@ -14,11 +12,6 @@ export const Wrapper = styled.div`
   align-items: center;
 `;
 
-export const Arrow = styled(ChevronRight)`
-  color: ${p => p.theme.textSecondary};
-  font-size: 15px;
-`;
-
 export const Icon = styled(XWing)`
   font-size: 15px;
   text-align: center;
@@ -26,7 +19,7 @@ export const Icon = styled(XWing)`
 `;
 
 export const Text = styled.span`
-  color: ${p => p.theme.text};
+  color: ${(p) => p.theme.text};
   font-weight: bold;
   font-size: 15px;
 `;

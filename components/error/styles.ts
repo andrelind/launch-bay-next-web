@@ -1,7 +1,4 @@
-import { AlertTriangle } from 'react-feather';
-import styled from 'styled-components';
-
-import { red } from '../../assets/colors';
+import styled from "styled-components";
 
 export const Block = styled.div`
   flex-direction: row;
@@ -9,11 +6,6 @@ export const Block = styled.div`
   margin-top: 5px;
   margin-left: 5px;
   margin-right: 15px;
-`;
-
-export const Icon = styled(AlertTriangle)`
-  color: ${red};
-  font-size: 20px;
 `;
 
 type Props = {

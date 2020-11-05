@@ -222,6 +222,8 @@ const EditPage: NextPage<Props> = ({ uid }) => {
                     IndicatorSeparator: null,
                     DropdownIndicator: null,
                   }}
+                  isSearchable={false}
+                  readOnly
                   instanceId={"changePilot"}
                   faction={squadron.faction}
                   //@ts-ignore

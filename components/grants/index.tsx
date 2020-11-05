@@ -1,7 +1,7 @@
 import React from "react";
 import { blue, green, pink, purple, red, yellow } from "../../assets/colors";
 import { Difficulty, Grant } from "../../types";
-import { Arrow, Block, Icon, Text, Wrapper } from "./styles";
+import { Block, Icon, Text, Wrapper } from "./styles";
 
 type Props = {
   grants: Grant[];
@@ -57,7 +57,7 @@ const GrantsComponent = ({ grants }: Props) => {
                 icon={grant.action.type}
                 color={colorForDifficulty(grant.action.difficulty)}
               />
-              {grant.action.linked && <Arrow />}
+              {grant.action.linked && " -> "}
               {grant.action.linked && (
                 <Icon
                   icon={grant.action.linked.type}

@@ -8,7 +8,6 @@ import {
   ContentWrapper,
   FactionIcon,
   FavButton,
-  FavIcon,
   Pilots,
   Points,
   RowWrapper,
@@ -77,7 +76,8 @@ const SquadronComponent = ({ squadron, toggleFavouriteSquad }: Props) => {
               // hitSlop={{ top: 10, left: 10, bottom: 10, right: 10 }}
               onClick={toggleFavouriteSquad}
             >
-              <FavIcon favourite={squadron.favourite} name={"star"} />
+              {/* <FavIcon favourite={squadron.favourite} name={"star"} /> */}
+              STAR
             </FavButton>
           )}
         </RowWrapper>

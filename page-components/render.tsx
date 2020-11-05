@@ -82,6 +82,8 @@ export const renderHardpoint = (
         IndicatorSeparator: null,
         DropdownIndicator: null,
       }}
+      isSearchable={false}
+      readOnly
       instanceId={`hardpointPicker`}
       key={`hardpointPicker`}
       placeholder={"Hardpoint"}
@@ -160,6 +162,8 @@ export const renderUpgrade = (
         IndicatorSeparator: null,
         DropdownIndicator: null,
       }}
+      isSearchable={false}
+      readOnly
       instanceId={`selectUpgrade_${index}`}
       key={`${value.slot}_${index}`}
       placeholder={value.slot}

@@ -1,4 +1,3 @@
-import { Star } from "react-feather";
 import styled from "styled-components";
 import { xfade } from "../../components/sidebar/styles";
 import XWing from "../fonts/xwing";
@@ -64,14 +63,4 @@ export const Pilots = styled.span`
 
 export const FavButton = styled.button`
   margin-left: 5px;
-`;
-
-type Props = {
-  favourite: boolean;
-};
-
-export const FavIcon = styled(Star)<Props>`
-  color: ${(p) => (p.favourite ? p.theme.favourite : p.theme.nonFavourite)};
-  background-color: transparent;
-  font-size: 18px;
 `;
