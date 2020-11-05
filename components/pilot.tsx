@@ -40,7 +40,7 @@ const PilotComponent = ({ pilot, count, limitWarning, minimized }: Props) => {
         <span className="font-medium">{pilot.cost}</span>
       </div>
 
-      <div className="flex flex-row items-center">
+      <div className="flex flex-row items-center hidden sm:block">
         {pilot.ability && <FormattedText text={pilot.ability.en} />}
         {!minimized && pilot.text && (
           <FormattedText text={pilot.text.en} fontStyle="italic" />

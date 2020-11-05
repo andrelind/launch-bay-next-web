@@ -61,24 +61,28 @@ const Unit = ({
           </div>
         </div>
 
-        <ShipStats
-          initiative={minimized ? undefined : ship.pilot.initiative}
-          engagement={ship.pilot.engagement}
-          stats={ship.stats}
-          force={ship.pilot.force}
-          charges={ship.pilot.charges}
-          minimized={minimized}
-        />
-
-        {ship.pilot && ship.pilot.shipActions && (
-          <ActionsComponent
+        <div className="hidden sm:block">
+          <ShipStats
+            initiative={minimized ? undefined : ship.pilot.initiative}
+            engagement={ship.pilot.engagement}
+            stats={ship.stats}
+            force={ship.pilot.force}
+            charges={ship.pilot.charges}
             minimized={minimized}
-            actions={ship.pilot.shipActions}
           />
-        )}
-        {ship.pilot && !ship.pilot.shipActions && (
-          <ActionsComponent minimized={minimized} actions={ship.actions} />
-        )}
+        </div>
+
+        <div className="hidden sm:block">
+          {ship.pilot && ship.pilot.shipActions && (
+            <ActionsComponent
+              minimized={minimized}
+              actions={ship.pilot.shipActions}
+            />
+          )}
+          {ship.pilot && !ship.pilot.shipActions && (
+            <ActionsComponent minimized={minimized} actions={ship.actions} />
+          )}
+        </div>
       </div>
       <div className="font-medium text-sm text-right self-start lg:self-center">
         {ship.pointsWithUpgrades} points

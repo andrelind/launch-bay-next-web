@@ -22,7 +22,11 @@ const styles = (theme: ThemeInterface) => ({
     display: "flex",
     flex: 1,
   }),
-  input: (styles: any) => ({ ...styles, color: theme.text }),
+  input: (styles: any) => ({
+    ...styles,
+    color: theme.text,
+    padding: "2px 4px",
+  }),
   menu: (styles: any) => ({
     ...styles,
     zIndex: 999,
@@ -32,6 +36,11 @@ const styles = (theme: ThemeInterface) => ({
     ...styles,
     color: theme.text,
     marginLeft: 0,
+    padding: "2px 4px",
+  }),
+  valueContainer: (styles: any) => ({
+    ...styles,
+    padding: "2px 4px",
   }),
   option: (styles: any, { isDisabled, isFocused, isSelected }: any) => ({
     ...styles,
@@ -43,14 +52,12 @@ const styles = (theme: ThemeInterface) => ({
       ? theme.menuText
       : theme.text,
     cursor: isDisabled ? "not-allowed" : "pointer",
-    // display: 'flex',
-    // flex: 1,
+    padding: "2px 4px",
   }),
   singleValue: (styles: any) => ({
     ...styles,
     color: theme.text,
-    // display: 'flex',
-    // flex: 1,
+    padding: "2px 4px",
   }),
 });
 

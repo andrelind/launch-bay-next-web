@@ -245,7 +245,7 @@ const EditPage: NextPage<Props> = ({ uid }) => {
                 <div className="mt-1"></div>
               </div>
 
-              <div className="mt-1 grid grid-cols-1 gap-1 sm:grid-cols-2 lg:grid-cols-4">
+              <div className="mt-1 grid grid-cols-2 gap-1 sm:grid-cols-2 lg:grid-cols-4">
                 {upgrades.map((upgrade, index) => (
                   <div key={uuid()}>
                     {renderUpgrade(upgrade, squadron, s, minimized, index)}
@@ -283,6 +283,8 @@ const EditPage: NextPage<Props> = ({ uid }) => {
       <div className="my-2 bg-white rounded-lg shadow px-5 py-4 sm:px-6">
         <Select
           components={{ Option, IndicatorSeparator: null }}
+          isSearchable={false}
+          readOnly
           instanceId={"selectShip"}
           faction={squadron.faction}
           placeholder={"Add ship"}
@@ -295,6 +297,8 @@ const EditPage: NextPage<Props> = ({ uid }) => {
         {shipBase && (
           <Select
             components={{ Option: PilotOption, IndicatorSeparator: null }}
+            isSearchable={false}
+            readOnly
             instanceId={"selectPilot"}
             faction={squadron.faction}
             placeholder={"Select pilot"}

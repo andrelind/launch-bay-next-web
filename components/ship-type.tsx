@@ -29,11 +29,11 @@ export const ShipTypeComponent: FC<Props> = ({
         </span>
       </div>
 
-      <div className="flex flex-row justify-between items-center">
+      <div className="flex flex-row justify-between items-center hidden sm:block">
         <ShipStats stats={shipType.stats} minimized={minimized} />
       </div>
 
-      <div className="flex flex-row items-center">
+      <div className="flex flex-row items-center hidden sm:block">
         {shipType.pilots.length > 0 &&
           shipType.pilots
             .sort((a, b) => a.initiative - b.initiative)[0]

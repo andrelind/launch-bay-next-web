@@ -47,7 +47,7 @@ const UpgradeComponent = ({
 
       <div className="flex flex-1 flex-col justify-center mx-1">
         <div className="flex flex-row items-center">
-          <span className="text-sm font-medium">
+          <span className="text-xs sm:text-sm font-medium break-words">
             {upgrade.limited > 0 && `${"•".repeat(upgrade.limited)} `}
             {upgradeSide.title.en}
             {count !== undefined && (
@@ -56,7 +56,7 @@ const UpgradeComponent = ({
           </span>
 
           {force && (
-            <div className="flex flex-row items-center ml-1">
+            <div className="flex flex-row items-center ">
               <XwingFont icon="Force Power" color={purple} />
               {force.recovers === 1 && (
                 <XwingFont icon="recurring" color={purple} />
