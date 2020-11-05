@@ -1,4 +1,4 @@
-import { AppProps } from "next/app";
+import App, { AppContext, AppProps } from "next/app";
 import React, { FC } from "react";
 import { ThemeProvider } from "styled-components";
 import themes, { GlobalStyles } from "../page-components/theme";
@@ -25,6 +25,11 @@ const LaunchBayNextApp: FC<Props> = ({ Component, pageProps }) => {
       <Component {...pageProps} />
     </ThemeProvider>
   );
+};
+
+// @ts-ignore
+LaunchBayNextApp.getInitialProps = async (ctx: AppContext) => {
+  return App.getInitialProps(ctx);
 };
 
 // @ts-ignore

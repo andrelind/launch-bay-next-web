@@ -335,12 +335,9 @@ EditPage.getInitialProps = async ({ store, query, req }) => {
   // console.log(ctx);
 
   const appStore: Store<AppState, AnyAction> = store;
-  console.log({ appStore });
-  const { dispatch } = appStore;
-  const state = appStore.getState?.();
-  if (!state) {
-    console.log("No state");
-  }
+
+  const { getState, dispatch } = appStore;
+  const state = getState();
 
   // @ts-ignore
   if (req && req.user) {
