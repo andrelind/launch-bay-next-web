@@ -977,8 +977,8 @@ const t: ShipType = {
       epic: true,
     },
     {
-      xws: 'nimichereen',
-      name: { en: 'Nimi Chereen' },
+      xws: 'nimichireen',
+      name: { en: 'Nimi Chireen' },
       caption: { en: 'Hopeful Hero' },
       cost: 49,
       initiative: 2,
