@@ -91,24 +91,6 @@ const t: ShipType = {
         zh:
           'Before you would be dealt a faceup damage card, you may spend 1 [Charge] to be dealt the card facedown instead.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_71.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/bad2dccf469b966568faaf761410c6d4.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/e2b67228ffea64c799ed0b54b9ff90cd.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/6fdd803452ab88159c554cd878bafc0a.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/11c02c8bf4f7ee4c5dc8a0678e402152.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/6063004a362ae9cdda6e3dab91bc3a2c.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/0aa4762cc50dc659ccb3281faf6d44ee.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_71.png',
-      },
       charges: { value: 1, recovers: 1 },
       slots: [
         'Talent',
@@ -169,24 +151,6 @@ const t: ShipType = {
         zh:
           'After you roll dice, if you are at range 0-1 of an obstacle, you may reroll all of your dice. This does not count as rerolling for the purpose of other effects.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_69.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/5621f3ec29c455552aeb1566cc3bd732.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/ac4d9ba7cb616529bdc7b8cfb91ffca3.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/3d44c56992e2545af6e18e43c5886367.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/30ecf84c44caa5130a095f7d624b892e.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/06dfba1c231ea1fa5aaccc2500052352.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/854534bc8544f7790210f63c4f4283fc.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_69.png',
-      },
       slots: [
         'Talent',
         'Missile',
@@ -246,24 +210,6 @@ const t: ShipType = {
         zh:
           'After you fully execute a blue maneuver, you may choose a friendly ship at range 0-3. That ship may perform an action.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_70.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/7ce30b34346c2ac19e6e32ce3ecd1748.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/9efa027f14a1af6eb2a5353a501edfa6.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/d2ca8f83181d48d03a3b7850e917314d.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/18da8ae8c2f4bcb5b59c57b76387c47e.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/50ed29c2a5fe5c9b40f97567066f4b32.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/520376b15af2785ff4fadf6d3df4ca15.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_70.png',
-      },
       slots: [
         'Talent',
         'Missile',
@@ -312,24 +258,6 @@ const t: ShipType = {
           'Conhecido por sua durabilidadee modularidade, a YT-1300 é um doscargueiros mais populares, mais usadose mais extensivamente personalizadosda galáxia.',
         zh:
           'Known for its durability and modular design, the YT-1300 is one of the most popular, widely used, and extensively customized freighters in the galaxy.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_72.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/d714059dc146652b2c363ef24f800fad.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/935bad398f5829a71d1664ac28e40471.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/7d329231ba1429c3e93772b6707de779.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/92477943de370c2fb37566193411d39e.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/0ce2d2eb04c5383f1ee99c2d6177b0cb.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/8b38e896e30956964f6ee8f9cdb62ab7.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_72.png',
       },
       slots: [
         'Missile',
@@ -405,24 +333,6 @@ const t: ShipType = {
       ffg: 630,
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/dc207b5c5f00a98e0fad8dc3905373f9.jpg',
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/677d75036109127dc27d524b902b35ae.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/9edbbf347961bd65fd5a8249a855123b.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/518c65e92623251c4b54e20df42e3587.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/58072c0de8845c85ee5c12296550a4cb.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/677d75036109127dc27d524b902b35ae.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/677d75036109127dc27d524b902b35ae.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/677d75036109127dc27d524b902b35ae.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/677d75036109127dc27d524b902b35ae.png',
-      },
     },
   ],
 };

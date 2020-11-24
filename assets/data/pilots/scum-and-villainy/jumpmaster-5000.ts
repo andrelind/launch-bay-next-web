@@ -87,24 +87,6 @@ const t: ShipType = {
         zh:
           'Built for long-distance reconnaissance and plotting new hyperspace routes, the lightly armed JumpMaster 5000 is often extensively retrofitted with custom upgrades.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_217.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/812c323d91b76ce584c0142e4269e2a0.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/7192d1898bad2d4cfdecea52af0dd9cd.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/6c9f4a92e37ad366f055fd456e72d5f7.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/2b41b7935aeaf8cd2eae4cde39d09e2b.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/3785481b0638626e342e6f380a8e0a52.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/c1dad2b9fc85a87554dbf8448c5b50e4.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_217.png',
-      },
       slots: [
         'Cannon',
         'Torpedo',
@@ -162,24 +144,6 @@ const t: ShipType = {
           'Após defender, se o atacante estiver em seu [Front Arc], você pode gastar 1 ￼ para realizar umataque bônus contra o atacante.',
         zh:
           'After you defend, if the attacker is in your [Front Arc], you may spend 1 [Charge] to perform a bonus attack against the attacker.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_214.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/a9f15fbd73576c82731e69effa9bce60.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/33b5bf89551cc00713aafbe27c8ce1ec.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/76c966cbe6f0d5067201bc3c7e5f6793.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/b842e3b69c33b6cb97a17c4054f86025.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/169e0080a39483d6bccecb60d12816a6.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/7c6c8e4f759500d277d75ae4b7dc0874.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_214.png',
       },
       alt: [
         {
@@ -248,24 +212,6 @@ const t: ShipType = {
         zh:
           'At the start of the Engagement Phase, you may choose a friendly ship at range 0-1. If you do, transfer all green tokens assigned to you to that ship.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_215.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/81c6d543a00d5175c6c2eb3337516637.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/f518f4a0ba950daff5ad6dfc25911d0d.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/ce124e7092c8efaf5877262cb86de5fd.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/11770f1997a6c4510c2879dedcd32bca.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/cc4d0844602930ff5e193dae679b58ce.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/e4bb1cc68ddeaf739bd3bec92613e0eb.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_215.png',
-      },
       slots: [
         'Talent',
         'Cannon',
@@ -324,24 +270,6 @@ const t: ShipType = {
           'Se for ser destruído, você pode gastar 1 ￼. Se fizer isso, em vez de ser destruído, descarte todas as suas cartas de dano, sofra 5 danos [Hit], e coloque-se na reserva. No início da próxima Fase de Planejamento, posicione-se dentro de alcance 1 da sua borda de jogador.',
         zh:
           'If you would be destroyed, you may spend 1 [Charge]. If you do, discard all of your damage cards, suffer 5 [Hit] damage, and place yourself in reserves instead. At the start of the next Planning Phase, place yourself within range 1 of your player edge.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_216.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/6f75cdff8b84f45482afabe74d4a3519.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/977dab9259ca862d805a996bec0642f2.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/469538860db79c32b2ab5754d3c034bd.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/7dfe5f75ad757f17b5f670d9b8d128ec.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/d3b438394cfe150a18b4f0127a2738ff.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/8d015cf69122f80dc4e27bba775ac344.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_216.png',
       },
       charges: { value: 1, recovers: 0 },
       slots: [
@@ -417,24 +345,6 @@ const t: ShipType = {
       hyperspace: true,
       epic: true,
       ffg: 637,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/4a13a4b7493d39f53b9c37c6a82edf5a.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/3535e1be587a80dc5d7a4bff6a5311d8.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/b8b53968ab4fa98dfe3f865433e2d76b.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/157ba530a061ac677bb2abb433446b72.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/4a13a4b7493d39f53b9c37c6a82edf5a.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/4a13a4b7493d39f53b9c37c6a82edf5a.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/4a13a4b7493d39f53b9c37c6a82edf5a.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/4a13a4b7493d39f53b9c37c6a82edf5a.png',
-      },
     },
   ],
 };

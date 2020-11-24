@@ -47,7 +47,7 @@ const t: ShipType = {
       name: { en: 'Syndicate Smugglers' },
       text: {
         en:
-          'Vessels like the C-ROC Cruiser allow criminal operations across the Outer Rim to move massive amounts of illicit materials, or project power to bully small colonies into compliance.',
+          'Vessels like the C-ROC Cruiser allow criminal operations across the Outer Rim to move massive amounts of illicit materials, or project power that can bully small colonies into compliance.',
       },
       initiative: 7,
       engagement: 1,
@@ -55,7 +55,6 @@ const t: ShipType = {
       cost: 58,
       xws: 'syndicatesmugglers',
       slots: [
-        'Command',
         'Hardpoint',
         'Crew',
         'Crew',
@@ -65,9 +64,11 @@ const t: ShipType = {
         'Illicit',
         'Title',
         'Configuration',
+        'Command',
       ],
       hyperspace: false,
       epic: true,
+      ffg: 713,
     },
   ],
 };

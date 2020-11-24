@@ -44,24 +44,6 @@ const t: UpgradeBase[] = [
           maxrange: 1,
           ordnance: true,
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_33.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/ea591bb09b5eb3946c7a09a28c2a8fea.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_33.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/9d5a80e7f6206c2412df860e91dd7877.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/68389c43cc548b2ee8ca6e3e02c55f35.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/2657b3c1d6f67e10dc56435f0344aca4.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/e1c1d146248f0b968237e958c23c6a89.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_33.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_33.jpg',
         ffg: 262,
@@ -114,31 +96,13 @@ const t: UpgradeBase[] = [
           maxrange: 3,
           ordnance: true,
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_34.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/523b19893077fd1bc4ade482f23405b1.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_34.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/87e16c2e6afa7180bded2103db6edaf9.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/a4bcc8c7b25392fbf8fe6c36eedaf3f2.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/59391bce9bc734d2b8ffae59b6606fcb.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/c824ebf54c2582a39fe63be1c8ca2539.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_34.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_34.jpg',
         ffg: 263,
       },
     ],
-    cost: { value: 5 },
-    hyperspace: false,
+    cost: { value: 4 },
+    hyperspace: true,
     epic: true,
   },
   {
@@ -175,24 +139,6 @@ const t: UpgradeBase[] = [
           zh:
             '攻击([Lock])：花费1[Charge]。将掷骰结果的1[Hit]变为[Critical Hit]。',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_35.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/034cc9b6733bc93e4de047f3576f0f0e.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_35.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/43503727a401f971ef180641fee5e3e2.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/444fc7b4df39065d82dc87cda510ce0b.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/3790cd0f30f61e15722b1c9d73a8611c.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/24609a65cc27c3bad5d387191fe8fb3c.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_35.png',
-        },
         slots: ['Torpedo'],
         charges: { value: 2, recovers: 0 },
         attack: {
@@ -207,7 +153,7 @@ const t: UpgradeBase[] = [
         ffg: 264,
       },
     ],
-    cost: { value: 13 },
+    cost: { value: 12 },
     hyperspace: true,
     epic: true,
   },
@@ -245,24 +191,6 @@ const t: UpgradeBase[] = [
           zh:
             'Attack ([Lock]): Spend 1 [Charge]. During the Neutralize Results step, [Critical Hit] results are canceled before [Hit] results. After this attack hits, the defender loses 1 shield.',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/60fb85c3782c235904678bac8a106150.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/3eae6fca93289ebfa2c435d3e7c687f6.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/4a56b5df27ab8b3e46aec51b1e9efe92.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/221380d536b47818e83e982ff4f29c59.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/60fb85c3782c235904678bac8a106150.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/60fb85c3782c235904678bac8a106150.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/60fb85c3782c235904678bac8a106150.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/60fb85c3782c235904678bac8a106150.png',
-        },
         slots: ['Torpedo'],
         charges: { value: 2, recovers: 0 },
         attack: {
@@ -277,8 +205,8 @@ const t: UpgradeBase[] = [
         ffg: 579,
       },
     ],
-    cost: { value: 8 },
-    hyperspace: true,
+    cost: { value: 7 },
+    hyperspace: false,
     epic: true,
   },
 ];

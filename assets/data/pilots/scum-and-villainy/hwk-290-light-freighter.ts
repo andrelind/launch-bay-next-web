@@ -98,24 +98,6 @@ const t: ShipType = {
         zh:
           'After an enemy ship at range 0-3 receives at least 1 ion token, you may spend 3 [Charge]. If you do, that ship gains 2 additional ion tokens.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_174.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/28987e64a694424e8545b8eb0ecaaae6.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/821f0f77547dbfd1c983e25366d93449.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/87e0003bce8b2594a39c47ff5f8588f6.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/c7d9a7cad094f342698937cd76d692fa.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/2d69f9b265e5cc5bb280770267427eec.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/359da9fb9b615191318bcf85aa39130a.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_174.png',
-      },
       charges: { value: 3, recovers: 1 },
       slots: [
         'Talent',
@@ -175,24 +157,6 @@ const t: ShipType = {
         zh:
           'At the start of the Engagement Phase, you may choose 1 enemy ship in your firing arc at range 0-2. If you do, transfer 1 focus or evade token from that ship to yourself.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_175.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/15a8171966f840c5a3ca1e3d3737063e.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/9a62b9d7b223059e496954b2a63ad06a.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/afa9c3245d82c28e5d07f94ed0577862.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/525d8d1571b7a2be4f1c438edb6e8c2e.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/a3ea611e88f80a9691cc4c85991d5962.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/d4bcf473ead162195bc6427f62b69fa4.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_175.png',
-      },
       slots: [
         'Talent',
         'Crew',
@@ -240,24 +204,6 @@ const t: ShipType = {
           'Apesar de ter espaço de carga limitadose comparada com outros cargueirosleves, a pequena e ágil HWK-290 é uma das escolhas de contrabandistas especializados em transportar bens preciosos discretamente.',
         zh:
           'Though its cargo space is limited compared to other light freighters, the small, swift HWK-290 is a favorite choice of smugglers who specialize in discreetly transporting precious goods.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_177.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/b4b10125765531d01cc70fdc0043687c.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/5add3fd64a37a42f2f3787544c69bcf4.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/2d22b761d9e2657fbf7de5995a3cf3ef.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/a06f189be752184253bd2478973254a4.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/667debba71f677e7a83212e0847df39f.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/9240853badcb3fcdc3f4c897297235a9.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_177.png',
       },
       slots: [
         'Crew',
@@ -315,24 +261,6 @@ const t: ShipType = {
           'No início da Fase de Engajamento, você pode escolher 1 nave em seu arco de tiro. Se fizer isso, a nave escolhida engaja com iniciativa 0 em vez de seu valor normal de iniciativa nesta rodada.',
         zh:
           'At the start of the Engagement Phase, you may choose 1 ship in your firing arc. If you do, that ship engages at initiative 0 instead of its normal initiative value this round.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_176.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/1966d8d5a706e2558ea7a274ffd0c6c5.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/ad6994d793f19c513745560dd2a93b7f.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/46ba8e2e976e9bdf80e0e0dab61289f8.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/7f3be92637536f62a90dabf4b796a0f5.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/9dbae4b227072938330e5e1b789c2cbd.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/ba6f6f044bd39b3cc051cb591c6b62d8.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_176.png',
       },
       slots: [
         'Crew',

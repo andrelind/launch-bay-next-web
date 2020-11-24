@@ -113,7 +113,7 @@ const t: ShipType = {
       },
       initiative: 5,
       limited: 1,
-      cost: 64,
+      cost: 62,
       xws: 'corranhorn',
       ability: {
         en:
@@ -132,24 +132,6 @@ const t: ShipType = {
           'Em iniciativa 0, você pode realizar um ataque primário bônus contra uma nave inimiga em seu [Bullseye Arc]. Se fizer isso, no início da próxima Fase de Planejamento, receba 1 ficha de desarmamento. Sensores Experimentais:Você consegue travar miras alémde alcance 3. Você não podetravar miras em alcance 1.',
         zh:
           'At initiative 0, you may perform a bonus primary attack against an enemy ship in your [Bullseye Arc]. If you do, at the start of the next Planning Phase, gain 1 disarm token.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_50.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/81750f54d65768bc44ceeaedb7bb631e.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/5c45899b8fa868dae5317b6cfe13b706.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/f3a6076774facd4e56292c5e86ea7da7.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/afeacdc25a1916a535c0319fa5525214.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/03dfeff4c4b898ac2f08bc393b5584f6.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/c0057bea13a9903387bc3bc96beaa37f.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_50.png',
       },
       slots: ['Talent', 'Sensor', 'Torpedo', 'Astromech', 'Modification'],
       artwork:
@@ -201,24 +183,6 @@ const t: ShipType = {
         zh:
           'While a friendly ship performs an attack, if the defender is in your [Front Arc], the attacker may change 1 [Hit] result to a [Critical Hit] result.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_51.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/2f789dacc652cdabf45e0030a5fd6b1c.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/072043b04c48c0cc1de2d574e3e5bcf7.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/5da386a4b724fb567b50a8edb249b69b.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/e61e15d3ced27e780e6af4c1a1586b36.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/65084d96a88c72dd58a6093c7f5646ea.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/a07d9565810e5c73e01900d3715bceb6.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_51.png',
-      },
       slots: ['Talent', 'Sensor', 'Torpedo', 'Astromech', 'Modification'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_51.jpg',
@@ -259,24 +223,6 @@ const t: ShipType = {
         zh:
           'Designed to combine the best features of the X-wing series with the A-wing series, the E-wing boasts superior firepower, speed, and maneuverability.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_53.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/f41d3e7edf37e5af12f66d33d42be6cb.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/d21c142fd9301cc9677da00889087dea.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/e909ffeb3f417e7f55b16f18d6034e68.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/fcb46a03529cb2131985036654cb5469.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/a9be021d903ff773973d71e8f9dc3027.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/5e69bda3c0425abf26c101ffd333fd07.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_53.png',
-      },
       slots: ['Sensor', 'Torpedo', 'Astromech', 'Modification'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_53.jpg',
@@ -315,24 +261,6 @@ const t: ShipType = {
           'Os pilotos de elite do Esquadrão Rogue estão entre os melhores da Rebelião.',
         zh:
           "The elite pilots of Rogue Squadron are among the Rebellion's very best.",
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_52.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/b5ffcc833cead8e7e18f5e0d93b0ed0e.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/fc392e278ed733b9a17d64040b0f8121.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/c7f2d7f6048e08c91eb9c68d1381dd60.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/bd089496a993b0c63d7c20df3e84de43.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/579509eb922723f0e92dc7c661b70dfc.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/8f6d5f51a679d337ae6043f9128b0451.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_52.png',
       },
       slots: ['Talent', 'Sensor', 'Torpedo', 'Astromech', 'Modification'],
       artwork:

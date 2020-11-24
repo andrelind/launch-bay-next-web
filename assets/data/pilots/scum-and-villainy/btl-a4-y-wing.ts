@@ -79,24 +79,6 @@ const t: ShipType = {
         zh:
           "Though far from nimble, the Y-wing's heavy hull, substantial shielding, and turret-mounted cannons make it an excellent patrol craft.",
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_168.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/fe0569c3baa31b16341bd56ebd1bd252.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/3cfbd8536376381b07daf7a5bddfb6a2.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/08917479e53aab9e0e469fd3c2f69bd7.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/c032beee5d5ba8a32dc7aa0f7a1cb6f8.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/33a684e31fdb0aca1444e5b24ec388f6.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/6b221176f1e2a813b98659be045554c0.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_168.png',
-      },
       slots: [
         'Turret',
         'Torpedo',
@@ -135,7 +117,7 @@ const t: ShipType = {
       },
       initiative: 4,
       limited: 1,
-      cost: 49,
+      cost: 46,
       xws: 'drearenthal',
       ability: {
         en:
@@ -165,24 +147,6 @@ const t: ShipType = {
         'Modification',
         'Gunner',
       ],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_166.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/932ad57e0243ac3a74d2c45e86c6466c.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/90ce0ac769fe6583c28138480b8c139d.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/2828c8c1c78856a7acd99cfb3f2649ec.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/094f22b97a3ea7d61006982a98ece34f.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/0e53c0fa129f51e4b9aa62c805b96f2e.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/5b4b301c9e2f2f1891c9359a4992a94e.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_166.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_166.jpg',
       ffg: 166,
@@ -221,24 +185,6 @@ const t: ShipType = {
           'A mera menção de créditos Imperiaispode atrair uma legião de indivíduosnão-muito-confiáveis para o seu lado.',
         zh:
           'Just the mention of Imperial credits can bring a host of less-than-trustworthy individuals to your side.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_167.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/c7a75ce1e2fc8806923441d49188789d.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/04157c10ff1170a754dacc20c8ab56d6.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/ae1ae797db79de04304724b13fbcffea.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/073617ffbb0e95cf20e3396cf9cd20c7.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/a6bd90992826ee16a5cd2ed8dd461c99.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/7ac31464d56c291ea3695cd1c7e5fc65.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_167.png',
       },
       slots: [
         'Talent',
@@ -298,24 +244,6 @@ const t: ShipType = {
           'Quando realizar um ataque não [Front Arc],role 1 dado de ataque adicional.',
         zh:
           'While you perform a non-[Front Arc] attack, roll 1 additional attack die.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_165.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/0e9200b01d45e8aba7af7dc3180098cd.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/4bcd9589844401471f1498b08f494dc3.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/63b990d5ad9edf465b053660449d0bfb.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/6abbaaac79ab5fd18d9f7abaa1b821b7.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/a7bcddb8dad2eaa66f22ac371cdf7619.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/2fbd374bff4d5b3ca9e6764a29737098.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_165.png',
       },
       slots: [
         'Talent',

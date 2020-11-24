@@ -70,7 +70,7 @@ const t: ShipType = {
       },
       initiative: 3,
       limited: 1,
-      cost: 48,
+      cost: 47,
       xws: 'biggsdarklighter',
       ability: {
         en:
@@ -91,24 +91,6 @@ const t: ShipType = {
           '与你距离为0~1的另一架友方战机进行防御时，在其抵消掷骰结果前，如果你在本次攻击范围内，则你可以承受1[Hit]或1[Critical Hit]伤害来抵消对应的掷骰结果。',
       },
       slots: ['Torpedo', 'Astromech', 'Modification', 'Configuration'],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_7.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/62953914bf7b56cd7885066e31431d15.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/f6aa0bdd8098cb141e8cf63ab66a51df.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/5907804728816928ab400f042da31b98.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/89ddb23b9701aa9e96b3712b3de258a5.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/6dd63f02cb79f6900e783d8099c231cd.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/0d2d955660e1c0a40595bd043174c3e0.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_7.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_7.jpg',
       ffg: 7,
@@ -128,7 +110,7 @@ const t: ShipType = {
       },
       initiative: 2,
       limited: 0,
-      cost: 40,
+      cost: 38,
       xws: 'bluesquadronescort',
       text: {
         en:
@@ -147,24 +129,6 @@ const t: ShipType = {
           'Projetada pela Incom Corporation,a X-wing T-65 se mostrou rapidamenteser um dos veículos militares mais efetivosda galáxia e uma dádiva para a Rebelião.',
         zh:
           '英康公司设计的T-65X翼战机一跃成为整个星系最高效、用途多样的交通工具，为反抗军同盟大大地提供了便利。',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_11.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/08591fff100ec6129bc8cd89c45a228a.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/5fee1d1af508e4a2e6eafecdc51e13ef.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/56929a4e7cc5908c577db9a54d066b4b.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/5d235464318a46b6bda537ca94682140.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/77c31fdcd9d8da25d067124793c16647.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/2e8aaa5b3030820dd3edee9d30b06422.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_11.png',
       },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_11.jpg',
@@ -193,7 +157,7 @@ const t: ShipType = {
       },
       initiative: 1,
       limited: 0,
-      cost: 39,
+      cost: 38,
       xws: 'cavernangelszealot',
       text: {
         en:
@@ -220,24 +184,6 @@ const t: ShipType = {
         'Modification',
         'Configuration',
       ],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_12.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/e0ae73a6f777e3d50c45015e0427795f.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/f5747a0aceac3877a02658c2200cb43f.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/b34dd4d59d8abe842305b74a515401f8.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/33da2746f38f173ce5d732ed5bbd785c.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/d64dfbe76047c9250de3d5a1e9cfe97e.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/d9b2cae1266dca4701005889d64ab9e2.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_12.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_12.jpg',
       ffg: 12,
@@ -267,7 +213,7 @@ const t: ShipType = {
       },
       initiative: 2,
       limited: 1,
-      cost: 43,
+      cost: 42,
       xws: 'edriotwotubes',
       ability: {
         en:
@@ -284,24 +230,6 @@ const t: ShipType = {
         pt: 'Antes de ativar, se estiver focado, você pode realizar uma ação.',
         zh:
           'Before you activate, if you are focused, you may perform an action.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_9.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/d89ba64ede34e23d32f6d334e8b503eb.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/b76b8961e82bcea1d24b2ec508174ad8.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/d3c4235c2ea64acfd39ff32fbabe5547.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/c8832d2269b505fb42e58a2ba223d91b.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/9760db41bbb5d5208869073f2d621641.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/18d48b5849518c2863d53fa4a41903f4.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_9.png',
       },
       slots: [
         'Torpedo',
@@ -339,7 +267,7 @@ const t: ShipType = {
       },
       initiative: 4,
       limited: 1,
-      cost: 47,
+      cost: 46,
       xws: 'garvendreis-t65xwing',
       ability: {
         en:
@@ -358,24 +286,6 @@ const t: ShipType = {
           'Após gastar 1 ficha de foco, você pode escolher 1 nave amiga em alcance 1-3.A nave escolhida recebe 1 ficha de foco.',
         zh:
           '在你花费1枚专注标记后，你可以选择1架距离为1~3的友方战机。该战机获得1枚专注标记。',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_4.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/6b717a05687d8aa79fa6d61256fbe3a7.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/a5aa46f8c9e7b9a5f597ea47c842cfa3.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/ea117109a44cd248da4c6bfb30fea7f3.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/b4e75e2d69ff6f3173f4dd3943823b2d.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/5df7a1acdd9844f47acb94562674d40e.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/e00d2d020e88493e349c94174b3c2214.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_4.png',
       },
       slots: [
         'Talent',
@@ -413,7 +323,7 @@ const t: ShipType = {
       },
       initiative: 4,
       limited: 1,
-      cost: 45,
+      cost: 44,
       xws: 'jekporkins',
       ability: {
         en:
@@ -440,24 +350,6 @@ const t: ShipType = {
         'Modification',
         'Configuration',
       ],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_5.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/f1feb5d819c9a9c14025491f10382f85.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/3c8c17433706b139870c151ea89d3362.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/ef75705ae4915e77baf820c9e2c1cd9e.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/9532205c5f0541a1f74a2106f07ec927.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/eed4795306198279c3c4cc036b166f35.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/fa5528a3cb17cc1f478f684a4f7ceb04.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_5.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_5.jpg',
       ffg: 5,
@@ -487,7 +379,7 @@ const t: ShipType = {
       },
       initiative: 4,
       limited: 1,
-      cost: 46,
+      cost: 45,
       xws: 'kullbeesperado',
       ability: {
         en:
@@ -506,24 +398,6 @@ const t: ShipType = {
           'Após realizar uma ação [Barrel Roll] ou [Boost],você pode virar sua carta demelhoria [Configuration] equipada.',
         zh:
           'After you perform a [Barrel Roll] or [Boost] action, you may flip your equipped [Configuration] upgrade card.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_6.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/1a4204479988e293f177311fc5b9b681.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/3408f562504e1983dbf37224f9d81c99.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/529d8b76dc0970a325da0335817513fe.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/accfdf9d18ae9b59a6ad107f6957c12e.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/db5c6bd667f1c7a3185d20acd6486f4b.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/521c2201a2a2be833d9cb3d81fc25d7f.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_6.png',
       },
       slots: [
         'Talent',
@@ -562,7 +436,7 @@ const t: ShipType = {
       },
       initiative: 3,
       limited: 1,
-      cost: 44,
+      cost: 43,
       xws: 'leevantenza',
       ability: {
         en:
@@ -581,24 +455,6 @@ const t: ShipType = {
           'Após realizar uma ação [Barrel Roll] ou [Boost], você pode realizar uma ação vermelha [Evade].',
         zh:
           'After you perform a [Barrel Roll] or [Boost] action, you may perform a red [Evade] action.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_8.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/63bb13bd173d4b5420a278cdfbd2dc57.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/be1178b0c67943676aa4b7993306bbee.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/61992c27a26e63d71a4150aab4b1ba2f.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/329470be57b86287afeea1bd221f71c4.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/36861d5bb1a6c1786e3bb96396e0b4ca.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/66d95a0b1fe24a07794ee515f0dd611c.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_8.png',
       },
       slots: [
         'Talent',
@@ -637,7 +493,7 @@ const t: ShipType = {
       },
       initiative: 5,
       limited: 1,
-      cost: 62,
+      cost: 61,
       xws: 'lukeskywalker',
       ability: {
         en:
@@ -655,24 +511,6 @@ const t: ShipType = {
         pt:
           'Após se tornar o defensor(antes de rolar os dados),você pode recuperar 1 [Force].',
         zh: '作为防御方时(投掷骰子前)，你可以恢复1[Force]。',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_2.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/2047a85380963ed17ddc7551be3c97fc.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/95fd5c357022cbd99ec1d9adf434bb4f.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/a3edf89a6106e5188392df8965235f9e.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/3b3f4726a955bd82bed0dea6bdddf34d.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/84f9d75f940e9077ed67b3e640e9da16.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/7d1fe10cff44aecbfe1e3bb2e9a99a2c.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_2.png',
       },
       force: { value: 2, recovers: 1, side: ['light'] },
       alt: [
@@ -713,7 +551,7 @@ const t: ShipType = {
       },
       initiative: 3,
       limited: 0,
-      cost: 41,
+      cost: 40,
       xws: 'redsquadronveteran',
       text: {
         en:
@@ -739,24 +577,6 @@ const t: ShipType = {
         'Modification',
         'Configuration',
       ],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_10.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/2a2dded5001ba3eb9bb8307807419d14.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/46650778c3a59d546e37b5b912a77bdb.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/0d4a853248eea4af8f83fc816fae2f2d.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/95237ca0ae9b2fdf4e422a5d97e46080.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/98d55d77fe1ec39706683bf705202a7f.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/279b6d56bfe6451c13696d4313ec699d.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_10.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_10.jpg',
       ffg: 10,
@@ -786,7 +606,7 @@ const t: ShipType = {
       },
       initiative: 5,
       limited: 1,
-      cost: 48,
+      cost: 47,
       xws: 'thanekyrell',
       ability: {
         en:
@@ -805,24 +625,6 @@ const t: ShipType = {
           'Quando realizar um ataque,você pode gastar 1 resultado [Focus], [Hit], ou [Critical Hit]para olhar as cartas de danoviradas para baixo do defensor,escolher 1 e virá-la para cima.',
         zh:
           '当你执行一次攻击时，你可以花费掷骰结果中的1[Focus]、1[Hit]或1[Critical Hit]，以此来查看防御方面朝下的伤害卡，选择其中1张并使其暴露。',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_3.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/5fb9ca87b6c6393685c310cde6a9cb9a.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/798014144f7a53d02c968a76a5089b2b.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/c393469aec32f1681229fe7a1f5cafce.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/4b6d9b2c62ad3cd52de6e19054ed69aa.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/fe7232a82e6277e8258d055b6fd1dd43.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/36384b7931819cf27691223d00ca2563.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_3.png',
       },
       slots: [
         'Talent',
@@ -860,7 +662,7 @@ const t: ShipType = {
       },
       initiative: 6,
       limited: 1,
-      cost: 55,
+      cost: 54,
       xws: 'wedgeantilles',
       ability: {
         en:
@@ -885,24 +687,6 @@ const t: ShipType = {
         'Modification',
         'Configuration',
       ],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_1.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/46cbf7bf9fc558abbf4cc8d3213ae54d.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/11ec113578072d231d43e007b85d5040.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/76159a9d2966e6f84ebdc1ae1abecd89.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/2fcea3c1da34a2ddee09863883c799b5.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/29d365f4d39714c6d14c9c5ca24e36b5.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/90648ba264a231f94b9e5ed25a31afeb.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_1.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_1.jpg',
       ffg: 1,

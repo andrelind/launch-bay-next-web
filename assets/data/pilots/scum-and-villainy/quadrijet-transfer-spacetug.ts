@@ -100,7 +100,7 @@ const t: ShipType = {
       },
       initiative: 4,
       limited: 1,
-      cost: 30,
+      cost: 29,
       xws: 'constablezuvio',
       ability: {
         en:
@@ -119,24 +119,6 @@ const t: ShipType = {
           'Se for soltar um dispositivo, você pode, em vez disso, lançá-lo usando um gabarito (1 [Straight]).',
         zh:
           'If you would drop a device, you may launch it using a (1 [Straight]) template instead.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_161.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/ba870350fea3f9a94898a0d34e2e4cc9.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/1af2dd0efc2eb1720dbc7b87ea6a12bc.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/1410d6fc3bdec56bf07429e056e14fd6.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/acad1d5a259043d749d99d7d0a226424.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/508e0337c68ed9ab7a4da38be5acdb3b.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/a6bcd3674845f582cda7c219e2de66f2.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_161.png',
       },
       slots: ['Talent', 'Crew', 'Device', 'Illicit', 'Modification', 'Tech'],
       artwork:
@@ -177,24 +159,6 @@ const t: ShipType = {
           'O rebocador orbital Quadrijet, comumentechamado de "Quadjumper", é ágil tanto noespaço quanto na atmosfera, o que o tornou popular entre contrabandistas e exploradores.',
         zh:
           'The Quadrijet transfer spacetug, commonly called a "Quadjumper," is nimble in space and atmosphere alike, making it popular among both smugglers and explorers.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_164.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/beea79960fb9183bae19754a68b893f6.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/0d89149474197a9dc8e5299b69c57311.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/89874aa77288bdc1c2867a59e31b0687.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/b6bdfca453ddae1bd4b81797d84c59c5.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/7505e5fe7ee2e90288802f1277fa7515.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/9d782830d4b89c57fe05d78571af2d28.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_164.png',
       },
       slots: ['Crew', 'Device', 'Illicit', 'Modification', 'Tech'],
       artwork:
@@ -246,24 +210,6 @@ const t: ShipType = {
         zh:
           'While you defend, you may treat your agility value as equal to the speed of the maneuver you executed this round.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_162.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/f8b812fc08b19ac8ddff90226c642b8f.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/68f4342e084b88f3b9121f162d024e62.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/8cd7ebc94c5247399cd732052aa322f4.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/7ab634a9b7fd6aded0e30f8361667eca.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/3ad73ebb76ae5949e52cd42f5a449f04.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/71623c591f1437bc6ec80240f02596c7.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_162.png',
-      },
       slots: ['Crew', 'Device', 'Illicit', 'Modification', 'Tech'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_162.jpg',
@@ -313,24 +259,6 @@ const t: ShipType = {
           'No início da Fase de Engajamento, se houver uma ou mais naves em alcance 0, você e cada outra nave em alcance 0 recebem 1 ficha de tração.',
         zh:
           'At the start of the Engagement Phase, if there are one or more other ships at range 0, you and each other ship at range 0 gain 1 tractor token.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_163.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/c42e72929ce2d11efa91bddf56a6e278.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/0f965ddf7322b54d336afd563eb87155.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/479dfa598f467099722c4f3794344ae8.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/09f0867b576a85fe7402898e16e1d3a1.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/72bdf8b2ab1bfc537f55ebc0b4427a42.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/8bee2f322e759ac032b70338663b3863.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_163.png',
       },
       slots: ['Crew', 'Device', 'Illicit', 'Modification', 'Tech'],
       artwork:

@@ -110,24 +110,6 @@ const t: ShipType = {
         zh:
           'Many veteran pilots in the service of the Hutt kajidics and other criminal operations choose the M12-L Kimogila for its firepower and dreaded reputation alike.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_209.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/a35cb80cec4ca7b58485871411836f19.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/ea889f030b89eb035fe0871add27c268.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/288c58d52c4e211fd785d3a7aae5d566.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/e6c16cad5568c52862ed94c24e023cde.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/74806f91a4d074d7bbfdecba53f44491.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/c2905ee47666f74e9c915f474607647f.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_209.png',
-      },
       slots: [
         'Talent',
         'Torpedo',
@@ -184,24 +166,6 @@ const t: ShipType = {
           'No início da Fase de Engajamento, você pode escolher 1 nave com escudo em seu [Bullseye Arc] e gastar 1 ￼. Se você fizer isso, a nave escolhida perde 1 escudo e você recupera 1 escudo. Na Palma da Mão: Quando você realizarum ataque, se o defensor estiver em seu [Bullseye Arc],os dados de defesa não podem ser modificados por fichas verdes.',
         zh:
           'At the start of the Engagement Phase, you may choose 1 shielded ship in your [Bullseye Arc] and spend 1 [Charge]. If you do, that ship loses 1 shield and you recover 1 shield.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_208.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/b2f6b5920dee6bac6cd51df140b0670e.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/98568c62600623b512f6b697ae0de75f.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/2f48b893755213d15f824e55bf66c490.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/58968af3582d3785a63591d865ba3f99.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/079ca27379d27ddf67b7197f2a87ceb4.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/7865f1ec439c134697e2cf52a8d187ba.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_208.png',
       },
       charges: { value: 2, recovers: 0 },
       slots: [
@@ -260,24 +224,6 @@ const t: ShipType = {
           'Após você realizar um ataque, cada nave inimiga em seu [Bullseye Arc] sofre 1 dano [Hit],a menos que ela remova 1 ficha verde. Na Palma da Mão: Quando você realizar um ataque, se o defensor estiver em seu [Bullseye Arc], os dados de defesa não podem ser modificados por fichas verdes.',
         zh:
           'After you perform an attack, each enemy ship in your [Bullseye Arc] suffers 1 [Hit] damage unless it removes 1 green token.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_207.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/483358b1b2d2011816f600eb2b108d5c.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/dd3da16dd49ad229564d239f1e4963d6.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/e6e75e42e84a6d17bd16ca61ca4293a4.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/3d5c741e27564709b178a0306801f5de.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/f2bd4de8b07d3722ff6ed3bc44e1c950.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/c0668cd910492195815d16cebd546cef.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_207.png',
       },
       slots: [
         'Talent',

@@ -60,7 +60,7 @@ const t: ShipType = {
       xws: 'covanell',
       initiative: 4,
       limited: 1,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       ability: {
         en:
@@ -102,24 +102,6 @@ const t: ShipType = {
         pt: 'Evacuation Escort',
         zh: 'Evacuation Escort',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/a9ae63785f4cadaa28a74858ff1d1bc4.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/abf57c348107bbad83dd4d9a0f1c7772.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/2ca6fba0afe7753d1080041cd7666bd6.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/bd4073a4577a38cfa7468035c1a90de3.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/a9ae63785f4cadaa28a74858ff1d1bc4.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/a9ae63785f4cadaa28a74858ff1d1bc4.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/a9ae63785f4cadaa28a74858ff1d1bc4.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/a9ae63785f4cadaa28a74858ff1d1bc4.png',
-      },
     },
     {
       name: {
@@ -145,7 +127,7 @@ const t: ShipType = {
         pt: "D'Qar Dispatcher",
         zh: "D'Qar Dispatcher",
       },
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       ability: {
         en:
@@ -174,26 +156,8 @@ const t: ShipType = {
         'Modification',
         'Tech',
       ],
-      cost: 36,
+      cost: 34,
       ffg: 570,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9d7dd5d0851911412dd5c86603a0ea91.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/26961b691a8c7fd821fbac3c606ec7fc.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/3066da37c175e14beb85fab8f7648ba4.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/05c12361da28c5af7304cc4434087f1b.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9d7dd5d0851911412dd5c86603a0ea91.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9d7dd5d0851911412dd5c86603a0ea91.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9d7dd5d0851911412dd5c86603a0ea91.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9d7dd5d0851911412dd5c86603a0ea91.png',
-      },
     },
     {
       name: {
@@ -209,7 +173,7 @@ const t: ShipType = {
       xws: 'nodinchavdri',
       initiative: 2,
       limited: 1,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       ability: {
         en:
@@ -238,7 +202,7 @@ const t: ShipType = {
         'Modification',
         'Tech',
       ],
-      cost: 36,
+      cost: 35,
       ffg: 571,
       caption: {
         en: 'Insubordinate Insurgent',
@@ -249,24 +213,6 @@ const t: ShipType = {
         pl: 'Niesubordynowany powstaniec',
         pt: 'Insubordinate Insurgent',
         zh: 'Insubordinate Insurgent',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9f41de269cb1ff091487554fb53b2374.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/2cf5f0797373b0646f58b2fa8a60ee70.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/1c6780544ec4ec17f6114500ca3e0585.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/e644504077bc3e724d53fafd24b2d53d.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9f41de269cb1ff091487554fb53b2374.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9f41de269cb1ff091487554fb53b2374.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9f41de269cb1ff091487554fb53b2374.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9f41de269cb1ff091487554fb53b2374.png',
       },
     },
     {
@@ -314,24 +260,6 @@ const t: ShipType = {
       ],
       cost: 32,
       ffg: 572,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/57ea37cdb13f52ec3f3e0b745fc9d630.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/c8d5d08e75c23e65c91beaaf7cfcd119.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/ee2499c72c96414cc884cee57421b0e1.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/dc915385e6f0f1be4aebe07b6062831c.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/57ea37cdb13f52ec3f3e0b745fc9d630.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/57ea37cdb13f52ec3f3e0b745fc9d630.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/57ea37cdb13f52ec3f3e0b745fc9d630.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/57ea37cdb13f52ec3f3e0b745fc9d630.png',
-      },
     },
   ],
   ffg: 64,

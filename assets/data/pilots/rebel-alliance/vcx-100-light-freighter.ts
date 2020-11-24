@@ -120,24 +120,6 @@ const t: ShipType = {
         zh:
           'At the start of the Engagement Phase, each enemy ship at range 0 gains 2 jam tokens.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_75.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/28a65724f33f87eae95a4452f6bbca18.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/7f754d140945a2d3790126b5f8b484de.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/76217671de02fab31b418fb3f316a6cf.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/1066d16ce7e879ae415d4bccc98d3299.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/ecb9c7eafaea4e5ebb8b9c1ae0a97f64.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/0f1a8d6b5380c2449a36f726b840d186.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_75.png',
-      },
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },
         { difficulty: 'White', type: 'Lock' },
@@ -202,24 +184,6 @@ const t: ShipType = {
         zh:
           'After you reveal a red or blue maneuver, you may set your dial to another maneuver of the same difficulty.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_73.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/2b68befe4a4c1ee0830f375f2f833fed.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/3372c5a80da0b3216a55f7d9388dbd07.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/7da7d21ec630e2a9cc49a03856de1582.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/d4e6d02c8952daa1dba4df23435f03bd.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/ff9f4c455ec7e6513986634d1c2e2026.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/1d1c8be9ed6276dda45beb87cdc9b214.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_73.png',
-      },
       slots: [
         'Talent',
         'Sensor',
@@ -280,24 +244,6 @@ const t: ShipType = {
         zh:
           'While a friendly ship in your firing arc defends, you may spend 1 [Force]. If you do, the attacker rolls 1 fewer attack die.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_74.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/6158a72b75ef60973d6babc4d71fbc04.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/62deff32accadf6e794742c7b3580a08.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/c1f1b8591a58815c770b8fd23349d670.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/a425e2576496cbafd0ed8a34a94bffad.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/48d3bd3d688dae7637da7a44c255193c.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/01792e74c18b17c243f62f0f56c9fbbd.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_74.png',
-      },
       force: { value: 2, recovers: 1, side: ['light'] },
       slots: [
         'Sensor',
@@ -348,24 +294,6 @@ const t: ShipType = {
           'Mais um projeto de sucesso de cargueiroda Corellian Engineering Corporation,o VCX-100 é maior que a popular série YT, dispondo de mais espaço interno e maior capacidade de personalização.',
         zh:
           'Another successful Corellian Engineering Corporation freighter design, the VCX-100 is larger than the ubiquitous YT-series, boasting more living space and customizability.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_76.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/f8011e3615b29a81773f5066a3d4353b.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/ae543b22f07fb53d2f498b9aa957d741.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/ba9ae00b64418afc30cc7c5e40d3d737.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/b09cc58f36b12cc56887b1ff49e468b4.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/345b26af525fe27dc6a7d31c6cdf4cd0.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/a4bbd3e16a3744508fdd1b696394dd90.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_76.png',
       },
       slots: [
         'Sensor',
@@ -442,24 +370,6 @@ const t: ShipType = {
       ffg: 631,
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/af4c16c8955bddf75d5eb7723c7a5f2d.jpg',
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/f78c33b746f35f6848708327178dec80.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/f1003d9495f75bdece9b86b7a412e1d3.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/e775ee256aab8554e784313813e70a9d.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/834a0fb2da38fef827b4bfdc7f0a3801.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/f78c33b746f35f6848708327178dec80.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/f78c33b746f35f6848708327178dec80.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/f78c33b746f35f6848708327178dec80.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/f78c33b746f35f6848708327178dec80.png',
-      },
     },
   ],
 };

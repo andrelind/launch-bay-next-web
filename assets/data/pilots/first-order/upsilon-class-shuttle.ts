@@ -95,7 +95,7 @@ const t: ShipType = {
       },
       initiative: 2,
       limited: 1,
-      cost: 70,
+      cost: 66,
       xws: 'lieutenantdormitz',
       ability: {
         en:
@@ -125,24 +125,6 @@ const t: ShipType = {
         'Tech',
         'Tech',
       ],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e4acd80da2c39e25d4f999cb7c314fe5.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/c5f711a5dedfb6c1aa6a9226362c1e3c.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/fd710912fb26b39579b34847b6d08661.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/6e7e53ab18a6be0c2e62ac015084799a.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/5f9a9e5eb52bfd0c4caf87577dc6dfb2.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/1c10ba96179406701bd521b47f049edb.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e4acd80da2c39e25d4f999cb7c314fe5.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e4acd80da2c39e25d4f999cb7c314fe5.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/4505cb1930309673fe5592dbc112d733.jpg',
       ffg: 412,
@@ -202,24 +184,6 @@ const t: ShipType = {
         'Tech',
         'Tech',
       ],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/8420beca035dedf1596c7c99255fb2e7.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/d157e12f6117950d3e863bc2e4d38b65.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/0731f3697941acc8cb183a9cfa138ba2.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/2011ad90d71b1eab5a094a80de6f2028.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/80c2ac202d691a58e7bd5bded58773de.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/6f2f5dd9dbe36069879ed0721a74578d.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/8420beca035dedf1596c7c99255fb2e7.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/8420beca035dedf1596c7c99255fb2e7.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/862f9dcc1ce9809f9a394d8f0b05f268.jpg',
       ffg: 410,
@@ -280,24 +244,6 @@ const t: ShipType = {
         'Tech',
         'Tech',
       ],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3a2232a5238d8bf5e7538fe1d6003dbc.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/86a58331db244f16d6f940dfb85217b9.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/662a5b6729825b958bd5cfc3b6efc67b.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/290f6dc33841a7f9c38705e64d32ae6c.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/8a78ccd7673b25e0e45cd1222a523976.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/7847ca780935c0322e76b35185a0ee2a.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3a2232a5238d8bf5e7538fe1d6003dbc.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3a2232a5238d8bf5e7538fe1d6003dbc.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/24a40f6ec1875bfae9e7531b02252993.jpg',
       ffg: 458,
@@ -347,24 +293,6 @@ const t: ShipType = {
         'Tech',
         'Tech',
       ],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/41f6d936f14a058ed1c5e6ac12de37c2.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/aacc72391e3663f71784f5c39f1b4f94.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/fa2f885e9e5607169d011f813a7bb9f0.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/c7e8a378ea3973638fe05e5dff9166a5.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/2f7e0dc8661a2e697c7db071dd37b8ea.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/79e0200f91d762906deac34a9d20ed82.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/41f6d936f14a058ed1c5e6ac12de37c2.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/41f6d936f14a058ed1c5e6ac12de37c2.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/1ea0266ea42691778e8ecff6a5b50e45.jpg',
       ffg: 413,
@@ -425,24 +353,6 @@ const t: ShipType = {
         'Tech',
         'Tech',
       ],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/20fbf3ed79c50d2082cdb44caac26064.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/0741187235d3723ab124db0ed3257688.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/887acec13a18866cf08ba393b42f7d24.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/61f2c473cfc14f89c6b0d122655a479e.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/c23df11c77f90573c9800f3352461830.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/9b63e8e876fd8e54727f0993a7de3e79.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/20fbf3ed79c50d2082cdb44caac26064.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/20fbf3ed79c50d2082cdb44caac26064.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/151154b50732a6dd42b411fc312137b9.jpg',
       ffg: 411,
@@ -503,24 +413,6 @@ const t: ShipType = {
         'Tech',
         'Tech',
       ],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/be29a69f75726ad48f607eecca671e01.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/9c25b1a94ea02a7635cfb09670838bea.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/10ce1b4d182f2d6df3edbf9601fc37a9.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/37b7b2d5826f45ee7fb1011003d3cad4.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/f6ad57b24b07e97d5488f4435ab54c76.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/89b957c8d2431c70f503a243af4a67ce.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/be29a69f75726ad48f607eecca671e01.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/be29a69f75726ad48f607eecca671e01.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/a88822cc408323e561efd9e2acb83f2a.jpg',
       ffg: 457,

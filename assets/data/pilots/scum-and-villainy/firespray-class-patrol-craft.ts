@@ -92,31 +92,13 @@ const t: ShipType = {
         zh:
           '当你进行防御或执行攻击时，在你距离0~1内每有一架敌机，你可以重投1个骰子。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_149.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/c16fc9bcb953e2c2b82f11ab80451f7a.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/05be6a6da9d80c44adeea2e63b5817ff.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/b3b82d469cac72896555fb5e0b59f175.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/7bcba3854f111e80fbdbf4d1e7fff6f0.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/db7174a79cc3fef19689ebad2f143f84.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/0f99dbaa09a54e02b65dbcb435a62b28.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_149.png',
-      },
       slots: [
         'Talent',
         'Cannon',
         'Missile',
-        'Crew',
         'Device',
         'Illicit',
+        'Modification',
         'Modification',
         'Title',
       ],
@@ -130,7 +112,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_149.jpg',
       ffg: 149,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -165,24 +147,6 @@ const t: ShipType = {
           'A infame nave de patrulha classe Firespray é assim reconhecida devido à sua associação com os caçadores de recompensa Jango Fett e Boba Fett, que equipavam suas naves com incontáveis armamamentos letais.',
         zh:
           '喷火型巡逻飞行器就是罪恶的标志，它的出现代表夺命赏金杀手们将要登场，比如姜戈·费特与波巴·费特，他们会在自己的飞船上塞满数不尽的致命性武器。',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_154.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/a2aa97ebc0bef7c51d471379de0c05cf.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/50722673f01effb9cd32457542142a45.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/89dc60287daff6e2d72e483d808794b6.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/3ed7c0c4887d5f715b638982e693ce62.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/dfe6805d53946f024f0ec045b9d42f8b.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/71c7ee793ab7a2761a57b396e9e17f67.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_154.png',
       },
       slots: [
         'Cannon',
@@ -242,24 +206,6 @@ const t: ShipType = {
         zh:
           '当你将使用(1[Straight])移动条投下器械时，你可以改为使用(3[Turn Left])、(3[Straight])或(3[Turn Right])移动条。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_150.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/b5fbd64c0ee9dba4a5e0c735bd3a458a.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/c4b9eba30a89b8b1785e7428d3c8a892.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/a0c695fd53108662d1ccc8b633c7ce25.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/6b94dc92d4bf1f939ec27eaa2d864063.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/31eef1e95a6416be79f2151f0055c56f.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/8a46a400a4e5774443531575e0975ca0.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_150.png',
-      },
       slots: [
         'Talent',
         'Cannon',
@@ -273,7 +219,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_150.jpg',
       ffg: 150,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -319,24 +265,6 @@ const t: ShipType = {
         zh:
           '当你执行基础攻击时，如果有至少一架无限制的友方战机与防御方距离为0，则你额外投1个攻击骰。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_151.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/8fa4947ab83501124b7835b2bfbe4794.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/8bccaf7d3da70932a5f8d6639b39e6f9.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/29766c426f19204eab36f3bf3a1cdf33.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/192b7b35ae48dabe37ea3dc7a0d04159.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/55cc2430ff23e0e0c9ddcb40309657f8.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/a58e54a004699853b56b7cfdf8b2030c.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_151.png',
-      },
       slots: [
         'Talent',
         'Cannon',
@@ -350,7 +278,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_151.jpg',
       ffg: 151,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -395,24 +323,6 @@ const t: ShipType = {
           'Quando defender ou realizar um ataque, se a nave inimiga estiver estressada,você pode rerrolar 1 de seus dados.',
         zh: '当你进行攻击或防御时，如果该敌机处于压力状态，你可以重投1个骰子。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_152.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/133e16f0d1e69338f42b358b5b691f95.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/b06c3bb020770a9f08c198db579308a0.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/a1681ab52fce2cac08dbdf57c7dd8015.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/5c94f551ceab1afbafdcd4647b141428.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/251356f149732bfce6da672ad2d94406.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/83b3155b1a75fb3cabcf1b6f67265346.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_152.png',
-      },
       slots: [
         'Talent',
         'Cannon',
@@ -426,7 +336,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_152.jpg',
       ffg: 152,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -472,24 +382,6 @@ const t: ShipType = {
         zh:
           '你可以从你的[Rear Arc]执行[Front Arc]特殊攻击。 当你执行特殊攻击时，你可以重投1个攻击骰。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_153.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/2d03374511aa71ad38a923c3d54d8326.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/26c2cecb409b430a22445937ccc63e86.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/16540e574757266ad254e0b48a296f3d.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/780d426e9890356cd9454bc962fc0e7f.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/1b4e8a40987ecca2284b155396ac7a28.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/ece884c7bc0d9ccea75436ade9d40444.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_153.png',
-      },
       slots: [
         'Talent',
         'Cannon',
@@ -503,7 +395,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_153.jpg',
       ffg: 153,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
   ],

@@ -68,7 +68,7 @@ const t: ShipType = {
       },
       initiative: 5,
       limited: 1,
-      cost: 46,
+      cost: 44,
       xws: 'howlrunner',
       ability: {
         en:
@@ -87,29 +87,11 @@ const t: ShipType = {
           'Quando uma nave amiga emalcance 0-1 realizar um ataqueprimário, ela pode rerrolar1 dado de ataque.',
         zh: '与你距离为0~1的友方战机执行基础攻击时，该战机可以重投1个攻击骰。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_81.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/790acab18be205b4275e8b53af7c008a.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/54c02dc6d5332ef529396239306df487.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/1146b76276a14dfc7ba10fe085cfa368.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/586d69cab2fe05b23fbdc0dbde522098.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/3885fa54531b3ca63b5a0a259dcdbac7.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/8817234508e020b54796a917024c96bc.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_81.png',
-      },
       slots: ['Talent', 'Modification'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_81.jpg',
       ffg: 81,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -135,7 +117,7 @@ const t: ShipType = {
       },
       initiative: 5,
       limited: 1,
-      cost: 31,
+      cost: 30,
       xws: 'maulermithel',
       ability: {
         en:
@@ -152,24 +134,6 @@ const t: ShipType = {
         pt:
           'Quando você realizar um ataque com alcance de ataque 1, role 1 dado de ataque adicional.',
         zh: '当你执行攻击距离为1的攻击时，额外投1个攻击骰。',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_80.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/c3401c8bcf46df2cf1e0132cbd8226fd.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/51f62c937a3cee94f243dc4965ab22f6.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/5a3f1d8c2af807d03a9c43588a67322d.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/25d8fcfd8b003decc84ce0db04d1b959.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/21d53e762ae48cf47a8a300bd86bdf38.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/7092a9b749869eabcd12fbadfe8b4ad8.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_80.png',
       },
       slots: ['Talent', 'Modification'],
       artwork:
@@ -220,29 +184,11 @@ const t: ShipType = {
           'Após executar completamenteuma manobra azul, você poderealizar uma ação [Focus].',
         zh: '在你完全地执行1个蓝色移动后，你可以执行1个[Focus]行动。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_88.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/3e747c53c0aaeb1ba251334ba42b8164.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/725c68171d310433107908a3e477cb2a.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/f9b4393f8fe01c85c2f081c737eddb96.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/df4c9eb74765a0661b7adb8553a0e731.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/9b0a52c0e8108f01c18737c90863f5bb.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/37b069a74cdb5f8519fa27bb2851dff9.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_88.png',
-      },
       slots: ['Modification'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_88.jpg',
       ffg: 88,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -268,7 +214,7 @@ const t: ShipType = {
       },
       initiative: 5,
       limited: 1,
-      cost: 31,
+      cost: 30,
       xws: 'scourgeskutu',
       ability: {
         en:
@@ -286,24 +232,6 @@ const t: ShipType = {
         pt:
           'Quando você realizar um ataquecontra um defensor em seu [Bullseye Arc],role 1 dado de ataque adicional.',
         zh: '当你执行攻击，且防御方位于你的[Bullseye Arc]时，额外投1个攻击骰。',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_82.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/dac572113d5ead40d25018786af97cc3.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/7bd07cbe7ae11cc7d0eb58eeee3f346c.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/86c4ebdecfeaeafa3e01f7a21885f6cd.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/fa14048c38cf0feccead813241f5000b.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/d3d7a545bd1ae2ff5b2e2ea7f5be211c.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/02c8dc57c3a04d0e6cf37b088ca73d84.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_82.png',
       },
       slots: ['Talent', 'Modification'],
       artwork:
@@ -335,7 +263,7 @@ const t: ShipType = {
       },
       initiative: 1,
       limited: 1,
-      cost: 29,
+      cost: 28,
       xws: 'wampa',
       ability: {
         en:
@@ -355,30 +283,12 @@ const t: ShipType = {
         zh:
           '当你执行攻击时，你可以花费1[Charge]来额外投1个攻击骰。 在你防御之后，失去1[Charge]。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_89.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/fa71ddf2276a2b62b6d61ff3fdd896b8.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/f65989e67fb14fe4b046f130c9b3df75.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/029484a6f5f84ad6ab71bb4d5e467e7e.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/572db4ea25b0f8a330e029bd5dcb0a1a.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/b6967300dbac4204fcd4ad35e2f0c39f.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/1672456e987ff91be12414d259baca64.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_89.png',
-      },
       charges: { value: 1, recovers: 1 },
       slots: ['Modification'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_89.jpg',
       ffg: 89,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -414,24 +324,6 @@ const t: ShipType = {
         zh:
           '银河帝国委托西纳舰队系统公司制造的TIE/In战机，与其主要的星际战斗机一样，飞行速度快且十分敏捷，投入生产的战机数量多得令人咋舌。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_92.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/6caf42290b995f8765090c3da476198f.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/44ad0de56bc04e539146ed4f349fa520.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/d0e9c6314202123f5f49b2805ba3723d.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/1e8421dae5c055fb969a2c38f117126f.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/f27094fbca4fc583c59c918341e13288.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/ad7626e8178c1051194335873d51111a.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_92.png',
-      },
       alt: [
         {
           image:
@@ -443,7 +335,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_92.jpg',
       ffg: 92,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -479,24 +371,6 @@ const t: ShipType = {
         zh:
           '黑色中队的精英TIE/ln战斗机飞行员，在雅文战役中跟随达斯·维德进行作战，给予反抗军势力毁灭性打击。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_90.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/165f136ea10f7a71e4597d029e05f215.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/8c8d1b131b5642167beffe0ab59f5e5e.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/a5caabca58fe69c730efa68605428fcf.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/e86a0a2269cabf4380effcd1277d7ac5.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/3a7eb828e81a6cc588ff4f54016d9160.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/99739f8ab010b351632acfdc95fcf3c3.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_90.png',
-      },
       slots: ['Talent', 'Modification'],
       alt: [
         {
@@ -508,7 +382,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_90.jpg',
       ffg: 90,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -534,7 +408,7 @@ const t: ShipType = {
       },
       initiative: 4,
       limited: 1,
-      cost: 30,
+      cost: 29,
       xws: 'delmeeko',
       ability: {
         en:
@@ -553,24 +427,6 @@ const t: ShipType = {
           'Quando uma nave amiga emalcance 0-2 defender de umatacante danificado, o defensorpode rerrolar 1 dado de defesa.',
         zh:
           '当一架与你距离0~2的友方战机正进行防御，且攻击方已受伤时，该友方战机可以重投1个防御骰。',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_85.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/5405237583fe461dbdc568a0a757a787.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/83f53c975dee4fb86cce89087b05687e.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/6af83b7c27aff8e14853d95c4819c887.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/338ce5af7928bf3975bcb4b9ff1b61a9.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/7c33f865671a81cb26b7a84e09fe6f16.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/8b685021a8219a89199f37c496997aeb.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_85.png',
       },
       slots: ['Talent', 'Modification'],
       artwork:
@@ -602,7 +458,7 @@ const t: ShipType = {
       },
       initiative: 4,
       limited: 1,
-      cost: 30,
+      cost: 29,
       xws: 'gideonhask',
       ability: {
         en:
@@ -620,24 +476,6 @@ const t: ShipType = {
         pt:
           'Quando você realizar um ataquecontra um defensor danificado,role 1 dado de ataque adicional.',
         zh: '当你执行攻击，且防御方已受伤时，额外投1个攻击骰。',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_84.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/edbb77d56994cfb88db58f8ae9422e8c.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/f15a4d3ca39299cbf7f3e0f0a52ed2f6.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/0b6b2b45a71175ed849d0c6f9771d7d0.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/98b7524b0711f1ae0014cafa6d24fced.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/1a43487d45a1e9bc73647297baaf74b7.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/b6423ff726000f41f326400f574af7eb.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_84.png',
       },
       slots: ['Talent', 'Modification'],
       artwork:
@@ -669,7 +507,7 @@ const t: ShipType = {
       },
       initiative: 4,
       limited: 1,
-      cost: 41,
+      cost: 40,
       xws: 'idenversio',
       ability: {
         en:
@@ -688,24 +526,6 @@ const t: ShipType = {
           'Antes de uma TIE/ln fighter amigaem alcance 0-1 sofrer 1 ou maisdanos, pode gastar 1 [Charge]. Se fizerisso, evite esse dano.',
         zh:
           '在一架距离0~1的友方TIE/ln 战斗机将遭受1点或更多的伤害之前，你可以花费1[Charge]。如果你如此做，阻止该伤害。',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_83.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/f949e1b7de94191120a6e8f55425b868.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/83996688c496eff2e231ee3a125b80c8.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/6897be730026951e0278a45ae64e6524.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/f0102a90669b12d36483bd91c42cbe71.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/8c298ffded4b88d7a794be00cd89ffc4.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/89bc94ed64029fa1b854c23df043ecd7.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_83.png',
       },
       charges: { value: 1, recovers: 0 },
       slots: ['Talent', 'Modification'],
@@ -748,24 +568,6 @@ const t: ShipType = {
         zh:
           'TIE系列战机在设计时追求极致的速度，采用双离子引擎系统并以此命名，使得TIE/ln战斗机成为机动性最强的量产型星际飞船。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_91.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/3f731f1c6886bdcf3b5d463139025f4f.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/0fc6eb1efaf7fd09fd7e7d98449b6a22.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/78f579f494e0442f6d83ff8f86361c40.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/9989b0f3da7c27a3755c3cfc489b6776.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/19865697998d3fe28f241a2438949983.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/95b05489c79076e27508c16f0226cf54.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_91.png',
-      },
       alt: [
         {
           image:
@@ -777,7 +579,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_91.jpg',
       ffg: 91,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -803,7 +605,7 @@ const t: ShipType = {
       },
       initiative: 4,
       limited: 1,
-      cost: 30,
+      cost: 29,
       xws: 'seynmarana',
       ability: {
         en:
@@ -822,24 +624,6 @@ const t: ShipType = {
           'Quando realizar um ataque,você pode gastar 1 resultado [Critical Hit].Se fizer isso, cause 1 carta de dano virada para baixo no defensor, então cancele o restante dos seus resultados.',
         zh:
           '当你执行攻击时，你可以花费掷骰结果中的1[Critical Hit]。如果你如此做，防御方拿取1张面朝下的伤害卡，然后取消你剩余的掷骰结果。',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_86.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/0d7cd0004faed5ce93c1b29d5274d1b9.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/0365604de4e8c6abf63a040b1d354b3d.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/71d125750a94f3f6e3eabf784456fd17.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/96152e536518365e8c0a0b00db1661cd.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/09959ee76f824f177c1c60027fca0e7a.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/44c95b4f26d7cc398644b1e10dc0aa4e.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_86.png',
       },
       slots: ['Talent', 'Modification'],
       artwork:
@@ -871,7 +655,7 @@ const t: ShipType = {
       },
       initiative: 3,
       limited: 1,
-      cost: 27,
+      cost: 26,
       xws: 'valenrudor',
       ability: {
         en:
@@ -890,29 +674,11 @@ const t: ShipType = {
           'Após uma nave amiga em alcance0-1 defender (após o dano serresolvido, se houver), você poderealizar uma ação.',
         zh: '在距离0~1的1架友方战机完成防御时(结算伤害后)，你可以执行1个行动。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_87.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/a04793121c41be162e06689ef95147e2.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/7a05d1de1e15a5937617b6052860f8ec.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/7667a816b410e954d74b21d7ccc8f18d.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/6c6c782c1cdef2d332953d2e4c2e935c.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/c96a01bb3233cfd705d400cd4f4477d9.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/3142532b93ac33dd7d76772318076c29.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_87.png',
-      },
       slots: ['Talent', 'Modification'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_87.jpg',
       ffg: 87,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
   ],

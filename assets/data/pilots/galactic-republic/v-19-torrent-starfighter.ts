@@ -91,25 +91,7 @@ const t: ShipType = {
         zh:
           'After you perform a [Barrel Roll] action, you may perform a red [Lock] action.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/76c1228dd4c70dc4e56ac99284a11b0f.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/eff51ecf7bbaac337f420986139cf979.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/cb63d144019df6abf99b1091a4ef85bc.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/10685f9c3669de38d15dddd5bf50d53c.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/1c93a6a3c146873bb4123f8ec1f5228e.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/f13dc9cf7a995edff2e34647c27be773.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/76c1228dd4c70dc4e56ac99284a11b0f.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/76c1228dd4c70dc4e56ac99284a11b0f.png',
-      },
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
       cost: 30,
       slots: ['Talent', 'Missile', 'Modification'],
@@ -159,27 +141,9 @@ const t: ShipType = {
         zh:
           'After you fully execute a red maneuver or perform a red action, if there is an enemy ship in your [Bullseye Arc], you may acquire a lock on that ship.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9ecf7600f20da9a9eff5d3e244934ccb.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/0ab5c7d29be4737338f876cd5ef53495.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/543d107bbec6a7e903f9d34561ff3f42.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/46b42177e854474b40b330b58f3adb26.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/c7e5eec8cc342254b0fcf90e74659d03.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/48fb615a89e40c5676bd233cf3b7d38d.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9ecf7600f20da9a9eff5d3e244934ccb.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9ecf7600f20da9a9eff5d3e244934ccb.png',
-      },
       hyperspace: true,
       epic: true,
-      cost: 31,
+      cost: 30,
       slots: ['Talent', 'Missile', 'Modification'],
       ffg: 516,
       artwork:
@@ -226,24 +190,6 @@ const t: ShipType = {
           'After a friendly small or medium ship fully executes a speed 3-4 maneuver, if it is at range 0-1, it may perform a red [Boost] action.',
         zh:
           'After a friendly small or medium ship fully executes a speed 3-4 maneuver, if it is at range 0-1, it may perform a red [Boost] action.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/8ae255235c0c1d3892344fb43fcab773.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/d431249d9fa059498aa58430b0c167fe.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/d166226f25a9424000826b4439c7e9c0.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/2624a1a31502a208e32fb3e910544156.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/86afa341e498b4cf62917f3e81bc8b38.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/d7584c0c7042702085a29a109035c4f8.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/8ae255235c0c1d3892344fb43fcab773.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/8ae255235c0c1d3892344fb43fcab773.png',
       },
       hyperspace: true,
       epic: true,
@@ -295,25 +241,7 @@ const t: ShipType = {
         zh:
           'After you defend or perform an attack, you may choose a friendly ship at range 1-2 in your [Left Arc] or [Right Arc]. If you do, transfer 1 green token to that ship.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/89ade203dec6b0fa5ed6360aae3b3022.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/89ac947b383a1135e7a8bbe931352251.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/ed34a2f07a6752f5d5816e6344f35bf5.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/7ad448081123947b551a22d696451869.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/44242c96af6c4cdab614ab59918fa806.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/9aeea6e283828bca2278267fbb8e498a.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/89ade203dec6b0fa5ed6360aae3b3022.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/89ade203dec6b0fa5ed6360aae3b3022.png',
-      },
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
       cost: 29,
       slots: ['Talent', 'Missile', 'Modification'],
@@ -363,24 +291,6 @@ const t: ShipType = {
         zh:
           'After a friendly ship at range 1-2 performs an attack against an enemy ship in your [Front Arc], you may perform a [Focus] action.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/a457cc2ab3038736cb37541ad94b9b34.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/000b9f2dad75e29f6043927e849482ab.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/d960ca9585de70cbe53a4ee5d19dd28e.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/bb9e368c419067f427bdbedde5ed2664.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/6dcaf2b0ac349360d73dae28ddbfe43e.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/28123a5ef16a8708f2444e3b9fa8e0e6.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/a457cc2ab3038736cb37541ad94b9b34.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/a457cc2ab3038736cb37541ad94b9b34.png',
-      },
       hyperspace: true,
       epic: true,
       cost: 27,
@@ -421,25 +331,7 @@ const t: ShipType = {
         zh:
           "Blue Squadron's elite clone pilots are trained to fly their V-19s in conjunction with Jedi and often support famous commanders such as Anakin Skywalker and Ahsoka Tano.",
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/77b2dfdca20865d8d667c41539a7356e.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/52f9b00fbe94d4a5cf7c41b933882db9.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/a6368f307cfbaa54334932e2e1a50404.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/18303048a64f578c4f9e99d328dbef87.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/4f442503db354512a05b86512ce2dde9.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/0072585deb6c5b4d970ad18fc9718d0b.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/77b2dfdca20865d8d667c41539a7356e.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/77b2dfdca20865d8d667c41539a7356e.png',
-      },
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       cost: 26,
       slots: ['Talent', 'Missile', 'Modification'],
@@ -478,24 +370,6 @@ const t: ShipType = {
           'The V-19 Torrent starfighter was designed to be a light escort to nimble Delta-7 interceptors flown by Jedi Knights, and has a unique flight profile to reflect this role.',
         zh:
           'The V-19 Torrent starfighter was designed to be a light escort to nimble Delta-7 interceptors flown by Jedi Knights, and has a unique flight profile to reflect this role.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/ed881318b45485a197e514b2d13e178c.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/342243c2fc11dc0afe9296fa20bcacf4.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/605215e1306362e9785bdfda38d9ee26.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/0414b706f0a1262848bc5ae0cd6e9030.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/ed82c72e4d7d01e4ffe6dc01a065e620.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/7369c1e5e40e62656ea28024d32c0237.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/ed881318b45485a197e514b2d13e178c.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/ed881318b45485a197e514b2d13e178c.png',
       },
       hyperspace: false,
       epic: true,

@@ -68,7 +68,7 @@ const t: ShipType = {
       },
       initiative: 2,
       limited: 1,
-      cost: 24,
+      cost: 23,
       xws: 'zeborrelios-tielnfighter',
       ability: {
         en:
@@ -87,24 +87,6 @@ const t: ShipType = {
           'Quando você defender, os resultados [Critical Hit] são neutralizados antes dos resultados [Hit].',
         zh:
           'While you defend, [Critical Hit] results are neutralized before [Hit] results.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_49.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/c93c9c616d61c5ba47331924908787da.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/a711fa0914b687700e7700bd93d532e6.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/0a372dbcbf5ad53b5a70975e91e32bc2.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/0fe4f0bf62ae6ff0234e0cceef41b8e9.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/74277a822775cd172fe7577864958dca.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/7836f4c2d4b6e41855bcb0ead9effe4e.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_49.png',
       },
       slots: ['Modification'],
       artwork:
@@ -136,7 +118,7 @@ const t: ShipType = {
       },
       initiative: 2,
       limited: 1,
-      cost: 29,
+      cost: 28,
       xws: 'captainrex',
       ability: {
         en:
@@ -154,24 +136,6 @@ const t: ShipType = {
           'Após realizar um ataque, atribua a condição Tiro Supressivo ao defensor.',
         zh:
           'After you perform an attack, assign the Suppressive Fire condition to the defender.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_48.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/c7f9447ea8039d387df58002afc9c9d0.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/fa50f41f08df70b7dd3d94bbbeee35a5.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/1c50ef22a7b88789e78626d3e26fa139.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/d9e5c9173a5046be7cfb51fe97b119bb.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/5894d0e4f94a6b1fac3544cf0c48b037.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/239b70ca42d7a8208b89b5aa976d956b.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_48.png',
       },
       conditions: ['suppressivefire'],
       slots: ['Modification'],
@@ -204,7 +168,7 @@ const t: ShipType = {
       },
       initiative: 3,
       limited: 1,
-      cost: 30,
+      cost: 28,
       xws: 'ezrabridger-tielnfighter',
       ability: {
         en:
@@ -223,24 +187,6 @@ const t: ShipType = {
           'Quando defender ou realizar um ataque,se estiver estressado, você podegastar 1 [Force] para mudar até 2 de seusresultados [Focus] para resultados [Evade] ou [Hit].',
         zh:
           'While you defend or perform an attack, if you are stressed, you may spend 1 [Force] to change up to 2 of your [Focus] results to [Evade] or [Hit] results.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_46.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/6b7d8f85fdc4e360f50c5c47c1a514f0.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/448f3d3ed1cb7546ca4b8b17bfa2c068.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/2fa5fbb75602e207422b707d2a6cb89e.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/49765eef5fa324d057f36636991d35d7.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/46bc5dfda41690019d6426a515104356.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/d2fb5abaeb2a1268575a1d4d2cc4fa7c.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_46.png',
       },
       force: { value: 1, recovers: 1, side: ['light'] },
       slots: ['Modification', 'Force Power'],
@@ -292,24 +238,6 @@ const t: ShipType = {
           'Antes de ativar, você poderealizar 1 ação [Barrel Roll] ou [Boost].',
         zh:
           'Before you activate, you may perform a [Barrel Roll] or [Boost] action.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_47.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/7aa7d06f048a1e0dc72726e255bc5d88.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/d94dca2de55a8bf82da2cba69db041d1.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/b502d14c8564d70293b382ce694d55d9.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/add0009f9fad5a9eb48de35dc92c1309.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/49e05e1b6075659467a5de7f6e9069e2.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/f38e3f4bf74e16c32d5cd63b3b34ee75.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_47.png',
       },
       slots: ['Talent', 'Modification'],
       artwork:

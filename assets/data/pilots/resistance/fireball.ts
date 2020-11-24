@@ -105,24 +105,6 @@ const t: ShipType = {
       hyperspace: true,
       epic: true,
       ffg: 623,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/533ab83e881838eb8006c8f8dcf19145.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/a872ea6c9a61574fe8a4b6d76cf7f4d5.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/2f60c53042474f24815c947284cdf240.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/1255721e0241875997ad6619711de11d.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/533ab83e881838eb8006c8f8dcf19145.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/533ab83e881838eb8006c8f8dcf19145.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/533ab83e881838eb8006c8f8dcf19145.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/533ab83e881838eb8006c8f8dcf19145.png',
-      },
       text: {
         en:
           'Some ambitious and talented pilots begin their racing careers as ground crew, working around the clock to keep cobbled-together ships in the sky on far-flung worlds like Castilon.',
@@ -184,7 +166,7 @@ const t: ShipType = {
         zh:
           'While you have 2 or fewer stress tokens, if you are damaged, you can execute red basic maneuvers even while stressed; if you are critically damaged, you can execute red advanced maneuvers even while stressed.',
       },
-      cost: 33,
+      cost: 32,
       slots: [
         'Talent',
         'Missile',
@@ -194,27 +176,9 @@ const t: ShipType = {
         'Modification',
         'Title',
       ],
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       ffg: 620,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/cc580fd073ea51094b881e37775ef1f0.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/190b94056f6a9d1789d0f92db9dcac3b.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/0d2b840b0994497c60cfaeea0d72f0ac.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/a7937407e15471e55b3914170f558f3b.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/cc580fd073ea51094b881e37775ef1f0.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/cc580fd073ea51094b881e37775ef1f0.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/cc580fd073ea51094b881e37775ef1f0.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/cc580fd073ea51094b881e37775ef1f0.png',
-      },
     },
     {
       name: {
@@ -258,7 +222,7 @@ const t: ShipType = {
         zh:
           "While you defend or perform a primary attack, if the enemy ship's initiative is higher than the number of damage cards you have, you may roll 1 additional die.",
       },
-      cost: 40,
+      cost: 39,
       slots: [
         'Talent',
         'Missile',
@@ -268,27 +232,9 @@ const t: ShipType = {
         'Modification',
         'Title',
       ],
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       ffg: 621,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/ee98b839cf64d8d5d6f4948947abd70b.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/b567274451af9a822a2662f945ab880f.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/479e39ec97323a6a9b60dc243688f5d4.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/8875b1fc37f4a6bdae23f7e90038bc19.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/ee98b839cf64d8d5d6f4948947abd70b.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/ee98b839cf64d8d5d6f4948947abd70b.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/ee98b839cf64d8d5d6f4948947abd70b.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/ee98b839cf64d8d5d6f4948947abd70b.png',
-      },
     },
     {
       name: {
@@ -338,7 +284,7 @@ const t: ShipType = {
         { difficulty: 'White', type: 'Barrel Roll' },
         { difficulty: 'White', type: 'SLAM' },
       ],
-      cost: 29,
+      cost: 28,
       slots: [
         'Missile',
         'Crew',
@@ -347,27 +293,9 @@ const t: ShipType = {
         'Modification',
         'Title',
       ],
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       ffg: 622,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c5cfd1d89a204722ff95e9a4b134e7f1.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/2f7a84df6c92d3614140e25a9733c693.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/7e8fa695f8c93b2398d494fc8e942123.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/55c9cb4d612ed32774af458198eddf20.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c5cfd1d89a204722ff95e9a4b134e7f1.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c5cfd1d89a204722ff95e9a4b134e7f1.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c5cfd1d89a204722ff95e9a4b134e7f1.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c5cfd1d89a204722ff95e9a4b134e7f1.png',
-      },
     },
   ],
 };

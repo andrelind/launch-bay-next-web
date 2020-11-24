@@ -117,24 +117,6 @@ const t: ShipType = {
         zh:
           'At the start of the Engagement Phase, you may choose 1 friendly ship with [Calculate] on its action bar at range 1-3. If you do, transfer 1 of your calculate tokens to it.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_197.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/88819c3ea48a2dedb2e6edcf38b67981.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/edb2906d4922950ac532a37f6fc11ab1.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/75c70f83502978620abd36ab0942f72f.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/db52bc991d79ca0ef0a01b6fdee8a61e.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/846bffd768c83629285d7e0852319db6.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/38804054d8192ba774b399a8b784a746.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_197.png',
-      },
       slots: [
         'Talent',
         'Sensor',
@@ -193,24 +175,6 @@ const t: ShipType = {
           'Após realizar um ataque que errou, você pode realizar um ataque [Cannon] bônus.',
         zh:
           'After you perform an attack that misses, you may perform a bonus [Cannon] attack.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_198.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/c6f44da62ad5142093b9ceccd3ee7322.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/bc80209f2c89606d51efe5be615710fc.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/3061375b05f0107d9885c22680a7542d.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/43d856db2ddcec4207aabcc89142960e.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/697024f5bfd2888117a83f7da7d384fc.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/fd98b2705f2af82b86a9752d861b744c.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_198.png',
       },
       alt: [
         {
@@ -277,24 +241,6 @@ const t: ShipType = {
         zh:
           'After you perform a [Boost] action, you may perform an [Evade] action.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_199.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/1df12ec2d739f1766dcc5fda06c8c9af.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/39fd70e5b5d9800f3c40347a485caf23.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/fc395e0a3de881da89353ed4ca8c8816.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/50b5e86524873f85db4ebc7b06d23b15.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/5ac68f270cae5512ad497b4199897845.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/ad1334df242cabb722f12736d6e956fc.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_199.png',
-      },
       slots: [
         'Talent',
         'Sensor',
@@ -353,24 +299,6 @@ const t: ShipType = {
           "Quando executar uma manobra Loop de Segnor ([Segnor's Loop Left] ou [Segnor's Loop Right]), você pode usar, em vez desses, outro gabarito de mesma velocidade de: curva acentuada ([Turn Left] ou [Turn Right]) para a mesma direção ou linha reta ([Straight]).",
         zh:
           "While you execute a Segnor's Loop ([Segnor's Loop Left] or [Segnor's Loop Right]) maneuver, you may use another template of the same speed instead: either the turn ([Turn Left] or [Turn Right]) of the same direction or the straight ([Straight]) template.",
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_200.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/8c66c5622b096aec17fd66e15baab250.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/c8ba74575518a47972455908e1f170e5.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/c3cad3b53dd3a8637d9fad5beb5af75c.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/aa6856eaa1581aedfb4551f966a5f7de.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/484ead44fcb2d59723ee4d67a05e50d7.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/9161fdacb4af335eecc2a9abb79e88b8.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_200.png',
       },
       slots: [
         'Talent',

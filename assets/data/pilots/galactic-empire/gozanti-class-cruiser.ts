@@ -41,7 +41,7 @@ const t: ShipType = {
       name: { en: 'Outer Rim Garrison' },
       text: {
         en:
-          'Capable of carrying four TIE fighters and operating independently for long periods of time, the Gozanti-class cruiser is a common sight in the skies of downtrodden worlds across the Outer Rim.',
+          'Capable of carrying TIE fighters and operating independently for long periods of time, the Gozanti-class cruiser is a common sight in the skies of downtrodden worlds across the Outer Rim.',
       },
       initiative: 7,
       engagement: 1,
@@ -49,18 +49,19 @@ const t: ShipType = {
       cost: 60,
       xws: 'outerrimgarrison',
       slots: [
-        'Command',
         'Hardpoint',
         'Crew',
         'Crew',
-        'Gunner',
         'Team',
         'Cargo',
         'Cargo',
         'Title',
+        'Gunner',
+        'Command',
       ],
       hyperspace: false,
       epic: true,
+      ffg: 711,
     },
   ],
 };

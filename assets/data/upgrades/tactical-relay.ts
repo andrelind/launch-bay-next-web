@@ -38,24 +38,6 @@ const t: UpgradeBase[] = [
         grants: [
           { action: { type: 'Calculate', difficulty: 'White' }, value: 1 },
         ],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/47dae8a3ecd27a48f3dc35aff03a1a75.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/0c72e5d0a03d94052d42bd5e903cd2b7.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/7f15b7824e92f457eba83ef06dfa9d01.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/ab5b27bdf2669d36fa390823c0063d29.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/f8626b8872790f0cc14df09425b40758.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/589746029aa17dd76fdac85c229b3c43.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/47dae8a3ecd27a48f3dc35aff03a1a75.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/47dae8a3ecd27a48f3dc35aff03a1a75.png',
-        },
         slots: ['Tactical Relay'],
         ffg: 531,
       },
@@ -99,31 +81,13 @@ const t: UpgradeBase[] = [
           zh:
             'While a friendly ship at range 0-3 performs a primary attack against a defender in its [Bullseye Arc], if there are 2 or fewer attack dice, it may spend 1 calculate token to add 1 [Hit] result.',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/633a34a139c912116c1b034fc2765484.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/c0b04872c4c7dc70936e440746a67744.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/4cf4fbe2895cc830dc1112e367b72e19.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/9671718011c4aba62386bdafe37c8093.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/9d57246e53d3e14acd8d9c6fed8bdda2.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/47ab5267c172120da782eed0192a6d1d.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/633a34a139c912116c1b034fc2765484.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/633a34a139c912116c1b034fc2765484.png',
-        },
         slots: ['Tactical Relay'],
         ffg: 530,
       },
     ],
     restrictions: [{ factions: ['Separatist Alliance'] }],
     cost: { value: 5 },
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -159,24 +123,6 @@ const t: UpgradeBase[] = [
             'While a friendly ship at range 0-3 defends, it may spend 1 calculate token. If it does, add 1 [Evade] result unless the attacker chooses to gain 1 strain token.',
           zh:
             'While a friendly ship at range 0-3 defends, it may spend 1 calculate token. If it does, add 1 [Evade] result unless the attacker chooses to gain 1 strain token.',
-        },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/2178079ef9488899e51e927b2e136572.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/1ba34ebeec72800ccd6fcc5d2ad7362a.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/937d2577e57d043085664677ecca271d.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/313e383ce6cb3071cc138feecfbe193a.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/19d4fcfbb18024f7d386402c61cc17ad.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/fa9e3ab623ae9089666851a9876fb07c.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/2178079ef9488899e51e927b2e136572.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/2178079ef9488899e51e927b2e136572.png',
         },
         slots: ['Tactical Relay'],
         ffg: 537,
@@ -221,30 +167,12 @@ const t: UpgradeBase[] = [
           zh:
             'After a friendly ship at range 0-3 with [Calculate] on its action bar is destroyed, each friendly ship at range 0-3 with [Calculate] in its action bar gains 1 calculate token.',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d71e07aa3147c6fe943bd0c8131a0096.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/fe73ced41004d22b426d07bec09bf60c.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/5c6ff24cf5ea3d9ced1115b0dab53aeb.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/fe974c0eff341fa43e2a9f6b783207bb.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d71e07aa3147c6fe943bd0c8131a0096.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d71e07aa3147c6fe943bd0c8131a0096.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d71e07aa3147c6fe943bd0c8131a0096.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d71e07aa3147c6fe943bd0c8131a0096.png',
-        },
         slots: ['Tactical Relay'],
         ffg: 590,
       },
     ],
     restrictions: [{ factions: ['Separatist Alliance'] }],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
     cost: { value: 11 },
   },
@@ -286,24 +214,6 @@ const t: UpgradeBase[] = [
         slots: ['Tactical Relay'],
         charges: { value: 3, recovers: 3 },
         ffg: 682,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f7d014b30966a8e308aad5d1336d50dd.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f7d014b30966a8e308aad5d1336d50dd.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f7d014b30966a8e308aad5d1336d50dd.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f7d014b30966a8e308aad5d1336d50dd.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f7d014b30966a8e308aad5d1336d50dd.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f7d014b30966a8e308aad5d1336d50dd.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f7d014b30966a8e308aad5d1336d50dd.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f7d014b30966a8e308aad5d1336d50dd.png',
-        },
       },
     ],
     hyperspace: true,

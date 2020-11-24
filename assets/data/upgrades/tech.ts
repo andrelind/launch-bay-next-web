@@ -36,31 +36,13 @@ const t: UpgradeBase[] = [
             'While you perform an attack, you may spend 1 focus token to change 1 of your blank results to a [Hit] result.',
         },
         slots: ['Tech'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/e77e204e6b7164f6a1d945b20a0c4359.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/4202f33164ad63dd536438bfaee9989c.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/dcc50f95cd750db67cd7950cf8520f34.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/f64a3196676d663a2e40825b0f8d2d8d.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/dda9e30257b362dcca7f8bac700088c7.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/96648ede85737c80aada80d4e92f13e9.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/e77e204e6b7164f6a1d945b20a0c4359.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/e77e204e6b7164f6a1d945b20a0c4359.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/e19aa7cd99df250715c17386135cd140.jpg',
         ffg: 460,
       },
     ],
-    cost: { value: 4 },
-    hyperspace: true,
+    cost: { value: 5 },
+    hyperspace: false,
     epic: true,
   },
   {
@@ -98,30 +80,12 @@ const t: UpgradeBase[] = [
             "After an enemy ship locks you, if you are not in that ship's [Bullseye Arc], that ship gains 1 stress token.",
         },
         slots: ['Tech'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/55d8ff7d35b714d9c9a6ef1fd7732a60.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/bc7c95956b6f9d616cd254c3c7056f8c.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/10ee3229abfeec3303b67368f7b6e8fd.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/b637971e3583c7f6f5b442c38a5adbd0.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/10d7897f438d6eef22a89b5035e833f3.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/bd4026b98d66d6c3da443b0ea5759f36.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/55d8ff7d35b714d9c9a6ef1fd7732a60.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/55d8ff7d35b714d9c9a6ef1fd7732a60.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/55ff3d199702695f23631d85a25bbae6.jpg',
         ffg: 488,
       },
     ],
-    cost: { value: 5 },
+    cost: { value: 4 },
     restrictions: [{ factions: ['Resistance'] }],
     hyperspace: true,
     epic: true,
@@ -161,30 +125,12 @@ const t: UpgradeBase[] = [
             'Setup: Before placing forces, you may choose a number between 0 and 6. Treat your initiative as the chosen value during Setup. After Setup, assign 1 focus or evade token to each friendly ship at range 0-2.',
         },
         slots: ['Tech'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/a48713c6784bf33bd3f8b36eb19221c3.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/c770f8b4243e3efa53aab04b66fa66bb.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/e23ed21da5792627a9483dfeea3e54e6.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/e6aec376348ec8e3b4ee2069ed3ab9f4.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/6bf9cfe25fe122236c11f443d8883981.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/829521a032ad1b9e65e5afae418f5134.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/a48713c6784bf33bd3f8b36eb19221c3.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/a48713c6784bf33bd3f8b36eb19221c3.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/fa5c01453d7aa2e2f1f100593e79669d.jpg',
         ffg: 461,
       },
     ],
-    cost: { value: 10 },
+    cost: { value: 2 },
     restrictions: [{ factions: ['First Order'] }, { baseSizes: ['Large'] }],
     hyperspace: false,
     epic: true,
@@ -222,24 +168,6 @@ const t: UpgradeBase[] = [
             'While you have 2 or fewer stress tokens, you can perform [Barrel Roll] and [Boost] actions even while stressed.',
           zh:
             'While you have 2 or fewer stress tokens, you can perform [Barrel Roll] and [Boost] actions even while stressed.',
-        },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/a114625347a0f3088f4679f8107ab631.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/6b0503bcdee5807dfeef5b0914603010.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/6a09c5d21b5a0edeab082bf225ed16fc.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/8112494761a4fd1e46daa25956981678.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/5b8431a2a42726910731c0acc8e06708.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/fef31261a9b0187c0c919c77f7c4f481.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/a114625347a0f3088f4679f8107ab631.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/a114625347a0f3088f4679f8107ab631.png',
         },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/3789dd873db0d0c74293531bef49e16e.jpg',
@@ -289,24 +217,6 @@ const t: UpgradeBase[] = [
           zh:
             'While a friendly ship at range 1-2 performs an attack against a target you have locked, that ship ignores the [Lock] attack requirement.',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/83782f01cd3486006c4d279864d2983a.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/648cca6b88ee285e6af86717a8e5ad4d.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/022a9bc12aad69fad3bd90fe6eea4a11.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/54fa6ceb4ed368246d5694080303952f.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/448926cbf7f4650cb036b0be4dedb05c.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/b5dbe0c6009e464f2bf835f44a843d3b.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/83782f01cd3486006c4d279864d2983a.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/83782f01cd3486006c4d279864d2983a.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/1597042d794000fb34d1eee30cc10f35.jpg',
         slots: ['Tech'],
@@ -352,24 +262,6 @@ const t: UpgradeBase[] = [
             'While you fully execute a red maneuver, before the Check Difficulty step, you may perform 1 action.',
         },
         slots: ['Tech'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/ace963fc4fe9d97f64ab8564dc4beae7.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/bd6cde43118bf1ce233d0f482fc6f185.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/a840b0529f00bae19963a7f64cc5849f.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/385a0118259b70e965381559c31f6b2b.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/8162203d3c496b511d227c7424499f54.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/44326bcb821a45994a786dfdfc409adc.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/ace963fc4fe9d97f64ab8564dc4beae7.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/ace963fc4fe9d97f64ab8564dc4beae7.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/811e07d55f95e53fef3182020d8cbf6e.jpg',
         ffg: 462,
@@ -414,24 +306,6 @@ const t: UpgradeBase[] = [
             'While you coordinate or jam, if you have a lock on a ship, you may spend that lock to choose that ship, ignoring range restrictions.',
         },
         slots: ['Tech'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/094f3bbc6e3041886398e9eaf692d4ab.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/c6f44e4695d520e12ce817dc0e917c13.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/9290c1dd76ee18bbd79d5f70fd81981a.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/876eac1264269dade5afaa1d8b5cade1.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/87df3b012ccb61ea95bf5bb5c9f16fd7.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/6cf2ffa1fa28ce44fd4c326a4ad53dc7.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/094f3bbc6e3041886398e9eaf692d4ab.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/094f3bbc6e3041886398e9eaf692d4ab.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/14c54aef2e36ac34564194e4785c98ce.jpg',
         ffg: 491,
@@ -479,24 +353,6 @@ const t: UpgradeBase[] = [
         charges: { value: 2, recovers: 0 },
         slots: ['Tech', 'Modification'],
         ffg: 654,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/c0e458b69076138e2408664be131f61e.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/b920d0567826670964acb7065515d53b.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/0627c9c51f988c71882a1656b68682cd.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/436731c32ecb351b555970cffc9de7b9.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/c0e458b69076138e2408664be131f61e.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/c0e458b69076138e2408664be131f61e.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/c0e458b69076138e2408664be131f61e.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/c0e458b69076138e2408664be131f61e.png',
-        },
       },
     ],
     cost: { value: 9 },
@@ -541,24 +397,6 @@ const t: UpgradeBase[] = [
         },
         slots: ['Tech'],
         ffg: 671,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/49d9da05371e92cafec65512526b85c3.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/49d9da05371e92cafec65512526b85c3.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/49d9da05371e92cafec65512526b85c3.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/49d9da05371e92cafec65512526b85c3.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/49d9da05371e92cafec65512526b85c3.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/49d9da05371e92cafec65512526b85c3.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/49d9da05371e92cafec65512526b85c3.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/49d9da05371e92cafec65512526b85c3.png',
-        },
       },
     ],
     hyperspace: true,
@@ -602,24 +440,6 @@ const t: UpgradeBase[] = [
         },
         slots: ['Tech'],
         ffg: 672,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f8fd5c5d87f0512c774b6ac4d0c83f2e.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f8fd5c5d87f0512c774b6ac4d0c83f2e.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f8fd5c5d87f0512c774b6ac4d0c83f2e.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f8fd5c5d87f0512c774b6ac4d0c83f2e.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f8fd5c5d87f0512c774b6ac4d0c83f2e.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f8fd5c5d87f0512c774b6ac4d0c83f2e.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f8fd5c5d87f0512c774b6ac4d0c83f2e.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f8fd5c5d87f0512c774b6ac4d0c83f2e.png',
-        },
       },
     ],
     hyperspace: true,

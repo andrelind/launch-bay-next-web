@@ -89,24 +89,6 @@ const t: ShipType = {
         zh:
           '在你执行[Lock]行动后，你可以选择1架距离为1~3的友方战机。该战机可以对你已锁定的目标进行一次锁定，无视距离限制。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_14.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/42fbcfe3e060d6a77a8fe3b39eb0d4ae.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/40c20d931a1868f9dc91edab69a33224.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/78913132f9762e2a12bbd2cb881e0cc1.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/c6bf3a5125c748faefb5010a679b7a45.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/ba3519cb7d67e96ff906b3e24eb6b0f3.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/82075add1eb740ad853f1abffb39fd46.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_14.png',
-      },
       slots: [
         'Talent',
         'Turret',
@@ -165,24 +147,6 @@ const t: ShipType = {
         zh:
           '在交战阶段开始时，你可以花费1枚专注标记来选择一架与你距离为0~1的友方战机。如果你如此做，该战机进行防御时额外投1个防御骰，直到本轮结束。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_16.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/2da533092242b7fa0933179ff707a9b5.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/c18ee9ab8b26ce21395bd81bb8df678d.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/8210ca087648c67cca0257c668f74f09.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/a6d34bfa0b620e2176da8406e30b046d.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/f2aad33af3f5359ac60383f63c8a9ffe.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/9b6980f05c71e57562d0073972d6cb9c.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_16.png',
-      },
       slots: [
         'Talent',
         'Turret',
@@ -230,24 +194,6 @@ const t: ShipType = {
           'Comandado por Jon "Dutch" Vander, o Esquadrão Dourado desempenhou um papel fundamental nas Batalhas de Scarif e Yavin.',
         zh:
           '由乔安·"荷兰"·范德指挥的金色中队在斯卡利夫与雅文两次战争中扮演了重要的角色。',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_17.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/d2f785224c6c498dd127d63d95b8797c.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/8460069d29b5c5881584279f08c22883.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/084469b26068147b350c6addd224e6d3.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/01fa2bec679c0f2eebf338690c8b531b.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/95b528080eb4be87db5e82e8b965ac51.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/3fe09ec5a54b6e14b027738288e1d965.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_17.png',
       },
       slots: [
         'Talent',
@@ -303,24 +249,6 @@ const t: ShipType = {
           'Muito tempo depois de a Y-wing ser descontinuada pelo Império Galático, sua durabilidade, confiabilidade e armamento pesado ainda fazdela um recurso fundamental à frota Rebelde.',
         zh:
           'Y翼战机被银河帝国逐步淘汰之后，其耐用性、可靠性、以及其配备的重型武器，使得其仍作为主力战机服役于反抗军舰队中。',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_18.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/1c86cecb981fa61180c8c32d06cd4d99.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/cafa02efe493d370903bcf0123ed93d2.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/c34bcfb4632d7e492d9cd821a13b74b5.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/86554db71422d9dabd246fed15d3d758.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/4b8e77bef34bada33c23e0d3b2c06074.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/d116dd702afe896d7b1f224de9777eba.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_18.png',
       },
       slots: [
         'Turret',
@@ -379,24 +307,6 @@ const t: ShipType = {
         zh:
           '当你执行攻击时，每有一架其他友方战机与防御方距离为0~1，你可以重投1个攻击骰。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_15.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/0c70e87d8620ab0f681e4b8e72c1ea7d.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/d5bf07b5a12bbc5f53a8a33dbdc01f71.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/59d6dc0d16a769c586ade8c970381bbf.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/c1063697749d5740dc6b96926296b174.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/e9b4ebbcfb7f371cc4cb1dca8e656bf5.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/5e4d63c16924aaf2baaa6bc07be29004.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_15.png',
-      },
       slots: [
         'Talent',
         'Turret',
@@ -454,24 +364,6 @@ const t: ShipType = {
           'Quando defender, se houveruma nave inimiga em alcance 0-1,adicione 1 resultado [Evade] aosresultados de seus dados.',
         zh:
           '当你进行防御时，如果在你距离0~1内有敌机，则本次掷骰结果增加1[Evade]。',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_13.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/5e7b811f85adb9eab3d8d082cc78f666.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/7a241e96b09c2d9f4fba68507e3034de.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/154941abcaff4bee2afcaebfde390310.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/4e34abed1cfe3a40f94c91e43ed4020d.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/b8aa478d0fb8f152781a39240fac7aef.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/c7e8b15863175308680a09d8affc210a.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_13.png',
       },
       slots: [
         'Talent',

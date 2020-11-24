@@ -93,24 +93,6 @@ const t: ShipType = {
         zh:
           "Sienar Fleet System's TIE Advanced v1 is a groundbreaking starfighter design, featuring upgraded engines, a missile launcher, and folding s-foils.",
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_101.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/5cf72cecb152aec31f43a37f31ce2fd0.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/7fb04ec0252c81ceaa92f516b8ced63a.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/ce30978c0fdb140a2b55ab789ce7dfa7.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/2729e4ec028a7cd1c0d5abd238de45d2.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/a619b65c50a0845623fe0e14f73c03d5.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/f893687a73cfe5f8f970604c178c3515.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_101.png',
-      },
       slots: ['Talent', 'Sensor', 'Missile'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_101.jpg',
@@ -161,24 +143,6 @@ const t: ShipType = {
         zh:
           'While you defend at attack range 1, you may spend 1 [Force] to prevent the range 1 bonus. While you perform an attack against a defender at attack range 2-3, you may spend 1 [Force] to apply the range 1 bonus.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_99.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/958feed42d182218eeca45fc781e74dc.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/9f8b425fa311413efc5d25afee4173b8.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/6351fc2e4c9545b3eb8c44a0d4302a7d.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/acf636b4aa281e3af279fbc73324ebac.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/2be4df725a24027f75c81a7f2676735f.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/45ad6d987cfb406d750657b4486c4e16.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_99.png',
-      },
       force: { value: 2, recovers: 1, side: ['dark'] },
       slots: ['Sensor', 'Missile', 'Force Power'],
       artwork:
@@ -220,30 +184,12 @@ const t: ShipType = {
         zh:
           "The fearsome Inquisitors are given a great deal of autonomy and access to the Empire's latest technology, like the prototype TIE Advanced v1.",
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_102.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/f9c32a9f42dbec24c10475fac8631a0f.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/33b8912f17500f60baa33dcf57be9cd3.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/ad9db687f0e3f02b5a19e9880f821f6e.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/86aa820beded0f88e3abcdb7dfb8a7fe.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/16e6f305c2caf2af7bd97a79e6d8a899.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/6c6a8b41646ea99d47e6dfd356fd9fac.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_102.png',
-      },
       force: { value: 1, recovers: 1, side: ['dark'] },
       slots: ['Sensor', 'Missile', 'Force Power'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_102.jpg',
       ffg: 102,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -289,30 +235,12 @@ const t: ShipType = {
         zh:
           'While you perform a primary attack, before the Neutralize Results step, you may spend 2 [Force] to cancel 1 [Evade] result.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_100.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/f8c96263e05e209b2c7036061fa220ee.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/32a6252cc2ada29c06511a98e09e2cc7.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/dd71ec512852707913d3f5cfc724baa9.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/300ac11fef89866096c69dafcc74c74b.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/37fc837cc7adfc297b186014afae5e83.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/0d2bcf96a7319fa68c1de0738229c6f6.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_100.png',
-      },
       force: { value: 2, recovers: 1, side: ['dark'] },
       slots: ['Sensor', 'Missile', 'Force Power'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_100.jpg',
       ffg: 100,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -358,27 +286,9 @@ const t: ShipType = {
         zh:
           'While you perform an attack, after the Neutralize Results step, if the attack hit, you may spend 2 [Force] to add 1 [Critical Hit] result.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/01a02a00ef5aad21bc1f0a58028136ec.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/f9678a9741efa680bffbdd7992cfe145.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/e2383656b3c9311c2ba35cab427692dc.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/6a6de0295b7f7ce886f2a5a5efba1dd9.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/01a02a00ef5aad21bc1f0a58028136ec.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/01a02a00ef5aad21bc1f0a58028136ec.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/01a02a00ef5aad21bc1f0a58028136ec.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/01a02a00ef5aad21bc1f0a58028136ec.png',
-      },
       force: { value: 2, recovers: 1, side: ['dark'] },
       slots: ['Sensor', 'Missile', 'Force Power'],
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       ffg: 632,
     },

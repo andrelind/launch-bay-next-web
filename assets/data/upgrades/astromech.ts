@@ -36,24 +36,6 @@ const t: UpgradeBase[] = [
             'Action: Spend 1 [Charge] from another equipped upgrade to recover 1 shield. Action: Spend 2 shields to recover 1 non-recurring [Charge] on an equipped upgrade.',
         },
         slots: ['Astromech'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_99.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/f57df3b2e8d31b25eb9d73555512e37c.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_99.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/5612a30bd9a11d5e8da109e3dcb812eb.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/637c25f28b048789192e276bbf681922.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/397db941aea1240fbda00d6f6cd216d5.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/4e6c71f25b1e5c0926872cf00cdbf114.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_99.png',
-        },
         ffg: 323,
       },
     ],
@@ -95,24 +77,6 @@ const t: UpgradeBase[] = [
             'Após executar completamente uma manobra, se você não soltou nem lançou um dispositivo nesta rodada, você pode soltar 1 bomba.',
           zh:
             'After you fully execute a maneuver, if you have not dropped or launched a device this round, you may drop 1 bomb.',
-        },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_143.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/2fb0fdea4086ed7ceda729ff7d64f7e8.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_143.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/a2468873c4e36956fd032bc4031b9cad.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/78fe86f8bda9663c9df5e1b54f679459.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/0007fbb6009f52499c753ad62c6a9d95.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/43bb0fd2cc61ab17c1203fdf677e71b2.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_143.png',
         },
         slots: ['Astromech'],
         artwork:
@@ -161,30 +125,12 @@ const t: UpgradeBase[] = [
         },
         slots: ['Astromech'],
         charges: { value: 2, recovers: 0 },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_53.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/c3f1ad2132179554a68ed2f48021888a.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_53.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/eeeae2bfea13e88fb7056cf7ee5da2c4.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/5dbff64e8ef666695825e4a5dc72c1db.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/860ecaa674585670b434ab3e9be87e25.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/f2e2d61731c3d7d1835e74f3e30bf73f.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_53.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_53.jpg',
         ffg: 282,
       },
     ],
-    cost: { variable: 'agility', values: { '0': 3, '1': 5, '2': 7, '3': 9 } },
+    cost: { variable: 'agility', values: { '0': 3, '1': 3, '2': 5, '3': 8 } },
     hyperspace: true,
     epic: true,
   },
@@ -206,7 +152,7 @@ const t: UpgradeBase[] = [
         type: 'Astromech',
         ability: {
           en:
-            'After you reveal your dial, you may spend 1 [Charge] and gain 1 disarm token to recover 1 shield.',
+            'After you activate, you may spend 1 [Charge] and gain 1 deplete token to repair 1 damage card, recover 1 shield, or remove 1 device at range 0-1.',
           de:
             'Nachdem du dein Rad aufgedeckt hast, darfst du 1 [Charge] ausgeben und 1 Entwaffnet-Marker erhalten, um 1 Schild wiederherzustellen.',
           es:
@@ -222,29 +168,11 @@ const t: UpgradeBase[] = [
           zh:
             '展示你的操作盘后，你可以花费1[Charge]并获得1枚解除武装标记，以此来恢复1个护盾。',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_100.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/a77c4c7c51728a6f9ed3871f04df77b8.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_100.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/ecf3616a797ed806832754b2e4ec0a3a.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/34293925f776013f4e3d098df0e6bac8.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/4f2d909f472425e669595da7612ef4d0.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/9cb8c6e75456332cbee3b04ac7aa68c4.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_100.png',
-        },
         slots: ['Astromech'],
         charges: { value: 3, recovers: 0 },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_100.jpg',
-        ffg: 324,
+        ffg: 860,
       },
     ],
     cost: { variable: 'agility', values: { '0': 4, '1': 6, '2': 8, '3': 10 } },
@@ -287,24 +215,6 @@ const t: UpgradeBase[] = [
             '你可以保留最多2枚锁定标记。每枚锁定标记必须放置在不同的物体上。 当你执行[Lock]行动后，你可以立即再进行一次锁定。',
         },
         slots: ['Astromech'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_54.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/0118acb414c8bbd79ea6368cfd5d99b6.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_54.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/c86041bdbe9313001cbb89336d423b5d.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/366f4987a3649cad29172d461cfdb7f8.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/66722727c635c37b4c509e9e328f98b0.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/b58a0d292260702a87b87d1a9e6d5cb9.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_54.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_54.jpg',
         ffg: 283,
@@ -349,24 +259,6 @@ const t: UpgradeBase[] = [
             '降低你的速度为1~2的基础移动([Turn Left]、[Bank Left]、[Straight]、[Bank Right]、[Turn Right])的难度。',
         },
         slots: ['Astromech'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_55.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/1a67180fac67a57489ebb4ad1f6d358c.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_55.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/37e0d53bbe63d20d0dea96127dd78e90.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/ec35950d5dfd447f2adb5147ee184129.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/56c1d76d616a42624a5ba9a29fcd6737.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/af9e69a686dd4a4b0351fd974059907d.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_55.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_55.jpg',
         ffg: 284,
@@ -413,31 +305,13 @@ const t: UpgradeBase[] = [
         },
         slots: ['Astromech'],
         charges: { value: 2, recovers: 0 },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_56.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/9eb42945044f2bfdabe42d6d333bf51e.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_56.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/b51478036ad1be038b7ad072bb701702.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/499b32fc180e1889187e01e92d3c3e2e.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/9dd95d6660a5f4083133a0c151683cef.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/3207ae21cd5f182555655453c8ec9e8a.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_56.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_56.jpg',
         ffg: 285,
       },
     ],
     cost: { value: 4 },
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -476,24 +350,6 @@ const t: UpgradeBase[] = [
         },
         slots: ['Astromech'],
         charges: { value: 3, recovers: 0 },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_101.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/5903c8f13d9bb9ae8b6886fa0446532f.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_101.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/3a71a33f4f9bb69978fafa4240122a30.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/126ede1e0d851435623ec5c39e54ffb4.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/88b63d3e697a950fd7be0b4c3493b101.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/2dcb0867bbf24ac4e5f95c77e6a30a45.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_101.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_101.jpg',
         ffg: 325,
@@ -538,24 +394,6 @@ const t: UpgradeBase[] = [
           zh:
             'While you perform an attack against a defender in your [Front Arc], you may spend 1 [Charge] to reroll 1 attack die. If the rerolled result is a [Critical Hit] result, suffer 1 [Critical Hit] damage.',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_144.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/4af578b79908a2ad37b5d7b5b0ff374f.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_144.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/53043a084c702df4c66a70dbbb033d25.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/7d2c2dbd1e0ce95cacd85c04ceaa8cee.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/2fc0d53dc5c3955f5cd5fc60c40f39f3.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/e3452b4ee24ce0927f9822d240835b8f.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_144.png',
-        },
         slots: ['Astromech'],
         charges: { value: 3, recovers: 0 },
         artwork:
@@ -594,24 +432,6 @@ const t: UpgradeBase[] = [
           pt: 'Você consegue realizar ataquescontra naves amigas.',
           zh: 'You can perform attacks against friendly ships.',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_145.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/f672c9fe52daaaa1b0f9df1e28cbb8a6.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_145.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/8d6b4efa3be2ea93f1a4c72368c0bc62.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/77cc8eb93363220e40fe56095dec4830.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/1da67ecb67caa6cbc7dee4d291f60518.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/e2777bbd875fd50059901424aa6de2f9.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_145.png',
-        },
         slots: ['Astromech'],
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_145.jpg',
@@ -620,7 +440,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 0 },
     restrictions: [{ factions: ['Scum and Villainy'] }],
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
   },
   {
@@ -658,24 +478,6 @@ const t: UpgradeBase[] = [
           zh:
             'Before you activate or engage, you may spend 1 [Charge] to ignore obstacles until the end of this phase.',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/aed4536536b67bae316b260ed151c22a.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/196b75b7f533af0f6e6ff54918efdf4b.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/d03934dc8db6be8cf199294f4fa0db64.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/b9caccb356be1fd77ecb12b302b458cf.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/27d18eef58e6623c48f1533ab132f2e5.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/b55779eeee6128fe0e2ed31349209c89.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/aed4536536b67bae316b260ed151c22a.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/aed4536536b67bae316b260ed151c22a.png',
-        },
         slots: ['Astromech'],
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/7361f88154703f61221bc2a775f4a9b6.jpg',
@@ -684,7 +486,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 5 },
     restrictions: [{ factions: ['Resistance'] }],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -721,33 +523,15 @@ const t: UpgradeBase[] = [
           zh:
             'While you defend, you may spend your lock on the attacker to reroll any number of your defense dice.',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/b3e6d35ca6b6fd297312248ddf4e69a7.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/468fe86425a557e0f7faee24f8347686.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/257a8b96200bc0d382f6cd776edefed6.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/eae405b24583884660d60b382e657fd5.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/766c018b26732a39c872f50b04ddd552.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/8a4e0adb072ca8610a14b40796dc0ad4.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/b3e6d35ca6b6fd297312248ddf4e69a7.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/b3e6d35ca6b6fd297312248ddf4e69a7.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/d72ab7fa7cd398d614466a98076a2e6b.jpg',
         slots: ['Astromech'],
         ffg: 482,
       },
     ],
-    cost: { value: 4 },
+    cost: { value: 3 },
     restrictions: [{ factions: ['Resistance'] }],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -783,24 +567,6 @@ const t: UpgradeBase[] = [
             'Before you execute a blue maneuver, you may spend 1 [Charge] to perform a [Barrel Roll] or [Boost] action.',
           zh:
             'Before you execute a blue maneuver, you may spend 1 [Charge] to perform a [Barrel Roll] or [Boost] action.',
-        },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/37297ef7839800afd543de5d1a363561.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/3c65e1daf738f69a433c0d72809b4186.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/ea252f571ba87742fa9de05f1b4470f7.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/6e8dd3b8de48b47fe5ee3790b3308662.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/d0fb0a6701401e34da8f09c5d7733879.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/64411efd708a7d1f687c570f92fb5d29.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/37297ef7839800afd543de5d1a363561.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/37297ef7839800afd543de5d1a363561.png',
         },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/e8a75e0e143a5857ac3931d56ccde86c.jpg',
@@ -851,24 +617,6 @@ const t: UpgradeBase[] = [
           zh:
             'Before you execute a blue maneuver, you may spend 1 [Charge] to perform a [Barrel Roll] action.',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/010399f4054469aed3b04acba08d41b0.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/d78923c0d96f2e357bcd1ce067f620a2.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/5397ccdb03cb6dd594cdd87eed98397f.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/b1c5fe64f897d22906d3ae403a81b536.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/6eb4497bf8c46d4f5535aa6c85398aeb.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/cf8465a2fbdb5bd8d7a89b9a2943a26f.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/010399f4054469aed3b04acba08d41b0.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/010399f4054469aed3b04acba08d41b0.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/a2e3aaf77e8690a37e76ef4ae2087180.jpg',
         slots: ['Astromech'],
@@ -881,7 +629,7 @@ const t: UpgradeBase[] = [
       values: { '0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6 },
     },
     restrictions: [{ factions: ['Resistance'] }],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -918,33 +666,15 @@ const t: UpgradeBase[] = [
           zh:
             'While a ship you are locking performs an attack, you may choose 1 attack die. If you do, the attacker rerolls that die.',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/cd67f33e8aa52d2aeb07f432125a8c73.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/6163b1861aea6f6c66163061573bfd94.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/4b32f657b683e0a6629bd612e2c4d7f0.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/094460ab012b9baed24541c61409b06c.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/29780a9930b1e19b1c400271a2e6a01c.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/7251312809924a4189c7232be3d5c86a.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/cd67f33e8aa52d2aeb07f432125a8c73.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/cd67f33e8aa52d2aeb07f432125a8c73.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/f810d46699343a134003deea0f423131.jpg',
         slots: ['Astromech'],
         ffg: 481,
       },
     ],
-    cost: { value: 7 },
+    cost: { value: 6 },
     restrictions: [{ factions: ['Resistance'] }],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -983,29 +713,11 @@ const t: UpgradeBase[] = [
         },
         slots: ['Astromech'],
         charges: { value: 2, recovers: 0 },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/26f6dd68ba6bb37fa5315f45a6237c88.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/ff8653bf0cd4491fafc9da38b91b144e.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/e2b68db34b1c43585d48e86465275dda.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/e2b0c097aacc3cee45157a43e8155ab1.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/12680098c99382c4ed0f972b19762424.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/942613a7d22a7b050500e6b6dd5c0f4b.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/26f6dd68ba6bb37fa5315f45a6237c88.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/26f6dd68ba6bb37fa5315f45a6237c88.png',
-        },
         ffg: 546,
       },
     ],
     restrictions: [{ factions: ['Galactic Republic'] }],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
     cost: { value: 2 },
   },
@@ -1045,29 +757,11 @@ const t: UpgradeBase[] = [
         },
         slots: ['Astromech'],
         charges: { value: 2, recovers: 0 },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/80c71951bb28b45b9ffdc84c9e7e69f8.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/26d348a8a66e0fc16ac4e6d4a3900652.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/24ff9d4e97f29d32911b480146f7f6dd.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/c94a7b79c67020c578a4d48e2150e9ef.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/32b6651c5527b6b043b131c73c60e536.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/4ab50dc2fe5c5c1aec029105312b3924.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/80c71951bb28b45b9ffdc84c9e7e69f8.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/80c71951bb28b45b9ffdc84c9e7e69f8.png',
-        },
         ffg: 547,
       },
     ],
     restrictions: [{ factions: ['Galactic Republic'] }],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
     cost: { value: 5 },
   },
@@ -1106,29 +800,11 @@ const t: UpgradeBase[] = [
             'After you fully execute a red maneuver, if there is an enemy ship in your [Bullseye Arc], gain 1 calculate token.',
         },
         slots: ['Astromech'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/749fa54f44bc3327349aa3f8b1742a67.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/aea95f30f7a1a82b40658532e5ebd4df.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/81266a23ef0518535e31586adf232bc2.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/f0fa830fb019b2099aa89930396a0674.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/21eb6854431831879efbd0493aa2595a.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/ac6486a65063c4c3a3cd30d2e359e5fd.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/749fa54f44bc3327349aa3f8b1742a67.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/749fa54f44bc3327349aa3f8b1742a67.png',
-        },
         ffg: 551,
       },
     ],
     restrictions: [{ factions: ['Galactic Republic'] }],
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
     cost: { value: 3 },
   },
@@ -1165,24 +841,6 @@ const t: UpgradeBase[] = [
             'While you perform an attack, you may spend 1 evade token to change 1 [Focus] result to a [Hit] result.',
           zh:
             'While you perform an attack, you may spend 1 evade token to change 1 [Focus] result to a [Hit] result.',
-        },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/8fce75228aa2c4eaaf3e9666c4da8caf.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/d6a70542e7ecc1e1685c3e49bfe9e8b6.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/d4ca95d153980c51d2b908fda3a80120.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/93a8517039fc3551abf9edf63c48c9b7.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/8fce75228aa2c4eaaf3e9666c4da8caf.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/8fce75228aa2c4eaaf3e9666c4da8caf.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/8fce75228aa2c4eaaf3e9666c4da8caf.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/8fce75228aa2c4eaaf3e9666c4da8caf.png',
         },
         slots: ['Astromech'],
         ffg: 589,
@@ -1226,24 +884,6 @@ const t: UpgradeBase[] = [
             'After you reveal your dial, you may set your dial to a maneuver of the same bearing of a speed 1 higher or lower.',
           zh:
             'After you reveal your dial, you may set your dial to a maneuver of the same bearing of a speed 1 higher or lower.',
-        },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/1d90c6b2f87d17c061e07a92373310b4.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/bb588f17d6334cfa1a5c95c1e364d27e.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/ec113544268ee4977ba92ac539460817.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/6fb147202c6fb0e57ce37c4cea31de77.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/1d90c6b2f87d17c061e07a92373310b4.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/1d90c6b2f87d17c061e07a92373310b4.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/1d90c6b2f87d17c061e07a92373310b4.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/1d90c6b2f87d17c061e07a92373310b4.png',
         },
         slots: ['Astromech'],
         ffg: 588,
@@ -1291,24 +931,6 @@ const t: UpgradeBase[] = [
         slots: ['Astromech'],
         charges: { value: 2, recovers: 0 },
         ffg: 618,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/cde74a191d82775eacf2e273e855ef5f.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/d7ea47185a52ef2e9eb741e7e1ab03e5.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/d4b9504d6d6e8c991a3d81ed09130c51.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/cde74a191d82775eacf2e273e855ef5f.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/cde74a191d82775eacf2e273e855ef5f.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/3879c42dcac80545c9f507317626d127.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/cde74a191d82775eacf2e273e855ef5f.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/cde74a191d82775eacf2e273e855ef5f.png',
-        },
       },
       {
         title: {
@@ -1342,24 +964,6 @@ const t: UpgradeBase[] = [
         },
         slots: ['Astromech'],
         ffg: 617,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/6150404202e627187f39b6092cdf702c.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/b9e06c5c276fc79afb98047b701c5cb2.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/9c426732aeb626fcc943b9b9601bbd36.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/6150404202e627187f39b6092cdf702c.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/6150404202e627187f39b6092cdf702c.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/9e2237d0575d1c25fa86ec0d6c34e393.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/6150404202e627187f39b6092cdf702c.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/6150404202e627187f39b6092cdf702c.png',
-        },
       },
     ],
     restrictions: [{ factions: ['Galactic Republic'] }],
@@ -1404,30 +1008,12 @@ const t: UpgradeBase[] = [
         charges: { value: 3, recovers: 0 },
         slots: ['Astromech'],
         ffg: 644,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/07ef542a7250abbf79d27526f17ac879.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/32bfa7eab87b3ad53b03b22b362754bb.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/5cf20f8d6394022ee2acb80efe4116eb.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/06e3501bee5c4d6a69db28b9da781d44.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/07ef542a7250abbf79d27526f17ac879.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/07ef542a7250abbf79d27526f17ac879.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/07ef542a7250abbf79d27526f17ac879.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/07ef542a7250abbf79d27526f17ac879.png',
-        },
       },
     ],
     restrictions: [{ factions: ['Resistance'] }],
     hyperspace: true,
     epic: true,
-    cost: { value: 6 },
+    cost: { value: 5 },
   },
   {
     xws: 'r2d2-republic',
@@ -1446,7 +1032,7 @@ const t: UpgradeBase[] = [
       },
     ],
     hyperspace: false,
-    epic: true,
+    epic: false,
     restrictions: [{ factions: ['Galactic Republic'] }],
   },
   {
@@ -1479,15 +1065,55 @@ const t: UpgradeBase[] = [
         type: 'Astromech',
         ability: {
           en:
-            'While you perform an attack, you may reroll a number of attack dice up to the number of friendly ship at range 0-3 that have the defender in their [Bullseye Arc].',
+            'While you perform an attack, you may reroll a number of attack dice up to the number of friendly ships at range 0-3 that have the defender in their [Bullseye Arc].',
         },
         slots: ['Astromech'],
-        ffg: -1,
+        ffg: 719,
       },
     ],
     hyperspace: true,
     epic: true,
     restrictions: [{ factions: ['Resistance'] }],
+  },
+  {
+    limited: 0,
+    xws: 'q7astromech',
+    hyperspace: true,
+    epic: false,
+    sides: [
+      {
+        ability: {
+          en:
+            'While you barrel roll or boost, you can move through and overlap obstacles.',
+        },
+        title: { en: 'Q7 Astromech' },
+        type: 'Astromech',
+        slots: ['Astromech'],
+        ffg: 863,
+      },
+    ],
+    cost: { value: 4 },
+    restrictions: [{ factions: ['Galactic Republic'] }],
+  },
+  {
+    limited: 1,
+    xws: 'r7a7',
+    hyperspace: true,
+    epic: false,
+    sides: [
+      {
+        ability: {
+          en:
+            'While you perform an attack, you may spend 1 [Charge] to change 1 [Hit] result to a [Critical Hit] result.',
+        },
+        title: { en: 'R7-A7' },
+        type: 'Astromech',
+        slots: ['Astromech'],
+        ffg: 862,
+      },
+    ],
+    cost: { value: 3 },
+    restrictions: [{ factions: ['Galactic Republic'] }],
   },
 ];
 

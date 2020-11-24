@@ -124,24 +124,6 @@ const t: ShipType = {
         pt: 'Hero of Naboo',
         zh: 'Hero of Naboo',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/21e28ea4e8784dce5a554a33888d8be0.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/8569f27596c2b45110f0e5b7b267025a.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/25604ecdffd2d4d1c3d75fb2fcdbf859.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/44f3f2d8c58a20aac6bb64105f6fe23b.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/21e28ea4e8784dce5a554a33888d8be0.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/21e28ea4e8784dce5a554a33888d8be0.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/21e28ea4e8784dce5a554a33888d8be0.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/21e28ea4e8784dce5a554a33888d8be0.png',
-      },
     },
     {
       name: {
@@ -190,24 +172,6 @@ const t: ShipType = {
       cost: 45,
       slots: ['Talent', 'Sensor', 'Torpedo', 'Astromech'],
       ffg: 557,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/87829b7b808c535eb1e2c8314b04971a.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/9c649278d7280b1dbe49e62c3dc66fe7.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/8be9555742ebf6d49d4bd0ad6318cade.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/a227add4cd2370a3ccc656047ae2fbc0.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/87829b7b808c535eb1e2c8314b04971a.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/87829b7b808c535eb1e2c8314b04971a.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/87829b7b808c535eb1e2c8314b04971a.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/87829b7b808c535eb1e2c8314b04971a.png',
-      },
     },
     {
       name: {
@@ -253,27 +217,9 @@ const t: ShipType = {
         zh:
           'While an enemy ship in your [Front Arc] defends or performs an attack, that ship can modify only 1 [Focus] result (other results can still be modified).',
       },
-      cost: 45,
+      cost: 44,
       slots: ['Talent', 'Sensor', 'Torpedo', 'Astromech'],
       ffg: 559,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3bc6bb14d0c80011145a36c132550298.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/273801cd83c7bdcf47b641153a2e3e3c.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/1c48e663dbedc429c868aedf97225182.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/bd7a52fcadfbeefd75d5165ccf002011.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3bc6bb14d0c80011145a36c132550298.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3bc6bb14d0c80011145a36c132550298.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3bc6bb14d0c80011145a36c132550298.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3bc6bb14d0c80011145a36c132550298.png',
-      },
     },
     {
       name: {
@@ -322,24 +268,6 @@ const t: ShipType = {
         pt: 'Bravo Five',
         zh: 'Bravo Five',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/06e0863851b95dba4874b211e05661cc.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/ea77fb5eba6ae94dbeda0ebcc94a8abf.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/bc37104269a82e00f8c6ec17776393e0.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/bf4f02f9d34e3a004302a03fe239f41f.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/06e0863851b95dba4874b211e05661cc.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/06e0863851b95dba4874b211e05661cc.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/06e0863851b95dba4874b211e05661cc.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/06e0863851b95dba4874b211e05661cc.png',
-      },
     },
     {
       name: {
@@ -373,29 +301,11 @@ const t: ShipType = {
         zh:
           'The volunteer pilots of the Royal Naboo Security Force are dedicated to protecting the people and ideals of their homeworld, and trust their Queen to send them into battle only when all other options have failed.',
       },
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       cost: 33,
       slots: ['Sensor', 'Torpedo', 'Astromech'],
       ffg: 562,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/274db1f70ed4da939b9440837a30c39a.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/b578cba22373b1bf0e00bfaa4d814c97.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/f79ab5fd73d127aa56b24a4664c1d78d.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/0895de1d67425b433b4b1aed2e56d435.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/274db1f70ed4da939b9440837a30c39a.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/274db1f70ed4da939b9440837a30c39a.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/274db1f70ed4da939b9440837a30c39a.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/274db1f70ed4da939b9440837a30c39a.png',
-      },
     },
     {
       name: {
@@ -444,24 +354,6 @@ const t: ShipType = {
         pl: 'Królewski podstęp',
         pt: 'Regal Ruse',
         zh: 'Regal Ruse',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/4493fe57050175b6a75e3a13e7553b1e.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/fe61ef2d02753d830c381aebff8f50b5.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/79f241bbbed18d133f797ed080f169e9.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/42e3da6869abf8aebf1429a4e9bb274b.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/4493fe57050175b6a75e3a13e7553b1e.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/4493fe57050175b6a75e3a13e7553b1e.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/4493fe57050175b6a75e3a13e7553b1e.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/4493fe57050175b6a75e3a13e7553b1e.png',
       },
     },
   ],

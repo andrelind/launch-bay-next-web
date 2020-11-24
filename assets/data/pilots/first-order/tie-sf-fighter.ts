@@ -142,24 +142,6 @@ const t: ShipType = {
       },
       slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Gunner', 'Tech'],
       charges: { value: 1, recovers: 1 },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d038dadd7a62bbe2de89d3866e1a3639.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/5d1c8a4b2a1fa56fb5a763b2ea0b4aa9.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/559f431fc82200b1647d4116d6e52741.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/8ed4133efe3bed88ba74147f32244b4b.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/29a430277c551518e623578edc7e65d2.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/4a546a001915e85a32f52a80a2a2881b.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d038dadd7a62bbe2de89d3866e1a3639.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d038dadd7a62bbe2de89d3866e1a3639.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/86f8ccc959081a43dc4d0dbeb921d0ba.jpg',
       ffg: 406,
@@ -189,7 +171,7 @@ const t: ShipType = {
       },
       initiative: 4,
       limited: 1,
-      cost: 39,
+      cost: 38,
       xws: 'backdraft',
       ability: {
         en:
@@ -210,28 +192,10 @@ const t: ShipType = {
           'While you perform a [Single Turret Arc] primary attack, if the defender is in your [Rear Arc], roll 1 additional die.',
       },
       slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Gunner', 'Tech'],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/317cc5350980277f1d389ed618030d85.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/68886a6ca4d5cedd5a7422fbe1ebcb77.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/3fac96d14f420cda9b4e7985f0038738.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/d2e56ff2d6be5f600eea7a1fe8c6aa42.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/3514fcae466f8daa9dcdcf04084185a3.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/e62964fc66bbffe7913653fa61fe4be7.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/317cc5350980277f1d389ed618030d85.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/317cc5350980277f1d389ed618030d85.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/6c3a06877712596601ba1cc4ec533626.jpg',
       ffg: 407,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -268,24 +232,6 @@ const t: ShipType = {
           'The TIE/sf is a versatile starfighter that carries specialized armament and experimental systems for long-range operations by First Order Special Forces.',
       },
       slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Gunner', 'Tech'],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/784d00f653ff7cd58cb634c7a59e47c1.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/379110af42265d758b40bb0bb3cd4a30.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/de04413b4fa238da3b1f20407fd4d40f.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/b51c3c9263fef66c4f4d4f3fdffb332d.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/ad0de8a8b7f3ab27f7dfb021036dd87d.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/a57a1e1c83a822e053e5ea35eaeef11a.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/784d00f653ff7cd58cb634c7a59e47c1.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/784d00f653ff7cd58cb634c7a59e47c1.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/2caf1312bd6aba3630ef6edc1ff81f53.jpg',
       ffg: 408,
@@ -326,24 +272,6 @@ const t: ShipType = {
           'Humiliated by their failure, the remaining pilots from Starkiller Base are eager to prove their worth in pursuit of the Resistance.',
       },
       slots: ['Sensor', 'Missile', 'Modification', 'Gunner', 'Tech'],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/848db1993150bda19217e2c14b3c3df6.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/2af8aecf27647c9875045f370ad04e0d.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/f434f000f1994bc508d84c22167377da.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/49850fc7671cb17a93484201f43c14ef.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/c4d80f579ff196b92a10e874f02fb3f7.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/f36afc41e1527f22db8a4bd544145e88.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/848db1993150bda19217e2c14b3c3df6.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/848db1993150bda19217e2c14b3c3df6.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/55f72ce4974962db5b2ab3fac316b896.jpg',
       ffg: 409,
@@ -363,31 +291,13 @@ const t: ShipType = {
       },
       initiative: 5,
       limited: 1,
-      cost: 38,
+      cost: 37,
       xws: 'lieutenantlehuse',
       slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Gunner', 'Tech'],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/b823438eb2b32a407bf6a757a4ecb7d5.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/41a105e8e2485c0ccb17f5215c092b07.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/c7366ec1f085f33c2c85ac71dfc3a810.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/be0c48cb3fdab2be3700c8c5f8d981e3.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/b823438eb2b32a407bf6a757a4ecb7d5.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/b823438eb2b32a407bf6a757a4ecb7d5.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/b823438eb2b32a407bf6a757a4ecb7d5.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/b823438eb2b32a407bf6a757a4ecb7d5.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/55f72ce4974962db5b2ab3fac316b896.jpg',
       ffg: 641,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       caption: {
         en: 'Unflinching Executioner',
@@ -431,30 +341,12 @@ const t: ShipType = {
       },
       initiative: 4,
       limited: 1,
-      cost: 39,
+      cost: 38,
       xws: 'captainphasma',
       slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Gunner', 'Tech'],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/7c0bc32446e17991aff226d0fcab7b19.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/9ba82850d7a4f091ad7b6a74c5db4178.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/8bbe7258bace3d9789577324564ce335.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/0aa124827895ca23a0e7957967fd3f1e.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/7c0bc32446e17991aff226d0fcab7b19.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/7c0bc32446e17991aff226d0fcab7b19.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/7c0bc32446e17991aff226d0fcab7b19.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/7c0bc32446e17991aff226d0fcab7b19.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/55f72ce4974962db5b2ab3fac316b896.jpg',
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       ffg: 642,
       caption: {

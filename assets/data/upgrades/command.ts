@@ -30,11 +30,11 @@ const t: UpgradeBase[] = [
         title: { en: 'Agent of the Empire' },
         ability: {
           en:
-            'You are a <strong>wing leader</strong>.\nYour wingmates must be 2, 3, 4 or 5 TIE/ln fighters.\n\nWhile you defend, up to 2 of your wingmates in the attack arc may suffer 1 [Hit] or [Critical Hit] damage to cancel a matching result.',
+            'You are a wing leader. Your wingmates must be 2, 3, 4, or 5 TIE/ln fighters. While you defend, up to 2 of your wingmates in the attack arc may suffer 1 [Hit] or [Critical Hit] damage to cancel a matching result.',
         },
         grants: [{ wing: ['tielnfighter'], value: 5 }],
         slots: ['Command'],
-        ffg: -1,
+        ffg: 732,
       },
     ],
     cost: { value: 4 },
@@ -119,11 +119,11 @@ const t: UpgradeBase[] = [
         title: { en: 'First Order Elite' },
         ability: {
           en:
-            'You are a <strong>wing leader</strong>.\nYour wingmates must be 2 or 3 TIE/fo fighters or TIE/sf fighters.\n\nWhile you defend, up to 2 of your wingmates in the attack arc may suffer 1 [Hit] or [Critical Hit] damage to cancel a matching result.',
+            'You are a wing leader. Your wingmates must be 2 or 3 TIE/fo fighters or TIE/sf fighters. While you defend, up to 2 of your wingmates in the attack arc may suffer 1 [Hit] or [Critical Hit] damage to cancel a matching result.',
         },
         grants: [{ wing: ['tiefofighter', 'tiesffighter'], value: 3 }],
         slots: ['Command'],
-        ffg: -1,
+        ffg: 733,
       },
     ],
     cost: { value: 4 },
@@ -224,11 +224,11 @@ const t: UpgradeBase[] = [
         title: { en: 'Veteran Wing Leader' },
         ability: {
           en:
-            'You are a <strong>wing leader</strong>.\nYour wingmates must be 2, 3, 4 or 5 other ships of your ship type.\n\nWhile you defend, up to 2 of your wingmates in the attack arc may suffer 1 [Hit] or [Critical Hit] damage to cancel a matching result.',
+            'You are a wing leader. Your wingmates must be 2, 3, 4, or 5 other ships of your ship type. While you defend, up to 2 of your wingmates in the attack arc may suffer 1 [Hit] or [Critical Hit] damage to cancel a matching result.',
         },
         grants: [{ wing: true, value: 5 }],
         slots: ['Command'],
-        ffg: -1,
+        ffg: 734,
       },
     ],
     cost: { value: 2 },
@@ -245,16 +245,35 @@ const t: UpgradeBase[] = [
         title: { en: 'Dreadnought Hunter' },
         ability: {
           en:
-            'While you perform an attack against a huge ship, if the attack deals a faceup damage card to the defender and the defender is in your [Bullseye arc], you may apply the Precision Shot effect even if you are not in the specified arc.',
+            'While you perform an attack against a huge ship, if the attack deals a faceup damage card to the defender and the defender is in your [Bullseye Arc], you may apply the Precision Shot effect even if you are not in the specified arc.',
         },
         slots: ['Command'],
-        ffg: -1,
+        ffg: 735,
       },
     ],
     cost: { value: 6 },
     restrictions: [{ baseSizes: ['Small'] }, { initiative: { min: 4 } }],
     hyperspace: false,
     epic: true,
+  },
+  {
+    limited: 0,
+    xws: 'jedicommander',
+    hyperspace: false,
+    epic: false,
+    sides: [
+      {
+        ability: {
+          en:
+            'While your wingmates execute purple maneuvers, they treat those maneuvers as red, instead. While you defend, up to 2 of your wingmates in the attack arc may each suffer 1 [Hit]/[Critical Hit] damage to cancel 1 matching result.',
+        },
+        title: { en: 'Jedi Commander' },
+        type: 'Command',
+        slots: ['Command'],
+        ffg: 834,
+      },
+    ],
+    cost: { value: 5 },
   },
 ];
 

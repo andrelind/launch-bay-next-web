@@ -34,24 +34,6 @@ const t: UpgradeBase[] = [
           zh: '在结束阶段，你可以旋转你的[Single Turret Arc]标志。',
         },
         slots: ['Gunner'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_162.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/028f8ed49eb67f6223540be86ac7f815.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_162.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/e502f3d55a987ff555a03612620c25f3.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/8a502798546b44b9393a51191596aa45.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/1ada0110fe0576efd1687e127d3e256e.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/8a5d2cc33c2ee13ecd655080973adeb9.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_162.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_162.jpg',
         ffg: 388,
@@ -59,7 +41,7 @@ const t: UpgradeBase[] = [
     ],
     cost: {
       variable: 'size',
-      values: { Small: 7, Medium: 6, Large: 5, Huge: 4 },
+      values: { Small: 6, Medium: 5, Large: 4, Huge: 3 },
     },
     hyperspace: true,
     epic: true,
@@ -97,24 +79,6 @@ const t: UpgradeBase[] = [
             'Quando realizar um ataque, você pode mudar 1 resultado [Hit] para um resultado [Critical Hit] para cada ficha de estresse que o defensor tiver.',
           zh:
             'While you perform an attack, you may change 1 [Hit] result to a [Critical Hit] result for each stress token the defender has.',
-        },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_140.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/882d5a51a7293a54ed43f48149a52e85.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_140.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/8e2720b333554554b10dda2187668275.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/888e0c016ad6c854cd95713ab621ade3.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/8da3401087694b3493933cf0f8b881db.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/7fc78069125c30f09be87af889223b0e.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_140.png',
         },
         slots: ['Gunner'],
         artwork:
@@ -164,24 +128,6 @@ const t: UpgradeBase[] = [
             'After you perform a primary attack, if you are focused, you may perform a bonus [Single Turret Arc] attack against a ship you have not already attacked this round.',
         },
         slots: ['Gunner'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_95.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/f8b736c8f1b926a9d1354aacfd5fd127.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_95.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/c0f016405ac66ac5daff72edf2328a0c.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/8fc4e543f11bcd86858b4bc410461d83.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/91cfefa2dabc7c88e6f274b89438bbdc.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/17ba15bc8979a7701b38be2f27101365.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_95.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_95.jpg',
         ffg: 319,
@@ -226,31 +172,13 @@ const t: UpgradeBase[] = [
           zh:
             'After you perform a primary attack that misses, if you are not stressed, you must receive 1 stress token to perform a bonus primary attack against the same target.',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_139.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/ca7d57361523e30ee3fb86405ac0b8cc.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_139.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/8b1002b0f76d19e7e11e4bee92602623.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/1dedb03e4803a2905705b44240c7d126.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/97bdc99f9611ab06aacbd3ed41d006cf.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/24336e44c0e1c6fafc6a5ed72e876dac.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_139.png',
-        },
         slots: ['Gunner'],
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_139.jpg',
         ffg: 364,
       },
     ],
-    cost: { value: 9 },
+    cost: { value: 8 },
     restrictions: [{ factions: ['Scum and Villainy'] }],
     hyperspace: true,
     epic: true,
@@ -289,24 +217,6 @@ const t: UpgradeBase[] = [
           zh:
             'After you defend, if the attacker is in your firing arc, you may spend 1 [Charge]. If you do, roll 1 attack die unless the attacker chooses to remove 1 green token. On a [Hit] or [Critical Hit] result, the attacker suffers 1 [Hit] damage.',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_141.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/b6de5b064fc0db129b32033f0b7af860.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_141.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/89f59a67bc88707681542d6fce79b64d.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/fb4660e16f3acc18263424e8cf699c1c.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/8995ae7a453724415544c03d5cf4110b.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/0b53c80322f61db5f3be2f1debe551d5.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_141.png',
-        },
         slots: ['Gunner'],
         charges: { value: 1, recovers: 1 },
         artwork:
@@ -316,7 +226,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 6 },
     restrictions: [{ factions: ['Scum and Villainy'] }],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -352,24 +262,6 @@ const t: UpgradeBase[] = [
             'Após realizar um ataque primário, você pode gastar 1 [Force] para realizar um ataque [Single Turret Arc] bônus usando um [Single Turret Arc] que ainda não tenha usado para atacar nessa rodada. Se fizer isso e estiver estressado,você tem a opção de rerrolar1 dado de ataque.',
           zh:
             'After you perform a primary attack, you may spend 1 [Force] to perform a bonus [Single Turret Arc] attack from a [Single Turret Arc] you have not attacked from this round. If you do and you are stressed, you may reroll 1 attack die.',
-        },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_96.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/ab138ae4b8ba82ebbd8ee7ae6726243b.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_96.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/eab8488d43020629aa281220df3c227b.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/4ce80cfb4ebec0dbee9530609cd613cf.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/0647b227db1ff84eece9815924974789.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/41bfcc4b47afc04963158144d2142e03.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_96.png',
         },
         slots: ['Gunner'],
         force: { value: 1, recovers: 1, side: ['light'] },
@@ -417,24 +309,6 @@ const t: UpgradeBase[] = [
           zh:
             'While you perform an attack, you may spend 1 [Force] to change 1 of your [Focus] results to a [Critical Hit] result.',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_122.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/28d583c1fb5b31af73068c2d4d48aa97.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_122.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/7745d1f1413e8d1d218516f4029d84d7.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/ab0af7d1521e34621cd124d35c6b855e.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/62ab03d24ab206288143544574e9ddfb.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/0b973237ad24e06327b2c63e6d2aeb06.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_122.png',
-        },
         slots: ['Gunner'],
         force: { value: 1, recovers: 1, side: ['dark'] },
         artwork:
@@ -444,7 +318,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 12 },
     restrictions: [{ factions: ['Galactic Empire'] }],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -481,24 +355,6 @@ const t: UpgradeBase[] = [
           zh:
             'While you perform an attack, you may spend 1 [Charge] to change 1 [Hit] result to a [Critical Hit] result. While you defend, if your [Charge] is active, the attacker may change 1 [Hit] result to a [Critical Hit] result.',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_142.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/82311bcf56f37442896c8d593b9eead4.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_142.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/9a0ac38a400fffd99049b213e49cfb63.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/4a3d61c6cb2024eabf976eba54dc6c11.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/97aed8b3200ef799b7d1b25221b327a5.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/3a7aad8d41bbdfbaea3c97055c9345bd.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_142.png',
-        },
         slots: ['Gunner'],
         charges: { value: 1, recovers: 1 },
         artwork:
@@ -508,7 +364,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 1 },
     restrictions: [{ factions: ['Scum and Villainy'] }],
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
   },
   {
@@ -546,24 +402,6 @@ const t: UpgradeBase[] = [
             'During the Engagement Phase, at initiative 7, you may perform a [Single Turret Arc] attack. You cannot attack from that [Single Turret Arc] again this round.',
         },
         slots: ['Gunner'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_97.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/5d6eb3776c39ee115dc9f1ccb63ee5a7.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_97.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/fe6e282f73a7aca895ac86faeda6e472.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/f9d7f1fe780f976ed9a2c05ca04fe430.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/7ebec87c6f30dac1d0a59e2ed57a7d77.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/1faec7abadc46d894acbd554c5e34904.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_97.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_97.jpg',
         ffg: 321,
@@ -604,24 +442,6 @@ const t: UpgradeBase[] = [
           zh: '在你进行交战之前，你可以执行一个红色[Focus]行动。',
         },
         slots: ['Gunner'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_163.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/b63a16733afa5b09f7f7587b5069c485.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_163.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/c00ed676e0efd283cea3a20f30a57857.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/9a04ed11c9e47da54bda8898c13da87e.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/32d7e3aba0190b029996a13f6612f9d1.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/54b6d039c78efe92b3f27196fe831c25.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_163.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_163.jpg',
         ffg: 389,
@@ -667,24 +487,6 @@ const t: UpgradeBase[] = [
             'While you perform a [Single Turret Arc] attack, after the Modify Defense Dice step, the defender removes 1 focus or calculate token.',
         },
         slots: ['Gunner'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_49.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/249685d98a7d3b348d2247f3f6626cb1.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_49.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/266b9341d19a86e6facef05271ac4199.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/0d77a08edb93d641b37fd30c2f53dcba.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/f3932c0aee3f72165efa78eb233fa9c2.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/a88509bd8c23bb4a0f2dd3de6853c344.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_49.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_49.jpg',
         ffg: 278,
@@ -730,24 +532,6 @@ const t: UpgradeBase[] = [
         },
         slots: ['Gunner'],
         force: { value: 1, recovers: 1, side: ['light'] },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_98.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/a51d9021805d674780ca653fa9c639dc.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_98.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/86bed9a7b7948e7c7b70a3ab9b09870a.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/f4a17dcc55dc94d43aad4ba40eb8ec01.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/d63e2c0dc4365fccc879fb095857c4ea.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/e3500eb65c4034fb17c0393446fc34fc.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_98.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_98.jpg',
         ffg: 322,
@@ -793,31 +577,13 @@ const t: UpgradeBase[] = [
             'If you would drop or launch a device, you may use a template of the same bearing with a speed 1 higher or lower.',
         },
         slots: ['Gunner'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_50.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/c8e220471783223a5052da29e5538315.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_50.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/0b442540d4ff030f50ab386f7943227e.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/017171bf773e995f5348bb7262924835.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/a8f18bcee8ecd6853db970e8a0d5e1d5.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/522d931935de84a4eecade6c29b98544.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_50.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_50.jpg',
         ffg: 279,
       },
     ],
     cost: { value: 2 },
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
   },
   {
@@ -855,24 +621,6 @@ const t: UpgradeBase[] = [
             'While you perform a primary [Front Arc] attack, if your [Single Turret Arc] is in your [Front Arc], you may roll 1 additional attack die. After you perform a primary [Front Arc] attack, if your [Single Turret Arc] is in your [Rear Arc], you may perform a bonus primary [Single Turret Arc] attack.',
         },
         slots: ['Gunner'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d3aed19c7eb6f9ebc2352ac49cdd6b87.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/8de4bbed1680cd56b2e590047e482f33.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/fd8eb863560d6516f0db6d08409d70c5.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/4851b83d913a0a74aecbbce5ac549c00.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/88a948bc14268ecef6466faff75a4411.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/37d89a56385ec18954763ab653098ad8.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d3aed19c7eb6f9ebc2352ac49cdd6b87.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d3aed19c7eb6f9ebc2352ac49cdd6b87.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/b87bf63d7db6195febd879edc4880f13.jpg',
         ffg: 470,
@@ -921,24 +669,6 @@ const t: UpgradeBase[] = [
             '在你执行基础攻击时，你可以选择1个本轮未进行攻击的[Single Turret Arc]，使用它执行一次[Single Turret Arc]奖励攻击。',
         },
         slots: ['Gunner'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_51.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/9b22bbf9a89e80632c2cf45680da74f4.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_51.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/c4e7a94378af66a25eea12bf2141c1c7.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/5380a1fa4157840db00ffc0427f3d15e.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/09578683f708f218d41034f5a4e65669.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/007c06145005709c6889d51594bc04bd.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_51.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_51.jpg',
         ffg: 280,
@@ -946,7 +676,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     restrictions: [{ arcs: ['Rear Arc'] }],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -984,24 +714,6 @@ const t: UpgradeBase[] = [
             'After you perform a primary attack, you may perform a bonus [Single Turret Arc] attack using a [Single Turret Arc] you did not already attack from this round.',
         },
         slots: ['Gunner'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_52.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/818325b9d24e834563225164e24fefee.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_52.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/e3df4395b020e04e115e7ba3ee46f17b.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/25c606296345b3cb6e95a6f14009b05e.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/c18933b326df042fb1310940b446fd5f.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/c7c63bb54ec511a5bbf765e78021ad79.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_52.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_52.jpg',
         ffg: 281,
@@ -1009,7 +721,7 @@ const t: UpgradeBase[] = [
     ],
     cost: {
       variable: 'size',
-      values: { Small: 12, Medium: 9, Large: 7, Huge: 7 },
+      values: { Small: 11, Medium: 8, Large: 7, Huge: 7 },
     },
     restrictions: [{ action: { type: 'Rotate Arc' } }],
     hyperspace: false,
@@ -1050,30 +762,12 @@ const t: UpgradeBase[] = [
             'While you defend or perform a primary attack, if the enemy ship is in your [Front Arc], you may add 1 blank result to your roll (this die can be rerolled or otherwise modified).',
         },
         slots: ['Gunner'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/79477be319935f42270f1712cd269dff.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/1e62719f5c5ad8ab01d41d97c31f1200.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/218e591cdc19938f3a0b48c38fcde9c1.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/7f567d8fdf2baa1458089789068facb0.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/038b5b9dc825ab633f38b1c5b0c0eec2.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/52801dfd7e559ae0d0dba937922d12f3.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/79477be319935f42270f1712cd269dff.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/79477be319935f42270f1712cd269dff.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/7d5d0c76d3c8fdbb5ec893c270eec7b2.jpg',
         ffg: 476,
       },
     ],
-    cost: { value: 10 },
+    cost: { value: 9 },
     restrictions: [{ factions: ['Resistance'] }],
     hyperspace: false,
     epic: true,
@@ -1113,30 +807,12 @@ const t: UpgradeBase[] = [
             'After you perform a primary attack, you may drop 1 bomb or rotate your [Single Turret Arc]. After you are destroyed, you may drop 1 bomb.',
         },
         slots: ['Gunner'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/9dc15f634233b5daba107a07aa63d04c.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/1e9cc6d130926cc69f56d84f74223244.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/b8e9acb9310b40d42a4cf41719cb69d7.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/91f1a51bd63400d5d67940fb8aef8c5d.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/cb1f58c5d3fee8d09db042e380a689a7.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/3c719fe078d8819bfa876e11329f647d.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/9dc15f634233b5daba107a07aa63d04c.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/9dc15f634233b5daba107a07aa63d04c.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/a34ab7a76083f91577110d31d20b6e14.jpg',
         ffg: 477,
       },
     ],
-    cost: { value: 7 },
+    cost: { value: 6 },
     restrictions: [{ factions: ['Resistance'] }],
     hyperspace: false,
     epic: true,
@@ -1177,31 +853,13 @@ const t: UpgradeBase[] = [
         },
         slots: ['Gunner'],
         force: { value: 1, recovers: 1, side: ['light'] },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/e11aec8ae6ec855694947bc2f9d1917e.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/59e6ddc10804daa7c153edf77f88eb76.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/83985f8b481396b9bba96723efb34838.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/f86dd1b800c7b6530c8a74e0f2622ffd.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/fc78b6b4c43d97fb1781c65852505307.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/cc0bfafb1676d58506930ca2e5861fb1.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/e11aec8ae6ec855694947bc2f9d1917e.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/e11aec8ae6ec855694947bc2f9d1917e.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/ab5eea679d5ca9369cd122bc65001119.jpg',
         ffg: 478,
       },
     ],
     restrictions: [{ factions: ['Resistance'] }],
-    cost: { value: 14 },
+    cost: { value: 13 },
     hyperspace: false,
     epic: true,
   },
@@ -1241,24 +899,6 @@ const t: UpgradeBase[] = [
         },
         slots: ['Gunner'],
         force: { value: 1, recovers: 1, side: ['light'] },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/bdc101788f827aeaf2f50a513b59aa7e.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/b88cb2af9ca808cfed5586eefeb1220c.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/4f7cb81bbeab192a5392fd8843426591.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/bdc101788f827aeaf2f50a513b59aa7e.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/bdc101788f827aeaf2f50a513b59aa7e.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/610b63ec75f420f754816d615b374693.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/bdc101788f827aeaf2f50a513b59aa7e.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/bdc101788f827aeaf2f50a513b59aa7e.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/ab5eea679d5ca9369cd122bc65001119.jpg',
         ffg: 615,
@@ -1305,24 +945,6 @@ const t: UpgradeBase[] = [
             'While another friendly ship performs a primary attack, if the defender is in your firing arc, you may spend 1 [Charge]. If you do, the attacker rolls 1 additional die, to a maximum of 4. During the System Phase, you may gain 1 disarm token to recover 1 [Charge].',
         },
         charges: { value: 1, recovers: 0 },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/a532c1de311e8d0a288af8232495a007.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/40b57f9d0d3bd43ed8d581593b5ec230.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/7aff4fb2083328d16954b8b049c17571.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/2d9c5b3be29fcaf3340ebc9ad514f0d9.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/546cbc820962eb40b6870316b2639de3.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/08dd667fa1f7d8e6f267f21fc6d86244.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/a532c1de311e8d0a288af8232495a007.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/a532c1de311e8d0a288af8232495a007.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/8461a9f5c79195b802e8b04da922809f.jpg',
         ffg: 553,
@@ -1330,7 +952,7 @@ const t: UpgradeBase[] = [
     ],
     restrictions: [{ factions: ['Galactic Republic'] }],
     cost: { value: 9 },
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -1368,24 +990,6 @@ const t: UpgradeBase[] = [
           zh:
             'After you perform an attack that missed, if 1 or more [Hit]/[Critical Hit] results were neutralized, the defender gains 1 strain token.',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/1da8e9de468d456f724d0c1f37e90d28.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/f4254574e464fdbc244e80ab7a968cf4.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/e75f063cfb938f6a2ce333c2d81fd244.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/116a4ff2cfbf35db584502361d869197.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/918d7fd1b46558987102bccf93776577.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/1131dd93f1d482c8b26de66cbe0b13f4.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/1da8e9de468d456f724d0c1f37e90d28.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/1da8e9de468d456f724d0c1f37e90d28.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/209d0df0333dc348c74c0e8a760ca741.jpg',
         ffg: 552,
@@ -1419,7 +1023,7 @@ const t: UpgradeBase[] = [
   {
     xws: 'clonecaptainrex',
     limited: 1,
-    cost: { value: 4 },
+    cost: { value: 2 },
     sides: [
       {
         title: {
@@ -1453,24 +1057,6 @@ const t: UpgradeBase[] = [
         },
         slots: ['Gunner'],
         ffg: 688,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d5557710e25d5770248736e4743d08ad.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d5557710e25d5770248736e4743d08ad.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d5557710e25d5770248736e4743d08ad.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d5557710e25d5770248736e4743d08ad.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d5557710e25d5770248736e4743d08ad.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d5557710e25d5770248736e4743d08ad.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d5557710e25d5770248736e4743d08ad.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d5557710e25d5770248736e4743d08ad.png',
-        },
       },
     ],
     hyperspace: true,
@@ -1482,7 +1068,7 @@ const t: UpgradeBase[] = [
     limited: 0,
     cost: {
       variable: 'size',
-      values: { Small: 8, Medium: 7, Large: 6, Huge: 3 },
+      values: { Small: 8, Medium: 7, Large: 6, Huge: 5 },
     },
     sides: [
       {
@@ -1517,26 +1103,46 @@ const t: UpgradeBase[] = [
         },
         slots: ['Gunner'],
         ffg: 689,
-        image: {
+      },
+    ],
+    hyperspace: true,
+    epic: true,
+  },
+  {
+    limited: 0,
+    xws: 'weaponssystemsofficer',
+    hyperspace: true,
+    epic: false,
+    sides: [
+      {
+        ability: {
           en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/ded967f8af64da8948746e6351238484.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/ded967f8af64da8948746e6351238484.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/ded967f8af64da8948746e6351238484.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/ded967f8af64da8948746e6351238484.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/ded967f8af64da8948746e6351238484.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/ded967f8af64da8948746e6351238484.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/ded967f8af64da8948746e6351238484.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/ded967f8af64da8948746e6351238484.png',
+            'After you perform a special attack with the [Lock] requirement, you may acquire a lock on the defender.',
+        },
+        title: { en: 'Weapons Systems Officer' },
+        type: 'Gunner',
+        slots: ['Gunner'],
+        ffg: 859,
+      },
+    ],
+    cost: { value: 7 },
+  },
+  {
+    xws: 'bobafett',
+    sides: [
+      {
+        ffg: 857,
+        title: { en: 'Boba Fett' },
+        type: 'Gunner',
+        slots: [],
+        ability: {
+          en:
+            'While you perform an attack, if there are no other ships in the attack arc, you may change 1 of your [Focus] results to a [Hit] result.',
         },
       },
     ],
+    cost: { value: 6 },
+    limited: 1,
     hyperspace: true,
     epic: true,
   },

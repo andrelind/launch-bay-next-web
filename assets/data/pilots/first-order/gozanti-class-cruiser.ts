@@ -41,7 +41,7 @@ const t: ShipType = {
       name: { en: 'First Order Sympathizers' },
       text: {
         en:
-          'Capable of carrying four TIE fighters and operating independently for long periods of time, the Gozanti-class cruiser is a common sight in the skies of downtrodden worlds across the Outer Rim.',
+          "The First Order's swift rise to power rests upon ruthless innovation. However, sympathizers often repurpose Imperial designs, like the venerable Gozanti-class cruiser, in surveillance and patrol operations.",
       },
       initiative: 7,
       engagement: 1,
@@ -49,17 +49,18 @@ const t: ShipType = {
       cost: 60,
       xws: 'firstordersympathizers',
       slots: [
-        'Command',
         'Hardpoint',
         'Crew',
         'Crew',
-        'Gunner',
         'Team',
         'Cargo',
         'Cargo',
+        'Gunner',
+        'Command',
       ],
       hyperspace: false,
       epic: true,
+      ffg: 712,
     },
   ],
 };

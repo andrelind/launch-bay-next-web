@@ -57,111 +57,47 @@ const t: ShipType = {
   },
   pilots: [
     {
+      xws: 'dgs047',
       name: {
-        en: 'Separatist Predator',
-        de: 'Jäger der Separatisten',
-        fr: 'Prédateur Séparatiste',
-        it: 'Separatist Predator',
-        pl: 'Separatist Predator',
-        pt: 'Separatist Predator',
-        zh: 'Separatist Predator',
-        es: 'Depredador separatista',
-      },
-      initiative: 3,
-      limited: 0,
-      xws: 'separatistpredator',
-      text: {
-        en:
-          'Armed with ordnance and protected by ray shields, a droid gunship can devastate Republic infantry formations and starfighters with equal proficiency.',
-        de:
-          'Mit Artillerie ausgestattet und durch Strahlenschilde geschützt können Droidenkanonenboote gleichermaßen die Infanterieformationen der Republik und Sternenjäger zerstören.',
-        fr:
-          "Dotée d'artillerie et protégée par des boucliers, une canonnière droïde peut faire autant de ravages contre les formations d'infanterie que contre les chasseurs de la République.",
-        it:
-          'Armed with ordnance and protected by ray shields, a droid gunship can devastate Republic infantry formations and starfighters with equal proficiency.',
-        pl:
-          'Armed with ordnance and protected by ray shields, a droid gunship can devastate Republic infantry formations and starfighters with equal proficiency.',
-        pt:
-          'Armed with ordnance and protected by ray shields, a droid gunship can devastate Republic infantry formations and starfighters with equal proficiency.',
-        zh:
-          'Armed with ordnance and protected by ray shields, a droid gunship can devastate Republic infantry formations and starfighters with equal proficiency.',
-        es:
-          'Cargada de municiones explosivas y protegida por escudos de rayos, una cañonera droide es capaz de arrasar con igual eficiencia formaciones de infantería y cazas estelares de la República.',
-      },
-      hyperspace: true,
-      epic: true,
-      slots: [
-        'Missile',
-        'Missile',
-        'Crew',
-        'Device',
-        'Modification',
-        'Configuration',
-        'Tactical Relay',
-      ],
-      cost: 36,
-      ffg: 667,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d8cba72d59f876f9849a4ef42740bf40.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d8cba72d59f876f9849a4ef42740bf40.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d8cba72d59f876f9849a4ef42740bf40.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d8cba72d59f876f9849a4ef42740bf40.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d8cba72d59f876f9849a4ef42740bf40.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d8cba72d59f876f9849a4ef42740bf40.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d8cba72d59f876f9849a4ef42740bf40.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d8cba72d59f876f9849a4ef42740bf40.png',
-      },
-    },
-    {
-      xws: 'dgs286',
-      name: {
-        en: 'DGS-286',
-        de: 'DKB-286',
-        fr: 'DGS-286',
-        it: 'DGS-286',
-        pl: 'DGS-286',
-        pt: 'DGS-286',
-        zh: 'DGS-286',
-        es: 'DGS-286',
+        en: 'DGS-047',
+        de: 'DKB-047',
+        fr: 'DGS-047',
+        it: 'DGS-047',
+        pl: 'DGS-047',
+        pt: 'DGS-047',
+        zh: 'DGS-047',
+        es: 'DGS-047',
       },
       caption: {
-        en: 'Ambush Protocols',
-        de: 'Hinterhaltsprotokolle',
-        fr: "Protocoles d'Embuscade",
-        it: 'Ambush Protocols',
-        pl: 'Ambush Protocols',
-        pt: 'Ambush Protocols',
-        zh: 'Ambush Protocols',
-        es: 'Protocolos de emboscada',
+        en: 'Adaptive Intelligence',
+        de: 'Adaptive Intelligenz',
+        fr: 'Intelligence Adaptative',
+        it: 'Adaptive Intelligence',
+        pl: 'Adaptive Intelligence',
+        pt: 'Adaptive Intelligence',
+        zh: 'Adaptive Intelligence',
+        es: 'Intelecto adaptativo',
       },
-      cost: 42,
-      initiative: 3,
+      cost: 35,
+      initiative: 1,
       limited: 1,
       ability: {
         en:
-          'Before you engage, you may choose another friendly ship at range 0-1. That ship transfers 1 calculate token to you.',
+          'After you perform an attack, if the defender is in your [Front Arc], you may acquire a lock on it. Then, if the defender is in your [Bullseye Arc], it gains 1 strain token.',
         de:
-          'Bevor du kämpfst, darfst du ein anderes befreundetes Schiff in Reichweite 0-1 wählen. Jenes Schiff transferiert 1 Berechnungsmarker auf dich.',
+          'Nachdem du einen Angriff durchgeführt hast, falls der Verteidiger in deinem [Front Arc]ist, darfst du ihn als Ziel erfassen. Dann, falls der Verteidiger in deinem [Bullseye Arc] ist, erhält er 1 Anstrengungsmarker.',
         fr:
-          'Avant de vous engager, vous pouvez choisir un autre vaisseau allié à portée 0-1. Ce vaisseau vous transfère 1 marqueur de calcul.',
+          'Après que vous avez effectué une attaque, si le défenseur est dans votre [Front Arc], vous pouvez le verrouiller. Puis, si le défenseur est dans votre [Bullseye Arc], il gagne 1 marqueur de contrainte.',
         it:
-          'Before you engage, you may choose another friendly ship at range 0-1. That ship transfers 1 calculate token to you.',
+          'After you perform an attack, if the defender is in your [Front Arc], you may acquire a lock on it. Then, if the defender is in your [Bullseye Arc], it gains 1 strain token.',
         pl:
-          'Before you engage, you may choose another friendly ship at range 0-1. That ship transfers 1 calculate token to you.',
+          'After you perform an attack, if the defender is in your [Front Arc], you may acquire a lock on it. Then, if the defender is in your [Bullseye Arc], it gains 1 strain token.',
         pt:
-          'Before you engage, you may choose another friendly ship at range 0-1. That ship transfers 1 calculate token to you.',
+          'After you perform an attack, if the defender is in your [Front Arc], you may acquire a lock on it. Then, if the defender is in your [Bullseye Arc], it gains 1 strain token.',
         zh:
-          'Before you engage, you may choose another friendly ship at range 0-1. That ship transfers 1 calculate token to you.',
+          'After you perform an attack, if the defender is in your [Front Arc], you may acquire a lock on it. Then, if the defender is in your [Bullseye Arc], it gains 1 strain token.',
         es:
-          'Antes de que intervengas, puedes elegir otra nave aliada que tengas a alcance 0-1. Esa nave transfiere 1 ficha de Cálculos a la tuya.',
+          'Después de que efectúes un ataque, si el defensor está en tu [Front Arc], puedes obtener un Blanco fijado sobre él. Luego, si el defensor está en tu [Bullseye Arc], recibe 1 ficha de Sobresfuerzo.',
       },
       slots: [
         'Missile',
@@ -174,69 +110,23 @@ const t: ShipType = {
       ],
       hyperspace: true,
       epic: true,
-      ffg: 664,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/b0d0b99b3b18b330f2c37221fb2696f9.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/b0d0b99b3b18b330f2c37221fb2696f9.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/b0d0b99b3b18b330f2c37221fb2696f9.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/b0d0b99b3b18b330f2c37221fb2696f9.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/b0d0b99b3b18b330f2c37221fb2696f9.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/b0d0b99b3b18b330f2c37221fb2696f9.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/b0d0b99b3b18b330f2c37221fb2696f9.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/b0d0b99b3b18b330f2c37221fb2696f9.png',
-      },
+      ffg: 666,
     },
     {
-      xws: 'onderonoppressor',
+      xws: 'baktoiddrone',
       name: {
-        en: 'Onderon Oppressor',
-        de: 'Unterdrücker \nvon Onderon',
-        fr: "Oppresseur d'Onderon",
-        it: 'Onderon Oppressor',
-        pl: 'Onderon Oppressor',
-        pt: 'Onderon Oppressor',
-        zh: 'Onderon Oppressor',
-        es: 'Opresor de Onderon',
+        en: 'Baktoid Drone',
+        de: 'Baktoid-Drohne',
+        fr: 'Drone Baktoid',
+        it: 'Baktoid Drone',
+        pl: 'Baktoid Drone',
+        pt: 'Baktoid Drone',
+        zh: 'Baktoid Drone',
+        es: 'Dron baktoide',
       },
-      caption: {
-        en: 'Atmospheric Attack Module',
-        de: 'Atmosphärisches Angriffsmodul',
-        fr: "Module d'Attaque Atmosphérique",
-        it: 'Atmospheric Attack Module',
-        pl: 'Atmospheric Attack Module',
-        pt: 'Atmospheric Attack Module',
-        zh: 'Atmospheric Attack Module',
-        es: 'Módulo de ataque atmosférico',
-      },
-      cost: 40,
-      initiative: 3,
-      limited: 2,
-      ability: {
-        en:
-          'After you barrel roll or sideslip, if you are stressed, gain 1 calculate token.',
-        de:
-          'Nachdem du eine Fassrolle oder einen Slip ausgeführt hast, falls du gestresst bist, erhältst du 1 Berechnungsmarker.',
-        fr:
-          'Après avoir exécuté un tonneau ou un dérapage, si vous êtes stressé, gagnez 1 marqueur de calcul.',
-        it:
-          'After you barrel roll or sideslip, if you are stressed, gain 1 calculate token.',
-        pl:
-          'After you barrel roll or sideslip, if you are stressed, gain 1 calculate token.',
-        pt:
-          'After you barrel roll or sideslip, if you are stressed, gain 1 calculate token.',
-        zh:
-          'After you barrel roll or sideslip, if you are stressed, gain 1 calculate token.',
-        es:
-          'Después de que realices un tonel volado o un deslizamiento, si estás bajo tensión, recibes 1 ficha de Cálculos.',
-      },
+      cost: 34,
+      initiative: 1,
+      limited: 0,
       slots: [
         'Missile',
         'Missile',
@@ -246,26 +136,26 @@ const t: ShipType = {
         'Configuration',
         'Tactical Relay',
       ],
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
-      ffg: 665,
-      image: {
+      ffg: 669,
+      text: {
         en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/41b07fdfd2fc8af5d662796905266c6a.png',
+          'A late-war development for the Confederacy of Independent Systems, the droid gunship uses specialized repulsors to nimbly strafe targets and precisely drop battle droids.',
         de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/41b07fdfd2fc8af5d662796905266c6a.png',
+          'Das Droidenkanonenboot war gegen Ende des Krieges eine Entwicklung der Konföderation unabhängiger Systeme. Es verwendet spezielle Repulsoren, um Ziele schnell bombardieren und Droiden präzise abwerfen zu können.',
         fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/41b07fdfd2fc8af5d662796905266c6a.png',
+          'Développé tardivement pour la Confédération des Systèmes Indépendants, la canonnière droïde utilise des répulseurs spéciaux pour attaquer avec agilité ses cibles et larguer avec précision des droïdes de combat.',
         it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/41b07fdfd2fc8af5d662796905266c6a.png',
+          'A late-war development for the Confederacy of Independent Systems, the droid gunship uses specialized repulsors to nimbly strafe targets and precisely drop battle droids.',
         pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/41b07fdfd2fc8af5d662796905266c6a.png',
+          'A late-war development for the Confederacy of Independent Systems, the droid gunship uses specialized repulsors to nimbly strafe targets and precisely drop battle droids.',
         pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/41b07fdfd2fc8af5d662796905266c6a.png',
+          'A late-war development for the Confederacy of Independent Systems, the droid gunship uses specialized repulsors to nimbly strafe targets and precisely drop battle droids.',
         zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/41b07fdfd2fc8af5d662796905266c6a.png',
+          'A late-war development for the Confederacy of Independent Systems, the droid gunship uses specialized repulsors to nimbly strafe targets and precisely drop battle droids.',
         es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/41b07fdfd2fc8af5d662796905266c6a.png',
+          'Invención bélica tardía de la Confederación de Sistemas Independientes, la cañonera droide emplea repulsores especializados para efectuar veloces pasadas de bombardeo y desembarcar droides de combate justo en el lugar preciso.',
       },
     },
     {
@@ -323,67 +213,49 @@ const t: ShipType = {
       hyperspace: true,
       epic: true,
       ffg: 668,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1352254ba28a6191adfdea1273cedb8d.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1352254ba28a6191adfdea1273cedb8d.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1352254ba28a6191adfdea1273cedb8d.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1352254ba28a6191adfdea1273cedb8d.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1352254ba28a6191adfdea1273cedb8d.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1352254ba28a6191adfdea1273cedb8d.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1352254ba28a6191adfdea1273cedb8d.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1352254ba28a6191adfdea1273cedb8d.png',
-      },
     },
     {
-      xws: 'dgs047',
+      xws: 'dgs286',
       name: {
-        en: 'DGS-047',
-        de: 'DKB-047',
-        fr: 'DGS-047',
-        it: 'DGS-047',
-        pl: 'DGS-047',
-        pt: 'DGS-047',
-        zh: 'DGS-047',
-        es: 'DGS-047',
+        en: 'DGS-286',
+        de: 'DKB-286',
+        fr: 'DGS-286',
+        it: 'DGS-286',
+        pl: 'DGS-286',
+        pt: 'DGS-286',
+        zh: 'DGS-286',
+        es: 'DGS-286',
       },
       caption: {
-        en: 'Adaptive Intelligence',
-        de: 'Adaptive Intelligenz',
-        fr: 'Intelligence Adaptative',
-        it: 'Adaptive Intelligence',
-        pl: 'Adaptive Intelligence',
-        pt: 'Adaptive Intelligence',
-        zh: 'Adaptive Intelligence',
-        es: 'Intelecto adaptativo',
+        en: 'Ambush Protocols',
+        de: 'Hinterhaltsprotokolle',
+        fr: "Protocoles d'Embuscade",
+        it: 'Ambush Protocols',
+        pl: 'Ambush Protocols',
+        pt: 'Ambush Protocols',
+        zh: 'Ambush Protocols',
+        es: 'Protocolos de emboscada',
       },
-      cost: 35,
-      initiative: 1,
+      cost: 42,
+      initiative: 3,
       limited: 1,
       ability: {
         en:
-          'After you perform an attack, if the defender is in your [Front Arc], you may acquire a lock on it. Then, if the defender is in your [Bullseye Arc], it gains 1 strain token.',
+          'Before you engage, you may choose another friendly ship at range 0-1. That ship transfers 1 calculate token to you.',
         de:
-          'Nachdem du einen Angriff durchgeführt hast, falls der Verteidiger in deinem [Front Arc]ist, darfst du ihn als Ziel erfassen. Dann, falls der Verteidiger in deinem [Bullseye Arc] ist, erhält er 1 Anstrengungsmarker.',
+          'Bevor du kämpfst, darfst du ein anderes befreundetes Schiff in Reichweite 0-1 wählen. Jenes Schiff transferiert 1 Berechnungsmarker auf dich.',
         fr:
-          'Après que vous avez effectué une attaque, si le défenseur est dans votre [Front Arc], vous pouvez le verrouiller. Puis, si le défenseur est dans votre [Bullseye Arc], il gagne 1 marqueur de contrainte.',
+          'Avant de vous engager, vous pouvez choisir un autre vaisseau allié à portée 0-1. Ce vaisseau vous transfère 1 marqueur de calcul.',
         it:
-          'After you perform an attack, if the defender is in your [Front Arc], you may acquire a lock on it. Then, if the defender is in your [Bullseye Arc], it gains 1 strain token.',
+          'Before you engage, you may choose another friendly ship at range 0-1. That ship transfers 1 calculate token to you.',
         pl:
-          'After you perform an attack, if the defender is in your [Front Arc], you may acquire a lock on it. Then, if the defender is in your [Bullseye Arc], it gains 1 strain token.',
+          'Before you engage, you may choose another friendly ship at range 0-1. That ship transfers 1 calculate token to you.',
         pt:
-          'After you perform an attack, if the defender is in your [Front Arc], you may acquire a lock on it. Then, if the defender is in your [Bullseye Arc], it gains 1 strain token.',
+          'Before you engage, you may choose another friendly ship at range 0-1. That ship transfers 1 calculate token to you.',
         zh:
-          'After you perform an attack, if the defender is in your [Front Arc], you may acquire a lock on it. Then, if the defender is in your [Bullseye Arc], it gains 1 strain token.',
+          'Before you engage, you may choose another friendly ship at range 0-1. That ship transfers 1 calculate token to you.',
         es:
-          'Después de que efectúes un ataque, si el defensor está en tu [Front Arc], puedes obtener un Blanco fijado sobre él. Luego, si el defensor está en tu [Bullseye Arc], recibe 1 ficha de Sobresfuerzo.',
+          'Antes de que intervengas, puedes elegir otra nave aliada que tengas a alcance 0-1. Esa nave transfiere 1 ficha de Cálculos a la tuya.',
       },
       slots: [
         'Missile',
@@ -396,41 +268,51 @@ const t: ShipType = {
       ],
       hyperspace: true,
       epic: true,
-      ffg: 666,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/49791d2bcd4e67bc66e97c83f17dad24.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/49791d2bcd4e67bc66e97c83f17dad24.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/49791d2bcd4e67bc66e97c83f17dad24.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/49791d2bcd4e67bc66e97c83f17dad24.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/49791d2bcd4e67bc66e97c83f17dad24.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/49791d2bcd4e67bc66e97c83f17dad24.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/49791d2bcd4e67bc66e97c83f17dad24.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/49791d2bcd4e67bc66e97c83f17dad24.png',
-      },
+      ffg: 664,
     },
     {
-      xws: 'baktoiddrone',
+      xws: 'onderonoppressor',
       name: {
-        en: 'Baktoid Drone',
-        de: 'Baktoid-Drohne',
-        fr: 'Drone Baktoid',
-        it: 'Baktoid Drone',
-        pl: 'Baktoid Drone',
-        pt: 'Baktoid Drone',
-        zh: 'Baktoid Drone',
-        es: 'Dron baktoide',
+        en: 'Onderon Oppressor',
+        de: 'Unterdrücker \nvon Onderon',
+        fr: "Oppresseur d'Onderon",
+        it: 'Onderon Oppressor',
+        pl: 'Onderon Oppressor',
+        pt: 'Onderon Oppressor',
+        zh: 'Onderon Oppressor',
+        es: 'Opresor de Onderon',
       },
-      cost: 34,
-      initiative: 1,
-      limited: 0,
+      caption: {
+        en: 'Atmospheric Attack Module',
+        de: 'Atmosphärisches Angriffsmodul',
+        fr: "Module d'Attaque Atmosphérique",
+        it: 'Atmospheric Attack Module',
+        pl: 'Atmospheric Attack Module',
+        pt: 'Atmospheric Attack Module',
+        zh: 'Atmospheric Attack Module',
+        es: 'Módulo de ataque atmosférico',
+      },
+      cost: 40,
+      initiative: 3,
+      limited: 2,
+      ability: {
+        en:
+          'After you barrel roll or sideslip, if you are stressed, gain 1 calculate token.',
+        de:
+          'Nachdem du eine Fassrolle oder einen Slip ausgeführt hast, falls du gestresst bist, erhältst du 1 Berechnungsmarker.',
+        fr:
+          'Après avoir exécuté un tonneau ou un dérapage, si vous êtes stressé, gagnez 1 marqueur de calcul.',
+        it:
+          'After you barrel roll or sideslip, if you are stressed, gain 1 calculate token.',
+        pl:
+          'After you barrel roll or sideslip, if you are stressed, gain 1 calculate token.',
+        pt:
+          'After you barrel roll or sideslip, if you are stressed, gain 1 calculate token.',
+        zh:
+          'After you barrel roll or sideslip, if you are stressed, gain 1 calculate token.',
+        es:
+          'Después de que realices un tonel volado o un deslizamiento, si estás bajo tensión, recibes 1 ficha de Cálculos.',
+      },
       slots: [
         'Missile',
         'Missile',
@@ -442,45 +324,58 @@ const t: ShipType = {
       ],
       hyperspace: true,
       epic: true,
-      ffg: 669,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3af13c610ba1544ae93383b2c8b10f90.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3af13c610ba1544ae93383b2c8b10f90.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3af13c610ba1544ae93383b2c8b10f90.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3af13c610ba1544ae93383b2c8b10f90.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3af13c610ba1544ae93383b2c8b10f90.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3af13c610ba1544ae93383b2c8b10f90.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3af13c610ba1544ae93383b2c8b10f90.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3af13c610ba1544ae93383b2c8b10f90.png',
+      ffg: 665,
+    },
+    {
+      name: {
+        en: 'Separatist Predator',
+        de: 'Jäger der Separatisten',
+        fr: 'Prédateur Séparatiste',
+        it: 'Separatist Predator',
+        pl: 'Separatist Predator',
+        pt: 'Separatist Predator',
+        zh: 'Separatist Predator',
+        es: 'Depredador separatista',
       },
+      initiative: 3,
+      limited: 0,
+      xws: 'separatistpredator',
       text: {
         en:
-          'A late-war development for the Confederacy of Independent Systems, the droid gunship uses specialized repulsors to nimbly strafe targets and precisely drop battle droids.',
+          'Armed with ordnance and protected by ray shields, a droid gunship can devastate Republic infantry formations and starfighters with equal proficiency.',
         de:
-          'Das Droidenkanonenboot war gegen Ende des Krieges eine Entwicklung der Konföderation unabhängiger Systeme. Es verwendet spezielle Repulsoren, um Ziele schnell bombardieren und Droiden präzise abwerfen zu können.',
+          'Mit Artillerie ausgestattet und durch Strahlenschilde geschützt können Droidenkanonenboote gleichermaßen die Infanterieformationen der Republik und Sternenjäger zerstören.',
         fr:
-          'Développé tardivement pour la Confédération des Systèmes Indépendants, la canonnière droïde utilise des répulseurs spéciaux pour attaquer avec agilité ses cibles et larguer avec précision des droïdes de combat.',
+          "Dotée d'artillerie et protégée par des boucliers, une canonnière droïde peut faire autant de ravages contre les formations d'infanterie que contre les chasseurs de la République.",
         it:
-          'A late-war development for the Confederacy of Independent Systems, the droid gunship uses specialized repulsors to nimbly strafe targets and precisely drop battle droids.',
+          'Armed with ordnance and protected by ray shields, a droid gunship can devastate Republic infantry formations and starfighters with equal proficiency.',
         pl:
-          'A late-war development for the Confederacy of Independent Systems, the droid gunship uses specialized repulsors to nimbly strafe targets and precisely drop battle droids.',
+          'Armed with ordnance and protected by ray shields, a droid gunship can devastate Republic infantry formations and starfighters with equal proficiency.',
         pt:
-          'A late-war development for the Confederacy of Independent Systems, the droid gunship uses specialized repulsors to nimbly strafe targets and precisely drop battle droids.',
+          'Armed with ordnance and protected by ray shields, a droid gunship can devastate Republic infantry formations and starfighters with equal proficiency.',
         zh:
-          'A late-war development for the Confederacy of Independent Systems, the droid gunship uses specialized repulsors to nimbly strafe targets and precisely drop battle droids.',
+          'Armed with ordnance and protected by ray shields, a droid gunship can devastate Republic infantry formations and starfighters with equal proficiency.',
         es:
-          'Invención bélica tardía de la Confederación de Sistemas Independientes, la cañonera droide emplea repulsores especializados para efectuar veloces pasadas de bombardeo y desembarcar droides de combate justo en el lugar preciso.',
+          'Cargada de municiones explosivas y protegida por escudos de rayos, una cañonera droide es capaz de arrasar con igual eficiencia formaciones de infantería y cazas estelares de la República.',
       },
+      hyperspace: false,
+      epic: true,
+      slots: [
+        'Missile',
+        'Missile',
+        'Crew',
+        'Device',
+        'Modification',
+        'Configuration',
+        'Tactical Relay',
+      ],
+      cost: 36,
+      ffg: 667,
     },
   ],
+  ffg: 72,
+  icon:
+    'https://sb-cdn.fantasyflightgames.com/ship_types/I_HMP_Droid_Gunship.png',
 };
 
 export default t;

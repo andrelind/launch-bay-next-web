@@ -129,24 +129,6 @@ const t: ShipType = {
       hyperspace: true,
       epic: true,
       ffg: 624,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e95d46ad3a22ad0790cfd18a7e10cf81.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/1b30ffc8e79177a83532821d50f31564.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/671c74132ac32cfa5e2e94d105cbc780.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/605fef3d8d519f49cf15a86b757c5f9c.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e95d46ad3a22ad0790cfd18a7e10cf81.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e95d46ad3a22ad0790cfd18a7e10cf81.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e95d46ad3a22ad0790cfd18a7e10cf81.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e95d46ad3a22ad0790cfd18a7e10cf81.png',
-      },
     },
     {
       name: {
@@ -197,24 +179,6 @@ const t: ShipType = {
       ffg: 625,
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/61d81abede1ce312b0de7d16623c2e60.jpg',
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/ee53482be8e59ff44f272e76c4e8123d.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/1f01a71abe3ab1962024fe2ff474b5b4.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/71b30a8599c4cb200eaa1054bc58dab5.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/92a3838b42257d2b90e69fcc49e6a155.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/ee53482be8e59ff44f272e76c4e8123d.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/ee53482be8e59ff44f272e76c4e8123d.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/ee53482be8e59ff44f272e76c4e8123d.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/ee53482be8e59ff44f272e76c4e8123d.png',
-      },
     },
     {
       name: {
@@ -263,24 +227,6 @@ const t: ShipType = {
       hyperspace: true,
       epic: true,
       ffg: 626,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/4de956edddeacb92ef3e4f94e0a63db3.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/80eb41318c85d13af8db909a1058fc09.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/0d0a0fe39bba6a686a13c4897228826b.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/5d4ae8383cccc4b82b06841019e467a1.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/4de956edddeacb92ef3e4f94e0a63db3.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/4de956edddeacb92ef3e4f94e0a63db3.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/4de956edddeacb92ef3e4f94e0a63db3.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/4de956edddeacb92ef3e4f94e0a63db3.png',
-      },
     },
     {
       name: {
@@ -298,27 +244,9 @@ const t: ShipType = {
       cost: 41,
       xws: 'firstorderprovocateur',
       slots: ['Talent', 'Missile', 'Modification', 'Tech'],
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       ffg: 627,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c834c2c4722b60e67292130d40c7ec19.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/f0296749365c66e91292ee1bd2c3ad8a.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/f1c7604de8f310f4986e19dd8d3d6c7d.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/98629aa0f8532256505c091197c67a4f.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c834c2c4722b60e67292130d40c7ec19.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c834c2c4722b60e67292130d40c7ec19.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c834c2c4722b60e67292130d40c7ec19.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c834c2c4722b60e67292130d40c7ec19.png',
-      },
       text: {
         en:
           "Major Vonreg's vision guided the enhancement of proven designs while engineering this one-of-a-kind precise and lethal craft from Sienar-Jaemus Fleet Systems.",

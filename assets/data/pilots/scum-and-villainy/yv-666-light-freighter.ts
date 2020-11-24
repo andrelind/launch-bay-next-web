@@ -88,24 +88,6 @@ const t: ShipType = {
         zh:
           'While you perform a primary attack, after the Neutralize Results step, you may spend 1 [Critical Hit] result to add 2 [Hit] results.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_210.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/d3ae757f8670a8e1fe9c8a53f525656f.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/b68b6e1ff2dea9a8c148af0f9f673cfd.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/f4d457e7ad877d4563abdaab89f3dd5f.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/688fae59a02b82a1757fb5a3c685c3db.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/14714a9cd39da2013b571f954e829f29.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/791f6366c93d72b0a120d1356c5ef844.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_210.png',
-      },
       slots: [
         'Talent',
         'Cannon',
@@ -173,24 +155,6 @@ const t: ShipType = {
         zh:
           'At the start of the Engagement Phase, you may choose a ship at range 1 and spend a lock you have on that ship. If you do, that ship gains 1 tractor token.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_212.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/a441ce52168a3617dce9f0efb44bfcaf.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/94ca4c22cffbd5c8b8a53a2fefc95648.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/cbb154e77af71605534c948255f93195.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/5b0e6914f0fcc3ee7378c8829021d868.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/90d05bceeaba0d0376bb75a8464ab37f.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/8175cf51774ce936369a0ea33ae13f53.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_212.png',
-      },
       slots: [
         'Talent',
         'Cannon',
@@ -251,24 +215,6 @@ const t: ShipType = {
         zh:
           'If you would flee, you may spend 1 [Charge]. If you do, place yourself in reserves instead. At the start of the next Planning Phase, place yourself within range 1 of the edge of the play area that you fled from.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_211.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/5b97c2fffc5d7a9496c45342d6ab5058.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/9b3a7b64089abc939f0a0dc8b6f3924e.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/046d81a13da8915d08d2b317b8aa3ca1.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/5e8b0dc527fb948c7e4f13f44df541d9.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/44f2efb946e758973785029dcbdc1efd.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/5010543b6a4f6af38e573d98d527e13f.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_211.png',
-      },
       charges: { value: 2, recovers: 0 },
       slots: [
         'Talent',
@@ -284,7 +230,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_211.jpg',
       ffg: 211,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -319,24 +265,6 @@ const t: ShipType = {
           'O design espaçoso de convés triplo da YV-666 faz dela uma nave muito popular entre os caçadores de recompensa e escravistas, que normalmente reformam um convés inteiro para o transporte de prisioneiros.',
         zh:
           'The spacious triple-decker design of the YV-666 makes it popular among bounty hunters and slavers, who often retrofit an entire deck for prisoner transport.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_213.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/b970cf04883c19a2215f0f08bac338ed.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/80aa7b307b0ce3d757c8c2f49ea7c500.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/74f57b95d88effe80af39c909b91c355.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/7560f28a395157d900c5f6d146e55941.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/8f48e23a308ae1a2ef42612413ea5e13.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/0935e4ecd82fd412c98245c4d00dc7d2.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_213.png',
       },
       slots: [
         'Cannon',

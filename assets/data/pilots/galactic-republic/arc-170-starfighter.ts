@@ -87,24 +87,6 @@ const t: ShipType = {
         zh:
           'While a friendly ship at range 1-2 in your [Left Arc] or [Right Arc] performs a primary attack, it may reroll 1 attack die.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/8297fc7d58ec0a5e6068f8dabbbc00f1.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/a84654883c555e203868e4bb7e43b737.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/9bd64787e58edce9c8b7699975dadfb9.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/941a190a048927ff7ecc6fa06fc3efca.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/1cee0790e48d2e41b8456cd17485fa20.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/c9ecb68d0cb75b7022d6f107a9800949.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/8297fc7d58ec0a5e6068f8dabbbc00f1.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/8297fc7d58ec0a5e6068f8dabbbc00f1.png',
-      },
       slots: ['Torpedo', 'Crew', 'Astromech', 'Modification', 'Gunner'],
       hyperspace: false,
       epic: true,
@@ -142,24 +124,6 @@ const t: ShipType = {
       limited: 1,
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/124b11dde89cf986fcd8bc8e89094cf5.jpg',
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/28152f1d6ee09d27a4afd2459947dc3d.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/d8ee62c07bb156aa67628975f9d6e170.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/e0c2438be91850caf003a7deb19b159b.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/e516e29bc82c8619737b5506fcf759d6.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/9d69e8df65c5894df7544b0a74e0f063.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/ba72e66b46023ce023bd612b1d22c20e.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/28152f1d6ee09d27a4afd2459947dc3d.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/28152f1d6ee09d27a4afd2459947dc3d.png',
-      },
       ability: {
         en:
           'After a friendly ship at range 1-2 in your [Left Arc] or [Right Arc] defends, you may acquire a lock on the attacker.',
@@ -178,7 +142,7 @@ const t: ShipType = {
         zh:
           'After a friendly ship at range 1-2 in your [Left Arc] or [Right Arc] defends, you may acquire a lock on the attacker.',
       },
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -193,7 +157,7 @@ const t: ShipType = {
         zh: '"Odd Ball"',
       },
       xws: 'oddball-arc170starfighter',
-      cost: 49,
+      cost: 48,
       slots: [
         'Talent',
         'Torpedo',
@@ -217,24 +181,6 @@ const t: ShipType = {
       limited: 1,
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/597ace7e901187c88d9ff75bb34a1301.jpg',
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/b0e39e35b57982a9cdffe663ff47b2dc.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/ebc02cb982fd07d5af8f2d99152e0c6c.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/8d2d7feb2cb28484831b32f85824fde5.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/3fc7c982b5ebd88b867edb0f1e98f266.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/0f1bdd4efc67c9169af53dd33a7f383e.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/f7b10bc7434760031655127ce66a503f.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/b0e39e35b57982a9cdffe663ff47b2dc.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/b0e39e35b57982a9cdffe663ff47b2dc.png',
-      },
       ability: {
         en:
           'After you fully execute a red maneuver or perform a red action, if there is an enemy ship in your [Bullseye Arc], you may acquire a lock on that ship.',
@@ -253,7 +199,7 @@ const t: ShipType = {
         zh:
           'After you fully execute a red maneuver or perform a red action, if there is an enemy ship in your [Bullseye Arc], you may acquire a lock on that ship.',
       },
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -268,7 +214,7 @@ const t: ShipType = {
         zh: '"Wolffe"',
       },
       xws: 'wolffe',
-      cost: 50,
+      cost: 49,
       slots: [
         'Talent',
         'Torpedo',
@@ -292,24 +238,6 @@ const t: ShipType = {
       limited: 1,
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/933ef28f6a8fda0c5741bd6a9a5f308d.jpg',
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/2a15fd003a7fc1d475b562a958c6c263.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/00974054c2f0504d70a84ecadff80f88.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/4900ed57113343d8e381f3f6f9d9ff6b.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/f410e696e42a2c027e97cc59f391d922.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/589bbeb3a617c8403b82adc12401e97d.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/f1f26f8b8985715349ed498a469432ff.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/2a15fd003a7fc1d475b562a958c6c263.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/2a15fd003a7fc1d475b562a958c6c263.png',
-      },
       charges: { value: 1, recovers: 0 },
       ability: {
         en:
@@ -329,7 +257,7 @@ const t: ShipType = {
         zh:
           'While you perform a primary [Front Arc] attack, you may spend 1 [Charge] to reroll 1 attack die. While you perform a primary [Rear Arc] attack, you may recover 1 [Charge] to roll 1 additional attack die.',
       },
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -351,24 +279,6 @@ const t: ShipType = {
       limited: 0,
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/5081daee997a2a55de474dad2e8e4a07.jpg',
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1798ea30f603f073200326864ef9424c.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/96cd21c19a71df67e3f68d18ba51cacb.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/8f2505ca153df67a2aa112ea8345ccca.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/7429964b7f9c666e7ac81aeb8b9cdbd0.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/fa4b564ee017ea31ab664c01ffe7e17f.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/f8608c64c32ab73e0b15e2804881f750.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1798ea30f603f073200326864ef9424c.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1798ea30f603f073200326864ef9424c.png',
-      },
       text: {
         en:
           "The ARC-170 was designed as a dominating heavy escort fighter with powerful front and rear lasers, ordnance, and an astromech for navigation. Squadrons of these mighty ships bolster the Republic Navy's presence at any battle where they are deployed.",
@@ -387,7 +297,7 @@ const t: ShipType = {
         zh:
           "The ARC-170 was designed as a dominating heavy escort fighter with powerful front and rear lasers, ordnance, and an astromech for navigation. Squadrons of these mighty ships bolster the Republic Navy's presence at any battle where they are deployed.",
       },
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -416,24 +326,6 @@ const t: ShipType = {
       limited: 0,
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/3c9cad4a6c8cdb6a7749a76e1b42ec23.jpg',
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/0e0fb59b2806b41214275255986965f2.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/d215359a50223322270a7a478b84f820.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/dba16c6989b137cde52bd700a5b1f6f7.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/6eb3323d8ba28e11afc3e490bef646df.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/1b913176336ea9ec24ab63968d7d259b.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/fea64018180a906c33a1f86b4404250f.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/0e0fb59b2806b41214275255986965f2.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/0e0fb59b2806b41214275255986965f2.png',
-      },
       text: {
         en:
           'Clone Flight Seven serves as part of the Open Circle Fleet under legendary Jedi Generals such as Plo Koon and Obi-Wan Kenobi, and won glory at the battles of Coruscant and Cato Neimoidia.',

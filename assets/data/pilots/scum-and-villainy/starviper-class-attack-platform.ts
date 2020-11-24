@@ -118,24 +118,6 @@ const t: ShipType = {
         zh:
           'Although assassinations can be handled with a shot in the dark or a dire substance added to a drink, a flaming shuttle tumbling from the sky sends a special kind of message.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_181.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/efc5657b640e3bbae1b5b042f93f1c6d.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/b5b05ec7050c34c5f63113297925a1ac.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/000190bd4da22da032ecdd88d7450e1d.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/b1324a93751be6d600ae9b255ca34939.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/786de8d49bf63808c962587aca98b2ce.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/45b7e2f63948ba5d27dba6c91470459a.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_181.png',
-      },
       slots: ['Talent', 'Sensor', 'Torpedo', 'Modification', 'Title'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_181.jpg',
@@ -175,24 +157,6 @@ const t: ShipType = {
           'O príncipe Xizor em pessoa colaboroucom a MandalMotors para desenvolver o projeto da plataforma de ataque classe StarViper, um dos caças estelares mais formidáveis da galáxia.',
         zh:
           'Prince Xizor himself collaborated with MandalMotors to design the StarViper-class attack platform, one of the most formidable starfighters in the galaxy.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_182.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/a2a95fb57fcd4d0b32b0625f0a52306d.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/688115af4b3d1d32c52cc88b90a8489e.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/85a5b3926457357e07c140eb13d4e70a.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/bba199a3eb6c37bc2af40038326faaea.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/95ec6fe734db371c2c0bbdc7ea6f7dae.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/1aedd5f287f9f28bba9630424b3b8d41.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_182.png',
       },
       slots: ['Sensor', 'Torpedo', 'Modification', 'Title'],
       artwork:
@@ -244,24 +208,6 @@ const t: ShipType = {
         zh:
           'After you fully execute a maneuver, you may gain 1 stress token to rotate your ship 90˚.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_179.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/00dc266c8a50bdf87b4581c188ff55c5.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/cf351203f27e7f295548788ca0328aad.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/f5d4557d72b58d17e24bd16318b0682a.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/6e58cb9618cf482c05423340212aedae.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/602e86bea209f06bd3b2b2688bc614cf.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/3317704be62f71afec1fdc93304bcd27.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_179.png',
-      },
       slots: ['Talent', 'Sensor', 'Torpedo', 'Modification', 'Title'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_179.jpg',
@@ -311,24 +257,6 @@ const t: ShipType = {
           'No início da Fase de Engajamento,se houver ao menos uma nave inimiga em alcance 0-1, você pode receber1 ficha de foco. Micropropulsores: Quando realizar uma pirueta, você deve usar o gabarito [Bank Left] ou [Bank Right] em vez do gabarito [Straight].',
         zh:
           'At the start of the Engagement Phase, if there is at least 1 enemy ship at range 0-1, you may gain 1 focus token.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_178.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/f4c560c29b2a4a713ac1f0d7d0a0f1a5.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/ca4047cdde3e62881f35ce5e9a9f70b7.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/b8f2cab7550b96f7c12396a7c6ecf512.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/fc17002a9d56056e407d2e6e4157b86b.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/1c3497f26e2b88d9b7315e49c73e4ab4.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/7ef4f6c814d189622565526e193b86a9.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_178.png',
       },
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },
@@ -393,24 +321,6 @@ const t: ShipType = {
           'Quando você defender, após a etapa Neutralizar Resultados, outra nave amiga em alcance 0-1 e no arco de ataque pode sofrer 1 dano [Hit] ou [Critical Hit]. Se ela fizer isso, cancele 1 resultado correspondente. Micropropulsores: Quando realizaruma pirueta, você deve usar ogabarito [Bank Left] ou [Bank Right] em vez do gabarito [Straight].',
         zh:
           'While you defend, after the Neutralize Results step, another friendly ship at range 0-1 and in the attack arc may suffer 1 [Hit] or [Critical Hit] damage. If it does, cancel 1 matching result.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_180.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/b54336bb59245b177026d3cf5b4778d0.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/89a4faeff109a180f26ed88c6c6ca94f.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/d0a6df62af81a9fc297b266c122f4417.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/c9aa59f1014d748c7d599ddbdd6cd705.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/17448069369f73a90720e9c5bf50413a.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/53094e9ba532e43d84eb64582fcf24e2.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_180.png',
       },
       slots: ['Talent', 'Sensor', 'Torpedo', 'Modification', 'Title'],
       artwork:

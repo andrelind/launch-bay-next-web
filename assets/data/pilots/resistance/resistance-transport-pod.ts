@@ -85,7 +85,7 @@ const t: ShipType = {
         { difficulty: 'Red', type: 'Barrel Roll' },
         { difficulty: 'Red', type: 'Jam' },
       ],
-      cost: 26,
+      cost: 25,
       ffg: 573,
       caption: {
         en: 'Full of Surprises',
@@ -96,24 +96,6 @@ const t: ShipType = {
         pl: 'Pełen niespodzianek',
         pt: 'Full of Surprises',
         zh: 'Full of Surprises',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/4d2201d40635299aa134acd52c9587af.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/7eb617d9d43fcbf17e1f2a8f24d63eec.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/81c38f55df738f04bee2b63f5ce9523d.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/21d9a2802ed19a8f82e4a1b7543fec65.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/4d2201d40635299aa134acd52c9587af.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/4d2201d40635299aa134acd52c9587af.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/4d2201d40635299aa134acd52c9587af.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/4d2201d40635299aa134acd52c9587af.png',
       },
     },
     {
@@ -161,26 +143,8 @@ const t: ShipType = {
           'While you defend or perform an attack, you may reroll up to 1 of your results for each other friendly ship in the attack arc.',
       },
       slots: ['Talent', 'Crew', 'Modification', 'Tech'],
-      cost: 26,
+      cost: 25,
       ffg: 574,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1dbf7b355d60f5b3f278522eb702f99f.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/805a9f46d14d9ad15a2c533df3627861.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/87737dfb7d1d9379e911ee419e20e687.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/36680af4712c55146ffafd7682ea3305.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1dbf7b355d60f5b3f278522eb702f99f.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1dbf7b355d60f5b3f278522eb702f99f.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1dbf7b355d60f5b3f278522eb702f99f.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1dbf7b355d60f5b3f278522eb702f99f.png',
-      },
     },
     {
       name: {
@@ -230,24 +194,6 @@ const t: ShipType = {
       slots: ['Crew', 'Modification', 'Tech'],
       cost: 27,
       ffg: 576,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/14139a2d20ff13b01bd5810371a89064.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/4773214297252718d4cc875043d94df0.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/55d42b036cc1b6c3acc9871aa9651d7a.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/21d8ee4d52555335108d4f300166bbc8.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/14139a2d20ff13b01bd5810371a89064.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/14139a2d20ff13b01bd5810371a89064.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/14139a2d20ff13b01bd5810371a89064.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/14139a2d20ff13b01bd5810371a89064.png',
-      },
     },
     {
       name: {
@@ -263,7 +209,7 @@ const t: ShipType = {
       xws: 'finn',
       initiative: 2,
       limited: 1,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
       ability: {
         en:
@@ -284,7 +230,7 @@ const t: ShipType = {
           'While you defend or perform an attack, you may add 1 blank result, or you may gain 1 strain token to add 1 focus result instead.',
       },
       slots: ['Talent', 'Crew', 'Modification', 'Tech'],
-      cost: 29,
+      cost: 30,
       ffg: 575,
       caption: {
         en: 'Big Deal',
@@ -295,24 +241,6 @@ const t: ShipType = {
         pl: 'Poważna sprawa',
         pt: 'Big Deal',
         zh: 'Big Deal',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/311d88e51a039b79e9a422ab3c475288.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/a6bd7d785f72e8253abe9c40f5abfc8f.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/e31108c9d55aa8cdc2b303b7dd0929fd.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/4294a3981f4537aca4e30b9337d6d977.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/311d88e51a039b79e9a422ab3c475288.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/311d88e51a039b79e9a422ab3c475288.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/311d88e51a039b79e9a422ab3c475288.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/311d88e51a039b79e9a422ab3c475288.png',
       },
     },
   ],

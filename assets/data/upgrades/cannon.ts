@@ -43,24 +43,6 @@ const t: UpgradeBase[] = [
           maxrange: 3,
           ordnance: false,
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_27.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/5b0567c73c3be07914333cb3272c1e48.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_27.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/58fce7872153f58f01d9320c39591f47.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/52878cb126b5fdf02f2fa57d3d2c6b96.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/23a05ae80d17d21868151d91de40c65e.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/99fbfec68c0472ce2bfec01ab9909195.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_27.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_27.jpg',
         ffg: 256,
@@ -111,24 +93,6 @@ const t: UpgradeBase[] = [
           minrange: 1,
           maxrange: 3,
           ordnance: false,
-        },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_28.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/ab8963256095769281bbc1bcb75e2c76.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_28.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/c72af1c985f82e927c0a0c7985f385a6.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/1c1578b52933d159f43160df8a3fc061.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/99d019af2021e6deca046ca29a9b5edf.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/90551f9b3ec2467ea28cbda43c3229bd.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_28.png',
         },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_28.jpg',
@@ -181,24 +145,6 @@ const t: UpgradeBase[] = [
           maxrange: 2,
           ordnance: false,
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_29.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/c1271681af10e037a18dbda8ad8a8186.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_29.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/c3c5e57e8e69230905d91f6b093c1b4d.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/0aa1b931e79b1d42ea9fa91ac722c494.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/5123df4df0d399ee041e9c6ca716bb1c.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/1abb331de0248d3e07554e37898dc876.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_29.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_29.jpg',
         ffg: 258,
@@ -250,30 +196,12 @@ const t: UpgradeBase[] = [
           maxrange: 3,
           ordnance: false,
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_30.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/30d60c0390122f5201422726153cb79a.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_30.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/04de326f8a6991b610ea03751373011f.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/b82f38c8481250a92c878005b77ab5bf.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/60475273c7e1aa88d335fc469779dd84.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/3f9650c40e3668c72770e885ef8430d0.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_30.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_30.jpg',
         ffg: 259,
       },
     ],
-    cost: { value: 3 },
+    cost: { value: 4 },
     hyperspace: true,
     epic: true,
   },
@@ -319,31 +247,13 @@ const t: UpgradeBase[] = [
           maxrange: 2,
           ordnance: false,
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/59d4a52e3a534dd090259bd5546e7bab.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/327f88ce1f9bdd47cc9234a0a3de279e.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/3f4b44382476556bf21e025e559964f3.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/5d38ad0ce0fb4bcc2fe7309e7a41d78a.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/59d4a52e3a534dd090259bd5546e7bab.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/59d4a52e3a534dd090259bd5546e7bab.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/59d4a52e3a534dd090259bd5546e7bab.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/59d4a52e3a534dd090259bd5546e7bab.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_30.jpg',
         ffg: 578,
       },
     ],
     cost: { value: 3 },
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -356,10 +266,20 @@ const t: UpgradeBase[] = [
         type: 'Cannon',
         ability: {
           en:
-            'After an enemy ship executes a maneuver, you may perform this attack against it as a bonus attack.  Attack ([Lock]): Your dice can be modified only by spending a lock for the default effect.',
+            'After an enemy ship executes a maneuver, you may perform this attack against it as a bonus attack. Attack ([Lock]):Your dice can be modified only by spending a lock for the default effect.',
         },
+        attack: {
+          arc: 'Single Turret Arc',
+          value: 2,
+          minrange: 1,
+          maxrange: 1,
+          ordnance: true,
+        },
+        grants: [
+          { action: { type: 'Rotate Arc', difficulty: 'White' }, value: 1 },
+        ],
         slots: ['Cannon'],
-        ffg: -1,
+        ffg: 718,
       },
     ],
     hyperspace: true,
@@ -413,24 +333,6 @@ const t: UpgradeBase[] = [
           ordnance: false,
         },
         ffg: 674,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/6927e82e460670044786cd46327cb891.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/6927e82e460670044786cd46327cb891.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/6927e82e460670044786cd46327cb891.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/6927e82e460670044786cd46327cb891.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/6927e82e460670044786cd46327cb891.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/6927e82e460670044786cd46327cb891.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/6927e82e460670044786cd46327cb891.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/6927e82e460670044786cd46327cb891.png',
-        },
       },
     ],
     hyperspace: true,

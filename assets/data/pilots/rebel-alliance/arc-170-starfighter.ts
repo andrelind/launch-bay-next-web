@@ -89,24 +89,6 @@ const t: ShipType = {
         zh:
           'After you spend a focus token, you may choose 1 friendly ship at range 1-3. That ship gains 1 focus token.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_66.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/c71bec300320749639bdaea09ddd14c8.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/a3bb7f829323457fd1008b33a221b42b.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/721088d6e9d5003eea82d32029ed3367.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/4a9d78fc1932cfee5adab9f68eb3ed31.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/3b9a1abd45e160e61f46fae41fa6ec01.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/b28770a509d99435d5fd231d84fa8356.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_66.png',
-      },
       slots: [
         'Talent',
         'Torpedo',
@@ -164,24 +146,6 @@ const t: ShipType = {
         zh:
           'After you fully execute a maneuver, if you are stressed, you may roll 1 attack die. On a [Hit] or [Critical Hit] result, remove 1 stress token.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_68.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/bce5cdc6c15b18ace1b450d73a9f68e7.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/dff693517c465c8c5b4707347c7c5161.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/19cc47c9084fe568c954cf301ec13e85.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/98e251205b9e90bde25cde50ca169fb2.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/44eca5eb833167c07be04b6953c130a7.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/07b0d317e535cbdc9c0c15c39a2167b8.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_68.png',
-      },
       slots: [
         'Talent',
         'Torpedo',
@@ -223,7 +187,7 @@ const t: ShipType = {
       xws: 'norrawexley',
       ability: {
         en:
-          'While you defend, if there is an enemy ship at range 0-1, add 1 [Evade] result to your dice results.',
+          'While you defend, if there is an enemy ship at range 0-1, you may add 1 [Evade] result to your dice results.',
         de:
           'Solange du verteidigst, falls ein feindliches Schiff in Reichweite 0-1 ist, füge 1 [Evade]-Ergebnis zu deinen Würfelergebnissen hinzu.',
         fr:
@@ -238,24 +202,6 @@ const t: ShipType = {
           'Quando defender, se houver uma nave inimiga em alcance 0-1, você pode adicionar 1 resultado [Evade] aos resultadosde seus dados.',
         zh:
           'While you defend, if there is an enemy ship at range 0-1, you may add 1 [Evade] result to your dice results.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_65.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/504fe19ce5bdc52e71ba77d55e22fc76.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/76b5d73d6dadbab651b3eca096d2399f.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/613b4805eda92a09fe21a65692526960.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/872c46c1916e0ee08c71b611f55453bc.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/320ad0af47e613c05c1c90a068efe9f5.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/922559aa9d448e8d254aaa7d65a31232.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_65.png',
       },
       slots: [
         'Talent',
@@ -313,24 +259,6 @@ const t: ShipType = {
           'Quando defender ou realizar umataque primário, você pode gastar1 mira travada na nave inimiga para adicionar 1 resultado [Focus] aoresultado de seus dados.',
         zh:
           'While you defend or perform a primary attack, you may spend 1 lock you have on the enemy ship to add 1 [Focus] result to your dice results.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_67.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/310a22c78b49d24510bdd91daa625d71.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/d96816ba73afaf757c076e7f5c596810.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/c5edfbec4ce9d38b5c2eb8f6e37c324f.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/58f8de8e13302577a7484a2fc9e54b24.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/5e2d9695d0870e8cfbcf9f25a6b83352.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/83a64cb0b235f3afe65ffc2f05ec83b0.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_67.png',
       },
       slots: [
         'Talent',

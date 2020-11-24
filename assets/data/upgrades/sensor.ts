@@ -36,24 +36,6 @@ const t: UpgradeBase[] = [
             'After you reveal your dial, you may perform 1 action. If you do, you cannot perform another action during your activation.',
         },
         slots: ['Sensor'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_23.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/0e69d92b2e90baeda1e94cbe699d99cc.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_23.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/05509b31fba9bf5a6edb4f433b1e357e.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/337f5f1c36dcb8e0df26bf0e3e7868d9.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/0568627c7e4ff21952725f3479a70852.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/0222a96b1e24724e97cb5121d424e877.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_23.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_23.jpg',
         ffg: 252,
@@ -99,24 +81,6 @@ const t: UpgradeBase[] = [
         },
         slots: ['Sensor'],
         charges: { value: 2, recovers: 0 },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_24.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/86e0c2929c1dbb89689ce8d7b7347db8.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_24.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/f48e05f25a83fd54d7dfd4d7a82b3fd7.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/0d014d222a3969941fc6f7fca264fb1b.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/662a0e67afe2bf338a4bd21d4ee6edbb.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/ec4fa16b92a212253e9084839b916170.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_24.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_24.jpg',
         ffg: 253,
@@ -161,24 +125,6 @@ const t: UpgradeBase[] = [
             '当你执行攻击时，如果你已对防御方进行锁定，你可以重投1个攻击骰。如果你如此做，你不能在本次攻击中花费你的锁定标记。',
         },
         slots: ['Sensor'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_25.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/f1e6e0d6146f7893be080ed24943d239.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_25.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/726298fcece3b8b41ac313e52c229773.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/2b62f2d8707022f67030bd6d137fc3de.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/53f613e09b109edb0f8008f61a0f34ce.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/69cabe84c67cdf6f1edf8e15921d0c9a.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_25.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_25.jpg',
         ffg: 254,
@@ -223,24 +169,6 @@ const t: UpgradeBase[] = [
             'During the System Phase, if you would drop or launch a bomb, you may launch it using the (5 [Straight]) template instead.',
         },
         slots: ['Sensor'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_26.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/76889ede47525caea64b0fce1066dd85.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_26.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/75df47d12ddb75dd680b1a4d707939d5.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/c1e2061036cc2bf775426b6f5798bd0a.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/a291a7cda136754e36e5358f4ddfd4a2.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/7d3ccb30c6eb4357a9025eded0898458.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_26.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_26.jpg',
         ffg: 255,
@@ -287,39 +215,11 @@ const t: UpgradeBase[] = [
         charges: { value: 1, recovers: 1 },
         slots: ['Sensor'],
         ffg: 577,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/08a980b359fb73dbcb9a315e94d505f0.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/ee69e66a30585ab2e4f3c21e2a7b1b7d.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/d723118e50d686371f185e4b4cea504d.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/bbe81afb2f42a33c105f9e5c5e1ab533.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/08a980b359fb73dbcb9a315e94d505f0.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/08a980b359fb73dbcb9a315e94d505f0.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/08a980b359fb73dbcb9a315e94d505f0.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/08a980b359fb73dbcb9a315e94d505f0.png',
-        },
       },
     ],
     cost: {
       variable: 'initiative',
-      values: {
-        '0': 2,
-        '1': 2,
-        '2': 2,
-        '3': 2,
-        '4': 2,
-        '5': 4,
-        '6': 6,
-        '7': 8,
-        '8': 10,
-      },
+      values: { '0': 2, '1': 2, '2': 2, '3': 2, '4': 2, '5': 4, '6': 6 },
     },
     hyperspace: true,
     epic: true,

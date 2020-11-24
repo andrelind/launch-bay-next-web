@@ -44,24 +44,6 @@ const t: UpgradeBase[] = [
           maxrange: 3,
           ordnance: true,
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_36.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/6d86d6d377ba8a9f0480e68053b75e1f.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_36.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/dbff72a38cb1015d9f908216436fdc75.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/adaedd50ef11373cf6763f87b49a83a5.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/6f6106ba8a4210527cff6f5c0f69d008.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/75f74e400e46de3b2c5a36cfaae652ac.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_36.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_36.jpg',
         ffg: 265,
@@ -114,24 +96,6 @@ const t: UpgradeBase[] = [
           maxrange: 2,
           ordnance: true,
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_37.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/1219b3bd6790ccef6b91b355c3c4585a.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_37.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/2b4a712cd16ba60f9a059b88500cff2d.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/2057a154a73b92819996dc3c82e171ea.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/27afd5dd955087b621e7f1b845d96914.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/ab274c500e944285de869abc495279e6.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_37.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_37.jpg',
         ffg: 266,
@@ -174,24 +138,6 @@ const t: UpgradeBase[] = [
             'Ataque ([Lock]): Gaste 1 [Charge]. Após este ataque acertar, cada nave em alcance 0-1do defensor expõe 1 desuas cartas de dano.',
           zh:
             '攻击([Lock])：花费1[Charge]。在本次攻击命中后，防御方距离0~1内的所有战机暴露1张伤害卡。',
-        },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_38.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/02874cb3c187ec2cd0a1dadc013c15b3.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_38.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/258986540f9693d22f95b9c9bad664ea.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/bf41a00ced9373947f69139080a12ec5.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/7741bc08628f3c58da1c89c0b6d64064.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/781cb962d78da6790eb49c244651a70d.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_38.png',
         },
         slots: ['Missile'],
         charges: { value: 3, recovers: 0 },
@@ -254,24 +200,6 @@ const t: UpgradeBase[] = [
           maxrange: 3,
           ordnance: true,
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_39.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/1d8e453117f5c7fb6bccb699533bf423.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_39.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/e2b5ed0d8de5b89dbdd7eb4011590243.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/91c15bb0bee860db381183b0b9154777.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/da61968aff8e3b8ab645355606bb0c25.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/b6acbc9c85b3f3d6fc917831e4b6d3de.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_39.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_39.jpg',
         ffg: 268,
@@ -324,31 +252,13 @@ const t: UpgradeBase[] = [
           maxrange: 3,
           ordnance: true,
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_40.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/3a3572c5037fd0f14deff028aaa454dc.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_40.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/5faff41f3a780a36da149f60caad517d.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/8e25c132a6ea95a39b9dc2a6f49714dc.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/7a0b01673b203c1c16ee5937af20f204.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/d6816d629632f21c2eec5926c639c1de.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_40.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_40.jpg',
         ffg: 269,
       },
     ],
-    cost: { value: 3 },
-    hyperspace: true,
+    cost: { value: 2 },
+    hyperspace: false,
     epic: true,
   },
   {
@@ -377,24 +287,6 @@ const t: UpgradeBase[] = [
           pt: 'Ataque ([Focus]): Gaste 1 [Charge].',
           zh: 'Attack ([Focus]): Spend 1 [Charge].',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_41.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/15f95971ad9cbfa4ee11ad3051c5e329.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_41.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/6389e33e57cd7d67d9387fc1677cb3d2.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/72b1b28892be72679c9dfec3795e33e5.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/cd4fb774c8653d97ced2d467237a507c.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/e9345e4efc477dd6be777851908dfdcf.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_41.png',
-        },
         slots: ['Missile'],
         charges: { value: 1, recovers: 0 },
         attack: {
@@ -409,8 +301,8 @@ const t: UpgradeBase[] = [
         ffg: 270,
       },
     ],
-    cost: { value: 6 },
-    hyperspace: false,
+    cost: { value: 5 },
+    hyperspace: true,
     epic: true,
   },
   {
@@ -455,24 +347,6 @@ const t: UpgradeBase[] = [
           maxrange: 3,
           ordnance: true,
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/4b6213e5ed13735bb381df08bdd1398d.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/423b6d2404d7fdc1e793db71500ee812.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/81e9a21b469b0468e4e43ce70c8f7aa4.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/65148bba4cbe6ba35075c61a4ba3151d.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/7220d1a1d843d03be555322628a0b803.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/563ee00ffe73be54eb5fdf4a90762ab2.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/4b6213e5ed13735bb381df08bdd1398d.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/4b6213e5ed13735bb381df08bdd1398d.png',
-        },
         slots: ['Missile'],
         ffg: 532,
       },
@@ -482,7 +356,7 @@ const t: UpgradeBase[] = [
       { factions: ['Separatist Alliance'] },
     ],
     cost: { value: 5 },
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
   },
   {
@@ -520,24 +394,6 @@ const t: UpgradeBase[] = [
             "At the start of the Engagement Phase, you may spend 1 calculate token and 1 [Charge] to launch 1 buzz droid swarm using the (3 [Bank Left]), (3 [Straight]), or (3 [Bank Right]) template. This card's [Charge] cannot be recovered.",
         },
         charges: { value: 1, recovers: 0 },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/ee2f0b906cb4f1dbcafc274f44b76d3d.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/10748964a2d414affb6066b077773ef7.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/e35fd921e3c9168be6ff019dbde37059.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/6c3bb3488b056d6ff11e56b2e9311bdd.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/3959d992b9e91623da384d2382a69b67.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/f35405b27c7b06a5add4e5b00fe300f9.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/ee2f0b906cb4f1dbcafc274f44b76d3d.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/ee2f0b906cb4f1dbcafc274f44b76d3d.png',
-        },
         slots: ['Missile'],
         device: {
           name: 'Buzz Droid Swarm',
@@ -550,7 +406,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     restrictions: [{ factions: ['Separatist Alliance'] }],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -596,30 +452,12 @@ const t: UpgradeBase[] = [
           maxrange: 3,
           ordnance: true,
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f2c1893053af65ce47300fb133a30312.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/52c689d3e00ffe551a131094f847bd8e.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/d46fb403adfce3e6c81cdc03701af66b.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/eb0276b41943d75b3be065a4f9347230.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f2c1893053af65ce47300fb133a30312.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f2c1893053af65ce47300fb133a30312.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f2c1893053af65ce47300fb133a30312.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f2c1893053af65ce47300fb133a30312.png',
-        },
         ffg: 580,
       },
     ],
     hyperspace: true,
     epic: true,
-    cost: { value: 6 },
+    cost: { value: 5 },
   },
   {
     limited: 0,
@@ -664,30 +502,12 @@ const t: UpgradeBase[] = [
           maxrange: 3,
           ordnance: true,
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/94cdc3be1cf133e123e30f25f181faf7.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/b62122011a0080f4952132ce974188b4.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/c97946250e1d4b687d27ad7e0233c1f6.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/5426c5ad4e57b383b1f475429870c1bd.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/94cdc3be1cf133e123e30f25f181faf7.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/94cdc3be1cf133e123e30f25f181faf7.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/94cdc3be1cf133e123e30f25f181faf7.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/94cdc3be1cf133e123e30f25f181faf7.png',
-        },
         ffg: 651,
       },
     ],
     hyperspace: true,
     epic: true,
-    cost: { value: 6 },
+    cost: { value: 5 },
   },
   {
     limited: 0,
@@ -735,27 +555,28 @@ const t: UpgradeBase[] = [
         },
         charges: { value: 5, recovers: 0 },
         ffg: 673,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/5abef5ee3d6e4acf94cd77280375aa72.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/5abef5ee3d6e4acf94cd77280375aa72.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/5abef5ee3d6e4acf94cd77280375aa72.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/5abef5ee3d6e4acf94cd77280375aa72.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/5abef5ee3d6e4acf94cd77280375aa72.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/5abef5ee3d6e4acf94cd77280375aa72.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/5abef5ee3d6e4acf94cd77280375aa72.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/5abef5ee3d6e4acf94cd77280375aa72.png',
-        },
       },
     ],
-    cost: { value: 8 },
+    cost: { value: 6 },
+  },
+  {
+    limited: 2,
+    xws: 'xx23sthreadtracers',
+    hyperspace: true,
+    epic: false,
+    sides: [
+      {
+        ability: {
+          en:
+            'Attack ([Focus], [Calculate], or [Lock]): Spend 1 [Charge]. If this attack hits, each friendly ship at range 1-3 of the defender may acquire a lock on the defender. Then cancel all dice results.',
+        },
+        title: { en: 'XX-23 S-Thread Tracers' },
+        type: 'Missile',
+        slots: ['Missile'],
+        ffg: 851,
+      },
+    ],
+    cost: { value: 2 },
   },
 ];
 

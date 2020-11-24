@@ -47,24 +47,6 @@ const t: UpgradeBase[] = [
             value: 1,
           },
         ],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/e3b44142faf0f13e541bf674a6c06dbc.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/e3b44142faf0f13e541bf674a6c06dbc.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/e3b44142faf0f13e541bf674a6c06dbc.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/e3b44142faf0f13e541bf674a6c06dbc.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/e3b44142faf0f13e541bf674a6c06dbc.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/e3b44142faf0f13e541bf674a6c06dbc.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/e3b44142faf0f13e541bf674a6c06dbc.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/e3b44142faf0f13e541bf674a6c06dbc.png',
-        },
         ffg: 486,
       },
       {
@@ -90,24 +72,6 @@ const t: UpgradeBase[] = [
           zh: 'Before you activate, you may flip this card.',
         },
         slots: ['Configuration'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/49372b4efb974ff673a1b79441186fd5.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/ed3569e898cae62826ab5169a15920ad.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/03ea63ffae8b4c844afb6ab5280647f8.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/2477e3d2301e2a6d2c42ec2c119cab20.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/0e7199e41b3b6bea690f6b39fad52f7f.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/a16c2646d5f3a7852416f7638880f300.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/49372b4efb974ff673a1b79441186fd5.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/49372b4efb974ff673a1b79441186fd5.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/bf5e7b98158570f9d4fc259b5553f4ca.jpg',
         ffg: 487,
@@ -157,24 +121,6 @@ const t: UpgradeBase[] = [
           { slot: 'Torpedo', value: 1 },
           { slot: 'Missile', value: 1 },
         ],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_125.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/161934dead75cfb8acf7df743f7d6d37.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_125.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/62849c6e7d8f5ec5e7cba5e64ea016b9.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/d879f7c3acc0913f52bb4d0221c49fd9.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/bcb88ea8e7e914a483be7fe7751f30e7.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/bcb1d51a0ef8a8447b4dff0f958f5287.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_125.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_125.jpg',
         ffg: 350,
@@ -220,24 +166,6 @@ const t: UpgradeBase[] = [
             'While you defend, roll 1 fewer defense die. After you execute a (0 [Stationary]) maneuver, you may rotate your ship 90˚ or 180˚. Before you activate, you may flip this card.',
         },
         slots: ['Configuration'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_107b.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_107b.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_107b.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_107b.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_107b.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_107b.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_107b.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_107b.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_107b.jpg',
         ffg: 332,
@@ -265,24 +193,6 @@ const t: UpgradeBase[] = [
           zh: 'Before you activate, you may flip this card.',
         },
         slots: ['Configuration'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_107.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/bcd6bc5f60d6a7dbf5cbb88e31a57069.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_107.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/b731aa60832787495f7eab0c4db47650.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/1925a9a526f56ef395f2d8097a55a2d5.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/8398a364f3bc52ce171a92d481bf0eb4.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/9a80b106b80be4ea09552427e1721811.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_107.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_107.jpg',
         ffg: 331,
@@ -339,24 +249,6 @@ const t: UpgradeBase[] = [
             value: 1,
           },
         ],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_108b.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_108b.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_108b.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_108b.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_108b.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_108b.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_108b.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_108b.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_108b.jpg',
         ffg: 334,
@@ -385,24 +277,6 @@ const t: UpgradeBase[] = [
           zh: '在你启动之前，你可以将此卡翻面。',
         },
         slots: ['Configuration'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_108.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/bd0e19b952238c859d40730f29add61e.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_108.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/edee0b36c8ada4e1e6dbf837ea1b9f70.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/711b6febecab9db909da1c9d2452cb98.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/d2300b95c367dc1646ea9e169c13fe30.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/b6a06bd3e709ec7da535ff1776178157.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_108.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_108.jpg',
         ffg: 333,
@@ -449,24 +323,6 @@ const t: UpgradeBase[] = [
         },
         slots: ['Configuration'],
         grants: [{ slot: 'Cannon', value: 1 }],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_126.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/583db90da0f2b80d3999748680b8eb2c.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_126.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/a474909740e09814e221adadee34cb64.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/3c5ac2d4f3dab1f7d20eb94ddaad5ad2.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/a760534ae7d8db8ce543e88bbe18ba4d.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/eb51446fab1ae5d24e96b1fa6d3d1ef9.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_126.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_126.jpg',
         ffg: 351,
@@ -513,24 +369,6 @@ const t: UpgradeBase[] = [
         },
         slots: ['Configuration'],
         ffg: 555,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/ca74271f47c42b390ca0ba0b389144a5.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/1f4710559ada154aefb7ee15e46e7ff6.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/c17efa08d4d68cd69b659ce55fef345a.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/9b65183c50dd69bfdf843a6de172d42d.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/27274f2cab62990fe9f35387d397347c.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/6df32e38e5af394e4a2fa6ff5e82a210.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/ca74271f47c42b390ca0ba0b389144a5.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/ca74271f47c42b390ca0ba0b389144a5.png',
-        },
       },
       {
         title: {
@@ -564,28 +402,10 @@ const t: UpgradeBase[] = [
         },
         slots: ['Configuration'],
         ffg: 535,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/be82da17cfd39003fda380bead210eb9.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/519b493c1fedbb5ce48d15b455ec920d.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/b34510d2b8f0bdfddacaf1b294859860.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/25604c2dfac4dcd85212a24fb0376a6a.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/5d22996dfab7494a776a84a68f18f726.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/7cfc6b5ae6a0242d1f3d02a841a7494a.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/be82da17cfd39003fda380bead210eb9.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/be82da17cfd39003fda380bead210eb9.png',
-        },
       },
     ],
     restrictions: [{ chassis: ['vultureclassdroidfighter'] }],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
     cost: { value: 1 },
   },
@@ -630,32 +450,14 @@ const t: UpgradeBase[] = [
             "The Delta-7B was designed as a heavier variant of the Delta-7 Aethersprite-class Interceptor, identifiable by the repositioned astromech slot. Many Jedi Generals favor this craft's greater firepower and durability.",
         },
         ffg: 548,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/515903e04a0d06a9200860698326896d.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/50a70c145c656a307ffcfdb2855320b0.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/0aea0c163611a7e00bbd311089f6669a.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/de514cd0cb607735dc39991ad1218e88.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/6ff429238f2bf8055188ab0c8f44c3c3.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/b6ccad439295bd18cfbf795a4f0b6d17.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/515903e04a0d06a9200860698326896d.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/515903e04a0d06a9200860698326896d.png',
-        },
       },
     ],
     cost: {
       variable: 'initiative',
-      values: { '0': 6, '1': 9, '2': 12, '3': 15, '4': 18, '5': 21, '6': 24 },
+      values: { '0': 4, '1': 4, '2': 8, '3': 12, '4': 16, '5': 20, '6': 24 },
     },
     restrictions: [{ chassis: ['delta7aethersprite'] }],
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
   },
   {
@@ -692,24 +494,6 @@ const t: UpgradeBase[] = [
             'While you perform a primary attack, if the defender is in your [Bullseye Arc], add 1 [Focus] result.',
           zh:
             'While you perform a primary attack, if the defender is in your [Bullseye Arc], add 1 [Focus] result.',
-        },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f3e06326ab525e07f9a85363b6d69580.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/7db92ab614daf854a233b56318cad265.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/8e3d93439ec06d84f28a8ebc60786ffa.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/3340f63d1127ce8ae74b3bc206aae224.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/8494e6e030350e0bc341c3c363a1620b.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/eaab814f47a38f4aee4e7f0a20d26fb1.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f3e06326ab525e07f9a85363b6d69580.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f3e06326ab525e07f9a85363b6d69580.png',
         },
         ffg: 549,
       },
@@ -757,24 +541,6 @@ const t: UpgradeBase[] = [
             'Setup: Equip this side faceup. While you execute a maneuver, if you overlap an asteroid or debris cloud and there are 1 or fewer other friendly ships at range 0 of that obstacle, you may flip this card.',
         },
         slots: ['Configuration'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/c23a0130bad7330c0abb6218745910aa.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/e1d01bfd28bed130bf7544b556665516.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/e5322e735c330452bbb623f151a440f7.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/e9910633a2b9d3c5a6ff3b4c40137053.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/c23a0130bad7330c0abb6218745910aa.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/c23a0130bad7330c0abb6218745910aa.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/c23a0130bad7330c0abb6218745910aa.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/c23a0130bad7330c0abb6218745910aa.png',
-        },
         ffg: 594,
       },
       {
@@ -808,24 +574,6 @@ const t: UpgradeBase[] = [
             'You ignore obstacles at range 0 and while you move through them. After you reveal your dial, if you reveal a maneuver other than a (2 [Straight]) and are at range 0 of an asteroid or debris cloud, skip your Execute Maneuver step and remove 1 stress token; if you revealed a right or left maneuver, rotate your ship 90° in that direction. After you execute a maneuver, flip this card.',
         },
         slots: ['Configuration'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/aba79159308e850b635f6c43721ccdee.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/d39ac7ea291b19bc1c4722e92bce2eaf.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/dfb7435bbde9e4eee3fbdab615cfab18.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/ee355c7cc8c1034dfbd13fda4dd838ae.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/aba79159308e850b635f6c43721ccdee.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/aba79159308e850b635f6c43721ccdee.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/aba79159308e850b635f6c43721ccdee.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/aba79159308e850b635f6c43721ccdee.png',
-        },
         ffg: 595,
       },
     ],
@@ -835,7 +583,7 @@ const t: UpgradeBase[] = [
     cost: { value: 1 },
   },
   {
-    limited: 0,
+    limited: 2,
     xws: 'corsairrefit',
     sides: [
       {
@@ -843,7 +591,7 @@ const t: UpgradeBase[] = [
         type: 'Configuration',
         ability: {
           en:
-            'Bonus Attack: Spend 1 [Energy] to perform a [Cannon], [Turret], or [Missile] attack.',
+            'Add [Cannon], [Turret], and [Missile] slots. Bonus Attack: Spend 1 to perform a [Cannon], [Turret], or [Missile] attack.',
         },
         slots: ['Configuration'],
         grants: [
@@ -854,11 +602,7 @@ const t: UpgradeBase[] = [
           { stat: 'shields', value: -2 },
           { stat: 'energy', value: 1 },
         ],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/c23a0130bad7330c0abb6218745910aa.png',
-        },
-        ffg: 594,
+        ffg: 780,
       },
     ],
     restrictions: [{ chassis: ['croccruiser'] }],
@@ -912,24 +656,6 @@ const t: UpgradeBase[] = [
           },
         ],
         ffg: 645,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f03c2baf5b0a095e28948f03468cc5d2.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/dcb2f745e1c42cbec9ec26add450d863.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/911b6ad94441ed10eb186c928c65c349.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/4cfccc47334794b3ac0365a47bce5597.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f03c2baf5b0a095e28948f03468cc5d2.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f03c2baf5b0a095e28948f03468cc5d2.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f03c2baf5b0a095e28948f03468cc5d2.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/f03c2baf5b0a095e28948f03468cc5d2.png',
-        },
       },
       {
         title: {
@@ -974,56 +700,38 @@ const t: UpgradeBase[] = [
           { action: { type: 'Reload', difficulty: 'Red' }, value: 1 },
         ],
         ffg: 646,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/77f37d94be3977d6d573219dd6462c2b.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/4e4a0462815199c86fad2198718fc6e1.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/35c3ef32670ca9aaaa34ea7dd2cf7b0d.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/f079a2c972b07239de3bb6fe7262800e.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/77f37d94be3977d6d573219dd6462c2b.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/77f37d94be3977d6d573219dd6462c2b.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/77f37d94be3977d6d573219dd6462c2b.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/77f37d94be3977d6d573219dd6462c2b.png',
-        },
       },
     ],
     restrictions: [{ chassis: ['asf01bwing'] }],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
     cost: { value: 2 },
   },
   {
     xws: 'alpha3bbesh',
     limited: 0,
-    cost: { value: 200 },
+    cost: { value: 2 },
     sides: [
       {
         title: { en: 'Alpha-3B "Besh"' },
         type: 'Configuration',
         ability: {
           en:
-            'While you perform a primary attack, you may spend your lock on the defender to change 1 of your blank or [Focus] results to a [Hit] result.  Add [Device] slot.',
+            'While you perform a primary attack, you may spend your lock on the defender to change 1 of your blank or [Focus] results to a [Hit] result. Add [Device] slot.',
         },
         slots: ['Configuration'],
-        ffg: -1,
+        ffg: 870,
         grants: [{ slot: 'Device', value: 1 }],
       },
     ],
-    hyperspace: false,
+    hyperspace: true,
     epic: false,
     restrictions: [{ chassis: ['nimbusclassvwing'] }],
   },
   {
     xws: 'interceptbooster',
     limited: 0,
-    cost: { value: 200 },
+    cost: { value: 3 },
     sides: [
       {
         title: { en: 'Intercept Booster (Attached)' },
@@ -1033,14 +741,14 @@ const t: UpgradeBase[] = [
             'Setup: Equip this side faceup.  During the System Phase, gain 1 disarm token unless you flip this card.  At the end of the End Phase, if you have no active [Charge], flip this card.',
         },
         slots: ['Configuration'],
-        ffg: -1,
+        ffg: 873,
       },
       {
-        title: { en: '???' },
+        title: { en: 'Intercept Booster (Detached)' },
         type: 'Configuration',
-        ability: { en: '???' },
+        ability: { en: '' },
         slots: ['Configuration'],
-        ffg: -1,
+        ffg: 872,
       },
     ],
     hyperspace: false,
@@ -1059,8 +767,19 @@ const t: UpgradeBase[] = [
           en:
             'Reduce the difficulty of your speed 3 straight ([Straight]) and bank ([Bank Left] or [Bank Right]) maneuvers.',
         },
+        grants: [
+          { action: { type: 'Calculate', difficulty: 'White' }, value: 1 },
+          {
+            action: {
+              type: 'Barrel Roll',
+              difficulty: 'White',
+              linked: { type: 'Calculate', difficulty: 'Red' },
+            },
+            value: 1,
+          },
+        ],
         slots: ['Configuration'],
-        ffg: -1,
+        ffg: 722,
       },
     ],
     hyperspace: true,
@@ -1079,8 +798,19 @@ const t: UpgradeBase[] = [
           en:
             'Before you engage, if you have no green tokens and you are not stressed, gain 1 calculate token for each enemy ship at range 2-3 in your firing arc, to a maximum of 2.',
         },
+        grants: [
+          { action: { type: 'Calculate', difficulty: 'White' }, value: 1 },
+          {
+            action: {
+              type: 'Rotate Arc',
+              difficulty: 'White',
+              linked: { type: 'Calculate', difficulty: 'White' },
+            },
+            value: 1,
+          },
+        ],
         slots: ['Configuration'],
-        ffg: -1,
+        ffg: 723,
       },
     ],
     hyperspace: true,
@@ -1104,24 +834,6 @@ const t: UpgradeBase[] = [
         },
         type: 'Configuration',
         slots: [],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d159e1d6ffc15eda188f858292dc9c2b.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d159e1d6ffc15eda188f858292dc9c2b.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d159e1d6ffc15eda188f858292dc9c2b.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d159e1d6ffc15eda188f858292dc9c2b.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d159e1d6ffc15eda188f858292dc9c2b.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d159e1d6ffc15eda188f858292dc9c2b.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d159e1d6ffc15eda188f858292dc9c2b.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d159e1d6ffc15eda188f858292dc9c2b.png',
-        },
         ability: {
           en:
             'Setup: Equip this side faceup. Reduce the difficulty of your straight ([Straight]) maneuvers. After you fully execute a maneuver, you may flip this card.',
@@ -1155,24 +867,6 @@ const t: UpgradeBase[] = [
         },
         type: 'Configuration',
         slots: ['Configuration'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/57074bd7f510c9c4fd3717894e0239a0.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/57074bd7f510c9c4fd3717894e0239a0.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/57074bd7f510c9c4fd3717894e0239a0.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/57074bd7f510c9c4fd3717894e0239a0.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/57074bd7f510c9c4fd3717894e0239a0.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/57074bd7f510c9c4fd3717894e0239a0.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/57074bd7f510c9c4fd3717894e0239a0.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/57074bd7f510c9c4fd3717894e0239a0.png',
-        },
         ability: {
           en:
             'After you reveal a bank ([Bank Left] or [Bank Right]) or turn ([Turn Left] or [Turn Right]) maneuver, you must perform that maneuver as a sideslip, then flip this card. After you fully execute a non-sideslip maneuver, you may flip this card.',
@@ -1195,9 +889,29 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     limited: 0,
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
     restrictions: [{ chassis: ['hmpdroidgunship'] }],
+  },
+  {
+    limited: 0,
+    xws: 'alpha3eesk',
+    hyperspace: true,
+    epic: false,
+    sides: [
+      {
+        ability: {
+          en:
+            'While you perform a primary attack, before rolling attack dice, you may spend 2 [Charge]. If you do, your [Critical Hit] results inflict ion tokens instead of damage.',
+        },
+        title: { en: 'Alpha-3E "Esk"' },
+        type: 'Configuration',
+        slots: ['Configuration'],
+        ffg: 871,
+      },
+    ],
+    cost: { value: 1 },
+    restrictions: [{ chassis: ['nimbusclassvwing'] }],
   },
 ];
 

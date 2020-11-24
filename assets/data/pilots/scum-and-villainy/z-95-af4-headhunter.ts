@@ -79,29 +79,11 @@ const t: ShipType = {
         zh:
           "Operating from the Double Worlds, Talus and Tralus, Kath Scarlet's gang of smugglers and pirates would never be described as reputable or dependable—even by other criminals.",
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_173.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/d178eb88d0c7ed60c6294f42e884cf85.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/f012a91671ccf8e895fbd84b6e54adc9.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/e9f19bac1862fb0e322e20f046de9956.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/cdb648d4729fea504615874c8c07dd6a.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/2535449b251afae63add47c1914d2059.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/0050ca3ea404d72e89c0c1ef11b3e798.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_173.png',
-      },
       slots: ['Missile', 'Illicit', 'Modification'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_173.jpg',
       ffg: 173,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -137,24 +119,6 @@ const t: ShipType = {
         zh:
           "The vast and influential Black Sun crime syndicate can always find a use for talented pilots, provided they aren't particular about how they earn their credits.",
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_172.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/c0ef34b8cb5b345eace150de462d18de.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/4bc7482727796f817518da699ec2117e.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/2a08157520b00a32acfeb626cb994110.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/bf9565f46c578bb57e4673a20e06c878.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/652fe5e8a7d99b595f715b71dd4460ca.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/b30fde131be28bf5a7be59ed4449945d.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_172.png',
-      },
       slots: ['Talent', 'Missile', 'Illicit', 'Modification'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_172.jpg',
@@ -185,7 +149,7 @@ const t: ShipType = {
       },
       initiative: 3,
       limited: 1,
-      cost: 27,
+      cost: 25,
       xws: 'kaatoleeachos',
       ability: {
         en:
@@ -205,29 +169,11 @@ const t: ShipType = {
         zh:
           'At the start of the Engagement Phase, you may choose 1 friendly ship at range 0-2. If you do, transfer 1 focus or evade token from that ship to yourself.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_170.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/de3e62d5a42867ac2bc2cb61d6d44f0f.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/04edfd16d951dbebfacc1d7f34f9d698.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/d0cfc74da6f60be871818adfcb4cbba7.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/8b365d8567271fadad73e53a2680f11b.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/d587d366dbd614f043a2192221b685ce.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/f5735637a14d02cfc9628fab301b600f.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_170.png',
-      },
       slots: ['Talent', 'Missile', 'Illicit', 'Modification'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_170.jpg',
       ffg: 170,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -253,7 +199,7 @@ const t: ShipType = {
       },
       initiative: 4,
       limited: 1,
-      cost: 30,
+      cost: 29,
       xws: 'ndrusuhlak',
       ability: {
         en:
@@ -274,28 +220,10 @@ const t: ShipType = {
           'While you perform a primary attack, if there are no other friendly ships at range 0-2, roll 1 additional attack die.',
       },
       slots: ['Talent', 'Missile', 'Illicit', 'Modification'],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_169.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/11342e3a8761f04b7cbc662dfc12dec8.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/1741073427056a21f7c14527c66bd4be.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/42cefbc94cee9f75226256f03d0a4213.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/21bb1e9cbe2ec05d886c091a96fb7343.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/c0381d97a93791ea4029630657f0cfcb.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/03a7055d53d38aa8407ae50aaef5adae.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_169.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_169.jpg',
       ffg: 169,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -342,28 +270,10 @@ const t: ShipType = {
           "You can deploy only via emergency deployment, and you have the name, initiative, pilot ability, and ship [Charge] of the friendly, destroyed Hound's Tooth.",
       },
       slots: ['Missile', 'Illicit', 'Modification'],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_171.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/c5d0d024581da2a3aee2808b90a87c3a.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/f650b987fa3a1d10b62942cb517bf70e.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/72dd9fb9b7fe7b5d4d81a2fea922003b.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/571215a34f1aaee9b90fc0076552d6a3.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/796ba55279c555b250073c28cab613ce.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/eb37a24471d0e7f6624922a277847a5f.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_171.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_171.jpg',
       ffg: 171,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -389,7 +299,7 @@ const t: ShipType = {
       },
       initiative: 4,
       limited: 1,
-      cost: 29,
+      cost: 28,
       xws: 'bossk-z95af4headhunter',
       ability: {
         en:
@@ -410,27 +320,9 @@ const t: ShipType = {
           'While you perform a primary attack, after the Neutralize Results step, you may spend 1 [Critical Hit] result to add 2 [Hit] results.',
       },
       slots: ['Talent', 'Missile', 'Illicit', 'Modification'],
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       ffg: 635,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/13a94a5ed78d4629017a439fbf0906ea.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/a1e7fef9fd4f6787586f3093a4a10dc3.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/1b63903895a88e7bf23f43284a30670e.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/774e21b4e20f22b9411c657197848a7d.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/13a94a5ed78d4629017a439fbf0906ea.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/13a94a5ed78d4629017a439fbf0906ea.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/13a94a5ed78d4629017a439fbf0906ea.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/13a94a5ed78d4629017a439fbf0906ea.png',
-      },
     },
   ],
 };

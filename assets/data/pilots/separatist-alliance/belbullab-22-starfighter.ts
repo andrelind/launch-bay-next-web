@@ -97,24 +97,6 @@ const t: ShipType = {
         zh:
           "While you perform a primary attack, if you are not in the defender's firing arc, you may reroll up to 2 attack dice.",
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9e4a215e799a9e7ad1853d19d149dd20.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/14f0e21cdf5a4e725a2f7baa8ebf521d.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/ca3f724968d16f5f0a046e18bd320934.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/df75e488552efd46d939f02f8f34781b.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/423431715561a27afa5e754c9c483879.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/1b1d52d71d5f5e61bca2b978cc02f3d7.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9e4a215e799a9e7ad1853d19d149dd20.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9e4a215e799a9e7ad1853d19d149dd20.png',
-      },
       hyperspace: true,
       epic: true,
       cost: 44,
@@ -165,24 +147,6 @@ const t: ShipType = {
         zh:
           'While you perform a primary attack, you may reroll 1 attack die for each calculating friendly ship at range 1 of the defender.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/68cbd6082683fe17778f829555f23a26.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/68b00454a8ba156ca0f8d8a8694d9241.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/1c5432c9a7b0653adfcff9659aeeeb8e.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/5f4be1604eacdf52426b63c63886c902.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/d4a76ea1afd3dc39dede9e5b2cf935f1.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/2a8631bf171cd2d489f3253587198512.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/68cbd6082683fe17778f829555f23a26.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/68cbd6082683fe17778f829555f23a26.png',
-      },
       hyperspace: true,
       epic: true,
       cost: 42,
@@ -223,24 +187,6 @@ const t: ShipType = {
         zh:
           'Unlike the more disposable fighters it also built for the Separatists, Feethan Ottraw Scalable Assemblies designed the Belbullab-22 with a solid mix of firepower, durability, and speed.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/538c4833605af80b226da9e5f800e6ef.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/a8421fee561ef495e88d43a678a87eb5.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/27aef16f98d1b34794eb8eb8be9bd148.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/7fe39067786e83e2ae9e1e21aa631485.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/6f1754ffc55860891f9ac23d91bc72ac.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/44a073c5d1d963978cf09cdda3be02c3.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/538c4833605af80b226da9e5f800e6ef.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/538c4833605af80b226da9e5f800e6ef.png',
-      },
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },
         { difficulty: 'White', type: 'Lock' },
@@ -255,7 +201,7 @@ const t: ShipType = {
           type: 'Boost',
         },
       ],
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       cost: 35,
       slots: ['Modification', 'Title', 'Tactical Relay'],
@@ -305,25 +251,7 @@ const t: ShipType = {
         zh:
           'While a friendly ship at range 0-3 performs a primary attack, if the defender is in its [Bullseye Arc], before the Neutralize Results step, the friendly ship may spend 1 calculate token to cancel 1 [Evade] result.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3d3704ab454433a8b4d73ee6bff430b8.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/0c5f9ccf954f387baca3195ec63b1e1c.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/f1382fcab203bc6faab6b16e5ac0cdbf.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/ca518cf1605d72d6d2e3a928e33b8208.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/9431a70cc7975c985252568f7fdb931d.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/405a7a1b57395813b620daac30a7ab72.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3d3704ab454433a8b4d73ee6bff430b8.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3d3704ab454433a8b4d73ee6bff430b8.png',
-      },
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
       cost: 45,
       slots: ['Modification', 'Title', 'Tactical Relay'],
@@ -350,24 +278,6 @@ const t: ShipType = {
       limited: 0,
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/af0e63b7754ef598f1f36ed9a6c4b4ee.jpg',
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/ceb7a3bc406ff17be5dee5de62b39195.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/4354f358e9c8dc6ca1c13c6fbf1dba8c.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/cadcd110971ffaabbe1e06a51a8db2df.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/098726657bd1676b48ae35a5cc8fe5d9.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/a60d5d8aaa8228bd9944d261093d8b3c.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/cce90c2fbcd11cf17f0fa5aa50b12269.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/ceb7a3bc406ff17be5dee5de62b39195.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/ceb7a3bc406ff17be5dee5de62b39195.png',
-      },
       text: {
         en:
           'With its powerful engines, devastating triple laser cannons, and high customizability, the Belbullab-22 is the chosen craft of several elite Separatist Alliance pilots, including the infamous General Grievous.',
@@ -386,7 +296,7 @@ const t: ShipType = {
         zh:
           'With its powerful engines, devastating triple laser cannons, and high customizability, the Belbullab-22 is the chosen craft of several elite Separatist Alliance pilots, including the infamous General Grievous.',
       },
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
   ],

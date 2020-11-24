@@ -110,24 +110,6 @@ const t: ShipType = {
         zh:
           'Sienar Fleet Systems designed the TIE interceptor with four wing-mounted laser cannons, a dramatic increase in firepower over its predecessors.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_106.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/2fb71fe970eb3807b8f83fed249e3103.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/8f57ea54ffa45998b3455c743b592d1e.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/13867c9945cadbdff0962b04a0383289.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/1ef45842848f7341cfa4a723f36b87ce.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/55dd86c33a4e966ededd3b2973fb5cd9.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/a595ab71c92754cc09b46670c202199c.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_106.png',
-      },
       slots: ['Modification', 'Modification'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_106.jpg',
@@ -148,7 +130,7 @@ const t: ShipType = {
       },
       initiative: 4,
       limited: 0,
-      cost: 36,
+      cost: 35,
       xws: 'sabersquadronace',
       text: {
         en:
@@ -167,24 +149,6 @@ const t: ShipType = {
           'Liderados pelo Barão Soontir Fel, os pilotos do Esquadrão Sabre estão entre os melhores pilotos do Império. Suas TIE interceptors são marcadas com listras vermelhas para identificar pilotos com pelo menos dez abates confirmados.',
         zh:
           "Led by Baron Soontir Fel, the pilots of Saber Squadron are among the Empire's best. Their TIE interceptors are marked with red stripes to designate pilots with at least ten confirmed kills.",
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_105.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/2e17a4982bd8e407094a6de3f2e0ec76.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/6c7c5f1e6287fda01e925549e5979eab.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/4018e46afbfac88d6facd039b3979bf5.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/bf76b2a78ef10466fe4d04cf0c090f1e.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/f39cb59b2ca4e88c8927c4a50f91a908.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/760483ea75a742f192b890e3d07eaead.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_105.png',
       },
       slots: ['Talent', 'Modification', 'Modification'],
       artwork:
@@ -236,24 +200,6 @@ const t: ShipType = {
         zh:
           'At the start of the Engagement Phase, if there is an enemy ship in your [Bullseye Arc], gain 1 focus token.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_103.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/4fd7336681eaf13bcae9c70eb6f1c589.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/a21a2fed1fe86caf1c3b7013e7a8edd4.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/98efdd5f7150f134d9e8d88136380cca.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/7ee1a2203f7c423d2b3bcb2def056753.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/632b962c2be7aa767f9b68486383aeea.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/0d7ba52f64c83d1dbb966fc96dd8d9c7.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_103.png',
-      },
       slots: ['Talent', 'Modification', 'Modification'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_103.jpg',
@@ -304,29 +250,11 @@ const t: ShipType = {
         zh:
           'After you perform an attack, you may perform a [Barrel Roll] or [Boost] action, even if you are stressed.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_104.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/1cd8dfcea5745fd7cb998d0e64128913.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/484f77533608523f3006a168f312e9d2.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/bfc8bcf3f9afc992e831bc91debdb68c.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/908c2142fa57787b752d6288541146e3.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/0b0730419ad73c52da7174fdece3446d.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/dd8dae1c72ee4ff8494dcfbc8df5255f.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_104.png',
-      },
       slots: ['Talent', 'Modification', 'Modification'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_104.jpg',
       ffg: 104,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
   ],

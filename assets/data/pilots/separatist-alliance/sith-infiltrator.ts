@@ -90,25 +90,7 @@ const t: ShipType = {
         zh:
           'After you perform an attack, you may spend 2 [Force] to perform a bonus primary attack against a different target. If your attack missed, you may perform that bonus primary attack against the same target instead.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/95428161db7de4adcea6fa8bcbf9de2f.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/d1e0e0cab3bb23db55b85ad2f48a665f.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/d2e4bbb77b8a52f7e4da36970e959365.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/14fc458034a7da81186bacd18c24c0d9.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/e98415f740f6618c1608306d1c6c56d9.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/84beb427182c1f7a655c2badf264133c.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/95428161db7de4adcea6fa8bcbf9de2f.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/95428161db7de4adcea6fa8bcbf9de2f.png',
-      },
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       cost: 65,
       slots: [
@@ -169,25 +151,7 @@ const t: ShipType = {
         zh:
           'After you defend, if the attacker is in your firing arc, you may spend 1 [Force] to remove 1 of your blue or red tokens. After you perform an attack that hits, you may spend 1 [Force] to perform an action.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/88959087710ec5a80a16dd93573f149d.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/49876e76d41814b9d0b7e7682c3c5004.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/f7145e2c49d51e6b39ca88898a05534e.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/055eb78bce16620cfa296f1fa163d38c.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/fa3a3cdbf3a57d467c0bae06d95f0f2d.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/38abcf8d95b03667efca2cb859bed647.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/88959087710ec5a80a16dd93573f149d.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/88959087710ec5a80a16dd93573f149d.png',
-      },
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       cost: 63,
       slots: [
@@ -237,25 +201,7 @@ const t: ShipType = {
         zh:
           'The vessel called the Scimitar was heavily modified, equipped with stealth technologies and advanced surveillance devices for infiltration and assassination missions.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/132f1957b904c890b94bf3aaf2a944ce.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/40b59a592571b5683cf50b9b806ce52e.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/0442487a12e31753af3e8addce7c1a5c.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/b7e446fbcbd96906ada451126ba55019.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/2040cbe29cc6b7d8e7ca871cf86eb522.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/d0c21867ab80fa322947e84508893604.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/132f1957b904c890b94bf3aaf2a944ce.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/132f1957b904c890b94bf3aaf2a944ce.png',
-      },
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
       cost: 51,
       slots: [
@@ -316,24 +262,6 @@ const t: ShipType = {
       ],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/c0a65aa29f085d517d907bc7799e4146.jpg',
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9edd9bb6846e77723d8f0381bb7909aa.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/f58f50f306988fe3a4cfde10438c7358.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/4de0ca7f88be4f71d012dd9c58b0e719.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/cc65451b3788f9795588ab2cf14dcd97.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/a97c01d170bc4dd6739aba947b51e31d.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/61e42cea70f6e3ce3f13047a3efd96c5.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9edd9bb6846e77723d8f0381bb7909aa.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9edd9bb6846e77723d8f0381bb7909aa.png',
-      },
       ability: {
         en:
           'After you defend, you may spend 1 calculate token to perform an action.',
@@ -352,7 +280,7 @@ const t: ShipType = {
         zh:
           'After you defend, you may spend 1 calculate token to perform an action.',
       },
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
   ],

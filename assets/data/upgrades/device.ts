@@ -43,30 +43,12 @@ const t: UpgradeBase[] = [
           effect:
             'At the end of the Activation Phase, this device detonates. When this device detonates, each ship at range 0-1 rolls 2 attack dice. Each ship suffers 1 [Hit] damage for each [Hit]/[Critical Hit] result.',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_63.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/a66af8f1f76acb1f7df1622df69bd609.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_63.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/38a171158644ed85a3a0ecb3c12a36e2.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/6a739beb21479a79c76943397dbaf41b.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/9bc91360ee0f1485c4b347424009053d.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/2b1d19149df747bb55c657f4d9764bc7.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_63.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_63.jpg',
         ffg: 392,
       },
     ],
-    cost: { value: 5 },
+    cost: { value: 2 },
     hyperspace: false,
     epic: true,
   },
@@ -112,30 +94,12 @@ const t: UpgradeBase[] = [
           effect:
             'After a ship overlaps or moves through this device, it detonates. When this device detonates, the ship suffers 1 [Hit] damage and gains 3 ion tokens.',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_64.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/9935578f6ab0f4421b7409506b33178b.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_64.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/c374d75f365d1625a55d1ffa56c13308.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/4ada880c05d6dab2e828401b124bf201.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/b5c616405681d6f63a4d299e3c06a6fb.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/f75a0319f4aba9e6a974131925fcf55d.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_64.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_64.jpg',
         ffg: 393,
       },
     ],
-    cost: { value: 5 },
+    cost: { value: 3 },
     hyperspace: true,
     epic: true,
   },
@@ -173,24 +137,6 @@ const t: UpgradeBase[] = [
           zh:
             '炸弹 在系统阶段，你可以花费1[Charge]来投下质子榴弹，使用(1[Straight])移动条。',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_65.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/6b9b316963a251093739dc2f34ea4d09.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_65.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/4706fd21d083920820d76eef902a5157.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/031d114d0cc85fa78b909b00a1679778.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/9387d2d85c299d794d6c5fe3abfc8aa7.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/6c0e084ddfb4a63a9e4ac1cab3dcc145.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_65.png',
-        },
         slots: ['Device'],
         charges: { value: 2, recovers: 0 },
         device: {
@@ -204,8 +150,8 @@ const t: UpgradeBase[] = [
         ffg: 394,
       },
     ],
-    cost: { value: 5 },
-    hyperspace: true,
+    cost: { value: 4 },
+    hyperspace: false,
     epic: true,
   },
   {
@@ -250,24 +196,6 @@ const t: UpgradeBase[] = [
           effect:
             'After a ship overlaps or moves through this device, it detonates.\n\nWhen this device detonates, that ship rolls 2 attack dice. That ship then suffers 1 [Hit] damage plus 1 [Hit] / [Critical Hit] damage for each matching result.',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_66.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/6595f9f7d7ef766f7076f004fd29452a.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_66.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/250f62efbc7fc320b88b72ea24287cc4.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/a62d1a4e647804c293056f57321476dc.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/78160454a32c93fdbb8486d84c162f1f.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/65695773f7c9ac39028194ba157b8569.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_66.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_66.jpg',
         ffg: 395,
@@ -311,24 +239,6 @@ const t: UpgradeBase[] = [
           zh:
             '炸弹 在系统阶段，你可以花费1 [Charge]来投下震波炸弹，使用(1[Straight])移动条。',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_67.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/f66c2a3c001ebc3aa0ccb0cfe83cf8e6.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_67.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/000cd90163dc302eea711d87aa0c90f3.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/e04bcab299a10eeb3b3f2d6ea0f9e429.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/197d422fe07c1ac5dee9131dd8c883b9.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/6340bcb4a306697b55afa53f3d60fec0.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_67.png',
-        },
         slots: ['Device'],
         charges: { value: 2, recovers: 0 },
         device: {
@@ -343,7 +253,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 3 },
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -379,24 +289,6 @@ const t: UpgradeBase[] = [
             "During the End Phase, you may spend 1 [Charge] to drop or launch 1 DRK-1 probe droid using a speed 3 template. This card's [Charge] cannot be recovered.",
           zh:
             "During the End Phase, you may spend 1 [Charge] to drop or launch 1 DRK-1 probe droid using a speed 3 template. This card's [Charge] cannot be recovered.",
-        },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/44556cd042e536b41e7e89850e13081a.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/57afbffc34ca9cfddb1e37726fdb1432.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/3fb41ab665d3efa4f5582e08b61a03c4.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/6c499ca2809f13b8ac97cf4185b634ad.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/e882d09a9a33de5af41b1d4a4d05568f.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/4d814d377778374d4c572e749d42edb1.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/44556cd042e536b41e7e89850e13081a.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/44556cd042e536b41e7e89850e13081a.png',
         },
         slots: ['Device'],
         charges: { value: 2, recovers: 0 },
@@ -448,24 +340,6 @@ const t: UpgradeBase[] = [
           zh:
             "Bomb During the System Phase, you may spend 1 [Charge] to drop an Electro-Proton Bomb with the (1 [Straight]) template. Then place 1 fuse marker on that device. This card's [Charge] cannot be recovered.",
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/0f76484cc390fc97d1fe2f863d75944b.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/3a9ff5dda9113376b91df688218bce99.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/10c95db9395570b53fa1735833c3061e.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/b9fc2590e797daafba2b8fbc13a4d7cd.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/0f76484cc390fc97d1fe2f863d75944b.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/0f76484cc390fc97d1fe2f863d75944b.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/0f76484cc390fc97d1fe2f863d75944b.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/0f76484cc390fc97d1fe2f863d75944b.png',
-        },
         slots: ['Device', 'Modification'],
         charges: { value: 1, recovers: 0 },
         device: {
@@ -480,7 +354,7 @@ const t: UpgradeBase[] = [
     hyperspace: false,
     epic: true,
     restrictions: [{ action: { type: 'Reload' } }],
-    cost: { value: 11 },
+    cost: { value: 10 },
   },
   {
     limited: 0,
@@ -525,29 +399,11 @@ const t: UpgradeBase[] = [
             'A Cluster Mine Set consists of 3 individual Cluster Mine devices. \n\nWhen a Cluster Mines set is placed, the center Cluster Mine is placed as normal, then two additional Cluster Mines are placed in the recesses as shown. After a ship overlaps or moves through any individual Cluster Mine, it detonates. Other Cluster Mines in the set that were not overlapped or moved through do not detonate.\n\nWhen each of these devices detonates, that ship rolls 2 attack dice. That ship then suffers 1 [Hit]/[Critical Hit] damage for each matching result.',
         },
         ffg: 648,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/c27f0dcda78915239450bedf5b931d86.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/f494bfe33574470667d5ed8b67838d78.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/22db7b8882e45af1479643ccabbe5c89.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/5dbeda4d18ec25f1d87a8bf6f71c2d7a.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/c27f0dcda78915239450bedf5b931d86.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/c27f0dcda78915239450bedf5b931d86.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/c27f0dcda78915239450bedf5b931d86.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/c27f0dcda78915239450bedf5b931d86.png',
-        },
       },
     ],
     hyperspace: true,
     epic: true,
-    cost: { value: 8 },
+    cost: { value: 7 },
   },
   {
     limited: 0,
@@ -592,29 +448,11 @@ const t: UpgradeBase[] = [
             'At the end of the Activation Phase, this device detonates.\n\nWhen this device detonates, each ship and remote at range 0-1 gains 3 ion tokens, and each remote at range 0-1 suffers 1 [Hit] damage.',
         },
         ffg: 649,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/e4c43791c16aea639f2e811c16d1dbcf.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/24081a2c7a599de82199f44ea840f87f.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/1e7c1559fa4ffc5790ffc9790cf5fc2f.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/ec4c7a8b4908e0ebd05872ea6b1af82d.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/e4c43791c16aea639f2e811c16d1dbcf.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/e4c43791c16aea639f2e811c16d1dbcf.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/e4c43791c16aea639f2e811c16d1dbcf.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/e4c43791c16aea639f2e811c16d1dbcf.png',
-        },
       },
     ],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
-    cost: { value: 5 },
+    cost: { value: 3 },
   },
   {
     xws: 'concussionbombs',
@@ -633,27 +471,9 @@ const t: UpgradeBase[] = [
         },
         type: 'Device',
         slots: [],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/3b836493f5b17c47e44807c283bc4b04.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/3b836493f5b17c47e44807c283bc4b04.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/3b836493f5b17c47e44807c283bc4b04.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/3b836493f5b17c47e44807c283bc4b04.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/3b836493f5b17c47e44807c283bc4b04.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/3b836493f5b17c47e44807c283bc4b04.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/3b836493f5b17c47e44807c283bc4b04.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/3b836493f5b17c47e44807c283bc4b04.png',
-        },
         ability: {
           en:
-            "During the System Phase, if any of this card's [Charge] are inactive, you must spend 1 [Charge] to drop 1 concussion bomb, if able. Otherwise, you may spend 1 [Charge] to drop 1 concussion bomb.",
+            "During the System Phase, if any of this card's [Charge] are inactive, you must spend 1 [Charge] to drop 1 concussion bomb using the (1 [Straight]) template, if able. Otherwise, you may spend 1 [Charge] to drop 1 concussion bomb.",
           de:
             'Während der Systemphase, falls mindestens eine [Charge] dieser Karte inaktiv ist, musst du 1 [Charge] ausgeben, um 1 Erschütterungsbombe abzuwerfen, falls möglich. Ansonsten darfst du 1 [Charge] ausgeben, um 1 Erschütterungsbombe abzuwerfen.',
           fr:
@@ -671,10 +491,29 @@ const t: UpgradeBase[] = [
         },
       },
     ],
-    cost: { value: 3 },
+    cost: { value: 4 },
     limited: 0,
     hyperspace: true,
     epic: true,
+  },
+  {
+    limited: 0,
+    xws: 'thermaldetonators',
+    hyperspace: true,
+    epic: false,
+    sides: [
+      {
+        ability: {
+          en:
+            'Bomb During the System Phase, you may spend up to 2 [Charge] to drop that many Thermal Detonators using the (1 [Straight]) or (2 [Straight]) template. Each must be placed using a different template. When you reload this card, recover 1 additional [Charge].',
+        },
+        title: { en: 'Thermal Detonators' },
+        type: 'Device',
+        slots: ['Device'],
+        ffg: 864,
+      },
+    ],
+    cost: { value: 3 },
   },
 ];
 

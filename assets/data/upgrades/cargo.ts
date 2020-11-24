@@ -10,10 +10,10 @@ const t: UpgradeBase[] = [
         type: 'Cargo',
         ability: {
           en:
-            'While another friendly ship at range 0-1 defends, if it is a smaller size than you, you may spend 1 shield or 2 [Energy] to cancel 1 [Hit] or [Critical Hit] result.',
+            'While another friendly ship at range 0-1 defends, if it is a smaller size than you, you may spend 1 shield or 2 to cancel 1 [Hit] or [Critical Hit] result.',
         },
         slots: ['Cargo'],
-        ffg: -1,
+        ffg: 756,
       },
     ],
     cost: { value: 10 },
@@ -29,10 +29,10 @@ const t: UpgradeBase[] = [
         type: 'Cargo',
         ability: {
           en:
-            'While you lock, coordinate, or jam, you may spend up to 3 [Energy] to increase the range at which you can choose an object by 1 per [Energy] spent this way, to a maximum of range 5.',
+            'While you lock, coordinate, or jam, you may spend up to 3  to increase the range at which you can choose an object by 1 per spent this way, to a maximum of range 5.',
         },
         slots: ['Cargo'],
-        ffg: -1,
+        ffg: 757,
       },
     ],
     cost: { value: 8 },
@@ -46,11 +46,9 @@ const t: UpgradeBase[] = [
       {
         title: { en: 'Optimized Power Core' },
         type: 'Cargo',
-        ability: {
-          en: 'After you execute a blue maneuver, recover 1 [Energy].',
-        },
+        ability: { en: 'After you execute a blue maneuver, recover 1 .' },
         slots: ['Cargo'],
-        ffg: -1,
+        ffg: 758,
       },
     ],
     cost: { value: 6 },
@@ -64,10 +62,10 @@ const t: UpgradeBase[] = [
       {
         title: { en: 'Tibanna Reserves' },
         type: 'Cargo',
-        ability: { en: 'Action: Spend 1 [Charge] to recover 2 [Energy].' },
+        ability: { en: 'Action: Spend 1 [Charge] to recover 2 .' },
         charges: { value: 3, recovers: 0 },
         slots: ['Cargo'],
-        ffg: -1,
+        ffg: 759,
       },
     ],
     cost: { value: 3 },

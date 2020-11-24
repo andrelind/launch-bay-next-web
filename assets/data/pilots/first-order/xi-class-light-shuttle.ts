@@ -57,7 +57,7 @@ const t: ShipType = {
         zh: 'Commander Malarus',
         es: 'Comandante Malarus',
       },
-      cost: 43,
+      cost: 45,
       limited: 1,
       initiative: 5,
       caption: {
@@ -69,24 +69,6 @@ const t: ShipType = {
         pt: 'Vindictive Taskmaster',
         zh: 'Vindictive Taskmaster',
         es: 'Supervisora vengativa',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9ab5691b7e1e7761cff3c6bd71b4257e.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9ab5691b7e1e7761cff3c6bd71b4257e.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9ab5691b7e1e7761cff3c6bd71b4257e.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9ab5691b7e1e7761cff3c6bd71b4257e.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9ab5691b7e1e7761cff3c6bd71b4257e.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9ab5691b7e1e7761cff3c6bd71b4257e.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9ab5691b7e1e7761cff3c6bd71b4257e.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9ab5691b7e1e7761cff3c6bd71b4257e.png',
       },
       slots: ['Talent', 'Crew', 'Crew', 'Modification', 'Tech', 'Tech'],
       hyperspace: true,
@@ -136,24 +118,6 @@ const t: ShipType = {
         zh: 'Merciless Hard-Liner',
         es: 'Extremista despiadado',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/21d545f09d9d98f9713b80d5551c4e0b.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/21d545f09d9d98f9713b80d5551c4e0b.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/21d545f09d9d98f9713b80d5551c4e0b.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/21d545f09d9d98f9713b80d5551c4e0b.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/21d545f09d9d98f9713b80d5551c4e0b.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/21d545f09d9d98f9713b80d5551c4e0b.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/21d545f09d9d98f9713b80d5551c4e0b.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/21d545f09d9d98f9713b80d5551c4e0b.png',
-      },
       slots: ['Talent', 'Crew', 'Crew', 'Modification', 'Tech', 'Tech'],
       hyperspace: true,
       epic: true,
@@ -201,24 +165,6 @@ const t: ShipType = {
         pt: 'Devious Provocateur',
         zh: 'Devious Provocateur',
         es: 'Subversor taimado',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/5526136f7923921bcaac3c5ee0af9b75.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/5526136f7923921bcaac3c5ee0af9b75.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/5526136f7923921bcaac3c5ee0af9b75.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/5526136f7923921bcaac3c5ee0af9b75.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/5526136f7923921bcaac3c5ee0af9b75.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/5526136f7923921bcaac3c5ee0af9b75.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/5526136f7923921bcaac3c5ee0af9b75.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/5526136f7923921bcaac3c5ee0af9b75.png',
       },
       slots: [
         'Talent',
@@ -268,26 +214,8 @@ const t: ShipType = {
       cost: 38,
       limited: 0,
       initiative: 2,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/6f8c0773c75e4985a6d863256b726069.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/6f8c0773c75e4985a6d863256b726069.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/6f8c0773c75e4985a6d863256b726069.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/6f8c0773c75e4985a6d863256b726069.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/6f8c0773c75e4985a6d863256b726069.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/6f8c0773c75e4985a6d863256b726069.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/6f8c0773c75e4985a6d863256b726069.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/6f8c0773c75e4985a6d863256b726069.png',
-      },
       slots: ['Crew', 'Crew', 'Modification', 'Tech', 'Tech'],
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       text: {
         en:

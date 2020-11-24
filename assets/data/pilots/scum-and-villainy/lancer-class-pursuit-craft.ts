@@ -71,7 +71,7 @@ const t: ShipType = {
       },
       initiative: 4,
       limited: 1,
-      cost: 69,
+      cost: 68,
       xws: 'asajjventress',
       ability: {
         en:
@@ -90,24 +90,6 @@ const t: ShipType = {
           'No início da Fase de Engajamento, você pode escolher 1 nave inimiga em seu [Single Turret Arc] em alcance 0-2 e gastar 1 ￼. Se você fizer isso, a nave escolhida recebe 1 ficha de estresse, a menos que ela remova1 ficha verde.',
         zh:
           'At the start of the Engagement Phase, you may choose 1 enemy ship in your [Single Turret Arc] at range 0-2 and spend 1 [Force]. If you do, that ship gains 1 stress token unless it removes 1 green token.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_219.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/e0d9b4e668a96d1f6b4a311797c2aece.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/249e3af246e868c41d2fc4d00cc78ccb.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/42910bee35d82acf56239f10ec670d02.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/adb21028608a76fc9dee7e44c52893d7.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/2f67b99ea98dbcfd48e990c51f18e6a0.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/0185bf2bbf17e48b9d455d3a48259f95.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_219.png',
       },
       force: { value: 2, recovers: 1, side: ['dark'] },
       slots: [
@@ -147,7 +129,7 @@ const t: ShipType = {
       },
       initiative: 5,
       limited: 1,
-      cost: 67,
+      cost: 66,
       xws: 'ketsuonyo',
       ability: {
         en:
@@ -166,24 +148,6 @@ const t: ShipType = {
           'No início da Fase de Engajamento,você pode escolher 1 nave que esteja tanto em seu [Front Arc] quanto em seu [Single Turret Arc] em alcance 0-1. Se você fizer isso, a nave escolhida recebe 1 ficha de tração.',
         zh:
           'At the start of the Engagement Phase, you may choose 1 ship in both your [Front Arc] and [Single Turret Arc] at range 0-1. If you do, it gains 1 tractor token.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_218.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/243279a8fb48b0843ec201351a54a3bf.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/6e0db04d86710e38bb3a7cc6f6e23056.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/1cea5c6847196c80c816e8c69a42a64c.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/35ad94523695c4e9bffc856b2042f6cb.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/41bdbd45cf900fb8811ecdf901a00ab7.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/f219cad1d115daf0b44b2b57b82c64c2.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_218.png',
       },
       slots: ['Talent', 'Crew', 'Illicit', 'Illicit', 'Modification', 'Title'],
       artwork:
@@ -215,7 +179,7 @@ const t: ShipType = {
       },
       initiative: 3,
       limited: 1,
-      cost: 59,
+      cost: 58,
       xws: 'sabinewren-lancerclasspursuitcraft',
       ability: {
         en:
@@ -234,24 +198,6 @@ const t: ShipType = {
           'Quando defender, se o atacante estiver em seu [Single Turret Arc] em alcance 0-2, você pode adicionar 1 resultado [Focus] aos resultados de seus dados.',
         zh:
           'While you defend, if the attacker is in your [Single Turret Arc] at range 0-2, you may add 1 [Focus] result to your dice results.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_220.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/a09b3e1e64bce7494b754e9f1e62729d.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/656fe8b7d6859f6b14887e6488118a7b.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/85cce71ba016c674e87fe369270332c7.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/d3f9807ce8911007cf4c162893d1f0f0.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/c52b6e7dd82116b6752ccaf8fe1901a7.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/8c795cb05273ce8396b1c058d0532832.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_220.png',
       },
       slots: ['Talent', 'Crew', 'Illicit', 'Illicit', 'Modification', 'Title'],
       artwork:
@@ -273,7 +219,7 @@ const t: ShipType = {
       },
       initiative: 2,
       limited: 0,
-      cost: 55,
+      cost: 54,
       xws: 'shadowporthunter',
       text: {
         en:
@@ -292,24 +238,6 @@ const t: ShipType = {
           'As organizações criminosas potencializam as habilidades mortais de seus leais contratados com as melhores tecnologias disponíveis, como a veloz e formidável nave de perseguição classe Lancer.',
         zh:
           'Crime syndicates augment the lethal skills of their loyal contractors with the best technology available, like the fast and formidable Lancer-class pursuit craft.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_221.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/063e5e5e35077d97dde112857e465132.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/c5a295151891697bbe5f159e13dacf12.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/9eac538de05f1c80e817b0de7716aff2.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/011b2ed8e44480f9de9fc6ceacab9a1b.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/66b799490160445cfb3caea4d5c2260b.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/30c8a88b91d1c8d526118d43e549274c.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_221.png',
       },
       slots: ['Crew', 'Illicit', 'Illicit', 'Modification', 'Title'],
       artwork:

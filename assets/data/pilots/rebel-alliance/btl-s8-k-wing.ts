@@ -86,24 +86,6 @@ const t: ShipType = {
         zh:
           'While a friendly ship at range 0-2 defends or performs an attack, it may spend your focus tokens as if that ship has them.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_63.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/c867c80941ac77abc3448872745cd440.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/7054e783e64c4ccfb4bd13207086455a.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/01e7dd2164cb94a5754b07b4a4821206.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/2bbd8822733b71de92e6b17630311dc3.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/423755da4d82b2dad945a08f8854e6d0.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/ba7c090f107e43ac80117bc9945636f9.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_63.png',
-      },
       slots: [
         'Torpedo',
         'Missile',
@@ -163,24 +145,6 @@ const t: ShipType = {
         zh:
           'While you perform a primary attack, you may either spend 1 shield to roll 1 additional attack die or, if you are not shielded, you may roll 1 fewer attack die to recover 1 shield.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_62.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/c78baa4d39c4420406e8245beb6f59ec.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/6fdbf9fa5ba29707de370a59f38f7927.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/d2e580198cc790d019dba1f75ef59235.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/a434ef18d1d4764d2efaa2c6621d5016.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/f782b7c3607ec19514636bf936db6e76.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/5c9f92d2be5b2b9bc27e06be63564688.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_62.png',
-      },
       slots: [
         'Torpedo',
         'Missile',
@@ -229,24 +193,6 @@ const t: ShipType = {
           'A K-wing fabricada pela Koensayr Manufacturing dispunha de um avançado Motor de Aceleração Sub-Luz (SLAM) e incríveis 18 pontos de encaixe, garantindo velocidade e poder de fogo sem igual.',
         zh:
           "Koensayr Manufacturing's K-wing boasts an advanced SubLight Acceleration Motor and an unprecedented 18 hard points, granting it unrivaled speed and firepower.",
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_64.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/f085b2ad35a27b3c24bf677220800543.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/abe0f53aedb85ccf2ec232123af366b5.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/29fd0e08b16ae326602e073f93c52bc4.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/10f27d3e1b0c2ac014b383490a45134e.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/f63bde8d7ffb8ddfd05ea3a77764adb4.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/5a57620652cd91d3c09c189c1ee36a63.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_64.png',
       },
       slots: [
         'Torpedo',

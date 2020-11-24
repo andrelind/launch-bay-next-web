@@ -98,24 +98,6 @@ const t: ShipType = {
         zh:
           'While a friendly ship in your firing arc performs a primary attack, if you are not stressed, you may gain 1 stress token. If you do, that ship may roll 1 additional attack die.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_42.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/c6e78073d339f3d0910752eaddd6d5c3.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/7976f57450b8bb5932623197dd837e18.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/6b2b1500121ee9f4e662ed4b000a6245.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/76699bf2d8b6f44c7e5e26743330e009.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/95ecbfe86bbc7bdfb12a31e1a41fc7c3.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/af4adcfe028f0110e8624892dad473bd.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_42.png',
-      },
       slots: [
         'Talent',
         'Crew',
@@ -153,7 +135,7 @@ const t: ShipType = {
       },
       initiative: 3,
       limited: 1,
-      cost: 33,
+      cost: 31,
       xws: 'kylekatarn',
       ability: {
         en:
@@ -172,24 +154,6 @@ const t: ShipType = {
           'No início da Fase de Engajamento, você pode transferir 1 de suas fichas de foco para uma nave amiga em seu arco de tiro.',
         zh:
           'At the start of the Engagement Phase, you may transfer 1 of your focus tokens to a friendly ship in your firing arc.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_43.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/9c552272788e591113f1ebf4063380d1.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/b7d67de3d86c55cc4b643f4333b3666c.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/c39ccfad6ee1108fd2783c480a5104e1.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/120c360f0e22711df5e3b236828771f0.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/9110ab9de05e92fc8010d5cee0a6eee4.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/a00b78239d85a15f2ef8aa0dc7f3a011.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_43.png',
       },
       slots: [
         'Talent',
@@ -237,24 +201,6 @@ const t: ShipType = {
           'Projetadas pela Corellian Engineering Corporation para se parecerem com pássaros em voo, as naves da série "hawk" são naves de transporte exemplares. Rápidas e robustas, a HWK-290 é comumente empregada por agentes Rebeldes como base de operações móvel.',
         zh:
           'Designed to look like a bird in flight by the Corellian Engineering Corporation, "hawk" series ships are exemplary transport craft. Swift and rugged, the HWK-290 is often employed by Rebel agents as a mobile base of operations.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_45.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/0c49a4677f3ca1545fba4a661b51cf77.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/2f55fcd4dfa285ab5a7140aa0956d631.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/6e8fe164f8786418f4226148d6e6fc9a.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/74c92976b8c05cb36dcec0ac67ed6d8e.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/dba2cf0c7a3789ada0a9671dc32f2edd.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/f93a87b371cb2466cb0923a4c5bee3c7.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_45.png',
       },
       slots: ['Crew', 'Device', 'Modification', 'Modification', 'Title'],
       artwork:
@@ -305,24 +251,6 @@ const t: ShipType = {
           'No início da Fase de Engajamento, você pode escolher 1 nave em seu arco de tiro. Se você fizer isso,ela engaja nesta fase utilizandoum valor de iniciativa 7, em vezdo valor de iniciativa normal dela.',
         zh:
           'At the start of the Engagement Phase, you may choose 1 ship in your firing arc. If you do, it engages at initiative 7 instead of its standard initiative value this phase.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_44.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/50f78d547efecfb0b2695c40cc311198.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/0516a649ea02361490a27ff45773f539.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/72f6e6f98dd8f94b2d98b3edd4d0e84c.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/d09fcbf0c362997d0f11e3a877d3d417.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/cc3d1bb9c8d27a7c6f25b4c4b173e652.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/d61bf49010069bb5deea201779930ef2.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_44.png',
       },
       slots: [
         'Talent',

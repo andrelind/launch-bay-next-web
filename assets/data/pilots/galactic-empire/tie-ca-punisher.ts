@@ -90,24 +90,6 @@ const t: ShipType = {
         pt: 'Após soltar ou lançarum dispositivo, você poderealizar uma ação.',
         zh: 'After you drop or launch a device, you may perform an action.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_140.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/1ffbe6a90106631c51e4c238bda79689.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/97f5cd4b43070a7674a43d08c11750aa.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/a0090d772f03c1e7df6bfc0bf9d9175a.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/f74b5415ea82828d790c41353e5d2933.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/2d1797ca8f38af030b1f4e8ba52ea193.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/54f30c5e21c63afc7e0dabf8cc03d1b4.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_140.png',
-      },
       slots: [
         'Sensor',
         'Torpedo',
@@ -177,24 +159,6 @@ const t: ShipType = {
         'Modification',
         'Gunner',
       ],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_139.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/d164a9a17fd156cb8de65370e436ad85.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/9dd25f429124e56a37aad4e8e5ded682.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/9771f10e0129eb1ff4cf135ee275f7a8.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/aea3a0ec30f499395b6ff633863a740d.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/563f2ca474586356db2bf25ea393026e.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/652f0f001c01fac66e2ab08d21628aa1.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_139.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_139.jpg',
       ffg: 139,
@@ -233,24 +197,6 @@ const t: ShipType = {
           'O projeto da TIE punisher se desenvolveu em torno do sucesso da TIE bomber, com a adição de escudo, um segundo lançador de bombas e outros três módulos bélicos, cada um equipado com um motor iônico gêmeo.',
         zh:
           "The TIE punisher's design builds upon the success of the TIE bomber, adding shielding, a second bomb chute, and three additional ordnance pods, each equipped with a twin ion engine.",
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_141.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/3b8716c9cf29b53a95932a7c7970e74f.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/ccef260b08fc1b90623874c51ea73615.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/b08a74f9ed3868896e3919ef68fa1581.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/1d5e3119ca19b540e15ee14c042c50d8.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/82ec73d0189df036817d7da3e571a7db.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/bd7bab5efea5be4531f4955b1bf9458e.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_141.png',
       },
       slots: [
         'Sensor',

@@ -59,7 +59,7 @@ const t: ShipType = {
       },
       initiative: 3,
       limited: 0,
-      cost: 40,
+      cost: 38,
       xws: 'blacksunace',
       text: {
         en:
@@ -78,24 +78,6 @@ const t: ShipType = {
           'O caça de assalto Kihraxz foi especialmente desenvolvido para a organização criminosa Sol Negro, cujos áses muito bem pagos exigiam uma nave ágil e poderosa à altura de suas habilidades.',
         zh:
           'The Kihraxz assault fighter was developed specifically for the Black Sun crime syndicate, whose highly paid ace pilots demanded a nimble, powerful ship to match their skills.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_195.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/963e7376b2a440e46ccf41fafe78bfc6.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/55998478be59ca9c73e6e0e8484dac4a.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/572d3f87664719c0fd71d8d7c6d8641b.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/e91a3782bfc3b350866b6c630ab9ae88.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/473725320d61d55c4a450f243962112c.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/ff6922e998ea5ad010e0edc4b15302e2.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_195.png',
       },
       slots: [
         'Talent',
@@ -134,7 +116,7 @@ const t: ShipType = {
       },
       initiative: 3,
       limited: 1,
-      cost: 42,
+      cost: 41,
       xws: 'captainjostero',
       ability: {
         en:
@@ -153,24 +135,6 @@ const t: ShipType = {
           'Após uma nave inimiga sofrer dano, se ela não estiver defendendo, você tem a opçãode realizar um ataque bônus contra ela.',
         zh:
           'After an enemy ship suffers damage, if it is not defending, you may perform a bonus attack against that ship.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_194.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/f21e953d5681bb5748f13367035c7386.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/15adc05396958f2ee2f601e0914a0cb6.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/abbfd0db180fddc292c9c50932ada9ab.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/d00e2b5789f2dad8e61ea91636fa2916.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/d1c8b688e6c738527811e6122de4c5d2.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/b1abb976f5994d592621af189338b522.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_194.png',
       },
       slots: ['Missile', 'Illicit', 'Illicit', 'Modification', 'Modification'],
       artwork:
@@ -192,7 +156,7 @@ const t: ShipType = {
       },
       initiative: 2,
       limited: 0,
-      cost: 38,
+      cost: 37,
       xws: 'cartelmarauder',
       text: {
         en:
@@ -211,24 +175,6 @@ const t: ShipType = {
           'A versátil Kihraxz foi projetada com baseno popular caça estelar da Incom X-wing,porém uma série de kits de modificaçãogarantiu uma gama enorme de variações.',
         zh:
           "The versatile Kihraxz was modeled after Incom's popular X-wing starfighter, but an array of after-market modification kits ensure a wide variety of designs.",
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_196.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/846ac24613e4b2ef4b6ee11d11c69928.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/2f3753691d9966a707449962a9f4d573.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/ff00ac979ab02e9716cdb15fe6232298.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/93defc56cedef5a84356b20dd4fb75a5.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/13ead2e537f4b9cc0c22c9c76aeeb7f7.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/1a08b6fd7aed446e3946854970739b17.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_196.png',
       },
       slots: ['Missile', 'Illicit', 'Illicit', 'Modification', 'Modification'],
       artwork:
@@ -260,7 +206,7 @@ const t: ShipType = {
       },
       initiative: 4,
       limited: 1,
-      cost: 46,
+      cost: 45,
       xws: 'graz',
       ability: {
         en:
@@ -279,24 +225,6 @@ const t: ShipType = {
           'Quando defender, se você estiver atrás do atacante, role 1 dado de defesa adicional. Quando realizar um ataque, se vocêestiver atrás do defensor, role 1 dadode ataque adicional.',
         zh:
           'While you defend, if you are behind the attacker, roll 1 additional defense die. While you perform an attack, if you are behind the defender, roll 1 additional attack die.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_192.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/5e9270cbaa1250a1dadca751d7a53485.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/2b7157e3648908d9f4543199862af80e.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/b03b1965dc9c540db77629954e43847d.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/0bdb743ee2fa3fc1145482a1d50facd3.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/4e1bcf8de8a9a721aadc1facf05ed8fc.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/7e2e80af660a235129e1af58715312fe.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_192.png',
       },
       slots: [
         'Talent',
@@ -335,7 +263,7 @@ const t: ShipType = {
       },
       initiative: 5,
       limited: 1,
-      cost: 50,
+      cost: 48,
       xws: 'talonbanecobra',
       ability: {
         en:
@@ -354,24 +282,6 @@ const t: ShipType = {
           'Quando você defender em alcancede ataque 3 ou realizar um ataquecom alcance de ataque 1, role 1 dado adicional.',
         zh:
           'While you defend at attack range 3 or perform an attack at attack range 1, roll 1 additional die.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_191.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/6e8829a572813cf94c2e87b089d1f668.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/5a1f75abae9cce001c97713df85b7282.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/9992549075a0c43e2396653ee7884dc0.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/b9be8a9c2f4fc56c8d0e22f10b4ddd04.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/dfaf02624a9361236f975bed9a80f38b.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/56f238b3377540679248db0bfee00956.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_191.png',
       },
       slots: [
         'Talent',
@@ -410,7 +320,7 @@ const t: ShipType = {
       },
       initiative: 4,
       limited: 1,
-      cost: 44,
+      cost: 43,
       xws: 'viktorhel',
       ability: {
         en:
@@ -429,24 +339,6 @@ const t: ShipType = {
           'Após defender, se você não tiverrolado exatamente 2 dados de defesa,o atacante recebe 1 ficha de estresse.',
         zh:
           'After you defend, if you did not roll exactly 2 defense dice, the attacker gains 1 stress token.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_193.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/0280597a59e861b7763fd2cc90a52531.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/b7f37caacd6dcce130b9c795b8b22145.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/f976764a1b7950303f1fbd032669fd3a.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/b7156f445c1afa22f1151a8b8b1c10aa.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/54341245e104e5aabbb94319c038bb02.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/1042c8fe43dd3bcb1086bae2b9ea2309.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_193.png',
       },
       slots: [
         'Talent',
