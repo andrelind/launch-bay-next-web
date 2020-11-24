@@ -128,7 +128,7 @@ const t: UpgradeBase[] = [
           { action: { type: 'Rotate Arc', difficulty: 'White' }, value: 1 },
         ],
         slots: ['Hardpoint'],
-        ffg: -1,
+        ffg: 739,
       },
       {
         title: { en: 'Targeting Battery (Offline)' },
@@ -177,7 +177,7 @@ const t: UpgradeBase[] = [
           { action: { type: 'Rotate Arc', difficulty: 'White' }, value: 1 },
         ],
         slots: ['Hardpoint'],
-        ffg: -1,
+        ffg: 745,
       },
       {
         title: { en: 'Turbolaser Battery (Offline)' },

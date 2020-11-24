@@ -111,6 +111,7 @@ const t: ShipType = {
       caption: { en: 'Hero of Coruscant' },
       slots: ['Talent', 'Cannon', 'Astromech', 'Modification', 'Force Power'],
       hyperspace: true,
+      force: { value: 3, recovers: 1, side: ['light', 'dark'] },
       epic: true,
       ability: {
         en:
@@ -126,6 +127,7 @@ const t: ShipType = {
       initiative: 5,
       caption: { en: 'Guardian of Democracy' },
       slots: ['Talent', 'Cannon', 'Astromech', 'Modification', 'Force Power'],
+      force: { value: 3, recovers: 1, side: ['light'] },
       hyperspace: true,
       epic: true,
       ability: {
@@ -142,6 +144,7 @@ const t: ShipType = {
       initiative: 5,
       caption: { en: 'Confident Warrior' },
       slots: ['Talent', 'Cannon', 'Astromech', 'Modification', 'Force Power'],
+      force: { value: 2, recovers: 1, side: ['light'] },
       hyperspace: true,
       epic: true,
       ability: {
