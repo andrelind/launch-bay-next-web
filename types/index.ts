@@ -93,6 +93,11 @@ export type Pilot = {
   initiative: number;
   limited: number;
   ability?: Translation;
+  shipAbility?: {
+    name: Translation;
+    text: Translation;
+    slotOptions?: Slot[];
+  };
   text?: Translation;
   image?: Translation;
   artwork?: string;
