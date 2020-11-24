@@ -1609,6 +1609,7 @@ const t: UpgradeBase[] = [
             "While you perform a [Front Arc] attack, if you are in the defender's full rear arc, you may change 1 [Hit] result to a [Critical Hit] result. Add [Gunner] slot.",
         },
         title: { en: 'Slave I' },
+        grants: [{ slot: 'Gunner', value: 1 }],
         type: 'Title',
         slots: ['Title'],
         ffg: 869,
