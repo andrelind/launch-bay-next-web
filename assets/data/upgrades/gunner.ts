@@ -1016,7 +1016,7 @@ const t: UpgradeBase[] = [
         ffg: 857,
       },
     ],
-    hyperspace: false,
+    hyperspace: true,
     epic: false,
     restrictions: [{ factions: ['Separatist Alliance', 'Scum and Villainy'] }],
   },

@@ -1634,7 +1634,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     restrictions: [{ factions: ['Scum and Villainy'] }],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {

@@ -770,7 +770,7 @@ const t: ShipType = {
       caption: { en: 'Hopeful Hero' },
       hyperspace: true,
       cost: 49,
-      slots: ['Tech', 'Astromech', 'Modification', 'Configuration', 'Title'],
+      slots: ['Astromech', 'Modification', 'Title', 'Configuration', 'Tech'],
       ability: {
         en:
           "While you perform an attack, if the defender's initiative is higher than yours, you may change 1 blank result to a [Focus] result.",

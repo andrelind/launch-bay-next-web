@@ -969,7 +969,7 @@ const t: UpgradeBase[] = [
     restrictions: [{ factions: ['Galactic Republic'] }],
     hyperspace: false,
     epic: true,
-    cost: { value: 8 },
+    cost: { value: 7 },
   },
   {
     limited: 1,
