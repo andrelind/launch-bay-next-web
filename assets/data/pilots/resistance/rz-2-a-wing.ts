@@ -102,7 +102,7 @@ const t: ShipType = {
       },
       initiative: 5,
       limited: 1,
-      cost: 43,
+      cost: 42,
       xws: 'lulolampar',
       ability: {
         en:
@@ -123,28 +123,10 @@ const t: ShipType = {
           'While you defend or perform a primary attack, if you are stressed, you must roll 1 fewer defense die or 1 additional attack die.',
       },
       slots: ['Talent', 'Talent', 'Missile', 'Tech'],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e15d3e2a2fc082b95a64a83df0c96f7f.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/9d5c1c814a9a948dcbe42e54ac43960d.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/058c6b5bd27c55b8e7a90d5433013407.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/2a438b945b7ae60b50d13833898dd5b5.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/45b8924f3e9cff4a41f4157f4d4f46a7.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/de39a8d1b024364d269260e874c612cf.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e15d3e2a2fc082b95a64a83df0c96f7f.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e15d3e2a2fc082b95a64a83df0c96f7f.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/b97a025a7859f54bbc68374ff5d8116e.jpg',
       ffg: 435,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -170,7 +152,7 @@ const t: ShipType = {
       },
       initiative: 5,
       limited: 1,
-      cost: 36,
+      cost: 37,
       xws: 'tallissanlintra',
       ability: {
         en:
@@ -189,24 +171,6 @@ const t: ShipType = {
           'While an enemy ship in your [Bullseye Arc] performs an attack, you may spend 1 [Charge]. If you do, the defender rolls 1 additional die.',
         zh:
           'While an enemy ship in your [Bullseye Arc] performs an attack, you may spend 1 [Charge]. If you do, the defender rolls 1 additional die.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/72cb6c4e50b0ad24af0bb84ce0aa53f0.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/80455faea9e06f82fcad912392d569c5.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/6ab46db3d8702ac16ed7b5271a0d05e1.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/360bb7ecd051ce890f473d98dc0e190f.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/7f071e314bb4e1dee08ce944f906f34c.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/ed5afbdc2e05db889dc6dd45ca345495.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/72cb6c4e50b0ad24af0bb84ce0aa53f0.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/72cb6c4e50b0ad24af0bb84ce0aa53f0.png',
       },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/ee8c3c26ce6432d7581c5f61392597bc.jpg',
@@ -259,24 +223,6 @@ const t: ShipType = {
         zh:
           'You do not skip your Perform Action step after you partially execute a maneuver.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d7f37dbb86bb706dd535e9a65b69149a.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/ac0104ebdf2b8ea1091998ee5ba0458b.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/1c7611614392923a72715fbf76dab44e.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/6c3c445692f032762b2fe302e874d824.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/e262e90dc630affd925410bd457a60d0.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/9ba6d2fbbe93b03559d58fc5e8b3e5c6.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d7f37dbb86bb706dd535e9a65b69149a.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d7f37dbb86bb706dd535e9a65b69149a.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/2fe44e1e5496645c16f4d2189a1746e3.jpg',
       slots: ['Talent', 'Talent', 'Missile', 'Tech'],
@@ -327,24 +273,6 @@ const t: ShipType = {
         zh:
           'After you fully execute a maneuver, you may rotate your [Single Turret Arc].',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/7fc7b194b02ad7af6adf4ef9b79108d1.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/412ddca23658b30ef895b41009bbbd4a.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/5bb4b2984a5d96f6b609e681d074d8b2.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/fcdd6ad2cd74cb1a82c9786a68cee890.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/50b761cdca66effe34c3f9e020ed0595.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/6160835611c5c5d48d5a5e8465ac085a.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/7fc7b194b02ad7af6adf4ef9b79108d1.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/7fc7b194b02ad7af6adf4ef9b79108d1.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/84bf1ce21926d4500b54e122da01b162.jpg',
       slots: ['Talent', 'Talent', 'Missile', 'Tech'],
@@ -386,28 +314,10 @@ const t: ShipType = {
           "Years of field-expedient modifications were standardized in the RZ-2 design, but daring pilots see the ship's improved reliability as a challenge to further push the limits of its performance.",
       },
       slots: ['Talent', 'Talent', 'Missile', 'Tech'],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3f7ad9efb4c5af8b4d1f5c07a3c7538b.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/48e701233a0f7dd1a7764ffba24f8eb4.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/ebc31a264cbe3e038d55f8be2d5ddd0f.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/a26f21de41e1ac80c7412f2b49a4a2fd.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/623ac896be615e1668c6a7d65322e322.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/c2caec67a9cc4fc23a35f7b8ded5f6a0.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3f7ad9efb4c5af8b4d1f5c07a3c7538b.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3f7ad9efb4c5af8b4d1f5c07a3c7538b.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/8427bdfb1cf9497a9ab797e2c955ba41.jpg',
       ffg: 439,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -423,7 +333,7 @@ const t: ShipType = {
       },
       initiative: 1,
       limited: 0,
-      cost: 32,
+      cost: 33,
       xws: 'bluesquadronrecruit',
       text: {
         en:
@@ -444,28 +354,10 @@ const t: ShipType = {
           'Young beings across the galaxy have grown up on tales of heroism in the Galactic Civil War, and many learned to fly in the same cockpits from which their parents fought the Empire.',
       },
       slots: ['Talent', 'Missile', 'Tech'],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e033b2729305ac0b678d6031ada7b2b8.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/c9334d4f1f80e19fa7100a57e57b1880.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/305b81d33a07e9ff28a101578f56b803.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/cca9b0f6897950e34f281c77b4e1ef4a.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/1388443b460a63b3a237ca14d89f09f7.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/9bdb61d6ae9ed204b3dece86c3e53a27.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e033b2729305ac0b678d6031ada7b2b8.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e033b2729305ac0b678d6031ada7b2b8.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/3df643a75106a59899e5f32ef56e8a5e.jpg',
       ffg: 440,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -516,24 +408,6 @@ const t: ShipType = {
         pt: 'Committed to the Cause',
         zh: 'Committed to the Cause',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/17b2411d61b671ebca568ca2bb55e2da.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/b51879baf6fb9e5a875780c398ed9336.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/3b9b3652ddda72f9f08a78e385cc67df.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/d11bc1395b946ecb0ad48f25796a3066.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/17b2411d61b671ebca568ca2bb55e2da.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/17b2411d61b671ebca568ca2bb55e2da.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/17b2411d61b671ebca568ca2bb55e2da.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/17b2411d61b671ebca568ca2bb55e2da.png',
-      },
     },
     {
       name: {
@@ -582,24 +456,6 @@ const t: ShipType = {
         pt: 'Reckless Rookie',
         zh: 'Reckless Rookie',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1e861cadd2291ece7a9207cddcdcba39.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/46cd239d742900d293c9473b4fe77759.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/3a6130006f7833bc224c60e338af40dc.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/97b0120e1e6debd7b6253b98b9c8ca23.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1e861cadd2291ece7a9207cddcdcba39.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1e861cadd2291ece7a9207cddcdcba39.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1e861cadd2291ece7a9207cddcdcba39.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1e861cadd2291ece7a9207cddcdcba39.png',
-      },
     },
     {
       xws: 'merlcobben',
@@ -612,24 +468,26 @@ const t: ShipType = {
         en:
           "While a friendly ship at range 0-2 performs a primary attack, if you are in the defender's [Bullseye Arc], the defender rolls 1 fewer defense die.",
       },
-      slots: ['Talent', 'Tech', 'Missile'],
+      slots: ['Talent', 'Missile', 'Tech'],
       hyperspace: true,
       epic: true,
+      ffg: 704,
     },
     {
-      xws: 'seftinvalink',
-      name: { en: 'Seftin Vanik' },
-      caption: { en: 'Skillful Wingmate' },
-      cost: 36,
-      initiative: 5,
+      xws: 'suralindajavos',
+      name: { en: 'Suralinda Javos' },
+      caption: { en: 'Inquisitive Journalist' },
+      cost: 35,
+      initiative: 3,
       limited: 1,
       ability: {
         en:
-          'After you perform a [Boost] action, you may transfer 1 evade token to a friendly ship at range 1.',
+          'After you partially execute a maneuver, you may gain 1 strain token to rotate 90˚ or 180˚.',
       },
-      slots: ['Talent', 'Talent', 'Tech', 'Missile'],
+      slots: ['Talent', 'Talent', 'Missile', 'Tech'],
       hyperspace: true,
       epic: true,
+      ffg: 703,
     },
     {
       xws: 'wrobietyce',
@@ -642,24 +500,26 @@ const t: ShipType = {
         en:
           'After you defend at attack range 1, if the attacker modified its dice, the attacker gains 1 deplete token.',
       },
-      slots: ['Talent', 'Talent', 'Tech', 'Missile'],
+      slots: ['Talent', 'Talent', 'Missile', 'Tech'],
       hyperspace: true,
       epic: true,
+      ffg: 702,
     },
     {
-      xws: 'suralindajavos',
-      name: { en: 'Suralinda Javos' },
-      caption: { en: 'Inquisitive Journalist' },
-      cost: 33,
-      initiative: 3,
+      name: { en: 'Seftin Vanik' },
+      caption: { en: 'Skillful Wingmate' },
+      initiative: 5,
       limited: 1,
+      cost: 37,
+      xws: 'seftinvanik',
       ability: {
         en:
-          'After you partially execute a maneuver, you may gain 1 strain token to rotate 90° or 180°.',
+          'After you perform a [Boost] action, you may transfer 1 evade token to a friendly ship at range 1.',
       },
-      slots: ['Talent', 'Talent', 'Tech', 'Missile'],
+      slots: ['Talent', 'Talent', 'Missile', 'Tech'],
       hyperspace: true,
-      epic: true,
+      epic: false,
+      ffg: 701,
     },
   ],
 };

@@ -47,7 +47,7 @@ const t: ShipType = {
       name: { en: 'First Order Collaborators' },
       text: {
         en:
-          'Capable of carrying four TIE fighters and operating independently for long periods of time, the Gozanti-class cruiser is a common sight in the skies of downtrodden worlds across the Outer Rim.',
+          "The First Order's supporters make use of former Imperial vessels, such as the Raider-class corvette. Though it has outlived the regime that created it, this craft still spreads terror across the galaxy.",
       },
       initiative: 8,
       engagement: 0,
@@ -63,9 +63,11 @@ const t: ShipType = {
         'Team',
         'Team',
         'Cargo',
+        'Command',
       ],
       hyperspace: false,
       epic: true,
+      ffg: 708,
     },
   ],
 };

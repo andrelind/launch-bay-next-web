@@ -23,7 +23,7 @@ const t: UpgradeBase[] = [
           },
         ],
         slots: ['Team'],
-        ffg: -1,
+        ffg: 746,
       },
     ],
     cost: { value: 6 },
@@ -39,7 +39,7 @@ const t: UpgradeBase[] = [
         type: 'Team',
         ability: {
           en:
-            'After you perform a [Coordinate] action, you may spend up to 2 [Energy] to coordinate that many additional ships at range 0-1 of the ship you coordinated.',
+            'After you perform a [Coordinate] action, you may spend up to 2 to coordinate that many additional ships at range 0-1 of the ship you coordinated.',
         },
         grants: [
           {
@@ -60,7 +60,7 @@ const t: UpgradeBase[] = [
           },
         ],
         slots: ['Team'],
-        ffg: -1,
+        ffg: 747,
       },
     ],
     cost: { value: 8 },
@@ -76,7 +76,7 @@ const t: UpgradeBase[] = [
         type: 'Team',
         ability: {
           en:
-            'Before you engage, you may spend 1 or more [Energy] to flip that many of your Offline upgrade cards. Action: Spend 1 or more [Energy] to repair that many of your faceup Ship damage cards.',
+            'Before you engage, you may spend 1 or more to flip that many of your Offline upgrade cards. Action: Spend 1 or more to repair that many of your faceup Ship damage cards.',
         },
         grants: [
           {
@@ -89,7 +89,7 @@ const t: UpgradeBase[] = [
           },
         ],
         slots: ['Team'],
-        ffg: -1,
+        ffg: 750,
       },
     ],
     cost: { value: 3 },
@@ -105,7 +105,7 @@ const t: UpgradeBase[] = [
         type: 'Team',
         ability: {
           en:
-            'While you perform a primary or [Hardpoint] attack, you may spend 1 or more [Energy] to reroll that many attack dice.',
+            'While you perform a primary or attack, you may spend 1 or more to reroll that many attack dice.',
         },
         grants: [
           {
@@ -118,7 +118,7 @@ const t: UpgradeBase[] = [
           },
         ],
         slots: ['Team'],
-        ffg: -1,
+        ffg: 749,
       },
     ],
     cost: { value: 8 },
@@ -140,7 +140,7 @@ const t: UpgradeBase[] = [
           { action: { type: 'Calculate', difficulty: 'White' }, value: 1 },
         ],
         slots: ['Team'],
-        ffg: -1,
+        ffg: 748,
       },
     ],
     cost: { value: 2 },
@@ -157,7 +157,7 @@ const t: UpgradeBase[] = [
         type: 'Team',
         ability: {
           en:
-            'While you perform a [Reload] action, you may spend up to 3 [Energy] to reload that many additional [Charge] on your equipped [Missile]/[Torpedo] upgrades.\n\nAfter you perform a [Reload] action, you may spend 1 [Energy] to remove 1 disarm token.',
+            'While you perform a [Reload] action, you may spend up to 3 to reload that many additional [Charge] on your equipped [Missile]/[Torpedo] upgrades. After you perform a [Reload] action, you may spend 1 to remove 1 disarm token.',
         },
         grants: [
           {
@@ -170,7 +170,7 @@ const t: UpgradeBase[] = [
           },
         ],
         slots: ['Team'],
-        ffg: -1,
+        ffg: 751,
       },
     ],
     cost: { value: 4 },
@@ -186,7 +186,7 @@ const t: UpgradeBase[] = [
         type: 'Team',
         ability: {
           en:
-            'You can maintain up to 3 locks on different objects. After you perform a [Lock] action, you may spend up to 2 [Energy] to acquire a lock on that many other objects at range 0-1 of the object you locked, ignoring range restrictions.',
+            'You can maintain up to 3 locks on different objects. After you perform a [Lock] action, you may spend up to 2 to acquire a lock on that many other objects at range 0-1 of the object you locked, ignoring range restrictions.',
         },
         grants: [
           {
@@ -199,7 +199,7 @@ const t: UpgradeBase[] = [
           },
         ],
         slots: ['Team'],
-        ffg: -1,
+        ffg: 752,
       },
     ],
     cost: { value: 10 },

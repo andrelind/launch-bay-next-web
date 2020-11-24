@@ -53,40 +53,33 @@ const t: ShipType = {
   },
   pilots: [
     {
+      xws: 'hawk',
+      ffg: 660,
       name: {
-        en: '212th Battalion Pilot',
-        de: 'Pilot des \n212. Angriffsbataillons',
-        fr: 'Pilote du 212ème Bataillon',
-        it: '212th Battalion Pilot',
-        pl: '212th Battalion Pilot',
-        pt: '212th Battalion Pilot',
-        zh: '212th Battalion Pilot',
-        es: 'Piloto del Batallón 212',
+        en: '"Hawk"',
+        de: '„Hawk"',
+        fr: '"Hawk"',
+        it: '"Hawk"',
+        pl: '"Hawk"',
+        pt: '"Hawk"',
+        zh: '"Hawk"',
+        es: '"Hawk"',
       },
-      initiative: 2,
-      limited: 0,
-      xws: '212thbattalionpilot',
-      text: {
-        en:
-          'Capable of functioning in space assaults and atmospheric battles alike, the LAAT/i gunship transports Republic troops to battlefronts on planets besieged by the Separatists.',
-        de:
-          'Die TFAT/i-Kanonenboote sind gleichermaßen für Angriffe im Weltraum und Kämpfe in der Atmosphäre geeignet. Sie transportieren die Truppen der Republik zu Planeten, die von den Separatisten belagert werden.',
-        fr:
-          "Capable de participer aussi bien à des combats spatiaux qu'à des batailles atmosphériques, la canonnière TABA/i transporte les troupes de la République sur les champs de bataille des planètes assiégées par les Séparatistes.",
-        it:
-          'Capable of functioning in space assaults and atmospheric battles alike, the LAAT/i gunship transports Republic troops to battlefronts on planets besieged by the Separatists.',
-        pl:
-          'Capable of functioning in space assaults and atmospheric battles alike, the LAAT/i gunship transports Republic troops to battlefronts on planets besieged by the Separatists.',
-        pt:
-          'Capable of functioning in space assaults and atmospheric battles alike, the LAAT/i gunship transports Republic troops to battlefronts on planets besieged by the Separatists.',
-        zh:
-          'Capable of functioning in space assaults and atmospheric battles alike, the LAAT/i gunship transports Republic troops to battlefronts on planets besieged by the Separatists.',
-        es:
-          'Tan bien capacitada para las ofensivas espaciales como para los combates atmosféricos, la cañonera LAAT/i transporta tropas de la República a los frentes de batalla en planetas asediados por los separatistas.',
+      cost: 54,
+      limited: 1,
+      initiative: 4,
+      caption: {
+        en: 'Valkyrie 2929',
+        de: 'Walküre 2929',
+        fr: 'Valkyrie 2929',
+        it: 'Valkyrie 2929',
+        pl: 'Valkyrie 2929',
+        pt: 'Valkyrie 2929',
+        zh: 'Valkyrie 2929',
+        es: 'Valquiria 2929',
       },
-      hyperspace: true,
-      epic: true,
       slots: [
+        'Talent',
         'Missile',
         'Missile',
         'Crew',
@@ -95,25 +88,25 @@ const t: ShipType = {
         'Gunner',
         'Gunner',
       ],
-      cost: 51,
-      ffg: 663,
-      image: {
+      hyperspace: true,
+      epic: true,
+      ability: {
         en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/0967a5458478435b72971f7d972a8aaf.png',
+          'At the start of the End Phase, each friendly ship at range 0-1 that has a revealed maneuver of speed 3-5 may gain 1 strain token to perform a [Barrel Roll] or [Boost] action.',
         de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/0967a5458478435b72971f7d972a8aaf.png',
+          'Zu Beginn der Endphase darf jedes befreundete Schiff in Reichweite 0-1, das ein aufgedecktes Manöver mit Geschwindigkeit 3-5 hat, 1 Anstrengungsmarker erhalten, um eine [Barrel Roll]- oderr [Boost]-Aktion durchzuführen.',
         fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/0967a5458478435b72971f7d972a8aaf.png',
+          'Au début de la phase de dénouement, chaque vaisseau allié à portée 0-1 dont la manœuvre révélée a une vitesse 3-5 peut gagner 1 marqueur de contrainte pour effectuer une action [Barrel Roll] ou [Boost].',
         it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/0967a5458478435b72971f7d972a8aaf.png',
+          'At the start of the End Phase, each friendly ship at range 0-1 that has a revealed maneuver of speed 3-5 may gain 1 strain token to perform a [Barrel Roll] or [Boost] action.',
         pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/0967a5458478435b72971f7d972a8aaf.png',
+          'At the start of the End Phase, each friendly ship at range 0-1 that has a revealed maneuver of speed 3-5 may gain 1 strain token to perform a [Barrel Roll] or [Boost] action.',
         pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/0967a5458478435b72971f7d972a8aaf.png',
+          'At the start of the End Phase, each friendly ship at range 0-1 that has a revealed maneuver of speed 3-5 may gain 1 strain token to perform a [Barrel Roll] or [Boost] action.',
         zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/0967a5458478435b72971f7d972a8aaf.png',
+          'At the start of the End Phase, each friendly ship at range 0-1 that has a revealed maneuver of speed 3-5 may gain 1 strain token to perform a [Barrel Roll] or [Boost] action.',
         es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/0967a5458478435b72971f7d972a8aaf.png',
+          'Al comienzo de la fase Final, cada nave aliada que tengas a alcance 0-1 cuya maniobra revelada sea de velocidad 3-5 puede recibir 1 ficha de Sobresfuerzo para realizar una acción [Barrel Roll] o [Boost].',
       },
     },
     {
@@ -129,7 +122,7 @@ const t: ShipType = {
         zh: '"Hound"',
         es: '"Hound"',
       },
-      cost: 52,
+      cost: 50,
       limited: 1,
       initiative: 2,
       caption: {
@@ -141,24 +134,6 @@ const t: ShipType = {
         pt: 'Vigilant Tracker',
         zh: 'Vigilant Tracker',
         es: 'Rastreador alerta',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/2230c99fa815740b48c9350547e1c299.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/2230c99fa815740b48c9350547e1c299.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/2230c99fa815740b48c9350547e1c299.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/2230c99fa815740b48c9350547e1c299.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/2230c99fa815740b48c9350547e1c299.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/2230c99fa815740b48c9350547e1c299.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/2230c99fa815740b48c9350547e1c299.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/2230c99fa815740b48c9350547e1c299.png',
       },
       slots: [
         'Missile',
@@ -216,24 +191,6 @@ const t: ShipType = {
         zh: 'Veteran of Kadavo',
         es: 'Veterano de Kadavo',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1a2d9bd52455f4da3de74de0d9a78380.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1a2d9bd52455f4da3de74de0d9a78380.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1a2d9bd52455f4da3de74de0d9a78380.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1a2d9bd52455f4da3de74de0d9a78380.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1a2d9bd52455f4da3de74de0d9a78380.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1a2d9bd52455f4da3de74de0d9a78380.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1a2d9bd52455f4da3de74de0d9a78380.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1a2d9bd52455f4da3de74de0d9a78380.png',
-      },
       slots: [
         'Missile',
         'Missile',
@@ -265,51 +222,40 @@ const t: ShipType = {
       },
     },
     {
-      xws: 'hawk',
-      ffg: 660,
       name: {
-        en: '"Hawk"',
-        de: '„Hawk"',
-        fr: '"Hawk"',
-        it: '"Hawk"',
-        pl: '"Hawk"',
-        pt: '"Hawk"',
-        zh: '"Hawk"',
-        es: '"Hawk"',
+        en: '212th Battalion Pilot',
+        de: 'Pilot des \n212. Angriffsbataillons',
+        fr: 'Pilote du 212ème Bataillon',
+        it: '212th Battalion Pilot',
+        pl: '212th Battalion Pilot',
+        pt: '212th Battalion Pilot',
+        zh: '212th Battalion Pilot',
+        es: 'Piloto del Batallón 212',
       },
-      cost: 55,
-      limited: 1,
-      initiative: 4,
-      caption: {
-        en: 'Valkyrie 2929',
-        de: 'Walküre 2929',
-        fr: 'Valkyrie 2929',
-        it: 'Valkyrie 2929',
-        pl: 'Valkyrie 2929',
-        pt: 'Valkyrie 2929',
-        zh: 'Valkyrie 2929',
-        es: 'Valquiria 2929',
-      },
-      image: {
+      initiative: 2,
+      limited: 0,
+      xws: '212thbattalionpilot',
+      text: {
         en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e1fe9b6985d7c9960d634734abd9f9eb.png',
+          'Capable of functioning in space assaults and atmospheric battles alike, the LAAT/i gunship transports Republic troops to battlefronts on planets besieged by the Separatists.',
         de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e1fe9b6985d7c9960d634734abd9f9eb.png',
+          'Die TFAT/i-Kanonenboote sind gleichermaßen für Angriffe im Weltraum und Kämpfe in der Atmosphäre geeignet. Sie transportieren die Truppen der Republik zu Planeten, die von den Separatisten belagert werden.',
         fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e1fe9b6985d7c9960d634734abd9f9eb.png',
+          "Capable de participer aussi bien à des combats spatiaux qu'à des batailles atmosphériques, la canonnière TABA/i transporte les troupes de la République sur les champs de bataille des planètes assiégées par les Séparatistes.",
         it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e1fe9b6985d7c9960d634734abd9f9eb.png',
+          'Capable of functioning in space assaults and atmospheric battles alike, the LAAT/i gunship transports Republic troops to battlefronts on planets besieged by the Separatists.',
         pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e1fe9b6985d7c9960d634734abd9f9eb.png',
+          'Capable of functioning in space assaults and atmospheric battles alike, the LAAT/i gunship transports Republic troops to battlefronts on planets besieged by the Separatists.',
         pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e1fe9b6985d7c9960d634734abd9f9eb.png',
+          'Capable of functioning in space assaults and atmospheric battles alike, the LAAT/i gunship transports Republic troops to battlefronts on planets besieged by the Separatists.',
         zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e1fe9b6985d7c9960d634734abd9f9eb.png',
+          'Capable of functioning in space assaults and atmospheric battles alike, the LAAT/i gunship transports Republic troops to battlefronts on planets besieged by the Separatists.',
         es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e1fe9b6985d7c9960d634734abd9f9eb.png',
+          'Tan bien capacitada para las ofensivas espaciales como para los combates atmosféricos, la cañonera LAAT/i transporta tropas de la República a los frentes de batalla en planetas asediados por los separatistas.',
       },
+      hyperspace: false,
+      epic: true,
       slots: [
-        'Talent',
         'Missile',
         'Missile',
         'Crew',
@@ -318,28 +264,13 @@ const t: ShipType = {
         'Gunner',
         'Gunner',
       ],
-      hyperspace: true,
-      epic: true,
-      ability: {
-        en:
-          'At the start of the End Phase, each friendly ship at range 0-1 that has a revealed maneuver of speed 3-5 may gain 1 strain token to perform a [Barrel Roll] or [Boost] action.',
-        de:
-          'Zu Beginn der Endphase darf jedes befreundete Schiff in Reichweite 0-1, das ein aufgedecktes Manöver mit Geschwindigkeit 3-5 hat, 1 Anstrengungsmarker erhalten, um eine [Barrel Roll]- oderr [Boost]-Aktion durchzuführen.',
-        fr:
-          'Au début de la phase de dénouement, chaque vaisseau allié à portée 0-1 dont la manœuvre révélée a une vitesse 3-5 peut gagner 1 marqueur de contrainte pour effectuer une action [Barrel Roll] ou [Boost].',
-        it:
-          'At the start of the End Phase, each friendly ship at range 0-1 that has a revealed maneuver of speed 3-5 may gain 1 strain token to perform a [Barrel Roll] or [Boost] action.',
-        pl:
-          'At the start of the End Phase, each friendly ship at range 0-1 that has a revealed maneuver of speed 3-5 may gain 1 strain token to perform a [Barrel Roll] or [Boost] action.',
-        pt:
-          'At the start of the End Phase, each friendly ship at range 0-1 that has a revealed maneuver of speed 3-5 may gain 1 strain token to perform a [Barrel Roll] or [Boost] action.',
-        zh:
-          'At the start of the End Phase, each friendly ship at range 0-1 that has a revealed maneuver of speed 3-5 may gain 1 strain token to perform a [Barrel Roll] or [Boost] action.',
-        es:
-          'Al comienzo de la fase Final, cada nave aliada que tengas a alcance 0-1 cuya maniobra revelada sea de velocidad 3-5 puede recibir 1 ficha de Sobresfuerzo para realizar una acción [Barrel Roll] o [Boost].',
-      },
+      cost: 49,
+      ffg: 663,
     },
   ],
+  ffg: 73,
+  icon:
+    'https://sb-cdn.fantasyflightgames.com/ship_types/I_LAAT_Republic_Gunship.png',
 };
 
 export default t;

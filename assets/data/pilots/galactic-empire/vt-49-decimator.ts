@@ -83,24 +83,6 @@ const t: ShipType = {
         pt: 'Você consegue realizar ataquesprimários em alcance 0.',
         zh: 'You can perform primary attacks at range 0.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_146.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/fb3c69fe5e05a5720445db59abd7004f.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/68b3be7e16b03c82d5b453371b32c00c.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/13d884f0111ec0782245d5f934ea1e0a.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/e8249f0a42caa68d5eeb169e7ce11410.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/262353555457b70cacd4611db1116d50.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/1ee1dd4612585292af3a4a7a93ce3d0f.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_146.png',
-      },
       slots: [
         'Talent',
         'Torpedo',
@@ -115,7 +97,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_146.jpg',
       ffg: 146,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -151,24 +133,6 @@ const t: ShipType = {
         zh:
           'To be granted command of a VT-49 Decimator is seen as a significant promotion for a middling officer of the Imperial Navy.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_148.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/67e4a7d580026a6c2c1564372bb5fd4c.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/352a50e34a167145c74adde2e1cfcd05.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/8b10d56e82ffd8457d816d55c9530c70.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/2cd13ebb7670044ce1c2a761997634d6.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/3618433bc582fe5a854f25bc5125554e.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/f86ae5b8ff2fdd590334fa9a8b122864.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_148.png',
-      },
       slots: [
         'Torpedo',
         'Crew',
@@ -182,7 +146,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_148.jpg',
       ffg: 148,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -228,24 +192,6 @@ const t: ShipType = {
         zh:
           'While you perform an attack, if you are reinforced and the defender is in the [Full Front Arc] or [Full Rear Arc] matching your reinforce token, you may change 1 of your [Focus] results to a [Critical Hit] result.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_147.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/99b99ca624a225b280db1e8bad6442ad.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/bb76b040321394836c35e8fb9bf0b53b.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/1c1a2a80638fdb7f1e1b35e6f3aa61dc.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/116b6fdcc659231346a42b9d9b6ac455.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/0d7be735887a94e5c30946a47ccce854.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/7c0fbd009e1568ce0212107d00c613e4.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_147.png',
-      },
       slots: [
         'Talent',
         'Torpedo',
@@ -260,7 +206,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_147.jpg',
       ffg: 147,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -318,27 +264,9 @@ const t: ShipType = {
         'Title',
         'Gunner',
       ],
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       ffg: 634,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/5a913f54447ec375ccc1403769438f81.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/225bca650e1881d2a44dcce09dc1a056.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/7b8e54f54baceb79e86f257e14843dc7.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/58af73002accc8eb92a7b3e3789f2e79.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/5a913f54447ec375ccc1403769438f81.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/5a913f54447ec375ccc1403769438f81.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/5a913f54447ec375ccc1403769438f81.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/5a913f54447ec375ccc1403769438f81.png',
-      },
     },
   ],
 };

@@ -10,7 +10,7 @@ const t: UpgradeBase[] = [
         type: 'Hardpoint',
         ability: {
           en:
-            'Setup: Equip this side faceup. Bonus Attack: Spend 1 [Energy]. If this attack hits, the defender suffers 1 [Critical Hit] damage, and all [Hit]/[Critical Hit] results inflict ion tokens instead of damage.',
+            'Setup: Equip this side faceup. Bonus Attack: Spend 1  . If this attack hits, the defender suffers 1  [Critical Hit] damage, and all [Hit]/[Critical Hit] results inflict ion tokens instead of damage.',
         },
         attack: {
           arc: 'Single Turret Arc',
@@ -23,7 +23,7 @@ const t: UpgradeBase[] = [
           { action: { type: 'Rotate Arc', difficulty: 'White' }, value: 1 },
         ],
         slots: ['Hardpoint'],
-        ffg: -1,
+        ffg: 737,
       },
     ],
     cost: { value: 5 },
@@ -39,10 +39,10 @@ const t: UpgradeBase[] = [
         type: 'Hardpoint',
         ability: {
           en:
-            '<strong>Setup</strong>: Equip this side faceup.\n\nYou can perform [Torpedo] and [Missile] attacks only as bonus attacks. You must treat the [Front Arc] requirement of your equipped [Torpedo] and [Missile] upgrades as [Full front arc].\n\nBonus Attack: Perform a [Torpedo] attack.\n\nBonus Attack: Perform a [Missile] attack.',
+            'Setup: Equip this side faceup. You can perform [Torpedo] and [Missile] attacks only as bonus attacks. You must treat the [Front Arc] requirement of your equipped [Torpedo] and [Missile] upgrades as [Full Front Arc]. Bonus Attack: Perform a [Torpedo] attack. Bonus Attack: Perform a [Missile] attack.',
         },
         slots: ['Hardpoint'],
-        ffg: -1,
+        ffg: 741,
       },
     ],
     cost: { value: 1 },
@@ -54,11 +54,11 @@ const t: UpgradeBase[] = [
     xws: 'pointdefensebattery',
     sides: [
       {
-        title: { en: 'Point Defense Battery' },
+        title: { en: 'Point-Defense Battery' },
         type: 'Hardpoint',
         ability: {
           en:
-            'Setup: Equip this side faceup. Bonus Attack: Spend 1 [Energy]. Bonus Attack: Spend 1 [Energy]. Bonus Attack: Spend 1 [Energy]. Bonus Attack: Spend 1 [Energy].',
+            'Setup: Equip this side faceup. Bonus Attack: Spend 1  . Bonus Attack: Spend 1  . Bonus Attack: Spend 1  . Bonus Attack: Spend 1  .',
         },
         attack: {
           arc: 'Double Turret Arc',
@@ -71,7 +71,7 @@ const t: UpgradeBase[] = [
           { action: { type: 'Rotate Arc', difficulty: 'White' }, value: 1 },
         ],
         slots: ['Hardpoint'],
-        ffg: -1,
+        ffg: 743,
       },
     ],
     cost: { value: 9 },

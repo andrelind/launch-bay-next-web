@@ -96,24 +96,6 @@ const t: ShipType = {
         'Modification',
         'Configuration',
       ],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_136.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/8c434d3956e437f1849f0b561c7193b1.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/2663d311d091b8e8fa778e02b3328cc4.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/28dcacdabd8599d86a2c1ca25bc3c2f0.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/759fae18f013eeacfb5566f710429578.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/6b94f8a4fb4ec9a623e6da59294cc5fe.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/3e070b73ce705901af6e18f21f138abf.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_136.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_136.jpg',
       ffg: 136,
@@ -171,24 +153,6 @@ const t: ShipType = {
         'Modification',
         'Configuration',
       ],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_135.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/0800a34f3d126c8a4b43cb498c4edade.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/b970a2d5d8696f4027d1d7c5532d63ec.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/703a6d8810a0973cec2494a8e09ea999.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/dd6780f1440e09fa36e7c53fb60cf1c6.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/ab81591803693012c9b26110ebd249cd.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/e0666380c5ff111f5eecd6f56d2da0ad.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_135.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_135.jpg',
       ffg: 135,
@@ -227,24 +191,6 @@ const t: ShipType = {
           'Com design inspirado por outras navesda Cygnus Spaceworks, a star wing classe Alfaé uma nave versátil designada a unidadesespeciais da Marinha Imperial que precisamde um caça estelar capaz de ser equipado para executar os mais diversos tipos de missão.',
         zh:
           'With a design inspired by other Cygnus Spaceworks vessels, the Alpha-class star wing is a versatile craft assigned to Imperial Navy specialist units that need a starfighter they can outfit for multiple roles.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_138.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/ee1c542add83bb0edf3dee84744552dd.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/a1c8aadcae1eef1f4c41c84cbe724f9b.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/3b727282fa4cf21277cea628047e8e29.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/ed1a3d9e362b7e32127d9361d72007f4.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/4805d94ba7634fc5859309b747dbbee3.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/4b704c744d8b5325ea54cdb7f716e10e.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_138.png',
       },
       slots: ['Sensor', 'Torpedo', 'Missile', 'Modification', 'Configuration'],
       artwork:
@@ -294,24 +240,6 @@ const t: ShipType = {
         'Modification',
         'Configuration',
       ],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_137.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/bc6fbe8ab28b861fc79a637f83cfe135.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/2b251ec260d67900272170740ab18a93.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/14991f984ac47277a921a32af6fe5883.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/3c058cda5e5808029b319638a0950e20.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/f3157ae61d2f60a7fe29a9005da6d624.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/e388a5cf3b6aa37ae9bf396b3a8ec21f.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_137.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_137.jpg',
       ffg: 137,

@@ -89,24 +89,6 @@ const t: ShipType = {
         zh:
           'Before a friendly bomb or mine would detonate, you may spend 1 [Charge] to prevent it from detonating. While you defend against an attack obstructed by a bomb or mine, roll 1 additional defense die.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_204.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/e7abc769ae6ccbe03f89bc3835c08628.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/8859a66e10eee5b123c31f1bdec5103f.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/94b8a55c99e5402e8c0e52c8dc46b8c0.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/47413d6d6ccd6acfe01540813733067c.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/268667a484fce42fcbff6a4b20b51cff.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/20ac34a557eafc6a728d86aa8aa265fb.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_204.png',
-      },
       charges: { value: 1, recovers: 1 },
       slots: [
         'Talent',
@@ -156,24 +138,6 @@ const t: ShipType = {
           'A Nubian Design Collective criou o Bombardeiro Scurrg H-6 tendo em mente a versatilidade em combate, equipando-o com escudos reforçados e um vasto conjunto de armamentos destrutivos.',
         zh:
           'The Nubian Design Collective crafted the Scurrg H-6 Bomber with combat versatility in mind, arming it with powerful shields and a bristling array of destructive weaponry.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_206.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/3cbdbed86f21e32d16f2e8cee9bb9fd7.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/36acbb9b93da1db38b53904fc4345e39.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/03260cc44c2f41a3d1776f7af10eaef3.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/799c4b3c8f3eedfbd9278a25be701b0a.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/eb0e42c14111ab5c76ae13ee25ce66f2.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/dcd54b622121f6e923441902aba49ce9.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_206.png',
       },
       slots: [
         'Turret',
@@ -232,24 +196,6 @@ const t: ShipType = {
           'Se for soltar um dispositivo usandoum gabarito (1 [Straight]), você pode soltá-lousando, em vez desse, qualquer outro gabarito de velocidade 1.',
         zh:
           'If you would drop a device using a (1 [Straight]) template, you may drop it using any speed 1 template instead.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_205.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/94097b19d036f8bb383b14a16e552148.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/11d0cf146cc918882b00349f1ee7f81a.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/ccb222d11ef2bcfac1fc29b74847fd63.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/15fcce3ad78b21a69cbc9470338ee62c.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/e99e0c09e8807cfa56d29f4a9e81838d.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/759839d3647e807ca057e1c141561339.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_205.png',
       },
       slots: [
         'Talent',

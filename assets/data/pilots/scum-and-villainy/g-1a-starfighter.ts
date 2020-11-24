@@ -90,24 +90,6 @@ const t: ShipType = {
         zh:
           'After you fully execute a red maneuver, gain 1 calculate token. At the start of the End Phase, you may choose 1 ship at range 0-1. If you do, transfer 1 of your stress tokens to that ship.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_201.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/0594568330795216d3372b7fe3e8febd.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/61f9620a1c9d1a25ca90e489fcbbf158.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/7c08d474e25a0a7ff45e020713181145.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/3f791308848e1182f85b2eed4d338da8.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/ac73d14b0586addee03c71a175a7c6d1.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/6b3174113583d143a51ee4807cde2d8c.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_201.png',
-      },
       slots: ['Talent', 'Sensor', 'Crew', 'Illicit', 'Modification', 'Title'],
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },
@@ -152,24 +134,6 @@ const t: ShipType = {
           'Os lendários Findsmen de Gand venerama névoa que encobre seu planeta natal,usando sinais, presságios e rituais mágicospara rastrear suas presas.',
         zh:
           'The legendary Findsmen of Gand worship the enshrouding mists of their home planet, using signs, augurs, and mystical rituals to track their quarry.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_203.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/fdb983e0b3201b8ec3900e030757d376.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/73c4b666e808bb8408933219fc130c0c.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/cb59c51b9bb56c9a41fad140569e2f85.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/5c21de550f2656aa172e408162002e89.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/8c1c695235e84f39806f135d31e1be5d.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/c9d3cc390f99d34550f880b3e059d710.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_203.png',
       },
       slots: ['Sensor', 'Crew', 'Illicit', 'Modification', 'Title'],
       artwork:
@@ -220,24 +184,6 @@ const t: ShipType = {
           'Quando realizar um ataque primário, você pode rolar 1 dado de ataque adicional.Se você fizer isso, o defensor rola1 dado de defesa adicional.',
         zh:
           'While you perform a primary attack, you may roll 1 additional attack die. If you do, the defender rolls 1 additional defense die.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_202.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/93ad11eaa9532ef9c7f5eabfae6b0498.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/d2c5239ce45348232027907667592c24.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/ddea24c0955fe093c8888be147cf37c0.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/6f229cc40a5594e07b0cbfc9a5b62bdf.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/061178b39f796878af33c49650f57690.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/07427d31f705c6303a2f471499e9d39f.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_202.png',
       },
       alt: [
         {

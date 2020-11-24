@@ -99,7 +99,7 @@ const t: ShipType = {
       },
       initiative: 3,
       limited: 1,
-      cost: 34,
+      cost: 32,
       xws: 'arvelcrynyd',
       ability: {
         en:
@@ -118,24 +118,6 @@ const t: ShipType = {
           'Você consegue realizar ataquesprimários em alcance 0. Se você for falhar em uma ação [Boost] porque sobrepôs outra nave, em vez disso, resolva-a como se estivesse executando parcialmente uma manobra. Propulsores Vetorizados: Após realizaruma ação, você pode realizar uma ação[Boost] vermelha.',
         zh:
           'You can perform primary attacks at range 0. If you would fail a [Boost] action by overlapping another ship, resolve it as though you were partially executing a maneuver instead.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_20.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/28629bb2be0bbbd4a22e3b2201148ac9.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/a341534f049dcab0329d45f51b129ce8.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/169ea41ea8708e0fce90ca92820edec1.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/8d38399eede37f75e663cd5100bda1ee.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/0089d047ca87885a3e3495ad9f0da65d.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/826ae5cdd2fcfa3e9aee3d7f6c4e6e6c.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_20.png',
       },
       slots: ['Talent', 'Talent', 'Missile'],
       artwork:
@@ -157,7 +139,7 @@ const t: ShipType = {
       },
       initiative: 3,
       limited: 0,
-      cost: 32,
+      cost: 30,
       xws: 'greensquadronpilot',
       text: {
         en:
@@ -176,24 +158,6 @@ const t: ShipType = {
           'Devido aos seus controles sensitivos e alta manobrabilidade, somente os pilotos mais talentosos ocupavam a cabine de uma A-wing.',
         zh:
           'Due to its sensitive controls and high maneuverability, only the most talented pilots belong in an A-wing cockpit.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_21.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/694b3de0c3530a8bc12ca3a72596f49f.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/3887476056d067c09401734dd08dd606.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/062b7d4f909e2dc606002c01295bcf2e.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/6b0df6f8848a274fb3927ceb29f8a681.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/3b5f680efa1ab31cbf799df19ea0909c.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/e97a336ed2786831bbd5a646e4381ed1.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_21.png',
       },
       slots: ['Talent', 'Talent', 'Missile'],
       artwork:
@@ -225,7 +189,7 @@ const t: ShipType = {
       },
       initiative: 4,
       limited: 1,
-      cost: 36,
+      cost: 34,
       xws: 'jakefarrell',
       ability: {
         en:
@@ -244,24 +208,6 @@ const t: ShipType = {
           'Após realizar uma ação [Barrel Roll] ou [Boost],você pode escolher uma nave amigaem alcance 0-1. A nave escolhidapode realizar uma ação [Focus]. Propulsores Vetorizados:Após realizar uma ação, você poderealizar uma ação [Boost] vermelha.',
         zh:
           'After you perform a [Barrel Roll] or [Boost] action, you may choose a friendly ship at range 0-1. That ship may perform a [Focus] action.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_19.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/7a62b99eca27b613bfbe01e86a252de5.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/e1143ffc45f43c07aa3e76d025b61179.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/fb4dbcbecf8a357d10ddbfcee388e50c.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/e40665560a93e51e8af2fed4eaf8993f.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/a273a713f7fcef9bef05ec53d863b547.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/1fae47827070aa08bde1481cf054ac31.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_19.png',
       },
       slots: ['Talent', 'Talent', 'Missile'],
       artwork:
@@ -283,7 +229,7 @@ const t: ShipType = {
       },
       initiative: 1,
       limited: 0,
-      cost: 29,
+      cost: 28,
       xws: 'phoenixsquadronpilot',
       text: {
         en:
@@ -302,24 +248,6 @@ const t: ShipType = {
           'Liderados pelo Comandante Jun Sato, os bravos porém inexperientes pilotos do Esquadrão Fênix enfrentam situações impressionantes em suas batalhas contra o Império Galático.',
         zh:
           'Led by Commander Jun Sato, the brave but inexperienced pilots of Phoenix Squadron face staggering odds in their battle against the Galactic Empire.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_22.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/2d478f989f9706cc994c15a212740ae5.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/9325311c61512b5dfbdd2bedf209e7c1.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/e53127420ebde6af7316f22cb2eb6a9f.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/16e03cd0b501c3460dc8f95077a085c3.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/a5be73fd9a5641276a9082e9fa190012.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/f74a18192c36d87c23d5facffd01e08e.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_22.png',
       },
       slots: ['Talent', 'Missile'],
       artwork:

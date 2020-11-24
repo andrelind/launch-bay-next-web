@@ -110,24 +110,6 @@ const t: ShipType = {
         zh:
           'While you defend or perform an attack, if the enemy ship is a larger size than you, roll 1 additional die.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d58a0696c8d85a63e90eb8a1e522a54c.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/2c2281dffb31fbda52ce6c97a1f9b2d0.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/2827e7698649d4fc939ec74c418d1ba7.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/924b2de95b7357e4a677b154038006c7.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/24f3a26d7c83866e146fa1f1997b8b1f.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/cfe375d51eed42a750b8cdfee746e216.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d58a0696c8d85a63e90eb8a1e522a54c.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d58a0696c8d85a63e90eb8a1e522a54c.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/2d162fae88ae58b9eca31f7dc0b7a9da.jpg',
       slots: ['Talent', 'Modification'],
@@ -177,24 +159,6 @@ const t: ShipType = {
           "While you defend or perform an attack, before attack dice are rolled, if you are not in the enemy ship's [Bullseye Arc], you may spend 1 [Charge]. If you do, the enemy ship gains 1 jam token.",
         zh:
           "While you defend or perform an attack, before attack dice are rolled, if you are not in the enemy ship's [Bullseye Arc], you may spend 1 [Charge]. If you do, the enemy ship gains 1 jam token.",
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/70b64586cc2eb05d10efc7ba8dfd69d0.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/12fb1c14f047c44f8f9a4e9afd7518aa.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/2d25145259ef31dbcb7b11911672f8c8.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/6698445e323ae400dd4f379b0ab49ec1.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/109f341f8b006541e1c60dd860dececc.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/f3bf0b78eaac9f8e5d5c52ceb4ef5e96.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/70b64586cc2eb05d10efc7ba8dfd69d0.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/70b64586cc2eb05d10efc7ba8dfd69d0.png',
       },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/6ead4bbfa14075a19972dc57b90a34e1.jpg',
@@ -247,24 +211,6 @@ const t: ShipType = {
         zh:
           'Before you engage, you may choose 1 enemy ship in your [Bullseye Arc] at range 1-2 and gain 1 disarm token. If you do, that ship gains 1 tractor token.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/cfb3b5fa9d747afc3aa10f3b86f45818.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/d0287f50c1c08d753de312fe569a7266.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/3d30f69fe42894ece16f66e65802b9f9.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/347d46d560062d3fded0cd946abd7512.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/55db5a5b7ff7f30c47ba891956cb10cd.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/bbc06a21d1703c727e65b7ede248c5b2.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/cfb3b5fa9d747afc3aa10f3b86f45818.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/cfb3b5fa9d747afc3aa10f3b86f45818.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/f789aa53866112fc44fd27ed9e177993.jpg',
       slots: ['Talent', 'Modification'],
@@ -304,24 +250,6 @@ const t: ShipType = {
           'With Imperial construction projects consuming raw materials at an unprecedented rate, the Mining Guild ruthlessly exploits newly discovered deposits of doonium ore on worlds such as Batonn, Lothal, and Umbara.',
         zh:
           'With Imperial construction projects consuming raw materials at an unprecedented rate, the Mining Guild ruthlessly exploits newly discovered deposits of doonium ore on worlds such as Batonn, Lothal, and Umbara.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3e5872dea32f2015bb6737592c21efaf.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/86df1bb135043a23ef61418abdadd5d8.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/d69963ab48378daac5c25544479a69a4.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/85c8cc10f4379fa8c78f063f5d33ae58.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/38f996c252837e812cb2320fe2aa7a3e.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/886b20dfa32042641fa03fe7d9aa8790.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3e5872dea32f2015bb6737592c21efaf.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3e5872dea32f2015bb6737592c21efaf.png',
       },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/ad058d0b6d46f668f06bf0007207a30a.jpg',
@@ -374,24 +302,6 @@ const t: ShipType = {
           'Before a friendly ship at range 1 would gain a disarm token, if that ship is not stressed, you may spend 1 [Charge]. If you do, that ship gains 1 stress token instead.',
       },
       charges: { value: 1, recovers: 1 },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/6c9268d3e6cc6b671d6db6ac39fcad0f.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/ce5f9a1dd75278bdd938cce5bf02fbf0.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/c14329a57d35b1873778ff2d71ffabe9.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/6e652f245131e6f15233b2b87c3201c1.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/094b0b2fd85552cbc0ef9268af15753f.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/d5abbde41dd389ac0e5474df10ce2a5a.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/6c9268d3e6cc6b671d6db6ac39fcad0f.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/6c9268d3e6cc6b671d6db6ac39fcad0f.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/1f454eb7c12b572103e59a9a782c3f50.jpg',
       slots: ['Modification'],
@@ -431,24 +341,6 @@ const t: ShipType = {
           'As part of its arrangement with the Empire, the Mining Guild receives modified TIE/ln Fighters to protect its operations. These craft have solar panels removed from their stabilizers for improved visibility, and feature more extensive life support systems for the benefit of their corporate pilots.',
         zh:
           'As part of its arrangement with the Empire, the Mining Guild receives modified TIE/ln Fighters to protect its operations. These craft have solar panels removed from their stabilizers for improved visibility, and feature more extensive life support systems for the benefit of their corporate pilots.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/6d67112b15c3c97bd3d4acf2c8d000ed.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/54e47bc15b0fd8f225aee8e5219aa759.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/bfda6589716da19a886d38119444621c.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/bef93361b1eeed7fd7580df28858e72b.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/8b11c464dda87458970de10871033734.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/c663a66c2a6def5072e4dd1b1f176925.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/6d67112b15c3c97bd3d4acf2c8d000ed.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/6d67112b15c3c97bd3d4acf2c8d000ed.png',
       },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/09c955b8008750a30fe398c200431160.jpg',

@@ -50,39 +50,12 @@ const t: ShipType = {
   },
   pilots: [
     {
-      name: { en: 'Lyttan Dree' },
-      caption: { en: 'Onyx 2' },
-      initiative: 3,
-      limited: 1,
-      xws: 'lyttandree',
-      ability: {
-        en:
-          "While a friendly ship at range 0-2 performs an attack, if you are in the defender's [Left Arc] or [Right Arc], the attacker may reroll 1 attack die.",
-      },
-      hyperspace: true,
-      epic: true,
+      xws: 'caridaacademycadet',
+      name: { en: 'Carida Academy Cadet' },
+      cost: 34,
+      initiative: 1,
+      limited: 0,
       slots: [
-        'Cannon',
-        'Cannon',
-        'Modification',
-        'Modification',
-        'Configuration',
-      ],
-      cost: 37,
-    },
-    {
-      xws: 'rampage',
-      name: { en: '"Rampage"' },
-      caption: { en: 'Implacable Pursuer' },
-      cost: 39,
-      initiative: 4,
-      limited: 1,
-      ability: {
-        en:
-          'After you execute a speed 3-4 maneuver, you may choose a ship in your [Single Turret Arc] at range 0-1.  If you do, that ship gains 1 strain token, or 2 strain tokens if you are damaged.',
-      },
-      slots: [
-        'Talent',
         'Cannon',
         'Cannon',
         'Modification',
@@ -91,6 +64,11 @@ const t: ShipType = {
       ],
       hyperspace: true,
       epic: true,
+      ffg: 696,
+      text: {
+        en:
+          'At Carida Academy, Imperial Navy cadets are taught to be ruthless and loyal, prioritizing victory over the lives of their comrades.',
+      },
     },
     {
       xws: 'onyxsquadronsentry',
@@ -108,13 +86,47 @@ const t: ShipType = {
       ],
       hyperspace: true,
       epic: true,
+      ffg: 695,
+      text: {
+        en:
+          'The TIE/rb heavy, sometimes called the "brute," is designed for operational flexibility. Its heavy armor and capacity to house an integrated MGK-300 droid co-pilot make it an excellent patrol craft.',
+      },
     },
     {
-      xws: 'caridaacademycadet',
-      name: { en: 'Carida Academy Cadet' },
-      cost: 34,
-      initiative: 1,
-      limited: 0,
+      xws: 'rampage',
+      name: { en: '"Rampage"' },
+      caption: { en: 'Implacable Pursuer' },
+      cost: 39,
+      initiative: 4,
+      limited: 1,
+      ability: {
+        en:
+          'After you execute a speed 3-4 maneuver, you may choose a ship in your [Single Turret Arc] at range 0-1. That ship gains 1 strain token, or 2 strain tokens if you are damaged.',
+      },
+      slots: [
+        'Talent',
+        'Cannon',
+        'Cannon',
+        'Modification',
+        'Modification',
+        'Configuration',
+      ],
+      hyperspace: false,
+      epic: true,
+      ffg: 693,
+    },
+    {
+      name: { en: 'Lyttan Dree' },
+      caption: { en: 'Onyx 2' },
+      initiative: 3,
+      limited: 1,
+      xws: 'lyttandree',
+      ability: {
+        en:
+          "While a friendly ship at range 0-2 performs an attack, if you are in the defender's [Left Arc] or [Right Arc], the attacker may reroll 1 attack die.",
+      },
+      hyperspace: false,
+      epic: true,
       slots: [
         'Cannon',
         'Cannon',
@@ -122,8 +134,8 @@ const t: ShipType = {
         'Modification',
         'Configuration',
       ],
-      hyperspace: true,
-      epic: true,
+      cost: 37,
+      ffg: 694,
     },
   ],
 };

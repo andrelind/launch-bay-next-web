@@ -91,24 +91,6 @@ const t: ShipType = {
         zh:
           "While you defend or perform an attack, if you have a lock on the enemy ship, that ship's dice cannot be modified.",
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c7994885b38757f92bdf3a98c37b3c96.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/744446d186e7da10a03f2804d8250cc3.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/e684369473703344078f9afafaa484f1.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/e4f12f86306b73cd907f3bde53839c9b.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/5d2e78ed5b5859f9c89721561703b011.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/07222a3c8ab26014e17923f83f4ed541.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c7994885b38757f92bdf3a98c37b3c96.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c7994885b38757f92bdf3a98c37b3c96.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/c6a43d25d22d4112dd7e968cab4eb3d5.jpg',
       slots: ['Talent', 'Modification', 'Tech'],
@@ -158,24 +140,6 @@ const t: ShipType = {
           'At the start of the Engagement Phase, you may spend 1 [Charge] and gain 1 stress token. If you do, until the end of the round, while you defend or perform an attack, you may change all of your [Focus] results to [Evade] or [Hit] results.',
         zh:
           'At the start of the Engagement Phase, you may spend 1 [Charge] and gain 1 stress token. If you do, until the end of the round, while you defend or perform an attack, you may change all of your [Focus] results to [Evade] or [Hit] results.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/f7506ec739f5580d484ff0ee49b041f3.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/714afa8f963a940b6c5263bb5ed62428.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/eaaa17675ceea0760f6c1988cc5d356b.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/fa899d9a2d51c9884c9f7aa491c788cc.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/f264c00fc163846c4998e2997df2e047.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/b09d35b39ade88b35f9f11b9e1fbf1f2.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/f7506ec739f5580d484ff0ee49b041f3.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/f7506ec739f5580d484ff0ee49b041f3.png',
       },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/d9cfa6aacc29d55a47aaa0d9f75d362e.jpg',
@@ -228,24 +192,6 @@ const t: ShipType = {
         zh:
           'While you perform a primary attack, if you are not stressed, you may gain 1 stress token to roll 1 additional attack die.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9dd11d408bb869cb947663fc29622833.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/80e2b3b685b41be2f8fb3d467c0be372.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/7274891ee359ec44f2bb13eb528c9f4a.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/c9ada84d95aadc034976ab7a74014c63.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/8379f5f9411d396633b9af97daba9a6a.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/45f0598336420b11b3ed459f55ea8042.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9dd11d408bb869cb947663fc29622833.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/9dd11d408bb869cb947663fc29622833.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/dd225b2dab46b921e622dca6d799591f.jpg',
       slots: ['Talent', 'Modification', 'Tech'],
@@ -295,24 +241,6 @@ const t: ShipType = {
           'While you perform a primary attack, you may spend your lock on the defender and a focus token to change all of your results to [Critical Hit] results.',
         zh:
           'While you perform a primary attack, you may spend your lock on the defender and a focus token to change all of your results to [Critical Hit] results.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/2481fe5d98026e086a901d83dbe87018.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/e2a412618aeafba138afd33cfbc33170.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/72c05043c1a0c217f26ceb20ac8179de.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/39cac9ea14a63e37d66043bf0338ea80.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/a7dce12e4b1643fc85e19188620ae21b.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/f59271858166ac4cf5681b7ee0c82854.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/2481fe5d98026e086a901d83dbe87018.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/2481fe5d98026e086a901d83dbe87018.png',
       },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/30e0837d4877df289c220ea0ae174078.jpg',
@@ -364,24 +292,6 @@ const t: ShipType = {
         zh:
           'While you perform a primary attack at attack range 3, roll 1 additional attack die.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d0e698f59696c15b60d7eaa1e2d51eeb.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/e4be58a465266a6beaa7ca224a290fa2.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/83afaf0eb1cba934e9f8586562e2ad70.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/d6a9da358d7d1209a3f850b3c09bc2d6.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/813e329630503d4e949081f801510d57.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/e282c9fff96ed0f6d5e4fb8fca284d32.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d0e698f59696c15b60d7eaa1e2d51eeb.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d0e698f59696c15b60d7eaa1e2d51eeb.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/31ad38b2fc0d39f37ad82e1c70f62135.jpg',
       slots: ['Talent', 'Modification', 'Tech'],
@@ -422,29 +332,11 @@ const t: ShipType = {
         zh:
           'Only pilots who have demonstrated both exceptional skill and unwavering dedication are rewarded with coveted positions in the First Order squadrons operating secretly against the New Republic during the Cold War.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/97e72d0f5dc8c2dd21a355e3258f37dd.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/4395a91544002d33e98bd37d863d5b9d.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/8dcc5c532d3c85a64c7e9f23e2f65f54.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/3392f08950bb331283c4a4c0cf733faf.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/993f244ce51df685c4357701977a4375.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/73bc11deffa56961ac511548d020b438.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/97e72d0f5dc8c2dd21a355e3258f37dd.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/97e72d0f5dc8c2dd21a355e3258f37dd.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/4e5010f7b60902288dac36bf646dcde9.jpg',
       slots: ['Talent', 'Modification', 'Tech'],
       ffg: 403,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -489,24 +381,6 @@ const t: ShipType = {
           'At the start of the Engagement Phase, you may choose a friendly ship at range 0-1. If you do, that ship removes 1 stress token.',
         zh:
           'At the start of the Engagement Phase, you may choose a friendly ship at range 0-1. If you do, that ship removes 1 stress token.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/7de4e91de0906eb548bfe3a08a1b6abe.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/8c7e8ff8b3f9868984c23f4c43f4fd39.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/3ec7cd2c8b56d095596f05752f757390.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/1b80cc5c3786572672d61c9e3164c16a.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/c918b4839d94caa90b32668a2bd2b8d0.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/089a80e727d9c6c46e917d898cb1cfa7.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/7de4e91de0906eb548bfe3a08a1b6abe.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/7de4e91de0906eb548bfe3a08a1b6abe.png',
       },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/d3f8b9baf0bbd8a7d2b785a616dacbcf.jpg',
@@ -558,24 +432,6 @@ const t: ShipType = {
         zh:
           "While another friendly ship performs an attack, if you are at range 0-1 of the defender, you may suffer 1 [Critical Hit] damage to change 1 of the attacker's results to a [Critical Hit] result.",
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/333cbf0da8849edb38c4e93944d8fe57.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/24c4375b17150296954d6a8b11437237.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/e0538a3b17e88837dccf01f99da42c7d.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/9d07ae2e530f2ea89122b7dfc8988a49.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/a4ddf3a64710c9e79fb65eff68a13112.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/882f06bd4a16597c5081261e46bfab19.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/333cbf0da8849edb38c4e93944d8fe57.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/333cbf0da8849edb38c4e93944d8fe57.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/9fce0e75539a225e9ff1536e466c3c13.jpg',
       slots: ['Modification', 'Tech'],
@@ -616,29 +472,11 @@ const t: ShipType = {
         zh:
           "Unhampered by a cumbersome galactic bureaucracy, technologies originally researched by the Empire's TIE Advanced program are now mass-produced on First Order starfighters. As a result, TIE/fo pilots enjoy higher survival rates than their predecessors in the Galactic Empire.",
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/be1062b6a7a8e4644223146342990a02.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/5ff5c5fc6e76d7b9e39d31f65f8e6b9f.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/e3b61e35936634f9d9a79707bfa4b60a.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/3c113e54c4476cf9dec006e3c37cf229.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/94500b786bbba0c00596cc8ae38502c5.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/f045fabccb32cf9c6f9c93da3fb5b90d.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/be1062b6a7a8e4644223146342990a02.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/be1062b6a7a8e4644223146342990a02.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/d20d6cc2a052afc783d535c802874d23.jpg',
       slots: ['Modification', 'Tech'],
       ffg: 404,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -674,29 +512,11 @@ const t: ShipType = {
         zh:
           "Trained from childhood aboard Resurgent-class Star Destroyers in deep space, many First Order TIE pilots have never even set foot on a planet's surface.",
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e911cd18f04225bbd36c48114b56f3cc.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/fd2f89ca78eb190170a30cf8ffedb5f0.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/3191a56d907ab53906693cd889209108.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/5e74aaadcd7f57bed26dfe21420962f3.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/cb29b911dac86a4090a9e97225ade979.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/21e86344ce131ab9a0ce4a3abf5e705d.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e911cd18f04225bbd36c48114b56f3cc.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e911cd18f04225bbd36c48114b56f3cc.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/610cb198e4cda75aab0207841c6e4a87.jpg',
       slots: ['Modification', 'Tech'],
       ffg: 405,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -724,24 +544,6 @@ const t: ShipType = {
       limited: 1,
       cost: 27,
       xws: 'lieutenantrivas',
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/7188ec2eb699261dbd47a15df6164f4c.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/58b33406cb1291404f0ecb929023b7e5.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/6ae374ea7b3e0f3d1046695ca3bfc38d.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/6611df3848baab9c18450f182746b21b.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/7e41fcec23b7638c95f12ee23b425bc8.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/01ffc98ad5af41aaead9ee9a8a1e8fa3.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/7188ec2eb699261dbd47a15df6164f4c.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/7188ec2eb699261dbd47a15df6164f4c.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/66f969d008fc995bd940bf1ab647109f.jpg',
       ability: {
@@ -806,24 +608,6 @@ const t: ShipType = {
           'Gdy nie masz uszkodzeń, traktuj swoją inicjatywę jak gdyby miała wartość 7.',
         pt: 'While you are not damaged, treat your initiative value as 7.',
         zh: 'While you are not damaged, treat your initiative value as 7.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/79a9d780d3540647af1e057113869294.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/a6bd26c6ed03fe375e44e392f1fb4f4d.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/e75fb0225c3692298ceb89e8784b42a1.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/3b4204852ce0786eaef5379c9f036e48.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/a0d78df88fb9c51e54242484a89e8eb3.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/1c601dbcba4541b910c3cfcde99a5de8.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/79a9d780d3540647af1e057113869294.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/79a9d780d3540647af1e057113869294.png',
       },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/eb788d9622d096c6d96c96cf20dc1939.jpg',

@@ -1,6 +1,6 @@
-import { api } from './request';
+import { api } from "./request";
 
-export const sync = async (access_token: string) => {
+export const sync = async (access_token?: string | null) => {
   const query = `query {
       squadrons {
         uid
@@ -121,12 +121,16 @@ export const sync = async (access_token: string) => {
       removedTournaments
     }`;
 
+  if (!access_token) {
+    return;
+  }
+
   const result: any = await api(access_token, query);
   if (result && result.data) {
     if (result.data.squadrons && result.data.squadrons !== null) {
       result.data.squadrons.map((ss: any) =>
         ss.pilots.map((p: any) => {
-          Object.keys(p.upgrades || {}).map(key => {
+          Object.keys(p.upgrades || {}).map((key) => {
             if (!p.upgrades[key] || p.upgrades.length === 0) {
               delete p.upgrades[key];
             }
@@ -139,7 +143,7 @@ export const sync = async (access_token: string) => {
     }
     if (result.data.blueprints) {
       result.data.blueprints.map((b: any) => {
-        Object.keys(b.upgrades || {}).map(key => {
+        Object.keys(b.upgrades || {}).map((key) => {
           if (!b.upgrades[key] || b.upgrades.length === 0) {
             delete b.upgrades[key];
           }

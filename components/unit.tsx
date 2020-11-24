@@ -39,10 +39,10 @@ const Unit = ({
   // }
 
   return (
-    <div className="flex flex-1 items-center">
-      <div className="flex flex-1 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 justify-end">
-        <div className="flex flex-1 flex-row justify-between text-sm ">
-          <div className="flex flex-row items-center">
+    <div className="flex flex-1">
+      <div className="flex flex-1 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 justify-end items-center">
+        <div className="flex flex-1 flex-row justify-between text-sm">
+          <div className="flex flex-row">
             <span className="font-medium text-orange-400 mr-1">
               {ship.pilot.initiative}
             </span>

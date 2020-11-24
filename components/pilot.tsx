@@ -2,7 +2,6 @@ import React from "react";
 import conditionData from "../assets/data/conditions";
 import { Pilot } from "../types";
 import Error from "./error";
-import XwingFont from "./fonts/xwing";
 import FormattedText from "./formatted-text";
 
 type Props = {
@@ -56,12 +55,6 @@ const PilotComponent = ({ pilot, count, limitWarning, minimized }: Props) => {
               />
             );
           })}
-
-        <div className="flex flex-row">
-          {pilot.slots.map((slot, i) => (
-            <XwingFont key={`${slot}_${i}`} icon={slot} />
-          ))}
-        </div>
       </div>
       {errorText && <Error text={errorText} />}
     </div>

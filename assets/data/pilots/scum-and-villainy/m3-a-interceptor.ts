@@ -106,24 +106,6 @@ const t: ShipType = {
         zh:
           'MandalMotors\' M3-A "Scyk" Interceptor is purchased in large quantities by the Hutt Cartel and the Car\'das smugglers due to its low cost and customizability.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_190.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/a4060d0be5eb5348185c5e61c20504a1.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/fb8ce0d2f77e4d4e6a3773cc2f1b9a8b.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/5b3d7b79b12df6e0b57b5c63c2792298.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/f8866d8ff9a3c323e3a8cba983b4c2b1.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/4db257362974aef1eb9b04fd30250d16.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/f9adb1cebe060bafa9afdfc5ebaed436.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_190.png',
-      },
       slots: ['Modification'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_190.jpg',
@@ -173,24 +155,6 @@ const t: ShipType = {
           'Após travar uma mira, você deveremover todas as suas fichas de focoe de desvio. Então, receba a mesma quantidade de fichas de foco e de desvioque a nave mirada possui.',
         zh:
           'After you acquire a lock, you must remove all of your focus and evade tokens. Then, gain the same number of focus and evade tokens that the locked ship has.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_184.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/b43e9c77d91f79e7b9dec1780c3df342.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/9264beac172163a8565e9712e8eed53f.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/446fa7004f6ed11ce4ea05ef6d979278.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/8577c334199011e13219d8c69c19f067.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/f125a065adfe958c4547408c694426e3.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/b59836315ec5c738b93b61662ab9138c.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_184.png',
       },
       slots: ['Talent', 'Modification'],
       artwork:
@@ -242,24 +206,6 @@ const t: ShipType = {
         zh:
           'While you defend or perform an attack, you may suffer 1 [Hit] damage to reroll any number of your dice.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_187.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/1771b30b50c8bd38a3471838f785be3e.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/3da23cc074f5f8f844085347f969f8da.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/d170d9c16abb20f945b5fa96cb2032d9.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/e0f41ecbe4156dbfe8786e16f73fb2f5.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/c8cf9a559342d95cac44fd064ae02b1c.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/f4476ffefd1bf079f260418bb284f726.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_187.png',
-      },
       slots: ['Modification'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_187.jpg',
@@ -309,24 +255,6 @@ const t: ShipType = {
           'Após você defender ou realizar um ataque, se o ataque errou, receba 1 ficha de desvio.',
         zh:
           'After you defend or perform an attack, if the attack missed, gain 1 evade token.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_185.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/1cbe1ba8bc08eda73992c138ca5a0d42.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/54f9ad1d4e70860fcf30db75fed00b44.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/8ba00b7d1423fd7d35c343c654c07e2e.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/2a2eced15b795de5003217b2a71c084a.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/000b72fed39e411fdabdf3abd83f522a.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/839da6d3435418f91988d27b06df0e45.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_185.png',
       },
       slots: ['Talent', 'Modification'],
       artwork:
@@ -378,24 +306,6 @@ const t: ShipType = {
         zh:
           'At the start of the Engagement Phase, you may gain 1 disarm token to recover 1 [Charge] on 1 of your equipped upgrades.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_186.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/31da489d9b7cf2505ac2721464232fc3.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/247015ba83766e8dbff9d15637eb4677.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/bcb0858e95198c498934af90ad35b343.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/f6f9de57c05c832134cd9df89952d0be.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/6a278cfde1decca8d7f2d193ec184533.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/e9bc1ddd9e27fb827cc24bd54bd76a7f.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_186.png',
-      },
       slots: ['Talent', 'Modification'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_186.jpg',
@@ -426,7 +336,7 @@ const t: ShipType = {
       },
       initiative: 5,
       limited: 1,
-      cost: 41,
+      cost: 40,
       xws: 'serissu',
       ability: {
         en:
@@ -445,24 +355,6 @@ const t: ShipType = {
           'Quando uma nave amiga em alcance0-1 defender, ela pode rerrolar 1 de seus dados.',
         zh:
           'While a friendly ship at range 0-1 defends, it may reroll 1 of its dice.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_183.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/f60af554097f8a1ad7a2af37a4c06b03.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/c2446c246aac56fc2b32df8e209abc2b.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/1b50a1ce06ec57a267869295e32664a7.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/9ff5e7f1b466661d65e02bb239c2f891.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/506448a85dc10e2c6e9a559b2d3287d1.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/e0b648ddabbf617c89ec844a5ba70d7f.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_183.png',
       },
       slots: ['Talent', 'Modification'],
       artwork:
@@ -514,24 +406,6 @@ const t: ShipType = {
         zh:
           'While you defend or perform an attack, after you roll or reroll your dice, if you have the same result on each of your dice, you may add 1 matching result.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_188.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/fd8d7ad239318fd55fd26fe9564e21a1.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/04b652c07be0395996d295c2a7ec6f03.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/7af73adc6c0efa671b857726ff1c4169.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/fcd847fde72e76c6145d61216ad49599.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/977df01814fa9d6301553458f3d19002.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/5890650e6cc1480b2fc54ed78e2301ae.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_188.png',
-      },
       slots: ['Modification'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_188.jpg',
@@ -572,24 +446,6 @@ const t: ShipType = {
         zh:
           "The defeat of Black Sun ace Talonbane Cobra by Car'das smugglers turned the tide of the Battle of Tansarii Point Station. Survivors of the clash are respected throughout the sector.",
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_189.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/895f2afc1691ff92b5f2813c9f434956.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/c96c8290baf62e29d840dfe9e02c71f7.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/6dc0bb9599b57c0d87bde69343b54a5c.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/550af34e63a50c770aa087606287702a.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/088882902b4605735e6f29f69995b058.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/03f8399f22e2ae397b099343a124dded.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_189.png',
-      },
       slots: ['Talent', 'Modification'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_189.jpg',
@@ -598,56 +454,17 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'G4R-G0R V/M',
-        de: 'G4R-G0R V/M',
-        fr: 'G4R-G0R V/M',
-        es: 'G4R-G0R V/M',
-        it: 'G4R-G0R V/M',
-        pl: 'G4R-G0R V/M',
-        pt: 'G4R-G0R V/M',
-        zh: 'G4R-G0R V/M',
-      },
-      xws: 'g4rg0rvm',
+      name: { en: 'G4R-G0R V/M' },
+      xws: 'g4rgorvm',
       initiative: 0,
       limited: 1,
-      caption: {
-        en: 'Tilted Droid',
-        de: 'Schräger Droide',
-        fr: 'Droïde Tilté',
-        es: 'Droide desquiciado',
-        it: 'Tilted Droid',
-        pl: 'Tilted Droid',
-        pt: 'Tilted Droid',
-        zh: 'Tilted Droid',
-      },
+      caption: { en: 'Tilted Droid' },
       hyperspace: true,
-      epic: true,
       slots: ['Modification'],
       ability: {
         en:
           'After you defend, each other ship at range 0 suffers 1 [Critical Hit] damage.',
-        de:
-          'Nachdem du verteidigt hast, erleidet jedes andere Schiff in Reichweite 0 1 [Critical Hit]-Schaden.',
-        fr:
-          'Après que vous avez défendu, chaque autre vaisseau à portée 0 subit 1 dégât [Critical Hit].',
-        es:
-          'Después de que te defiendas, toda otra nave que tengas a alcance 0 sufre 1 de daño [Critical Hit].',
-        it:
-          'After you defend, each other ship at range 0 suffers 1 [Critical Hit] damage.',
-        pl:
-          'After you defend, each other ship at range 0 suffers 1 [Critical Hit] damage.',
-        pt:
-          'After you defend, each other ship at range 0 suffers 1 [Critical Hit] damage.',
-        zh:
-          'After you defend, each other ship at range 0 suffers 1 [Critical Hit] damage.',
       },
-      shipActions: [
-        { difficulty: 'White', type: 'Calculate' },
-        { difficulty: 'White', type: 'Evade' },
-        { difficulty: 'White', type: 'Lock' },
-        { difficulty: 'White', type: 'Barrel Roll' },
-      ],
       cost: 28,
       ffg: 636,
       artwork:
@@ -655,20 +472,29 @@ const t: ShipType = {
       image: {
         en:
           'https://sb-cdn.fantasyflightgames.com/card_images/en/22cf051c016aacea162995df8e9129a2.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/5047d997a7a6f5ec74ffedae33f3b6d6.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/6eb16b6ba0ff4de8f7d3dc259b7b1736.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/cc19f128d645ecfcca4659429b8a8626.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/22cf051c016aacea162995df8e9129a2.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/22cf051c016aacea162995df8e9129a2.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/22cf051c016aacea162995df8e9129a2.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/22cf051c016aacea162995df8e9129a2.png',
+      },
+      shipActions: [
+        { difficulty: 'White', type: 'Calculate' },
+        { difficulty: 'White', type: 'Evade' },
+        { difficulty: 'White', type: 'Lock' },
+        { difficulty: 'White', type: 'Barrel Roll' },
+      ],
+      epic: false,
+    },
+    {
+      xws: 'g4rg0rvm',
+      ffg: 636,
+      name: { en: 'G4R-G0R V/M' },
+      cost: 28,
+      limited: 1,
+      initiative: 0,
+      caption: { en: 'Tilted Droid' },
+      slots: ['Modification'],
+      hyperspace: true,
+      epic: true,
+      ability: {
+        en:
+          'After you defend, each other ship at range 0 suffers 1 [Critical Hit] damage.',
       },
     },
   ],

@@ -35,24 +35,6 @@ const t: UpgradeBase[] = [
           zh:
             'Action: Spend 1 [Charge] to perform a [Cloak] action. At the start of the Planning Phase, roll 1 attack die. On a [Focus] result, decloak or discard your cloak token.',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_57.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/41c853af396acea40b0d6fed11b056a2.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_57.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/20c9e63ca9aa036ad38e8f353fa34468.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/389ae84fcde148440e083cec6e74fa69.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/3724dfa53f9ca7fd42bdd5411d107c24.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/e7bb5022f824351764d5b3117dca7d60.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_57.png',
-        },
         slots: ['Illicit'],
         charges: { value: 2, recovers: 0 },
         artwork:
@@ -99,24 +81,6 @@ const t: UpgradeBase[] = [
           zh:
             'Before you activate, you may spend 1 [Charge]. If you do, until the end of the round, you can perform actions and execute red maneuvers, even while stressed.',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_58.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/7e224494ca890f92cbff442c450c94dd.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_58.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/3d52fcc6b9e3a00b4232e320b3987169.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/7b2c2ad3a910b550c0c5e2a3dfb46ab1.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/8baa805948a0a99382330b81849476a7.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/b81e776b58872db0c9a4d871fb57bf33.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_58.png',
-        },
         slots: ['Illicit'],
         charges: { value: 1, recovers: 0 },
         artwork:
@@ -124,7 +88,7 @@ const t: UpgradeBase[] = [
         ffg: 287,
       },
     ],
-    cost: { value: 2 },
+    cost: { value: 3 },
     hyperspace: true,
     epic: true,
   },
@@ -161,24 +125,6 @@ const t: UpgradeBase[] = [
             'Após ser destruído, cada outra nave em alcance 0-1 sofre 1 dano [Hit].',
           zh:
             'After you are destroyed, each other ship at range 0-1 suffers 1 [Hit] damage.',
-        },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_59.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/c3a3ed6162f8c0daab8e204442706a6d.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_59.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/13a879220b44683e8ed9853047c20a13.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/2f6a5a28976eecf5f6deefd72c6ef32a.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/3945fc4efeae96047fe9037da9ff6623.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/fedd3a2e34a112b8e33bbff3f0f2296c.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_59.png',
         },
         slots: ['Illicit'],
         artwork:
@@ -224,24 +170,6 @@ const t: UpgradeBase[] = [
           zh:
             'Before you engage, you may gain 1 ion token and 1 disarm token. If you do, each ship at range 0 suffers 1 [Hit] damage.',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_60.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/b8e8d3d43a1774c00c877b8cb86270e2.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_60.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/a5c214dca39be3d89df7745bc2e694b7.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/8227df858ea5aa68ddaf59ef437140bb.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/a2f4f4ca09a90328f476382f88842c75.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/80f2559024eb2d8d3f4093ebc3de2696.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_60.png',
-        },
         slots: ['Illicit'],
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_60.jpg',
@@ -286,24 +214,6 @@ const t: UpgradeBase[] = [
           zh:
             '在你将执行移动前，你可以花费1个护盾。如果你如此做，不执行操作盘上展示的移动，而是执行白色(0[Stationary])，然后获得1枚压力标记。',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_61.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/955d065d0b309d9911239a18c3452f32.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_61.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/43eaa5d5a8fc684b27eff3446ceebcb7.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/24ac20cc2c83b1e5a00a4aa324abaf36.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/b0d317af47c1e9e7d317d7ae8f78fef7.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/8f778eed5a6bbd7ce86b599392dab4a9.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_61.png',
-        },
         slots: ['Illicit'],
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_61.jpg',
@@ -312,19 +222,9 @@ const t: UpgradeBase[] = [
     ],
     cost: {
       variable: 'initiative',
-      values: {
-        '0': 0,
-        '1': 1,
-        '2': 2,
-        '3': 3,
-        '4': 4,
-        '5': 5,
-        '6': 6,
-        '7': 7,
-        '8': 8,
-      },
+      values: { '0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6 },
     },
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -359,24 +259,6 @@ const t: UpgradeBase[] = [
           pt:
             'Ação: Gaste 1 [Charge].Solte 1 carregamento solto usando o gabarito (1 [Straight]).',
           zh: '行动：花费1[Charge]。使用(1[Straight])移动条投下1个散装货物。',
-        },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_62.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/53b7e76a3165c4471abb960e9b3c4f4f.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_62.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/9dffe968f396e3f3cc808afd3bacd35b.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/d0b7f32da4a279c46e95192e78bb5dd7.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/fab324baf8c986f7fa8a7600ea355ec3.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/6b452e0e173ebf38a2134bf6a50f5c53.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_62.png',
         },
         slots: ['Illicit'],
         charges: { value: 1, recovers: 0 },
@@ -431,33 +313,15 @@ const t: UpgradeBase[] = [
         },
         slots: ['Illicit'],
         ffg: 650,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/1622f5d9e279b54d4610820f5dd31a95.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/2159f59c78a5785be5d200e50047c254.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/8f55f3258eb4dc25c53d9dba11869415.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/12c218fcef1cbdb60fa270c42f1f154d.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/1622f5d9e279b54d4610820f5dd31a95.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/1622f5d9e279b54d4610820f5dd31a95.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/1622f5d9e279b54d4610820f5dd31a95.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/1622f5d9e279b54d4610820f5dd31a95.png',
-        },
       },
     ],
-    cost: { value: 2 },
+    cost: { value: 1 },
     restrictions: [{ action: { type: 'SLAM' } }],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
-    limited: 0,
+    limited: 1,
     xws: 'quickreleaselocks',
     sides: [
       {
@@ -465,11 +329,11 @@ const t: UpgradeBase[] = [
         type: 'Illicit',
         ability: {
           en:
-            "During the System Phase, you may spend 1 [Charge] to place 1 cargo crate drift in your [Rear Arc] at range 0. It cannot overlap a ship this way. This card's [Charge] cannot be recovered.",
+            "During the System Phase, you may spend 1 [Charge] to drop 1 cargo crate drift in your [Rear Arc] at range 0. It cannot overlap a ship this way.. This card's [Charge] cannot be recovered.",
         },
         charges: { value: 2, recovers: 0 },
         slots: ['Illicit'],
-        ffg: -1,
+        ffg: 753,
       },
     ],
     cost: { value: 5 },
@@ -486,11 +350,11 @@ const t: UpgradeBase[] = [
         type: 'Illicit',
         ability: {
           en:
-            'At the end of Setup, you may spend up to 1 [Charge] from each of your equipped <strong>Mine</strong> upgrades to place the corresponding device in the play area beyond range 2 of any enemy ship or other device.',
+            'At the end of Setup, you may spend up to 1 [Charge] from each of your equipped Mine upgrades to place the corresponding device in the play area beyond range 2 of any enemy ship, strategic marker, or other device.',
         },
         charges: { value: 2, recovers: 0 },
         slots: ['Illicit'],
-        ffg: -1,
+        ffg: 754,
       },
     ],
     cost: { value: 3 },
@@ -507,16 +371,35 @@ const t: UpgradeBase[] = [
         type: 'Illicit',
         ability: {
           en:
-            'At the end of Setup, you may choose up to six other friendly, standard ships in your deployment area at range 0-1. If you do, place those ships anywhere at range 0-1.',
+            'At the end of Setup, you may choose any number of other friendly, non-huge ships in your deployment area at range 0-1. If you do, place those ships anywhere in the same deployment area.',
         },
         slots: ['Illicit'],
-        ffg: -1,
+        ffg: 755,
       },
     ],
     cost: { value: 8 },
     restrictions: [{ baseSizes: ['Huge'] }],
     hyperspace: false,
     epic: true,
+  },
+  {
+    limited: 0,
+    xws: 'falsetranspondercodes',
+    hyperspace: false,
+    epic: false,
+    sides: [
+      {
+        ability: {
+          en:
+            'After you acquire a lock on an object or an object acquires a lock on you, if you have 1 active [Charge], lose 1 [Charge] and jam that object, ignoring range restrictions.',
+        },
+        title: { en: 'False Transponder Codes' },
+        type: 'Illicit',
+        slots: ['Illicit'],
+        ffg: 877,
+      },
+    ],
+    cost: { value: 2 },
   },
 ];
 

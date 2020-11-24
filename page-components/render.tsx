@@ -1,9 +1,16 @@
 import { useDispatch } from "react-redux";
-import { components } from "react-select";
 import { setUpgrade } from "../actions/squadrons";
-import XwingFont from "../components/fonts/xwing";
 import Select from "../components/select";
-import UpgradeComponent from "../components/upgrade";
+import {
+  HardpointOption,
+  HardpointPlaceholder,
+  HardpointSingleValue,
+} from "../components/select/hardpoint";
+import {
+  UpgradeOption,
+  UpgradePlaceholder,
+  UpgradeSingleValue,
+} from "../components/select/upgrade";
 import { Ship, Slot, Squadron, UpgradeSide } from "../types";
 import { SlotValue, upgradesForSlot, UpgradeValue } from "./loader";
 
@@ -17,68 +24,12 @@ export const renderHardpoint = (
   squadron: Squadron,
   onChange: (value: Slot | null) => void
 ) => {
-  const SingleValue = () => (
-    <div className="flex flex-1">
-      <div className="flex flex-1 flex-row items-center text-xs sm:text-sm">
-        <div className="flex flex-col justify-center">
-          <XwingFont className="mr-1" icon={"Hardpoint"} />
-        </div>
-
-        <div className="flex flex-1 flex-col justify-center mx-1">
-          <div className="flex flex-row items-center">
-            <span>{"Hardpoint"}</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-
-  const Option = ({ data, ...rest }: any) => (
-    // @ts-ignore
-    <components.Option {...rest}>
-      <div className="flex flex-1">
-        <div className="flex flex-1 flex-row items-center">
-          <div className="flex flex-col justify-center">
-            <XwingFont className="mr-1" icon={data.label || "Hardpoint"} />
-          </div>
-
-          <div className="flex flex-1 flex-col justify-center mx-1">
-            <div className="flex flex-row items-center">
-              <span className="text-xs sm:text-sm">
-                {data.label || "Hardpoint"}
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </components.Option>
-  );
-
-  const Placeholder = (props: any) => (
-    // @ts-ignore
-    <components.Placeholder {...props}>
-      <div className="flex flex-1">
-        <div className="flex flex-1 flex-row items-center">
-          <div className="flex flex-col justify-center">
-            <XwingFont className="mr-1" icon={"Hardpoint"} />
-          </div>
-
-          <div className="flex flex-1 flex-col justify-center mx-1">
-            <div className="flex flex-row items-center">
-              <span className="text-xs sm:text-sm">{"Hardpoint"}</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </components.Placeholder>
-  );
-
   return (
     <Select
       components={{
-        SingleValue,
-        Option,
-        Placeholder,
+        SingleValue: HardpointSingleValue,
+        Option: HardpointOption,
+        Placeholder: HardpointPlaceholder,
         IndicatorSeparator: null,
         DropdownIndicator: null,
       }}
@@ -107,7 +58,6 @@ export const renderUpgrade = (
   value: SlotValue,
   squadron: Squadron,
   ship: Ship,
-  minimized: boolean,
   index: number
 ) => {
   const dispatch = useDispatch();
@@ -116,49 +66,12 @@ export const renderUpgrade = (
     ? { label: "", value: "", upgrade: value.upgrade }
     : undefined;
 
-  const SingleValue = ({ data }: any) => (
-    <div className="flex flex-1">
-      <UpgradeComponent
-        upgrade={data.upgrade}
-        showType={true}
-        side={0}
-        count={undefined}
-        minimized={minimized}
-      />
-    </div>
-  );
-
-  const Option = ({ data, ...rest }: any) => (
-    // @ts-ignore
-    <components.Option {...rest}>
-      <div className="flex flex-1" key={data.upgrade.uid}>
-        <UpgradeComponent
-          upgrade={data.upgrade || ""}
-          showType={true}
-          side={0}
-          count={undefined}
-          minimized={minimized}
-        />
-      </div>
-    </components.Option>
-  );
-
-  const Placeholder = (props: any) => (
-    // @ts-ignore
-    <components.Placeholder {...props}>
-      <span>
-        <XwingFont icon={props.children} className="mr-1" />
-        <span className="text-xs sm:text-sm mx-1">{props.children}</span>
-      </span>
-    </components.Placeholder>
-  );
-
   return (
     <Select
       components={{
-        SingleValue,
-        Option,
-        Placeholder,
+        SingleValue: UpgradeSingleValue,
+        Option: UpgradeOption,
+        Placeholder: UpgradePlaceholder,
         IndicatorSeparator: null,
         DropdownIndicator: null,
       }}

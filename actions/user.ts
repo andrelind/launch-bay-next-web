@@ -3,21 +3,21 @@ export type UserLogin = {
   name?: string;
   provider?: Provider;
   email?: string;
-  jwt?: string;
+  jwt?: string | null;
 };
 
-export const USER_DID_LOGIN = 'USER_DID_LOGIN';
-export const USER_LOGOUT = 'USER_LOGOUT';
+export const USER_DID_LOGIN = "USER_DID_LOGIN";
+export const USER_LOGOUT = "USER_LOGOUT";
 
-export type Provider = 'Facebook' | 'Google';
+export type Provider = "Facebook" | "Google";
 
 export type UserDidLoginAction = {
-  type: 'USER_DID_LOGIN';
+  type: "USER_DID_LOGIN";
   payload: UserLogin;
 };
 
 export type UserLogoutAction = {
-  type: 'USER_LOGOUT';
+  type: "USER_LOGOUT";
 };
 
 export type Action = UserDidLoginAction | UserLogoutAction;

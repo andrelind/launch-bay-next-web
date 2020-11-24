@@ -87,24 +87,6 @@ const t: ShipType = {
         zh:
           'At the start of the Engagement Phase, you may choose 1 or more friendly ships at range 0-3. If you do, transfer all enemy lock tokens from the chosen ships to you.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_142.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/ad4687183e10003fca4644207f05c26e.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/a8096db564db5d32896045a71012307f.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/1de084a6e5e38765c8bccf8e9ae7fedb.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/0ac24f2a12b792b4a817d68c85d6a609.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/215dd24d6256f3c9cc4c456e530aa86d.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/67651ae0f1bb60eb1c35eb9c7db41a25.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_142.png',
-      },
       slots: ['Sensor', 'Cannon', 'Crew', 'Crew', 'Modification', 'Title'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_142.jpg',
@@ -154,24 +136,6 @@ const t: ShipType = {
           'No início da Fase de Ativação, você pode gastar 1 [Charge]. Se fizer isso, quando naves amigas travarem miras nesta rodada,elas devem travar miras além de alcance3, em vez de em alcance 0-3.',
         zh:
           'At the start of the Activation Phase, you may spend 1 [Charge]. If you do, while friendly ships acquire locks this round, they must acquire locks beyond range 3 instead of at range 0-3.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_143.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/def2d7bb0fad92f69cb0325788d8068e.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/e551369acbdcb090166a86f951dd6d76.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/5b9ed6d53f20036a620c6ee2a53539da.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/ba54688fbe8fbc77639504693821fedb.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/fbb33d3751ff3eeb696e07319993dc95.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/14dd1238fb30a2f4f54b9ac0b39c40e4.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_143.png',
       },
       charges: { value: 2, recovers: 0 },
       slots: ['Sensor', 'Cannon', 'Crew', 'Crew', 'Modification', 'Title'],
@@ -224,24 +188,6 @@ const t: ShipType = {
         zh:
           'After you a perform a [Coordinate] action, if the ship you chose performed an action on your action bar, you may perform that action.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_144.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/6fc45186bec8c23c0ffeb53ed1bb6ecb.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/b5edd025c1606cc2a63b869340481224.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/88e82932f1eb5bfcc1b72b9141dd147d.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/43ca76ad07b812be35832c0d9db20123.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/215ce50a03396e9c388a7946fbdc92c1.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/fabe43e697cb8775bb0083f2816c37e1.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_144.png',
-      },
       slots: ['Sensor', 'Cannon', 'Crew', 'Crew', 'Modification', 'Title'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_144.jpg',
@@ -281,24 +227,6 @@ const t: ShipType = {
           'Famosa por seu design de três asas e conjunto de sensores avançados, a shuttle classe Lambda desempenha um papel crítico como uma naveutilitária leve da Marinha Imperial.',
         zh:
           'Noted for its tri-wing design and advanced sensor suite, the Lambda-class shuttle serves a critical role as a light utility craft in the Imperial Navy.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_145.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/7c0667b5fed0704c65b4d3b4f17ecb87.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/750fd735f23128c165a4f6e29702108d.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/2ebb4847193dfe9b626948637fdb4679.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/76b4e1cb4073b07647040e987dde86eb.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/35cb0992ff92f6c6389846b7bbff2135.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/f710ccbbd4ae214fdc64d477d995ab13.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_145.png',
       },
       slots: ['Sensor', 'Cannon', 'Crew', 'Crew', 'Modification', 'Title'],
       artwork:

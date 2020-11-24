@@ -112,29 +112,11 @@ const t: ShipType = {
         zh:
           'Baktoid Armor Workshop developed the Hyena as a strike craft compatible with Trade Federation Vulture swarm tactics.',
       },
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       cost: 25,
       slots: ['Torpedo', 'Missile', 'Device', 'Modification', 'Configuration'],
       ffg: 568,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/749bdc89c3da6b8034154780959e9c34.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/4d11a838def10e6deb35f00ad3422d91.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/b0b27d3572ce7b3c85097531514d83a9.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/25fedc8133e07dd81eb26f3b4f2d87aa.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/749bdc89c3da6b8034154780959e9c34.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/749bdc89c3da6b8034154780959e9c34.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/749bdc89c3da6b8034154780959e9c34.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/749bdc89c3da6b8034154780959e9c34.png',
-      },
     },
     {
       name: {
@@ -177,24 +159,6 @@ const t: ShipType = {
           'If you would drop a device, you may launch that device instead, using the same template.',
         zh:
           'If you would drop a device, you may launch that device instead, using the same template.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/099422de35fb5ad2c2d238237e7dfe2c.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/d40bd2c71a3ab175300d14f48cf7c602.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/67f921d4b221c07d335d540dc7505d3a.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/c5f352aee3926d14494b12c6f050e538.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/099422de35fb5ad2c2d238237e7dfe2c.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/099422de35fb5ad2c2d238237e7dfe2c.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/099422de35fb5ad2c2d238237e7dfe2c.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/099422de35fb5ad2c2d238237e7dfe2c.png',
       },
       hyperspace: true,
       epic: true,
@@ -249,24 +213,6 @@ const t: ShipType = {
         pt: 'Preservation Protocol Not Found',
         zh: 'Preservation Protocol Not Found',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3e647295c7237a5eb36b94d887eb8e56.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/5536b542c298ba999a21bb567d8ea6e6.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/a7619483d329834d8b41a23735179e30.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/706c2801e45ac60e4f5680a405a52e62.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3e647295c7237a5eb36b94d887eb8e56.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3e647295c7237a5eb36b94d887eb8e56.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3e647295c7237a5eb36b94d887eb8e56.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3e647295c7237a5eb36b94d887eb8e56.png',
-      },
     },
     {
       name: {
@@ -310,24 +256,6 @@ const t: ShipType = {
         zh:
           'While you perform a special attack, if a friendly ship with the Networked Calculations ship ability has a lock on the defender, you may ignore the [Focus], [Calculate], or [Lock] requirement of that attack.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/254bc7be63cc9f4e629198f8d45f2f9b.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/05c0e17e0fac18d368e4e0b4e6bef1fb.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/e42133a293c7dcf757ea97bb4ee09404.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/66f5b6cffa7a27384586e7ed569a93bb.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/254bc7be63cc9f4e629198f8d45f2f9b.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/254bc7be63cc9f4e629198f8d45f2f9b.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/254bc7be63cc9f4e629198f8d45f2f9b.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/254bc7be63cc9f4e629198f8d45f2f9b.png',
-      },
       hyperspace: true,
       epic: true,
       cost: 28,
@@ -366,25 +294,7 @@ const t: ShipType = {
         zh:
           'The droid armies of the Separatists are callous to the plight of civilians and make no effort to limit collateral damage.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/cf510ca885a5f85395542b9aa51fba73.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/f884b7caec6031929d973df5480a2896.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/4957cfce5b07bf0af2d4e4640f09b6c7.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/8bf2c482adcc6ab8c3a8481b99937cd5.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/cf510ca885a5f85395542b9aa51fba73.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/cf510ca885a5f85395542b9aa51fba73.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/cf510ca885a5f85395542b9aa51fba73.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/cf510ca885a5f85395542b9aa51fba73.png',
-      },
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       cost: 28,
       slots: ['Torpedo', 'Missile', 'Device', 'Modification', 'Configuration'],
@@ -431,24 +341,6 @@ const t: ShipType = {
           'At the start of the Engagement Phase, you may spend 1 calculate token to perform a [Coordinate] action. You cannot coordinate ships that do not have the Networked Calculations ship ability.',
         zh:
           'At the start of the Engagement Phase, you may spend 1 calculate token to perform a [Coordinate] action. You cannot coordinate ships that do not have the Networked Calculations ship ability.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1befc5619a02e2ea8b7bfb8df93471a1.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/97a51d8154382023d19b7102ab0c1714.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/18b7220fc558be0b2ebbc051ae44c3f5.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/452e52361cc8977f40a6141d89d4fec4.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1befc5619a02e2ea8b7bfb8df93471a1.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1befc5619a02e2ea8b7bfb8df93471a1.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1befc5619a02e2ea8b7bfb8df93471a1.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1befc5619a02e2ea8b7bfb8df93471a1.png',
       },
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },

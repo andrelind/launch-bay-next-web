@@ -86,24 +86,6 @@ const t: ShipType = {
         zh:
           'After you perform a [Focus] action, you may transfer 1 of your focus tokens to a friendly ship at range 1-2.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_58.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/ab9bfd87f51d80b62f28bccec1ee9db0.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/bf73c3bc42d9a35a47af8853711e1ab3.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/7676a5eb5c1742a276f6fb7b2efda416.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/751105c877478c26a5c7f83afef73d5f.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/715cddc1ce5fe3ca1f3392884069acf7.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/07864692b0020c08f6f6328f5075c0f0.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_58.png',
-      },
       slots: [
         'Sensor',
         'Crew',
@@ -150,24 +132,6 @@ const t: ShipType = {
           'Usada para deslocar tropas encobertas pelaescuridão ou até focos de batalha, a U-wing UT-60D atende a necessidade da aliança de ter um transporte de tropas rápido e robusto.',
         zh:
           "Used for deploying troops under the cover of darkness or into the heat of battle, the UT-60D U-wing fulfills the Rebellion's need for a swift and hardy troop transport.",
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_60.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/772a1015bf5819e7ade8a89890202001.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/a070af98054082b35e222d80408306d3.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/af85aaa98330fe37d04d245b5f526bdb.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/e86ba2d0190527eaa9a74da93f8c7d03.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/7dfac9a30737f9c1ba31edfd4c0ef539.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/77250e9122a73cc36b8a7c1ed529b81f.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_60.png',
       },
       slots: ['Sensor', 'Crew', 'Crew', 'Modification', 'Configuration'],
       artwork:
@@ -218,24 +182,6 @@ const t: ShipType = {
           'Naves amigas conseguem travar mirasem objetos que estejam em alcance0-3 de qualquer nave amiga.',
         zh:
           'Friendly ships can acquire locks onto objects at range 0-3 of any friendly ship.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_54.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/38582b0b9867052778281c82e7f1e4b4.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/df0dcc0bb2b1dec95c379de7196bc6ff.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/04d2d2e52f3d228c5f39f3c26bbba486.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/04f26782563fe1b3d2960bbf04d614e5.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/64298bfa348f9dad1ccb6a4d29d7680a.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/9671fff64bd8b70d5debc7a412b2acfc.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_54.png',
       },
       slots: [
         'Talent',
@@ -294,24 +240,6 @@ const t: ShipType = {
         zh:
           'At the start of the Activation Phase, you may choose 1 friendly ship at range 1-3. If you do, that ship removes 1 stress token.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_56.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/eae82ec8e6304d26b6e6447054b52c9d.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/f539dadb5bad821aaa1db253998319e3.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/83e65f98cc211db380882befd2bad496.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/bf2856af49478fec62aa64480e5c48b3.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/aa3d190b83010e801c79eb804aa9a86c.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/3c732c0208ccdc01fceb048d116d8ce8.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_56.png',
-      },
       slots: [
         'Talent',
         'Sensor',
@@ -368,24 +296,6 @@ const t: ShipType = {
           'Após uma nave inimiga executar uma manobra, se ela estiver em alcance 0, você pode realizar uma ação.',
         zh:
           'After an enemy ship executes a maneuver, if it is at range 0, you may perform an action.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_59.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/cf1d9115494a972929f86537672df1fc.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/e19bb9b6bcb5f4ba62b9f1a209b731b3.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/5b7a11b7ca33a6452c083d4ae4f21080.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/742d8c2d1a31e7ab44d16b4fec100251.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/a396dd7405a0a10c5a6127ad6eefa7f9.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/356a2a0919ad6c188faf2c43c90a06bf.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_59.png',
       },
       slots: [
         'Talent',
@@ -444,24 +354,6 @@ const t: ShipType = {
         zh:
           'While a friendly ship at range 0-2 defends, the attacker cannot reroll more than 1 attack die.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_57.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/feb610e724e2823b26fe86103ce318f5.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/98424bc6cb20f078f5c35893f6f56d32.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/105890b4a567bcebc5c16033a983577e.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/990704e4d0509078d4e9d5dabf35a757.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/d4d39d3aad6f32448d90397d353e0b39.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/0da7e60abcfcce60aa6eedefd2eb2876.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_57.png',
-      },
       slots: [
         'Talent',
         'Sensor',
@@ -518,24 +410,6 @@ const t: ShipType = {
         'Modification',
         'Configuration',
       ],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_61.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/204164581e72e179287224ab5a5e600f.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/b3bd5a00ccc29c112a8526a86c7fdc7f.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/33288ff03193b00c59d619fcdd22d57b.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/f5879fe9e14971f16878f0f20ffc7945.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/d0ede59ef79ecc6e8c5df88c1ac84020.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/b7c66e322d944e3e841cd97921d5f562.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_61.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_61.jpg',
       ffg: 61,
@@ -584,24 +458,6 @@ const t: ShipType = {
           'Quando uma nave amiga danificada em alcance 0-3 realizar um ataque, ela pode rerrolar 1 dado de ataque.',
         zh:
           'While a damaged friendly ship at range 0-3 performs an attack, it may reroll 1 attack die.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_55.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/9aa4cdfb66d7b7cda8ff78812c1d02ca.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/ad73f7726cf0c43856f60483b171d719.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/1bdc7f5f2ca6952c6a27b53e62cda673.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/5ae60607bfe2d293c4884f74eedd38cd.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/03e1b5f73fae0ef034222a894deaa875.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/50f2799806af4a459d0f74effb5b39ca.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_55.png',
       },
       slots: [
         'Talent',
@@ -662,24 +518,6 @@ const t: ShipType = {
         pl: 'After you gain a stress token, gain 1 calculate token.',
         pt: 'After you gain a stress token, gain 1 calculate token.',
         zh: 'After you gain a stress token, gain 1 calculate token.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c65da3d5378ec32bd024325dbd80b3d6.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/43a8e3340af80bb300578f427be9e3f4.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/326a606893fce304f9d3f2dbd8d81857.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/f90fb12b1bf61865df23b979d254719c.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c65da3d5378ec32bd024325dbd80b3d6.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c65da3d5378ec32bd024325dbd80b3d6.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c65da3d5378ec32bd024325dbd80b3d6.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c65da3d5378ec32bd024325dbd80b3d6.png',
       },
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },

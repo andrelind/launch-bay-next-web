@@ -121,24 +121,6 @@ const t: ShipType = {
         zh:
           'While you decloak, you must use the (2 [Bank Left]) or (2 [Bank Right]) template instead of the (2 [Straight]) template.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_132.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/e9254c524502e876d016303f6ca5bc14.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/4e13e5dc38b03eeb45b8d4d15b1b4f03.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/4ad9674f9e506c6984e6083bee16b8b4.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/aa25e2ee63f5f2399562a04f0920244a.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/ffce1d15caeac42135e74b6e55dfc9e5.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/092624bd4c9cc85c02d997233d5cc1f2.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_132.png',
-      },
       slots: ['Talent', 'Sensor', 'Modification', 'Gunner'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_132.jpg',
@@ -186,24 +168,6 @@ const t: ShipType = {
           'Após você realizar um ataque queacertou, receba 1 ficha de desvio.',
         zh: 'After you perform an attack that hits, gain 1 evade token.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_131.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/82dbc98a8c89631b0447f6c866875f13.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/ebf11a860c43b839ed7aaa3f144f8286.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/77141bc1513f949ea716fb3af346bbfd.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/00bc8952ecb77de9c2966cfa4a164b09.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/ce2de23cc6951ad6a835b7f94febf4e6.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/2c6644c529fecadbfa30a9a7aefc728e.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_131.png',
-      },
       slots: ['Talent', 'Sensor', 'Modification', 'Gunner'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_131.jpg',
@@ -244,24 +208,6 @@ const t: ShipType = {
         zh:
           'The primary result of a hidden research facility on Imdaar Alpha, the TIE phantom achieves what many thought was impossible: a small starfighter equipped with an advanced cloaking device.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_134.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/dcdf953d4e05f4db2d1271b5509f218f.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/153f8cdbcbc232e11e6204a9e6b6978b.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/be3faff907fdc949e41412dc99254acf.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/d831076d4943466a7304e857fb27072e.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/6045e753653fc8a53ae6e428d1fbdf7b.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/d44dba7b1165194101065125137aea93.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_134.png',
-      },
       slots: ['Sensor', 'Modification', 'Gunner'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_134.jpg',
@@ -301,24 +247,6 @@ const t: ShipType = {
           'Dispondo de um hiperpropulsor e escudos, a TIE phantom também é equipada com cinco canhõesde laser, garantindo poder de fogo considerávelpara um caça Imperial.',
         zh:
           'Featuring a hyperdrive and shields, the TIE phantom is also equipped with five laser cannons, giving it substantial firepower for an Imperial fighter.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_133.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/68c3119ee87144b3262e91a08fecda08.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/63ce3f559f43c16fc97f0cf92cca4544.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/b992855555fa8116b253206c72bb274a.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/abdb28c1fb274b5269de416cf75f197e.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/a725a65affefe61988a3f851669937bb.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/bda2a5a475e861217ed8a7b59f50209b.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_133.png',
       },
       slots: ['Talent', 'Sensor', 'Modification', 'Gunner'],
       artwork:

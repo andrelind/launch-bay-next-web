@@ -103,7 +103,7 @@ const t: ShipType = {
       },
       initiative: 4,
       limited: 1,
-      cost: 82,
+      cost: 81,
       xws: 'colonelvessery',
       ability: {
         en:
@@ -122,24 +122,6 @@ const t: ShipType = {
           'Quando realizar um ataque contra umanave mirada, após rolar os dados de ataque, você pode travar uma mira no defensor.',
         zh:
           'While you perform an attack against a locked ship, after you roll attack dice, you may acquire a lock on the defender.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_123.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/31beca875d6f279dd4bf8a81ae0d54d3.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/079565568c83dbcc35189d7de6b80d79.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/a9906799442c4a7eb8eec4b230acdf67.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/397a65890f3e02a5829d699e8b6c3cab.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/8fff7f8a80f1bd9403a8cd328a5173fb.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/47af672cdb572430e2c87a2472c71e02.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_123.png',
       },
       slots: ['Talent', 'Sensor', 'Cannon', 'Missile'],
       artwork:
@@ -171,7 +153,7 @@ const t: ShipType = {
       },
       initiative: 4,
       limited: 1,
-      cost: 80,
+      cost: 79,
       xws: 'countessryad',
       ability: {
         en:
@@ -190,24 +172,6 @@ const t: ShipType = {
           'Quando for executar uma manobra [Straight], você pode aumentar a dificuldade dela. Se fizer isso, execute-a, em vez disso, como se ela fosse uma manobra [Koiogran Turn].',
         zh:
           'While you would execute a [Straight] maneuver, you may increase the difficulty of the maneuver. If you do, execute it as a [Koiogran Turn] maneuver instead.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_124.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/6c70c7ddababe22811d7f25aeb2962d7.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/faf4a97744e0b1589dab3f735cc8ee24.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/b81691a7cd1765b1acb105a41237f131.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/377e73c0f948a51d09f8c7770d09e02e.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/fdd2a6de042617ead50f8d3aa44d987d.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/30945cc4416465d1a047c76248a1ff99.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_124.png',
       },
       slots: ['Talent', 'Sensor', 'Cannon', 'Missile'],
       artwork:
@@ -229,7 +193,7 @@ const t: ShipType = {
       },
       initiative: 1,
       limited: 0,
-      cost: 67,
+      cost: 68,
       xws: 'deltasquadronpilot',
       text: {
         en:
@@ -249,29 +213,11 @@ const t: ShipType = {
         zh:
           'In addition to its missile launchers and six wingtip laser cannons, the formidable TIE defender is equipped with deflector shields and a hyperdrive.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_126.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/ee316dd8ce971113a5c78d1dc1c76dd2.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/72d75dbff0ca1f99db34dc2bbc2ca433.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/880f835f48595002fefb6f245e06e16a.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/bc34344d135caa55f52ce6fd0e735a5a.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/ad774c54b43571d8043cf7c4460464f5.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/3a23662fdf2755e41c79377fe741e5c7.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_126.png',
-      },
       slots: ['Sensor', 'Cannon', 'Missile'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_126.jpg',
       ffg: 126,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -287,7 +233,7 @@ const t: ShipType = {
       },
       initiative: 4,
       limited: 0,
-      cost: 74,
+      cost: 73,
       xws: 'onyxsquadronace',
       text: {
         en:
@@ -307,29 +253,11 @@ const t: ShipType = {
         zh:
           'The experimental TIE defender outclasses all other contemporary starfighters, though its size, speed, and array of weapons come at a tremendous cost in credits.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_125.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/9c035d5d274f4bad343a0b6997f9373c.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/864a91425b55545640729bbbea7d5517.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/ac3e466a3880914c8ceaaffc12b814de.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/c479b86fcb4dcd42c028eb7be2a62c67.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/d3ab71227be889e91a55d8912f424bc8.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/f5198291d4039c911454a23f281a555a.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_125.png',
-      },
       slots: ['Talent', 'Sensor', 'Cannon', 'Missile'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_125.jpg',
       ffg: 125,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -355,7 +283,7 @@ const t: ShipType = {
       },
       initiative: 5,
       limited: 1,
-      cost: 79,
+      cost: 78,
       xws: 'rexlerbrath',
       ability: {
         en:
@@ -374,24 +302,6 @@ const t: ShipType = {
           'Após realizar um ataque que acertou, se você estiver desviando, exponha 1 dascartas de dano do defensor.',
         zh:
           "After you perform an attack that hits, if you are evading, expose 1 of the defender's damage cards.",
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_122.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/0d0745257510a0089e42c11a1ca77eca.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/db97b85bae62b717ce8444ff31c8c721.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/a93a76cc11482810c2f71d43f0b5fd41.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/054ddc1111d62b66c8f60e013fddf736.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/f083b31051edd5aea0db3a3ddbb1f67d.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/4f59d9cc461c78b1a6d55f836b0bb1b7.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_122.png',
       },
       slots: ['Talent', 'Sensor', 'Cannon', 'Missile'],
       artwork:

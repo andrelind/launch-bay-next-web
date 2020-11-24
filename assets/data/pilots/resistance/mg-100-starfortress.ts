@@ -78,24 +78,6 @@ const t: ShipType = {
         zh:
           'Whether the ordnance silos of their StarFortresses are loaded with proton bombs or relief supplies, the heroic crews of Cobalt Squadron dedicate their lives to making a difference in the galaxy.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/6b6a3bb8049699e2d66fe09531e8bc00.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/6995248dc18b0fe588ab93219f05d066.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/8cafa528e419366871eae2dad68b377a.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/e2122975583a0f04d84342fdcfcba2f1.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/96005dbe9275412d2ab8f8db9a1c6e18.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/6c64dbe3e2f16fbca57ddd2a4dee0997.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/6b6a3bb8049699e2d66fe09531e8bc00.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/6b6a3bb8049699e2d66fe09531e8bc00.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/514351d5c41a8341ea5da5673269d917.jpg',
       cost: 51,
@@ -154,24 +136,6 @@ const t: ShipType = {
           'While you perform a primary attack, if the defender is at range 0-1 of at least 1 friendly device, roll 1 additional die.',
         zh:
           'While you perform a primary attack, if the defender is at range 0-1 of at least 1 friendly device, roll 1 additional die.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/b386dc25736682ebc785b15551de903b.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/7b214809776e076223529a14fed423c6.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/0e9ea6a37c09233e6e0dca7fac88807c.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/8576baad12a2242ebd8ff01845fc2fa4.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/ba2ac91c6960ca1a68f1707bd87bff8e.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/5151c7e63cb50165fd8230838d7a32d7.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/b386dc25736682ebc785b15551de903b.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/b386dc25736682ebc785b15551de903b.png',
       },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/d927ccf08a9444340378449fe71e9f70.jpg',
@@ -232,24 +196,6 @@ const t: ShipType = {
         zh:
           "While you defend, if the attacker is in a friendly ship's [Single Turret Arc], you may add 1 [Focus] result to your roll.",
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/0d494986a24e6c55efae066a43161b0d.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/50e0a8c4a82c2ede69e88674adb18eea.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/6dcf785387f025759fe16d3267fb9a3d.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/0a2473d326a4c9c8f45a3f947e4a464a.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/528694cc24cdcb83f276d5b84be8e84c.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/465ac0883c3d7b43bdfaf45542a5938f.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/0d494986a24e6c55efae066a43161b0d.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/0d494986a24e6c55efae066a43161b0d.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/511b878f719e9fa59a50cdf980d10ead.jpg',
       cost: 54,
@@ -309,27 +255,9 @@ const t: ShipType = {
         zh:
           'After you perform an attack, if the defender is in your [Single Turret Arc], assign the Rattled condition to the defender.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c9189c7e510b4d734d4d78c4f595010f.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/b3d9058a619c583a05f49660e5a80af8.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/88c8787aa2350175711484bffec527b3.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/5bdb3a646710c00e12c891ebb7fe07f3.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/255ddfef0df156d585f271424de02644.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/746288ea49065fbe1eec51bbc54a6260.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c9189c7e510b4d734d4d78c4f595010f.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c9189c7e510b4d734d4d78c4f595010f.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/74ca7444aec38cb0034b67b04f6aaa76.jpg',
-      cost: 56,
+      cost: 54,
       conditions: ['rattled'],
       slots: [
         'Sensor',
@@ -387,27 +315,9 @@ const t: ShipType = {
         zh:
           'After you fully execute a blue or white maneuver, if you have not dropped or launched a device this round, you may drop 1 device.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/f58fe0b57dc4a9c878627f0fea9cf1ef.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/7b82eda08efd8bf0a3ee1a3b81b45c03.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/ed9ecb6b89f13b6592d06b878422bf68.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/c5e8306a25a3d890892feb7c422f7224.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/faccf03b87e3c549f67733124c8e40e4.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/8ab280217785373cc5cb4c5711a8acea.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/f58fe0b57dc4a9c878627f0fea9cf1ef.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/f58fe0b57dc4a9c878627f0fea9cf1ef.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/bbac51ca4ba44f26d90a53b6c5db5e2c.jpg',
-      cost: 58,
+      cost: 56,
       slots: [
         'Sensor',
         'Crew',
@@ -464,27 +374,9 @@ const t: ShipType = {
         zh:
           'Before you would drop a bomb, you may place it in the play area touching you instead.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/43d9a0555f719a4cbe1ffe905fd38c46.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/e15953c4ec06a3295574306e5c012e2a.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/3be91cbf06dcdccab9c0af208a35b384.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/6e86cd397f47b1930d774f8d94aaaaae.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/012ae42976228156f153fa8792759313.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/26d200a3d7ba48bda88569d58865c6af.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/43d9a0555f719a4cbe1ffe905fd38c46.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/43d9a0555f719a4cbe1ffe905fd38c46.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/dafd2937accc362f766ca0da3308ccbc.jpg',
-      cost: 58,
+      cost: 56,
       slots: [
         'Sensor',
         'Crew',
@@ -557,24 +449,6 @@ const t: ShipType = {
       hyperspace: false,
       epic: true,
       ffg: 640,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/fab73e7af97d9d6169f0f504b60d34c2.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/a1105a2311de4ad9189873616ded5c1a.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/0be7340be1e9d20fa2ff0134230f7b43.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/4e4f854639182bdf7c1c1f13f172acd9.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/fab73e7af97d9d6169f0f504b60d34c2.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/fab73e7af97d9d6169f0f504b60d34c2.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/fab73e7af97d9d6169f0f504b60d34c2.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/fab73e7af97d9d6169f0f504b60d34c2.png',
-      },
     },
   ],
 };

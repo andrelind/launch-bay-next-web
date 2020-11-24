@@ -47,7 +47,7 @@ const t: ShipType = {
       name: { en: 'Outer Rim Patrol' },
       text: {
         en:
-          'Capable of carrying four TIE fighters and operating independently for long periods of time, the Gozanti-class cruiser is a common sight in the skies of downtrodden worlds across the Outer Rim.',
+          "The Raider-class corvette is one of the Empire's smallest warships, often used for reconnaissance missions, surgical strikes, or suppressing enemy starfighters with its powerful ordnance.",
       },
       initiative: 8,
       engagement: 0,
@@ -64,9 +64,11 @@ const t: ShipType = {
         'Team',
         'Cargo',
         'Title',
+        'Command',
       ],
       hyperspace: false,
       epic: true,
+      ffg: 707,
     },
   ],
 };

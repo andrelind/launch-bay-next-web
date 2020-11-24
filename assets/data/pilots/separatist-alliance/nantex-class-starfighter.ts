@@ -90,7 +90,7 @@ const t: ShipType = {
       initiative: 3,
       limited: 0,
       xws: 'stalgasinhiveguard',
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       text: {
         en:
@@ -113,24 +113,6 @@ const t: ShipType = {
       slots: ['Talent'],
       cost: 33,
       ffg: 609,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e97a0ae22847e0b71d920a0df9dfcfab.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/fba8f2a1121e7a39d843121bf379df90.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/884a0027ebc7f28f65d6f5f64281762f.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e97a0ae22847e0b71d920a0df9dfcfab.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e97a0ae22847e0b71d920a0df9dfcfab.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/0bff72101f2344e081497118cf9a131a.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e97a0ae22847e0b71d920a0df9dfcfab.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e97a0ae22847e0b71d920a0df9dfcfab.png',
-      },
     },
     {
       name: {
@@ -178,24 +160,6 @@ const t: ShipType = {
         pl: 'Egzekutor Arcyksięcia',
         pt: "Archduke's Enforcer",
         zh: "Archduke's Enforcer",
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/42265df53c90026a58ac96b0acd3c1f8.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/c8f7697c72d05a75d51bc9cf3f827da3.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/417e99d35528cace4854ccda95817ffb.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/42265df53c90026a58ac96b0acd3c1f8.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/42265df53c90026a58ac96b0acd3c1f8.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/3f71bd14fbef5a3a539b997ae31ff303.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/42265df53c90026a58ac96b0acd3c1f8.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/42265df53c90026a58ac96b0acd3c1f8.png',
       },
     },
     {
@@ -245,24 +209,6 @@ const t: ShipType = {
         pt: 'Hive Guard Captain',
         zh: 'Hive Guard Captain',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/f1c76ce6ff266c23099686392efef565.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/380f5538eb37b202bbf9e4c7ecb74163.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/a66583a77d812a6df7b4af95054df44c.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/f1c76ce6ff266c23099686392efef565.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/f1c76ce6ff266c23099686392efef565.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/f4b6ddfdfcf8fafeb16339295c3fd8a6.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/f1c76ce6ff266c23099686392efef565.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/f1c76ce6ff266c23099686392efef565.png',
-      },
     },
     {
       name: {
@@ -310,24 +256,6 @@ const t: ShipType = {
         pl: 'Oportunistyczny as',
         pt: 'Opportunistic Ace',
         zh: 'Opportunistic Ace',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/07504533be45d13cb82d71ea11d234f7.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/c15f1bd62e41b929cba729fddeb8d551.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/be9c4c5427d5f044b96a6890b06734f4.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/07504533be45d13cb82d71ea11d234f7.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/07504533be45d13cb82d71ea11d234f7.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/96f2e2dc90dc0bb871ab55c6244fa3cc.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/07504533be45d13cb82d71ea11d234f7.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/07504533be45d13cb82d71ea11d234f7.png',
       },
     },
     {
@@ -377,24 +305,6 @@ const t: ShipType = {
         pt: 'Handy Engineer',
         zh: 'Handy Engineer',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d2d0764f83a2740f407082e934986ff2.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/f9de58c8a35d383aa960f44b907ab334.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/a48cd26e303a1d96d07773af4b04840a.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d2d0764f83a2740f407082e934986ff2.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d2d0764f83a2740f407082e934986ff2.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/b750a5f67d4d4342a0658f65fceab2f7.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d2d0764f83a2740f407082e934986ff2.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d2d0764f83a2740f407082e934986ff2.png',
-      },
     },
     {
       name: {
@@ -412,24 +322,6 @@ const t: ShipType = {
       initiative: 4,
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/5c32b5d481ad922be7a0ec4a3743d1d6.jpg',
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d2d62b6070fdf59b58db79aadb845d54.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/3d33f0fc6d7c77b564839eb02f0e5f63.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/be49dfe97e043e5ff975af89566065af.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d2d62b6070fdf59b58db79aadb845d54.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d2d62b6070fdf59b58db79aadb845d54.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/cc342b65f75e200877a345ec574319c7.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d2d62b6070fdf59b58db79aadb845d54.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d2d62b6070fdf59b58db79aadb845d54.png',
-      },
       text: {
         en:
           'The Petranaki Arena is a massive edifice on Geonosis that was a key site in the first battle of the Clone Wars.',
@@ -448,7 +340,7 @@ const t: ShipType = {
         zh:
           'The Petranaki Arena is a massive edifice on Geonosis that was a key site in the first battle of the Clone Wars.',
       },
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       limited: 0,
       slots: ['Talent', 'Talent'],

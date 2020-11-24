@@ -44,7 +44,7 @@ const t: ShipType = {
       name: { en: 'Echo Base Evacuees' },
       text: {
         en:
-          'A craft used since before the Clone Wars, the CR90 corvette is favored by the Royal House of Alderaan for its versatility.',
+          "The GR-75 medium transport acquitted itself well at battles such as the evacuation of Hoth, where several of these ships were pivotal to the Rebel forces' escape.",
       },
       initiative: 7,
       engagement: 1,
@@ -52,18 +52,19 @@ const t: ShipType = {
       cost: 55,
       xws: 'echobaseevacuees',
       slots: [
-        'Command',
-        'Hardpoint',
         'Turret',
+        'Hardpoint',
         'Crew',
         'Crew',
         'Team',
         'Cargo',
         'Cargo',
         'Title',
+        'Command',
       ],
       hyperspace: false,
       epic: true,
+      ffg: 709,
     },
   ],
 };

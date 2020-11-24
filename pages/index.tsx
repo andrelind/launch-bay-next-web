@@ -1,9 +1,8 @@
 import { faCopy, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { NextPage } from "next";
+import { NextApiRequest, NextPage } from "next";
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { components } from "react-select";
 import { AnyAction, Store } from "redux";
 import { v4 as uuid } from "uuid";
 import {
@@ -13,18 +12,25 @@ import {
   copyShip,
   importSquadron,
   removeShip,
+  removeSquadron,
   toggleFormat,
 } from "../actions/squadrons";
 import { fullSync } from "../actions/sync";
 import { userDidLogin } from "../actions/user";
 import { buttonBlue, red } from "../assets/colors";
 import { Layout } from "../components/layout";
-import PilotComponent from "../components/pilot";
 import Select from "../components/select";
-import ShipType from "../components/ship-type";
-import Unit from "../components/unit";
+import { PilotOption } from "../components/select/pilot";
+import { ShipTypeOption } from "../components/select/ship";
+import { UnitSingleValue } from "../components/select/unit";
+import { copyToClipboard } from "../helpers/clipboard";
 import { keyFromSlot } from "../helpers/convert";
-import { useMinimized, useSquadronXWS } from "../helpers/hooks";
+import { useJWT, useMinimized, useSquadronXWS } from "../helpers/hooks";
+import {
+  exportAsText,
+  exportAsTTS,
+  exportAsXws,
+} from "../helpers/import+export";
 import { deserialize, serialize } from "../helpers/serializer";
 import { loadSquadron } from "../helpers/unit";
 import {
@@ -36,6 +42,8 @@ import {
   ShipValue,
 } from "../page-components/loader";
 import { renderHardpoint, renderUpgrade } from "../page-components/render";
+import { getSession } from "../passport/iron";
+import { UserState } from "../reducers/user";
 import { sync } from "../requests/sync";
 import { AppState } from "../store/state";
 import { Faction, Ship, Slot, Upgrade } from "../types";
@@ -59,6 +67,7 @@ type Props = {
 const EditPage: NextPage<Props> = ({ uid }) => {
   // const router = useRouter();
   const dispatch = useDispatch();
+  const jwt = useJWT();
 
   const xws = useSquadronXWS(uid);
   const squadron = loadSquadron(xws);
@@ -100,28 +109,42 @@ const EditPage: NextPage<Props> = ({ uid }) => {
     return null;
   }
 
-  const SingleValue = ({ data }: any) => (
-    <Unit
-      hideUpgrades={true}
-      showCostWithUpgrades={true}
-      ship={data.ship}
-      minimized={minimized}
-    />
-  );
-
-  const Option = ({ data, ...rest }: any) => (
-    // @ts-ignore
-    <components.Option {...rest}>
-      <ShipType shipType={data.ship} minimized={true} />
-    </components.Option>
-  );
-
-  const PilotOption = ({ data, ...rest }: any) => (
-    // @ts-ignore
-    <components.Option {...rest}>
-      <PilotComponent pilot={data.pilot} minimized={true} />
-    </components.Option>
-  );
+  const actions: {
+    title: string;
+    className?: string;
+    onClick: () => void;
+  }[] = [
+    {
+      title: "Print",
+      onClick: () => {
+        const url = `/print?lbx=${serialize(xws)}&mode=${
+          minimized ? "compact" : "full"
+        }`;
+        window.open(url, "_ blank");
+      },
+    },
+    {
+      title: "Export XWS",
+      onClick: () => copyToClipboard(exportAsXws(squadron)),
+    },
+    {
+      title: "Export TTS",
+      onClick: () => copyToClipboard(exportAsTTS(squadron)),
+    },
+    {
+      title: "Export as text",
+      onClick: () => copyToClipboard(exportAsText(squadron)),
+    },
+  ];
+  if (jwt) {
+    actions.push({
+      title: "Delete squadron",
+      className: "text-red-500",
+      onClick: () => {
+        dispatch(removeSquadron(uid));
+      },
+    });
+  }
 
   return (
     <Layout
@@ -129,68 +152,8 @@ const EditPage: NextPage<Props> = ({ uid }) => {
       points={xws.cost}
       format={squadron.format}
       onChangeFormat={() => dispatch(toggleFormat(squadron.uid))}
+      actions={actions}
     >
-      {/* <Menu
-            id="simple-menu"
-            anchorEl={anchorEl}
-            keepMounted
-            open={Boolean(anchorEl)}
-            onClose={() => setAnchorEl(null)}
-          >
-            <MenuItem
-              onClick={() => {
-                setAnchorEl(null);
-                const url = `/print?lbx=${serialize(xws)}&mode=${
-                  minimized ? "compact" : "full"
-                }`;
-                window.open(url, "_ blank");
-              }}
-            >
-              Open print page
-            </MenuItem>
-            <MenuItem
-              onClick={() => {
-                setAnchorEl(null);
-                copyToClipboard(exportAsXws(squadron));
-              }}
-            >
-              Copy XWS
-            </MenuItem>
-            <MenuItem
-              onClick={() => {
-                setAnchorEl(null);
-                copyToClipboard(exportAsTTS(squadron));
-              }}
-            >
-              Copy TTS
-            </MenuItem>
-            <MenuItem
-              onClick={() => {
-                setAnchorEl(null);
-                copyToClipboard(exportAsText(squadron));
-              }}
-            >
-              Copy as text
-            </MenuItem>
-            <MenuItem
-              style={{ color: red }}
-              onClick={() => {
-                setAnchorEl(null);
-                dispatch(removeSquadron(uid));
-                if (allSquadrons.length > 1) {
-                  const u =
-                    allSquadrons[0].uid !== uid
-                      ? allSquadrons[0].uid
-                      : allSquadrons[1].uid;
-                  router.push(`/?uid=${u}`);
-                }
-              }}
-            >
-              Delete squadron
-            </MenuItem>
-          </Menu>
-         */}
-
       <div className="flex flex-1 flex-col">
         {squadron.ships.map((s) => {
           const showHardpointPicker =
@@ -214,11 +177,11 @@ const EditPage: NextPage<Props> = ({ uid }) => {
               key={s.uid}
               className="my-2 bg-white rounded-lg shadow px-2 py-6 md:px-5 md:py-4 relative"
             >
-              <div className="divide-y divide-gray-200">
+              <div className="divide-y divide-gray-200 md:mr-5">
                 <Select
                   components={{
                     Option: PilotOption,
-                    SingleValue,
+                    SingleValue: UnitSingleValue,
                     IndicatorSeparator: null,
                     DropdownIndicator: null,
                   }}
@@ -245,10 +208,10 @@ const EditPage: NextPage<Props> = ({ uid }) => {
                 <div className="mt-1"></div>
               </div>
 
-              <div className="mt-1 grid grid-cols-2 gap-1 sm:grid-cols-2 lg:grid-cols-4">
+              <div className="mt-1 grid grid-cols-2 gap-1 sm:grid-cols-2 lg:grid-cols-4 md:mr-5">
                 {upgrades.map((upgrade, index) => (
                   <div key={uuid()}>
-                    {renderUpgrade(upgrade, squadron, s, minimized, index)}
+                    {renderUpgrade(upgrade, squadron, s, index)}
                   </div>
                 ))}
                 {showHardpointPicker &&
@@ -282,7 +245,7 @@ const EditPage: NextPage<Props> = ({ uid }) => {
 
       <div className="my-2 bg-white rounded-lg shadow px-5 py-4 sm:px-6">
         <Select
-          components={{ Option, IndicatorSeparator: null }}
+          components={{ Option: ShipTypeOption, IndicatorSeparator: null }}
           isSearchable={false}
           readOnly
           instanceId={"selectShip"}
@@ -327,13 +290,14 @@ EditPage.getInitialProps = async ({ store, query, req }) => {
   const { getState, dispatch } = appStore;
   const state = getState();
 
-  // @ts-ignore
-  if (req && req.user) {
-    // @ts-ignore
-    const user: UserState = ctx.req.user;
-    dispatch(userDidLogin(user));
-    const { data } = await sync(user.jwt);
-    dispatch(fullSync(data));
+  if (req) {
+    const user: UserState = await getSession(req as NextApiRequest);
+    if (user) {
+      console.log({ user });
+      dispatch(userDidLogin(user));
+      const { data } = await sync(user.jwt);
+      dispatch(fullSync(data));
+    }
   }
 
   // Om vi inte har den sparad så är det dax att skapa, vi sätter nytt uid då

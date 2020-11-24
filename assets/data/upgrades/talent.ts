@@ -36,24 +36,6 @@ const t: UpgradeBase[] = [
             '当你执行行动失败后，如果此时你没有绿色标记，你可以执行一个[Focus]行动。',
         },
         slots: ['Talent'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/73927eb0dc7bc2bb0de194f1af1dead2.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/5a6ce1b1eb6b4aed3a39bdeee4a83e47.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/73927eb0dc7bc2bb0de194f1af1dead2.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/508312cf826dd4caaf98f6a372092024.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/61bbaef2b03ed97e9e49cec7094ea598.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/00ff1d8a061599bebd672e3d05bb0796.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/cca64806a9abaa6f19dc49598c0d65b3.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/73927eb0dc7bc2bb0de194f1af1dead2.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_156.jpg',
         ffg: 381,
@@ -100,30 +82,12 @@ const t: UpgradeBase[] = [
         },
         slots: ['Talent'],
         charges: { value: 1, recovers: 0 },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_1.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/a85e4f8c8e9888366a88b56cf5a56006.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_1.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/7c16f63073911d61acde3c6ea895fe13.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/813fd0a1f3d75c893cd09e084ba42c94.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/37799c839271aef46552a7eced0ae741.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/2f98b815459e81874d82cadc16a81d59.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_1.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_1.jpg',
         ffg: 230,
       },
     ],
-    cost: { value: 2 },
+    cost: { value: 3 },
     hyperspace: false,
     epic: true,
   },
@@ -162,24 +126,6 @@ const t: UpgradeBase[] = [
             '你执行白色[Boost]行动时，你可以将其视为红色移动并使用(1[Turn Left])或(1 [Turn Right])移动条。',
         },
         slots: ['Talent'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_2.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/1907bb1391a2f85f2f6b55597a18a198.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_2.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/e0cad78330bdaf878de041039ece4187.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/c9cba77b36d7cbbe54549b156979b2af.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/9b2ee70e16ac19eb8083ab7f4f038432.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/e7a8a7383802dedcfc2b1eb475a75be7.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_2.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_2.jpg',
         ffg: 231,
@@ -229,24 +175,6 @@ const t: UpgradeBase[] = [
         },
         slots: ['Talent'],
         grants: [{ action: { type: 'Evade', difficulty: 'Red' }, value: 1 }],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_3.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/aaad8ab47faf39b120dd7681e808b656.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_3.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/029d3d3dd27ee8136270f512825236f1.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/7a6591eb400e61209f3147780afa9fff.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/abc7b10b44086b3194c18d8f85d7cd66.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/7c96885fe23bf634c4c0fd657f25bc40.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_3.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_3.jpg',
         ffg: 232,
@@ -293,24 +221,6 @@ const t: UpgradeBase[] = [
         },
         slots: ['Talent'],
         charges: { value: 1, recovers: 0 },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_4.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/b3d309bd53daa15b54d93dc4d10fe91d.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_4.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/c81728ee24beaf643877254a63b42c09.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/528668efdd4f4945521444ffe610f26b.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/6ee629caa5746d14b18f4f381dcbb239.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/5c1522eeebecf8ca383e494f22c4ccb1.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_4.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_4.jpg',
         ffg: 233,
@@ -359,24 +269,6 @@ const t: UpgradeBase[] = [
         grants: [
           { action: { type: 'Barrel Roll', difficulty: 'White' }, value: 1 },
         ],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_5.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/d214fe6fe7631cdd006ae11311ded99e.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_5.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/4d59339de67ea5b8c9da07626a9327d1.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/7e9bf96e8c26854f9250dd2bc53ae8b4.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/7fe5bc87472724549b149cc536111d26.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/a2cc879909bc6be79dfe130b30db49cc.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_5.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_5.jpg',
         ffg: 234,
@@ -384,7 +276,7 @@ const t: UpgradeBase[] = [
     ],
     cost: {
       variable: 'size',
-      values: { Small: 2, Medium: 3, Large: 4, Huge: 200 },
+      values: { Small: 2, Medium: 3, Large: 4, Huge: 5 },
     },
     restrictions: [{ action: { type: 'Barrel Roll', difficulty: 'Red' } }],
     hyperspace: true,
@@ -423,24 +315,6 @@ const t: UpgradeBase[] = [
             'While you perform a primary attack, if you are not shielded, you may change 1 [Focus] result to a [Hit] result.',
           zh:
             'While you perform a primary attack, if you are not shielded, you may change 1 [Focus] result to a [Hit] result.',
-        },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/8b164bdb2b401b6741519f6c6e067550.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/de3827c5fae3475e12b51dabdb9f28f4.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/a1142f6d53f23ac912bfb1a1e9ec41a7.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/3d7ec7028c17083e00240df4b5659d63.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/1a20ecc4086cf15a0cfa1951a22f498d.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/619e6a2d4ae9d4eaf6bbfcf7dfc9b241.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/8b164bdb2b401b6741519f6c6e067550.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/8b164bdb2b401b6741519f6c6e067550.png',
         },
         slots: ['Talent'],
         ffg: 459,
@@ -485,24 +359,6 @@ const t: UpgradeBase[] = [
           zh:
             '当你执行[Front Arc]基础攻击时，如果本次攻击距离为1并且你位于防御方的[Front Arc]内，则你可以使你的1个掷骰结果变为[Hit]。',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_6.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/197c61c6bf71b2fa9e9c600c2c906904.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_6.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/0e2dea15e7f8952107f2e02427b03a37.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/e6647e45a364e50b6da19ecc5e4f9877.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/dc561d6d462108d77d488727d338e336.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/236f51747611d43a00bae87b82f77a46.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_6.png',
-        },
         slots: ['Talent'],
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_6.jpg',
@@ -511,7 +367,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     restrictions: [{ factions: ['Scum and Villainy'] }],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -549,32 +405,14 @@ const t: UpgradeBase[] = [
             'While you defend or perform an attack, if you have only blank results and have 2 or more results, you may reroll any number of your dice.',
         },
         slots: ['Talent'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/9f8baf4893cd90288df44b69b50fa788.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/da6094f8e4115ca85e9b3d67e02a17f5.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/10f4474c15cbaed4bb7d918af0d1b8b0.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/9e97d2659b5e2330181116838cb2be1e.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/f107bf5c9ce1e7d090c7bcecd0e6d143.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/845cbca4ac7078c3bbfbc29bd6fa8772.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/9f8baf4893cd90288df44b69b50fa788.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/9f8baf4893cd90288df44b69b50fa788.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/0f6d1677c35001248d7768047c10aa87.jpg',
         ffg: 471,
       },
     ],
-    cost: { value: 1 },
+    cost: { variable: 'agility', values: { '0': 1, '1': 1, '2': 1, '3': 2 } },
     restrictions: [{ factions: ['Resistance'] }],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -611,31 +449,13 @@ const t: UpgradeBase[] = [
           zh: '一架距离为0的敌机进行防御时，其少投1个防御骰。',
         },
         slots: ['Talent'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_7.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/5388daa0580fe85a9f43d1fddca67bf2.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_7.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/47b2b8c89db701933ed602f2f0cbec87.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/df95d2d33d51f0e69102a189a9dd341e.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/9aaa1bad32bde05685d71254b21c8271.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/154ad13f082435d43f7bade530db49fa.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_7.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_7.jpg',
         ffg: 236,
       },
     ],
     cost: { value: 3 },
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -673,24 +493,6 @@ const t: UpgradeBase[] = [
             '当你执行攻击时，如果本轮你已获得1枚闪避标记，则你可以改变防御方的掷骰结果，使1[Evade]变成1[Focus]。',
         },
         slots: ['Talent'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_8.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/a09e63b493ac9488a9bd2c5cfe7b7422.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_8.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/b6175948c46f73c6d156b3d53156bf4c.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/311e0c3f8af01e5983358398cd9d2b25.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/4dcb2c6eb1a3ea9b40fdd0242f315da4.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/e8fbe86157610b5b6f62fbf418bd35d9.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_8.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_8.jpg',
         ffg: 237,
@@ -698,7 +500,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 7 },
     restrictions: [{ baseSizes: ['Small', 'Medium'] }],
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
   },
   {
@@ -737,24 +539,6 @@ const t: UpgradeBase[] = [
         },
         slots: ['Talent'],
         charges: { value: 1, recovers: 1 },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_9.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/6a22b6e114f0f12c9c74ef925c6d803e.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_9.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/993d50e99044e3f56951784f717bd761.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/cf19d99109580176bdddea7f209ae6c4.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/a94b6ff73425d86c1f57992d31dc126e.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/57c647d992a20f94e378fe21f3aa645e.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_9.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_9.jpg',
         ffg: 238,
@@ -799,31 +583,13 @@ const t: UpgradeBase[] = [
             '当你执行攻击时，如果防御方在你的[Bullseye Arc]内，你可以使掷骰结果中的1[Hit]变为1[Critical Hit]。',
         },
         slots: ['Talent'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_10.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/2abad05fab9d95d73e43adc1a3758431.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_10.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/842e6c4437c5eb7a2d9362d9013ed9e0.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/123fd027c33e56208a334039624854dc.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/c9a88003fe7af14666eba95af7e28aed.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/21171592b688e75d5d77714fb4a8ae13.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_10.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_10.jpg',
         ffg: 239,
       },
     ],
     cost: { value: 1 },
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -861,31 +627,13 @@ const t: UpgradeBase[] = [
             '当你执行一次[Front Arc]攻击时，如果你不在防御方的开火范围内，则防御方少投一个防御骰。',
         },
         slots: ['Talent'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_11.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/81e19f92deea634d1ca6971a405b0afa.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_11.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/c6dafa6ce2838688141f04e89852c3d1.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/d219d105eb9f32d480c836f98fa6a9d8.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/4db1097c7843b1761782c69c092cee17.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/3285bc27ebbc370174d0cceab50406dc.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_11.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_11.jpg',
         ffg: 240,
       },
     ],
     cost: { value: 6 },
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -923,31 +671,13 @@ const t: UpgradeBase[] = [
             '当你执行一次基础攻击时，如果防御方在你的[Bullseye Arc]内，你可以重投一个攻击骰。',
         },
         slots: ['Talent'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_12.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/b71aa35192ce350b002767beadaaacbd.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_12.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/04fe5ab46fd1f24fa5a7895b003facb5.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/a533193984dfe36a9619f794e36f76fa.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/27110dd33a139e55d85a2f41f83ec163.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/2b1f90614cc15ec5ebf20d9dede14709.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_12.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_12.jpg',
         ffg: 241,
       },
     ],
     cost: { value: 2 },
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
   },
   {
@@ -983,24 +713,6 @@ const t: UpgradeBase[] = [
             'Quando realizar um ataque, você pode escolher outra nave amiga em alcance 0-1 do defensor. Se fizer isso, a nave escolhida sofre 1 dano [Hit] e você pode mudar 1 dos resultados de seus dados para um resultado [Hit].',
           zh:
             '当你执行攻击时，你可以选择另一架与防御方距离为0~1的友方战机，使该战机承受1[Hit]伤害并且使你的1个掷骰结果变为[Hit]。',
-        },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_13.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/7eacefeb09f800cea06be06edcd6c655.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_13.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/34c7f9376e79a41b9b12ac8c4183eb5c.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/65954107ae552e81f6c1e2470ca6d39b.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/89eeb6199ee8d4abc259c9774f1d5432.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/18637b248aeece20c5765f4d8845da28.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_13.png',
         },
         slots: ['Talent'],
         artwork:
@@ -1048,24 +760,6 @@ const t: UpgradeBase[] = [
             'While you perform a [Torpedo] or [Missile] attack, you may spend 1 [Charge] from that upgrade. If you do, choose two defense dice. The defender must reroll those dice.',
         },
         slots: ['Talent'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_14.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/a13e58919fa84f4cbb5e955aebefeecf.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_14.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/85b0e87855a38ab3c92cd1be6d69da48.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/79d3fd0504d01f0c7c9e3965c7898aa0.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/36aa6c7e944d186e0469eea6bd8f408c.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/74de7ba6afa51db4f181549d97a3afb0.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_14.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_14.jpg',
         ffg: 243,
@@ -1110,31 +804,13 @@ const t: UpgradeBase[] = [
           zh:
             '与你距离为0~1的另一架友方战机进行防御时，在抵消结果的环节前，如果你在本次攻击范围内，你可以承受1[Critical Hit]伤害来取消掷骰结果中的1[Critical Hit]。',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_15.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/06388326304a4cef29928d0d96902cb0.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_15.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/90c6b5c2708ea17b840aa148b34eb619.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/63aff9d00a828f754cda3a4f612c6025.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/3e022cf99b3f559a7975b502c5711e84.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/69275bdcaff6d1aee27fdd85dded81b1.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_15.png',
-        },
         slots: ['Talent'],
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_15.jpg',
         ffg: 244,
       },
     ],
-    cost: { value: 3 },
+    cost: { value: 2 },
     restrictions: [{ factions: ['Rebel Alliance'] }],
     hyperspace: true,
     epic: true,
@@ -1177,24 +853,6 @@ const t: UpgradeBase[] = [
         grants: [
           { action: { type: 'Coordinate', difficulty: 'Red' }, value: 1 },
         ],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_16.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/ce8169ce4831ea606215a78d842a55f3.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_16.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/9c4bb9058ac6621a67da502b98b5a2ba.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/3ed0f5834a95b241c31346e06faacd89.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/8f60dca8418f649bed82e1e4a0b73df2.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/7e04d83faf4e9db0abe19cb36bdaf2cd.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_16.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_16.jpg',
         ffg: 245,
@@ -1204,7 +862,7 @@ const t: UpgradeBase[] = [
       variable: 'initiative',
       values: { '0': 2, '1': 4, '2': 6, '3': 8, '4': 10, '5': 12, '6': 14 },
     },
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -1242,24 +900,6 @@ const t: UpgradeBase[] = [
             'At the start of the Engagement Phase, you may choose 1 friendly ship at range 1. If you do, that ship treats its initiative as equal to yours until the end of the round.',
         },
         slots: ['Talent'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_17.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/d74d6b3e45721e86f79e6b909fdde85c.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_17.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/01ae44a7c57ea72757ef24051735b010.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/1f9524b3c1fb51948bc5cf675010fc6f.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/d7d46a413c95a1e6dd831f246b0e16a3.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/acea76bb15d721758c7ac57b12e9dbc2.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_17.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_17.jpg',
         ffg: 246,
@@ -1307,24 +947,6 @@ const t: UpgradeBase[] = [
             'While you perform an attack that is obstructed by an obstacle, roll 1 additional attack die.',
         },
         slots: ['Talent'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_18.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/074401ae7cf9708f0c70d87680838fab.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_18.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/ff1d1f161a93bc8f17b90d1c2cbb00e4.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/d150b92e2a04dcfdc507796d6425030b.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/d3c4004c5baab7abff35faeb4dba7f03.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/4176fd609d380f7a7be4db860be38fde.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_18.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_18.jpg',
         ffg: 247,
@@ -1370,24 +992,6 @@ const t: UpgradeBase[] = [
         },
         slots: ['Talent'],
         charges: { value: 1, recovers: 0 },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/a10d907fea50e32ab28d924c67486d37.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/c35b3ce81eff2f89a9fc689b0c770dda.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/5dfd6e3fd8d558d7babe70fe58164ef9.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/3ca5c64cdfba50e23785a0ea9cad6e3e.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/c27ce38269f130419256be8e997f7b85.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/4530d3d7fd1e8598a3bef65567018875.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/a10d907fea50e32ab28d924c67486d37.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/a10d907fea50e32ab28d924c67486d37.png',
-        },
         ffg: 529,
       },
     ],
@@ -1431,24 +1035,6 @@ const t: UpgradeBase[] = [
             'While another friendly ship in your [Left Arc] or [Right Arc] at range 0-2 defends, if it is limited or has the Dedicated upgrade and you are not strained, you may gain 1 strain token. If you do, the defender rerolls 1 of their blank results.',
         },
         slots: ['Talent'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/31c6723d7e5670c257acfa8788160437.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/3f49916c80da8e0a17c8e69633d8815e.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/6051237098a8952fc55a0b6616fe3be5.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/aa1c29f9a9bbba7356fcfa9f801872a9.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/31899549c0697ead48b28614a0da8fb2.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/d7dd5d288e459847d77f25dc2370306f.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/31c6723d7e5670c257acfa8788160437.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/31c6723d7e5670c257acfa8788160437.png',
-        },
         ffg: 544,
       },
     ],
@@ -1495,24 +1081,6 @@ const t: UpgradeBase[] = [
           zh:
             'At the end of the Activation Phase, if you are tractored, you may choose 1 ship in your [Single Turret Arc] arc at range 0-1. Transfer 1 tractor token to it.',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/5d7e0560460a1d91281537a658ddfc86.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/e4a65e4f8ccb36b9a7e798da1b69f5cb.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/e9859cb7da6c539f86fcf2ea9870ba03.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/5d7e0560460a1d91281537a658ddfc86.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/5d7e0560460a1d91281537a658ddfc86.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/c97f62e8dfaf61c3209f8fd155212df4.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/5d7e0560460a1d91281537a658ddfc86.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/5d7e0560460a1d91281537a658ddfc86.png',
-        },
         ffg: 610,
       },
     ],
@@ -1521,7 +1089,7 @@ const t: UpgradeBase[] = [
     restrictions: [{ chassis: ['nantexclassstarfighter'] }],
     cost: {
       variable: 'initiative',
-      values: { '0': 21, '1': 21, '2': 21, '3': 21, '4': 21, '5': 24, '6': 28 },
+      values: { '0': 19, '1': 19, '2': 19, '3': 19, '4': 19, '5': 21, '6': 24 },
     },
   },
   {
@@ -1560,30 +1128,12 @@ const t: UpgradeBase[] = [
             'While you defend, you may reroll 1 defense die for each tractored ship in the attack arc.',
         },
         ffg: 611,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/50ec6aa5a267ece16d36533f4efe2bb0.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/9723c9a90f224cc643d3eda5cd2eb1eb.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/9ffca30957e40e66d3856e3fade95d24.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/50ec6aa5a267ece16d36533f4efe2bb0.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/50ec6aa5a267ece16d36533f4efe2bb0.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/fc531e3c1ca8a891d14b8534e18ce130.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/50ec6aa5a267ece16d36533f4efe2bb0.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/50ec6aa5a267ece16d36533f4efe2bb0.png',
-        },
       },
     ],
     hyperspace: true,
     epic: true,
     restrictions: [{ chassis: ['nantexclassstarfighter'] }],
-    cost: { value: 5 },
+    cost: { value: 4 },
   },
   {
     limited: 0,
@@ -1630,29 +1180,11 @@ const t: UpgradeBase[] = [
           ordnance: true,
         },
         ffg: 612,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/fed45c0416dfd298d9433c4608e99b7e.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/42b5e93d700e411c4bc0da54279a97f0.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/2f1444d89626765e4c12e869d6a036f2.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/fed45c0416dfd298d9433c4608e99b7e.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/fed45c0416dfd298d9433c4608e99b7e.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/5a78529c888dc5d6553458e1dcf9e058.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/fed45c0416dfd298d9433c4608e99b7e.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/fed45c0416dfd298d9433c4608e99b7e.png',
-        },
       },
     ],
     cost: {
       variable: 'size',
-      values: { Small: 7, Medium: 8, Large: 9, Huge: 200 },
+      values: { Small: 7, Medium: 8, Large: 9, Huge: 10 },
     },
   },
   {
@@ -1691,24 +1223,6 @@ const t: UpgradeBase[] = [
         },
         slots: ['Talent'],
         ffg: 653,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/09ec8bb3b37800437bbff7963db6aec6.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/7551ee2956aa0fb268bd7919fa2bbde9.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/787316c850993b113cde084cac85deab.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/39c06de128e0c2be4dfa0da391c537e8.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/09ec8bb3b37800437bbff7963db6aec6.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/09ec8bb3b37800437bbff7963db6aec6.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/09ec8bb3b37800437bbff7963db6aec6.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/09ec8bb3b37800437bbff7963db6aec6.png',
-        },
       },
       {
         title: {
@@ -1734,24 +1248,6 @@ const t: UpgradeBase[] = [
         },
         slots: ['Talent'],
         ffg: 652,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/a060961e9ee792e605c75aaf6d65ad34.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/b22e75c1fb0397784e75f381f1d9a8e3.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/f2737231f8686ee641a2eb0c9d3ab271.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/b3accb3e612247d4460fbd97101a67f7.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/a060961e9ee792e605c75aaf6d65ad34.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/a060961e9ee792e605c75aaf6d65ad34.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/a060961e9ee792e605c75aaf6d65ad34.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/a060961e9ee792e605c75aaf6d65ad34.png',
-        },
       },
     ],
     restrictions: [{ factions: ['First Order'] }],
@@ -1796,24 +1292,6 @@ const t: UpgradeBase[] = [
         },
         slots: ['Talent'],
         ffg: 670,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/99f10f4dd059aae2529ec0863a6cc47e.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/99f10f4dd059aae2529ec0863a6cc47e.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/99f10f4dd059aae2529ec0863a6cc47e.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/99f10f4dd059aae2529ec0863a6cc47e.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/99f10f4dd059aae2529ec0863a6cc47e.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/99f10f4dd059aae2529ec0863a6cc47e.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/99f10f4dd059aae2529ec0863a6cc47e.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/99f10f4dd059aae2529ec0863a6cc47e.png',
-        },
       },
     ],
     hyperspace: true,
@@ -1830,10 +1308,10 @@ const t: UpgradeBase[] = [
         type: 'Talent',
         ability: {
           en:
-            'After you fully execute a red maneuver, you may perform a [Barrel Roll] action, even while stressed.  If you do, roll an attack die; on a [Hit] result gain 1 strain token, and on a [Critical Hit] result, gain 1 ion token.',
+            'After you fully execute a red maneuver, you may perform a [Barrel Roll] action, even while stressed. If you do, roll an attack die; on a [Hit] result gain 1 strain token, and on a [Critical Hit] result gain 1 ion token.',
         },
         slots: ['Talent'],
-        ffg: -1,
+        ffg: 717,
       },
     ],
     hyperspace: true,
@@ -1865,20 +1343,20 @@ const t: UpgradeBase[] = [
   {
     xws: 'margsablclosure',
     limited: 0,
-    cost: { value: 200 },
+    cost: { value: 1 },
     sides: [
       {
         title: { en: 'Marg Sabl Closure' },
         type: 'Talent',
         ability: {
           en:
-            'After you fully execute a maneuver, if you moved through an obstacle, structure, or huge ship, or if you deployed, you may choose 1 enemy ship in your [Front Arc] at range 1-2.  That ship gains 1 strain token.',
+            'After you fully execute a maneuver, if you moved through an obstacle, structure, or huge ship, or if you deployed, you may choose 1 enemy ship in your [Front Arc] at range 1-2. That ship gains 1 strain token.',
         },
         slots: ['Talent'],
-        ffg: -1,
+        ffg: 846,
       },
     ],
-    hyperspace: false,
+    hyperspace: true,
     epic: false,
     restrictions: [{ baseSizes: ['Small', 'Medium'] }],
   },
@@ -1892,10 +1370,10 @@ const t: UpgradeBase[] = [
         type: 'Talent',
         ability: {
           en:
-            "After you fully execute a maneuver, you may choose 1 enemy ship you moved through.  That ship gains 1 strain token.  Then, if you are in that ship's firing arc, you gain 1 strain token.",
+            "After you fully execute a maneuver, you may choose 1 enemy ship you moved through. That ship gains 1 strain token. Then, if you are in that ship's firing arc, you gain 1 strain token.",
         },
         slots: ['Talent'],
-        ffg: -1,
+        ffg: 716,
       },
     ],
     hyperspace: true,
@@ -1912,10 +1390,10 @@ const t: UpgradeBase[] = [
         type: 'Talent',
         ability: {
           en:
-            'While you boost or barrel roll, if your equipped [Configuration] upgrade has the "(Closed)" side faceup, you can move through and overlap obstacles.  After you boost or barrel roll through an obstacle, if you are not at range 0 of it, gain 1 evade token.',
+            'While you boost or barrel roll, if your equipped [Configuration] upgrade has the "(Closed)" side faceup, you can move through and overlap obstacles. After you boost or barrel roll through an obstacle, if you are not at range 0 of it, gain 1 evade token.',
         },
         slots: ['Talent'],
-        ffg: -1,
+        ffg: 715,
       },
     ],
     hyperspace: true,

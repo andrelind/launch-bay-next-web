@@ -38,31 +38,13 @@ const t: UpgradeBase[] = [
         grants: [
           { action: { type: 'Rotate Arc', difficulty: 'White' }, value: 1 },
         ],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_31.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/176bb75ba51070dca229c4ece912cdf4.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_31.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/490dde04eccb07685741b78930e16e2d.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/64c3d924b98ee3b6ec5a1a3cea3f0f51.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/4eeaff1d4c3c392ceebdac06a6624023.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/4161553e52a8898f53aa2f08976d731b.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_31.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_31.jpg',
         ffg: 260,
       },
     ],
     cost: { value: 2 },
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -99,24 +81,6 @@ const t: UpgradeBase[] = [
           zh:
             '攻击([Lock])：如果本次攻击命中，花费掷骰结果中的1[Hit]或[Critical Hit]，以此来使防御方承受1[Hit]伤害。掷骰结果中剩余的[Hit]或[Critical Hit]，使防御方获得对应数量的离子标记，而不是造成伤害。',
         },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_32.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/99f86c16dc28f354f56191bdd9d7244f.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_32.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/9cbb6fc9dac61e76e5c9767da3a8e5ab.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/bfc9da6b47196dbaf5728322dd38dba0.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/751ef402e527b5a91997e376030f42b8.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/d786c0354ecaf19fc1189415153c9620.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_32.png',
-        },
         slots: ['Turret'],
         attack: {
           arc: 'Single Turret Arc',
@@ -134,7 +98,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 5 },
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
 ];

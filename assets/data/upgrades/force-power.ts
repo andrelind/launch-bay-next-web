@@ -36,24 +36,6 @@ const t: UpgradeBase[] = [
             '在交战阶段开始时，你可以花费1[Force]。如果你如此做，则本阶段交战时视你的先攻值为7，取代你的基础先攻值。',
         },
         slots: ['Force Power'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_19.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/42a8d9c3be8603576868dfb2dee06c8a.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_19.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/58c05648cde902d6379d639aa35a49f4.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/914ad34a42e1a8347d48d768a083e9a2.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/d1f174a3d2ba532e3c6aa3f3e7ac2446.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/3a9b7cc6952adadee43e36b3e2568031.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_19.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_19.jpg',
         ffg: 248,
@@ -98,24 +80,6 @@ const t: UpgradeBase[] = [
             '当你执行一次特殊攻击时，你可以花费1[Force]来无视要求中的[Focus]或[Lock]。',
         },
         slots: ['Force Power'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_20.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/6193ac20a3ba8c7f55bf44fd2826ccf3.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_20.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/2655f5abea4d125c1ca77cc6dcd0e3ec.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/a4c424d9f2e6b93b83a99734182d05af.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/69aae0c653b6a2f3cab5421cbe469b05.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/27ce7ba1d8140549df1521a704875faf.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_20.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_20.jpg',
         ffg: 249,
@@ -160,24 +124,6 @@ const t: UpgradeBase[] = [
             '在系统阶段，你可以选择1架距离0~1的战机并查看其操作盘。如果花费1[Force]，则你可以改为选择1架距离0~3的战机。',
         },
         slots: ['Force Power'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_21.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/97b78560f90d2ef6d57e36c9ed5b4ee0.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_21.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/c4033c85d6ff39c24ada8cb3a32f3f40.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/65abc825cda5339dac03c3586256e04d.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/f5eb93a270f330b76456c1fcccb76d4e.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/5001fa3fd8a0e0562e807a98311e1924.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_21.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_21.jpg',
         ffg: 250,
@@ -222,24 +168,6 @@ const t: UpgradeBase[] = [
             '在你执行启动之前，你可以花费1[Force]来执行1个[Barrel Roll]或[Boost]行动。 然后，如果你执行的行动不在你的行动条上，承受1[Hit]伤害。',
         },
         slots: ['Force Power'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_22.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/e133d4e7b48902562a273bbdda35ee1e.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_22.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/76f1bbde0a23bad39b91f3702866904b.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/e27f1d48d08c807facd1de5dd2888e95.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/8a03cafb635274b2fe3d51259ba2f33f.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/3ef701a788ae37f14f248524a552c6b1.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_22.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_22.jpg',
         ffg: 251,
@@ -288,29 +216,11 @@ const t: UpgradeBase[] = [
             "While you defend, if you are not in the attacker's [Bullseye Arc], you may spend 1 [Force] to change 2 of your [Focus] results to [Evade] results.",
         },
         slots: ['Force Power'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/24b175ad35d035f33a35056b0d1d7a36.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/f805e16455513ae6b43c66425a95afe5.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/e9ca3266c90a519e57b4afb8551c39f2.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/fc4ffeeaf49cc191e8b600c10f54a707.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/d57b7936024c7d7202575578a85745da.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/2d4d32a1b7637e535bbe69785502a1bf.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/24b175ad35d035f33a35056b0d1d7a36.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/24b175ad35d035f33a35056b0d1d7a36.png',
-        },
         ffg: 536,
       },
     ],
-    cost: { value: 3 },
-    hyperspace: true,
+    cost: { value: 2 },
+    hyperspace: false,
     epic: true,
   },
   {
@@ -345,24 +255,6 @@ const t: UpgradeBase[] = [
           zh: 'After you suffer 1 or more damage, recover that many [Force].',
         },
         slots: ['Force Power'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/4a10b5c8a3d796116163a741d145f4e9.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/4e7b21fe336423221e78237db53cf68f.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/66e68e585f3c334245b6add2a74a579b.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/9a713a68d6eff4271d7a05c70738441f.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/6af4e979999b5f13c9394e17e72aee27.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/054a786e24fe443ddf2092f9fffac825.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/4a10b5c8a3d796116163a741d145f4e9.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/4a10b5c8a3d796116163a741d145f4e9.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/a373c947f0a56ee4bcf4223250326dc0.jpg',
         ffg: 489,
@@ -370,7 +262,7 @@ const t: UpgradeBase[] = [
     ],
     cost: {
       variable: 'size',
-      values: { Small: 3, Medium: 6, Large: 9, Huge: 200 },
+      values: { Small: 3, Medium: 6, Large: 9, Huge: 12 },
     },
     restrictions: [
       {
@@ -383,7 +275,7 @@ const t: UpgradeBase[] = [
         ],
       },
     ],
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
   },
   {
@@ -423,29 +315,11 @@ const t: UpgradeBase[] = [
         slots: ['Force Power'],
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/53ceabb0e2e66e61c077145475b18dab.jpg',
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/e0100c63b2753daf68a9d3948824b086.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/dfada8d1dbcb999f8de1483fd72795a1.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/0d7cff5116ef6f1555733c1985a04e30.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/141a40d33deaee295682a6df47731062.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/a0cc3cc0b5c7b6619c51c409797179de.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/98dca7fbf1ddf13b50ce2bc2b043d4d3.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/e0100c63b2753daf68a9d3948824b086.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/e0100c63b2753daf68a9d3948824b086.png',
-        },
         ffg: 490,
       },
     ],
     cost: { value: 1 },
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -483,24 +357,6 @@ const t: UpgradeBase[] = [
             'You cannot coordinate limited ships. While you perform a purple [Coordinate] action, you may coordinate 1 additional friendly non-limited ship of the same type. Both ships must perform the same action.',
         },
         slots: ['Force Power'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d0641df31a0fc40c501055dcd34094f6.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/b614cbb17627bd7c823f0b9f706cf320.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/bac91c8c4702af53fbdb8057e77b92c0.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/13d0b1902b2209959972152fcb8ae4b0.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/911e8f5ef5585c1fa02fff45be2ab591.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/9fb4da5295e07849f4ee2528dc99398a.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d0641df31a0fc40c501055dcd34094f6.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/d0641df31a0fc40c501055dcd34094f6.png',
-        },
         grants: [
           { action: { type: 'Coordinate', difficulty: 'Purple' }, value: 1 },
         ],
@@ -509,10 +365,10 @@ const t: UpgradeBase[] = [
     ],
     cost: {
       variable: 'initiative',
-      values: { '0': 0, '1': 0, '2': 2, '3': 4, '4': 6, '5': 8, '6': 10 },
+      values: { '0': 3, '1': 3, '2': 3, '3': 3, '4': 4, '5': 6, '6': 8 },
     },
     restrictions: [{ factions: ['Galactic Republic'] }],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -558,24 +414,6 @@ const t: UpgradeBase[] = [
           ordnance: true,
         },
         ffg: 613,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/12c948b9a0fe9f619ecda00f9fdcc437.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/feb9780b5411c283e431ae71c49163e1.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/bd3e3b6b2ef0cd053ff796778a71acce.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/12c948b9a0fe9f619ecda00f9fdcc437.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/12c948b9a0fe9f619ecda00f9fdcc437.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/b208e7b5b6fd46935f75dfa33c5c70ff.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/12c948b9a0fe9f619ecda00f9fdcc437.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/12c948b9a0fe9f619ecda00f9fdcc437.png',
-        },
       },
     ],
     cost: { value: 4 },
@@ -618,24 +456,6 @@ const t: UpgradeBase[] = [
         },
         slots: ['Force Power'],
         ffg: 614,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/931c84c3e1b3afe5d078f6b3dd4f677a.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/2ac0dbd682526adf69b6a03974408361.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/889453bdd95b3c51204271f23b43a90a.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/931c84c3e1b3afe5d078f6b3dd4f677a.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/931c84c3e1b3afe5d078f6b3dd4f677a.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/4f337d1c7cdaeb57b895de297a3efca5.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/931c84c3e1b3afe5d078f6b3dd4f677a.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/931c84c3e1b3afe5d078f6b3dd4f677a.png',
-        },
       },
     ],
     restrictions: [{ baseSizes: ['Small'] }],
@@ -649,22 +469,41 @@ const t: UpgradeBase[] = [
   {
     xws: 'patience',
     limited: 0,
-    cost: { value: 200 },
+    cost: { value: 2 },
     sides: [
       {
         title: { en: 'Patience' },
         type: 'Force Power',
         ability: {
           en:
-            'At the start of the Engagement Phase, if there is an enemy in your [Front Arc], you may gain 1 deplete token to recover 1 [Force].',
+            'At the start of the Engagement Phase, if there is an enemy ship in your [Front Arc], you may gain 1 deplete token to recover 1 [Force].',
         },
         slots: ['Force Power'],
-        ffg: -1,
+        ffg: 849,
       },
     ],
-    hyperspace: false,
+    hyperspace: true,
     epic: false,
     restrictions: [{ sides: ['light'] }],
+  },
+  {
+    limited: 0,
+    xws: 'extrememaneuvers',
+    hyperspace: true,
+    epic: false,
+    sides: [
+      {
+        ability: {
+          en:
+            'While you perform a [Boost] action, you may spend 1 [Force] to use the turn ([Turn Left] or [Turn Right]) template instead.',
+        },
+        title: { en: 'Extreme Maneuvers' },
+        type: 'Force Power',
+        slots: ['Force Power'],
+        ffg: 848,
+      },
+    ],
+    cost: { value: 4 },
   },
 ];
 

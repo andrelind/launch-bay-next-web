@@ -84,24 +84,6 @@ const t: ShipType = {
         zh:
           "A unique gyrostabilization system surrounds the B-wing's cockpit, ensuring that the pilot always remains stationary during flight.",
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_25.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/9e471478b8c20023a827005511469705.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/8a5517deef99972d5c4ab4b3441ece6f.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/5c258d7932531ee06157f5fe40aff18e.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/9ff254c0f31078fb0e742e977e3c1f4f.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/9bcf2dd0a9fe632eb7642444803dbbc9.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/4bede5e306ad5b89fb0bb406b8990618.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_25.png',
-      },
       slots: [
         'Talent',
         'Sensor',
@@ -149,24 +131,6 @@ const t: ShipType = {
           'Devido ao seu conjunto de armaspesadas e escudo resiliente, a B-wingse consolidou como o caça de assaltomais inovador da Aliança Rebelde.',
         zh:
           "Due to its heavy weapons array and resilient shielding, the B-wing has solidified itself as the Rebel Alliance's most innovative assault fighter.",
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_26.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/e802c0bcbf78b243a6fd5711dd4a880f.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/fc834bbfc330123dc2f690fa08ad0fbd.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/f6c0c524842fb26f649e152356a1b9d4.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/dae7875d489c6a49aee66918156b47a3.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/3172ca45f1b59f4ebe0ae1dd2208d208.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/3d1125606971226073062e20733a982a.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_26.png',
       },
       slots: [
         'Sensor',
@@ -232,24 +196,6 @@ const t: ShipType = {
         zh:
           'While you defend or perform an attack, if you are stressed, you may reroll up to 2 of your dice.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_23.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/5e803262ad2ea4813a5e6af7de2af19c.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/7ff04a0469d8abb6cf04aaefcbb67910.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/0ec966219c9dd082f26c6dc5824a4d75.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/dd872dc52c9e935921332a75fbc69c91.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/534bf2221c8bc348ef31ab9ba7348f5d.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/d2fed48bb219b9c28e7c73858d1a5b15.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_23.png',
-      },
       slots: [
         'Talent',
         'Sensor',
@@ -307,24 +253,6 @@ const t: ShipType = {
           'Quando defender ou realizar um ataque, você pode gastar 1 fichade estresse para mudar todosos seus resultados [Focus] para resultados [Evade] ou [Hit].',
         zh:
           'While you defend or perform an attack, you may spend 1 stress token to change all of your [Focus] results to [Evade] or [Hit] results.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_24.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/3a28c3846eda385b363bf72399319f4a.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/8a1228a407c291a5da5c0790c67b2f9d.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/ba2deb0181f1532eb91bff8f96e1eb27.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/badd8352e412eda725f06a7662566a4b.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/3d0e77bb3b4fe74d5d9eb5a192638727.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/e25316119e6bbaa0488608bcb07b2893.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_24.png',
       },
       slots: [
         'Talent',
@@ -396,24 +324,6 @@ const t: ShipType = {
       hyperspace: true,
       epic: true,
       ffg: 628,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/0fcceeaf64f96b4870146ffbec529dc2.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/546883a9a5550f7b8867a86c9eef571c.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/185ac9bc58850dddc41dffeeaa9b8bba.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/e9332d3430de4f8e845f1078c355c248.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/0fcceeaf64f96b4870146ffbec529dc2.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/0fcceeaf64f96b4870146ffbec529dc2.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/0fcceeaf64f96b4870146ffbec529dc2.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/0fcceeaf64f96b4870146ffbec529dc2.png',
-      },
     },
   ],
 };

@@ -110,24 +110,6 @@ const t: ShipType = {
         zh:
           'When the Clone Wars began, the Jedi Knights rallied to the cause of preserving the Republic, assuming command of legions of clone troopers and leading them in battle.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/13d08d0d1131e7a11f6d10fd1626bff9.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/621a1ee19e372e38175199bf6abce908.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/5c266debeefc76823b49b7638bd15d17.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/f4586ce343a207e8f3723f1ae8726680.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/8a9661d3cfef08df0bc243c988c8e8d7.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/f2064a9f27341d6c5a3b95632bc8642c.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/13d08d0d1131e7a11f6d10fd1626bff9.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/13d08d0d1131e7a11f6d10fd1626bff9.png',
-      },
       force: { value: 1, recovers: 1, side: ['light'] },
       hyperspace: true,
       epic: true,
@@ -179,26 +161,8 @@ const t: ShipType = {
         zh:
           'After a friendly ship at range 0-2 spends a focus token, you may spend 1 [Force]. If you do, that ship gains 1 focus token.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/fcf515534a722b581bc2f85f36cb5c30.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/d9be89b1965076be03a99624bdeed824.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/150c41cb60c7ecfda87e9f924c58a367.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/2bf824d3739b03f32f44eb1620a30e19.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/99100129e473fcb1fefe953f5d938f25.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/7ef4d20424aee8868845c2fd69d047e4.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/fcf515534a722b581bc2f85f36cb5c30.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/fcf515534a722b581bc2f85f36cb5c30.png',
-      },
       force: { value: 3, recovers: 1, side: ['light'] },
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       cost: 49,
       slots: ['Astromech', 'Modification', 'Force Power', 'Configuration'],
@@ -248,26 +212,8 @@ const t: ShipType = {
         zh:
           'At the start of the Engagement Phase, you may spend 1 [Force] and choose another friendly ship at range 0-2. If you do, you may transfer 1 green token to it or transfer one orange token from it to yourself.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c0936c57c897ea7bacadf723cfcbd0b6.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/15aa1c591a9be28b6d987c55ef8b8b26.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/5bc93b7b135fc8d910a64a9c73f20950.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/f82684af2eb48c162e86828c2db2ba4e.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/40c43cc0514b8499b8a5ad2d24e12f7e.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/3b55c228c999aab19b0408d665fb19c5.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c0936c57c897ea7bacadf723cfcbd0b6.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c0936c57c897ea7bacadf723cfcbd0b6.png',
-      },
       force: { value: 2, recovers: 1, side: ['light'] },
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       cost: 45,
       slots: ['Astromech', 'Modification', 'Force Power', 'Configuration'],
@@ -317,28 +263,10 @@ const t: ShipType = {
         zh:
           'After a friendly ship at range 0-2 reveals its dial, you may spend 1 [Force]. If you do, set its dial to another maneuver of the same speed and difficulty.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e0fdedf1af8fd1e5b36c2fba17b4f6b0.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/2d9dedc8512342e5d8437388f780dde7.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/4c72e9ade8218533e8f8ff9833499f6f.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/b686770c5e4d4cf59557b8264e0b95b2.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/476947d4925d295a2e029ce41227cc8b.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/ebde66b6a123c85f7c55e82bad5cfb6c.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e0fdedf1af8fd1e5b36c2fba17b4f6b0.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e0fdedf1af8fd1e5b36c2fba17b4f6b0.png',
-      },
       force: { value: 2, recovers: 1, side: ['light'] },
       hyperspace: false,
       epic: true,
-      cost: 43,
+      cost: 42,
       slots: ['Astromech', 'Modification', 'Force Power', 'Configuration'],
       ffg: 514,
       artwork:
@@ -381,24 +309,6 @@ const t: ShipType = {
         pl: 'Gdy wykonasz pełny czerwony manewr, odzyskujesz 1 [Force].',
         pt: 'After you fully execute a red maneuver, recover 1 [Force].',
         zh: 'After you fully execute a red maneuver, recover 1 [Force].',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/f0c905f162de8d77dd78c3d49cca77f1.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/b2c22e42d5290d27723ce0e0b15e2ed8.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/c816c0562cc6696684d57fb3597fa6ad.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/961dcf8aa407ce93b647cbe9d48979e6.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/7b25c6f200d3ca5cb471c42105248f9a.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/e7e07fdf7369ce867abce184ed492fbd.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/f0c905f162de8d77dd78c3d49cca77f1.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/f0c905f162de8d77dd78c3d49cca77f1.png',
       },
       force: { value: 3, recovers: 1, side: ['light'] },
       hyperspace: false,
@@ -454,25 +364,7 @@ const t: ShipType = {
       force: { value: 3, recovers: 1, side: ['light'] },
       hyperspace: false,
       epic: true,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d60f4eca355471465ca3f6b99fb98e56.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/70cd1b18731c4c4509afe45fa792028e.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/ee96f6dd124ae725ef0a86fffb4bcdb4.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/c5e6f6e36cdfcf2bd72b15a85e745226.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/cb1431c41ba7f7e148bff152cc0f84a6.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/aef62beda38608aabf7c28a39f96cc07.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d60f4eca355471465ca3f6b99fb98e56.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d60f4eca355471465ca3f6b99fb98e56.png',
-      },
-      cost: 62,
+      cost: 61,
       slots: ['Astromech', 'Modification', 'Force Power', 'Configuration'],
       ffg: 507,
       artwork:
@@ -521,27 +413,9 @@ const t: ShipType = {
           'After you fully execute a maneuver, you may choose a friendly ship at range 0-1 and spend 1 [Force]. That ship may perform an action, even if it is stressed.',
       },
       force: { value: 2, recovers: 1, side: ['light'] },
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/15f6bf84f63970c982dd722a5473217f.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/ed945e18feb596fc4cefc43373f8e90c.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/fb91b61d12c53d36f627da6038eb4d39.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/c361ec1b25b0c174b026955020b76f4c.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/fa267113cdffb1c7a187ea74c850583e.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/6e821c47afec41722f94d5d284baaa35.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/15f6bf84f63970c982dd722a5473217f.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/15f6bf84f63970c982dd722a5473217f.png',
-      },
-      cost: 44,
+      cost: 43,
       slots: ['Astromech', 'Modification', 'Force Power', 'Configuration'],
       ffg: 510,
       artwork:
@@ -590,26 +464,8 @@ const t: ShipType = {
           'While a friendly ship at range 0-2 performs an attack, if the defender is in its [Bullseye Arc], you may spend 1 [Force] to change 1 [Focus] result to a [Hit] result or 1 [Hit] result to a [Critical Hit] result.',
       },
       force: { value: 1, recovers: 1, side: ['light'] },
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/f8f58005da18d7041b1ec2374701465c.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/8782f7a6a2e24e3f159310c95ab05b93.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/238ce4554ed29280177693f0584ad89f.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/f3475c1b9a24b57cc4c350c7a71c9297.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/10dcaa290ba0b54c850681cf53197b5b.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/2a5d2d9d9f5047eb77ec9c800efb7dad.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/f8f58005da18d7041b1ec2374701465c.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/f8f58005da18d7041b1ec2374701465c.png',
-      },
       cost: 38,
       slots: ['Astromech', 'Modification', 'Force Power', 'Configuration'],
       ffg: 509,
@@ -659,27 +515,9 @@ const t: ShipType = {
           "While a friendly ship at range 0-2 defends, if it is not in the attacker's [Bullseye Arc], you may spend 1 [Force]. If you do, change 1 [Critical Hit] result to a [Hit] result or 1 [Hit] result to a [Focus] result.",
       },
       force: { value: 2, recovers: 1, side: ['light'] },
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/7f87b6c12631687bedf75a18582af0b0.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/7f7d6f03c830a214aa3c9d4b96a61311.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/faa05a0fa713c687b68f6c19841a2869.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/c3074ecf244ce94fa75389e5227b473e.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/3cf40b67cc3ef4983b1d9a17b860ea28.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/9574d844a314bade2bfccc5969f3d291.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/7f87b6c12631687bedf75a18582af0b0.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/7f87b6c12631687bedf75a18582af0b0.png',
-      },
-      cost: 43,
+      cost: 42,
       slots: ['Astromech', 'Modification', 'Force Power', 'Configuration'],
       ffg: 508,
       artwork:

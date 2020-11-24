@@ -118,29 +118,11 @@ const t: ShipType = {
         zh:
           'While you defend, after the Neutralize Results step, if you are not stressed, you may suffer 1 [Hit] damage and gain 1 stress token. If you do, cancel all dice results.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_118.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/c4f22883ecdedf3f7c490e70d2d743b8.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/c543490c1f58039ef0f8516cd6370125.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/f2e73786859e60ce5f4d44d06594421f.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/e64734bb7cddb4fbd66a539e79029aee.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/aad42c3ddd44957c36c7781b95cfaffb.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/188f1195e87bb173194a5bab896b944b.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_118.png',
-      },
       slots: ['Talent', 'Device', 'Modification', 'Gunner'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_118.jpg',
       ffg: 118,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -186,29 +168,11 @@ const t: ShipType = {
         zh:
           'You may choose not to use your Adaptive Ailerons. You may use your Adaptive Ailerons even while stressed.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_117.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/fe741e942e0097266d663ae0d63f5a04.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/c7e2e637c5d48da35c92da0803f7d133.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/40629cb840e66905e95f9886e1d13596.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/58c6ac9a82a1b05f578899337e76c092.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/f7289125ebe3364a10361c96fd5e94c1.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/78138e3f2c499e2744025e3d6f441bfa.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_117.png',
-      },
       slots: ['Talent', 'Device', 'Modification', 'Gunner'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_117.jpg',
       ffg: 117,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -254,29 +218,11 @@ const t: ShipType = {
         zh:
           'While you perform an attack, if you have 1 or fewer damage cards, you may roll 1 additional attack die.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_119.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/53a2ebe0bb5d16b4e2e1cd8d1710d9e8.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/cadd6af71ec3c3e8bc97bcbcba64414e.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/47c9bc407b6dc97b85971c4bf9d4b33d.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/e14cd550bc87d582789542b0e9863aff.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/8a501b7adf8393c023db2611957c4ecc.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/f7d4121fb2092e321ba6878ef687f43f.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_119.png',
-      },
       slots: ['Talent', 'Device', 'Modification', 'Gunner'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_119.jpg',
       ffg: 119,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -311,24 +257,6 @@ const t: ShipType = {
           'Estas naves atmosféricas amplamentearmadas utilizam suas asas móveis especializadas para obter velocidade e agilidade adicionais.',
         zh:
           'These heavily armed atmospheric craft employ their specialized moveable wings to gain additional speed and maneuverability.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_120.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/559f1d2c9c39f3d2abd60dbebc7badfa.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/60d528a9861a923d3110d6e3a68c9a14.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/5845db51d5b6347706bdb80f4e2f07a7.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/6ce02f7a0e47ccadece8bcacf4865569.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/5c609e5614010e833f586f2e8381fafe.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/d96289eefc50b3160a52c49439bfe434.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_120.png',
       },
       slots: ['Talent', 'Device', 'Modification', 'Gunner'],
       artwork:
@@ -369,24 +297,6 @@ const t: ShipType = {
           'Para proteger suas várias instalaçõesmilitares, o Império precisa de uma forçade defesa rápida e vigilante.',
         zh:
           'To protect its many military installations, the Empire requires a swift and vigilant defense force.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_121.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/0973f1dc5c48d13b134e2fbce8e15803.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/f1b17a6eab71783df22c296c92018cac.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/8cc96abcbf72f186e629c278dedc6c0e.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/dc5f578af7dc03748d8ffd2b20aa2705.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/413d3dfc506d9af25502a044408bb788.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/428c7d93db74cbde3b4d06bf1f676be3.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_121.png',
       },
       slots: ['Device', 'Modification', 'Gunner'],
       artwork:
@@ -439,27 +349,9 @@ const t: ShipType = {
           'After you fully execute a maneuver using your Adaptive Ailerons, if you are not stressed, you may drop 1 device.',
       },
       slots: ['Talent', 'Device', 'Modification', 'Gunner'],
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       ffg: 633,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e1b12f8287593ebaf960561c2febffe4.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/9e75df7983ed54c255b178f59e82a4b9.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/958195fcec08d131224ede478ad9269a.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/5711a1d4dabbaa9e1331092525a87a07.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e1b12f8287593ebaf960561c2febffe4.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e1b12f8287593ebaf960561c2febffe4.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e1b12f8287593ebaf960561c2febffe4.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/e1b12f8287593ebaf960561c2febffe4.png',
-      },
     },
   ],
 };

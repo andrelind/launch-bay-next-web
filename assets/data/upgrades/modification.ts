@@ -37,24 +37,6 @@ const t: UpgradeBase[] = [
         },
         slots: ['Modification'],
         charges: { value: 2, recovers: 0 },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_68.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/b00184cfee3e58d497abe81494006ed4.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_68.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/9be23ea1f5decb9b6402c058229b9a4e.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/15ef829f48d8e32e8cedc7f35e1b81bb.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/9017a5f3e52563cc765619134bab23b1.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/5bf05ba130c4d2cb2c0a18388ba98c7b.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_68.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_68.jpg',
         ffg: 292,
@@ -100,24 +82,6 @@ const t: UpgradeBase[] = [
             'After you perform a [Slam] action, if you fully executed the maneuver, you may perform a white action on your action bar, treating that action as red.',
         },
         slots: ['Modification'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_69.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/994a10fd0cb526c4ab27d813965178bc.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_69.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/71b20f8c356790c384dd5bc8a4dd0da4.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/82e21361d3bc876faa5c85808cdd29de.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/ab1ce533c5e1b91c6d024cc53755b435.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/e52c3a173be3434de9191754f804b3cd.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_69.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_69.jpg',
         ffg: 293,
@@ -125,7 +89,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     restrictions: [{ action: { type: 'SLAM' } }],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -164,30 +128,15 @@ const t: UpgradeBase[] = [
         },
         slots: ['Modification'],
         charges: { value: 2, recovers: 0 },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_70.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/d85d8cec7e29a6839ac973814f1e828d.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_70.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/fa05fa72bede916daf816813ddb07743.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/4e12836e361ba195985cd70336da869b.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/35ca59f17a05eb3803966ec84cd9757c.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/21d93dc69aba2190cb74d4af5c8fe67f.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_70.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_70.jpg',
         ffg: 294,
       },
     ],
-    cost: { value: 6 },
+    cost: {
+      variable: 'initiative',
+      values: { '0': 4, '1': 4, '2': 4, '3': 4, '4': 5, '5': 6, '6': 7 },
+    },
     restrictions: [{ baseSizes: ['Small'] }],
     hyperspace: false,
     epic: true,
@@ -227,31 +176,13 @@ const t: UpgradeBase[] = [
             'During the End Phase, you may suffer 1 [Hit] damage to remove 1 red token.',
         },
         slots: ['Modification'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_71.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/86739dfb5783209776da71710e53d865.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_71.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/ad303db72b4b4eb3fc65078753695b4d.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/114916c10ad9eae1d8c30395b3963fac.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/3acaa057175cbd9323ebdbaf03abee7e.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/274fd8fb74230eb2d86474c20bf225bc.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_71.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_71.jpg',
         ffg: 295,
       },
     ],
     cost: { value: 2 },
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
   },
   {
@@ -290,24 +221,6 @@ const t: UpgradeBase[] = [
         },
         slots: ['Modification'],
         grants: [{ action: { type: 'Boost', difficulty: 'White' }, value: 1 }],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_72.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/ebe83b4c39de599c44a2aa57f0c9abe3.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_72.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/67b9c01797809b7e5963b55b7d4410ef.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/cad7f74711e4a063ae2989f6620a7f30.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/3bc99edae0434a17da7ea9c923d0c8a9.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/6798b50241f290f35bd4083516052e1a.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_72.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_72.jpg',
         ffg: 296,
@@ -315,7 +228,7 @@ const t: UpgradeBase[] = [
     ],
     cost: {
       variable: 'size',
-      values: { Small: 2, Medium: 4, Large: 7, Huge: 200 },
+      values: { Small: 2, Medium: 4, Large: 7, Huge: 10 },
     },
     restrictions: [{ action: { type: 'Boost', difficulty: 'Red' } }],
     hyperspace: true,
@@ -357,24 +270,6 @@ const t: UpgradeBase[] = [
         },
         slots: ['Modification'],
         grants: [{ stat: 'hull', value: 1 }],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_73.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/1d397b2bb45b6531acf108dcbaf0b4d9.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_73.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/ae2ea49630cdade3c9f338436d43db03.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/dbe0a4fdafaf7a7cde72713c4acf9ed7.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/cf4d1dd2207147346564f0bc6913ed76.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/a84a08fed39a49e302c12708114697e4.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_73.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_73.jpg',
         ffg: 297,
@@ -419,31 +314,13 @@ const t: UpgradeBase[] = [
             'While you perform a [Torpedo] or [Missile] attack, after rolling attack dice, you may cancel all dice results to recover 1 [Charge] you spent as a cost for the attack.',
         },
         slots: ['Modification'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_74.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/628a1df27e6e6482bd82ee54916a4344.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_74.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/cf596bde164cc8830182bb94d8dc3b04.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/101e3c1a729a6040629c03b03c4a43c7.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/2886ead333af219da2c68acb7a10de43.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/fdf8f4d2c878c2e2e3e5b6b5c7a1dfff.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_74.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_74.jpg',
         ffg: 298,
       },
     ],
     cost: { value: 1 },
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -482,24 +359,6 @@ const t: UpgradeBase[] = [
         },
         slots: ['Modification'],
         grants: [{ stat: 'shields', value: 1 }],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_75.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/9e1c22eea5bbde0e351d95a7bd99bfcf.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_75.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/a29a245a6eac70636bb27fa539b25a64.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/122b537ad0133fa62a45ebcb9d09013a.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/f0153730946d2a395502f36e88f9ca91.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/9c25ee4814b8d9ed8a9b0f4095642f58.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_75.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_75.jpg',
         ffg: 299,
@@ -544,24 +403,6 @@ const t: UpgradeBase[] = [
             'If you would gain an ion or jam token, you may choose a ship at range 0-1. If you do, gain 1 stress token and transfer 1 ion or jam token to that ship.',
         },
         slots: ['Modification'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/9c42b09b923d60ac8504e52bd0cbaf25.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/b1ff1279d25b1cb16d1560017a147c40.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/9c42b09b923d60ac8504e52bd0cbaf25.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/5d9dda2bab75ce2a177d2b5a955672bb.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/40e8324848c1292d8a8aaf64459dbe73.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/db821ebc69e6b6d48fde2c24bd480a27.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/de12c431f6d3df04ab297abfa33cafb4.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/9c42b09b923d60ac8504e52bd0cbaf25.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_76.jpg',
         ffg: 300,
@@ -607,24 +448,6 @@ const t: UpgradeBase[] = [
         },
         slots: ['Modification'],
         charges: { value: 1, recovers: 0 },
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_77.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/e62929ad08e1568fbf984123d0c4b346.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_77.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/8bae44798a0f3dcacf980196846a244b.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/cb1c09326dd69549f180dbbc24995f95.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/837f7adb248b4003681677f4d113d50d.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/65a75fa726ba3d43e679646f0de62c53.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_77.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_77.jpg',
         ffg: 301,
@@ -668,24 +491,6 @@ const t: UpgradeBase[] = [
           zh: '当你阻碍一架敌机的攻击时，防御方额外投1个防御骰。',
         },
         slots: ['Modification'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_78.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/cf10d6c8d1dd48043d4688b2fa434f66.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_78.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/c008f38e4afbd7e9b3f5732d8fc4261f.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/284f3560aade4418732affb8bdc4d570.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/9e5220786e08a98fd92e96609866532f.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pt/bd82dd1bc60da8f98fdd52705f45a7a7.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_78.png',
-        },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_78.jpg',
         ffg: 302,
@@ -732,29 +537,11 @@ const t: UpgradeBase[] = [
         },
         charges: { value: 2, recovers: 0 },
         slots: ['Modification'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/93e0fe1b2931944d128126b854c4ad33.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/401ce5385f17debad027a2f730b5abc0.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/58153da3a1fa60893f361296c9a84090.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/81b5c10060ac854fda73da9f62c97ec0.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/de7aa9eaf4f431a54183f08c9d699429.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/8055ff27953fa25185f3e4611eea088f.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/93e0fe1b2931944d128126b854c4ad33.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/93e0fe1b2931944d128126b854c4ad33.png',
-        },
         ffg: 534,
       },
     ],
     restrictions: [{ chassis: ['belbullab22starfighter'] }],
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
     cost: { value: 4 },
   },
@@ -793,24 +580,6 @@ const t: UpgradeBase[] = [
             'After you perform an attack, you may choose a friendly ship at range 1 or a friendly ship with the Synchronized Console upgrade at range 1-3 and spend a lock you have on the defender. If you do, the friendly ship you chose may acquire a lock on the defender.',
         },
         slots: ['Modification'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/e3e5bd38f39f904fbaaa75293e56fb38.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/b4469b1040e4b42dc8158e921638d1da.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/2a3604286ff987d1b68c8696ff6cf44d.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/fa46c4a0f4ae6e852ad7e07a86a21430.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/ce6a692614115ad53277250742aee970.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/b627839ac05eedf410a8e30abbcee2b7.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/e3e5bd38f39f904fbaaa75293e56fb38.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/e3e5bd38f39f904fbaaa75293e56fb38.png',
-        },
         ffg: 554,
       },
     ],
@@ -858,28 +627,10 @@ const t: UpgradeBase[] = [
         },
         charges: { value: 1, recovers: 0 },
         slots: ['Modification'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/79d9f2b2bc32bd78ab67dc82eece696a.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/2a983c8c6a4fd09d5c404a69f2e4ef4b.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/a4a69e683fbb478b7898c0948867b17e.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/0094a1782fe28070143ff01a60d88f7d.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/it/d1d98a79bc4327f20fb7c6ed8c428b59.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/64f87972a243ebc020aabfb06edb3135.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/79d9f2b2bc32bd78ab67dc82eece696a.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/79d9f2b2bc32bd78ab67dc82eece696a.png',
-        },
         ffg: 550,
       },
     ],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
     cost: { value: 4 },
     restrictions: [{ equipped: ['Astromech'] }],
@@ -919,28 +670,10 @@ const t: UpgradeBase[] = [
             'After you drop, launch, or place a bomb or mine, you may place 1 fuse marker on that device.',
         },
         slots: ['Modification'],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/4572ece39224eeaf2dfce2770b96f919.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/c715bf96acc613e41490a347a2d04550.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/7542b481f2bfae90a7b670d600177771.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/e41e4c535c1b4ba2dc469483ca5b1b29.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/4572ece39224eeaf2dfce2770b96f919.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/4572ece39224eeaf2dfce2770b96f919.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/4572ece39224eeaf2dfce2770b96f919.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/4572ece39224eeaf2dfce2770b96f919.png',
-        },
         ffg: 592,
       },
     ],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
     cost: { value: 1 },
   },
@@ -983,24 +716,6 @@ const t: UpgradeBase[] = [
           { action: { type: 'Reinforce', difficulty: 'White' }, value: 1 },
           { stat: 'shields', value: -1 },
         ],
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/41cf9c90abcd8ff5c668bb447967b75c.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/591e00d36207987b04f6af8ac519510f.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/a7e89d5d416c88829598a00ec348d527.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/es/47ddbcca125903a50b15eceb2c9bbda0.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/41cf9c90abcd8ff5c668bb447967b75c.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/41cf9c90abcd8ff5c668bb447967b75c.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/41cf9c90abcd8ff5c668bb447967b75c.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/41cf9c90abcd8ff5c668bb447967b75c.png',
-        },
         ffg: 593,
       },
     ],
@@ -1010,7 +725,7 @@ const t: UpgradeBase[] = [
       { baseSizes: ['Small', 'Medium'] },
       { stat: { type: 'shields', value: 1 } },
     ],
-    cost: { variable: 'agility', values: { '0': 9, '1': 6, '2': 3, '3': 3 } },
+    cost: { variable: 'agility', values: { '0': 6, '1': 3, '2': 1, '3': 1 } },
   },
   {
     limited: 0,
@@ -1031,24 +746,6 @@ const t: UpgradeBase[] = [
         slots: ['Modification'],
         grants: [{ action: { type: 'Lock', difficulty: 'White' }, value: 1 }],
         ffg: 619,
-        image: {
-          en:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/619d3d56eadaada29c6602cc7cd00148.png',
-          de:
-            'https://sb-cdn.fantasyflightgames.com/card_images/de/5b651528735d464040c9106200c9c14a.png',
-          fr:
-            'https://sb-cdn.fantasyflightgames.com/card_images/fr/b488a0f6e5645d73400e31d4fab50e79.png',
-          es:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/619d3d56eadaada29c6602cc7cd00148.png',
-          it:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/619d3d56eadaada29c6602cc7cd00148.png',
-          pl:
-            'https://sb-cdn.fantasyflightgames.com/card_images/pl/f3f30499f367c369c7e0f69da99a36bd.png',
-          pt:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/619d3d56eadaada29c6602cc7cd00148.png',
-          zh:
-            'https://sb-cdn.fantasyflightgames.com/card_images/en/619d3d56eadaada29c6602cc7cd00148.png',
-        },
         text: {
           en:
             'Targeting computers are standard features on many vessels, especially those designed to deliver ordnance. Some light starfighters and transport craft lack such weapons guidance, though it can be installed as an after-market modification.',
@@ -1069,7 +766,7 @@ const t: UpgradeBase[] = [
         },
       },
     ],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
     cost: { value: 3 },
   },
@@ -1078,7 +775,7 @@ const t: UpgradeBase[] = [
     limited: 1,
     cost: {
       variable: 'initiative',
-      values: { '0': 3, '1': 3, '2': 3, '3': 3, '4': 4, '5': 5, '6': 6 },
+      values: { '0': 2, '1': 3, '2': 4, '3': 5, '4': 6, '5': 7, '6': 8 },
     },
     sides: [
       {
@@ -1089,12 +786,71 @@ const t: UpgradeBase[] = [
             'While you perform a red [Boost], [Barrel Roll], or [Slam] action, you must use a template of 1 speed higher, if able.',
         },
         slots: ['Modification'],
-        ffg: -1,
+        ffg: 721,
       },
     ],
     hyperspace: true,
     epic: true,
     restrictions: [{ chassis: ['t70xwing'] }],
+  },
+  {
+    limited: 0,
+    xws: 'independentcalculations',
+    hyperspace: true,
+    epic: false,
+    sides: [
+      {
+        ability: {
+          en:
+            'Replace your Networked Calculations ship ability with the following: Independent Calculations: While you perform a white [Calculate] action, you may treat it as red to gain 1 additional calculate token. Other ships cannot spend your calculate tokens using the Networked Calculations ship ability.',
+        },
+        title: { en: 'Independent Calculations' },
+        type: 'Modification',
+        slots: ['Modification'],
+        ffg: 866,
+      },
+    ],
+    cost: { value: 4 },
+  },
+  {
+    limited: 0,
+    xws: 'precisionionengines',
+    hyperspace: true,
+    epic: false,
+    sides: [
+      {
+        ability: {
+          en:
+            "Before you execute a speed 1-3 Koiogran Turn ([Koiogran Turn]) maneuver, you may spend 1 [Charge] to execute that maneuver as a Segnor's Loop ([Segnor's Loop Left] or [Segnor's Loop Right]) maneuver instead.",
+        },
+        title: { en: 'Precision Ion Engines' },
+        type: 'Modification',
+        slots: ['Modification'],
+        ffg: 867,
+      },
+    ],
+    cost: { value: 3 },
+    restrictions: [
+      {
+        chassis: [
+          'tielnfighter',
+          'tieadvancedx1',
+          'tieskstriker',
+          'tieddefender',
+          'tiesabomber',
+          'tiecapunisher',
+          'tieadvancedv1',
+          'tiephphantom',
+          'tieagaggressor',
+          'tieininterceptor',
+          'tiereaper',
+          'tiefofighter',
+          'tiesffighter',
+          'tievnsilencer',
+          'tiebainterceptor',
+        ],
+      },
+    ],
   },
 ];
 

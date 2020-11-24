@@ -80,27 +80,9 @@ const t: ShipType = {
         zh:
           'After witnessing the Hosnian Cataclysm, some spacers willingly aided the Resistance with whatever ships they had.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/28411b84c1b15f0bfa9928f2206e44f5.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/df2645e770876b0f982136df002ed6f7.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/bf0663601dd5c2c4a09dade8ef0a6b48.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/537f053cd05043f8320c960c9b5a4616.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/c2f95e3062e60b940ce43f2adbf4318d.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/534ce5dfb31b0d07bbc1aff2bb25280e.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/28411b84c1b15f0bfa9928f2206e44f5.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/28411b84c1b15f0bfa9928f2206e44f5.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/3e567923957881e9a4dbef46789c7fbf.jpg',
-      cost: 59,
+      cost: 58,
       slots: [
         'Missile',
         'Crew',
@@ -156,27 +138,9 @@ const t: ShipType = {
         zh:
           'After a friendly ship at range 0-3 is destroyed, before that ship is removed, you may perform an action. Then you may perform a bonus attack.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/209a8dece475a265aaf1b5318ba7f08a.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/bafe185ff50b30840d2abd5de46ae674.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/a5af95190cf14afeb38bc03d8a65c016.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/bea5a56cb43ac0e5f81e8d2590a7ce2d.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/149db0e74255008c3a3b6fd373b85f15.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/cd923b2083cc17c09936faf57ae6d9b8.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/209a8dece475a265aaf1b5318ba7f08a.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/209a8dece475a265aaf1b5318ba7f08a.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/c40ec30b7df138c4510b08f4f02d54b5.jpg',
-      cost: 61,
+      cost: 60,
       slots: [
         'Talent',
         'Missile',
@@ -233,27 +197,9 @@ const t: ShipType = {
         zh:
           'Setup: You can be placed anywhere in the play area beyond range 3 of enemy ships.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/5816bd53c272ed50096e22ae1af2b38a.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/75a9ac78497bc0077e5e1fc17909d430.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/a18c6c3137cf2fd6f2a48366ac4f7076.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/be836ed785dfbe18cafd6a4d6ead5da9.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/582ba6e2151f592789831118b3f0a03c.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/dc83ba312ac203ba9ab8837091452f87.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/5816bd53c272ed50096e22ae1af2b38a.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/5816bd53c272ed50096e22ae1af2b38a.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/15263defc98e4a54d76ae9224534dacf.jpg',
-      cost: 63,
+      cost: 62,
       slots: [
         'Talent',
         'Missile',
@@ -309,24 +255,6 @@ const t: ShipType = {
           'While you defend or perform an attack, if the enemy ship is in your [Front Arc], you may spend 1 [Force] to change 1 of your blank results to an [Evade] or [Hit] result.',
         zh:
           'While you defend or perform an attack, if the enemy ship is in your [Front Arc], you may spend 1 [Force] to change 1 of your blank results to an [Evade] or [Hit] result.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/0ee7006e6cc51d8c08b784c9b770f1b0.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/dea56ceab43c61242101ff24c563bb16.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/17a4ac58d504da0d233e6c72122035f7.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/efecc77b6ef4bf489117d8512f7e6b2c.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/d159d1676f310f28d7165dd92abe1aca.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/78618af9fda026c2e46e39f6f6e9abf1.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/0ee7006e6cc51d8c08b784c9b770f1b0.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/0ee7006e6cc51d8c08b784c9b770f1b0.png',
       },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/1ff06aeff0d74773e9c9f3846b38b75d.jpg',

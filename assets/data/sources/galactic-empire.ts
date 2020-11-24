@@ -343,29 +343,6 @@ export const t: Source[] = [
     },
   },
   {
-    ffg: 44,
-    xws: 'tieddefender',
-    name: 'TIE/D Defender',
-    wave: 6,
-    released: true,
-    contents: {
-      ships: { tieddefender: 1 },
-      pilots: {
-        rexlerbrath: 1,
-        colonelvessery: 1,
-        countessryad: 1,
-        onyxsquadronace: 1,
-        deltasquadronpilot: 1,
-      },
-      upgrades: {
-        elusive: 1,
-        advancedsensors: 1,
-        tractorbeam: 1,
-        ionmissiles: 1,
-      },
-    },
-  },
-  {
     ffg: -1,
     xws: 'tierbheavy',
     name: 'TIE/rb Heavy',
@@ -373,8 +350,23 @@ export const t: Source[] = [
     released: true,
     contents: {
       ships: { tierbheavy: 1 },
-      pilots: {},
-      upgrades: {},
+      pilots: {
+        lyttandree: 1,
+        rampage: 1,
+        onyxsquadronsentry: 1,
+        caridaacademycadet: 1,
+      },
+      upgrades: {
+        heavylasercannon: 1,
+        ioncannon: 1,
+        syncedlasercannons: 1,
+        maneuverassistmgk300: 1,
+        targetassistmgk300: 1,
+        ablativeplating: 1,
+        deadeyeshot: 2,
+        ionlimiteroverride: 2,
+        snapshot: 2,
+      },
     },
   },
 ];

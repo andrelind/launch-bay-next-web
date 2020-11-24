@@ -106,25 +106,7 @@ const t: ShipType = {
         zh:
           'Shadow Squadron has served since the early days of the Clone Wars, winning victories at Kadavo and against the flagship of Grievous, Malevolence.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/fe59b8b8bd7ca5d4104030b50a30a299.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/98d4c989af1003a323c9ebfc10dee9e3.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/89b1a131e3489409a3f360898b9962bc.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/fe59b8b8bd7ca5d4104030b50a30a299.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/fe59b8b8bd7ca5d4104030b50a30a299.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/23300586332b4c40ba8ddd6955e2f157.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/fe59b8b8bd7ca5d4104030b50a30a299.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/fe59b8b8bd7ca5d4104030b50a30a299.png',
-      },
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       slots: [
         'Talent',
@@ -182,7 +164,7 @@ const t: ShipType = {
         'Gunner',
         'Force Power',
       ],
-      cost: 55,
+      cost: 53,
       ffg: 596,
       caption: {
         en: 'Hero of the Republic',
@@ -193,24 +175,6 @@ const t: ShipType = {
         pl: 'Bohater Republiki',
         pt: 'Hero of the Republic',
         zh: 'Hero of the Republic',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c7c979a7d90961d2e3afe377a71285df.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/c0af46ff66129c780a13c24727c53c03.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/06f8a6230f77123472ab9a338fa7bc92.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c7c979a7d90961d2e3afe377a71285df.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c7c979a7d90961d2e3afe377a71285df.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/819eb13983960274e473b265805c4a9a.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c7c979a7d90961d2e3afe377a71285df.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c7c979a7d90961d2e3afe377a71285df.png',
       },
     },
     {
@@ -262,7 +226,7 @@ const t: ShipType = {
         'Modification',
         'Gunner',
       ],
-      cost: 32,
+      cost: 31,
       ffg: 600,
       caption: {
         en: 'Bucket of Bolts',
@@ -273,24 +237,6 @@ const t: ShipType = {
         pl: 'Kupa złomu',
         pt: 'Bucket of Bolts',
         zh: 'Bucket of Bolts',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/b37b960f2e79ab5eb905bc3593de8961.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/e8489ece1bda7c331fa3697ca16877f2.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/36ed45f014498d91384c73ffcf182669.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/b37b960f2e79ab5eb905bc3593de8961.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/b37b960f2e79ab5eb905bc3593de8961.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/8c9f15dabae8190772ce2d28b75c4e3a.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/b37b960f2e79ab5eb905bc3593de8961.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/b37b960f2e79ab5eb905bc3593de8961.png',
       },
     },
     {
@@ -346,26 +292,8 @@ const t: ShipType = {
         'Modification',
         'Gunner',
       ],
-      cost: 42,
+      cost: 40,
       ffg: 597,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/8f1d65004c763b48293d1324a49c563a.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/8b69a3e697c598e210eb93af51463cd7.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/e5a81d903f737c07a06cbac0bdee4781.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/8f1d65004c763b48293d1324a49c563a.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/8f1d65004c763b48293d1324a49c563a.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/c8abfa1f277b2b01346c4e3037cd2a4d.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/8f1d65004c763b48293d1324a49c563a.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/8f1d65004c763b48293d1324a49c563a.png',
-      },
     },
     {
       name: {
@@ -410,7 +338,7 @@ const t: ShipType = {
         'Modification',
         'Gunner',
       ],
-      cost: 43,
+      cost: 42,
       ffg: 598,
       caption: {
         en: 'Shadow Two',
@@ -421,24 +349,6 @@ const t: ShipType = {
         pl: 'Cień Dwa',
         pt: 'Shadow Two',
         zh: 'Shadow Two',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/6aa658fe4082ed67500d2ac92c7731a0.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/b139cb76f1e45b0947f902491df34e83.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/b8b733767dd3c0e7a634c1d92a382534.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/6aa658fe4082ed67500d2ac92c7731a0.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/6aa658fe4082ed67500d2ac92c7731a0.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/f8452dafe25aa45da4a1a025c4c5de4c.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/6aa658fe4082ed67500d2ac92c7731a0.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/6aa658fe4082ed67500d2ac92c7731a0.png',
       },
     },
     {
@@ -496,24 +406,6 @@ const t: ShipType = {
         pt: 'Shadow Three',
         zh: 'Shadow Three',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1f0842573067d73acd7bb7589707ec4e.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/b4895061c3161dfb7d194646aa14019c.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/48b2ce247c8f704f053ce948f4074d9a.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1f0842573067d73acd7bb7589707ec4e.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1f0842573067d73acd7bb7589707ec4e.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/16e070dad71b40df1651bbdeddd7d211.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1f0842573067d73acd7bb7589707ec4e.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/1f0842573067d73acd7bb7589707ec4e.png',
-      },
     },
     {
       name: {
@@ -569,24 +461,6 @@ const t: ShipType = {
         pt: 'Payload Specialist',
         zh: 'Payload Specialist',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3b34b6fc25db55b66654d355c7f514eb.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/a0bf4943c2163958a5d6a9c362c876f4.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/8435d76a9b54dfe34388091740a95089.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3b34b6fc25db55b66654d355c7f514eb.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3b34b6fc25db55b66654d355c7f514eb.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/0f00b59c211328aba5908fe32dc97aff.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3b34b6fc25db55b66654d355c7f514eb.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3b34b6fc25db55b66654d355c7f514eb.png',
-      },
     },
     {
       name: {
@@ -620,7 +494,7 @@ const t: ShipType = {
         zh:
           'At the battle of Geonosis, Red Squadron provided vital cover to the LAAT gunships deployed to secure the surface.',
       },
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
       slots: [
         'Turret',
@@ -632,24 +506,6 @@ const t: ShipType = {
       ],
       cost: 29,
       ffg: 603,
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/692a1f1d4b5f5370dad7cacf2f19d699.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/ca9a4cf728e707c32184a82537c39d17.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/8395848e3f11df31bef84a2f0f412357.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/692a1f1d4b5f5370dad7cacf2f19d699.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/692a1f1d4b5f5370dad7cacf2f19d699.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/33ef3a4a05c001dcb318bec95cfd00d5.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/692a1f1d4b5f5370dad7cacf2f19d699.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/692a1f1d4b5f5370dad7cacf2f19d699.png',
-      },
     },
   ],
   ffg: 68,

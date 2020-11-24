@@ -127,24 +127,6 @@ const t: ShipType = {
         zh:
           '当你进行防御或执行攻击时，如果本次攻击距离为1，你可以投1个额外的骰子。  康考迪亚对峙：当你进行防御时，如果本次攻击距离为1，且你位于攻击方的[Front Arc]内，将任意1个掷骰结果变为1[Evade]。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_155.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/b28767fe1f8fb47d98f5fbaefa796e67.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/2a7097a3c68d1f91ea38fbef250fc7f0.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/b02a4bf71a175e2698e8031ab09d6bba.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/1e903624cd74dd6c083c84d8081c0fa6.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/92b93d68a82d9f970baf087fd1cd0eea.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/7067e9a6cda3f6a714ce888df320b7d1.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_155.png',
-      },
       slots: ['Talent', 'Torpedo'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_155.jpg',
@@ -175,7 +157,7 @@ const t: ShipType = {
       },
       initiative: 4,
       limited: 1,
-      cost: 52,
+      cost: 47,
       xws: 'joyrekkoff',
       ability: {
         en:
@@ -195,25 +177,7 @@ const t: ShipType = {
         zh:
           '当你执行攻击时，你可以从已装备的[Torpedo]升级卡上花费1[Charge]，如果你如此做，防御方少投1个防御骰。 康考迪亚对峙：当你进行防御时，如果本次攻击距离为1，且你位于攻击方的[Front Arc]内，将任意1个掷骰结果变为1[Evade]。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_157.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/5c896a65518208fc082e3558990904b0.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/3f39cb13d7667a63fc9547eb4918dd76.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/b76a6658b177356c7435f8ea1990cf43.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/bab2e874e744cbaf0e9b780964d0f707.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/f9e7047cad7f8af2742905ceb025599e.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/c3d58008e88e267cbd6256cec6515c80.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_157.png',
-      },
-      slots: ['Talent', 'Torpedo'],
+      slots: ['Talent', 'Torpedo', 'Modification'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_157.jpg',
       ffg: 157,
@@ -262,25 +226,7 @@ const t: ShipType = {
         zh:
           '你完全地执行红色移动后，获得2枚专注标记。  康考迪亚对峙：当你进行防御时，如果本次攻击距离为1，且你位于攻击方的[Front Arc]内，将任意1个掷骰结果变为1[Evade]。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_158.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/1c0959722dc24bc91ca71a195d5ebe92.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/48496dc6d5ac4dec5890d0833a7b9fdb.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/57b6869301045b11e9e0a00f0ab4cffe.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/19119b378bfc163bfd670786d6fb1bd9.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/d28c42b81e939f62d9056d50d12afd33.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/e8420189798fdb9983072071752ed765.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_158.png',
-      },
-      slots: ['Talent', 'Torpedo'],
+      slots: ['Talent', 'Torpedo', 'Modification'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_158.jpg',
       ffg: 158,
@@ -330,29 +276,11 @@ const t: ShipType = {
         zh:
           '在交战阶段开始时，你可以选1架距离为1的敌机。如果你位于该敌机的[Front Arc]内，移除其全部绿色标记。 康考迪亚对峙：当你进行防御时，如果本次攻击距离为1，且你位于攻击方的[Front Arc]内，将任意1个掷骰结果变为1[Evade]。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_156.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/767dc6f24ad386a685d5926542e3f212.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/bf49e37a7455fa1a6d7298e53c423035.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/05c90f3fd11a317ff1a41561892fd240.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/2c25f9b245b374e2024ffbc3a6b07f3b.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/ed08592e1748f8aa9f3f4059758b35e5.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/95e4412de5395035ca9557aa03ffaaaa.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_156.png',
-      },
-      slots: ['Talent', 'Torpedo'],
+      slots: ['Talent', 'Torpedo', 'Modification'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_156.jpg',
       ffg: 156,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
     {
@@ -388,29 +316,11 @@ const t: ShipType = {
         zh:
           '骷髅中队的王牌飞行员倾向于采用侵略性战术，精通操纵机翼枢轴的技巧，使得机体的敏捷性能无与伦比，连猎物也为之叹服。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_159.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/771d68fff2d67cd0af9ab22fa3582ac6.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/6696ba3f0035b9d2e165136851dc5a7b.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/835d9ffcb184c23eb44be83adaf8d276.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/9042a839a56c26d54356df9d991f7f4b.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/da3de2f03e134a2db81cbef402c54e3a.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/f00308bfbf00349a216a362c16903950.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_159.png',
-      },
-      slots: ['Talent', 'Torpedo'],
+      slots: ['Talent', 'Torpedo', 'Modification'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_159.jpg',
       ffg: 159,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -446,29 +356,11 @@ const t: ShipType = {
         zh:
           '曼达洛的獠牙战斗机飞行员必须掌握康考迪亚对峙，借助自身机体精准的攻击模式，执行正面死亡冲锋。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_160.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/a0929f168b0b07bfb09384df6a5a27f0.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/9339c01e5409fe7dea67132f9972c50f.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/6f6c59540dc3bf07bf90752872ad20f0.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/55a45651e28a7b657053ef731099f795.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/395fb309fc0e2d1110e02d4d89fb4309.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/b17d957d65394d487ac40781e61bd4b3.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_160.png',
-      },
-      slots: ['Torpedo'],
+      slots: ['Torpedo', 'Modification'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_160.jpg',
       ffg: 160,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
   ],

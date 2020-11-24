@@ -91,24 +91,6 @@ const t: ShipType = {
         'Title',
         'Gunner',
       ],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_225.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/ec1c313dae4d109615859de72aa5e5ea.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/2bb82216c81e9248c78d44a92bec3383.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/7ddba79d86dc118f6f608b7936364619.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/bcb1de18d3a31dfb773de008d44662f5.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/4e17dc4dc9215ac0c9d21b4a1ee5e978.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/7502f6f6d8fcbdca6be6a65016d39832.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_225.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_225.jpg',
       ffg: 225,
@@ -157,24 +139,6 @@ const t: ShipType = {
           'Quando defender ou realizarum ataque primário, se o ataqueestiver obstruído por um obstáculo,você pode rolar 1 dado adicional.',
         zh:
           '当你进行防御或执行基础攻击时，如果本次攻击受障碍物阻碍，你可以投1个额外的骰子。',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_222.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/4a795b3ae06c1ac558d0edf51d178df5.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/a98902945b959d0042a0fce7ef8c0c34.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/dcbff1c58c0c184be4c312e45adfafcc.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/19311b9ec4a332ee16eb5f8121b4a25a.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/02e063edf78d1a796c07c1e9fb0068b9.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/f4fd9f5b293f881b684b2bbb34e6533d.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_222.png',
       },
       slots: [
         'Talent',
@@ -235,24 +199,6 @@ const t: ShipType = {
         zh:
           '如果你没有激活护盾，则降低你的斜向([Bank Left]和[Bank Right])移动难度。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_224.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/c9a6355c71745bdf38086b6f98eaa9e1.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/0a7fa6e235a07adfefcdf4226c4208a5.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/e779cd91b51ccf3df691662eb6e91a7f.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/078d7a1779c9275c905646671378307c.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/bda2341bb4b6ba71574e57df1cb1e6b9.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/371e87c6fd48966fb407453eb15f18ba.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_224.png',
-      },
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },
         { difficulty: 'White', type: 'Lock' },
@@ -260,7 +206,6 @@ const t: ShipType = {
         { difficulty: 'White', type: 'Rotate Arc' },
       ],
       slots: [
-        'Talent',
         'Missile',
         'Crew',
         'Crew',
@@ -318,24 +263,6 @@ const t: ShipType = {
         zh:
           '在你掷骰之后，如果你未处于压力状态，则你可以获得1枚压力标记并重投本次掷骰结果中所有的空白面骰子。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_223.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/6348cc2c5792adf58f71c8de061adb88.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/67e556602f85a3745f388c021715f6c0.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/3a5fb1def5ff7e874b4d162454ec49da.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/16532e6d66566e33a0d5247a7c29eed7.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/c11a9a09b67525f323b9dc55454695c8.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/439ddf9bbc4a12db6f174f4c947bc282.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_223.png',
-      },
       slots: [
         'Talent',
         'Missile',
@@ -349,7 +276,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_223.jpg',
       ffg: 223,
-      hyperspace: false,
+      hyperspace: true,
       epic: true,
     },
   ],

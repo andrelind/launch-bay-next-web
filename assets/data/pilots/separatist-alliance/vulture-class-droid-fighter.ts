@@ -110,24 +110,6 @@ const t: ShipType = {
         zh:
           'The Trade Federation deployed countless Vulture Droids at the Battle of Naboo, and continues to use these inexpensive starfighters in the Clone Wars.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/4d8ed38f907fb4869611add738abda11.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/fcf303b9022759c78be3fe76d2af1cf5.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/1a9e9243f3aebf4746a9923f25d07558.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/6efe7ebe63cf94ba15d0169f060cabb6.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/24b835f8885c052c034b1c96a6d1c568.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/afea6794679da00685b7ee24ba8af036.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/4d8ed38f907fb4869611add738abda11.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/4d8ed38f907fb4869611add738abda11.png',
-      },
       hyperspace: true,
       epic: true,
       cost: 20,
@@ -177,24 +159,6 @@ const t: ShipType = {
           'While you perform an attack, if the defender is in your [Bullseye Arc], you may reroll 1 blank result.',
         zh:
           'While you perform an attack, if the defender is in your [Bullseye Arc], you may reroll 1 blank result.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/44cd712b4db9f34091cff73a4fda4303.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/ad17babff518f8b45a858515ba38f438.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/e8fa66dadafb860e09011f82cdf12dd7.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/18b266b229c62e880e95be6870a63656.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/1b80b85507d1a84727cb0944401be510.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/0ffb1344141a2dba3bc99ae44f4a1295.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/44cd712b4db9f34091cff73a4fda4303.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/44cd712b4db9f34091cff73a4fda4303.png',
       },
       hyperspace: true,
       epic: true,
@@ -246,24 +210,6 @@ const t: ShipType = {
         zh:
           'After an enemy ship in your [Bullseye Arc] at range 0-2 declares another friendly ship as the defender, you may perform a [Calculate] or [Lock] action.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/91421be1f3bbbefd005c1b2682f0bc44.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/82e60e591d817728afa654f6d92cda64.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/1ccf05a4612898c3e0512e4cf2621f2a.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/6137a53c9fd22795879aeb6f3c2ee213.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/ee9bc526921f7d3bb879542fb1177baa.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/81a3f2f7b20135374ef373618fda5bba.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/91421be1f3bbbefd005c1b2682f0bc44.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/91421be1f3bbbefd005c1b2682f0bc44.png',
-      },
       hyperspace: true,
       epic: true,
       cost: 21,
@@ -314,24 +260,6 @@ const t: ShipType = {
         zh:
           'While a friendly ship at range 0-1 defends, it may spend 1 calculate token to change all [Critical Hit] results to [Hit] results.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/808de8db6d43921b4e3124f01d5d4947.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/a8e3f4865103dd3720a7e28e2deb7b1a.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/7f9372123215e15802d11abaecce4a87.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/b238c73d55552ae397b0023f8dc7203a.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/2961ae8ed5d2a8b34348f850c3787dfe.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/1c33ce91240d11d70173773bfe233292.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/808de8db6d43921b4e3124f01d5d4947.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/808de8db6d43921b4e3124f01d5d4947.png',
-      },
       hyperspace: true,
       epic: true,
       cost: 26,
@@ -371,24 +299,6 @@ const t: ShipType = {
           'As the Clone Wars escalate, the Separatist Alliance continues to develop the technology of droid starfighters, as well as the tactical droids that command them.',
         zh:
           'As the Clone Wars escalate, the Separatist Alliance continues to develop the technology of droid starfighters, as well as the tactical droids that command them.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/64e75b9a1024ac0c909634e62e165b2e.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/298f0b44ab76850fbfc734897e653d29.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/30494ee117ce4acfbfc7c70d87beaf19.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/4a0213977a5f3d7b41736a22365268da.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/33f9bc484c3efb489dd5fc237c626a3a.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/68293414656f782dd8a0e554c6b753ce.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/64e75b9a1024ac0c909634e62e165b2e.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/64e75b9a1024ac0c909634e62e165b2e.png',
       },
       hyperspace: true,
       epic: true,
@@ -439,24 +349,6 @@ const t: ShipType = {
           'At the start of the Engagement Phase, you may transfer 1 of your calculate tokens to another friendly ship at range 0-3.',
         zh:
           'At the start of the Engagement Phase, you may transfer 1 of your calculate tokens to another friendly ship at range 0-3.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/741f05dbe0f7e56fc9918b86bdb0e3fb.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/7f1414a53bf7274cdbfe8f5d051c6131.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/2c6b5a5edf2b9e82d59383b96f85a9c8.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/d6616baba7ad57a7ea55f22333ee9ed7.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/106d5c9235ff442ab8faa5c3a4a8ac58.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/7dde6ea59249dce4644a46e0d5299ec7.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/741f05dbe0f7e56fc9918b86bdb0e3fb.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/741f05dbe0f7e56fc9918b86bdb0e3fb.png',
       },
       hyperspace: true,
       epic: true,

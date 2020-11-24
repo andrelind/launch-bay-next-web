@@ -1,3 +1,4 @@
+import { Transition } from "@tailwindui/react";
 import { useRouter } from "next/router";
 import React, { FC, useState } from "react";
 import { colorForFaction } from "../helpers/colors";
@@ -13,6 +14,7 @@ type Props = {
   points: number;
   format: Format;
   onChangeFormat: () => void;
+  actions?: { title: string; className?: string; onClick: () => void }[];
 };
 
 export const Layout: FC<Props> = ({
@@ -20,11 +22,13 @@ export const Layout: FC<Props> = ({
   points,
   format,
   onChangeFormat,
+  actions,
   children,
 }) => {
   const router = useRouter();
   const jwt = useJWT();
   const [showMenu, setShowMenu] = useState(false);
+  const [showActions, setShowActions] = useState(false);
 
   const getSelectedFaction = () => {
     const lbx = router.query.lbx;
@@ -101,6 +105,7 @@ export const Layout: FC<Props> = ({
                     <div className="ml-3 relative">
                       <div>
                         <button
+                          onClick={() => setShowMenu(!showMenu)}
                           className="max-w-xs flex items-center text-sm rounded-full text-white focus:outline-none focus:shadow-solid"
                           id="user-menu"
                           aria-label="User menu"
@@ -123,7 +128,16 @@ export const Layout: FC<Props> = ({
                       From: "transform opacity-100 scale-100"
                       To: "transform opacity-0 scale-95"
                   --> */}
-                      <div className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg hidden">
+                      <Transition
+                        show={showMenu}
+                        enter="transition ease-out duration-100"
+                        enterFrom="transform opacity-0 scale-95"
+                        enterTo="transform opacity-100 scale-100"
+                        leave="transition ease-in duration-75"
+                        leaveFrom="transform opacity-100 scale-100"
+                        leaveTo="transform opacity-0 scale-95"
+                        className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg"
+                      >
                         <div className="py-1 rounded-md bg-white shadow-xs">
                           {jwt && (
                             <a
@@ -150,7 +164,7 @@ export const Layout: FC<Props> = ({
                             </a>
                           )}
                         </div>
-                      </div>
+                      </Transition>
                     </div>
                   </div>
                 </div>
@@ -302,22 +316,41 @@ export const Layout: FC<Props> = ({
                     {format}
                   </button>
                 </span>
-                <span className="ml-3 shadow-sm rounded-md">
+                <span className="ml-3 shadow-sm rounded-md relative">
                   <button
+                    onClick={() => setShowActions(!showActions)}
                     type="button"
                     className="inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-gray-600 hover:bg-gray-500 focus:outline-none focus:shadow-outline-gray focus:border-gray-700 active:bg-gray-700 transition duration-150 ease-in-out"
                   >
                     Actions
                   </button>
-                </span>
-                {/* <span className="ml-3 shadow-sm rounded-md">
-                  <button
-                    type="button"
-                    className="inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-lbnred-500 hover:bg-lbnred-400 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-600 active:bg-lbnred-600 transition duration-150 ease-in-out"
+
+                  <Transition
+                    show={showActions}
+                    enter="transition ease-out duration-100"
+                    enterFrom="transform opacity-0 scale-95"
+                    enterTo="transform opacity-100 scale-100"
+                    leave="transition ease-in duration-75"
+                    leaveFrom="transform opacity-100 scale-100"
+                    leaveTo="transform opacity-0 scale-95"
+                    className="origin-top-right right-0 absolute mt-2 w-48 rounded-md shadow-lg z-10"
                   >
-                    Publish
-                  </button>
-                </span> */}
+                    <div className="py-1 rounded-md bg-white shadow-xs">
+                      {actions?.map((a) => (
+                        <button
+                          key={a.title}
+                          onClick={() => {
+                            a.onClick();
+                            setShowActions(false);
+                          }}
+                          className={`block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left cursor-pointer ${a.className}`}
+                        >
+                          {a.title}
+                        </button>
+                      ))}
+                    </div>
+                  </Transition>
+                </span>
               </div>
             </div>
           </div>

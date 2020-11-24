@@ -105,7 +105,7 @@ const t: ShipType = {
       },
       initiative: 6,
       limited: 1,
-      cost: 67,
+      cost: 66,
       xws: 'darthvader',
       ability: {
         en:
@@ -125,24 +125,6 @@ const t: ShipType = {
         zh:
           '当你执行行动后，你可以花费1[Force]来再执行一个行动。 高级定位计算机：当你进行基础攻击且防御方已被你锁定时，多投1个攻击骰并将1[Hit]变为1[Critical Hit]。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_93.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/2e20f1f39dd1564a855c529201ad2fae.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/b41a7266a766423cc3a5a4ec2839d01e.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/8037d4e257a9352e147ba687017aed81.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/ea5b8c33cdf43fb5d0bf360ca3b1832e.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/daec655c941b7aba61910dea2a5cbcb5.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/a36027fb74e8d004881374bac0faa77e.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_93.png',
-      },
       alt: [
         {
           image:
@@ -155,7 +137,7 @@ const t: ShipType = {
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_93.jpg',
       ffg: 93,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -201,29 +183,11 @@ const t: ShipType = {
         zh:
           '当你执行攻击，且防御方将拿取一张面朝上的伤害卡时，改为拿取3张伤害卡，选择其中1张交给防御方并弃掉余下两张。  高级定位计算机：当你进行基础攻击且防御方已被你锁定时，多投1个攻击骰并将1[Hit]变为1[Critical Hit]。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_94.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/d3fd9f32f783a3030252173857a09bf6.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/62fda869b3668c1f4feff5e26baab4e2.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/cd3b8a58dcd6a6f00dc7cdd6ae567e2a.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/a2a33a20e060f35dc22cfa0d3ab7b03a.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/45795d902b9eb1def52640185ca037f9.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/6447d07a9347ce0e9ee1780fec1d73c9.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_94.png',
-      },
       slots: ['Talent', 'Sensor', 'Missile', 'Modification'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_94.jpg',
       ffg: 94,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -258,24 +222,6 @@ const t: ShipType = {
           'A TIE Advanced x1 foi produzida em quantidade limitada, porém os engenheiros da Sienar incorporaram muitas de suas melhores qualidades em seu próximo modelo de TIE: a TIE Interceptor.',
         zh:
           'TIE高级X1战斗机并未大规模生产，但其设计团队均为西纳舰队系统公司最优秀的工程师，确保这架战机有着最顶尖的质量，接近TIE系列下一代机型：TIE拦截机。',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_97.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/37c71fa6a34d4b8fc11ae806e7c274e2.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/80d6c39a06a88fca6edcf6b2245d5ddf.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/33aeb5b7f18cc9e87d6a163b03fd6db7.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/ae95a9fce6189b148d45e20353816861.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/3be64658da4b36ead8e376cd5b34981a.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/0f32178a9dcc48e75be781b6c4f773ac.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_97.png',
       },
       slots: ['Talent', 'Sensor', 'Missile', 'Modification'],
       artwork:
@@ -325,24 +271,6 @@ const t: ShipType = {
         },
       ],
       slots: ['Sensor', 'Missile', 'Modification'],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_98.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/ebde9d97c2c5598cdb8a7f805600106b.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/7e2aa4ebe2e91a275bcd7bf9dde8b928.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/206662603a8f96642b541c978e89278c.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/7402d4c838bf3f3f748c5c76ece61f86.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/a84798c291f562b4be44663e982046fb.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/9383939033fbd5759bc69b9dc5394dde.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_98.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_98.jpg',
       ffg: 98,
@@ -392,29 +320,11 @@ const t: ShipType = {
         zh:
           '当你执行移动时，你可以改为执行方向与难度相同，而速度上升/下降一级的移动。 高级定位计算机：当你进行基础攻击且防御方已被你锁定时，多投1个攻击骰并将1[Hit]变为1[Critical Hit]。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_95.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/160b261508e61d809a36530850d38397.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/827e2b135f58a67af5dd58fad8bb72c8.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/0502192e5cb58c4321f6e87e02c6c3ae.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/cf7232ae6ba5fd5cb850578dd7fdd4df.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/23507f3e6f9c4fb24371e09ffe334627.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/8b1e4410469725751098a2daf6abb9ad.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_95.png',
-      },
       slots: ['Talent', 'Sensor', 'Missile', 'Modification'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_95.jpg',
       ffg: 95,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -460,29 +370,11 @@ const t: ShipType = {
         zh:
           '在结束阶段，你可以花费1枚你放置在敌机上的锁定标记，以此来暴露1张该战机的伤害卡。 高级定位计算机：当你进行基础攻击且防御方已被你锁定时，多投1个攻击骰并将1[Hit]变为1[Critical Hit]。',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_96.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/362a543a19dc5ac9dd9b5dd6014c2780.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/b6c6fd3028f9497c1191834ffbf3cf2d.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/fcbea6600ffc5528ad2dd0c72dd77225.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/f5189745bfc744a29dae6c876f51a6a2.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/9c53ddb439f2894de40f327f2e69fafd.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/48d36368bef0815d08b7b287ae0e76ce.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_96.png',
-      },
       slots: ['Sensor', 'Missile', 'Modification'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_96.jpg',
       ffg: 96,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
   ],

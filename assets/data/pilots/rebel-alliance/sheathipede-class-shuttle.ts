@@ -110,24 +110,6 @@ const t: ShipType = {
         zh:
           'While you defend, [Critical Hit] results are neutralized before [Hit] results.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_40.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/3786d0d8e69b1c2d4ff5f3b1977c3ce4.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/f9d646e1b93a9158c91a7987b45150a9.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/9dabae7095543d722f81d771c6837c34.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/87514f59552888d14a5b0467f8d8ab22.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/2c3fd92f9c3a4c27de0ee28b09badf5b.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/cf1072994951a5df6350c7d79e0c6e30.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_40.png',
-      },
       slots: ['Talent', 'Crew', 'Astromech', 'Modification', 'Title'],
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_40.jpg',
@@ -177,24 +159,6 @@ const t: ShipType = {
           'Quando você coordenar, se escolheruma nave com exatamente 1 ficha de estresse, ela consegue realizar ações. Shuttle de Comunicação: Quandovocê estiver acoplado, seu porta-navesganha [Coordinate]. Antes de o porta-naves ativar,ele pode realizar uma ação [Coordinate].',
         zh:
           'While you coordinate, if you chose a ship with exactly 1 stress token, it can perform actions.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_41.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/7fad90023728068eaf779caa6969e1e6.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/81f8959824aec641ab140b11d3813b72.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/9501c391fc21ab0b19327f407467598d.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/f6282c361c9e888b17969d4bae7aacce.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/9c2a227b7b349bea93d89f0dddcc38e0.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/5284bad541fc1fb04e748d74f8edb598.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_41.png',
       },
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },
@@ -250,24 +214,6 @@ const t: ShipType = {
         zh:
           'While you defend or perform an attack, if you are stressed, you may spend 1 [Force] to change up to 2 of your [Focus] results to [Evade]/[Hit] results.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_39.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/652e2081b0864f1375c1bb7e52d47af3.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/659ee6e9406466a9e4f8b90fac7e81a6.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/f5897ea14fbed3c13a2bb3bf41c98d3c.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/8d8e3c1fc40c800a49a0ed3ee32be1db.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/b5a680a986bbeb4867839aca7d307a5f.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/3076714408015aebccf0ace5c5265164.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_39.png',
-      },
       force: { value: 1, recovers: 1, side: ['light'] },
       slots: ['Crew', 'Astromech', 'Modification', 'Title', 'Force Power'],
       artwork:
@@ -318,24 +264,6 @@ const t: ShipType = {
           'Após uma nave inimiga em seu arco de tiro engajar, se você não estiver estressado, você pode receber 1 ficha de estresse. Se você fizer isso, a nave inimiga engajando não pode gastar fichas para modificar dados enquanto estiver realizando um ataque nesta fase. Shuttle de Comunicação: Quando vocêestiver acoplado, seu porta-naves ganha [Coordinate].Antes de o porta-naves ativar, ele poderealizar uma ação [Coordinate].',
         zh:
           'After an enemy ship in your firing arc engages, if you are not stressed, you may gain 1 stress token. If you do, that ship cannot spend tokens to modify dice while it performs an attack during this phase.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/43140025bc61b3e64ef6831987cafb2c.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/123335fa5fc598cf50853985b822f210.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/83ec72aa293982cf172f02a76f4ed865.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/727d5cc0ec50d7bdcb466116e501742c.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/972d7aaff01945215be8878b54925701.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/854f24a5a87db67b63b1d34c301f0852.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pt/45590436a561c31323a74d0ab3746533.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/43140025bc61b3e64ef6831987cafb2c.png',
       },
       slots: ['Talent', 'Crew', 'Astromech', 'Modification', 'Title'],
       artwork:

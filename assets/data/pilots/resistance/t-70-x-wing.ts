@@ -115,27 +115,9 @@ const t: ShipType = {
         zh:
           'After you perform an action, you may spend 1 [Charge] to perform a white action, treating it as red.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/14c504c0815213a66010c4013d9296ee.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/df17156a6b8fe0cd3ce8640642b43798.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/140332ce2324c36d461346e844a3527a.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/cfb9b61d3c4ea91226cb39ba051eab9f.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/e9b3ca340ceee634150a63321bbf000c.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/98a9bee646d1d99e3ad92d2c712feaee.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/14c504c0815213a66010c4013d9296ee.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/14c504c0815213a66010c4013d9296ee.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/cb8efd0b723b8ceb0c35b7a64b309bf2.jpg',
-      cost: 67,
+      cost: 62,
       charges: { value: 1, recovers: 1 },
       slots: [
         'Talent',
@@ -148,6 +130,30 @@ const t: ShipType = {
       ffg: 418,
       hyperspace: true,
       epic: true,
+    },
+    {
+      xws: 'poedameron-swz68',
+      name: { en: 'Poe Dameron' },
+      caption: { en: 'Resistance Commander' },
+      cost: 60,
+      initiative: 6,
+      limited: 1,
+      charges: { value: 2, recovers: 1 },
+      ability: {
+        en:
+          'After a friendly ship at range 0-2 performs an action during its activation, you may spend 2 [Charge]. If you do, that ship may perform a white action, treating it as red.',
+      },
+      slots: [
+        'Talent',
+        'Astromech',
+        'Modification',
+        'Title',
+        'Configuration',
+        'Tech',
+      ],
+      hyperspace: true,
+      epic: true,
+      ffg: 697,
     },
     {
       name: {
@@ -181,30 +187,12 @@ const t: ShipType = {
         zh:
           "The Incom-FreiTek T-70 X-Wing was designed to improve upon the tactical flexibility of the venerable T-65. The starfighter's advanced droid socket is compatible with a wide array of astromechs, and its modular weapons pods allow ground crews to tailor its payload for specific missions.",
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/a82a39a4c9baf883fbc6ae353abdd2ec.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/bd58a0cc5e281f44ec45472529332776.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/39899e827c2a43511adede18162e10af.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/22ec88735f36b2e7d9e56e6a188711e5.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/920438f8cea5ebf93e2ffe9f2c3f075a.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/45a43e1ad0a7817c611699ddcf414763.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/a82a39a4c9baf883fbc6ae353abdd2ec.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/a82a39a4c9baf883fbc6ae353abdd2ec.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/8ceeaf3d985f16da8b8d5a1ebc49ea2b.jpg',
-      cost: 42,
+      cost: 41,
       slots: ['Astromech', 'Modification', 'Title', 'Configuration', 'Tech'],
       ffg: 426,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -239,27 +227,9 @@ const t: ShipType = {
         zh:
           'Although the bulk of the Resistance Starfighter Corps is made up of young volunteers from the New Republic, their ranks are bolstered by veterans of the Galactic Civil War determined to finish what they started decades ago.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/58967d94cfef285c4df2fdbb77fd0502.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/6944fc6e0346630c2c1bb4a38b30a3f4.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/937ac4c20fae225d1b167619f10dd35e.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/ab7b2dbc3283f7f28da2361f5a97c0c2.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/65c1f5abf9bd5c7f34a67a254bf8e072.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/59589bb9079a8db49a84718006e08409.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/58967d94cfef285c4df2fdbb77fd0502.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/58967d94cfef285c4df2fdbb77fd0502.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/0e847453270afe089ea331316f7b7731.jpg',
-      cost: 44,
+      cost: 43,
       slots: [
         'Talent',
         'Astromech',
@@ -269,7 +239,7 @@ const t: ShipType = {
         'Tech',
       ],
       ffg: 425,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -304,24 +274,6 @@ const t: ShipType = {
         zh:
           "During the Cold War, Poe Dameron's Black Squadron conducted daring covert operations against the First Order in defiance of treaties ratified by the New Republic Senate.",
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d2b6a5166b3fd985df5d1941408b58e1.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/df051f8d3f0024ed248e4bc5c484fb5f.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/ace2522a3fe7a4e2f478ae3d9df21573.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/4aefd6d02df0f6755110ea8051c98e7b.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/c43ead1cb6510be979426b1bfeeab0bb.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/8dabb59d91cc84aa887d4fe330e3a1c9.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d2b6a5166b3fd985df5d1941408b58e1.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/d2b6a5166b3fd985df5d1941408b58e1.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/e75228d8174f7879c51157fdd9b26e61.jpg',
       cost: 47,
@@ -334,7 +286,7 @@ const t: ShipType = {
         'Tech',
       ],
       ffg: 451,
-      hyperspace: true,
+      hyperspace: false,
       epic: true,
     },
     {
@@ -379,7 +331,7 @@ const t: ShipType = {
         zh:
           'After you reveal a red Tallon Roll ([Tallon Roll Left] or [Tallon Roll Right]) maneuver, if you have 2 or fewer stress tokens, treat that maneuver as white.',
       },
-      cost: 55,
+      cost: 54,
       slots: [
         'Talent',
         'Astromech',
@@ -388,24 +340,6 @@ const t: ShipType = {
         'Configuration',
         'Tech',
       ],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/f77180ae05fd919a0dff2225380246a6.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/8bd099e03d738e4943332063d4faac20.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/c7b120f5f85361186ebb136432de207c.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/422a071c2945e46f1e2404c5ed7e73a5.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/9ecb740718d1219ac91a64ead362df03.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/8a73f26e908ebffdab86ee918bc0cd6d.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/f77180ae05fd919a0dff2225380246a6.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/f77180ae05fd919a0dff2225380246a6.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/ff73537d7ab2f063e7a510c05013269e.jpg',
       ffg: 419,
@@ -446,7 +380,7 @@ const t: ShipType = {
         pt: 'After you lose 1 shield, gain 1 evade token.',
         zh: 'After you lose 1 shield, gain 1 evade token.',
       },
-      cost: 49,
+      cost: 48,
       slots: [
         'Talent',
         'Astromech',
@@ -455,24 +389,6 @@ const t: ShipType = {
         'Configuration',
         'Tech',
       ],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/df85f5b77e16363a05c8f68792440166.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/b98f5d41e0c2663f3f53b77372c605f0.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/79efb3f2b80761d0cbfd23b9193c0c77.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/030df5baa0637b38ba4edf9d7b328d8e.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/0ea5d9af7c243aad0d4538c1d789baae.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/384cf48a0ac5fd01b17aea9bdf57907a.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/df85f5b77e16363a05c8f68792440166.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/df85f5b77e16363a05c8f68792440166.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/b5b43d179b039649e764e6bd4f212a29.jpg',
       ffg: 424,
@@ -521,7 +437,7 @@ const t: ShipType = {
         zh:
           'While you boost, you may use the (1 [Turn Left]) or (1 [Turn Right]) template instead.',
       },
-      cost: 51,
+      cost: 50,
       slots: [
         'Talent',
         'Astromech',
@@ -530,24 +446,6 @@ const t: ShipType = {
         'Configuration',
         'Tech',
       ],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/6edb8ed4cbf882bf6dbe7a37b5981d85.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/d96e1f96c509aeb80c066fb4d10d02e3.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/f2c3f5e816e1788e936214313ac1ffa6.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/1c4be3c9b457d4b4af040b82713113c0.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/563c0352872eb53e95c4aa23db2549da.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/4e7508a4cc6bb640b408de268710b2bb.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/6edb8ed4cbf882bf6dbe7a37b5981d85.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/6edb8ed4cbf882bf6dbe7a37b5981d85.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/f121bc27f2b283258a65d348bcafe40d.jpg',
       ffg: 421,
@@ -595,24 +493,6 @@ const t: ShipType = {
           'After a ship at range 1-2 is dealt a damage card, you may acquire a lock on that ship.',
         zh:
           'After a ship at range 1-2 is dealt a damage card, you may acquire a lock on that ship.',
-      },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3f43d6b3c6e87bde6a681e9d4421dec8.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/33ef7a5d6f2da20dd93f682626621ed9.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/81c4b5b72f4b99caec2ae1648176b021.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/995e67508ff7b020feb0dac348a614a2.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/15f62c40f44ae7fc5af0079d50f60398.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/d6829346fa008dc07e4b4a7ad4b71661.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3f43d6b3c6e87bde6a681e9d4421dec8.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/3f43d6b3c6e87bde6a681e9d4421dec8.png',
       },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/52f96e7e98dc51c1280052514e303704.jpg',
@@ -673,24 +553,6 @@ const t: ShipType = {
         'Configuration',
         'Tech',
       ],
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/00a3c393a33b33168bc61e47749e1474.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/654185124ead6963d0d619f43185a056.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/a59fc81d255120184918239d4dd0f0e8.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/1bc64f5e67b0b06aa44d83a0c4e35065.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/418c7e51d56eecd1ff5bdbc820720e4f.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/078aec9bbb101d1167c9f7108fbfcbaf.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/00a3c393a33b33168bc61e47749e1474.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/00a3c393a33b33168bc61e47749e1474.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/5daa441317975eb576396af36e852f74.jpg',
       ffg: 420,
@@ -739,27 +601,9 @@ const t: ShipType = {
         zh:
           'After you fully execute a blue maneuver, you may choose a friendly ship at range 0-1. If you do, that ship removes 1 stress token.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/5f3abacb9a081f5a3ca42f7a30da0e6c.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/45af19be88d5d31d01e66984393e2669.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/8501bc6a65ba2370b5a74ea72cd91171.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/910a1c97def246436c61d04a03929a47.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/a2296604b733fbfabe038bc8f0d63c0f.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/d7109a0647bb77d18a8f9712a98ef09f.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/5f3abacb9a081f5a3ca42f7a30da0e6c.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/5f3abacb9a081f5a3ca42f7a30da0e6c.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/8874efb312a64da49889c66f96338f9c.jpg',
-      cost: 48,
+      cost: 47,
       slots: ['Astromech', 'Modification', 'Title', 'Configuration', 'Tech'],
       ffg: 450,
       hyperspace: true,
@@ -807,24 +651,6 @@ const t: ShipType = {
         zh:
           'While you defend or perform an attack, you may spend 1 [Charge] or 1 non-recurring [Charge] from your equipped [Astromech] upgrade to reroll up to 1 of your dice for each other friendly ship at range 0-1.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/bc26d8864f421f1362473aa4982108ba.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/74463d1f2b16b55c33079d0883e32c30.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/11c5de75a6a069fb2b5b1ac2c17ad41e.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/e33dbd576b57fe2b94df1f89a71cbb19.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/f08c845d471bd195eceb17caebc72713.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/8df6e1340278ed12900578356b25d7ed.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/bc26d8864f421f1362473aa4982108ba.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/bc26d8864f421f1362473aa4982108ba.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/05c48dc381e54c6951d3ee42d3587577.jpg',
       cost: 51,
@@ -846,7 +672,7 @@ const t: ShipType = {
         zh: 'Temmin Wexley',
       },
       caption: {
-        en: 'Snap',
+        en: 'Black Two',
         de: 'Snap',
         fr: 'Véloce',
         es: '"Snap"',
@@ -860,7 +686,7 @@ const t: ShipType = {
       xws: 'temminwexley',
       ability: {
         en:
-          'After you fully execute a speed 2-4 maneuver, you may perform a [Boost] action.',
+          'At the start of the Engagement Phase, each friendly T-70 X-wing at range 0-3 may gain 1 strain token to flip its equipped [Configuration] upgrade. If it does, that ship gains 1 calculate token.',
         de:
           'Nachdem du ein Manöver mit Geschwindigkeit 2-4 vollständig ausgeführt hast, darfst du eine [Boost]-Aktion durchführen.',
         fr:
@@ -876,24 +702,6 @@ const t: ShipType = {
         zh:
           'After you fully execute a speed 2-4 maneuver, you may perform a [Boost] action.',
       },
-      image: {
-        en:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/bb98b7ea3a580542b586a9999fd352c9.png',
-        de:
-          'https://sb-cdn.fantasyflightgames.com/card_images/de/848a8c9c989bc50b924cc891a70c4aec.png',
-        fr:
-          'https://sb-cdn.fantasyflightgames.com/card_images/fr/85c71ddf6e48d4e0960e367989c71fb7.png',
-        es:
-          'https://sb-cdn.fantasyflightgames.com/card_images/es/3c04d95770eba76a878ead4e9ca171b0.png',
-        it:
-          'https://sb-cdn.fantasyflightgames.com/card_images/it/e8771031fb8bb3bacdd6670d6ba92755.png',
-        pl:
-          'https://sb-cdn.fantasyflightgames.com/card_images/pl/c31ebd492d5eed62e535f963cffbe740.png',
-        pt:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/bb98b7ea3a580542b586a9999fd352c9.png',
-        zh:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/bb98b7ea3a580542b586a9999fd352c9.png',
-      },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/6acd118b12a34136d4d1df6c765a0deb.jpg',
       cost: 53,
@@ -905,30 +713,7 @@ const t: ShipType = {
         'Configuration',
         'Tech',
       ],
-      ffg: 422,
-      hyperspace: true,
-      epic: true,
-    },
-    {
-      xws: 'poedameron-swz68',
-      name: { en: 'Poe Dameron' },
-      caption: { en: 'Resistance Commander' },
-      cost: 65,
-      initiative: 6,
-      limited: 1,
-      charges: { value: 2, recovers: 1 },
-      ability: {
-        en:
-          'After a friendly ship at range 0-2 performs an action during its activation, you may spend 2 [Charge].  If you do, that ship may perform a white action, treating it as red.',
-      },
-      slots: [
-        'Talent',
-        'Astromech',
-        'Modification',
-        'Title',
-        'Configuration',
-        'Tech',
-      ],
+      ffg: 698,
       hyperspace: true,
       epic: true,
     },
@@ -958,7 +743,7 @@ const t: ShipType = {
       xws: 'caithrenalli',
       name: { en: "C'ai Threnalli" },
       caption: { en: 'Tenacious Survivor' },
-      cost: 49,
+      cost: 48,
       initiative: 4,
       limited: 1,
       ability: {
@@ -975,21 +760,23 @@ const t: ShipType = {
       ],
       hyperspace: true,
       epic: true,
+      ffg: 699,
     },
     {
-      xws: 'nimichereen',
-      name: { en: 'Nimi Chereen' },
-      caption: { en: 'Hopeful Hero' },
-      cost: 49,
+      name: { en: 'Nimi Chireen' },
+      xws: 'nimichireen',
       initiative: 2,
       limited: 1,
+      caption: { en: 'Hopeful Hero' },
+      hyperspace: true,
+      cost: 49,
+      slots: ['Tech', 'Astromech', 'Modification', 'Configuration', 'Title'],
       ability: {
         en:
           "While you perform an attack, if the defender's initiative is higher than yours, you may change 1 blank result to a [Focus] result.",
       },
-      slots: ['Astromech', 'Modification', 'Title', 'Configuration', 'Tech'],
-      hyperspace: true,
       epic: false,
+      ffg: 700,
     },
   ],
 };
