@@ -152,7 +152,7 @@ const t: UpgradeBase[] = [
         type: 'Astromech',
         ability: {
           en:
-            'After you activate, you may spend 1 [Charge] and gain 1 deplete token to repair 1 damage card, recover 1 shield, or remove 1 device at range 0-1.',
+            'After you reveal your dial, you may spend 1 [Charge] and gain 1 disarm token to recover 1 shield.',
           de:
             'Nachdem du dein Rad aufgedeckt hast, darfst du 1 [Charge] ausgeben und 1 Entwaffnet-Marker erhalten, um 1 Schild wiederherzustellen.',
           es:
@@ -172,7 +172,7 @@ const t: UpgradeBase[] = [
         charges: { value: 3, recovers: 0 },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_100.jpg',
-        ffg: 860,
+        ffg: 324,
       },
     ],
     cost: { variable: 'agility', values: { '0': 4, '1': 6, '2': 8, '3': 10 } },
@@ -969,7 +969,7 @@ const t: UpgradeBase[] = [
     restrictions: [{ factions: ['Galactic Republic'] }],
     hyperspace: false,
     epic: true,
-    cost: { value: 7 },
+    cost: { value: 8 },
   },
   {
     limited: 1,
@@ -1018,7 +1018,7 @@ const t: UpgradeBase[] = [
   {
     xws: 'r2d2-republic',
     limited: 1,
-    cost: { value: 6 },
+    cost: { variable: 'agility', values: { '0': 4, '1': 6, '2': 8, '3': 10 } },
     sides: [
       {
         title: { en: 'R2-D2' },
@@ -1027,11 +1027,12 @@ const t: UpgradeBase[] = [
           en:
             'After you activate, you may spend 1 [Charge] and gain 1 deplete token to repair 1 damage card, recover 1 shield, or remove 1 device at range 0-1.',
         },
+        charges: { value: 2, recovers: 0 },
         slots: ['Astromech'],
         ffg: 860,
       },
     ],
-    hyperspace: false,
+    hyperspace: true,
     epic: false,
     restrictions: [{ factions: ['Galactic Republic'] }],
   },
@@ -1045,8 +1046,9 @@ const t: UpgradeBase[] = [
         type: 'Astromech',
         ability: {
           en:
-            'During the End Phase, you may spend 1 [Charge] and 1 [Shield] to remove 1 red token.  During the End Phase, if you have no active [Shield], you may spend 1 [Charge] to recover 1 [Shield] and gain 1 deplete token.',
+            'During the End Phase, you may spend 1 [Charge] and 1 shield to remove 1 red token. During the End Phase, if you have no active shields, you may spend 2 [Charge] to recover 1 shield and gain 1 deplete token.',
         },
+        charges: { value: 4, recovers: 0 },
         slots: ['Astromech'],
         ffg: 720,
       },

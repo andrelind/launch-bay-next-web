@@ -731,7 +731,7 @@ const t: UpgradeBase[] = [
   {
     xws: 'interceptbooster',
     limited: 0,
-    cost: { value: 3 },
+    cost: { value: 1 },
     sides: [
       {
         title: { en: 'Intercept Booster (Attached)' },
@@ -740,6 +740,16 @@ const t: UpgradeBase[] = [
           en:
             'Setup: Equip this side faceup. During the System Phase, gain 1 disarm token unless you flip this card. At the end of the End Phase, if you have no active [Charge], flip this card.',
         },
+        grants: [
+          {
+            action: {
+              type: 'SLAM',
+              difficulty: 'White',
+              linked: { type: 'Lock', difficulty: 'Red' },
+            },
+            value: 1,
+          },
+        ],
         slots: ['Configuration'],
         ffg: 873,
       },

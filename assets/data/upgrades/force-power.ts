@@ -484,9 +484,7 @@ const t: UpgradeBase[] = [
     ],
     hyperspace: true,
     epic: false,
-    restrictions: [
-      { factions: ['Galactic Republic', 'Rebel Alliance', 'Resistance'] },
-    ],
+    restrictions: [{ sides: ['light'] }],
   },
   {
     limited: 0,
