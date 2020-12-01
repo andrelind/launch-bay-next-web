@@ -1,11 +1,9 @@
-import { Action, combineReducers, Dispatch } from 'redux';
-
-import { Actions } from '../actions';
-import reducers from '../reducers';
+import { Action, combineReducers, Dispatch } from "redux";
+import { Actions } from "../actions";
+import reducers from "../reducers";
 
 export const rootReducer = combineReducers({
   app: reducers,
-  // notifications,
 });
 
 export type AppState = ReturnType<typeof rootReducer>;

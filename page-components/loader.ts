@@ -251,24 +251,17 @@ export const upgradesForSlot = (
         const res = u.restrictions[j];
         let found = false;
 
-        if (res.factions && res.factions.indexOf(squadron.faction) >= 0) {
+        if (res.factions?.includes(squadron.faction)) {
           found = true;
-        } else if (res.baseSizes && res.baseSizes.indexOf(ship.size) >= 0) {
+        } else if (res.baseSizes?.includes(ship.size)) {
           found = true;
-        } else if (res.chassis && res.chassis.indexOf(ship.xws) >= 0) {
+        } else if (res.chassis?.includes(ship.xws)) {
           found = true;
-        } else if (
-          res.arcs &&
-          res.arcs.filter(
-            (a) => ship.stats.filter((s) => s.arc === a).length > 0
-          ).length > 0
-        ) {
+        } else if (res.arcs?.find((a) => ship.stats.find((s) => s.arc === a))) {
           found = true;
         } else if (
           res.action &&
-          ship.pilot &&
-          ship.pilot.shipActions &&
-          ship.pilot.shipActions.find((a) => {
+          ship.pilot?.shipActions?.find((a) => {
             if (!res.action) {
               return false;
             }
@@ -303,9 +296,12 @@ export const upgradesForSlot = (
         } else if (
           res.sides &&
           res.sides.find(
-            (s) => ship.pilot.sides && ship.pilot.sides.indexOf(s) >= 0
+            (s) =>
+              ship.pilot.force?.side.includes(s) ||
+              ship.pilot.sides?.includes(s)
           )
         ) {
+          // A pilot can have force sides but also upgrades...!
           found = true;
         } else if (
           res.equipped &&
@@ -324,8 +320,18 @@ export const upgradesForSlot = (
           )
         ) {
           found = true;
-        } else if (res.initiative && ship.pilot.initiative >= res.initiative) {
-          found = true;
+        } else if (res.initiative) {
+          if (
+            res.initiative.max &&
+            ship.pilot.initiative <= res.initiative.max
+          ) {
+            found = true;
+          } else if (
+            res.initiative.min &&
+            ship.pilot.initiative >= res.initiative.min
+          ) {
+            found = true;
+          }
         }
 
         if (res.character) {

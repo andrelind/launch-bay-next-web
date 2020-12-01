@@ -9,3 +9,5 @@ build/
 
 # MACOS
 .DS_Store
+
+.vercel

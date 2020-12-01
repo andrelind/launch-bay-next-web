@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const PrivacyPage = () => {
   return (
@@ -17,7 +17,7 @@ const PrivacyPage = () => {
         We use Your Personal data to provide and improve the Service. By using
         the Service, You agree to the collection and use of information in
         accordance with this Privacy Policy. This Privacy Policy is maintained
-        by the{' '}
+        by the{" "}
         <a href="https://www.freeprivacypolicy.com/free-privacy-policy-generator/">
           Free Privacy Policy Generator
         </a>
@@ -64,8 +64,8 @@ const PrivacyPage = () => {
         </li>
         <li>
           <strong>Website</strong> refers to Launch Bay Next, accessible from
-          launch-bay-next.herokuapp.com
-        </li>{' '}
+          launchbaynext.app
+        </li>{" "}
         <li>
           <strong>Service</strong> refers to the Website.
         </li>
@@ -98,7 +98,7 @@ const PrivacyPage = () => {
           computer, mobile device or any other device by a website, containing
           the details of Your browsing history on that website among its many
           uses.
-        </li>{' '}
+        </li>{" "}
         <li>
           <strong>Device</strong> means any device that can access the Service
           such as a computer, a cellphone or a digital tablet.
@@ -121,7 +121,7 @@ const PrivacyPage = () => {
         not limited to:
       </p>
       <ul>
-        <li>Email address</li> <li>First name and last name</li>{' '}
+        <li>Email address</li> <li>First name and last name</li>{" "}
         <li>Usage Data</li>
       </ul>
 
@@ -164,7 +164,7 @@ const PrivacyPage = () => {
         Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies
         remain on your personal computer or mobile device when You go offline,
         while Session Cookies are deleted as soon as You close your web browser.
-        Learn more about cookies here:{' '}
+        Learn more about cookies here:{" "}
         <a href="https://www.freeprivacypolicy.com/blog/cookies/">
           Cookies: What Do They Do?
         </a>

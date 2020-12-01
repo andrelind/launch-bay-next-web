@@ -51,8 +51,6 @@ export const GlobalStyles = createGlobalStyle`
       html, body {
         /* height: auto !important;  */
         overflow: visible !important;
-      }
-      #bg {
         height: auto !important;
         background-color: white !important;
         -webkit-print-color-adjust: exact;

@@ -6,13 +6,13 @@ export const api = (
   variables?: Object
 ) => {
   return create({
-    baseURL: "https://launch-bay-next.herokuapp.com",
+    baseURL: "https://launchbaynext.app",
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
       "x-jwt": access_token,
     },
   })
-    .post("/graphql", JSON.stringify({ query, variables }))
+    .post("api/graphql", JSON.stringify({ query, variables }))
     .then((r) => r.data);
 };
