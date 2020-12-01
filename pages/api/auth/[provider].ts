@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import nextConnect from "next-connect";
 import passport from "passport";
-import { facebook, google } from "../../../passport/providers";
+import { apple, facebook, google } from "../../../passport/providers";
 
 const authenticate = (method: string, req: any, res: any): Promise<any> =>
   new Promise((resolve, reject) => {
@@ -16,6 +16,7 @@ const authenticate = (method: string, req: any, res: any): Promise<any> =>
 
 passport.use(facebook);
 passport.use(google);
+passport.use(apple);
 
 export default nextConnect()
   .use(passport.initialize())

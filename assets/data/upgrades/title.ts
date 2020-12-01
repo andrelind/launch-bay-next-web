@@ -818,7 +818,7 @@ const t: UpgradeBase[] = [
         type: 'Title',
         ability: {
           en:
-            "While you perform a [Front Arc] attack, if you are in the defender's full rear arc, you may change 1 [Hit] result to a [Critical Hit] result. Add [Gunner] slot.",
+            'After you reveal a turn ([Turn Left] or [Turn Right]) or bank ([Bank Left] or [Bank Right]) maneuver, you may set your dial to the maneuver of the same speed and bearing in the other direction. Add [Torpedo] slot.',
           de:
             'Nachdem du ein Wende­­manöver ([Turn Left] oder [Turn Right]) oder Drehmanöver ([Bank Left] oder [Bank Right]) aufgedeckt hast, darfst du dein Rad auf das Manöver derselben Geschwindigkeit und Flugrichtung in der anderen Orientierung einstellen. Füge den [Torpedo]-Slot hinzu.',
           es:
@@ -838,15 +838,15 @@ const t: UpgradeBase[] = [
         grants: [{ slot: 'Torpedo', value: 1 }],
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_154.jpg',
-        ffg: 869,
+        ffg: 379,
       },
     ],
-    cost: { value: 3 },
+    cost: { value: 6 },
     restrictions: [
       { factions: ['Scum and Villainy'] },
       { chassis: ['firesprayclasspatrolcraft'] },
     ],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -1600,25 +1600,26 @@ const t: UpgradeBase[] = [
   {
     limited: 1,
     xws: 'slavei-swz82',
-    hyperspace: false,
+    hyperspace: true,
     epic: false,
     sides: [
       {
         ability: {
           en:
-            "While you perform a [Front Arc] attack, if you are in the defender's [Full Rear Arc], you may change 1 [Hit] result to a [Critical Hit] result. Add [Gunner] slot.",
+            "While you perform a [Front Arc] attack, if you are in the defender's full rear arc, you may change 1 [Hit] result to a [Critical Hit] result. Add [Gunner] slot.",
         },
         title: { en: 'Slave I' },
+        grants: [{ slot: 'Gunner', value: 1 }],
         type: 'Title',
         slots: ['Title'],
-        ffg: -1,
+        ffg: 869,
       },
     ],
     restrictions: [
       { factions: ['Scum and Villainy', 'Separatist Alliance'] },
       { chassis: ['firesprayclasspatrolcraft'] },
     ],
-    cost: { value: 0 },
+    cost: { value: 3 },
   },
 ];
 

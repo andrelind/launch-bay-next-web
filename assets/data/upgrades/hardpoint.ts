@@ -10,7 +10,7 @@ const t: UpgradeBase[] = [
         type: 'Hardpoint',
         ability: {
           en:
-            'Setup: Equip this side faceup. Bonus Attack: Spend 1  . If this attack hits, the defender suffers 1  [Critical Hit] damage, and all [Hit]/[Critical Hit] results inflict ion tokens instead of damage.',
+            'Setup: Equip this side faceup. Bonus Attack: Spend 1 [Energy]. If this attack hits, the defender suffers 1 [Critical Hit] damage, and all [Hit]/[Critical Hit] results inflict ion tokens instead of damage.',
         },
         attack: {
           arc: 'Single Turret Arc',
@@ -24,6 +24,16 @@ const t: UpgradeBase[] = [
         ],
         slots: ['Hardpoint'],
         ffg: 737,
+      },
+      {
+        ffg: 736,
+        title: { en: 'Ion Cannon Battery (Offline)' },
+        type: 'Hardpoint',
+        slots: [],
+        ability: {
+          en:
+            'Offline After you engage, you may spend 2 [Energy] to flip this card.',
+        },
       },
     ],
     cost: { value: 5 },
@@ -44,6 +54,16 @@ const t: UpgradeBase[] = [
         slots: ['Hardpoint'],
         ffg: 741,
       },
+      {
+        ffg: 740,
+        title: { en: 'Ordnance Tubes (Offline)' },
+        type: 'Hardpoint',
+        slots: [],
+        ability: {
+          en:
+            'Offline You must treat the [Front Arc] requirement of your equipped [Torpedo] and [Missile] upgrades as [Bullseye Arc]. Action: Spend 2 [Energy] to flip this card.',
+        },
+      },
     ],
     cost: { value: 1 },
     hyperspace: false,
@@ -58,7 +78,7 @@ const t: UpgradeBase[] = [
         type: 'Hardpoint',
         ability: {
           en:
-            'Setup: Equip this side faceup. Bonus Attack: Spend 1  . Bonus Attack: Spend 1  . Bonus Attack: Spend 1  . Bonus Attack: Spend 1  .',
+            'Setup: Equip this side faceup. Bonus Attack: Spend 1 [Energy]. Bonus Attack: Spend 1 [Energy]. Bonus Attack: Spend 1 [Energy]. Bonus Attack: Spend 1 [Energy].',
         },
         attack: {
           arc: 'Double Turret Arc',
@@ -72,6 +92,16 @@ const t: UpgradeBase[] = [
         ],
         slots: ['Hardpoint'],
         ffg: 743,
+      },
+      {
+        ffg: 742,
+        title: { en: 'Point-Defense Battery (Offline)' },
+        type: 'Hardpoint',
+        slots: [],
+        ability: {
+          en:
+            'Offline After you engage, you may spend 2 [Energy] to flip this card.',
+        },
       },
     ],
     cost: { value: 9 },
@@ -100,7 +130,7 @@ const t: UpgradeBase[] = [
           { action: { type: 'Rotate Arc', difficulty: 'White' }, value: 1 },
         ],
         slots: ['Hardpoint'],
-        ffg: -1,
+        ffg: 739,
       },
       {
         title: { en: 'Targeting Battery (Offline)' },
@@ -120,7 +150,7 @@ const t: UpgradeBase[] = [
           { action: { type: 'Rotate Arc', difficulty: 'White' }, value: 1 },
         ],
         slots: ['Hardpoint'],
-        ffg: -1,
+        ffg: 738,
       },
     ],
     cost: { value: 6 },
@@ -149,13 +179,14 @@ const t: UpgradeBase[] = [
           { action: { type: 'Rotate Arc', difficulty: 'White' }, value: 1 },
         ],
         slots: ['Hardpoint'],
-        ffg: -1,
+        ffg: 745,
       },
       {
         title: { en: 'Turbolaser Battery (Offline)' },
         type: 'Hardpoint',
         ability: {
-          en: 'Offline: After you engage, you may spend 2 ( to flip this card.',
+          en:
+            'Offline: After you engage, you may spend 2 [Energy] to flip this card.',
         },
         attack: {
           arc: 'Single Turret Arc',
@@ -168,7 +199,7 @@ const t: UpgradeBase[] = [
           { action: { type: 'Rotate Arc', difficulty: 'White' }, value: 1 },
         ],
         slots: ['Hardpoint'],
-        ffg: -1,
+        ffg: 744,
       },
     ],
     cost: { value: 13 },

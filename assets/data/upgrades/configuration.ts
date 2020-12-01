@@ -405,7 +405,7 @@ const t: UpgradeBase[] = [
       },
     ],
     restrictions: [{ chassis: ['vultureclassdroidfighter'] }],
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
     cost: { value: 1 },
   },
@@ -500,7 +500,7 @@ const t: UpgradeBase[] = [
     ],
     cost: {
       variable: 'initiative',
-      values: { '0': 0, '1': 0, '2': 1, '3': 2, '4': 3, '5': 4, '6': 5 },
+      values: { '0': -1, '1': 0, '2': 1, '3': 2, '4': 3, '5': 4, '6': 5 },
     },
     restrictions: [{ chassis: ['delta7aethersprite'] }],
     hyperspace: true,
@@ -703,7 +703,7 @@ const t: UpgradeBase[] = [
       },
     ],
     restrictions: [{ chassis: ['asf01bwing'] }],
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
     cost: { value: 2 },
   },
@@ -731,15 +731,25 @@ const t: UpgradeBase[] = [
   {
     xws: 'interceptbooster',
     limited: 0,
-    cost: { value: 3 },
+    cost: { value: 1 },
     sides: [
       {
         title: { en: 'Intercept Booster (Attached)' },
         type: 'Configuration',
         ability: {
           en:
-            'Setup: Equip this side faceup.  During the System Phase, gain 1 disarm token unless you flip this card.  At the end of the End Phase, if you have no active [Charge], flip this card.',
+            'Setup: Equip this side faceup. During the System Phase, gain 1 disarm token unless you flip this card. At the end of the End Phase, if you have no active [Charge], flip this card.',
         },
+        grants: [
+          {
+            action: {
+              type: 'SLAM',
+              difficulty: 'White',
+              linked: { type: 'Lock', difficulty: 'Red' },
+            },
+            value: 1,
+          },
+        ],
         slots: ['Configuration'],
         ffg: 873,
       },
@@ -749,9 +759,13 @@ const t: UpgradeBase[] = [
         ability: { en: '' },
         slots: ['Configuration'],
         ffg: 872,
+        text: {
+          en:
+            'Unhindered by the frailty of an organic pilot, Droid Tri-Fighters are capable of radical acceleration and acute maneuvering. Fitted with booster rockets and fired from the missile tubes of Separatist capital ships, they can intercept hostiles well beyond the range of conventionally deployed starfighters.',
+        },
       },
     ],
-    hyperspace: false,
+    hyperspace: true,
     epic: false,
     restrictions: [{ chassis: ['droidtrifighter'] }],
   },
@@ -889,7 +903,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     limited: 0,
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
     restrictions: [{ chassis: ['hmpdroidgunship'] }],
   },

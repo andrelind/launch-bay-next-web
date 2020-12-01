@@ -1003,7 +1003,7 @@ const t: UpgradeBase[] = [
   {
     xws: 'bobafett-gunner',
     limited: 1,
-    cost: { value: 200 },
+    cost: { value: 6 },
     sides: [
       {
         title: { en: 'Boba Fett' },
@@ -1013,10 +1013,10 @@ const t: UpgradeBase[] = [
             'While you perform an attack, if there are no other ships in the attack arc, you may change 1 of your [Focus] results to a [Hit] result.',
         },
         slots: ['Gunner'],
-        ffg: -1,
+        ffg: 857,
       },
     ],
-    hyperspace: false,
+    hyperspace: true,
     epic: false,
     restrictions: [{ factions: ['Separatist Alliance', 'Scum and Villainy'] }],
   },
@@ -1126,25 +1126,6 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 7 },
-  },
-  {
-    xws: 'bobafett',
-    sides: [
-      {
-        ffg: 857,
-        title: { en: 'Boba Fett' },
-        type: 'Gunner',
-        slots: [],
-        ability: {
-          en:
-            'While you perform an attack, if there are no other ships in the attack arc, you may change 1 of your [Focus] results to a [Hit] result.',
-        },
-      },
-    ],
-    cost: { value: 6 },
-    limited: 1,
-    hyperspace: true,
-    epic: true,
   },
 ];
 

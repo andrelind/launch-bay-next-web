@@ -135,7 +135,7 @@ const t: UpgradeBase[] = [
     restrictions: [
       { factions: ['Scum and Villainy'], character: ['darthvader'] },
     ],
-    hyperspace: true,
+    hyperspace: false,
     epic: true,
   },
   {
@@ -2407,7 +2407,7 @@ const t: UpgradeBase[] = [
     ],
     cost: {
       variable: 'initiative',
-      values: { '0': 2, '1': 3, '2': 4, '3': 5, '4': 6, '5': 7, '6': 8 },
+      values: { '0': 2, '1': 3, '2': 4, '3': 5, '4': 6, '5': 7, '6': 8,'7':8,'9':8 },
     },
     hyperspace: true,
     epic: true,
@@ -3651,7 +3651,7 @@ const t: UpgradeBase[] = [
         },
       },
     ],
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
     restrictions: [{ factions: ['First Order'] }],
   },
@@ -3727,7 +3727,7 @@ const t: UpgradeBase[] = [
         },
       },
     ],
-    hyperspace: false,
+    hyperspace: true,
     epic: true,
     restrictions: [{ factions: ['First Order'] }],
   },

@@ -38,6 +38,14 @@ const appConfig: AppConfig = {
     // @ts-ignore
     scope: ["profile", "email"],
   },
+  apple: {
+    clientID: "se.andrelind.launch-bay-web",
+    teamID: "Y7Z9KZ84C6",
+    ...getOAuthUrls(hostingURL, "apple"),
+    keyID: "AX2B5PQWDU",
+    privateKeyLocation: "../public/keys/AuthKey_AX2B5PQWDU.p8",
+    passReqToCallback: true,
+  },
 };
 
 export default appConfig;

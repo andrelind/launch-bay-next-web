@@ -276,7 +276,7 @@ const t: ShipType = {
       },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/e75228d8174f7879c51157fdd9b26e61.jpg',
-      cost: 47,
+      cost: 46,
       slots: [
         'Talent',
         'Astromech',
@@ -672,7 +672,7 @@ const t: ShipType = {
         zh: 'Temmin Wexley',
       },
       caption: {
-        en: 'Black Two',
+        en: 'Snap',
         de: 'Snap',
         fr: 'Véloce',
         es: '"Snap"',
@@ -686,7 +686,7 @@ const t: ShipType = {
       xws: 'temminwexley',
       ability: {
         en:
-          'At the start of the Engagement Phase, each friendly T-70 X-wing at range 0-3 may gain 1 strain token to flip its equipped [Configuration] upgrade. If it does, that ship gains 1 calculate token.',
+          'After you fully execute a speed 2-4 maneuver, you may perform a [Boost] action.',
         de:
           'Nachdem du ein Manöver mit Geschwindigkeit 2-4 vollständig ausgeführt hast, darfst du eine [Boost]-Aktion durchführen.',
         fr:
@@ -704,7 +704,7 @@ const t: ShipType = {
       },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/6acd118b12a34136d4d1df6c765a0deb.jpg',
-      cost: 53,
+      cost: 52,
       slots: [
         'Talent',
         'Astromech',
@@ -713,7 +713,7 @@ const t: ShipType = {
         'Configuration',
         'Tech',
       ],
-      ffg: 698,
+      ffg: 422,
       hyperspace: true,
       epic: true,
     },
@@ -721,12 +721,12 @@ const t: ShipType = {
       xws: 'temminwexley-swz68',
       name: { en: 'Temmin Wexley' },
       caption: { en: 'Black Two' },
-      cost: 54,
+      cost: 53,
       initiative: 4,
       limited: 1,
       ability: {
         en:
-          'At the start of the Engagement Phase, each friendly T-70 X-wing at range 0-3 may gain 1 strain token to flip its equipped [Configuration] upgrade.  If it does, that ship gains 1 calculate token.',
+          'At the start of the Engagement Phase, each friendly T-70 X-wing at range 0-3 may gain 1 strain token to flip its equipped [Configuration] upgrade. If it does, that ship gains 1 calculate token.',
       },
       slots: [
         'Talent',
@@ -738,6 +738,7 @@ const t: ShipType = {
       ],
       hyperspace: true,
       epic: true,
+      ffg: 698,
     },
     {
       xws: 'caithrenalli',
@@ -770,7 +771,7 @@ const t: ShipType = {
       caption: { en: 'Hopeful Hero' },
       hyperspace: true,
       cost: 49,
-      slots: ['Tech', 'Astromech', 'Modification', 'Configuration', 'Title'],
+      slots: ['Astromech', 'Modification', 'Title', 'Configuration', 'Tech'],
       ability: {
         en:
           "While you perform an attack, if the defender's initiative is higher than yours, you may change 1 blank result to a [Focus] result.",

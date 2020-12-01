@@ -62,7 +62,6 @@ const t: ShipType = {
       cost: 34,
       ffg: 791,
     },
-
     {
       name: { en: '"Contrail"' },
       xws: 'contrail',

@@ -7,7 +7,7 @@ export type Action = {
   };
 };
 
-export type Language = 'de' | 'en' | 'es' | 'fr' | 'it' | 'pl' | 'pt' | 'zh';
+export type Language = "de" | "en" | "es" | "fr" | "it" | "pl" | "pt" | "zh";
 
 export type Translation = {
   en: string;
@@ -21,29 +21,29 @@ export type Translation = {
 };
 
 export type ActionType =
-  | 'Barrel Roll'
-  | 'Boost'
-  | 'Calculate'
-  | 'Cloak'
-  | 'Coordinate'
-  | 'Evade'
-  | 'Focus'
-  | 'Jam'
-  | 'Lock'
-  | 'Reload'
-  | 'Reinforce'
-  | 'Rotate Arc'
-  | 'SLAM';
+  | "Barrel Roll"
+  | "Boost"
+  | "Calculate"
+  | "Cloak"
+  | "Coordinate"
+  | "Evade"
+  | "Focus"
+  | "Jam"
+  | "Lock"
+  | "Reload"
+  | "Reinforce"
+  | "Rotate Arc"
+  | "SLAM";
 
 export type Arc =
-  | 'Front Arc'
-  | 'Left Arc'
-  | 'Right Arc'
-  | 'Rear Arc'
-  | 'Single Turret Arc'
-  | 'Double Turret Arc'
-  | 'Full Front Arc'
-  | 'Bullseye Arc';
+  | "Front Arc"
+  | "Left Arc"
+  | "Right Arc"
+  | "Rear Arc"
+  | "Single Turret Arc"
+  | "Double Turret Arc"
+  | "Full Front Arc"
+  | "Bullseye Arc";
 
 export type BluePrint = PilotXWS & {
   nick: string;
@@ -59,31 +59,31 @@ export type Condition = {
 
 export type Device = {
   name: string;
-  type: 'Bomb' | 'Mine' | 'Obstacle' | 'Remote';
+  type: "Bomb" | "Mine" | "Obstacle" | "Remote";
   effect: string;
 };
 
-export type Difficulty = 'White' | 'Red' | 'Purple';
+export type Difficulty = "White" | "Red" | "Purple";
 
 export type Faction =
-  | 'First Order'
-  | 'Galactic Empire'
-  | 'Galactic Republic'
-  | 'Rebel Alliance'
-  | 'Resistance'
-  | 'Scum and Villainy'
-  | 'Separatist Alliance';
+  | "First Order"
+  | "Galactic Empire"
+  | "Galactic Republic"
+  | "Rebel Alliance"
+  | "Resistance"
+  | "Scum and Villainy"
+  | "Separatist Alliance";
 
 export type FactionKey =
-  | 'rebelalliance'
-  | 'scumandvillainy'
-  | 'galacticempire'
-  | 'resistance'
-  | 'firstorder'
-  | 'galacticrepublic'
-  | 'separatistalliance';
+  | "rebelalliance"
+  | "scumandvillainy"
+  | "galacticempire"
+  | "resistance"
+  | "firstorder"
+  | "galacticrepublic"
+  | "separatistalliance";
 
-export type Format = 'Extended' | 'Hyperspace' | 'Epic';
+export type Format = "Extended" | "Hyperspace" | "Epic";
 
 export type Pilot = {
   name: Translation;
@@ -93,6 +93,11 @@ export type Pilot = {
   initiative: number;
   limited: number;
   ability?: Translation;
+  shipAbility?: {
+    name: Translation;
+    text: Translation;
+    slotOptions?: Slot[];
+  };
   text?: Translation;
   image?: Translation;
   artwork?: string;
@@ -123,12 +128,12 @@ export type Restrictions = {
   solitary?: boolean;
   initiative?: { min?: number; max?: number };
   stat?: { type: StatType; value: number };
-  'non-limited'?: boolean;
+  "non-limited"?: boolean;
 };
 
-export type Side = 'dark' | 'light';
+export type Side = "dark" | "light";
 
-export type Size = 'Small' | 'Medium' | 'Large' | 'Huge';
+export type Size = "Small" | "Medium" | "Large" | "Huge";
 
 export type Ship = ShipBase & {
   uid: string;
@@ -164,53 +169,53 @@ export type ShipBase = {
 };
 
 export type Slot =
-  | 'Astromech'
-  | 'Cannon'
-  | 'Cargo'
-  | 'Command'
-  | 'Configuration'
-  | 'Crew'
-  | 'Device'
-  | 'Force Power'
-  | 'Gunner'
-  | 'Hardpoint'
-  | 'Hyperdrive'
-  | 'Illicit'
-  | 'Missile'
-  | 'Modification'
-  | 'Sensor'
-  | 'Tactical Relay'
-  | 'Talent'
-  | 'Team'
-  | 'Tech'
-  | 'Title'
-  | 'Torpedo'
-  | 'Turret'
-  | 'Wing';
+  | "Astromech"
+  | "Cannon"
+  | "Cargo"
+  | "Command"
+  | "Configuration"
+  | "Crew"
+  | "Device"
+  | "Force Power"
+  | "Gunner"
+  | "Hardpoint"
+  | "Hyperdrive"
+  | "Illicit"
+  | "Missile"
+  | "Modification"
+  | "Sensor"
+  | "Tactical Relay"
+  | "Talent"
+  | "Team"
+  | "Tech"
+  | "Title"
+  | "Torpedo"
+  | "Turret"
+  | "Wing";
 
 export type SlotKey =
-  | 'astromech'
-  | 'cannon'
-  | 'cargo'
-  | 'command'
-  | 'configuration'
-  | 'crew'
-  | 'device'
-  | 'forcepower'
-  | 'gunner'
-  | 'hardpoint'
-  | 'hyperdrive'
-  | 'illicit'
-  | 'missile'
-  | 'modification'
-  | 'sensor'
-  | 'talent'
-  | 'tacticalrelay'
-  | 'team'
-  | 'tech'
-  | 'title'
-  | 'torpedo'
-  | 'turret';
+  | "astromech"
+  | "cannon"
+  | "cargo"
+  | "command"
+  | "configuration"
+  | "crew"
+  | "device"
+  | "forcepower"
+  | "gunner"
+  | "hardpoint"
+  | "hyperdrive"
+  | "illicit"
+  | "missile"
+  | "modification"
+  | "sensor"
+  | "talent"
+  | "tacticalrelay"
+  | "team"
+  | "tech"
+  | "title"
+  | "torpedo"
+  | "turret";
 
 export type Source = {
   ffg: number;
@@ -233,7 +238,7 @@ export type Stat = {
   recovers?: number;
 };
 
-export type StatType = 'agility' | 'attack' | 'hull' | 'shields' | 'energy';
+export type StatType = "agility" | "attack" | "hull" | "shields" | "energy";
 
 export type Squadron = {
   uid: string;
@@ -261,10 +266,10 @@ export type Grant = {
 };
 
 export type GrantTest =
-  | { type: 'slot'; value: Slot; amount: number }
-  | { type: 'stat'; value: StatType; amount: number }
-  | { type: 'action'; value: Action; amount: number }
-  | { type: 'attack'; value: Action; arc: Arc; amount: number };
+  | { type: "slot"; value: Slot; amount: number }
+  | { type: "stat"; value: StatType; amount: number }
+  | { type: "action"; value: Action; amount: number }
+  | { type: "attack"; value: Action; arc: Arc; amount: number };
 
 export type UpgradeBase = {
   xws: string;
@@ -283,15 +288,15 @@ export type Upgrade = UpgradeBase & {
 
 export type UpgradeCostValue = { value: number };
 export type UpgradeCostAgility = {
-  variable: 'agility';
+  variable: "agility";
   values: { [s: number]: number };
 };
 export type UpgradeCostInitiative = {
-  variable: 'initiative';
+  variable: "initiative";
   values: { [s: number]: number };
 };
 export type UpgradeCostSize = {
-  variable: 'size';
+  variable: "size";
   values: { Small: number; Medium: number; Large: number; Huge: number };
 };
 
@@ -397,7 +402,7 @@ export type Tournament = {
   version?: string;
 };
 
-export type GameType = 'Swiss' | 'Cut' | 'Final';
+export type GameType = "Swiss" | "Cut" | "Final";
 
 export type Game = {
   uid: string;
