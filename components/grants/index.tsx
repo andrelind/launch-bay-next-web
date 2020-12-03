@@ -1,5 +1,12 @@
+import {
+  blue,
+  green,
+  pink,
+  purple,
+  red,
+  yellow,
+} from "lbn-core/dist/assets/colors";
 import React from "react";
-import { blue, green, pink, purple, red, yellow } from "../../assets/colors";
 import { Difficulty, Grant } from "../../types";
 import { Block, Icon, Text, Wrapper } from "./styles";
 

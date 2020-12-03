@@ -1,7 +1,7 @@
+import { exportAsXws } from "lbn-core/dist/helpers/import+export";
+import { deserialize } from "lbn-core/dist/helpers/serializer";
+import { loadSquadron } from "lbn-core/dist/helpers/unit";
 import { NextApiRequest, NextApiResponse } from "next";
-import { exportAsXws } from "../../helpers/import+export";
-import { deserialize } from "../../helpers/serializer";
-import { loadSquadron } from "../../helpers/unit";
 
 export const getXws = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.query.lbx) {

@@ -1,10 +1,10 @@
+import { exportAsQR } from "lbn-core/dist/helpers/import+export";
+import { deserialize } from "lbn-core/dist/helpers/serializer";
+import { loadSquadron } from "lbn-core/dist/helpers/unit";
 import { NextPage } from "next";
 import QRCode from "qrcode.react";
 import React from "react";
 import Logo from "../components/logo";
-import { exportAsQR } from "../helpers/import+export";
-import { deserialize } from "../helpers/serializer";
-import { loadSquadron } from "../helpers/unit";
 import { Ship, SlotKey, Squadron } from "../types";
 
 type Props = {

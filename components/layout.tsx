@@ -1,10 +1,10 @@
 import { Transition } from "@tailwindui/react";
+import { factions } from "lbn-core/dist/helpers/enums";
+import { deserialize } from "lbn-core/dist/helpers/serializer";
 import { useRouter } from "next/router";
 import React, { FC, useState } from "react";
 import { colorForFaction } from "../helpers/colors";
-import { factions } from "../helpers/enums";
 import { useJWT } from "../helpers/hooks";
-import { deserialize } from "../helpers/serializer";
 import { Faction, Format } from "../types";
 import XwingFont from "./fonts/xwing";
 import { LogoComponent } from "./logo";

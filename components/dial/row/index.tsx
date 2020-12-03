@@ -1,5 +1,5 @@
+import { blue, purple, red } from "lbn-core/dist/assets/colors";
 import React from "react";
-import { blue, red } from "../../../assets/colors";
 import { Block, Dummy, Icon, Number } from "./styles";
 
 const colorForValue = (value: string) => {
@@ -8,6 +8,8 @@ const colorForValue = (value: string) => {
       return blue;
     case "R":
       return red;
+    case "P":
+      return purple;
   }
 };
 

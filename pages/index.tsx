@@ -1,11 +1,42 @@
 import { faCopy, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { actions, helpers } from "lbn-core";
+import { setUpgrade } from "lbn-core/dist/actions/squadrons";
+import { buttonBlue, red } from "lbn-core/dist/assets/colors";
+import {
+  getUpgrades,
+  loadShips,
+  pilotOptions,
+  shipForXws,
+  upgradesForSlot,
+} from "lbn-core/dist/loader";
+import { UserState } from "lbn-core/dist/reducers/user";
+import requests from "lbn-core/dist/requests";
+import { AppState } from "lbn-core/dist/state";
 import { NextApiRequest, NextPage } from "next";
 import React, { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { AnyAction, Store } from "redux";
 import { v4 as uuid } from "uuid";
-import {
+import { Layout } from "../components/layout";
+import { PilotPopover } from "../components/pilot-popover";
+import Select from "../components/select";
+import { PilotOption } from "../components/select/pilot";
+import { UnitSingleValue } from "../components/select/unit";
+import { ShipPopover } from "../components/ship-popover";
+import { UpgradePopover } from "../components/upgrade-popover";
+import { copyToClipboard } from "../helpers/clipboard";
+import { useJWT, useSquadronXWS } from "../helpers/hooks";
+import { renderHardpoint } from "../page-components/render";
+import { getSession } from "../passport/iron";
+import { Faction, Language, Ship, ShipType, Slot, Upgrade } from "../types";
+
+const { squadrons, user, sync } = actions;
+const { convert, importExport, serializer, unit, i18n } = helpers;
+const { useLocalized } = i18n;
+const { fullSync } = sync;
+const { userDidLogin } = user;
+const {
   addShipAction,
   addSquadron,
   changePilotAction,
@@ -14,39 +45,11 @@ import {
   removeShip,
   removeSquadron,
   toggleFormat,
-} from "../actions/squadrons";
-import { fullSync } from "../actions/sync";
-import { userDidLogin } from "../actions/user";
-import { buttonBlue, red } from "../assets/colors";
-import { Layout } from "../components/layout";
-import Select from "../components/select";
-import { PilotOption } from "../components/select/pilot";
-import { ShipTypeOption } from "../components/select/ship";
-import { UnitSingleValue } from "../components/select/unit";
-import { copyToClipboard } from "../helpers/clipboard";
-import { keyFromSlot } from "../helpers/convert";
-import { useJWT, useMinimized, useSquadronXWS } from "../helpers/hooks";
-import {
-  exportAsText,
-  exportAsTTS,
-  exportAsXws,
-} from "../helpers/import+export";
-import { deserialize, serialize } from "../helpers/serializer";
-import { loadSquadron } from "../helpers/unit";
-import {
-  getUpgrades,
-  loadShips,
-  pilotOptions,
-  PilotValue,
-  shipForXws,
-  ShipValue,
-} from "../page-components/loader";
-import { renderHardpoint, renderUpgrade } from "../page-components/render";
-import { getSession } from "../passport/iron";
-import { UserState } from "../reducers/user";
-import { sync } from "../requests/sync";
-import { AppState } from "../store/state";
-import { Faction, Ship, Slot, Upgrade } from "../types";
+} = squadrons;
+const { deserialize, serialize } = serializer;
+const { keyFromSlot } = convert;
+const { exportAsText, exportAsTTS, exportAsXws } = importExport;
+const { loadSquadron } = unit;
 
 export type DataItem = {
   type: "Ship" | "Upgrade" | "Empty" | "SlotOptions";
@@ -67,15 +70,18 @@ type Props = {
 const EditPage: NextPage<Props> = ({ uid }) => {
   // const router = useRouter();
   const dispatch = useDispatch();
+  const language = useSelector<AppState, Language | undefined>(
+    (s) => s.app.user.language
+  );
+  const { t, c } = useLocalized(language);
   const jwt = useJWT();
 
   const xws = useSquadronXWS(uid);
   const squadron = loadSquadron(xws);
   const [name, setName] = useState(squadron ? squadron.name : "New Squadron");
-  const minimized = useMinimized("index");
+  const collection = useSelector<AppState, any>((s) => s.app.collection);
 
-  //   const allSquadrons = useSelector((s: AppState) => s.app.xws);
-  const [shipBase, setShipBase] = useState<ShipValue | null>(null);
+  const [shipBase, setShipBase] = useState<ShipType | undefined>();
 
   const p: { [s: string]: Slot } = {};
   squadron?.ships.forEach((s) => {
@@ -117,9 +123,7 @@ const EditPage: NextPage<Props> = ({ uid }) => {
     {
       title: "Print",
       onClick: () => {
-        const url = `/print?lbx=${serialize(xws)}&mode=${
-          minimized ? "compact" : "full"
-        }`;
+        const url = `/print?lbx=${serialize(xws)}`;
         window.open(url, "_ blank");
       },
     },
@@ -129,11 +133,11 @@ const EditPage: NextPage<Props> = ({ uid }) => {
     },
     {
       title: "Export TTS",
-      onClick: () => copyToClipboard(exportAsTTS(squadron)),
+      onClick: () => copyToClipboard(exportAsTTS(squadron, t)),
     },
     {
       title: "Export as text",
-      onClick: () => copyToClipboard(exportAsText(squadron)),
+      onClick: () => copyToClipboard(exportAsText(squadron, t)),
     },
   ];
   if (jwt) {
@@ -203,7 +207,10 @@ const EditPage: NextPage<Props> = ({ uid }) => {
                       )
                     );
                   }}
-                  options={pilotOptions(shipType)}
+                  options={pilotOptions(shipType, t).map((s) => ({
+                    value: s.xws,
+                    label: s.name.en,
+                  }))}
                 />
                 <div className="mt-1"></div>
               </div>
@@ -211,7 +218,42 @@ const EditPage: NextPage<Props> = ({ uid }) => {
               <div className="mt-1 grid grid-cols-2 gap-1 sm:grid-cols-2 lg:grid-cols-4 md:mr-5">
                 {upgrades.map((upgrade, index) => (
                   <div key={uuid()}>
-                    {renderUpgrade(upgrade, squadron, s, index)}
+                    <UpgradePopover
+                      side={0}
+                      slot={upgrade.slot}
+                      value={upgrade.upgrade}
+                      options={upgradesForSlot(
+                        squadron,
+                        s,
+                        upgrade.slot,
+                        t,
+                        c,
+                        true
+                      )}
+                      onChange={(newValue) => {
+                        const getSlotIndex = () => {
+                          let slotIndex = 0;
+                          for (let i = 0; i < s.pilot.slots.length; i++) {
+                            if (s.pilot.slots[i] === upgrade.slot) {
+                              if (i === index) {
+                                return slotIndex;
+                              }
+                              slotIndex += 1;
+                            }
+                          }
+                          return 0;
+                        };
+                        dispatch(
+                          setUpgrade(
+                            squadron.uid,
+                            s.uid,
+                            upgrade.slot,
+                            getSlotIndex(),
+                            newValue
+                          )
+                        );
+                      }}
+                    />
                   </div>
                 ))}
                 {showHardpointPicker &&
@@ -243,36 +285,22 @@ const EditPage: NextPage<Props> = ({ uid }) => {
         })}
       </div>
 
-      <div className="my-2 bg-white rounded-lg shadow px-5 py-4 sm:px-6">
-        <Select
-          components={{ Option: ShipTypeOption, IndicatorSeparator: null }}
-          isSearchable={false}
-          readOnly
-          instanceId={"selectShip"}
-          faction={squadron.faction}
-          placeholder={"Add ship"}
+      <div className="my-2 bg-white rounded-lg shadow px-5 py-4 sm:px-6 grid grid-cols-2 gap-1">
+        <ShipPopover
           value={shipBase}
-          // @ts-ignore
-          onChange={(v: ShipValue) => setShipBase(v)}
-          options={loadShips(squadron)}
+          options={loadShips(squadron, t, collection, true)}
+          onChange={setShipBase}
         />
 
         {shipBase && (
-          <Select
-            components={{ Option: PilotOption, IndicatorSeparator: null }}
-            isSearchable={false}
-            readOnly
-            instanceId={"selectPilot"}
-            faction={squadron.faction}
-            placeholder={"Select pilot"}
-            // @ts-ignore
-            onChange={(value: PilotValue) => {
-              dispatch(
-                addShipAction(squadron.uid, shipBase.ship.xws, value.pilot.xws)
-              );
-              setShipBase(null);
+          <PilotPopover
+            options={pilotOptions(shipBase, t)}
+            onChange={(v) => {
+              if (v) {
+                dispatch(addShipAction(squadron.uid, shipBase.xws, v.xws));
+              }
+              setShipBase(undefined);
             }}
-            options={pilotOptions(shipBase)}
           />
         )}
       </div>
@@ -295,7 +323,7 @@ EditPage.getInitialProps = async ({ store, query, req }) => {
     if (user) {
       console.log({ user });
       dispatch(userDidLogin(user));
-      const { data } = await sync(user.jwt);
+      const { data } = await requests.syncRequest(user);
       dispatch(fullSync(data));
     }
   }
@@ -317,11 +345,6 @@ EditPage.getInitialProps = async ({ store, query, req }) => {
       ).uid;
     }
   }
-
-  // const { minimized } = parseCookies(ctx);
-  // if (minimized === "true" && !state.app.misc.minimized.index) {
-  //   dispatch(toggleMinimize("index"));
-  // }
 
   return { uid: uid as string };
 };

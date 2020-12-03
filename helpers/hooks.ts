@@ -1,11 +1,8 @@
 import { useRoute } from "@react-navigation/core";
-import { useContext } from "react";
+import { loadSquadron } from "lbn-core/dist/helpers/unit";
+import { AppState } from "lbn-core/dist/state";
 import { useSelector } from "react-redux";
-import { ThemeContext } from "styled-components";
-import { dark } from "../page-components/theme";
-import { AppState } from "../store/state";
 import { Squadron } from "../types";
-import { loadSquadron } from "./unit";
 
 export const useJWT = (): string | null | undefined =>
   useSelector((s: AppState) => s.app.user.jwt);
@@ -57,5 +54,3 @@ export const useMinimized = (screenName: string) => {
     s.app.misc.minimized ? s.app.misc.minimized[screenName] || true : true
   );
 };
-
-export const useTheme = (): typeof dark => useContext(ThemeContext);

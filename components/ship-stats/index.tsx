@@ -1,4 +1,3 @@
-import React from "react";
 import {
   blue,
   green,
@@ -7,7 +6,8 @@ import {
   purple,
   red,
   yellow,
-} from "../../assets/colors";
+} from "lbn-core/dist/assets/colors";
+import React from "react";
 import { Stat } from "../../types";
 import { Block, Icon, Text, Wrapper } from "./styles";
 

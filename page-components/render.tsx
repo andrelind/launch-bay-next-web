@@ -1,18 +1,16 @@
-import { useDispatch } from "react-redux";
-import { setUpgrade } from "../actions/squadrons";
+import { setUpgrade } from "lbn-core/dist/actions/squadrons";
+import { useLocalized } from "lbn-core/dist/helpers/i18n";
+import { SlotValue, upgradesForSlot } from "lbn-core/dist/loader";
+import { AppState } from "lbn-core/dist/state";
+import { useDispatch, useSelector } from "react-redux";
 import Select from "../components/select";
 import {
   HardpointOption,
   HardpointPlaceholder,
   HardpointSingleValue,
 } from "../components/select/hardpoint";
-import {
-  UpgradeOption,
-  UpgradePlaceholder,
-  UpgradeSingleValue,
-} from "../components/select/upgrade";
-import { Ship, Slot, Squadron, UpgradeSide } from "../types";
-import { SlotValue, upgradesForSlot, UpgradeValue } from "./loader";
+import { UpgradePopover } from "../components/upgrade-popover";
+import { Language, Ship, Slot, Squadron } from "../types";
 
 export type HardpointValue = {
   label: Slot;
@@ -61,59 +59,18 @@ export const renderUpgrade = (
   index: number
 ) => {
   const dispatch = useDispatch();
-
-  const v = value.upgrade
-    ? { label: "", value: "", upgrade: value.upgrade }
-    : undefined;
+  const language = useSelector<AppState, Language | undefined>(
+    (s) => s.app.user.language
+  );
+  const { t, c } = useLocalized(language);
 
   return (
-    <Select
-      components={{
-        SingleValue: UpgradeSingleValue,
-        Option: UpgradeOption,
-        Placeholder: UpgradePlaceholder,
-        IndicatorSeparator: null,
-        DropdownIndicator: null,
-      }}
-      isSearchable={false}
-      readOnly
-      instanceId={`selectUpgrade_${index}`}
-      key={`${value.slot}_${index}`}
-      placeholder={value.slot}
-      faction={squadron.faction}
-      value={v}
-      isClearable
-      filterOption={({ data }, input) => {
-        const u = (data as UpgradeValue).upgrade;
-        const needle = input.toLowerCase();
-
-        const checkSide = (side: UpgradeSide) => {
-          if (side.title.en.toLowerCase().indexOf(needle) >= 0) {
-            return true;
-          } else if (
-            side.ability &&
-            side.ability.en.toLowerCase().indexOf(needle) >= 0
-          ) {
-            return true;
-          } else if (
-            side.text &&
-            side.text.en.toLowerCase().indexOf(needle) >= 0
-          ) {
-            return true;
-          }
-        };
-
-        if (u.sides[0].title.en.toLowerCase().indexOf(needle) >= 0) {
-          return true;
-        } else if (checkSide(u.sides[0])) {
-          return true;
-        } else if (u.sides.length > 1 && checkSide(u.sides[1])) {
-          return true;
-        }
-        return false;
-      }}
-      // @ts-ignore
-      onChange={(newValue?: UpgradeValue) => {
+    <UpgradePopover
+      side={0}
+      slot={value.slot}
+      value={value.upgrade}
+      options={upgradesForSlot(squadron, ship, value.slot, t, c, true)}
+      onChange={(newValue) => {
         const getSlotIndex = () => {
           let slotIndex = 0;
           for (let i = 0; i < ship.pilot.slots.length; i++) {
@@ -132,11 +89,10 @@ export const renderUpgrade = (
             ship.uid,
             value.slot,
             getSlotIndex(),
-            newValue ? newValue.upgrade : undefined
+            newValue
           )
         );
       }}
-      options={upgradesForSlot(squadron, ship, value.slot)}
     />
   );
 };

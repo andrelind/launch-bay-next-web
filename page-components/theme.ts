@@ -1,32 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-import colors, {
-  black,
-  buttonBlue,
-  darkDimEnd,
-  darkDimStart,
-  darkgrey,
-  darkheader,
-  darkSelection,
-  dimEnd,
-  dimStart,
-  header,
-  menu,
-  red,
-  search,
-  selection,
-  yellow,
-} from "../assets/colors";
 
 export const GlobalStyles = createGlobalStyle`
-    /* html {
-        font-size: 14px;
-    }
-    body {
-        font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-        font-size: 1.0em;
-        color: ${colors.black};
-        -webkit-font-smoothing: antialiased;
-    } */
     body {
       background-color: #F4F5F7;
     }
@@ -58,58 +32,58 @@ export const GlobalStyles = createGlobalStyle`
     }
   `;
 
-export const dark = {
-  statusBar: "light-content",
-  background: black,
-  backgroundSecondary: darkheader,
-  text: "white",
-  textSecondary: darkgrey,
-  favourite: yellow,
-  nonFavourite: darkgrey + "A0",
-  button: buttonBlue,
-  menuBackground: "white",
-  menuLine: buttonBlue,
-  menuText: black,
-  line: black,
-  unread: red,
-  navigationBarIcons: search,
-  shadow: black,
-  searchIconBackground: search,
-  searchIconBackgroundActive: buttonBlue,
-  dimStart: darkDimStart,
-  dimEnd: darkDimEnd,
-  selectedItemBackground: darkSelection,
-  colors,
-};
+// export const dark = {
+//   statusBar: "light-content",
+//   background: black,
+//   backgroundSecondary: darkheader,
+//   text: "white",
+//   textSecondary: darkgrey,
+//   favourite: yellow,
+//   nonFavourite: darkgrey + "A0",
+//   button: buttonBlue,
+//   menuBackground: "white",
+//   menuLine: buttonBlue,
+//   menuText: black,
+//   line: black,
+//   unread: red,
+//   navigationBarIcons: search,
+//   shadow: black,
+//   searchIconBackground: search,
+//   searchIconBackgroundActive: buttonBlue,
+//   dimStart: darkDimStart,
+//   dimEnd: darkDimEnd,
+//   selectedItemBackground: darkSelection,
+//   colors,
+// };
 
-export const light = {
-  statusBar: "dark-content",
-  background: "white",
-  backgroundSecondary: header,
-  text: black,
-  textSecondary: darkgrey,
-  favourite: yellow,
-  nonFavourite: darkgrey + "A0",
-  button: buttonBlue,
-  menuBackground: menu,
-  menuLine: buttonBlue,
-  menuText: "white",
-  line: darkgrey,
-  unread: red,
-  navigationBarIcons: search,
-  shadow: black,
-  searchIconBackground: search,
-  searchIconBackgroundActive: buttonBlue,
-  dimStart: dimStart,
-  dimEnd: dimEnd,
-  selectedItemBackground: selection,
-  colors,
-};
+// export const light = {
+//   statusBar: "dark-content",
+//   background: "white",
+//   backgroundSecondary: header,
+//   text: black,
+//   textSecondary: darkgrey,
+//   favourite: yellow,
+//   nonFavourite: darkgrey + "A0",
+//   button: buttonBlue,
+//   menuBackground: menu,
+//   menuLine: buttonBlue,
+//   menuText: "white",
+//   line: darkgrey,
+//   unread: red,
+//   navigationBarIcons: search,
+//   shadow: black,
+//   searchIconBackground: search,
+//   searchIconBackgroundActive: buttonBlue,
+//   dimStart: dimStart,
+//   dimEnd: dimEnd,
+//   selectedItemBackground: selection,
+//   colors,
+// };
 
-export type ThemeInterface = typeof dark;
+// export type ThemeInterface = typeof dark;
 
-declare module "styled-components" {
-  export interface DefaultTheme extends ThemeInterface {}
-}
+// declare module "styled-components" {
+//   export interface DefaultTheme extends ThemeInterface {}
+// }
 
-export default { dark, light };
+// export default { dark, light };

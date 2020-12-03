@@ -1,11 +1,11 @@
+import requests from "lbn-core/dist/requests";
 import { Strategy } from "passport-facebook";
-import { registerUser } from "../../requests/user";
 import appConfig from "../config";
 
 const strategy = new Strategy(
   appConfig.facebook,
   async (_accessToken, _refreshToken, profile, cb) => {
-    const result: any = await registerUser({
+    const result: any = await requests.registerUser({
       id: profile.id,
       name: profile.displayName,
       email:
@@ -13,7 +13,6 @@ const strategy = new Strategy(
           ? profile.emails[0].value
           : undefined,
       provider: "Facebook",
-      jwt: null,
     });
 
     cb(null, result.data.registerUser);

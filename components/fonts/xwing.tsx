@@ -1,5 +1,5 @@
+import iconHelper from "lbn-core/dist/helpers/icon";
 import React from "react";
-import iconHelper from "../../helpers/icon";
 
 type Props = {
   icon: string;

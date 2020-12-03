@@ -1,5 +1,5 @@
+import conditionData from "lbn-core/dist/assets/conditions";
 import React from "react";
-import conditionData from "../assets/data/conditions";
 import { Pilot } from "../types";
 import Error from "./error";
 import FormattedText from "./formatted-text";

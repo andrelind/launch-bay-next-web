@@ -1,5 +1,5 @@
+import { purple, red } from "lbn-core/dist/assets/colors";
 import React from "react";
-import { purple, red } from "../../assets/colors";
 import { Action, Difficulty } from "../../types";
 import { Actions, Block, Wrapper } from "./styles";
 

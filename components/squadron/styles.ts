@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { xfade } from "../../components/sidebar/styles";
 import XWing from "../fonts/xwing";
 
 export const Block = styled.div`
@@ -8,7 +7,6 @@ export const Block = styled.div`
   align-items: center;
   display: flex;
   margin: 10px 5px;
-  animation: ${xfade} 1s 0s;
   background-color: transparent;
   :hover {
     background-color: #ffffff33;

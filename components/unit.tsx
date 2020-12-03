@@ -1,5 +1,5 @@
+import { slotKeys } from "lbn-core/dist/helpers/enums";
 import React from "react";
-import { slotKeys } from "../helpers/enums";
 import { Ship } from "../types";
 import { ActionsComponent } from "./actions";
 import ShipStats from "./ship-stats";

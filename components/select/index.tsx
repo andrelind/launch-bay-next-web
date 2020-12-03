@@ -1,13 +1,12 @@
 import color from "color";
+import { colors } from "lbn-core/dist";
 import React, { FC } from "react";
 import Select from "react-select";
 import { Props as SelectProps } from "react-select/src/Select";
 import { colorForFaction } from "../../helpers/colors";
-import { useTheme } from "../../helpers/hooks";
-import { ThemeInterface } from "../../page-components/theme";
 import { Faction } from "../../types";
 
-const styles = (theme: ThemeInterface) => ({
+const styles = () => ({
   container: (styles: any) => ({
     ...styles,
     display: "flex",
@@ -15,8 +14,8 @@ const styles = (theme: ThemeInterface) => ({
   }),
   control: (styles: any) => ({
     ...styles,
-    backgroundColor: theme.background,
-    borderColor: theme.background,
+    backgroundColor: "white",
+    borderColor: "white",
     marginTop: 1,
     marginBottom: 1,
     display: "flex",
@@ -24,17 +23,17 @@ const styles = (theme: ThemeInterface) => ({
   }),
   input: (styles: any) => ({
     ...styles,
-    color: theme.text,
+    color: colors.black,
     padding: "2px 4px",
   }),
   menu: (styles: any) => ({
     ...styles,
     zIndex: 999,
-    backgroundColor: theme.background,
+    backgroundColor: "white",
   }),
   placeholder: (styles: any) => ({
     ...styles,
-    color: theme.text,
+    color: colors.black,
     padding: 0,
     margin: 0,
   }),
@@ -45,18 +44,18 @@ const styles = (theme: ThemeInterface) => ({
   option: (styles: any, { isDisabled, isFocused, isSelected }: any) => ({
     ...styles,
     color: isDisabled
-      ? theme.text
+      ? colors.black
       : isSelected
-      ? theme.menuText
+      ? "white"
       : isFocused
-      ? theme.menuText
-      : theme.text,
+      ? "white"
+      : colors.black,
     cursor: isDisabled ? "not-allowed" : "pointer",
     padding: "2px 4px",
   }),
   singleValue: (styles: any) => ({
     ...styles,
-    color: theme.text,
+    color: colors.black,
     padding: "2px 4px",
   }),
 });
@@ -66,12 +65,12 @@ interface Props extends SelectProps {
 }
 
 export const SelectComponent: FC<Props> = ({ faction, ...rest }) => {
-  const theme = useTheme();
+  // const theme = useTheme();
   return (
     <Select
       menuPlacement="auto"
       {...rest}
-      styles={styles(theme)}
+      styles={styles()}
       theme={(t: any) => ({
         ...t,
         borderRadius: 4,
