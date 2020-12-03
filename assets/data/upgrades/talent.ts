@@ -1337,6 +1337,7 @@ const t: UpgradeBase[] = [
           'tierbheavy',
           'miningguildtie',
           'nimbusclassvwing',
+          'miningguildtie',
         ],
       },
     ],

@@ -343,7 +343,7 @@ export const t: Source[] = [
     },
   },
   {
-    ffg: -1,
+    ffg: 59,
     xws: 'tierbheavy',
     name: 'TIE/rb Heavy',
     wave: 7,

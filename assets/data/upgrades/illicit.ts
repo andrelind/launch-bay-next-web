@@ -385,7 +385,7 @@ const t: UpgradeBase[] = [
   {
     limited: 0,
     xws: 'falsetranspondercodes',
-    hyperspace: false,
+    hyperspace: true,
     epic: false,
     sides: [
       {

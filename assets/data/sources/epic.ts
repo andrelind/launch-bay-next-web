@@ -2,24 +2,7 @@ import { Source } from '../../../types';
 
 export const t: Source[] = [
   {
-    ffg: -1,
-    xws: 'epicbattlesmultiplayerexpansion',
-    name: 'Epic Battles Multiplayer Expansion',
-    wave: 6,
-    released: true,
-    contents: {
-      ships: {},
-      pilots: {},
-      upgrades: {
-        agentoftheempire: 1,
-        dreadnoughthunter: 2,
-        firstorderelite: 1,
-        veteranwingleader: 4,
-      },
-    },
-  },
-  {
-    ffg: -1,
+    ffg: 51,
     xws: 'hugeshipconversionkit',
     name: 'Huge Ship Conversion Kit',
     wave: 6,
@@ -37,6 +20,7 @@ export const t: Source[] = [
         republicjudiciary: 1,
         separatistprivateers: 1,
         syndicatesmugglers: 1,
+        firstordersympathizers: 1,
       },
       upgrades: {
         admiralozzel: 1,
@@ -98,11 +82,13 @@ export const t: Source[] = [
         thunderstrike: 1,
         vector: 1,
         corsairrefit: 2,
+        advprotontorpedoes: 1,
+        seismiccharges: 1,
       },
     },
   },
   {
-    ffg: -1,
+    ffg: 54,
     xws: 'tantiveivexpansionpack',
     name: 'Tantive IV Expansion Pack',
     wave: 6,
@@ -143,7 +129,7 @@ export const t: Source[] = [
     },
   },
   {
-    ffg: -1,
+    ffg: 55,
     xws: 'croccruiserexpansionpack',
     name: 'C-ROC Cruiser Expansion Pack',
     wave: 6,
@@ -188,11 +174,13 @@ export const t: Source[] = [
         insatiableworrt: 1,
         merchantone: 1,
         corsairrefit: 1,
+        seismiccharges: 1,
+        azmorigan: 1,
       },
     },
   },
   {
-    ffg: -1,
+    ffg: 53,
     xws: 'imperialraiderexpansionpack',
     name: 'Imperial Raider Expansion Pack',
     wave: 6,
@@ -235,6 +223,7 @@ export const t: Source[] = [
         corvus: 1,
         impetuous: 1,
         instigator: 1,
+        advprotontorpedoes: 1,
       },
     },
   },

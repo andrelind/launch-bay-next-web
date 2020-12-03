@@ -207,7 +207,7 @@ export const t: Source[] = [
     },
   },
   {
-    ffg: 51,
+    ffg: 56,
     xws: 'xiclassshuttle',
     name: 'Xi-class Shuttle',
     wave: 7,

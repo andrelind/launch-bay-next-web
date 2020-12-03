@@ -10,7 +10,7 @@ const t: UpgradeBase[] = [
         type: 'Hardpoint',
         ability: {
           en:
-            'Setup: Equip this side faceup. Bonus Attack: Spend 1  . If this attack hits, the defender suffers 1  [Critical Hit] damage, and all [Hit]/[Critical Hit] results inflict ion tokens instead of damage.',
+            'Setup: Equip this side faceup. Bonus Attack: Spend 1 [Energy]. If this attack hits, the defender suffers 1 [Critical Hit] damage, and all [Hit]/[Critical Hit] results inflict ion tokens instead of damage.',
         },
         attack: {
           arc: 'Single Turret Arc',
@@ -31,7 +31,8 @@ const t: UpgradeBase[] = [
         type: 'Hardpoint',
         slots: [],
         ability: {
-          en: 'Offline After you engage, you may spend 2 to flip this card.',
+          en:
+            'Offline After you engage, you may spend 2 [Energy] to flip this card.',
         },
       },
     ],
@@ -60,7 +61,7 @@ const t: UpgradeBase[] = [
         slots: [],
         ability: {
           en:
-            'Offline You must treat the [Front Arc] requirement of your equipped [Torpedo] and [Missile] upgrades as [Bullseye Arc]. Action: Spend 2 to flip this card.',
+            'Offline You must treat the [Front Arc] requirement of your equipped [Torpedo] and [Missile] upgrades as [Bullseye Arc]. Action: Spend 2 [Energy] to flip this card.',
         },
       },
     ],
@@ -77,7 +78,7 @@ const t: UpgradeBase[] = [
         type: 'Hardpoint',
         ability: {
           en:
-            'Setup: Equip this side faceup. Bonus Attack: Spend 1  . Bonus Attack: Spend 1  . Bonus Attack: Spend 1  . Bonus Attack: Spend 1  .',
+            'Setup: Equip this side faceup. Bonus Attack: Spend 1 [Energy]. Bonus Attack: Spend 1 [Energy]. Bonus Attack: Spend 1 [Energy]. Bonus Attack: Spend 1 [Energy].',
         },
         attack: {
           arc: 'Double Turret Arc',
@@ -98,7 +99,8 @@ const t: UpgradeBase[] = [
         type: 'Hardpoint',
         slots: [],
         ability: {
-          en: 'Offline After you engage, you may spend 2 to flip this card.',
+          en:
+            'Offline After you engage, you may spend 2 [Energy] to flip this card.',
         },
       },
     ],
@@ -183,7 +185,8 @@ const t: UpgradeBase[] = [
         title: { en: 'Turbolaser Battery (Offline)' },
         type: 'Hardpoint',
         ability: {
-          en: 'Offline: After you engage, you may spend 2 ( to flip this card.',
+          en:
+            'Offline: After you engage, you may spend 2 [Energy] to flip this card.',
         },
         attack: {
           arc: 'Single Turret Arc',

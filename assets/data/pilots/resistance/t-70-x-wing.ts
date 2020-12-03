@@ -276,7 +276,7 @@ const t: ShipType = {
       },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/e75228d8174f7879c51157fdd9b26e61.jpg',
-      cost: 47,
+      cost: 46,
       slots: [
         'Talent',
         'Astromech',
