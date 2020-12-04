@@ -1,5 +1,5 @@
+import { Size } from "lbn-core/dist/types";
 import React from "react";
-import { Size } from "../types";
 import XWing from "./fonts/xwing";
 
 type Props = {

@@ -1,6 +1,6 @@
 import { purple, red, yellow } from "lbn-core/dist/assets/colors";
+import { Upgrade } from "lbn-core/dist/types";
 import React from "react";
-import { Upgrade } from "../types";
 import Error from "./error";
 import XwingFont from "./fonts/xwing";
 import { FormattedText } from "./formatted-text";
@@ -19,7 +19,6 @@ const UpgradeComponent = ({
   upgrade,
   side,
   showType,
-  count,
   limitWarning,
   minimized,
 }: Props) => {
@@ -32,7 +31,7 @@ const UpgradeComponent = ({
   if (!upgradeSide) {
     upgradeSide = upgrade.sides[0];
   }
-  const { attack, charges, force, device, conditions, grants } = upgradeSide;
+  const { attack, charges, force, device, grants } = upgradeSide;
 
   return (
     <div className="flex flex-1 flex-row items-center">

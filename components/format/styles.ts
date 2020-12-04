@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Format } from "lbn-core/dist/types";
 import styled from "styled-components";
-import { Format } from "../../types";
 
 export const Wrapper = styled.div`
   flex-direction: row;

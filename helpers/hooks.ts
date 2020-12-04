@@ -1,8 +1,8 @@
 import { useRoute } from "@react-navigation/core";
 import { loadSquadron } from "lbn-core/dist/helpers/unit";
 import { AppState } from "lbn-core/dist/state";
+import { Squadron } from "lbn-core/dist/types";
 import { useSelector } from "react-redux";
-import { Squadron } from "../types";
 
 export const useJWT = (): string | null | undefined =>
   useSelector((s: AppState) => s.app.user.jwt);

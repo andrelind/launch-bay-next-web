@@ -1,5 +1,5 @@
+import { Translation } from "lbn-core/dist/types";
 import React from "react";
-import { Translation } from "../../types";
 import FormattedText from "../formatted-text";
 import { Ability, AbilityText } from "./styles";
 

@@ -2,10 +2,15 @@ import { Transition } from "@tailwindui/react";
 import { red, yellow } from "lbn-core/dist/assets/colors";
 import { useLocalized } from "lbn-core/dist/helpers/i18n";
 import { AppState } from "lbn-core/dist/state";
-import { Language, Slot, Translation, Upgrade } from "lbn-core/dist/types";
+import {
+  Language,
+  Slot,
+  Translation,
+  Upgrade,
+  UpgradeSide,
+} from "lbn-core/dist/types";
 import React, { FC, useState } from "react";
 import { useSelector } from "react-redux";
-import { UpgradeSide } from "../types";
 import { XwingFont } from "./fonts/xwing";
 import UpgradeComponent from "./upgrade";
 

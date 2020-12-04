@@ -7,8 +7,8 @@ import {
   red,
   yellow,
 } from "lbn-core/dist/assets/colors";
+import { Stat } from "lbn-core/dist/types";
 import React from "react";
-import { Stat } from "../../types";
 import { Block, Icon, Text, Wrapper } from "./styles";
 
 type Props = {

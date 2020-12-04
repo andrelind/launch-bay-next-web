@@ -5,7 +5,7 @@ import {
   red,
   scum,
 } from "lbn-core/dist/assets/colors";
-import { Faction } from "../types";
+import { Faction } from "lbn-core/dist/types";
 
 export const colorForFaction = (faction: Faction) => {
   switch (faction) {

@@ -19,12 +19,12 @@ const renderPilot = (
   <span className="flex items-center justify-between">
     <div className="flex flex-1 flex-row justify-between items-center text-sm ">
       <div className="flex flex-row items-end">
-        <span className="font-medium text-orange-400 mr-1">
+        <span className="font-medium text-yellow-400 mr-1">
           {pilot?.initiative}
         </span>
 
         <span className="font-medium mr-1">
-          {pilot?.limited &&
+          {pilot?.limited !== undefined &&
             pilot?.limited > 0 &&
             `${"•".repeat(pilot?.limited)} `}
           {t(pilot?.name)}

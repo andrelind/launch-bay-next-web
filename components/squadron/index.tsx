@@ -1,7 +1,7 @@
 import { useLocalized } from "lbn-core/dist/helpers/i18n";
+import { Ship, Squadron } from "lbn-core/dist/types";
 import { useRouter } from "next/router";
 import React from "react";
-import { Ship, Squadron } from "../../types";
 import FormatComponent from "../format";
 import {
   Block,

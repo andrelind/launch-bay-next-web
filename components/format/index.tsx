@@ -1,9 +1,8 @@
 // @flow
-import { faSyncAlt } from '@fortawesome/free-solid-svg-icons';
-import React from 'react';
-
-import { Format } from '../../types';
-import { Icon, Text, Wrapper } from './styles';
+import { faSyncAlt } from "@fortawesome/free-solid-svg-icons";
+import { Format } from "lbn-core/dist/types";
+import React from "react";
+import { Icon, Text, Wrapper } from "./styles";
 
 type Props = {
   format: Format;

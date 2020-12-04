@@ -1,6 +1,6 @@
 import conditionData from "lbn-core/dist/assets/conditions";
+import { Pilot } from "lbn-core/dist/types";
 import React from "react";
-import { Pilot } from "../types";
 import Error from "./error";
 import FormattedText from "./formatted-text";
 
@@ -21,7 +21,7 @@ const PilotComponent = ({ pilot, count, limitWarning, minimized }: Props) => {
     <div className="flex flex-1 flex-col">
       <div className="flex flex-1 flex-row justify-between items-center text-sm ">
         <div className="flex flex-row items-end">
-          <span className="font-medium text-orange-400 mr-1">
+          <span className="font-medium text-yellow-400 mr-1">
             {pilot.initiative}
           </span>
 

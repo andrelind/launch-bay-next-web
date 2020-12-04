@@ -13,6 +13,14 @@ import {
 import { UserState } from "lbn-core/dist/reducers/user";
 import requests from "lbn-core/dist/requests";
 import { AppState } from "lbn-core/dist/state";
+import {
+  Faction,
+  Language,
+  Ship,
+  ShipType,
+  Slot,
+  Upgrade,
+} from "lbn-core/dist/types";
 import { NextApiRequest, NextPage } from "next";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -29,7 +37,6 @@ import { copyToClipboard } from "../helpers/clipboard";
 import { useJWT, useSquadronXWS } from "../helpers/hooks";
 import { renderHardpoint } from "../page-components/render";
 import { getSession } from "../passport/iron";
-import { Faction, Language, Ship, ShipType, Slot, Upgrade } from "../types";
 
 const { squadrons, user, sync } = actions;
 const { convert, importExport, serializer, unit, i18n } = helpers;

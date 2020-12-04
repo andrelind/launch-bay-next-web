@@ -1,6 +1,6 @@
 import { slotKeys } from "lbn-core/dist/helpers/enums";
+import { Ship } from "lbn-core/dist/types";
 import React from "react";
-import { Ship } from "../types";
 import { ActionsComponent } from "./actions";
 import ShipStats from "./ship-stats";
 
@@ -42,8 +42,8 @@ const Unit = ({
     <div className="flex flex-1">
       <div className="flex flex-1 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 justify-end items-center">
         <div className="flex flex-1 flex-row justify-between text-sm">
-          <div className="flex flex-row">
-            <span className="font-medium text-orange-400 mr-1">
+          <div className="flex flex-row items-center">
+            <span className="font-medium text-yellow-400 mr-1">
               {ship.pilot.initiative}
             </span>
             <div>

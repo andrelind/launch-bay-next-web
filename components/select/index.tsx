@@ -1,10 +1,10 @@
 import color from "color";
 import { colors } from "lbn-core/dist";
+import { Faction } from "lbn-core/dist/types";
 import React, { FC } from "react";
 import Select from "react-select";
 import { Props as SelectProps } from "react-select/src/Select";
 import { colorForFaction } from "../../helpers/colors";
-import { Faction } from "../../types";
 
 const styles = () => ({
   container: (styles: any) => ({

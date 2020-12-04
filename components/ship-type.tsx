@@ -1,5 +1,5 @@
+import { ShipType } from "lbn-core/dist/types";
 import React, { FC } from "react";
-import { ShipType } from "../types";
 import BaseSize from "./base-size";
 import ShipFont from "./fonts/ships";
 import XwingFont from "./fonts/xwing";
