@@ -5759,10 +5759,10 @@ latest-version@^5.0.0:
   dependencies:
     package-json "^6.3.0"
 
-lbn-core@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/lbn-core/-/lbn-core-1.0.0.tgz#d517bf53a0c0ed11aa42db4630688fde1f87be58"
-  integrity sha512-4lRY5nCQLqPj0+U2IBMv0fq3rULSSE6Lrv1XZRZhv+3Z5/WLxSvQgaoUhI4T5Z0TanWbg47F+p2OGie0RnJjzg==
+lbn-core@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/lbn-core/-/lbn-core-1.0.1.tgz#c2a912272aa7662f59110ef9a0f481bdf69d56a6"
+  integrity sha512-m8IHyBpit8Ds6HVt3bNrNhE4VRPb9B1fCalVHp/TjCqURhY1V1sSA3Npo/bFbr3GvhbDtX4jE+qWkoWvC7PAJA==
   dependencies:
     redux "^4.0.5"
     redux-saga "^1.1.3"
