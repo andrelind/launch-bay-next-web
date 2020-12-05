@@ -17,7 +17,7 @@ const renderPilot = (
   pilot?: Pilot
 ) => (
   <span className="flex items-center justify-between">
-    <div className="flex flex-1 flex-row justify-between items-center text-sm ">
+    <div className="flex flex-1 flex-row justify-between items-center text-xs sm:text-sm">
       <div className="flex flex-row items-end">
         <span className="font-medium text-yellow-400 mr-1">
           {pilot?.initiative}
@@ -29,16 +29,12 @@ const renderPilot = (
             `${"•".repeat(pilot?.limited)} `}
           {t(pilot?.name)}
         </span>
-        <span className="italic text-gray-400 text-xs">
-          {t(pilot?.caption)}
-        </span>
+        <span className="italic text-gray-400">{t(pilot?.caption)}</span>
         {/* {count !== undefined && (
             <span className="text-gray-400"> ({count})</span>
           )} */}
 
-        {!pilot && (
-          <span className="truncate text-sm text-gray-500">Select ship</span>
-        )}
+        {!pilot && <span className="truncate text-gray-500">Select ship</span>}
       </div>
       <span className="font-medium">{pilot?.cost}</span>
     </div>

@@ -13,7 +13,7 @@ export const FormattedText: FC<Props> = ({ text, color, fontStyle }) => {
 
   return (
     <span
-      className={`text-sm font-normal pt-1 mr-1 ${
+      className={`text-xs sm:text-sm font-normal pt-1 mr-1 ${
         fontStyle === "italic" && "italic"
       }`}
       style={{ color }}

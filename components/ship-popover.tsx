@@ -17,20 +17,16 @@ const renderShipType = (
   shipType?: ShipType
 ) => (
   <span className="flex items-center justify-between">
-    <div className="flex items-center">
+    <div className="flex items-center text-xs sm:text-sm">
       <ShipFont
         className={`${!shipType && "text-gray-500"}`}
         icon={shipType?.xws}
       />
 
       {shipType && (
-        <span className="ml-2 truncate text-sm font-medium">
-          {t(shipType?.name)}
-        </span>
+        <span className="ml-2 truncate font-medium">{t(shipType?.name)}</span>
       )}
-      {!shipType && (
-        <span className="truncate text-sm text-gray-500">Select ship</span>
-      )}
+      {!shipType && <span className="truncate text-gray-500">Select ship</span>}
     </div>
   </span>
 );

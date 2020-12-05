@@ -28,12 +28,12 @@ const renderUpgrade = (
   upgrade?: Upgrade,
   side?: UpgradeSide
 ) => (
-  <span className="flex items-center justify-between">
+  <span className="flex items-center justify-between text-xs sm:text-sm">
     <div className="flex items-center">
       <XwingFont className={`${!upgrade && "text-gray-500"}`} icon={slot} />
 
       {upgrade && (
-        <span className="ml-2 truncate text-sm font-medium">
+        <span className="ml-2 word-wrap font-medium">
           {upgrade.limited > 0 && `${"•".repeat(upgrade.limited)} `}
           {t(side?.title)}
         </span>
@@ -42,22 +42,16 @@ const renderUpgrade = (
         <span className="ml-1 items-center">
           <XwingFont icon="charge" color={yellow} />
           {side?.charges.recovers > 0 && (
-            <XwingFont
-              icon="recurring"
-              className="text-xs sm:text-sm"
-              color={yellow}
-            />
+            <XwingFont icon="recurring" color={yellow} />
           )}
-          <span className="text-xs sm:text-sm" style={{ color: yellow }}>
-            {side?.charges.value}
-          </span>
+          <span style={{ color: yellow }}>{side?.charges.value}</span>
         </span>
       )}
-      {!upgrade && (
-        <span className="ml-3 truncate text-sm text-gray-500">{slot}</span>
-      )}
+      {!upgrade && <span className="ml-3 truncate text-gray-500">{slot}</span>}
     </div>
-    <span className="ml-3 font-medium truncate">{upgrade?.finalCost}</span>
+    <span className="ml-1 pr-1 sm:ml-3 font-medium truncate">
+      {upgrade?.finalCost}
+    </span>
   </span>
 );
 
@@ -90,15 +84,15 @@ export const UpgradePopover: FC<Props> = ({
         aria-haspopup="listbox"
         aria-expanded="true"
         aria-labelledby="listbox-label"
-        className="relative w-full bg-white hover:shadow-md rounded-md pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm cursor-pointer"
+        className="relative w-full bg-white hover:shadow-md rounded-md pl-1 sm:pl-3 pr-8 sm:pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 text-xs sm:text-sm cursor-pointer"
         onMouseEnter={() => setShowDetails(selected)}
         onMouseLeave={() => setShowDetails(undefined)}
       >
         {renderUpgrade(t, slot, selected, upgradeSide)}
-        <span className="ml-3 absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+        <span className="ml-1 sm:ml-3 absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
           {/* <!-- Heroicon name: selector --> */}
           <svg
-            className="h-5 w-5 text-gray-400"
+            className="h-4 w-4 sm:h-5 sm:w-5 text-gray-400"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
             fill="currentColor"
@@ -128,12 +122,12 @@ export const UpgradePopover: FC<Props> = ({
           role="listbox"
           aria-labelledby="listbox-label"
           aria-activedescendant="listbox-item-3"
-          className="relative max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm"
+          className="relative max-h-56 rounded-md py-1 text-xs sm:text-sm ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm"
         >
           {selected && (
             <li
               role="option"
-              className="text-gray-900 cursor-default select-none relative py-2 px-3 hover:bg-gray-100"
+              className="text-gray-900 cursor-default select-none relative py-2 px-1 sm:px-3  hover:bg-gray-100"
               onClick={() => {
                 setSelected(undefined);
                 setShowMenu(false);
@@ -150,7 +144,7 @@ export const UpgradePopover: FC<Props> = ({
             <li
               key={upgrade.xws}
               role="option"
-              className="text-gray-900 cursor-default select-none relative py-2 px-3 hover:bg-gray-100"
+              className="text-gray-900 cursor-default select-none relative py-2 px-1 sm:px-3 hover:bg-gray-100"
               onClick={() => {
                 setSelected(upgrade);
                 setShowMenu(false);

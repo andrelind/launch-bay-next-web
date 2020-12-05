@@ -34,7 +34,7 @@ const UpgradeComponent = ({
   const { attack, charges, force, device, grants } = upgradeSide;
 
   return (
-    <div className="flex flex-1 flex-row items-center">
+    <div className="flex flex-1 flex-row items-center text-xs sm:text-sm">
       {showType && (
         <div className="flex flex-col justify-center hidden sm:visible">
           {upgradeSide.slots.map((s, i) => (
@@ -47,9 +47,7 @@ const UpgradeComponent = ({
               {force.recovers === 1 && (
                 <XwingFont icon="recurring" color={purple} />
               )}
-              <span className="text-xs sm:text-sm" style={{ color: purple }}>
-                {force.value}
-              </span>
+              <span style={{ color: purple }}>{force.value}</span>
             </div>
           )}
 
@@ -57,21 +55,15 @@ const UpgradeComponent = ({
             <div className="flex flex-row items-center ml-1">
               <XwingFont icon="charge" color={yellow} />
               {charges.recovers === 1 && (
-                <XwingFont
-                  icon="recurring"
-                  className="text-xs sm:text-sm"
-                  color={yellow}
-                />
+                <XwingFont icon="recurring" color={yellow} />
               )}
-              <span className="text-xs sm:text-sm" style={{ color: yellow }}>
-                {charges.value}
-              </span>
+              <span style={{ color: yellow }}>{charges.value}</span>
             </div>
           )}
         </div>
       )}
 
-      <div className="flex flex-1 flex-col justify-center sm:mx-1 text-xs sm:text-sm">
+      <div className="flex flex-1 flex-col justify-center sm:mx-1">
         {!minimized && upgradeSide.ability && (
           <FormattedText text={upgradeSide.ability.en} />
         )}
@@ -103,7 +95,7 @@ const UpgradeComponent = ({
           <XwingFont icon="ordnance" />
         )}
         {!minimized && attack && (
-          <div className="flex flex-grow flex-col justify-center ml-1 mt-1 text-sm">
+          <div className="flex flex-grow flex-col justify-center ml-1 mt-1">
             <span className="text-center">
               <XwingFont icon={attack.arc} color={red} />
               <span className="font-medium text-lbnred">{attack.value}</span>
