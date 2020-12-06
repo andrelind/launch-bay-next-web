@@ -11,6 +11,7 @@ import {
 } from "lbn-core/dist/types";
 import React, { FC, useState } from "react";
 import { useSelector } from "react-redux";
+import { popoverClasses, popoverDetailClasses } from "../helpers/popover";
 import { XwingFont } from "./fonts/xwing";
 import UpgradeComponent from "./upgrade";
 
@@ -71,6 +72,8 @@ export const UpgradePopover: FC<Props> = ({
   const [showDetails, setShowDetails] = useState<Upgrade | undefined>();
   const [selected, setSelected] = useState(value);
 
+  const [pos, setPos] = useState({ x: 0, y: 0 });
+
   let upgradeSide = selected?.sides[side];
   if (!upgradeSide) {
     upgradeSide = selected?.sides[0];
@@ -85,7 +88,11 @@ export const UpgradePopover: FC<Props> = ({
         aria-expanded="true"
         aria-labelledby="listbox-label"
         className="relative w-full bg-white hover:shadow-md rounded-md pl-1 sm:pl-3 pr-8 sm:pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 text-xs sm:text-sm cursor-pointer"
-        onMouseEnter={() => setShowDetails(selected)}
+        onMouseEnter={(e) => {
+          const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
+          setPos({ x: rect.x, y: rect.y });
+          setShowDetails(selected);
+        }}
         onMouseLeave={() => setShowDetails(undefined)}
       >
         {renderUpgrade(t, slot, selected, upgradeSide)}
@@ -115,7 +122,9 @@ export const UpgradePopover: FC<Props> = ({
         leave="transition ease-in duration-75"
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
-        className="absolute mt-1 w-full rounded-md bg-white shadow-lg z-10"
+        className={`absolute mt-1 w-full rounded-md bg-white shadow-lg z-10 ${popoverClasses(
+          pos
+        )}`}
       >
         <ul
           tabIndex={-1}
@@ -127,14 +136,17 @@ export const UpgradePopover: FC<Props> = ({
           {selected && (
             <li
               role="option"
-              className="text-gray-900 cursor-default select-none relative py-2 px-1 sm:px-3  hover:bg-gray-100"
+              className="text-gray-900 cursor-default select-none relative py-2 px-1 sm:px-3 hover:bg-gray-100"
               onClick={() => {
                 setSelected(undefined);
                 setShowMenu(false);
                 onChange(undefined);
               }}
             >
-              <span className="font-normal truncate" style={{ color: red }}>
+              <span
+                className="font-normal truncate text-xs sm:text-sm"
+                style={{ color: red }}
+              >
                 Remove upgrade
               </span>
             </li>
@@ -166,7 +178,9 @@ export const UpgradePopover: FC<Props> = ({
           leave="transition ease-in duration-75"
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
-          className="absolute w-full rounded-md bg-white shadow-lg z-10 p-1 -right-full -top-0"
+          className={`absolute w-full rounded-md bg-white shadow-lg z-10 p-1 ${popoverDetailClasses(
+            pos
+          )}`}
         >
           {showDetails && (
             <UpgradeComponent
@@ -187,7 +201,9 @@ export const UpgradePopover: FC<Props> = ({
         leave="transition ease-in duration-75"
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
-        className="absolute mt-1 w-full rounded-md bg-white shadow-lg z-10 p-1"
+        className={`absolute mt-1 w-full rounded-md bg-white shadow-lg z-10 p-1 ${popoverClasses(
+          pos
+        )}`}
       >
         {showDetails && (
           <UpgradeComponent

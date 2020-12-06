@@ -80,7 +80,7 @@ export const ShipPopover: FC<Props> = ({ value, options, onChange }) => {
         leave="transition ease-in duration-75"
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
-        className="absolute mt-1 w-full rounded-md bg-white shadow-lg z-10 -bottom-full"
+        className="absolute mt-1 w-full rounded-md bg-white shadow-lg z-10 bottom-full"
       >
         <ul
           tabIndex={-1}

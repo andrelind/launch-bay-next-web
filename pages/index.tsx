@@ -28,9 +28,6 @@ import { AnyAction, Store } from "redux";
 import { v4 as uuid } from "uuid";
 import { Layout } from "../components/layout";
 import { PilotPopover } from "../components/pilot-popover";
-import Select from "../components/select";
-import { PilotOption } from "../components/select/pilot";
-import { UnitSingleValue } from "../components/select/unit";
 import { ShipPopover } from "../components/ship-popover";
 import { UpgradePopover } from "../components/upgrade-popover";
 import { copyToClipboard } from "../helpers/clipboard";
@@ -189,36 +186,24 @@ const EditPage: NextPage<Props> = ({ uid }) => {
               className="my-2 bg-white rounded-lg shadow px-2 py-6 md:px-5 md:py-4 relative"
             >
               <div className="divide-y divide-gray-200 md:mr-5">
-                <Select
-                  components={{
-                    Option: PilotOption,
-                    SingleValue: UnitSingleValue,
-                    IndicatorSeparator: null,
-                    DropdownIndicator: null,
-                  }}
-                  isSearchable={false}
-                  readOnly
-                  instanceId={"changePilot"}
-                  faction={squadron.faction}
-                  //@ts-ignore
-                  value={{ value: s.xws, label: s.name, ship: s }}
-                  //@ts-ignore
-                  onChange={(p: PilotValue) => {
+                <PilotPopover
+                  halfWidth
+                  value={s.pilot}
+                  shipType={shipType}
+                  options={pilotOptions(shipType, t)}
+                  onChange={(p) => {
                     dispatch(
                       changePilotAction(
                         squadron.uid,
                         s.uid,
-                        p.pilot.xws,
+                        p?.xws || "",
                         Boolean(s.pilot.slots.find((s) => s === "Force Power")),
                         Boolean(s.pilot.slots.find((s) => s === "Talent"))
                       )
                     );
                   }}
-                  options={pilotOptions(shipType, t).map((s) => ({
-                    value: s.xws,
-                    label: s.name.en,
-                  }))}
                 />
+
                 <div className="mt-1"></div>
               </div>
 
