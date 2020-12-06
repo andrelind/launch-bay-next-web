@@ -11,7 +11,7 @@ type Props = {
   minimized: boolean;
 };
 
-const PilotComponent = ({ pilot, count, limitWarning, minimized }: Props) => {
+const PilotComponent = ({ pilot, limitWarning, minimized }: Props) => {
   let errorText;
   if (limitWarning) {
     errorText = `Only ${pilot.limited} allowed in a squadron`;
