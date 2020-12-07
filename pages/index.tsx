@@ -5,9 +5,9 @@ import { setUpgrade } from "lbn-core/dist/actions/squadrons";
 import { buttonBlue, red } from "lbn-core/dist/assets/colors";
 import {
   getUpgrades,
-  loadShips,
   pilotOptions,
-  shipForXws,
+  shipTypeForXws,
+  shipTypeOptions,
   upgradesForSlot,
 } from "lbn-core/dist/loader";
 import { UserState } from "lbn-core/dist/reducers/user";
@@ -86,6 +86,7 @@ const EditPage: NextPage<Props> = ({ uid }) => {
   const collection = useSelector<AppState, any>((s) => s.app.collection);
 
   const [shipBase, setShipBase] = useState<ShipType | undefined>();
+  const [columns, setColumns] = useState(false);
 
   const p: { [s: string]: Slot } = {};
   squadron?.ships.forEach((s) => {
@@ -125,13 +126,6 @@ const EditPage: NextPage<Props> = ({ uid }) => {
     onClick: () => void;
   }[] = [
     {
-      title: "Print",
-      onClick: () => {
-        const url = `/print?lbx=${serialize(xws)}`;
-        window.open(url, "_ blank");
-      },
-    },
-    {
       title: "Export XWS",
       onClick: () => copyToClipboard(exportAsXws(squadron)),
     },
@@ -160,9 +154,53 @@ const EditPage: NextPage<Props> = ({ uid }) => {
       points={xws.cost}
       format={squadron.format}
       onChangeFormat={() => dispatch(toggleFormat(squadron.uid))}
+      onPrint={() => {
+        const url = `/print?lbx=${serialize(xws)}`;
+        window.open(url, "_ blank");
+      }}
       actions={actions}
     >
-      <div className="flex flex-1 flex-col">
+      <div>
+        <button className="text-gray-500" onClick={() => setColumns(!columns)}>
+          {columns && (
+            <svg
+              className="sm:w-8 sm:h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+              ></path>
+            </svg>
+          )}
+          {!columns && (
+            <svg
+              className="sm:w-8 sm:h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 8h16M4 16h16"
+              ></path>
+            </svg>
+          )}
+        </button>
+      </div>
+      <div
+        className={`flex flex-1 flex-col grid grid-cols-1 ${
+          columns && "sm:grid-cols-2"
+        } gap-x-3 gap-y-3`}
+      >
         {squadron.ships.map((s) => {
           const showHardpointPicker =
             s.ability &&
@@ -178,18 +216,18 @@ const EditPage: NextPage<Props> = ({ uid }) => {
             // @ts-ignore
             hardpoints[s.uid] ? [hardpoints[s.uid]] : []
           );
-          const shipType = shipForXws(squadron, s.xws);
+          const shipType = shipTypeForXws(squadron.faction, s.xws);
 
           return (
             <div
               key={s.uid}
-              className="my-2 bg-white rounded-lg shadow px-2 py-6 md:px-5 md:py-4 relative"
+              className="bg-white rounded-lg shadow px-2 py-6 md:px-5 md:py-4 relative"
             >
               <div className="divide-y divide-gray-200 md:mr-5">
                 <PilotPopover
                   halfWidth
                   value={s.pilot}
-                  shipType={shipType}
+                  ship={s}
                   options={pilotOptions(shipType, t)}
                   onChange={(p) => {
                     dispatch(
@@ -207,7 +245,11 @@ const EditPage: NextPage<Props> = ({ uid }) => {
                 <div className="mt-1"></div>
               </div>
 
-              <div className="mt-1 grid grid-cols-2 gap-1 sm:grid-cols-2 lg:grid-cols-4 md:mr-5">
+              <div
+                className={`mt-1 grid grid-cols-2 gap-1 lg:grid-cols-${
+                  columns ? "2" : "4"
+                } md:mr-5`}
+              >
                 {upgrades.map((upgrade, index) => (
                   <div key={uuid()}>
                     <UpgradePopover
@@ -277,16 +319,16 @@ const EditPage: NextPage<Props> = ({ uid }) => {
         })}
       </div>
 
-      <div className="my-2 bg-white rounded-lg shadow px-5 py-4 sm:px-6 grid grid-cols-2 gap-1">
+      <div className="my-3 bg-white rounded-lg shadow px-5 py-4 sm:px-6 grid grid-cols-2 gap-1">
         <ShipPopover
           value={shipBase}
-          options={loadShips(squadron, t, collection, true)}
+          options={shipTypeOptions(squadron, t, collection, true)}
           onChange={setShipBase}
         />
 
         {shipBase && (
           <PilotPopover
-            shipType={shipBase}
+            ship={shipBase}
             options={pilotOptions(shipBase, t)}
             onChange={(v) => {
               if (v) {

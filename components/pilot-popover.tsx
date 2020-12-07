@@ -2,7 +2,13 @@ import { Transition } from "@tailwindui/react";
 import { red } from "lbn-core/dist/assets/colors";
 import { useLocalized } from "lbn-core/dist/helpers/i18n";
 import { AppState } from "lbn-core/dist/state";
-import { Language, Pilot, ShipType, Translation } from "lbn-core/dist/types";
+import {
+  Language,
+  Pilot,
+  Ship,
+  ShipType,
+  Translation,
+} from "lbn-core/dist/types";
 import React, { FC, useState } from "react";
 import { useSelector } from "react-redux";
 import { popoverDetailStyle, popoverStyle } from "../helpers/popover";
@@ -11,7 +17,7 @@ import { StatsComponent } from "./ship-stats";
 
 type Props = {
   value?: Pilot;
-  shipType?: ShipType;
+  ship?: Ship | ShipType;
   options: Pilot[];
   onChange: (value?: Pilot) => void;
   halfWidth?: boolean;
@@ -20,7 +26,7 @@ type Props = {
 const renderPilot = (
   t: (translation?: Translation | undefined) => string,
   pilot?: Pilot,
-  shipType?: ShipType
+  ship?: Ship | ShipType
 ) => (
   <span className="flex items-center justify-between text-xs sm:text-sm">
     <div className="flex flex-1 flex-row justify-between items-center">
@@ -47,14 +53,14 @@ const renderPilot = (
 
         {!pilot && <span className="truncate text-gray-500">Select pilot</span>}
       </div>
-      {shipType && (
+      {ship && (
         <StatsComponent
-          stats={shipType?.stats}
+          stats={ship?.stats}
           force={pilot?.force}
           charges={pilot?.charges}
         />
       )}
-      <span className="font-medium">{pilot?.cost}</span>
+      <span className="font-medium">{(ship as Ship)?.pointsWithUpgrades}</span>
     </div>
   </span>
 );
@@ -64,7 +70,7 @@ export const PilotPopover: FC<Props> = ({
   options,
   onChange,
   halfWidth,
-  shipType,
+  ship,
 }) => {
   const language = useSelector<AppState, Language | undefined>(
     (s) => s.app.user.language
@@ -92,7 +98,7 @@ export const PilotPopover: FC<Props> = ({
         }}
         onMouseLeave={() => !showMenu && setShowDetails(undefined)}
       >
-        {renderPilot(t, selected, selected && shipType)}
+        {renderPilot(t, selected, selected && ship)}
         <span className="ml-1 sm:ml-3 absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
           {/* <!-- Heroicon name: selector --> */}
           <svg
@@ -191,9 +197,7 @@ export const PilotPopover: FC<Props> = ({
           className="absolute w-full rounded-md bg-white shadow-lg z-10 p-1"
           style={popoverDetailStyle(pos)}
         >
-          {showDetails && (
-            <PilotComponent pilot={showDetails} shipType={shipType} />
-          )}
+          {showDetails && <PilotComponent pilot={showDetails} ship={ship} />}
         </Transition>
       </Transition>
 
@@ -208,9 +212,7 @@ export const PilotPopover: FC<Props> = ({
         className="absolute mt-1 w-full rounded-md bg-white shadow-lg z-10 p-1"
         style={popoverStyle(pos)}
       >
-        {showDetails && (
-          <PilotComponent pilot={showDetails} shipType={shipType} />
-        )}
+        {showDetails && <PilotComponent pilot={showDetails} ship={ship} />}
       </Transition>
     </div>
   );

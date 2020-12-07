@@ -1,5 +1,5 @@
 import conditionData from "lbn-core/dist/assets/conditions";
-import { Pilot, ShipType } from "lbn-core/dist/types";
+import { Pilot, Ship, ShipType } from "lbn-core/dist/types";
 import React, { FC } from "react";
 import Error from "./error";
 import FormattedText from "./formatted-text";
@@ -7,12 +7,12 @@ import StatsComponent from "./ship-stats";
 
 type Props = {
   pilot: Pilot;
-  shipType?: ShipType;
+  ship?: Ship | ShipType;
   count?: number;
   limitWarning?: boolean;
 };
 
-const PilotComponent: FC<Props> = ({ pilot, shipType, limitWarning }) => {
+const PilotComponent: FC<Props> = ({ pilot, ship, limitWarning }) => {
   let errorText;
   if (limitWarning) {
     errorText = `Only ${pilot.limited} allowed in a squadron`;
@@ -22,7 +22,7 @@ const PilotComponent: FC<Props> = ({ pilot, shipType, limitWarning }) => {
     <div className="flex flex-1 flex-col">
       <div className="flex flex-row items-center hidden sm:block">
         <StatsComponent
-          stats={shipType?.stats}
+          stats={ship?.stats}
           force={pilot.force}
           charges={pilot.charges}
         />

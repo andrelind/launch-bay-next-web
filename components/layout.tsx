@@ -14,6 +14,7 @@ type Props = {
   points: number;
   format: Format;
   onChangeFormat: () => void;
+  onPrint: () => void;
   actions?: { title: string; className?: string; onClick: () => void }[];
 };
 
@@ -22,6 +23,7 @@ export const Layout: FC<Props> = ({
   points,
   format,
   onChangeFormat,
+  onPrint,
   actions,
   children,
 }) => {
@@ -318,11 +320,20 @@ export const Layout: FC<Props> = ({
                 </span>
                 <span className="ml-3 shadow-sm rounded-md relative">
                   <button
+                    onClick={onPrint}
+                    type="button"
+                    className="inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-gray-600 hover:bg-gray-500 focus:outline-none focus:shadow-outline-gray focus:border-gray-700 active:bg-gray-700 transition duration-150 ease-in-out"
+                  >
+                    Print
+                  </button>
+                </span>
+                <span className="ml-3 shadow-sm rounded-md relative">
+                  <button
                     onClick={() => setShowActions(!showActions)}
                     type="button"
                     className="inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-gray-600 hover:bg-gray-500 focus:outline-none focus:shadow-outline-gray focus:border-gray-700 active:bg-gray-700 transition duration-150 ease-in-out"
                   >
-                    Actions
+                    Export
                   </button>
 
                   <Transition
