@@ -164,7 +164,7 @@ const EditPage: NextPage<Props> = ({ uid }) => {
         <button className="text-gray-500" onClick={() => setColumns(!columns)}>
           {columns && (
             <svg
-              className="sm:w-8 sm:h-8"
+              className="w-8 sm:h-8"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -180,7 +180,7 @@ const EditPage: NextPage<Props> = ({ uid }) => {
           )}
           {!columns && (
             <svg
-              className="sm:w-8 sm:h-8"
+              className="w-8 sm:h-8"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -190,7 +190,7 @@ const EditPage: NextPage<Props> = ({ uid }) => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                d="M4 8h16M4 16h16"
+                d="M4 6h16M4 10h16M4 14h16M4 18h16"
               ></path>
             </svg>
           )}
