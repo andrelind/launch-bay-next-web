@@ -138,7 +138,7 @@ export const Layout: FC<Props> = ({
                         leave="transition ease-in duration-75"
                         leaveFrom="transform opacity-100 scale-100"
                         leaveTo="transform opacity-0 scale-95"
-                        className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg"
+                        className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg z-10"
                       >
                         <div className="py-1 rounded-md bg-white shadow-xs">
                           {jwt && (

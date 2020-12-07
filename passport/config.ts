@@ -1,3 +1,4 @@
+import { Strategy as AppleStrategy } from "passport-apple";
 import { StrategyOption as FacebookStrategy } from "passport-facebook";
 import { IOAuthStrategyOption as GoogleStrategy } from "passport-google-oauth";
 
@@ -6,9 +7,10 @@ export interface AppConfig {
   hostingURL: string;
   facebook: FacebookStrategy;
   google: GoogleStrategy;
+  apple: AppleStrategy;
 }
 
-const getOAuthUrls: (
+export const getOAuthUrls: (
   hostName: string,
   app: string
 ) => { callbackURL: string } = (hostName: string, app: string) => ({
@@ -42,6 +44,7 @@ const appConfig: AppConfig = {
     clientID: "se.andrelind.launch-bay-web",
     teamID: "Y7Z9KZ84C6",
     ...getOAuthUrls(hostingURL, "apple"),
+    // @ts-ignore
     keyID: "AX2B5PQWDU",
     privateKeyLocation: "../public/keys/AuthKey_AX2B5PQWDU.p8",
     passReqToCallback: true,

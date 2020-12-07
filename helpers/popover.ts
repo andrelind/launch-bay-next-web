@@ -1,10 +1,5 @@
 export const popoverStyle = ({ y }: { x: number; y: number }) => {
   if (process.browser) {
-    console.log({
-      y,
-      w: window.innerHeight,
-      cn: y > window.innerHeight * 0.6 ? "bottom-full" : "top-full",
-    });
     // First, Y-pos
     if (y > window.innerHeight * 0.6) {
       return { bottom: "100%" };

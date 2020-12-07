@@ -1,15 +1,10 @@
 import requests from "lbn-core/dist/requests";
 import AppleStrategy from "passport-apple";
+import appConfig from "../config";
 
 const strategy = new AppleStrategy(
-  {
-    clientID: "",
-    teamID: "",
-    callbackURL: "",
-    keyID: "",
-    privateKeyLocation: "",
-    passReqToCallback: true,
-  },
+  // @ts-ignore
+  appConfig.apple,
   async (_req, _accessToken, _refreshToken, decodedIdToken, profile, cb) => {
     console.log({ decodedIdToken, profile });
 

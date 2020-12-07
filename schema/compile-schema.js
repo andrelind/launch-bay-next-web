@@ -8,9 +8,9 @@ const typeDefs = files.reduce(
   (def, file) => def + fs.readFileSync(file, "utf-8"),
   ""
 );
-fs.writeFileSync("./schema/typeDefs.js", typeDefs);
 
-// import { gql } from "apollo-server-micro";
-// export default gql`
+const header = `import { gql } from "apollo-server-micro";
 
-// `
+export default gql\`\n`;
+
+fs.writeFileSync("./schema/typeDefs.ts", header + typeDefs + "`");
