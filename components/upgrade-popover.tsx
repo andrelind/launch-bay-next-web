@@ -11,7 +11,7 @@ import {
 } from "lbn-core/dist/types";
 import React, { FC, useState } from "react";
 import { useSelector } from "react-redux";
-import { popoverClasses, popoverDetailClasses } from "../helpers/popover";
+import { popoverDetailStyle, popoverStyle } from "../helpers/popover";
 import { XwingFont } from "./fonts/xwing";
 import StatsComponent from "./ship-stats";
 import UpgradeComponent from "./upgrade";
@@ -129,9 +129,8 @@ export const UpgradePopover: FC<Props> = ({
         leave="transition ease-in duration-75"
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
-        className={`absolute mt-1 w-full rounded-md bg-white shadow-lg z-10 ${popoverClasses(
-          pos
-        )}`}
+        className={`absolute mt-1 w-full rounded-md bg-white shadow-lg z-10`}
+        style={popoverStyle(pos)}
       >
         <ul
           tabIndex={-1}
@@ -185,9 +184,8 @@ export const UpgradePopover: FC<Props> = ({
           leave="transition ease-in duration-75"
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
-          className={`absolute w-full rounded-md bg-white shadow-lg z-10 p-1 ${popoverDetailClasses(
-            pos
-          )}`}
+          className="absolute w-full rounded-md bg-white shadow-lg z-10 p-1"
+          style={popoverDetailStyle(pos)}
         >
           {showDetails && (
             <UpgradeComponent
@@ -208,9 +206,8 @@ export const UpgradePopover: FC<Props> = ({
         leave="transition ease-in duration-75"
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
-        className={`absolute mt-1 w-full rounded-md bg-white shadow-lg z-10 p-1 ${popoverClasses(
-          pos
-        )}`}
+        className="absolute mt-1 w-full rounded-md bg-white shadow-lg z-10 p-1"
+        style={popoverStyle(pos)}
       >
         {showDetails && (
           <UpgradeComponent

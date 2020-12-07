@@ -5,7 +5,7 @@ import { AppState } from "lbn-core/dist/state";
 import { Language, Pilot, ShipType, Translation } from "lbn-core/dist/types";
 import React, { FC, useState } from "react";
 import { useSelector } from "react-redux";
-import { popoverClasses, popoverDetailClasses } from "../helpers/popover";
+import { popoverDetailStyle, popoverStyle } from "../helpers/popover";
 import PilotComponent from "./pilot";
 import { StatsComponent } from "./ship-stats";
 
@@ -133,7 +133,8 @@ export const PilotPopover: FC<Props> = ({
         leaveTo="transform opacity-0 scale-95"
         className={`absolute mt-1 w-full ${
           halfWidth && "sm:w-1/2"
-        } rounded-md bg-white shadow-lg z-10 ${popoverClasses(pos)}`}
+        } rounded-md bg-white shadow-lg z-10`}
+        style={popoverStyle(pos)}
       >
         <ul
           tabIndex={-1}
@@ -187,9 +188,8 @@ export const PilotPopover: FC<Props> = ({
           leave="transition ease-in duration-75"
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
-          className={`absolute w-full rounded-md bg-white shadow-lg z-10 p-1 ${popoverDetailClasses(
-            pos
-          )}`}
+          className="absolute w-full rounded-md bg-white shadow-lg z-10 p-1"
+          style={popoverDetailStyle(pos)}
         >
           {showDetails && (
             <PilotComponent pilot={showDetails} shipType={shipType} />
@@ -205,9 +205,8 @@ export const PilotPopover: FC<Props> = ({
         leave="transition ease-in duration-75"
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
-        className={`absolute mt-1 w-full rounded-md bg-white shadow-lg z-10 p-1 ${popoverClasses(
-          pos
-        )}`}
+        className="absolute mt-1 w-full rounded-md bg-white shadow-lg z-10 p-1"
+        style={popoverStyle(pos)}
       >
         {showDetails && (
           <PilotComponent pilot={showDetails} shipType={shipType} />

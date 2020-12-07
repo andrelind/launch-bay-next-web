@@ -4,7 +4,7 @@ import { AppState } from "lbn-core/dist/state";
 import { Language, ShipType, Translation } from "lbn-core/dist/types";
 import React, { FC, useState } from "react";
 import { useSelector } from "react-redux";
-import { popoverClasses } from "../helpers/popover";
+import { popoverStyle } from "../helpers/popover";
 import { ShipFont } from "./fonts/ships";
 
 type Props = {
@@ -98,9 +98,8 @@ export const ShipPopover: FC<Props> = ({ value, options, onChange }) => {
         leave="transition ease-in duration-75"
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
-        className={`absolute mt-1 w-full rounded-md bg-white shadow-lg z-10 ${popoverClasses(
-          pos
-        )}`}
+        className={`absolute mt-1 w-full rounded-md bg-white shadow-lg z-10`}
+        style={popoverStyle(pos)}
       >
         <ul
           tabIndex={-1}
