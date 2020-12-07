@@ -7,6 +7,7 @@ import React, { FC, useState } from "react";
 import { useSelector } from "react-redux";
 import { popoverClasses, popoverDetailClasses } from "../helpers/popover";
 import PilotComponent from "./pilot";
+import { StatsComponent } from "./ship-stats";
 
 type Props = {
   value?: Pilot;
@@ -18,8 +19,8 @@ type Props = {
 
 const renderPilot = (
   t: (translation?: Translation | undefined) => string,
-  pilot?: Pilot
-  // shipType?: ShipType
+  pilot?: Pilot,
+  shipType?: ShipType
 ) => (
   <span className="flex items-center justify-between text-xs sm:text-sm">
     <div className="flex flex-1 flex-row justify-between items-center">
@@ -46,7 +47,13 @@ const renderPilot = (
 
         {!pilot && <span className="truncate text-gray-500">Select pilot</span>}
       </div>
-      {/* <ShipStats stats={shipType?.stats} minimized={true} /> */}
+      {shipType && (
+        <StatsComponent
+          stats={shipType?.stats}
+          force={pilot?.force}
+          charges={pilot?.charges}
+        />
+      )}
       <span className="font-medium">{pilot?.cost}</span>
     </div>
   </span>
@@ -57,7 +64,7 @@ export const PilotPopover: FC<Props> = ({
   options,
   onChange,
   halfWidth,
-  // shipType,
+  shipType,
 }) => {
   const language = useSelector<AppState, Language | undefined>(
     (s) => s.app.user.language
@@ -77,15 +84,15 @@ export const PilotPopover: FC<Props> = ({
         aria-haspopup="listbox"
         aria-expanded="true"
         aria-labelledby="listbox-label"
-        className="relative w-full bg-white hover:shadow-md rounded-md pl-1 sm:pl-3 pr-8 sm:pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 text-xs sm:text-sm cursor-pointer"
+        className="relative w-full bg-white hover:shadow-md rounded-md pl-1 sm:pl-3 pr-8 sm:pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-lbnred-500 focus:border-lbnred-500 text-xs sm:text-sm cursor-pointer"
         onMouseEnter={(e) => {
           const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
           setPos({ x: rect.x, y: rect.y });
           setShowDetails(selected);
         }}
-        onMouseLeave={() => setShowDetails(undefined)}
+        onMouseLeave={() => !showMenu && setShowDetails(undefined)}
       >
-        {renderPilot(t, selected)}
+        {renderPilot(t, selected, selected && shipType)}
         <span className="ml-1 sm:ml-3 absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
           {/* <!-- Heroicon name: selector --> */}
           <svg
@@ -103,6 +110,18 @@ export const PilotPopover: FC<Props> = ({
           </svg>
         </span>
       </button>
+
+      {showMenu && (
+        <div className="fixed inset-0 transition-opacity" aria-hidden="true">
+          <div
+            className="absolute inset-0"
+            onClick={() => {
+              setShowMenu(!showMenu);
+              setShowDetails(undefined);
+            }}
+          ></div>
+        </div>
+      )}
 
       <Transition
         show={showMenu}
@@ -173,7 +192,7 @@ export const PilotPopover: FC<Props> = ({
           )}`}
         >
           {showDetails && (
-            <PilotComponent pilot={showDetails} minimized={false} />
+            <PilotComponent pilot={showDetails} shipType={shipType} />
           )}
         </Transition>
       </Transition>
@@ -191,7 +210,7 @@ export const PilotPopover: FC<Props> = ({
         )}`}
       >
         {showDetails && (
-          <PilotComponent pilot={showDetails} minimized={false} />
+          <PilotComponent pilot={showDetails} shipType={shipType} />
         )}
       </Transition>
     </div>

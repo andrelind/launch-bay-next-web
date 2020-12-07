@@ -1,17 +1,18 @@
 import conditionData from "lbn-core/dist/assets/conditions";
-import { Pilot } from "lbn-core/dist/types";
-import React from "react";
+import { Pilot, ShipType } from "lbn-core/dist/types";
+import React, { FC } from "react";
 import Error from "./error";
 import FormattedText from "./formatted-text";
+import StatsComponent from "./ship-stats";
 
 type Props = {
   pilot: Pilot;
+  shipType?: ShipType;
   count?: number;
   limitWarning?: boolean;
-  minimized: boolean;
 };
 
-const PilotComponent = ({ pilot, limitWarning, minimized }: Props) => {
+const PilotComponent: FC<Props> = ({ pilot, shipType, limitWarning }) => {
   let errorText;
   if (limitWarning) {
     errorText = `Only ${pilot.limited} allowed in a squadron`;
@@ -20,8 +21,13 @@ const PilotComponent = ({ pilot, limitWarning, minimized }: Props) => {
   return (
     <div className="flex flex-1 flex-col">
       <div className="flex flex-row items-center hidden sm:block">
+        <StatsComponent
+          stats={shipType?.stats}
+          force={pilot.force}
+          charges={pilot.charges}
+        />
         {pilot.ability && <FormattedText text={pilot.ability.en} />}
-        {!minimized && pilot.text && (
+        {pilot.text && (
           <FormattedText text={pilot.text.en} fontStyle="italic" />
         )}
 

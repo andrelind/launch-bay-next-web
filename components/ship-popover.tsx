@@ -4,6 +4,7 @@ import { AppState } from "lbn-core/dist/state";
 import { Language, ShipType, Translation } from "lbn-core/dist/types";
 import React, { FC, useState } from "react";
 import { useSelector } from "react-redux";
+import { popoverClasses } from "../helpers/popover";
 import { ShipFont } from "./fonts/ships";
 
 type Props = {
@@ -41,6 +42,8 @@ export const ShipPopover: FC<Props> = ({ value, options, onChange }) => {
   //   const [showDetails, setShowDetails] = useState<ShipType | undefined>();
   const [selected, setSelected] = useState(value);
 
+  const [pos, setPos] = useState({ x: 0, y: 0 });
+
   return (
     <div className="mt-1 relative">
       <button
@@ -49,9 +52,12 @@ export const ShipPopover: FC<Props> = ({ value, options, onChange }) => {
         aria-haspopup="listbox"
         aria-expanded="true"
         aria-labelledby="listbox-label"
-        className="relative w-full bg-white hover:shadow-md rounded-md pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm cursor-pointer"
-        // onMouseEnter={() => setShowDetails(selected)}
-        // onMouseLeave={() => setShowDetails(undefined)}
+        className="relative w-full bg-white hover:shadow-md rounded-md pl-1 sm:pl-3 pr-8 sm:pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-lbnred-500 focus:border-lbnred-500 text-xs sm:text-sm cursor-pointer"
+        onMouseEnter={(e) => {
+          const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
+          setPos({ x: rect.x, y: rect.y });
+          // setShowDetails(selected);
+        }} // onMouseLeave={() => setShowDetails(undefined)}
       >
         {renderShipType(t, selected)}
         <span className="ml-3 absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
@@ -72,6 +78,18 @@ export const ShipPopover: FC<Props> = ({ value, options, onChange }) => {
         </span>
       </button>
 
+      {showMenu && (
+        <div className="fixed inset-0 transition-opacity" aria-hidden="true">
+          <div
+            className="absolute inset-0"
+            onClick={() => {
+              setShowMenu(!showMenu);
+              // setShowDetails(undefined);
+            }}
+          ></div>
+        </div>
+      )}
+
       <Transition
         show={showMenu}
         enter="transition ease-out duration-100"
@@ -80,14 +98,16 @@ export const ShipPopover: FC<Props> = ({ value, options, onChange }) => {
         leave="transition ease-in duration-75"
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
-        className="absolute mt-1 w-full rounded-md bg-white shadow-lg z-10 bottom-full"
+        className={`absolute mt-1 w-full rounded-md bg-white shadow-lg z-10 ${popoverClasses(
+          pos
+        )}`}
       >
         <ul
           tabIndex={-1}
           role="listbox"
           aria-labelledby="listbox-label"
           aria-activedescendant="listbox-item-3"
-          className="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm"
+          className="relative max-h-56 rounded-md py-1 text-xs sm:text-sm ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm"
         >
           {/* {selected && (
             <li
@@ -109,7 +129,7 @@ export const ShipPopover: FC<Props> = ({ value, options, onChange }) => {
             <li
               key={option.xws}
               role="option"
-              className="text-gray-900 cursor-default select-none relative py-2 px-3 hover:bg-gray-100"
+              className="text-gray-900 cursor-default select-none relative py-2 px-1 sm:px-3 hover:bg-gray-100"
               onClick={() => {
                 setSelected(option);
                 setShowMenu(false);

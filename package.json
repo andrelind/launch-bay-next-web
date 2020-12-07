@@ -38,7 +38,7 @@
     "koa": "^2.13.0",
     "koa-bodyparser": "^4.3.0",
     "koa-router": "^10.0.0",
-    "lbn-core": "^1.0.1",
+    "lbn-core": "^1.0.2",
     "lodash.merge": "^4.6.2",
     "minimist": "^1.2.5",
     "mongoose": "^5.11.0",

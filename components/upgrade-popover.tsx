@@ -1,5 +1,5 @@
 import { Transition } from "@tailwindui/react";
-import { red, yellow } from "lbn-core/dist/assets/colors";
+import { red } from "lbn-core/dist/assets/colors";
 import { useLocalized } from "lbn-core/dist/helpers/i18n";
 import { AppState } from "lbn-core/dist/state";
 import {
@@ -13,6 +13,7 @@ import React, { FC, useState } from "react";
 import { useSelector } from "react-redux";
 import { popoverClasses, popoverDetailClasses } from "../helpers/popover";
 import { XwingFont } from "./fonts/xwing";
+import StatsComponent from "./ship-stats";
 import UpgradeComponent from "./upgrade";
 
 type Props = {
@@ -39,15 +40,7 @@ const renderUpgrade = (
           {t(side?.title)}
         </span>
       )}
-      {side?.charges && (
-        <span className="ml-1 items-center">
-          <XwingFont icon="charge" color={yellow} />
-          {side?.charges.recovers > 0 && (
-            <XwingFont icon="recurring" color={yellow} />
-          )}
-          <span style={{ color: yellow }}>{side?.charges.value}</span>
-        </span>
-      )}
+      <StatsComponent charges={side?.charges} />
       {!upgrade && <span className="ml-3 truncate text-gray-500">{slot}</span>}
     </div>
     <span className="ml-1 pr-1 sm:ml-3 font-medium truncate">
@@ -87,13 +80,15 @@ export const UpgradePopover: FC<Props> = ({
         aria-haspopup="listbox"
         aria-expanded="true"
         aria-labelledby="listbox-label"
-        className="relative w-full bg-white hover:shadow-md rounded-md pl-1 sm:pl-3 pr-8 sm:pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 text-xs sm:text-sm cursor-pointer"
+        className="relative w-full bg-white hover:shadow-md rounded-md pl-1 sm:pl-3 pr-8 sm:pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-lbnred-500 focus:border-lbnred-500 text-xs sm:text-sm cursor-pointer"
         onMouseEnter={(e) => {
           const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
           setPos({ x: rect.x, y: rect.y });
           setShowDetails(selected);
         }}
-        onMouseLeave={() => setShowDetails(undefined)}
+        onMouseLeave={() => {
+          !showMenu && setShowDetails(undefined);
+        }}
       >
         {renderUpgrade(t, slot, selected, upgradeSide)}
         <span className="ml-1 sm:ml-3 absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
@@ -113,6 +108,18 @@ export const UpgradePopover: FC<Props> = ({
           </svg>
         </span>
       </button>
+
+      {showMenu && (
+        <div className="fixed inset-0 transition-opacity" aria-hidden="true">
+          <div
+            className="absolute inset-0"
+            onClick={() => {
+              setShowMenu(!showMenu);
+              setShowDetails(undefined);
+            }}
+          ></div>
+        </div>
+      )}
 
       <Transition
         show={showMenu}

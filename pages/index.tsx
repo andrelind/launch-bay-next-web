@@ -286,6 +286,7 @@ const EditPage: NextPage<Props> = ({ uid }) => {
 
         {shipBase && (
           <PilotPopover
+            shipType={shipBase}
             options={pilotOptions(shipBase, t)}
             onChange={(v) => {
               if (v) {
