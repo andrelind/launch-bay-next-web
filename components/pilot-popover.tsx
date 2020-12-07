@@ -87,7 +87,6 @@ export const PilotPopover: FC<Props> = ({
         className="relative w-full bg-white hover:shadow-md rounded-md pl-1 sm:pl-3 pr-8 sm:pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-lbnred-500 focus:border-lbnred-500 text-xs sm:text-sm cursor-pointer"
         onMouseEnter={(e) => {
           const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
-          console.log({ rect });
           setPos({ x: rect.x, y: rect.y });
           setShowDetails(selected);
         }}

@@ -1,7 +1,8 @@
 export const popoverClasses = ({ y }: { x: number; y: number }) => {
   if (process.browser) {
+    console.log({ y, w: window.innerHeight });
     // First, Y-pos
-    if (y > window.screen.height * 0.6) {
+    if (y > window.innerHeight * 0.6) {
       return "bottom-full";
     } else {
       return "top-full";
