@@ -5,6 +5,6 @@ import ShipType from "../ship-type";
 export const ShipTypeOption = ({ data, ...rest }: any) => (
   // @ts-ignore
   <components.Option {...rest}>
-    <ShipType shipType={data.ship} minimized={true} />
+    <ShipType shipType={data.ship} />
   </components.Option>
 );

@@ -8,14 +8,9 @@ import ShipStats from "./ship-stats";
 type Props = {
   shipType: ShipType;
   count?: number;
-  minimized: boolean;
 };
 
-export const ShipTypeComponent: FC<Props> = ({
-  shipType,
-  count,
-  minimized,
-}) => {
+export const ShipTypeComponent: FC<Props> = ({ shipType, count }) => {
   return (
     <div className="grid grid-cols-1 gap-3 sm:grid-cols-4 lg:grid-cols-4">
       <div className="flex flex-row items-center">
@@ -30,7 +25,7 @@ export const ShipTypeComponent: FC<Props> = ({
       </div>
 
       <div className="flex flex-row justify-between items-center hidden sm:block">
-        <ShipStats stats={shipType.stats} minimized={minimized} />
+        <ShipStats stats={shipType.stats} />
       </div>
 
       <div className="flex flex-row items-center hidden sm:block">

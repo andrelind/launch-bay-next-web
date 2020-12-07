@@ -5,6 +5,6 @@ import PilotComponent from "../pilot";
 export const PilotOption = ({ data, ...rest }: any) => (
   // @ts-ignore
   <components.Option {...rest}>
-    <PilotComponent pilot={data.pilot} minimized={true} />
+    <PilotComponent pilot={data.pilot} />
   </components.Option>
 );

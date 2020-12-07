@@ -68,7 +68,6 @@ const Unit = ({
             stats={ship.stats}
             force={ship.pilot.force}
             charges={ship.pilot.charges}
-            minimized={minimized}
           />
         </div>
 
