@@ -1,47 +1,39 @@
 import { Transition } from "@tailwindui/react";
+import { serializer } from "lbn-core/dist/helpers";
 import { factions } from "lbn-core/dist/helpers/enums";
-import { deserialize } from "lbn-core/dist/helpers/serializer";
-import { Faction, Format } from "lbn-core/dist/types";
-import { useRouter } from "next/router";
+import { SquadronXWS } from "lbn-core/dist/types";
+import Link from "next/link";
 import React, { FC, useState } from "react";
+import { v4 as uuid } from "uuid";
 import { colorForFaction } from "../helpers/colors";
-import { useJWT } from "../helpers/hooks";
 import XwingFont from "./fonts/xwing";
+import FormatComponent from "./format";
+import { SavedSquadronsPanel } from "./load-panel";
 import { LogoComponent } from "./logo";
 
 type Props = {
-  name: string;
-  points: number;
-  format: Format;
+  loggedIn: boolean;
+  xws: SquadronXWS;
   onChangeFormat: () => void;
   onPrint: () => void;
+  columns: boolean;
+  setColumns: (c: boolean) => void;
   actions?: { title: string; className?: string; onClick: () => void }[];
 };
 
 export const Layout: FC<Props> = ({
-  name,
-  points,
-  format,
+  loggedIn,
+  xws,
   onChangeFormat,
   onPrint,
   actions,
+  columns,
+  setColumns,
   children,
 }) => {
-  const router = useRouter();
-  const jwt = useJWT();
   const [showMenu, setShowMenu] = useState(false);
   const [showActions, setShowActions] = useState(false);
-
-  const getSelectedFaction = () => {
-    const lbx = router.query.lbx;
-    if (lbx) {
-      return deserialize(lbx as string)?.faction;
-    } else {
-      return router.query.faction as Faction;
-    }
-  };
-
-  const selectedFaction = getSelectedFaction();
+  const [showPanel, setShowPanel] = useState(false);
 
   return (
     <div>
@@ -58,25 +50,37 @@ export const Layout: FC<Props> = ({
                     <div className="ml-10 flex items-baseline space-x-4">
                       {factions.map((f) => {
                         const classes =
-                          selectedFaction === f
-                            ? "px-3 py-2 rounded-md text-sm font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700"
-                            : "px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700";
+                          xws.faction === f
+                            ? "px-3 py-2 rounded-md text-sm font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700 cursor-pointer"
+                            : "px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 cursor-pointer";
+
+                        const s: SquadronXWS = {
+                          uid: uuid(),
+                          name: "New Faction",
+                          format: "Hyperspace",
+                          faction: f,
+                          cost: 0,
+                          favourite: false,
+                          pilots: [],
+                        };
+
                         return (
-                          <a
+                          <Link
                             key={f}
-                            href={`/?faction=${f}`}
-                            className={classes}
+                            href={`/?lbx=${serializer.serialize(s)}`}
                           >
-                            <XwingFont
-                              icon={f}
-                              className="text-xl"
-                              color={
-                                f !== "First Order" && f !== "Galactic Empire"
-                                  ? colorForFaction(f)
-                                  : undefined
-                              }
-                            />
-                          </a>
+                            <a className={classes}>
+                              <XwingFont
+                                icon={f}
+                                className="text-xl"
+                                color={
+                                  f !== "First Order" && f !== "Galactic Empire"
+                                    ? colorForFaction(f)
+                                    : undefined
+                                }
+                              />
+                            </a>
+                          </Link>
                         );
                       })}
                     </div>
@@ -84,24 +88,17 @@ export const Layout: FC<Props> = ({
                 </div>
                 <div className="hidden md:block">
                   <div className="ml-4 flex items-center md:ml-6">
-                    <button
-                      className="p-1 border-2 border-transparent text-gray-400 rounded-full hover:text-white focus:outline-none focus:text-white focus:bg-gray-700"
-                      aria-label="Notifications"
-                    >
-                      <svg
-                        className="h-6 w-6"
-                        stroke="currentColor"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                        />
-                      </svg>
-                    </button>
+                    {loggedIn && (
+                      <span className="shadow-sm rounded-md relative">
+                        <button
+                          onClick={() => setShowPanel(!showPanel)}
+                          type="button"
+                          className="inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-gray-600 hover:bg-gray-500 focus:outline-none focus:shadow-outline-gray focus:border-gray-700 active:bg-gray-700 transition duration-150 ease-in-out"
+                        >
+                          Load squadron
+                        </button>
+                      </span>
+                    )}
 
                     {/* <!-- Profile dropdown --> */}
                     <div className="ml-3 relative">
@@ -113,23 +110,23 @@ export const Layout: FC<Props> = ({
                           aria-label="User menu"
                           aria-haspopup="true"
                         >
-                          <img
-                            className="h-8 w-8 rounded-full"
-                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                            alt=""
-                          />
+                          <svg
+                            className="w-6 h-6"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                            ></path>
+                          </svg>
                         </button>
                       </div>
-                      {/* <!--
-                    Profile dropdown panel, show/hide based on dropdown state.
 
-                    Entering: "transition ease-out duration-100"
-                      From: "transform opacity-0 scale-95"
-                      To: "transform opacity-100 scale-100"
-                    Leaving: "transition ease-in duration-75"
-                      From: "transform opacity-100 scale-100"
-                      To: "transform opacity-0 scale-95"
-                  --> */}
                       <Transition
                         show={showMenu}
                         enter="transition ease-out duration-100"
@@ -141,7 +138,7 @@ export const Layout: FC<Props> = ({
                         className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg z-10"
                       >
                         <div className="py-1 rounded-md bg-white shadow-xs">
-                          {jwt && (
+                          {loggedIn && (
                             <a
                               href="/logout"
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
@@ -149,7 +146,7 @@ export const Layout: FC<Props> = ({
                               Logout
                             </a>
                           )}
-                          {!jwt && (
+                          {!loggedIn && (
                             <a
                               href="/api/auth/facebook"
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
@@ -157,7 +154,7 @@ export const Layout: FC<Props> = ({
                               Login with Facebook
                             </a>
                           )}
-                          {!jwt && (
+                          {!loggedIn && (
                             <a
                               href="/api/auth/google"
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
@@ -224,7 +221,7 @@ export const Layout: FC<Props> = ({
             <div className="px-2 py-3 space-y-1 sm:px-3 grid grid-cols-7">
               {factions.map((f) => {
                 const classes =
-                  selectedFaction === f
+                  xws.faction === f
                     ? "block text-center py-2 rounded-md text-base font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700"
                     : "block text-center py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700";
                 return (
@@ -242,31 +239,14 @@ export const Layout: FC<Props> = ({
                 );
               })}
             </div>
-            <div className="pt-4 pb-3 border-t border-gray-700">
-              <div className="flex items-center px-5 space-x-3">
-                <div className="flex-shrink-0">
-                  <img
-                    className="h-10 w-10 rounded-full"
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
-                  />
-                </div>
-                <div className="space-y-1">
-                  <div className="text-base font-medium leading-none text-white">
-                    Tom Cook
-                  </div>
-                  <div className="text-sm font-medium leading-none text-gray-400">
-                    tom@example.com
-                  </div>
-                </div>
-              </div>
+            <div className="pt-3 pb-3 border-t border-gray-700">
               <div
                 className="mt-3 px-2 space-y-1"
                 role="menu"
                 aria-orientation="vertical"
                 aria-labelledby="user-menu"
               >
-                {jwt && (
+                {loggedIn && (
                   <a
                     href="/logout"
                     className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
@@ -275,7 +255,7 @@ export const Layout: FC<Props> = ({
                     Logout
                   </a>
                 )}
-                {!jwt && (
+                {!loggedIn && (
                   <a
                     href="/api/auth/facebook"
                     className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
@@ -284,7 +264,7 @@ export const Layout: FC<Props> = ({
                     Login with Facebook
                   </a>
                 )}
-                {!jwt && (
+                {!loggedIn && (
                   <a
                     href="/api/auth/google"
                     className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
@@ -301,24 +281,64 @@ export const Layout: FC<Props> = ({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="md:flex md:items-center md:justify-between">
               <div className="flex-1 min-w-0">
-                <h2 className="text-2xl font-bold leading-7 text-white sm:text-3xl sm:leading-9 sm:truncate">
-                  {name}
-                </h2>
-                <h3 className="text-lg font-normal text-gray-500 sm:text-lg sm:truncate">
-                  {points} points
-                </h3>
+                <span>
+                  <h2 className="text-2xl font-bold leading-7 text-white sm:text-3xl sm:leading-9 sm:truncate flex items-center">
+                    <XwingFont
+                      icon={xws.faction}
+                      color={colorForFaction(xws.faction)}
+                    />
+                    <span className="ml-1">{xws.name}</span>
+                  </h2>
+                </span>
+                <div className="flex">
+                  <FormatComponent
+                    format={xws.format}
+                    onClick={onChangeFormat}
+                  />
+                  <h3 className="ml-1 text-lg font-normal text-gray-500 sm:text-lg sm:truncate">
+                    {xws.cost} points
+                  </h3>
+                </div>
               </div>
               <div className="mt-4 flex md:mt-0 md:ml-4">
-                <span className="shadow-sm rounded-md">
-                  <button
-                    onClick={onChangeFormat}
-                    type="button"
-                    className="inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-gray-600 hover:bg-gray-500 focus:outline-none focus:shadow-outline-gray focus:border-gray-700 active:bg-gray-700 transition duration-150 ease-in-out"
-                  >
-                    {format}
-                  </button>
-                </span>
-                <span className="ml-3 shadow-sm rounded-md relative">
+                <button
+                  className="text-gray-500 mr-3 hidden sm:block"
+                  onClick={() => setColumns(!columns)}
+                >
+                  {columns && (
+                    <svg
+                      className="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+                      />
+                    </svg>
+                  )}
+                  {!columns && (
+                    <svg
+                      className="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M4 6h16M4 10h16M4 14h16M4 18h16"
+                      />
+                    </svg>
+                  )}
+                </button>
+                <span className="shadow-sm rounded-md relative">
                   <button
                     onClick={onPrint}
                     type="button"
@@ -370,6 +390,13 @@ export const Layout: FC<Props> = ({
 
       <main className="-mt-32">
         <div className="max-w-7xl mx-auto pb-12 px-0 sm:px-6 lg:px-8">
+          {loggedIn && (
+            <SavedSquadronsPanel
+              // squadrons={squadrons}
+              show={showPanel}
+              onClose={() => setShowPanel(!showPanel)}
+            />
+          )}
           {children}
         </div>
       </main>

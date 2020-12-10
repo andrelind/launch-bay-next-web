@@ -1,12 +1,11 @@
-// import sagas from "../sagas";
-import { sagas } from "lbn-core";
-import { rootReducer } from "lbn-core/dist/state";
+import { Action } from "lbn-core/dist/actions";
+import { AppState, rootReducer } from "lbn-core/dist/state";
 import { createWrapper, HYDRATE } from "next-redux-wrapper";
 import { applyMiddleware, createStore, Store } from "redux";
 import createSagaMiddleware, { Task } from "redux-saga";
 import thunkMiddleware from "redux-thunk";
 
-export interface SagaStore extends Store {
+export interface SagaStore extends Store<AppState, Action> {
   sagaTask: Task;
 }
 
@@ -38,8 +37,8 @@ const initStore = () => {
     reducer,
     bindMiddleware([thunkMiddleware, sagaMiddleware])
   );
-  // (store as SagaStore).sagaTask = sagas.forEach(sagaMiddleware.run);
-  sagas.default.forEach(sagaMiddleware.run);
+  // (store as SagaStore).sagaTask = sagaMiddleware.run(sagas.default);
+
   return store;
 };
 

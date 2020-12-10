@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 export const useJWT = (): string | null | undefined =>
   useSelector((s: AppState) => s.app.user.jwt);
 
-export const useSquadronXWS = (uid: string) => {
+export const useSquadronXWS = (uid?: string) => {
   return useSelector((s: AppState) => s.app.xws.find((x) => x.uid === uid));
 };
 

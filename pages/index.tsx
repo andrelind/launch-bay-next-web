@@ -1,7 +1,9 @@
 import { faCopy, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { actions, helpers } from "lbn-core";
-import { setUpgrade } from "lbn-core/dist/actions/squadrons";
+import { addSquadron, setUpgrade } from "lbn-core/dist/actions/squadrons";
+import { importAllSync } from "lbn-core/dist/actions/sync";
+import { userDidLogin } from "lbn-core/dist/actions/user";
 import { buttonBlue, red } from "lbn-core/dist/assets/colors";
 import {
   getUpgrades,
@@ -13,15 +15,9 @@ import {
 import { UserState } from "lbn-core/dist/reducers/user";
 import requests from "lbn-core/dist/requests";
 import { AppState } from "lbn-core/dist/state";
-import {
-  Faction,
-  Language,
-  Ship,
-  ShipType,
-  Slot,
-  Upgrade,
-} from "lbn-core/dist/types";
+import { Language, Ship, ShipType, Slot, Upgrade } from "lbn-core/dist/types";
 import { NextApiRequest, NextPage } from "next";
+import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { AnyAction, Store } from "redux";
@@ -34,15 +30,14 @@ import { copyToClipboard } from "../helpers/clipboard";
 import { useJWT, useSquadronXWS } from "../helpers/hooks";
 import { renderHardpoint } from "../page-components/render";
 import { getSession } from "../passport/iron";
+import { wrapper } from "../store";
 
-const { squadrons, user, sync } = actions;
+const { squadrons } = actions;
 const { convert, importExport, serializer, unit, i18n } = helpers;
 const { useLocalized } = i18n;
-const { fullSync } = sync;
-const { userDidLogin } = user;
+
 const {
   addShipAction,
-  addSquadron,
   changePilotAction,
   copyShip,
   importSquadron,
@@ -67,12 +62,10 @@ export type DataItem = {
   slotOptions?: Slot[];
 };
 
-type Props = {
-  uid: string;
-};
+type Props = { uid: string };
 
 const EditPage: NextPage<Props> = ({ uid }) => {
-  // const router = useRouter();
+  const router = useRouter();
   const dispatch = useDispatch();
   const language = useSelector<AppState, Language | undefined>(
     (s) => s.app.user.language
@@ -80,40 +73,38 @@ const EditPage: NextPage<Props> = ({ uid }) => {
   const { t, c } = useLocalized(language);
   const jwt = useJWT();
 
+  const { lbx } = router.query;
   const xws = useSquadronXWS(uid);
   const squadron = loadSquadron(xws);
-  const [name, setName] = useState(squadron ? squadron.name : "New Squadron");
   const collection = useSelector<AppState, any>((s) => s.app.collection);
 
-  const [shipBase, setShipBase] = useState<ShipType | undefined>();
+  const [shipBase, setShipBase] = useState<ShipType>();
   const [columns, setColumns] = useState(false);
 
   const p: { [s: string]: Slot } = {};
   squadron?.ships.forEach((s) => {
-    if (
-      s.ability &&
-      s.upgrades &&
-      s.ability.slotOptions &&
-      s.ability.slotOptions.find(
-        (sl) => s.upgrades && s.upgrades[keyFromSlot(sl)]
-      )
-    ) {
-      const u = s.ability.slotOptions.find(
-        (sl) => s.upgrades && s.upgrades[keyFromSlot(sl)]
-      );
-      u && (p[s.uid] = u);
-    }
+    const u = s.ability?.slotOptions?.find(
+      (sl) => s.upgrades?.[keyFromSlot(sl)]
+    );
+    u && (p[s.uid] = u);
   });
   const [hardpoints, setHardpoints] = useState<{ [s: string]: Slot | null }>(p);
 
   useEffect(() => {
-    if (!xws) {
+    if (!xws || xws?.uid !== uid) {
       return;
     }
-    setName(xws.name);
 
-    const url = `?lbx=${serialize(xws)}&uid=${uid}`;
-    window.history.pushState("", "", url);
+    const newLbx = serialize(xws);
+    if (decodeURIComponent(newLbx) !== lbx) {
+      console.log("Update url");
+      const url = `?lbx=${newLbx}&uid=${uid}`;
+      router.push(url, `?lbx=${newLbx}`, { shallow: true });
+      // history.pushState("", "", url);
+    } else {
+      // Om vi är inloggade, uppdatera på servern
+      console.log("Update server");
+    }
   }, [xws]);
 
   if (!xws || !squadron) {
@@ -142,60 +133,22 @@ const EditPage: NextPage<Props> = ({ uid }) => {
     actions.push({
       title: "Delete squadron",
       className: "text-red-500",
-      onClick: () => {
-        dispatch(removeSquadron(uid));
-      },
+      onClick: () => dispatch(removeSquadron(uid as string)),
     });
   }
 
   return (
     <Layout
-      name={name}
-      points={xws.cost}
-      format={squadron.format}
+      loggedIn={Boolean(jwt)}
+      xws={xws}
       onChangeFormat={() => dispatch(toggleFormat(squadron.uid))}
-      onPrint={() => {
-        const url = `/print?lbx=${serialize(xws)}`;
-        window.open(url, "_ blank");
-      }}
+      onPrint={() =>
+        xws && window.open(`/print?lbx=${serialize(xws)}`, "_ blank")
+      }
+      columns={columns}
+      setColumns={setColumns}
       actions={actions}
     >
-      <div>
-        <button className="text-gray-500" onClick={() => setColumns(!columns)}>
-          {columns && (
-            <svg
-              className="w-8 sm:h-8"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
-              ></path>
-            </svg>
-          )}
-          {!columns && (
-            <svg
-              className="w-8 sm:h-8"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 10h16M4 14h16M4 18h16"
-              ></path>
-            </svg>
-          )}
-        </button>
-      </div>
       <div
         className={`flex flex-1 flex-col grid grid-cols-1 ${
           columns && "sm:grid-cols-2"
@@ -343,45 +296,43 @@ const EditPage: NextPage<Props> = ({ uid }) => {
   );
 };
 
-EditPage.getInitialProps = async ({ store, query, req }) => {
-  let { lbx, faction, uid = uuid() } = query;
+export const getServerSideProps = wrapper.getServerSideProps(
+  async ({ store, req, query }) => {
+    let { lbx, uid } = query;
 
-  // console.log(ctx);
+    const appStore: Store<AppState, AnyAction> = store;
 
-  const appStore: Store<AppState, AnyAction> = store;
+    const { getState, dispatch } = appStore;
 
-  const { getState, dispatch } = appStore;
-  const state = getState();
-
-  if (req) {
-    const user: UserState = await getSession(req as NextApiRequest);
-    if (user) {
-      console.log({ user });
-      dispatch(userDidLogin(user));
-      const { data } = await requests.syncRequest(user);
-      dispatch(fullSync(data));
+    if (req) {
+      const user: UserState = await getSession(req as NextApiRequest);
+      if (user) {
+        console.log({ user });
+        dispatch(userDidLogin(user));
+        const { data } = await requests.syncRequest(user);
+        dispatch(importAllSync(data));
+      }
     }
-  }
 
-  // Om vi inte har den sparad så är det dax att skapa, vi sätter nytt uid då
-  if (!state.app.xws.find((x) => x && x.uid === uid)) {
-    if (lbx) {
-      // Importera utifrån
-      const xws = deserialize(lbx as string, uuid());
-      uid = xws.uid;
-      dispatch(importSquadron(xws));
-    } else if (!faction && state.app.xws.length > 0) {
-      // Hämtar första
-      uid = state.app.xws[0].uid;
-    } else {
-      // Skapa helt ny
-      uid = dispatch(
-        addSquadron((faction || "Rebel Alliance") as Faction, "Hyperspace")
-      ).uid;
+    // Om vi inte har den sparad så är det dax att skapa, vi sätter nytt uid då
+    if (!getState().app.xws.find((x) => x && x.uid === uid)) {
+      if (lbx) {
+        // Importera utifrån
+        const xws = deserialize(lbx as string, uuid());
+        uid = xws.uid;
+        dispatch(importSquadron(xws));
+      } else {
+        // Skapa helt ny
+        uid = dispatch(addSquadron("Rebel Alliance", "Hyperspace", uuid())).uid;
+      }
     }
-  }
 
-  return { uid: uid as string };
-};
+    return {
+      props: {
+        uid,
+      },
+    };
+  }
+);
 
 export default EditPage;
