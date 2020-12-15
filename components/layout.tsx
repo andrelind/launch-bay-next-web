@@ -1,15 +1,15 @@
-import { Transition } from "@tailwindui/react";
-import { serializer } from "lbn-core/dist/helpers";
-import { factions } from "lbn-core/dist/helpers/enums";
-import { SquadronXWS } from "lbn-core/dist/types";
-import Link from "next/link";
-import React, { FC, useState } from "react";
-import { v4 as uuid } from "uuid";
-import { colorForFaction } from "../helpers/colors";
-import XwingFont from "./fonts/xwing";
-import FormatComponent from "./format";
-import { SavedSquadronsPanel } from "./load-panel";
-import { LogoComponent } from "./logo";
+import { Transition } from '@tailwindui/react';
+import { serializer } from 'lbn-core/dist/helpers';
+import { factions } from 'lbn-core/dist/helpers/enums';
+import { SquadronXWS } from 'lbn-core/dist/types';
+import Link from 'next/link';
+import React, { FC, useState } from 'react';
+import { v4 as uuid } from 'uuid';
+import { colorForFaction } from '../helpers/colors';
+import XwingFont from './fonts/xwing';
+import FormatComponent from './format';
+import { SavedSquadronsPanel } from './load-panel';
+import { LogoComponent } from './logo';
 
 type Props = {
   loggedIn: boolean;
@@ -51,13 +51,13 @@ export const Layout: FC<Props> = ({
                       {factions.map((f) => {
                         const classes =
                           xws.faction === f
-                            ? "px-3 py-2 rounded-md text-sm font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700 cursor-pointer"
-                            : "px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 cursor-pointer";
+                            ? 'px-3 py-2 rounded-md text-sm font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700 cursor-pointer'
+                            : 'px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 cursor-pointer';
 
                         const s: SquadronXWS = {
                           uid: uuid(),
-                          name: "New Faction",
-                          format: "Hyperspace",
+                          name: 'New Faction',
+                          format: 'Hyperspace',
                           faction: f,
                           cost: 0,
                           favourite: false,
@@ -74,7 +74,7 @@ export const Layout: FC<Props> = ({
                                 icon={f}
                                 className="text-xl"
                                 color={
-                                  f !== "First Order" && f !== "Galactic Empire"
+                                  f !== 'First Order' && f !== 'Galactic Empire'
                                     ? colorForFaction(f)
                                     : undefined
                                 }
@@ -215,22 +215,22 @@ export const Layout: FC<Props> = ({
 
           <div
             className={`${
-              showMenu ? "block" : "hidden"
+              showMenu ? 'block' : 'hidden'
             } border-b border-gray-700 md:hidden`}
           >
             <div className="px-2 py-3 space-y-1 sm:px-3 grid grid-cols-7">
               {factions.map((f) => {
                 const classes =
                   xws.faction === f
-                    ? "block text-center py-2 rounded-md text-base font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700"
-                    : "block text-center py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700";
+                    ? 'block text-center py-2 rounded-md text-base font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700'
+                    : 'block text-center py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700';
                 return (
                   <a key={f} href={`/?faction=${f}`} className={classes}>
                     <XwingFont
                       icon={f}
                       className="text-xl"
                       color={
-                        f !== "First Order" && f !== "Galactic Empire"
+                        f !== 'First Order' && f !== 'Galactic Empire'
                           ? colorForFaction(f)
                           : undefined
                       }
@@ -290,12 +290,12 @@ export const Layout: FC<Props> = ({
                     <span className="ml-1">{xws.name}</span>
                   </h2>
                 </span>
-                <div className="flex">
+                <div className="flex text-sm sm:text-lg font-normal">
                   <FormatComponent
                     format={xws.format}
                     onClick={onChangeFormat}
                   />
-                  <h3 className="ml-1 text-lg font-normal text-gray-500 sm:text-lg sm:truncate">
+                  <h3 className="ml-1 text-gray-500 sm:truncate">
                     {xws.cost} points
                   </h3>
                 </div>

@@ -1,7 +1,7 @@
 // @flow
-import { blue, red, yellow } from "lbn-core/dist/assets/colors";
-import { Format } from "lbn-core/dist/types";
-import React from "react";
+import { blue, red, yellow } from 'lbn-core/dist/assets/colors';
+import { Format } from 'lbn-core/dist/types';
+import React from 'react';
 
 type Props = {
   format: Format;
@@ -10,11 +10,11 @@ type Props = {
 
 const colorForFormat = (f: Format) => {
   switch (f) {
-    case "Extended":
+    case 'Extended':
       return red;
-    case "Hyperspace":
+    case 'Hyperspace':
       return blue;
-    case "Epic":
+    case 'Epic':
       return yellow;
   }
 };
@@ -22,11 +22,9 @@ const colorForFormat = (f: Format) => {
 export const FormatComponent = ({ format, onClick }: Props) => {
   const color = colorForFormat(format);
   return (
-    <div className="flex items-center cursor-pointer" onClick={onClick}>
-      <span className="" style={{ color }}>
-        {format}
-      </span>
-    </div>
+    <span className="cursor-pointer " style={{ color }} onClick={onClick}>
+      {format}
+    </span>
   );
 };
 
