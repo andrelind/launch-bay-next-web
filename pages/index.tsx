@@ -1,36 +1,33 @@
-import { faCopy, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { actions, helpers } from "lbn-core";
-import { addSquadron, setUpgrade } from "lbn-core/dist/actions/squadrons";
-import { importAllSync } from "lbn-core/dist/actions/sync";
-import { userDidLogin } from "lbn-core/dist/actions/user";
-import { buttonBlue, red } from "lbn-core/dist/assets/colors";
+import { actions, helpers } from 'lbn-core';
+import { addSquadron, setUpgrade } from 'lbn-core/dist/actions/squadrons';
+import { importAllSync } from 'lbn-core/dist/actions/sync';
+import { userDidLogin } from 'lbn-core/dist/actions/user';
 import {
   getUpgrades,
   pilotOptions,
   shipTypeForXws,
   shipTypeOptions,
   upgradesForSlot,
-} from "lbn-core/dist/loader";
-import { UserState } from "lbn-core/dist/reducers/user";
-import requests from "lbn-core/dist/requests";
-import { AppState } from "lbn-core/dist/state";
-import { Language, Ship, ShipType, Slot, Upgrade } from "lbn-core/dist/types";
-import { NextApiRequest, NextPage } from "next";
-import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { AnyAction, Store } from "redux";
-import { v4 as uuid } from "uuid";
-import { Layout } from "../components/layout";
-import { PilotPopover } from "../components/pilot-popover";
-import { ShipPopover } from "../components/ship-popover";
-import { UpgradePopover } from "../components/upgrade-popover";
-import { copyToClipboard } from "../helpers/clipboard";
-import { useJWT, useSquadronXWS } from "../helpers/hooks";
-import { renderHardpoint } from "../page-components/render";
-import { getSession } from "../passport/iron";
-import { wrapper } from "../store";
+} from 'lbn-core/dist/loader';
+import { UserState } from 'lbn-core/dist/reducers/user';
+import requests from 'lbn-core/dist/requests';
+import { AppState } from 'lbn-core/dist/state';
+import { Language, Ship, ShipType, Slot, Upgrade } from 'lbn-core/dist/types';
+import { NextApiRequest, NextPage } from 'next';
+import { useRouter } from 'next/router';
+import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { AnyAction, Store } from 'redux';
+import { v4 as uuid } from 'uuid';
+import { Layout } from '../components/layout';
+import { PilotPopover } from '../components/pilot-popover';
+import { ShipPopover } from '../components/ship-popover';
+import { UpgradePopover } from '../components/upgrade-popover';
+import { copyToClipboard } from '../helpers/clipboard';
+import { useJWT, useSquadronXWS } from '../helpers/hooks';
+import { renderHardpoint } from '../page-components/render';
+import { getSession } from '../passport/iron';
+import { wrapper } from '../store';
 
 const { squadrons } = actions;
 const { convert, importExport, serializer, unit, i18n } = helpers;
@@ -51,7 +48,7 @@ const { exportAsText, exportAsTTS, exportAsXws } = importExport;
 const { loadSquadron } = unit;
 
 export type DataItem = {
-  type: "Ship" | "Upgrade" | "Empty" | "SlotOptions";
+  type: 'Ship' | 'Upgrade' | 'Empty' | 'SlotOptions';
   key: string;
   slot: Slot;
   index: number;
@@ -97,13 +94,13 @@ const EditPage: NextPage<Props> = ({ uid }) => {
 
     const newLbx = serialize(xws);
     if (decodeURIComponent(newLbx) !== lbx) {
-      console.log("Update url");
+      console.log('Update url');
       const url = `?lbx=${newLbx}&uid=${uid}`;
       router.push(url, `?lbx=${newLbx}`, { shallow: true });
       // history.pushState("", "", url);
     } else {
       // Om vi är inloggade, uppdatera på servern
-      console.log("Update server");
+      console.log('Update server');
     }
   }, [xws]);
 
@@ -117,22 +114,22 @@ const EditPage: NextPage<Props> = ({ uid }) => {
     onClick: () => void;
   }[] = [
     {
-      title: "Export XWS",
+      title: 'Export XWS',
       onClick: () => copyToClipboard(exportAsXws(squadron)),
     },
     {
-      title: "Export TTS",
+      title: 'Export TTS',
       onClick: () => copyToClipboard(exportAsTTS(squadron, t)),
     },
     {
-      title: "Export as text",
+      title: 'Export as text',
       onClick: () => copyToClipboard(exportAsText(squadron, t)),
     },
   ];
   if (jwt) {
     actions.push({
-      title: "Delete squadron",
-      className: "text-red-500",
+      title: 'Delete squadron',
+      className: 'text-red-500',
       onClick: () => dispatch(removeSquadron(uid as string)),
     });
   }
@@ -143,7 +140,7 @@ const EditPage: NextPage<Props> = ({ uid }) => {
       xws={xws}
       onChangeFormat={() => dispatch(toggleFormat(squadron.uid))}
       onPrint={() =>
-        xws && window.open(`/print?lbx=${serialize(xws)}`, "_ blank")
+        xws && window.open(`/print?lbx=${serialize(xws)}`, '_ blank')
       }
       columns={columns}
       setColumns={setColumns}
@@ -151,7 +148,7 @@ const EditPage: NextPage<Props> = ({ uid }) => {
     >
       <div
         className={`flex flex-1 flex-col grid grid-cols-1 ${
-          columns && "sm:grid-cols-2"
+          columns && 'sm:grid-cols-2'
         } gap-x-3 gap-y-3`}
       >
         {squadron.ships.map((s) => {
@@ -187,9 +184,9 @@ const EditPage: NextPage<Props> = ({ uid }) => {
                       changePilotAction(
                         squadron.uid,
                         s.uid,
-                        p?.xws || "",
-                        Boolean(s.pilot.slots.find((s) => s === "Force Power")),
-                        Boolean(s.pilot.slots.find((s) => s === "Talent"))
+                        p?.xws || '',
+                        Boolean(s.pilot.slots.find((s) => s === 'Force Power')),
+                        Boolean(s.pilot.slots.find((s) => s === 'Talent'))
                       )
                     );
                   }}
@@ -200,7 +197,7 @@ const EditPage: NextPage<Props> = ({ uid }) => {
 
               <div
                 className={`mt-1 grid grid-cols-2 gap-1 lg:grid-cols-${
-                  columns ? "2" : "4"
+                  columns ? '2' : '4'
                 } md:mr-5`}
               >
                 {upgrades.map((upgrade, index) => (
@@ -250,29 +247,51 @@ const EditPage: NextPage<Props> = ({ uid }) => {
                   })}
               </div>
 
-              <button className="pointer absolute top-2 right-2">
-                <FontAwesomeIcon
-                  style={{ width: 17, height: 17 }}
-                  icon={faTimes}
-                  color={red}
-                  onClick={() => dispatch(removeShip(squadron.uid, s.uid))}
-                />
+              <button
+                className="pointer absolute top-2 right-2 text-red-400 hover:text-red-500"
+                onClick={() => dispatch(removeShip(squadron.uid, s.uid))}
+              >
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  ></path>
+                </svg>
               </button>
 
-              <button className="pointer absolute bottom-2 right-2">
-                <FontAwesomeIcon
-                  style={{ width: 17, height: 17 }}
-                  icon={faCopy}
-                  color={buttonBlue}
-                  onClick={() => dispatch(copyShip(squadron.uid, s.uid))}
-                />
+              <button
+                className="pointer absolute bottom-2 right-2 text-gray-400 hover:text-gray-500"
+                onClick={() => dispatch(copyShip(squadron.uid, s.uid))}
+              >
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                  ></path>
+                </svg>
               </button>
             </div>
           );
         })}
       </div>
 
-      <div className="my-3 bg-white rounded-lg shadow px-5 py-4 sm:px-6 grid grid-cols-2 gap-1">
+      <div className="my-3 bg-white rounded-lg shadow px-2 py-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 gap-1">
         <ShipPopover
           value={shipBase}
           options={shipTypeOptions(squadron, t, collection, true)}
@@ -323,7 +342,7 @@ export const getServerSideProps = wrapper.getServerSideProps(
         dispatch(importSquadron(xws));
       } else {
         // Skapa helt ny
-        uid = dispatch(addSquadron("Rebel Alliance", "Hyperspace", uuid())).uid;
+        uid = dispatch(addSquadron('Rebel Alliance', 'Hyperspace', uuid())).uid;
       }
     }
 

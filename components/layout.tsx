@@ -224,18 +224,31 @@ export const Layout: FC<Props> = ({
                   xws.faction === f
                     ? 'block text-center py-2 rounded-md text-base font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700'
                     : 'block text-center py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700';
+
+                const s: SquadronXWS = {
+                  uid: uuid(),
+                  name: 'New Faction',
+                  format: 'Hyperspace',
+                  faction: f,
+                  cost: 0,
+                  favourite: false,
+                  pilots: [],
+                };
+
                 return (
-                  <a key={f} href={`/?faction=${f}`} className={classes}>
-                    <XwingFont
-                      icon={f}
-                      className="text-xl"
-                      color={
-                        f !== 'First Order' && f !== 'Galactic Empire'
-                          ? colorForFaction(f)
-                          : undefined
-                      }
-                    />
-                  </a>
+                  <Link key={f} href={`/?lbx=${serializer.serialize(s)}`}>
+                    <a className={classes}>
+                      <XwingFont
+                        icon={f}
+                        className="text-xl"
+                        color={
+                          f !== 'First Order' && f !== 'Galactic Empire'
+                            ? colorForFaction(f)
+                            : undefined
+                        }
+                      />
+                    </a>
+                  </Link>
                 );
               })}
             </div>
