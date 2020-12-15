@@ -370,7 +370,7 @@ const t: UpgradeBase[] = [
     limited: 0,
     xws: 'jedicommander',
     hyperspace: false,
-    epic: false,
+    epic: true,
     sides: [
       {
         ability: {

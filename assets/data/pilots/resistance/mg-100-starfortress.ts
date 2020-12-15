@@ -275,7 +275,7 @@ const t: ShipType = {
         es:
           'Después de que sueltes un dispositivo, puedes gastar 1 [Charge] para soltar un dispositivo adicional.',
       },
-      cost: 58,
+      cost: 56,
       charges: { value: 1, recovers: 1 },
       slots: [
         'Talent',

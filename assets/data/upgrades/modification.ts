@@ -534,7 +534,7 @@ const t: UpgradeBase[] = [
       { baseSizes: ['Small', 'Medium'] },
       { stat: { type: 'shields', value: 1 } },
     ],
-    cost: { variable: 'agility', values: { '0': 6, '1': 3, '2': 1, '3': 1 } },
+    cost: { variable: 'agility', values: { '0': 6, '1': 3, '2': 2, '3': 1 } },
   },
   {
     limited: 0,
@@ -663,6 +663,7 @@ const t: UpgradeBase[] = [
           es: 'Motores iónicos de precisión',
           fr: 'Moteurs Ioniques de Précision',
         },
+        charges: { value: 2, recovers: 0 },
         type: 'Modification',
         slots: ['Modification'],
         ffg: 867,

@@ -781,6 +781,7 @@ const t: UpgradeBase[] = [
           de: 'Alpha-3E „Esk"',
           es: 'Alfa-3E "Esk"',
         },
+        charges: { value: 2, recovers: 1 },
         type: 'Configuration',
         slots: ['Configuration'],
         ffg: 871,
