@@ -5,10 +5,6 @@ const t: ShipType = {
     en: 'BTL-A4 Y-wing',
     de: 'BTL-A4-Y-Flügler',
     fr: 'Y-wing BTL-A4',
-    it: 'Ala-Y BTL-A4',
-    pl: 'Y-wing BTL-A4',
-    pt: 'Y-wing BTL-A4',
-    zh: 'BTL-A4 Y翼战机',
     es: 'BTL-A4 Ala-Y',
   },
   xws: 'btla4ywing',
@@ -47,26 +43,8 @@ const t: ShipType = {
   icon: 'https://sb-cdn.fantasyflightgames.com/ship_types/I_Y-wing.png',
   pilots: [
     {
-      name: {
-        en: '"Dutch" Vander',
-        de: '„Dutch" Vander',
-        fr: '"Dutch" Vander',
-        es: '"Dutch" Vander',
-        it: '"Dutch" Vander',
-        pl: '„Dutch" Vander',
-        pt: '"Dutch" Vander',
-        zh: '"荷兰"·范德',
-      },
-      caption: {
-        en: 'Gold Leader',
-        de: 'Gold Eins',
-        fr: 'Gold Leader',
-        es: 'Jefe Oro',
-        it: 'Capo Oro',
-        pl: 'Dowódca Złotych',
-        pt: 'Líder Dourado',
-        zh: '金色领队',
-      },
+      name: { en: '"Dutch" Vander', de: '„Dutch" Vander' },
+      caption: { en: 'Gold Leader', de: 'Gold Eins', es: 'Jefe Oro' },
       initiative: 4,
       limited: 1,
       cost: 40,
@@ -80,14 +58,6 @@ const t: ShipType = {
           "Après avoir effectué l'action [Lock], vous pouvez choisir 1 vaisseau allié à portée 1-3. Ce vaisseau allié peut verrouiller l'objet que vous avez verrouillé, en ignorant les restrictions de portée.",
         es:
           'Después de que realices la acción [Lock], puedes elegir 1 nave aliada que tengas a alcance 1-3. Esa nave puede obtener un Blanco fijado sobre el objeto que acabas de fijar como blanco, ignorando las restricciones por alcance.',
-        it:
-          "Dopo che hai effettuato un'azione [Lock], puoi scegliere 1 nave amica a gittata 1-3. Quella nave può acquisire come bersaglio l'oggetto che hai acquisito come bersaglio, ignorando le restrizioni di gittata.",
-        pl:
-          'Gdy wykonasz akcję [Lock], możesz wskazać 1 przyjazny statek w zasięgu 1-3. Wskazany statek może namierzyć obiekt, który ty namierzasz, ignorując ograniczenia dotyczące zasięgu.',
-        pt:
-          'Após realizar a ação [Lock], você podeescolher 1 nave amiga em alcance 1-3.A nave escolhida tem a opção de travaruma mira no objeto que você travou amira, ignorando as restrições de alcance.',
-        zh:
-          '在你执行[Lock]行动后，你可以选择1架距离为1~3的友方战机。该战机可以对你已锁定的目标进行一次锁定，无视距离限制。',
       },
       slots: [
         'Talent',
@@ -105,25 +75,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Evaan Verlaine',
-        de: 'Evaan Verlaine',
-        fr: 'Evaan Verlaine',
-        es: 'Evaan Verlaine',
-        it: 'Evaan Verlaine',
-        pl: 'Evaan Verlaine',
-        pt: 'Evaan Verlaine',
-        zh: '伊凡·韦尔兰',
-      },
+      name: { en: 'Evaan Verlaine' },
       caption: {
         en: 'Gold Three',
         de: 'Gold Drei',
         fr: 'Gold Trois',
         es: 'Oro Tres',
-        it: 'Oro Tre',
-        pl: 'Złoty Trzy',
-        pt: 'Dourado Três',
-        zh: '金色3号',
       },
       initiative: 3,
       limited: 1,
@@ -138,14 +95,6 @@ const t: ShipType = {
           "Au début de la phase d'engagement, vous pouvez dépenser 1 marqueur de concentration pour choisir un vaisseau allié à portée 0-1. Dans ce cas, ce vaisseau allié lance 1 dé de défense supplémentaire tant qu'il défend, jusqu'à la fin du round.",
         es:
           'Al comienzo de la fase de Enfrentamiento, puedes gastar 1 ficha de Concentración para elegir una nave aliada que tengas a alcance 0-1. Si lo haces, esa nave tira 1 dado de defensa adicional mientras se está defendiendo hasta el final de la ronda.',
-        it:
-          "All'inizio della Fase di Ingaggio, puoi spendere 1 segnalino concentrazione per scegliere 1 nave amica a gittata 0-1. Se lo fai, quella nave tira 1 dado di difesa aggiuntivo mentre difende fino alla fine del round.",
-        pl:
-          'Na początku fazy walki możesz wydać 1 żeton skupienia, aby wskazać przyjazny statek w zasięgu 0-1.Jeżeli tak zrobisz, do końca tej rundy wskazany statek rzuca 1 dodatkową kością, gdy się broni.',
-        pt:
-          'No início da Fase de Engajamento, você pode gastar 1 ficha de foco para escolher uma nave amiga em alcance 0-1. Se você fizer isso, a nave escolhida rola 1 dadode defesa adicional quando defender atéo final da rodada.',
-        zh:
-          '在交战阶段开始时，你可以花费1枚专注标记来选择一架与你距离为0~1的友方战机。如果你如此做，该战机进行防御时额外投1个防御骰，直到本轮结束。',
       },
       slots: [
         'Talent',
@@ -168,10 +117,6 @@ const t: ShipType = {
         de: 'Veteran der Gold-Staffel',
         fr: "Vétéran de l'Escadron Or",
         es: 'Veterano del Escuadrón Oro',
-        it: 'Veterano della Squadriglia Oro',
-        pl: 'Weteran Eskadry Złotych',
-        pt: 'Veterano do Esq. Dourado',
-        zh: '金色中队资深飞行员',
       },
       initiative: 3,
       limited: 0,
@@ -186,14 +131,6 @@ const t: ShipType = {
           "Sous le commandement de Jon «Dutch» Vander, l'Escadron Or a joué un rôle déterminant au cours des Batailles de Scarif et de Yavin.",
         es:
           'Bajo el mando de Jon "Dutch" Vander, el Escuadrón Oro desempeñó un papel esencial en las batallas de Scarif y Yavin.',
-        it:
-          'La Squadriglia Oro, comandata da Jon "Dutch" Vander, svolse un ruolo cruciale nelle Battaglie di Scarif e Yavin.',
-        pl:
-          'Eskadra Złotych dowodzona przez Jona „Dutcha" Vandera odegrała kluczową rolę w bitwach o Scarif i Yavin.',
-        pt:
-          'Comandado por Jon "Dutch" Vander, o Esquadrão Dourado desempenhou um papel fundamental nas Batalhas de Scarif e Yavin.',
-        zh:
-          '由乔安·"荷兰"·范德指挥的金色中队在斯卡利夫与雅文两次战争中扮演了重要的角色。',
       },
       slots: [
         'Talent',
@@ -223,10 +160,6 @@ const t: ShipType = {
         de: 'Bomber der grauen Staffel',
         fr: "Bombardier de l'Escadron Gris",
         es: 'Bombardero del Escuadrón Gris',
-        it: 'Bombardiere della Squadriglia Grigia',
-        pl: 'Bombowiec Eskadry Szarych',
-        pt: 'Bombardeiro do Esquadrão Cinza',
-        zh: '灰色中队投弹手',
       },
       initiative: 2,
       limited: 0,
@@ -241,14 +174,6 @@ const t: ShipType = {
           "Grâce à sa vitesse, sa robustesse et son armement lourd, le Y-wing resta un élément essentiel de la flotte Rebelle longtemps après sa mise en retraite par l'Empire Galactique.",
         es:
           'Mucho después de que los Alas-Y dejaran de ser utilizados por el Imperio Galáctico, su resistencia, fiabilidad y potente armamento contribuyeron a asegurar su permanencia en la flota rebelde.',
-        it:
-          "Anche molto tempo dopo essere stato scartato dall'Impero Galattico, l'Ala-Y rimase una colonna portante della flotta Ribelle graziealla sua resistenza, alla sua affidabilità e ai suoi armamenti pesanti.",
-        pl:
-          'Jeszcze długo po wycofaniu Y-wingów przez Imperium Galaktyczne, siły Rebeliantów wciąż polegały na ich wytrzymałości, niezawodności i potężnym uzbrojeniu.',
-        pt:
-          'Muito tempo depois de a Y-wing ser descontinuada pelo Império Galático, sua durabilidade, confiabilidade e armamento pesado ainda fazdela um recurso fundamental à frota Rebelde.',
-        zh:
-          'Y翼战机被银河帝国逐步淘汰之后，其耐用性、可靠性、以及其配备的重型武器，使得其仍作为主力战机服役于反抗军舰队中。',
       },
       slots: [
         'Turret',
@@ -265,26 +190,8 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Horton Salm',
-        de: 'Horton Salm',
-        fr: 'Horton Salm',
-        es: 'Horton Salm',
-        it: 'Horton Salm',
-        pl: 'Horton Salm',
-        pt: 'Horton Salm',
-        zh: '霍顿·索姆',
-      },
-      caption: {
-        en: 'Gray Leader',
-        de: 'Grau Eins',
-        fr: 'Gray Leader',
-        es: 'Jefe Gris',
-        it: 'Capo Grigio',
-        pl: 'Dowódca Szarych',
-        pt: 'Líder Cinza',
-        zh: '灰色领队',
-      },
+      name: { en: 'Horton Salm' },
+      caption: { en: 'Gray Leader', de: 'Grau Eins', es: 'Jefe Gris' },
       initiative: 4,
       limited: 1,
       cost: 37,
@@ -298,14 +205,6 @@ const t: ShipType = {
           "Tant que vous effectuez une attaque, vous pouvez relancer 1 dé d'attaque pour chaque autre vaisseau allié à portée 0-1 du défenseur.",
         es:
           'Mientras efectúas un ataque, puedes volver a tirar 1 dado de ataque por cada otra nave aliada que esté situada a alcance 0-1 del defensor.',
-        it:
-          'Mentre effettui un attacco, puoi ripetere il tiro di 1 dado di attacco per ogni altra nave amica a gittata 0-1 dal difensore.',
-        pl:
-          'Gdy wykonuujesz atak, możesz przerzucić 1 kość ataku za każdy przyjazny statek w zasięgu 0-1 od obrońcy.',
-        pt:
-          'Quando realizar um ataque, você pode rerrolar 1 dado de ataque para cada outra nave amiga em alcance 0-1 do defensor.',
-        zh:
-          '当你执行攻击时，每有一架其他友方战机与防御方距离为0~1，你可以重投1个攻击骰。',
       },
       slots: [
         'Talent',
@@ -323,25 +222,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Norra Wexley',
-        de: 'Norra Wexley',
-        fr: 'Norra Wexley',
-        es: 'Norra Wexley',
-        it: 'Norra Wexley',
-        pl: 'Norra Wexley',
-        pt: 'Norra Wexley',
-        zh: '诺拉·维库斯里',
-      },
+      name: { en: 'Norra Wexley' },
       caption: {
         en: 'Gold Nine',
         de: 'Gold Neun',
         fr: 'Gold Neuf',
         es: 'Oro Nueve',
-        it: 'Oro Nove',
-        pl: 'Złoty Dziewięć',
-        pt: 'Dourado Nove',
-        zh: '金色9号',
       },
       initiative: 5,
       limited: 1,
@@ -356,14 +242,6 @@ const t: ShipType = {
           'Tant que vous défendez, si un vaisseau ennemi est à portée 0-1, ajoutez 1 résultat [Evade] à vos résultats de dés.',
         es:
           'Mientras te defiendes, si tienes alguna nave enemiga a alcance 0-1, añade 1 resultado [Evade] a tus resultados de dados.',
-        it:
-          'Mentre difendi, se ci sono navi nemiche a gittata 0-1, puoi aggiungere 1 risultato [Evade] ai risultati dei tuoi dadi.',
-        pl:
-          'Gdy się bronisz i w zasięgu 0-1 znajduje się wrogi statek, dodaj do wyników swoich rzutów kośćmi 1 wynik [Evade].',
-        pt:
-          'Quando defender, se houveruma nave inimiga em alcance 0-1,adicione 1 resultado [Evade] aosresultados de seus dados.',
-        zh:
-          '当你进行防御时，如果在你距离0~1内有敌机，则本次掷骰结果增加1[Evade]。',
       },
       slots: [
         'Talent',

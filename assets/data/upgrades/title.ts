@@ -6,26 +6,13 @@ const t: UpgradeBase[] = [
     xws: 'andrasta',
     sides: [
       {
-        title: {
-          en: 'Andrasta',
-          de: 'Andrasta',
-          fr: 'Andrasta',
-          es: 'Andrasta',
-          it: 'Andrasta',
-          pl: 'Andrasta',
-          pt: 'Andrasta',
-          zh: '安德拉斯塔级',
-        },
+        title: { en: 'Andrasta' },
         type: 'Title',
         ability: {
           en: 'Add [Device] slot.',
           de: 'Füge den [Device]-Slot hinzu.',
           es: 'Añádete un espacio [Device].',
           fr: 'Ajoutez un emplacement [Device].',
-          it: 'Aggiungi 1 slot [Device].',
-          pl: 'Dodaj gniazdo [Device].',
-          pt: 'Adicione o encaixede melhoria [Device].',
-          zh: '增加[Device]槽。',
         },
         slots: ['Title'],
         grants: [
@@ -50,16 +37,7 @@ const t: UpgradeBase[] = [
     xws: 'blackone',
     sides: [
       {
-        title: {
-          en: 'Black One',
-          de: 'Schwarz Eins',
-          fr: 'Black One',
-          es: 'Negro Uno',
-          it: 'Nero Uno',
-          pl: 'Czarny Jeden',
-          pt: 'Black One',
-          zh: 'Black One',
-        },
+        title: { en: 'Black One', de: 'Schwarz Eins', es: 'Negro Uno' },
         type: 'Title',
         ability: {
           en:
@@ -70,14 +48,6 @@ const t: UpgradeBase[] = [
             'Después de que realices una acción [Slam], pierdes 1 [Charge]. Luego puedes recibir 1 ficha de Iones para retirar 1 ficha de Desarme. Si tu [Charge] está inactiva, no puedes realizar la acción [Slam].',
           fr:
             "Après avoir effectué une action [Slam], perdez 1 [Charge]. Puis vous pouvez gagner 1 marqueur ionique pour retirer 1 marqueur de désarmement. Si votre [Charge] est inactive, vous ne pouvez pas effectuer l'action [Slam].",
-          it:
-            "Dopo che hai effettuato un'azione [Slam], perdi 1 [Charge]. Poi puoi ottenere 1 segnalino ioni per rimuovere 1 segnalino disarmo. Se la tua [Charge] è inattiva, non puoi effettuare l'azione [Slam].",
-          pl:
-            'Gdy wykonasz akcję [Slam], tracisz 1 [Charge]. Następnie możesz otrzymać 1 żeton jonizacji, aby usunąć 1 żeton rozbrojenia. Jeżeli twój [Charge] nie jest aktywny, nie możesz wykonać akcji [Slam].',
-          pt:
-            'After you perform a [Slam] action, lose 1 [Charge]. Then you may gain 1 ion token to remove 1 disarm token. If your [Charge] is inactive, you cannot perform the [Slam] action.',
-          zh:
-            'After you perform a [Slam] action, lose 1 [Charge]. Then you may gain 1 ion token to remove 1 disarm token. If your [Charge] is inactive, you cannot perform the [Slam] action.',
         },
         slots: ['Title'],
         charges: { value: 1, recovers: 0 },
@@ -97,16 +67,7 @@ const t: UpgradeBase[] = [
     xws: 'dauntless',
     sides: [
       {
-        title: {
-          en: 'Dauntless',
-          de: 'Dauntless',
-          fr: 'Dauntless',
-          es: 'Intrépido',
-          it: 'Dauntless',
-          pl: 'Nieugięty',
-          pt: 'Intrépido',
-          zh: 'Dauntless',
-        },
+        title: { en: 'Dauntless', es: 'Intrépido' },
         type: 'Title',
         ability: {
           en:
@@ -117,14 +78,6 @@ const t: UpgradeBase[] = [
             'Después de que ejecutes parcialmente una maniobra, puedes realizar 1 acción blanca, considerando esa acción como si fuera roja.',
           fr:
             'Après avoir partiellement exécuté une manœuvre, vous pouvez effectuer 1 action blanche, en la considérant comme rouge.',
-          it:
-            'Dopo che hai eseguito parzialmente una manovra, puoi effettuare 1 azione bianca, considerandola come se fosse rossa.',
-          pl:
-            'Gdy wykonasz manewr częściowy, możesz wykonać 1 białą akcję, traktując ją tak, jak gdyby była czerwona.',
-          pt:
-            'Após executar parcialmenteuma manobra, você pode realizar1 ação branca, tratando-a comose fosse vermelha.',
-          zh:
-            'After you partially execute a maneuver, you may perform 1 white action, treating that action as red.',
         },
         slots: ['Title'],
         artwork:
@@ -145,16 +98,7 @@ const t: UpgradeBase[] = [
     xws: 'ghost',
     sides: [
       {
-        title: {
-          en: 'Ghost',
-          de: 'Ghost',
-          fr: 'Ghost',
-          es: 'Espíritu',
-          it: 'Ghost',
-          pl: 'Duch',
-          pt: 'Ghost',
-          zh: 'Ghost',
-        },
+        title: { en: 'Ghost', es: 'Espíritu' },
         type: 'Title',
         ability: {
           en:
@@ -165,14 +109,6 @@ const t: UpgradeBase[] = [
             'Puedes acoplar 1 lanzadera de ataque o 1 lanzadera clase Sheathipede. Tus naves acopladas sólo pueden desplegarse desde tus salientes traseros.',
           fr:
             "1 navette d'attaque ou de classe Sheathipede peut s'arrimer à vous. Les vaisseaux arrimés ne peuvent être déployés que par vos glissières arrière.",
-          it:
-            'Puoi far attraccare 1 Navetta di Attacco o 1 Navetta Classe Sheathipede. Le tue navi attraccate possono essere schierate soltanto dalle tue guide posteriori.',
-          pl:
-            'Może do ciebie dokować 1 prom sztumowy albo prom klasy Sheathipede. Zadokowane do ciebie statki mogą startować tylko z tylnych wypustek.',
-          pt:
-            'Você consegue acoplar 1 shuttle deataque ou shuttle classe Sheathipede. Suas naves acopladas conseguemser destacadas apenas a partirde suas guias traseiras.',
-          zh:
-            'You can dock 1 attack shuttle or Sheathipede-class shuttle. Your docked ships can deploy only from your rear guides.',
         },
         slots: ['Title'],
         artwork:
@@ -193,16 +129,7 @@ const t: UpgradeBase[] = [
     xws: 'havoc',
     sides: [
       {
-        title: {
-          en: 'Havoc',
-          de: 'Havoc',
-          fr: 'Havoc',
-          es: 'Estrago',
-          it: 'Havoc',
-          pl: 'Havoc',
-          pt: 'Havoc',
-          zh: 'Havoc',
-        },
+        title: { en: 'Havoc', es: 'Estrago' },
         type: 'Title',
         ability: {
           en: 'Remove [Crew] slot. Add [Sensor] and [Astromech] slots.',
@@ -212,12 +139,6 @@ const t: UpgradeBase[] = [
             'Elimínate el espacio [Crew]. Añádete los espacios [Sensor] y [Astromech].',
           fr:
             'Retirez un emplacement [Crew].Ajoutez un emplacement [Sensor] et un emplacement [Astromech].',
-          it:
-            'Rimuovi 1 slot [Crew]. Aggiungi 1 slot [Sensor] e 1 slot [Astromech].',
-          pl: 'Usuń gniazdo [Crew]. Dodaj gniazda [Sensor] oraz [Astromech].',
-          pt:
-            'Remova o encaixe demelhoria [Crew]. Adicione osencaixes de melhoria [Sensor] e [Astromech].',
-          zh: 'Remove [Crew] slot. Add [Sensor] and [Astromech] slots.',
         },
         slots: ['Title'],
         grants: [
@@ -243,26 +164,13 @@ const t: UpgradeBase[] = [
     xws: 'houndstooth',
     sides: [
       {
-        title: {
-          en: "Hound's Tooth",
-          de: 'Reißzahn',
-          fr: "Hound's Tooth",
-          es: 'Diente de Perro',
-          it: "Hound's Tooth",
-          pl: 'Wściekły Pies',
-          pt: "Hound's Tooth",
-          zh: "Hound's Tooth",
-        },
+        title: { en: "Hound's Tooth", de: 'Reißzahn', es: 'Diente de Perro' },
         type: 'Title',
         ability: {
           en: '1 Z-95-AF4 headhunter can dock with you.',
           de: 'An dir kann 1 Z-95-AF4-Kopfjäger andocken.',
           es: '1 Z-95-AF4 Cazacabezas puede acoplarse contigo.',
           fr: "1 Chasseur de Têtes Z-95-AF4 peut s'arrimer à vous.",
-          it: 'Puoi far attraccare 1 Headhunter Z-95-AF4.',
-          pl: 'Może do ciebie dokować 1 Z-95-AF4 Łowca Głów.',
-          pt: '1 Z-95-AF4 Headhunterconsegue acoplar em você.',
-          zh: '1 Z-95-AF4 headhunter can dock with you.',
         },
         slots: ['Title'],
         artwork:
@@ -283,16 +191,7 @@ const t: UpgradeBase[] = [
     xws: 'ig2000',
     sides: [
       {
-        title: {
-          en: 'IG-2000',
-          de: 'IG-2000',
-          fr: 'IG-2000',
-          es: 'IG-2000',
-          it: 'IG-2000',
-          pl: 'IG-2000',
-          pt: 'IG-2000',
-          zh: 'IG-2000',
-        },
+        title: { en: 'IG-2000' },
         type: 'Title',
         ability: {
           en:
@@ -303,14 +202,6 @@ const t: UpgradeBase[] = [
             'Posees la capacidad especial de piloto de cada otra nave aliada que tenga la mejora IG-2000.',
           fr:
             "Vous avez la capacité de pilote de chaque autre vaisseau allié qui possède l'amélioration IG-2000.",
-          it:
-            'Possiedi la capacità del pilota di ogni altra nave amica con la miglioria IG-2000.',
-          pl:
-            'Posiadasz zdolności pilota każdego sojuszniczego statku z rozwinięciem IG-2000.',
-          pt:
-            'Você tem a habilidade de pilotode cada outra nave amiga coma carta de melhoria IG-2000.',
-          zh:
-            'You have the pilot ability of each other friendly ship with the IG-2000 upgrade.',
         },
         slots: ['Title'],
         artwork:
@@ -336,10 +227,6 @@ const t: UpgradeBase[] = [
           de: 'Landos Millennium Falke',
           fr: 'Faucon Millenium de Lando',
           es: 'Halcón Milenario de Lando',
-          it: 'Millennium Falcon di Lando',
-          pl: 'Sokół Millennium Lando Calrissiana',
-          pt: 'Millennium Falcon de Lando',
-          zh: '兰多的千年隼号',
         },
         type: 'Title',
         ability: {
@@ -351,14 +238,6 @@ const t: UpgradeBase[] = [
             '1 Nave de escape puede acoplarse contigo. Mientras tienes 1 Nave de escape acoplada, puedes gastar sus escudos como si estuvieran en tu carta de Nave. Mientras efectúas un ataque principal contra una nave bajo tensión, tira 1 dado de ataque adicional.',
           fr:
             "1 Vaisseau de secours peut s'arrimer à vous. Tant que vous avez un Vaisseau de secours arrimé, vous pouvez dépenser ses boucliers comme s'ils étaient sur votre carte de vaisseau. Tant que vous effectuez une attaque principale contre un vaisseau stressé, lancez 1 dé d'attaque supplémentaire.",
-          it:
-            'Puoi far attraccare 1 Facet. Mentre possiedi una Facet attraccata, puoi spendere i suoi scudi come se fossero sulla tua carta nave. Mentre effettui un attacco primario contro una nave in tensione, tira 1 dado di attacco aggiuntivo.',
-          pl:
-            'Może do ciebie dokować 1 Statek ewakuacyjny. Gdy jest do ciebie zadokowowany Statek ewakuacyjny, możesz wydawać jego osłony, jakby znajdowały się na karcie twojego statku Gdy wykonujesz atak podstawowy przeciwko statkowi z żetonem stresu, rzuć 1 dodatkową kością ataku.',
-          pt:
-            '1 Nave de Fuga pode acoplar com você. Quando tiver um Nave de Fuga acoplado, você pode gastar os escudos dele como se estivessem em sua carta de nave. Quando realizar um ataque primário contra uma nave estressada, role 1 dado de ataque adicional.',
-          zh:
-            '一架多面体战机可以停靠在你的战机内。 当有多面体战机停靠在你的战机内时，你可以花费该战机上的护盾，视作是在你战机卡上的护盾。 当你执行基础攻击，且防御方处于压力状态时，额外投1个攻击骰。',
         },
         slots: ['Title'],
         artwork:
@@ -379,16 +258,7 @@ const t: UpgradeBase[] = [
     xws: 'marauder',
     sides: [
       {
-        title: {
-          en: 'Marauder',
-          de: 'Marodeur',
-          fr: 'Marauder',
-          es: 'Merodeador',
-          it: 'Marauder',
-          pl: 'Maruder',
-          pt: 'Saqueador',
-          zh: '劫掠者级',
-        },
+        title: { en: 'Marauder', de: 'Marodeur', es: 'Merodeador' },
         type: 'Title',
         ability: {
           en:
@@ -399,14 +269,6 @@ const t: UpgradeBase[] = [
             'Mientras efectúas un ataque principal [Rear Arc], puedes volver a tirar 1 dado de ataque. Añádete un espacio [Gunner].',
           fr:
             "Tant que vous effectuez une attaque principale [Rear Arc], vous pouvez relancer 1 dé d'attaque. Ajoutez un emplacement [Gunner].",
-          it:
-            'Mentre effettui un attacco primario [Rear Arc], puoi ripetere il tiro di 1 dado di attacco. Aggiungi 1 slot [Gunner].',
-          pl:
-            'Gdy wykonujesz atak podstawowy [Rear Arc], możesz przerzucić 1 kość ataku. Dodaj 1 gniazdo [Gunner].',
-          pt:
-            'Quando realizar um ataqueprimário [Rear Arc], você tem a opçãode rerrolar 1 dado de ataque. Adicione o encaixe de melhoria [Gunner].',
-          zh:
-            '当你执行基础[Rear Arc]攻击时，你可以重投1个攻击骰。 增加[Gunner]槽。',
         },
         slots: ['Title'],
         grants: [{ slot: 'Gunner', value: 1 }],
@@ -433,10 +295,6 @@ const t: UpgradeBase[] = [
           de: 'Millennium Falke',
           fr: 'Faucon Millenium',
           es: 'Halcón Milenario',
-          it: 'Millennium Falcon',
-          pl: 'Sokół Millennium',
-          pt: 'Millennium Falcon',
-          zh: 'Millennium Falcon',
         },
         type: 'Title',
         ability: {
@@ -448,14 +306,6 @@ const t: UpgradeBase[] = [
             'Mientras te defiendes, si estás evadiéndote, puedes volver a tirar 1 dado de defensa.',
           fr:
             "Tant que vous défendez, si vous avez un marqueur d'évasion, vous pouvez relancer 1 dé de défense.",
-          it:
-            'Mentre difendi, se stai schivando, puoi ripetere il tiro di 1 dado di difesa.',
-          pl:
-            'Gdy się bronisz i posiadasz żeton uniku, możesz przerzucić 1 kość obrony.',
-          pt:
-            'Quando defender, se estiver desviando, você pode rolar 1 dado de defesa.',
-          zh:
-            'While you defend, if you are evading, you may reroll 1 defense die.',
         },
         slots: ['Title'],
         grants: [{ action: { type: 'Evade', difficulty: 'White' }, value: 1 }],
@@ -480,12 +330,7 @@ const t: UpgradeBase[] = [
         title: {
           en: 'Mist Hunter',
           de: 'Nebeljäger',
-          fr: 'Mist Hunter',
           es: 'Cazador de la Niebla',
-          it: 'Mist Hunter',
-          pl: 'Łowca z Mgieł',
-          pt: 'Mist Hunter',
-          zh: 'Mist Hunter',
         },
         type: 'Title',
         ability: {
@@ -493,10 +338,6 @@ const t: UpgradeBase[] = [
           de: 'Füge den [Cannon]-Slot hinzu.',
           es: 'Añádete el espacio [Cannon].',
           fr: 'Ajoutez un emplacement [Cannon].',
-          it: 'Aggiungi 1 slot [Cannon].',
-          pl: 'Dodaj gniazdo [Cannon].',
-          pt: 'Adicione o encaixede melhoria [Cannon].',
-          zh: 'Add [Cannon] slot.',
         },
         slots: ['Title'],
         grants: [
@@ -521,16 +362,7 @@ const t: UpgradeBase[] = [
     xws: 'moldycrow',
     sides: [
       {
-        title: {
-          en: 'Moldy Crow',
-          de: 'Moldy Crow',
-          fr: 'Moldy Crow',
-          es: 'Cuervo Oxidado',
-          it: 'Moldy Crow',
-          pl: 'Moldy Crow',
-          pt: 'Moldy Crow',
-          zh: 'Moldy Crow',
-        },
+        title: { en: 'Moldy Crow', es: 'Cuervo Oxidado' },
         type: 'Title',
         ability: {
           en:
@@ -541,14 +373,6 @@ const t: UpgradeBase[] = [
             'Adquieres un armamento principal [Front Arc] cuyo valor de Ataque es 3. Durante la fase Final, no retires hasta 2 de tus fichas de Concentración.',
           fr:
             "Gagnez une arme principale [Front Arc] avec une valeur de « 3 ». Pendant la phase de dénouement, ne retirez pas jusqu'à 2 marqueurs de concentration.",
-          it:
-            "Ottieni un'arma primaria [Front Arc] con un valore pari a 3. Durante la Fase Finale, non rimuovere fino a 2 segnalini concentrazione.",
-          pl:
-            'Otrzymujesz broń podstawową [Front Arc] o wartości 3. W fazie końcowej nie usuwaj maksymalnie 2 żetonów skupienia.',
-          pt:
-            'Receba uma arma primária[Front Arc] de valor "3". Durante a Fase Final, não removaaté 2 fichas de foco.',
-          zh:
-            'Gain a [Front Arc] primary weapon with a value of "3." During the End Phase, do not remove up to 2 focus tokens.',
         },
         slots: ['Title'],
         artwork:
@@ -569,16 +393,7 @@ const t: UpgradeBase[] = [
     xws: 'outrider',
     sides: [
       {
-        title: {
-          en: 'Outrider',
-          de: 'Outrider',
-          fr: 'Outrider',
-          es: 'Jinete del Espacio',
-          it: 'Outrider',
-          pl: 'Outrider',
-          pt: 'Outrider',
-          zh: 'Outrider',
-        },
+        title: { en: 'Outrider', es: 'Jinete del Espacio' },
         type: 'Title',
         ability: {
           en:
@@ -589,14 +404,6 @@ const t: UpgradeBase[] = [
             'Mientras efectúas un ataque que está obstruido, el defensor tira 1 dado de defensa menos. Después de que ejecutes completamente una maniobra, si te has movido a través de un obstáculo o te has solapado con uno, puedes retirar 1 de tus fichas de color rojo o naranja.',
           fr:
             'Tant que vous effectuez une attaque qui est gênée, le défenseur lance 1 dé de défense en moins. Après avoir entièrement exécuté une manœuvre, si vous avez traversé ou chevauché un obstacle, vous pouvez retirer 1 de vos marqueurs rouges ou orange.',
-          it:
-            'Mentre effettui un attacco ostruito, il difensore tira 1 dado di difesa in meno. Dopo che hai eseguito completamente una manovra, se ti sei mosso attraverso un ostacolo o ti sei sovrapposto ad esso, puoi rimuovere 1 tuo segnalino rosso o arancione.',
-          pl:
-            'Gdy wykonujesz atak przesłonięty przez przeszkodę, obrońca rzuca 1 kością obrony mniej. Gdy wykonałeś pełny manewr i ruszyłeś się przez przeszkodę lub nachodzisz na przeszkodę, możesz usunąć 1 ze swoich czerwonych albo pomarańczowych żetonów.',
-          pt:
-            'Quando você realizar um ataque obstruído, o defensor rola 1 dadode defesa a menos. Após executar completamente uma manobra, se você se moveu através ou sobrepôs um obstáculo, você pode remover 1 de suas fichas vermelhas ou laranjas.',
-          zh:
-            'While you perform an obstructed attack, the defender rolls 1 fewer defense die. After you fully execute a maneuver, if you moved through or overlapped an obstacle, you may remove 1 of your red or orange tokens.',
         },
         slots: ['Title'],
         artwork:
@@ -617,26 +424,13 @@ const t: UpgradeBase[] = [
     xws: 'phantom',
     sides: [
       {
-        title: {
-          en: 'Phantom',
-          de: 'Phantom',
-          fr: 'Phantom',
-          es: 'Fantasma',
-          it: 'Phantom',
-          pl: 'Upiór',
-          pt: 'Phantom',
-          zh: 'Phantom',
-        },
+        title: { en: 'Phantom', es: 'Fantasma' },
         type: 'Title',
         ability: {
           en: 'You can dock at range 0-1.',
           de: 'Du kannst in Reichweite 0-1 andocken.',
           es: 'Puedes acoplarte a alcance 0-1.',
           fr: 'Vous pouvez vous arrimer à portée 0-1.',
-          it: 'Puoi attraccare a gittata 0-1.',
-          pl: 'Możesz dokować w zasięgu 0-1.',
-          pt: 'Você consegue acoplar em alcance 0-1.',
-          zh: 'You can dock at range 0-1.',
         },
         slots: ['Title'],
         artwork:
@@ -660,12 +454,7 @@ const t: UpgradeBase[] = [
         title: {
           en: 'Punishing One',
           de: 'Vollstrecker Eins',
-          fr: 'Punishing One',
           es: 'Castigadora',
-          it: 'Punishing One',
-          pl: 'Karząca Ręka',
-          pt: 'Punishing One',
-          zh: 'Punishing One',
         },
         type: 'Title',
         ability: {
@@ -677,14 +466,6 @@ const t: UpgradeBase[] = [
             'Mientas efectúas un ataque principal, si el defensor está situado en tu [Front Arc], tira 1 dado de ataque adicional. Elimínate el espacio [Crew]. Añádete el espacio [Astromech].',
           fr:
             "Tant que vous effectuez une attaque principale, si le défenseur est dans votre [Front Arc], lancez 1 dé d'attaque supplémentaire. Retirez un emplacement [Crew]. Ajoutez un emplacement [Astromech].",
-          it:
-            'Mentre effettui un attacco primario, se il difensore è nel tuo [Front Arc], tira 1 dado di attacco aggiuntivo. Rimuovi 1 slot [Crew]. Aggiungi 1 slot [Astromech].',
-          pl:
-            'Gdy wykonujesz atak podstawowy i obrońca znajduje się w twojej [Front Arc], rzuć 1 dodatkową kością ataku. Usuń gniazdo [Crew]. Dodaj gniazdo [Astromech].',
-          pt:
-            'Quando realizar um ataque primário,se o defensor estiver em seu [Front Arc],role 1 dado de ataque adicional. Remova o encaixe de melhoria [Crew]. Adicione o encaixe de melhoria [Astromech].',
-          zh:
-            'While you perform a primary attack, if the defender is in your [Front Arc], roll 1 additional attack die. Remove [Crew] slot. Add [Astromech] slot.',
         },
         slots: ['Title'],
         grants: [
@@ -709,16 +490,7 @@ const t: UpgradeBase[] = [
     xws: 'st321',
     sides: [
       {
-        title: {
-          en: 'ST-321',
-          de: 'ST-321',
-          fr: 'ST-321',
-          es: 'ST-321',
-          it: 'ST-321',
-          pl: 'ST-321',
-          pt: 'ST-321',
-          zh: 'ST-321',
-        },
+        title: { en: 'ST-321' },
         type: 'Title',
         ability: {
           en:
@@ -729,14 +501,6 @@ const t: UpgradeBase[] = [
             'Después de que realices una acción [Coordinate], puedes elegir una nave enemiga que esté situada a alcance 0-3 de la nave que has coordinado. Si lo haces, obtienes un Blanco fijado sobre esa nave enemiga, ignorando las restricciones por alcance.',
           fr:
             'Après avoir effectué une action [Coordinate], vous pouvez choisir un vaisseau ennemi à portée 0-3 du vaisseau coordonné. Dans ce cas, verrouillez ce vaisseau ennemi, en ignorant toute restriction de portée.',
-          it:
-            "Dopo che hai effettuato un'azione [Coordinate], puoi scegliere 1 nave nemica a gittata 0-3 dalla nave che hai coordinato. Se lo fai, acquisisci quella nave nemica come bersaglio, ignorando le restrizioni di gittata.",
-          pl:
-            'Gdy wykonasz akcję [Coordinate], możesz wskazać wrogi statek w zasięgu 0-3 od koordynowanego przez ciebie statku. Jeżeli tak zrobisz, namierzasz wskazany wrogi statek, ignorując ograniczenia zasięgu.',
-          pt:
-            'Após realizar uma ação [Coordinate], você tem a opção de escolher uma nave inimiga em alcance 0-3 da nave que você coordenou. Se fizer isso, trave uma mira na nave inimiga escolhida, ignorando as restrições de alcance.',
-          zh:
-            'After you perform a [Coordinate] action, you may choose an enemy ship at range 0-3 of the ship you coordinated. If you do, acquire a lock on that enemy ship, ignoring range restrictions.',
         },
         slots: ['Title'],
         artwork:
@@ -757,16 +521,7 @@ const t: UpgradeBase[] = [
     xws: 'shadowcaster',
     sides: [
       {
-        title: {
-          en: 'Shadow Caster',
-          de: 'Shadow Caster',
-          fr: 'Shadow Caster',
-          es: 'Sombra Alargada',
-          it: 'Shadow Caster',
-          pl: 'Siewca Cienia',
-          pt: 'Shadow Caster',
-          zh: 'Shadow Caster',
-        },
+        title: { en: 'Shadow Caster', es: 'Sombra Alargada' },
         type: 'Title',
         ability: {
           en:
@@ -777,14 +532,6 @@ const t: UpgradeBase[] = [
             'Después de que efectúes un ataque que impacte, si el defensor está situado en tu [Single Turret Arc] y tu [Front Arc], el defensor recibe 1 ficha de Campo de tracción.',
           fr:
             'Après avoir effectué une attaque qui touche, si le défenseur est dans votre [Single Turret Arc] et votre [Front Arc], il gagne 1 marqueur de rayon tracteur.',
-          it:
-            'Dopo che hai effettuato un attacco che ha colpito, se il difensore è in entrambi i tuoi [Single Turret Arc] e [Front Arc], quel difensore ottiene 1 segnalino raggio traente.',
-          pl:
-            'Gdy wykonasz atak, który trafił, i obrońca znajduje się w twojej [Single Turret Arc] i [Front Arc], obrońca otrzymuje 1 żeton wiązki ściągającej.',
-          pt:
-            'Após você realizar um ataqueque acertou, se o defensor estiverem seu [Single Turret Arc] e em seu [Front Arc], ele recebe1 ficha de tração.',
-          zh:
-            'After you perform an attack that hits, if the defender is in your [Single Turret Arc] and your [Front Arc], the defender gains 1 tractor token.',
         },
         slots: ['Title'],
         artwork:
@@ -805,16 +552,7 @@ const t: UpgradeBase[] = [
     xws: 'slavei',
     sides: [
       {
-        title: {
-          en: 'Slave I',
-          de: 'Sklave I',
-          fr: 'Slave I',
-          es: 'Esclavo I',
-          it: 'Slave I',
-          pl: 'Slave I',
-          pt: 'Slave I',
-          zh: '奴隶一号',
-        },
+        title: { en: 'Slave I', de: 'Sklave I', es: 'Esclavo I' },
         type: 'Title',
         ability: {
           en:
@@ -825,14 +563,6 @@ const t: UpgradeBase[] = [
             'Después de que reveles una maniobra de giro ([Turn Left] o [Turn Right]) o de inclinación ([Bank Left] o [Bank Right]), puedes establecer en tu selector la maniobra con la misma velocidad y dirección que la actual y el sentido opuesto. Añádete un espacio [Torpedo].',
           fr:
             "Après avoir révélé une manœuvre de virage ([Turn Left] or [Turn Right]) ou de virage sur l'aile ([Bank Left] or [Bank Right]), vous pouvez régler votre cadran sur la manœuvre de même vitesse mais de direction opposée. Ajoutez un emplacement [Torpedo].",
-          it:
-            'Dopo che hai rivelato una manovra svolta ([Turn Left] o [Turn Right]) o curva ([Bank Left] o [Bank Right]), puoi selezionare la manovra con la stessa velocità e traiettoria ma direzione opposta sul tuo indicatore. Aggiungi 1 slot [Torpedo].',
-          pl:
-            'Gdy odsłonisz manewr zwrotu ([Turn Left] albo [Turn Right]) albo skrętu ([Bank Left] albo [Bank Right]), możesz ustawić swoją tarczę manewrów na manewr tego samego rodzaju, o tej samej prędkości, ale innym kierunku. Dodaj gniazdo [Torpedo].',
-          pt:
-            'Após revelar uma manobracurva acentuada ([Turn Left] ou [Turn Right]) oucurva ([Bank Left] ou [Bank Right]), você pode selecionar a manobra de mesma direção e velocidade na direção oposta. Adicione o encaixe de melhoria [Torpedo].',
-          zh:
-            '在你展示横向翻转([Turn Left]或[Turn Right])或斜向([Bank Left]或[Bank Right])移动时，你可以获得1枚压力标记。如果你如此做，调整你的操作盘为另一相同速度且移动方向相反的同类移动（即朝向另一侧）。 增加[Torpedo]槽。',
         },
         slots: ['Title'],
         grants: [{ slot: 'Torpedo', value: 1 }],
@@ -854,16 +584,7 @@ const t: UpgradeBase[] = [
     xws: 'virago',
     sides: [
       {
-        title: {
-          en: 'Virago',
-          de: 'Virago',
-          fr: 'Virago',
-          es: 'Virago',
-          it: 'Virago',
-          pl: 'Virago',
-          pt: 'Virago',
-          zh: 'Virago',
-        },
+        title: { en: 'Virago' },
         type: 'Title',
         ability: {
           en:
@@ -874,14 +595,6 @@ const t: UpgradeBase[] = [
             'Durante la fase Final, puedes gastar 1 [Charge] para realizar 1 acción [Boost] roja. Añádete el espacio [Modification].',
           fr:
             'Pendant la phase de dénouement, vous pouvez dépenser 1 [Charge] pour effectuer une action [Boost] rouge. Ajoutez un emplacement [Modification].',
-          it:
-            'Durante la Fase Finale, puoi spendere 1 [Charge] per effettuare 1 azione [Boost] rossa. Aggiungi 1 slot [Modification].',
-          pl:
-            'W fazie końcowej możesz wydać 1 [Charge], aby wykonać czerwoną akcję [Boost]. Dodaj gniazdo [Modification].',
-          pt:
-            'Durante a Fase Final,você pode gastar1 [Charge] para realizar uma ação [Boost] vermelha. Adicione o encaixede melhoria [Modification].',
-          zh:
-            'During the End Phase, you may spend 1 [Charge] to perform a red [Boost] action. Add [Modification] slot.',
         },
         slots: ['Title'],
         charges: { value: 2, recovers: 0 },
@@ -907,12 +620,7 @@ const t: UpgradeBase[] = [
         title: {
           en: "Rey's Millennium Falcon",
           de: 'Reys Millennium Falke',
-          fr: "Rey's Millennium Falcon",
           es: 'Halcón Milenario de Rey',
-          it: 'Millennium Falcon di Rey',
-          pl: 'Sokół MillenniumRey',
-          pt: "Rey's Millennium Falcon",
-          zh: "Rey's Millennium Falcon",
         },
         type: 'Title',
         ability: {
@@ -922,16 +630,6 @@ const t: UpgradeBase[] = [
             "Falls du 2 oder weniger Stressmarker hast, kannst du rote Segnor-Looping-Manöver ([Segnor's Loop Left] oder [Segnor's Loop Right]) ausführen und [Boost]- und [Rotate Arc]-Aktionen durchführen, auch solange du gestresst bist.",
           es:
             "Si tienes 2 o menos fichas de Tensión, puedes ejecutar maniobras de giro de Segnor ([Segnor's Loop Left] o [Segnor's Loop Right]) rojas y realizar acciones [Boost] y [Rotate Arc] incluso aunque estés bajo tensión.",
-          fr:
-            "If you have 2 or fewer stress tokens, you can execute red Segnor's Loop ([Segnor's Loop Left] or [Segnor's Loop Right]) maneuvers and perform [Boost] and [Rotate Arc] actions even while stressed.",
-          it:
-            "Se possiedi 2 o meno segnalini tensione, puoi eseguire le manovre loop di Segnor ([Segnor's Loop Left] o [Segnor's Loop Right]) rosse ed effettuare le azioni [Boost] e [Rotate Arc] anche mentre sei in tensione.",
-          pl:
-            "Jeżeli masz 2 albo mniej żetonów stresu, wolno ci wykonywać czerwoną pętlę Segnora ([Segnor's Loop Left] albo [Segnor's Loop Right]) oraz akcje [Boost] i [Rotate Arc] nawet wtedy, gdy posiadasz żeton stresu.",
-          pt:
-            "If you have 2 or fewer stress tokens, you can execute red Segnor's Loop ([Segnor's Loop Left] or [Segnor's Loop Right]) maneuvers and perform [Boost] and [Rotate Arc] actions even while stressed.",
-          zh:
-            "If you have 2 or fewer stress tokens, you can execute red Segnor's Loop ([Segnor's Loop Left] or [Segnor's Loop Right]) maneuvers and perform [Boost] and [Rotate Arc] actions even while stressed.",
         },
         artwork:
           'https://sb-cdn.fantasyflightgames.com/card_art/905ee2a41b7d3b6d1f76294b4cd3e99e.jpg',
@@ -952,16 +650,7 @@ const t: UpgradeBase[] = [
     xws: 'soullessone',
     sides: [
       {
-        title: {
-          en: 'Soulless One',
-          de: 'Seelenlose',
-          fr: 'Soulless One',
-          es: 'Desalmado',
-          it: 'Soulless One',
-          pl: 'Bezduszny',
-          pt: 'Soulless One',
-          zh: 'Soulless One',
-        },
+        title: { en: 'Soulless One', de: 'Seelenlose', es: 'Desalmado' },
         type: 'Title',
         ability: {
           en:
@@ -972,14 +661,6 @@ const t: UpgradeBase[] = [
             'Mientras te defiendes, si el atacante está situado fuera de tu arco de fuego, puedes volver a tirar 1 dado de defensa.',
           fr:
             "Tant que vous défendez, si l'attaquant est hors de votre arc de tir, vous pouvez relancer 1 dé de défense.",
-          it:
-            "Mentre difendi, se l'attaccante è fuori dal tuo arco di fuoco, puoi ripetere il tiro di 1 dado di difesa.",
-          pl:
-            'Gdy się bronisz i atakujący znajduje się poza twoją strefą rażenia, możesz przerzucić 1 kość obrony.',
-          pt:
-            'While you defend, if the attacker is outside your firing arc, you may reroll 1 defense die.',
-          zh:
-            'While you defend, if the attacker is outside your firing arc, you may reroll 1 defense die.',
         },
         slots: ['Title'],
         grants: [{ stat: 'hull', value: 2 }],
@@ -999,16 +680,7 @@ const t: UpgradeBase[] = [
     xws: 'scimitar',
     sides: [
       {
-        title: {
-          en: 'Scimitar',
-          de: 'Scimitar',
-          fr: 'Scimitar',
-          es: 'Cimitarra',
-          it: 'Scimitar',
-          pl: 'Sejmitar',
-          pt: 'Scimitar',
-          zh: 'Scimitar',
-        },
+        title: { en: 'Scimitar', es: 'Cimitarra' },
         type: 'Title',
         ability: {
           en:
@@ -1019,14 +691,6 @@ const t: UpgradeBase[] = [
             'Preparación: Después del paso de "Desplegar las fuerzas", puedes camuflarte. Después de que desactives el camuflaje, puedes elegir una nave enemiga situada en tu [Bullseye Arc]. Si lo haces, esa nave recibe 1 ficha de Interferencia.',
           fr:
             "Mise en Place : après l'étape « Placer les forces », vous pouvez vous occulter. Après vous être désocculté, vous pouvez choisir un vaisseau ennemi dans votre [Bullseye Arc]. Dans ce cas, il gagne 1 marqueur de brouillage.",
-          it:
-            'Preparazione: Dopo il passo "Collocare le Forze", puoi occultarti. Dopo che ti sei deoccultato, puoi scegliere 1 nave nemica nel tuo [Bullseye Arc]. Se lo fai, quella nave ottiene 1 segnalino disturbo.',
-          pl:
-            'Przygotowanie gry: Po etapie rozmieszczania sił możesz włączyć maskowanie. Gdy wyłączysz maskowanie, możesz wskazać wrogi statek w twoim [Bullseye Arc]. Jeżeli tak zrobisz, wskazany statek otrzymuje 1 żeton zakłócania.',
-          pt:
-            'Setup: After the Place Forces step, you may cloak. After you decloak, you may choose an enemy ship in your [Bullseye Arc]. If you do, it gains 1 jam token.',
-          zh:
-            'Setup: After the Place Forces step, you may cloak. After you decloak, you may choose an enemy ship in your [Bullseye Arc]. If you do, it gains 1 jam token.',
         },
         slots: ['Title'],
         grants: [
@@ -1049,11 +713,17 @@ const t: UpgradeBase[] = [
     xws: 'assailer',
     sides: [
       {
-        title: { en: 'Assailer' },
+        title: { en: 'Assailer', de: 'Sturmbringer' },
         type: 'Title',
         ability: {
           en:
             'Add [Gunner] slot. While you defend, if the attack range is 1, you may roll 1 additional defense die.',
+          de:
+            'Füge den [Gunner]-\nSlot hinzu. Solange du verteidigst, falls die Angriffs-reichweite 1 ist, darfst du 1 zusätzlichen Verteidi-gungs würfel werfen.',
+          es:
+            'Añádete el espacio [Gunner]. Mientras te defiendes, si el alcance de ataque es 1, puedes tirar 1 dado de defensa adicional.',
+          fr:
+            "Ajoutez un emplacement [Gunner]. Tant que vous défendez, si la portée d'attaque est 1, vous pouvez lancer 1 dé de défense supplémentaire.",
         },
         grants: [
           { slot: 'Gunner', value: 1 },
@@ -1077,11 +747,17 @@ const t: UpgradeBase[] = [
     xws: 'bloodcrow',
     sides: [
       {
-        title: { en: 'Blood Crow' },
+        title: { en: 'Blood Crow', es: 'Cuervo de Sangre' },
         type: 'Title',
         ability: {
           en:
             'Add [Gunner] slot. While you perform an attack at attack range 1-2, you may add 1 [Focus] result.',
+          de:
+            'Füge den [Gunner]-\nSlot hinzu. Solange du einen Angriff in Angriffsreichweite 1-2 durchführst, darfst du 1 [Focus]-Ergebnis hinzufügen.',
+          es:
+            'SangreAñádete el espacio [Gunner]. Mientras efectúas un ataque a alcance de ataque 1-2, puedes añadir 1 resultado [Focus].',
+          fr:
+            "Ajoutez un emplacement [Gunner]. Tant que vous effectuez une attaque à portée d'attaque 1-2, vous pouvez ajouter 1 résultat [Focus].",
         },
         grants: [
           { slot: 'Gunner', value: 1 },
@@ -1110,6 +786,12 @@ const t: UpgradeBase[] = [
         ability: {
           en:
             'You can reinforce only your [Full Front Arc]. While you defend, if you are reinforced and the attacker is in your [Full Front Arc], you may roll 1 additional defense die.',
+          de:
+            'Du kannst nur deinen [Full Front Arc] verstärken. Solange du verteidigst, falls du verstärkt bist und der Angreifer in deinem [Full Front Arc] ist, darfst du 1 zusätzlichen Verteidigungs würfel werfen.',
+          es:
+            'Sólo puedes reforzar tu [Full Front Arc]. Mientras te defiendes, si estás reforzado y el atacante está en tu [Full Front Arc], puedes tirar 1 dado de defensa adicional.',
+          fr:
+            "Vous ne pouvez renforcer que votre [Full Front Arc]. Tant que vous défendez, si vous êtes renforcé et que l'attaquant est dans votre [Full Front Arc], vous pouvez lancer 1 dé de défense supplémentaire.",
         },
         slots: ['Title'],
         ffg: 766,
@@ -1128,10 +810,19 @@ const t: UpgradeBase[] = [
     xws: 'dodonnaspride',
     sides: [
       {
-        title: { en: "Dodonna's Pride" },
+        title: {
+          en: "Dodonna's Pride",
+          de: 'Dodonnas Stolz',
+          es: 'Orgullo de Dodonna',
+        },
         type: 'Title',
         slots: ['Title'],
-        ability: { en: 'Add and slots.' },
+        ability: {
+          en: 'Add and slots.',
+          de: 'Füge -und -Slots hinzu.',
+          es: 'Añádete los espacios y .',
+          fr: 'Ajoutez un emplacement et un emplacement .',
+        },
         grants: [
           { slot: 'Team', value: 1 },
           { slot: 'Cargo', value: 1 },
@@ -1169,11 +860,17 @@ const t: UpgradeBase[] = [
     xws: 'impetuous',
     sides: [
       {
-        title: { en: 'Impetuous' },
+        title: { en: 'Impetuous', de: 'Ungestüm', es: 'Impetuoso' },
         type: 'Title',
         ability: {
           en:
             'Add [Crew] slot. After you perform an attack, if the defender was destroyed, you may perform a [Focus] or [Lock] action.',
+          de:
+            'Füge den [Crew]-Slot hinzu. Nachdem du einen Angriff durchgeführt hast, falls der Verteidiger zerstört worden ist, darfst du eine [Focus] - oder [Lock] -Aktion durchführen.',
+          es:
+            'Añádete el espacio [Crew]. Después de que efectúes un ataque, si el defensor ha sido destruido, puedes realizar una acción [Focus] o [Lock].',
+          fr:
+            'Ajoutez un emplacement [Crew]. Après que vous avez effectué une attaque, si le défenseur a été détruit, vous pouvez effectuer une action [Focus] or [Lock].',
         },
         grants: [
           { slot: 'Crew', value: 1 },
@@ -1197,11 +894,17 @@ const t: UpgradeBase[] = [
     xws: 'instigator',
     sides: [
       {
-        title: { en: 'Instigator' },
+        title: { en: 'Instigator', es: 'Instigador' },
         type: 'Title',
         ability: {
           en:
             'Add slot. While you perform an attack, if the defender has an orange or red token, you may reroll up to 2 attack dice.',
+          de:
+            'Füge den -Slot hinzu. Solange du einen Angriff durchführst, falls der Verteidiger einen orange-farbenen oder roten Marker hat, darfst du bis zu 2 Angriffswürfel neu werfen.',
+          es:
+            'Añádete el espacio . Mientras efectúas un ataque, si el defensor tiene alguna ficha naranja o roja, puedes volver a tirar hasta 2 dados de ataque.',
+          fr:
+            "Ajoutez un emplacement . Tant que vous effectuez une attaque, si le défenseur a un marqueur orange ou rouge, vous pouvez relancer jusqu'à 2 dés d'attaque.",
         },
         grants: [{ slot: 'Team', value: 1 }],
         slots: ['Title'],
@@ -1226,6 +929,12 @@ const t: UpgradeBase[] = [
         ability: {
           en:
             'You can dock up to 2 small ships. After you perform a [Calculate] action, gain 1 calculate token.',
+          de:
+            'CorvusDu kannst bis zu 2 kleine Schiffe andocken. Nachdem du eine [Calculate] -Aktion durchgeführt hast, erhältst du 1 Berechnungsmarker.',
+          es:
+            'Puedes acoplar contigo hasta 2 naves pequeñas. Después de que realices una acción [Calculate] , recibes 1 ficha de Cálculos.',
+          fr:
+            "Vous pouvez arrimer jusqu'à 2 petits vaisseaux. Après avoir effectué une action [Calculate], gagnez 1 marqueur de calcul.",
         },
         slots: ['Title'],
         ffg: 770,
@@ -1244,11 +953,21 @@ const t: UpgradeBase[] = [
     xws: 'insatiableworrt',
     sides: [
       {
-        title: { en: 'Insatiable Worrt' },
+        title: {
+          en: 'Insatiable Worrt',
+          de: 'Gefräßiger Worrt',
+          es: 'Worrt Insaciable',
+        },
         type: 'Title',
         ability: {
           en:
             'Add slot. During the End Phase, you may recover 1 additional shield or 1 additional .',
+          de:
+            'Füge den -Slot hinzu. Während der Endphase darfst du 1 zusätzlichen additional schilde oder wiederherstellen.',
+          es:
+            'Añádete el espacio . Durante la fase Final, puedes recupera 1 escudo or adicional.',
+          fr:
+            'Ajoutez un emplacement . Pendant la phase de dénouement, vous pouvez récupérer 1 bouclier ou 2 supplémentaire.',
         },
         slots: ['Title'],
         grants: [
@@ -1273,11 +992,17 @@ const t: UpgradeBase[] = [
     xws: 'liberator',
     sides: [
       {
-        title: { en: 'Liberator' },
+        title: { en: 'Liberator', es: 'Libertador' },
         type: 'Title',
         ability: {
           en:
             'You can dock up to 2 small ships. After a ship deploys from you, it may perform a [Focus] or [Barrel Roll] action.',
+          de:
+            'Du kannst bis zu 2 kleine Schiffe andocken. Nachdem ein Schiff von dir abgesetzt worden ist, darf es eine [Focus] - oder [Barrel Roll] -Aktion durchführen.',
+          es:
+            'Puedes acoplar contigo hasta 2 naves pequeñas. Después de que una nave se despliegue desde la tuya, esa nave puede realizar una acción [Focus] o [Barrel Roll].',
+          fr:
+            "Vous pouvez arrimer jusqu'à 2 petits vaisseaux. Après qu'un vaisseau s'est déployé depuis vous, il peut effectuer une action [Focus] ou [Barrel Roll].",
         },
         slots: ['Title'],
         grants: [{ stat: 'energy', value: 1 }],
@@ -1297,11 +1022,17 @@ const t: UpgradeBase[] = [
     xws: 'luminous',
     sides: [
       {
-        title: { en: 'Luminous' },
+        title: { en: 'Luminous', es: 'Luminoso' },
         type: 'Title',
         ability: {
           en:
             'Setup: You are placed in reserve. At the end of setup, you are placed in the play area at range 0-2 of a friendly ship.',
+          de:
+            'Aufbau: Beginne in der Reserve. Am Ende des Aufbaus wirst du auf der Spielfläche in Reichweite 0-2 eines befreundeten Schiffes platziert.',
+          es:
+            'Preparación: Empiezas en reserva. Al final de la preparación, colócate a alcance 0-2 de una nave aliada.',
+          fr:
+            "Mise en Place : débutez en réserve. À la fin de la Mise en place, placez-vous dans la zone de jeu à portée 0-2 d'un vaisseau allié.",
         },
         slots: ['Title'],
         grants: [
@@ -1324,11 +1055,17 @@ const t: UpgradeBase[] = [
     xws: 'merchantone',
     sides: [
       {
-        title: { en: 'Merchant One' },
+        title: { en: 'Merchant One', de: 'Händler Eins', es: 'Mercader Uno' },
         type: 'Title',
         ability: {
           en:
             'Add [Turret], , and slots. Bonus Attack: Perform a [Turret] attack.',
+          de:
+            'Füge [Turret]-, -, und -Slots hinzu. Bonusangriff: Führe einen [Turret]-Angriff durch.',
+          es:
+            'Añádete los espacios [Turret], , y . Ataque adicional: Efectúa un ataque [Turret].',
+          fr:
+            'Ajoutez un emplacement [Turret], un emplacement , et un emplacement . Attaque Bonus : effectuez une attaque [Turret].',
         },
         slots: ['Title'],
         grants: [
@@ -1357,6 +1094,12 @@ const t: UpgradeBase[] = [
         ability: {
           en:
             'Add [Crew] and [Illicit] slots. If you are damaged, reduce the difficulty of your speed 3-5 maneuvers.',
+          de:
+            'Füge [Crew]- und [Illicit]-Slots hinzu. Falls du beschädigt bist, verringere die Schwierigkeit deiner Manöver mit Geschwindigkeit 3-5.',
+          es:
+            'Añádete los espacios [Crew] y [Illicit]. Si estás dañado, reduce la dificultad de tus maniobras de velocidad 3-5.',
+          fr:
+            'Ajoutez un emplacement [Crew] et un emplacement [Illicit]. Si vous êtes endommagé, diminuez la difficulté de vos manoeuvres ayant une vitesse 3-5.',
         },
         slots: ['Title'],
         grants: [
@@ -1379,11 +1122,17 @@ const t: UpgradeBase[] = [
     xws: 'quantumstorm',
     sides: [
       {
-        title: { en: 'Quantum Storm' },
+        title: { en: 'Quantum Storm', es: 'Tormenta Cuántica' },
         type: 'Title',
         ability: {
           en:
             'Add and slots. After you fully execute a white maneuver, recover 1 .',
+          de:
+            'Füge - und -Slots hinzu. Nachdem du ein weißes Manöver voll - ständig ausgeführt hast, stelle 1 wieder her.',
+          es:
+            'Añádete los espacios y . Después de que ejecutes completamente una maniobra blanca, recuperas 1 .',
+          fr:
+            'Ajoutez un emplacement et un emplacement . Après avoir entièrement exécuté une manoeuvre blanche, récupérez 1 .',
         },
         grants: [
           { slot: 'Team', value: 1 },
@@ -1407,11 +1156,17 @@ const t: UpgradeBase[] = [
     xws: 'suppressor',
     sides: [
       {
-        title: { en: 'Suppressor' },
+        title: { en: 'Suppressor', es: 'Supresor' },
         type: 'Title',
         ability: {
           en:
             'Add [Sensor] slot. After you coordinate a friendly ship, you may spend 1 to jam an enemy ship at range 0-2 of that ship, ignoring range restrictions.',
+          de:
+            'Füge den [Sensor]-Slot hinzu. Nachdem du ein befreundetes Schiff koordiniert hast, darfst du 1 ausgeben, um einem feindlichen Schiff in Reichweite 0-2 jenes Schiffes ein Störsignal zu senden, wobei du Reich weiten-beschränkungen ignorierst.',
+          es:
+            'Añádete el espacio [Sensor]. Después de que coordines una nave aliada, puedes gastar 1 para interferir una nave enemiga que esté situada a alcance 0-2 de esa nave aliada, ignorando las restricciones de alcance.',
+          fr:
+            'Ajoutez un emplacement [Sensor]. Après avoir coordonné un vaisseau allié, vous pouvez dépenser 1 pour brouiller un vaisseau ennemi à portée 0-2 de ce vaisseau, en ignorant les restrictions de portée.',
         },
         grants: [{ slot: 'Sensor', value: 1 }],
         slots: ['Title'],
@@ -1431,11 +1186,17 @@ const t: UpgradeBase[] = [
     xws: 'jainaslight',
     sides: [
       {
-        title: { en: "Jaina's Light" },
+        title: { en: "Jaina's Light", de: 'Jainas Licht', es: 'Luz de Jaina' },
         type: 'Title',
         ability: {
           en:
             'While a friendly ship at range 0-2 defends, if the attack is obstructed by an obstacle, you may spend 1 . If you do, the defender rolls 1 additional defense die.',
+          de:
+            'Solange ein befreundetes Schiff in Reichweite 0-2 verteidigt, falls der Angriff durch ein Hindernis versperrt wird, darfst du 1 ausgeben. Falls du das tust, wirft der Verteidiger 1 zusätzlichen Verteidigungswürfel.',
+          es:
+            'Mientras una nave aliada que tienes a alcance 0-2 se defiende, si el ataque está obstruido por un obstáculo, puedes gastar 1 . Si lo haces, el defensor tira 1 dado de defensa adicional.',
+          fr:
+            "Tant qu'un vaisseau allié à portée 0-2 défend, si l'attaque est gênée par un obstacle, vous pouvez dépenser 1 . Dans ce cas, le défenseur lance 1 dé de défense supplémentaire.",
         },
         slots: ['Title'],
         ffg: 762,
@@ -1459,6 +1220,12 @@ const t: UpgradeBase[] = [
         ability: {
           en:
             'Add 2 [Crew] slots. While you defend, if the attacker is in your [Rear Arc], you may roll 1 additional defense die.',
+          de:
+            'Füge 2 [Crew]-Slots hinzu. Solange du verteidigst, falls der Angreifer in deinem[Rear Arc] ist, darfst du 1 zusätzlichen Verteidigungswürfel werfen.',
+          es:
+            'Añádete 2 espacios [Crew]. Mientras te defiendes, si el atacante está en tu [Rear Arc], puedes tirar 1 dado de defensa adicional.',
+          fr:
+            "Ajoutez 2 emplacements [Crew]. Tant que vous défendez, si l'attaquant est dans votre [Rear Arc], vous pouvez lancer 1 dé de défense supplémentaire.",
         },
         grants: [
           { slot: 'Crew', value: 1 },
@@ -1481,11 +1248,17 @@ const t: UpgradeBase[] = [
     xws: 'thunderstrike',
     sides: [
       {
-        title: { en: 'Thunderstrike' },
+        title: { en: 'Thunderstrike', de: 'Donnerschlag', es: 'Trueno' },
         type: 'Title',
         ability: {
           en:
             'Add [Gunner] slot. While you perform a bonus attack, if you have not attacked the defender this round, you may reroll 1 attack die.',
+          de:
+            'Füge den [Gunner] -Slot hinzu. Solange du einen Bonusangriff durch führst, falls du den Verteidiger in dieser Runde nicht angegriffen hast, darfst du 1 Angriffs - würfel neu werfen.',
+          es:
+            'Añádete el espacio [Gunner]. Mientras efectúas un ataque adicional, si no has atacado al defensor en esta ronda, puedes volver a tirar 1 dado de ataque.',
+          fr:
+            "Ajoutez un emplacement [Gunner]. Tant que vous effectuez une attaque bonus, si vous n'avez pas attaqué le défenseur à ce round, vous pouvez relancer 1 dé d'attaque.",
         },
         grants: [
           { slot: 'Gunner', value: 1 },
@@ -1514,6 +1287,12 @@ const t: UpgradeBase[] = [
         ability: {
           en:
             'Add [Crew] and slots. After a ship deploys from you, it may perform a [Evade] or [Boost] action.',
+          de:
+            'Füge [Crew]- und -Slots hinzu. Nachdem ein Schiff von dir abgesetzt worden ist, darf es eine [Evade]- oder [Boost]-Aktion durchführen.',
+          es:
+            'Añádete los espacios [Crew] y . Después de que una nave se despliegue desde la tuya, esa nave puede realizar una acción [Evade] o [Boost].',
+          fr:
+            "Ajoutez un emplacement [Crew] et un emplacement . Après qu'un vaisseau s'est déployé depuis vous, il peut effectuer une action [Evade] ou [Boost].",
         },
         grants: [
           { slot: 'Crew', value: 1 },
@@ -1536,11 +1315,17 @@ const t: UpgradeBase[] = [
     xws: 'requiem',
     sides: [
       {
-        title: { en: 'Requiem' },
+        title: { en: 'Requiem', es: 'Réquiem' },
         type: 'Title',
         ability: {
           en:
             'After a ship deploys from you, it may acquire a lock on one ship you are locking, ignoring range restrictions.',
+          de:
+            'Nachdem ein Schiff von dir abgesetzt worden ist, darf es ein Schiff, das du als Ziel erfasst hast, als Ziel erfassen, wobei es Reichweitenbeschränkungen ignoriert.',
+          es:
+            'Después de que una nave se despliegue desde la tuya, esa nave puede obtener un Blanco fijado sobre una nave que tengas fijada como blanco, ignorando las restricciones de alcance.',
+          fr:
+            "Après qu'un vaisseau s'est déployé depuis vous, il peut verrouiller un vaisseau que vous verrouillez déjà, en ignorant les restrictions de portée.",
         },
         slots: ['Title'],
         ffg: 774,
@@ -1564,10 +1349,6 @@ const t: UpgradeBase[] = [
           de: "Kaz' Fireball",
           fr: 'Fireball de Kaz',
           es: 'Bola de Fuego de Kaz',
-          it: "Kaz's Fireball",
-          pl: "Kaz's Fireball",
-          pt: "Kaz's Fireball",
-          zh: "Kaz's Fireball",
         },
         type: 'Title',
         ability: {
@@ -1579,14 +1360,6 @@ const t: UpgradeBase[] = [
             'Preparación: Cuendo resuelvas Explosion con alas, puedes buscar en el mazo de Daño y elegir una carta de Daño con el atributo Nave; esa será la carta que se te inflija. Luego, vuelve a barajar el mazo de Daño. Eres capaz de realizar acciones que figuren en cartas de Daño incluso aunque estés ionizado.',
           fr:
             'Mise en Place : lorsque vous résolvez Explosion en Vol, vous pouvez chercher et choisir dans le paquet de dégâts une carte de dégât avec le trait Vaisseau ; cette carte vous est attribuée à la place. Puis mélangez le paquet de dégâts. Vous pouvez effectuer des actions des cartes de dégât, même si vous êtes ionisé.',
-          it:
-            'Setup: When you resolve Explosion with Wings, you may search the damage deck and choose a damage card with the Ship trait; you are dealt that card instead. Then, shuffle the damage deck. You can perform actions on damage cards even while ionized.',
-          pl:
-            'Setup: When you resolve Explosion with Wings, you may search the damage deck and choose a damage card with the Ship trait; you are dealt that card instead. Then, shuffle the damage deck. You can perform actions on damage cards even while ionized.',
-          pt:
-            'Setup: When you resolve Explosion with Wings, you may search the damage deck and choose a damage card with the Ship trait; you are dealt that card instead. Then, shuffle the damage deck. You can perform actions on damage cards even while ionized.',
-          zh:
-            'Setup: When you resolve Explosion with Wings, you may search the damage deck and choose a damage card with the Ship trait; you are dealt that card instead. Then, shuffle the damage deck. You can perform actions on damage cards even while ionized.',
         },
         slots: ['Title'],
         ffg: 655,
@@ -1607,8 +1380,14 @@ const t: UpgradeBase[] = [
         ability: {
           en:
             "While you perform a [Front Arc] attack, if you are in the defender's full rear arc, you may change 1 [Hit] result to a [Critical Hit] result. Add [Gunner] slot.",
+          de:
+            'Solange du einen [Front Arc]-Angriff durchführst, falls du im des Verteidigers bist, darfst du 1 [Hit]-Ergebnis in ein [Critical Hit]-Ergebnis zu ändern. Füge den [Gunner]-Slot hinzu.',
+          es:
+            'Mientras efectúas un ataque [Front Arc] , si estás situado en el del defensor, puedes cambiar 1 resultado [Hit] por un resultado [Critical Hit]. Añádete un espacio [Gunner].',
+          fr:
+            'Tant que vous effectuez une attaque [Front Arc], si vous êtes dans le du défenseur, vous pouvez changer 1 résultat [Hit] en un résultat [Critical Hit]. Ajoutez un emplacement [Gunner].',
         },
-        title: { en: 'Slave I' },
+        title: { en: 'Slave I', de: 'Sklave I', es: 'Esclavo I' },
         grants: [{ slot: 'Gunner', value: 1 }],
         type: 'Title',
         slots: ['Title'],

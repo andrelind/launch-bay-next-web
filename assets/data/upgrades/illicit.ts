@@ -11,10 +11,6 @@ const t: UpgradeBase[] = [
           de: 'Tarngerät',
           fr: "Appareil d'Occultation",
           es: 'Dispositivo de camuflaje',
-          it: 'Dispositivo Occultante',
-          pl: 'System maskowania',
-          pt: 'Dispositivo de Camuflagem',
-          zh: 'Cloaking Device',
         },
         type: 'Illicit',
         ability: {
@@ -26,14 +22,6 @@ const t: UpgradeBase[] = [
             'Acción: Gasta 1 [Charge] para realizar una acción [Cloak]. Al comienzo de la fase de Planificación, tira 1 dado de ataque, Si sacas un resultado [Focus], desactiva el camuflaje o descarta tu ficha de Camuflaje.',
           fr:
             "Action : dépensez 1 [Charge] pour effectuer une action [Cloak]. Au début de la phase de préparation, lancez 1 dé d'attaque. Sur un résultat [Focus], désoccultez-vous ou défaussez votre marqueur d'occultation.",
-          it:
-            "Azione: Spendi 1 [Charge] per effettuare 1 azione [Cloak]. All'inizio della Fase di Pianificazione, tira 1 dado di attacco. Con un risultato [Focus], deoccultati o scarta il tuo segnalino occultamento.",
-          pl:
-            'Akcja: Wydaj 1 [Charge] aby wykonać akcję [Cloak]. Na początku fazy planowania rzuć 1 kością ataku. Jeżeli wypadnie [Focus], wyłącz maskowanie albo odrzuć swój żeton maskowania.',
-          pt:
-            'Ação: Gaste 1 [Charge] para realizar uma ação [Cloak]. No início da Fase de Planejamento, role 1 dado de ataque. Em um resultado [Focus], descamufle ou descarte sua ficha de camuflagem.',
-          zh:
-            'Action: Spend 1 [Charge] to perform a [Cloak] action. At the start of the Planning Phase, roll 1 attack die. On a [Focus] result, decloak or discard your cloak token.',
         },
         slots: ['Illicit'],
         charges: { value: 2, recovers: 0 },
@@ -57,10 +45,6 @@ const t: UpgradeBase[] = [
           de: 'Illegale Kybernetik',
           fr: 'Cybernétique de Contrebande',
           es: 'Ciberimplantes ilícitos',
-          it: 'Cibernetica di Contrabbando',
-          pl: 'Cybernetyka z kontrabandy',
-          pt: 'Cibernética Ilegal',
-          zh: 'Contraband Cybernetics',
         },
         type: 'Illicit',
         ability: {
@@ -72,14 +56,6 @@ const t: UpgradeBase[] = [
             'Antes de que te actives, puedes gastar 1 ficha [Charge]. Si lo haces, hasta el final de la ronda, eres capaz de realizar acciones y ejecutar maniobras rojas, incluso aunque estés bajo tensión.',
           fr:
             "Avant votre activation, vous pouvez dépenser 1 [Charge]. Dans ce cas, jusqu'à la fin du round, vous pouvez effectuer des actions et exécuter des manœuvres rouges, même si vous êtes stressé.",
-          it:
-            'Prima di attivarti, puoi spendere 1 [Charge]. Se lo fai, fino alla fine del round puoi effettuare azioni ed eseguire manovre rosse anche mentre sei in tensione.',
-          pl:
-            'Zanim się aktywujesz, możesz wydać 1 [Charge]. Jeżeli tak zrobisz, do końca rundy możesz wykonywać akcje i czerwone manewry nawet wtedy, gdy posiadasz żeton strasu.',
-          pt:
-            'Antes de ativar, você pode gastar 1 [Charge]. Se fizer isso, até o final da rodada, você consegue realizar ações e executar manobras vermelhas mesmo se estiver estressado.',
-          zh:
-            'Before you activate, you may spend 1 [Charge]. If you do, until the end of the round, you can perform actions and execute red maneuvers, even while stressed.',
         },
         slots: ['Illicit'],
         charges: { value: 1, recovers: 0 },
@@ -102,10 +78,6 @@ const t: UpgradeBase[] = [
           de: 'Totmannschalter',
           fr: 'Salve Automatique',
           es: 'Dispositivo de represalia',
-          it: "Dispositivo dell'Uomo Morto",
-          pl: 'Automatyczny detonator',
-          pt: 'Dispositivo de Homem-Morto',
-          zh: "Deadman's Switch",
         },
         type: 'Illicit',
         ability: {
@@ -117,14 +89,6 @@ const t: UpgradeBase[] = [
             'Después de que seas destruido, toda otra nave que tienes a alcance 0-1 sufre 1 de daño [Hit].',
           fr:
             'Après que vous avez été détruit, chaque autre vaisseau à portée 0-1 subit 1 dégât [Hit].',
-          it:
-            'Dopo che sei stato distrutto, ogni altra nave a gittata 0-1 subisce 1 danno [Hit].',
-          pl:
-            'Gdy zostaniesz zniszczony, każdy statek w zasięgu (0-1) przyjmuje 1 uszkodzenie [Hit].',
-          pt:
-            'Após ser destruído, cada outra nave em alcance 0-1 sofre 1 dano [Hit].',
-          zh:
-            'After you are destroyed, each other ship at range 0-1 suffers 1 [Hit] damage.',
         },
         slots: ['Illicit'],
         artwork:
@@ -146,10 +110,6 @@ const t: UpgradeBase[] = [
           de: 'Rückkopplungsfeld',
           fr: 'Dispositif de Retour',
           es: 'Transmisor de sobrecargas',
-          it: 'Apparato di Feedback',
-          pl: 'System sprzężenia zwrotnego',
-          pt: 'Matriz de Retorno',
-          zh: 'Feedback Array',
         },
         type: 'Illicit',
         ability: {
@@ -161,14 +121,6 @@ const t: UpgradeBase[] = [
             'Antes de que intervengas, puedes recibir 1 ficha de Iones y 1 ficha de Desarme. Si lo haces, toda nave que tengas a alcance 0 sufre 1 de daño [Hit].',
           fr:
             'Avant de vous engager, vous pouvez gagner 1 marqueur ionique et 1 marqueur de désarmement. Dans ce cas, chaque vaisseau à portée 0 subit 1 dégât [Hit].',
-          it:
-            'Prima di ingaggiare, puoi ottenere 1 segnalino ioni e 1 segnalino disarmo. Se lo fai, ogni nave a gittata 0 subisce 1 danno [Hit].',
-          pl:
-            'Zanim zaczniesz walkę, możesz otrzymać 1 żeton jonizacji i 1 żeton rozbrojenia. Jeżeli tak zrobisz, to każdy statek w zasięgu 0 przyjmuje 1 uszkodzenie [Hit].',
-          pt:
-            'Antes de engajar, você podereceber 1 ficha de íon e1 ficha de desarmamento.Se você fizer isso, cada naveem alcance 0 sofre 1 dano [Hit].',
-          zh:
-            'Before you engage, you may gain 1 ion token and 1 disarm token. If you do, each ship at range 0 suffers 1 [Hit] damage.',
         },
         slots: ['Illicit'],
         artwork:
@@ -190,10 +142,6 @@ const t: UpgradeBase[] = [
           de: 'Trägheitsdämpfer',
           fr: 'Amortisseurs Inertiels',
           es: 'Amortiguadores de inercia',
-          it: 'Ammortizzatori Inerziali',
-          pl: 'Tłumiki inercyjne',
-          pt: 'Amortecedores Inerciais',
-          zh: '惯性阻尼器',
         },
         type: 'Illicit',
         ability: {
@@ -205,14 +153,6 @@ const t: UpgradeBase[] = [
             'Antes de que vayas a ejecutar una maniobra, puedes gastar 1 escudo. Si lo haces, ejecutas una maniobra (0 [Stationary]) blanca en vez de la maniobra que has revelado, y luego recibes 1 ficha de Tensión.',
           fr:
             "Avant d'exécuter une manœuvre, vous pouvez dépenser 1 bouclier. Dans ce cas, exécutez une manœuvre (0 [Stationary]) blanche à la place de celle que vous avez révélée, puis gagnez 1 marqueur de stress.",
-          it:
-            'Prima che tu stia per eseguire una manovra, puoi spendere 1 scudo. Se lo fai, esegui una manovra (0 [Stationary]) bianca invece della manovra che hai rivelato, poi ottieni 1 segnalino tensione.',
-          pl:
-            'Przed wykonaniem manewru możesz wydać 1 osłonę. Jeżeli tak zrobisz, zamiast odsłoniętego manewru wykonujesz biały (0 [Stationary]), a następnie otrzymujesz 1 żeton stresu.',
-          pt:
-            'Antes de executar uma manobra, você pode gastar 1 escudo. Se fizer isso, execute uma manobra (0 [Stationary]) brancaem vez da manobra que você revelou e,então, receba 1 ficha de estresse.',
-          zh:
-            '在你将执行移动前，你可以花费1个护盾。如果你如此做，不执行操作盘上展示的移动，而是执行白色(0[Stationary])，然后获得1枚压力标记。',
         },
         slots: ['Illicit'],
         artwork:
@@ -237,10 +177,6 @@ const t: UpgradeBase[] = [
           de: 'Manipulierte Frachtrampe',
           fr: 'Largage de Cargaison',
           es: 'Tolva de evacuación de carga',
-          it: 'Rampa di Carico Attrezzata',
-          pl: 'Sprzężona rampa ładunkowa',
-          pt: 'Ejetor de Carregamento',
-          zh: '搭建货物滑槽',
         },
         type: 'Illicit',
         ability: {
@@ -252,13 +188,6 @@ const t: UpgradeBase[] = [
             'Acción: Gasta 1 [Charge]. Suelta 1 Cargamento expulsado utilizando la plantilla (1 [Straight]).',
           fr:
             'Action : dépensez 1 [Charge]. Larguez 1 cargaison égarée en utilisant le gabarit (1 [Straight]).',
-          it:
-            'Azione: Spendi 1 [Charge]. Sgancia 1 carico sparso usando il modello (1 [Straight]).',
-          pl:
-            'Akcja: Wydaj 1 [Charge]. Wyrzuć 1 zbędny towar za pomocą wzornika (1 [Straight]).',
-          pt:
-            'Ação: Gaste 1 [Charge].Solte 1 carregamento solto usando o gabarito (1 [Straight]).',
-          zh: '行动：花费1[Charge]。使用(1[Straight])移动条投下1个散装货物。',
         },
         slots: ['Illicit'],
         charges: { value: 1, recovers: 0 },
@@ -287,10 +216,6 @@ const t: UpgradeBase[] = [
           de: 'Coaxium-Hypertreibstoff',
           fr: 'Hypercarburant Coaxium',
           es: 'Hipercombustible coaxium',
-          it: 'Coaxium Hyperfuel',
-          pl: 'Coaxium Hyperfuel',
-          pt: 'Coaxium Hyperfuel',
-          zh: 'Coaxium Hyperfuel',
         },
         type: 'Illicit',
         ability: {
@@ -302,14 +227,6 @@ const t: UpgradeBase[] = [
             'Eres capaz de realizar la acción [Slam] incluso aunque estés bajo tensión. Si la realizas, sufres 1 de daño [Critical Hit] a menos que expongas 1 de tus cartas de Daño. Después de que ejecutes parcialmente una maniobra, puedes exponer 1 de tus cartas de Daño o sufrir 1 de daño [Critical Hit] para realizar una acción [Slam].',
           fr:
             "Vous pouvez effectuer l'action [Slam], même si vous êtes stressé. Dans ce cas, vous subissez 1 dégât [Critical Hit] à moins que vous n'exposiez 1 de vos cartes de dégât. Après avoir partiellement exécuté une manœuvre, vous pouvez exposer 1 de vos cartes de dégât ou subir 1 dégât [Critical Hit] pour effectuer une action [Slam].",
-          it:
-            'You can perform the [Slam] action even while stressed. If you do, you suffer 1 [Critical Hit] damage unless you expose 1 of your damage cards. After you partially execute a maneuver, you may expose 1 of your damage cards or suffer 1 [Critical Hit] damage to perform a [Slam] action.',
-          pl:
-            'You can perform the [Slam] action even while stressed. If you do, you suffer 1 [Critical Hit] damage unless you expose 1 of your damage cards. After you partially execute a maneuver, you may expose 1 of your damage cards or suffer 1 [Critical Hit] damage to perform a [Slam] action.',
-          pt:
-            'You can perform the [Slam] action even while stressed. If you do, you suffer 1 [Critical Hit] damage unless you expose 1 of your damage cards. After you partially execute a maneuver, you may expose 1 of your damage cards or suffer 1 [Critical Hit] damage to perform a [Slam] action.',
-          zh:
-            'You can perform the [Slam] action even while stressed. If you do, you suffer 1 [Critical Hit] damage unless you expose 1 of your damage cards. After you partially execute a maneuver, you may expose 1 of your damage cards or suffer 1 [Critical Hit] damage to perform a [Slam] action.',
         },
         slots: ['Illicit'],
         ffg: 650,
@@ -325,11 +242,22 @@ const t: UpgradeBase[] = [
     xws: 'quickreleaselocks',
     sides: [
       {
-        title: { en: 'Quick-Release Locks' },
+        title: {
+          en: 'Quick-Release Locks',
+          de: 'Schnellspannverschluss',
+          es: 'Enganches de apertura rápida',
+          fr: 'Verrous à Libération Rapide',
+        },
         type: 'Illicit',
         ability: {
           en:
             "During the System Phase, you may spend 1 [Charge] to drop 1 cargo crate drift in your [Rear Arc] at range 0. It cannot overlap a ship this way.. This card's [Charge] cannot be recovered.",
+          de:
+            'Während der Systemphase darfst du 1 [Charge] ausgeben, um 1 Treibgut in deinem[Rear Arc]in Reichweite 0 zu platzieren. Es darf kein Schiff überschneiden. Die [Charge] dieser Karte können nicht wiederhergestellt werden.',
+          es:
+            'Durante la fase de Sistemas, puedes gastar 1 [Charge] para colocar 1 Cargamento a la deriva en tu [Rear Arc] a alcance 0, sin que pueda quedar solapado con una nave de esta manera. Las [Charge] de esta carta no pueden recuperarse.',
+          fr:
+            'Pendant la phase de système, vous pouvez dépenser 1 [Charge] pour placer 1 dérive de cargaison dans votre [Rear Arc] à portée 0. Le marqueur de dérive de cargaison ne peut pas chevaucher de vaisseau de cette manière. Les [Charge] de cette carte ne peuvent pas être récupérées.',
         },
         charges: { value: 2, recovers: 0 },
         slots: ['Illicit'],
@@ -346,11 +274,22 @@ const t: UpgradeBase[] = [
     xws: 'saboteursmap',
     sides: [
       {
-        title: { en: "Saboteur's Map" },
+        title: {
+          en: "Saboteur's Map",
+          de: 'Karte des Saboteurs',
+          es: 'Mapa de saboteador',
+          fr: 'Carte du Saboteur',
+        },
         type: 'Illicit',
         ability: {
           en:
             'At the end of Setup, you may spend up to 1 [Charge] from each of your equipped Mine upgrades to place the corresponding device in the play area beyond range 2 of any enemy ship, strategic marker, or other device.',
+          de:
+            'Am Ende des Aufbaus darfst du bis zu 1 [Charge] von jeder deiner ausgerüsteten Mine-Aufwertungen ausgeben, um das entsprechende Gerät auf der Spielfläche jenseits von Reichweite 2 zu feindlichen Schiffen oder anderen Geräten zu platzieren.',
+          es:
+            'Al final de la Preparación, puedes gastar hasta 1 [Charge] de cada una de tus mejoras de Mina equipadas para colocar el correspondiente dispositivo en la zona de juego más allá de alcance 2 de toda nave enemiga y todo otro dispositivo.',
+          fr:
+            "À la fin de la Mise en place, vous pouvez dépenser jusqu'à 1 [Charge] de chacune de vos améliorations Mine équipées pour placer l'engin correspondant dans la zone de jeu au-delà de la portée 2 de tout vaisseau ennemi ou autre engin.",
         },
         charges: { value: 2, recovers: 0 },
         slots: ['Illicit'],
@@ -367,11 +306,22 @@ const t: UpgradeBase[] = [
     xws: 'scannerbaffler',
     sides: [
       {
-        title: { en: 'Scanner Baffler' },
+        title: {
+          en: 'Scanner Baffler',
+          de: 'Scanner-Manipulator',
+          es: 'Interferidor de sensores',
+          fr: 'Scanner Cloisonné',
+        },
         type: 'Illicit',
         ability: {
           en:
             'At the end of Setup, you may choose any number of other friendly, non-huge ships in your deployment area at range 0-1. If you do, place those ships anywhere in the same deployment area.',
+          de:
+            'Am Ende des Aufbaus darfst du bis zu 6 andere befreundete Standardschiffe in deiner Aufstellungszone in Reichweite 0-1 wählen. Falls du das tust, platziere diese Schiffe irgendwo in Reichweite 0-1.',
+          es:
+            'Al final de la Preparación, puedes elegir hasta 6 otras naves normales aliadas que tengas en tu zona de despliegue a alcance 0-1. Si lo haces, coloca esas naves en cualquier sitio que tengas a alcance 0-1.',
+          fr:
+            "À la fin de la Mise en place, vous pouvez choisir jusqu'à 6 autres vaisseaux standards alliés dans votre zone de déploiement à portée 0-1. Dans ce cas, placez ces vaisseaux n'importe où à portée 0-1.",
         },
         slots: ['Illicit'],
         ffg: 755,

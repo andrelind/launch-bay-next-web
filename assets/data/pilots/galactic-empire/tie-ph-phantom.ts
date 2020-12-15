@@ -5,10 +5,6 @@ const t: ShipType = {
     en: 'TIE/ph Phantom',
     de: 'TIE/ph-Phantom',
     fr: 'TIE/ph Fantôme',
-    it: 'TIE/ph Phantom',
-    pl: 'TIE/ph Phantom',
-    pt: 'TIE/ph Phantom',
-    zh: 'TIE/ph Phantom',
     es: 'TIE/ph Fantasma',
   },
   xws: 'tiephphantom',
@@ -79,25 +75,12 @@ const t: ShipType = {
   icon: 'https://sb-cdn.fantasyflightgames.com/ship_types/I_TIEPhantom.png',
   pilots: [
     {
-      name: {
-        en: '"Echo"',
-        de: '„Echo"',
-        fr: '"Echo"',
-        es: '"Eco"',
-        it: '"Echo"',
-        pl: '„Echo"',
-        pt: '"Echo"',
-        zh: '"Echo"',
-      },
+      name: { en: '"Echo"', de: '„Echo"', es: '"Eco"' },
       caption: {
         en: 'Slippery Trickster',
         de: 'Aalglatter Schelm',
         fr: 'Illusionniste Insaisissable',
         es: 'Embaucadora artera',
-        it: 'Ingannatrice Sfuggente',
-        pl: 'Przebiegła szelma',
-        pt: 'Trapaceiro Escorregadio',
-        zh: 'Slippery Trickster',
       },
       initiative: 4,
       limited: 1,
@@ -112,14 +95,6 @@ const t: ShipType = {
           'Lorsque vous vous désoccultez, vous devez utiliser le gabarit (2 [Bank Left]) ou (2 [Bank Right]) à la place du gabarit (2 [Straight]).',
         es:
           'Mientras desactivas el camuflaje, debes utilizar la plantilla (2 [Bank Left]) o (2 [Bank Right]) en vez de la plantilla (2 [Straight]).',
-        it:
-          'Mentre ti deocculti, devi usare il modello (2 [Bank Left]) o (2 [Bank Right]) invece del modello (2 [Straight]).',
-        pl:
-          'Gdy wyłączasz maskowanie, musisz użyć wzornika (2 [Bank Left]) albo (2 [Bank Right]) zamiast (2 [Straight]).',
-        pt:
-          'Quando descamuflar, você deveusar o gabarito (2 [Bank Left]) ou (2 [Bank Right]) emvez do gabarito (2 [Straight]).',
-        zh:
-          'While you decloak, you must use the (2 [Bank Left]) or (2 [Bank Right]) template instead of the (2 [Straight]) template.',
       },
       slots: ['Talent', 'Sensor', 'Modification', 'Gunner'],
       artwork:
@@ -129,25 +104,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: '"Whisper"',
-        de: '„Geflüster"',
-        fr: '"Whisper"',
-        es: '"Susurro"',
-        it: '"Whisper"',
-        pl: '„Szept"',
-        pt: '"Whisper"',
-        zh: '"Whisper"',
-      },
+      name: { en: '"Whisper"', de: '„Geflüster"', es: '"Susurro"' },
       caption: {
         en: 'Soft-Spoken Slayer',
         de: 'Mörder der leisen Töne',
         fr: 'Tueur à la Voix Suave',
         es: 'Asesino afable',
-        it: 'Mite Assassina',
-        pl: 'Milczący morderca',
-        pt: 'Assassino de Voz Doce',
-        zh: 'Soft-Spoken Slayer',
       },
       initiative: 5,
       limited: 1,
@@ -161,12 +123,6 @@ const t: ShipType = {
           "Après avoir effectué une attaque qui touche, gagnez 1 marqueur d'évasion.",
         es:
           'Después de que efectúes un ataque que impacte, recibes 1 ficha de Evasión.',
-        it:
-          'Dopo che hai effettuato un attacco che ha colpito, ottieni 1 segnalino schivata.',
-        pl: 'Gdy wykonasz atak, który trafił, zyskujesz 1 żeton uniku.',
-        pt:
-          'Após você realizar um ataque queacertou, receba 1 ficha de desvio.',
-        zh: 'After you perform an attack that hits, gain 1 evade token.',
       },
       slots: ['Talent', 'Sensor', 'Modification', 'Gunner'],
       artwork:
@@ -181,10 +137,6 @@ const t: ShipType = {
         de: 'Testpilot von Imdaar',
         fr: "Pilote d'Essai Imdaar",
         es: 'Piloto de pruebas de Imdaar',
-        it: 'Pilota Collaudatoredi Imdaar',
-        pl: 'Oblatywacz z Imdaar',
-        pt: 'Pil. de Testes de Imdaar',
-        zh: 'Imdaar Test Pilot',
       },
       initiative: 3,
       limited: 0,
@@ -199,14 +151,6 @@ const t: ShipType = {
           "Conçu dans un centre de recherches secret sur Imdaar Alpha, le TIE Fantôme concrétise ce qui semblait impossible : un petit chasseur furtif équipé d'un système d'occultation avancé.",
         es:
           'EL TIE Fantasma, producto de las investigaciones llevadas a cabo en unas instalaciones secretas de Imdaar Alfa, es algo que muchos creían imposible: un caza estelar de dimensiones reducidas equipado con un avanzado dispositivo de camuflaje.',
-        it:
-          'Il TIE Phantom, il risultato primario della struttura di ricerca segreta chiamata Imdaar Alfa, è ciò che molti consideravano impossibile: un piccolo astrocaccia dotato di un evoluto dispositivo di occultamento.',
-        pl:
-          'TIE Phantom jest efektem prac w ukrytej bazie na Imdaar Alpha. Inżynierom udało się dokonać czegoś, co wydawało się niemożliwe - stworzyć myśliwiec z zaawansowanym urządzeniem maskującym.',
-        pt:
-          'Sendo o principal resultado de uma base de pesquisa escondida em Imdaar Alfa, a TIE phantom alcançou algo que muitos julgavam impossível: um pequeno caça estelar equipado com um dispositivo de camuflagem avançado.',
-        zh:
-          'The primary result of a hidden research facility on Imdaar Alpha, the TIE phantom achieves what many thought was impossible: a small starfighter equipped with an advanced cloaking device.',
       },
       slots: ['Sensor', 'Modification', 'Gunner'],
       artwork:
@@ -221,10 +165,6 @@ const t: ShipType = {
         de: 'Fliegerass der Sigma-Staffel',
         fr: "As de l'Escadron Sigma",
         es: 'As del Escuadrón Sigma',
-        it: 'Asso dellaSquadriglia Sigma',
-        pl: 'As Eskadry Sigma',
-        pt: 'Ás do Esquadrão Sigma',
-        zh: 'Sigma Squadron Ace',
       },
       initiative: 4,
       limited: 0,
@@ -239,14 +179,6 @@ const t: ShipType = {
           "Équipé d'un hyperdrive et de boucliers, le TIE Fantôme dispose également de cinq canons laser qui lui confèrent une puissance de feu inouïe pour un chasseur Impérial.",
         es:
           'Provisto de hiperimpulsor y escudos deflectores, el TIE Fantasma también está equipado con cinco cañones láser, lo que le proporciona una potencia de fuego impresionante para un caza imperial.',
-        it:
-          'Il TIE Phantom, dotato di iperguida e di scudi, vanta anche cinque cannoni laser che gli forniscono una potenza di fuoco notevole per un caccia Imperiale.',
-        pl:
-          'TIE Phantom poza osłonami i hipernapędem jest także wyposażony w pięć działek laserowych, co stanowi znaczącą siłę ognia jak na myśliwiec Imperium.',
-        pt:
-          'Dispondo de um hiperpropulsor e escudos, a TIE phantom também é equipada com cinco canhõesde laser, garantindo poder de fogo considerávelpara um caça Imperial.',
-        zh:
-          'Featuring a hyperdrive and shields, the TIE phantom is also equipped with five laser cannons, giving it substantial firepower for an Imperial fighter.',
       },
       slots: ['Talent', 'Sensor', 'Modification', 'Gunner'],
       artwork:

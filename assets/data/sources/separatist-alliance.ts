@@ -227,8 +227,8 @@ export const t: Source[] = [
       pilots: {
         jangofett: 1,
         zamwesell: 1,
-        'bobafett-separatist': 1,
         separatistracketeer: 1,
+        'bobafett-separatistalliance': 1,
       },
       upgrades: {
         debrisgambit: 1,

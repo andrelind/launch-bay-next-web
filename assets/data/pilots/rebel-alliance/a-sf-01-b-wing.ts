@@ -5,10 +5,6 @@ const t: ShipType = {
     en: 'A/SF-01 B-wing',
     de: 'A/SF-01-B-Flügler',
     fr: 'B-wing A/SF-01',
-    it: 'Ala-B A/SF-01',
-    pl: 'A/SF-01 B-wing',
-    pt: 'B-wing A/SF-01',
-    zh: 'A/SF-01B-wing',
     es: 'A/SF-01 Ala-B',
   },
   xws: 'asf01bwing',
@@ -57,10 +53,6 @@ const t: ShipType = {
         de: 'Veteran der Klingen-Staffel',
         fr: "Vétéran de l'Escadron Blade",
         es: 'Veterano del Escuadrón Cuchilla',
-        it: 'Veterano della Squadriglia Blade',
-        pl: 'Weteran Eskadry Ostrzy',
-        pt: 'Veterano do Esq. Lâmina',
-        zh: 'Blade Squadron Veteran',
       },
       initiative: 3,
       limited: 0,
@@ -75,14 +67,6 @@ const t: ShipType = {
           'Un système de stabilisation gyroscopique unique enveloppe le cockpit du B-wing et assure la stabilité du pilote.',
         es:
           'El Ala-B dispone de un sistema único de giroestabilización que rota alrededor de la carlinga para mantener al piloto siempre en la misma posición durante el vuelo.',
-        it:
-          "Uno speciale sistema giroscopico stabilizzante circonda l'abitacolo dell'Ala-B, assicurandosi che il pilota rimanga sempre stazionario durante i combattimenti.",
-        pl:
-          'Kokpit B-winga umieszczony jest w unikalnym systemie żyrostabilizatorów, dzięki czemu pilot zawsze jest nieruchomy podczas walki.',
-        pt:
-          'Um sistema de estabilização giroscópica único foi projetado em volta da cabine da B-wing, garantindo que o piloto permaneça estacionário durante o voo.',
-        zh:
-          "A unique gyrostabilization system surrounds the B-wing's cockpit, ensuring that the pilot always remains stationary during flight.",
       },
       slots: [
         'Talent',
@@ -105,10 +89,6 @@ const t: ShipType = {
         de: 'Pilot der blauen Staffel',
         fr: "Pilote de l'Escadron Bleu",
         es: 'Piloto del Escuadrón Azul',
-        it: 'Pilota della Squadriglia Blu',
-        pl: 'Pilot Eskadry Niebieskich',
-        pt: 'Piloto do Esq. Azul',
-        zh: 'Blue Squadron Pilot',
       },
       initiative: 2,
       limited: 0,
@@ -123,14 +103,6 @@ const t: ShipType = {
           "Grâce à son impressionnant panel d'armes lourdes et à ses boucliers très résistants, le B-wing s'est imposé comme le plus redoutable chasseur d'assaut de l'Alliance Rebelle.",
         es:
           'Gracias a sus sistemas de armamento pesado y sus resistentes escudos deflectores, el Ala-B se ha consolidado como uno de los cazas de asalto más innovadores de la Alianza Rebelde.',
-        it:
-          "Grazie al suo arsenale di armi pesanti e alla sua resistente schermatura, l'Ala-B si è consolidato come il caccia d'assalto più innovativo dell'Alleanza Ribelle.",
-        pl:
-          'Bogaty arsenał uzbrojenia i silne osłony sprawiają, że B-wing jest najnowocześniejszym myśliwcem szturmowym Sojuszu Rebeliantów.',
-        pt:
-          'Devido ao seu conjunto de armaspesadas e escudo resiliente, a B-wingse consolidou como o caça de assaltomais inovador da Aliança Rebelde.',
-        zh:
-          "Due to its heavy weapons array and resilient shielding, the B-wing has solidified itself as the Rebel Alliance's most innovative assault fighter.",
       },
       slots: [
         'Sensor',
@@ -154,25 +126,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Braylen Stramm',
-        de: 'Braylen Stramm',
-        fr: 'Braylen Stramm',
-        es: 'Braylen Stramm',
-        it: 'Braylen Stramm',
-        pl: 'Braylen Stramm',
-        pt: 'Braylen Stramm',
-        zh: 'Braylen Stramm',
-      },
+      name: { en: 'Braylen Stramm' },
       caption: {
         en: 'Blade Leader',
         de: 'Klinge Eins',
         fr: 'Leader Blade',
         es: 'Jefe Cuchilla',
-        it: 'Capo Blade',
-        pl: 'Dowódca Ostrzy',
-        pt: 'Líder Lâmina',
-        zh: 'Blade Leader',
       },
       initiative: 4,
       limited: 1,
@@ -187,14 +146,6 @@ const t: ShipType = {
           "Tant que vous défendez ou effectuez une attaque, si vous êtes stressé, vous pouvez relancer jusqu'à 2 de vos dés.",
         es:
           'Mientras te defiendes o efectúas un ataque, si estás bajo tensión, puedes volver a tirar hasta 2 de tus dados.',
-        it:
-          'Mentre difendi o effettui un attacco, se sei in tensione, puoi ripetere il tiro di 2 tuoi dadi.',
-        pl:
-          'Gdy się bronisz albo wykonujesz atak, jeżeli posiadasz żeton stresu, możesz przerzucić maksymalnie 2 ze swoich kości.',
-        pt:
-          'Quando defender ou realizar um ataque, se estiver estressado, você tem a opção de rerrolar até 2 de seus dados.',
-        zh:
-          'While you defend or perform an attack, if you are stressed, you may reroll up to 2 of your dice.',
       },
       slots: [
         'Talent',
@@ -212,25 +163,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Ten Numb',
-        de: 'Ten Numb',
-        fr: 'Ten Numb',
-        es: 'Ten Numb',
-        it: 'Ten Numb',
-        pl: 'Ten Numb',
-        pt: 'Ten Numb',
-        zh: 'Ten Numb',
-      },
+      name: { en: 'Ten Numb' },
       caption: {
         en: 'Blue Five',
         de: 'Blau Fünf',
         fr: 'Blue Cinq',
         es: 'Azul Cinco',
-        it: 'Blu Cinque',
-        pl: 'Niebieski Pięć',
-        pt: 'Azul Cinco',
-        zh: 'Blue Five',
       },
       initiative: 4,
       limited: 1,
@@ -245,14 +183,6 @@ const t: ShipType = {
           'Tant que vous défendez ou effectuez une attaque, vous pouvez dépenser 1 marqueur de stress pour changer tous vos résultats [Focus] en résultats [Evade] ou [Hit].',
         es:
           'Mientras te defiendes o efectúas un ataque, puedes gastar 1 ficha de Tensión para cambiar todos tus resultados [Focus] por resultados [Evade] o [Hit].',
-        it:
-          'Mentre difendi o effettui un attacco, puoi spendere 1 segnalino tensione per cambiare tutti i tuoi risultati [Focus] in risultati [Evade] o [Hit].',
-        pl:
-          'Gdy się bronisz albo wykonujesz atak, możesz wydać 1 żeton stresu, aby zmienić wszystkie swoje wyniki [Focus] na [Evade] albo [Hit].',
-        pt:
-          'Quando defender ou realizar um ataque, você pode gastar 1 fichade estresse para mudar todosos seus resultados [Focus] para resultados [Evade] ou [Hit].',
-        zh:
-          'While you defend or perform an attack, you may spend 1 stress token to change all of your [Focus] results to [Evade] or [Hit] results.',
       },
       slots: [
         'Talent',
@@ -270,25 +200,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Gina Moonsong',
-        de: 'Gina Moonsong',
-        fr: 'Gina Moonsong',
-        es: 'Gina Moonsong',
-        it: 'Gina Moonsong',
-        pl: 'Gina Moonsong',
-        pt: 'Gina Moonsong',
-        zh: 'Gina Moonsong',
-      },
+      name: { en: 'Gina Moonsong' },
       caption: {
         en: 'Insubordinate Ace',
         de: 'Ungehorsames Fliegerass',
         fr: 'As Insubordonnée',
         es: 'As insubordinado',
-        it: 'Insubordinate Ace',
-        pl: 'Insubordinate Ace',
-        pt: 'Insubordinate Ace',
-        zh: 'Insubordinate Ace',
       },
       initiative: 5,
       limited: 1,
@@ -303,14 +220,6 @@ const t: ShipType = {
           "Au début de la phase d'engagement, vous devez transférer 1 de vos marqueurs de stress à un autre vaisseau allié à portée 0-2.",
         es:
           'Al comienzo de la fase de Enfrentamiento, debes transferir 1 de tus fichas de Tensión a otra nave aliada que tengas a alcance 0-2.',
-        it:
-          'At the start of the Engagement Phase, you must transfer 1 of your stress tokens to another friendly ship at range 0-2.',
-        pl:
-          'At the start of the Engagement Phase, you must transfer 1 of your stress tokens to another friendly ship at range 0-2.',
-        pt:
-          'At the start of the Engagement Phase, you must transfer 1 of your stress tokens to another friendly ship at range 0-2.',
-        zh:
-          'At the start of the Engagement Phase, you must transfer 1 of your stress tokens to another friendly ship at range 0-2.',
       },
       slots: [
         'Talent',

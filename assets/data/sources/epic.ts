@@ -227,6 +227,23 @@ export const t: Source[] = [
       },
     },
   },
+  {
+    ffg: 52,
+    xws: 'epicbattles',
+    name: 'Epic Battles Expansion',
+    wave: 6,
+    released: true,
+    contents: {
+      ships: {},
+      pilots: {},
+      upgrades: {
+        agentoftheempire: 1,
+        firstorderelite: 1,
+        veteranwingleader: 1,
+        dreadnoughthunter: 1,
+      },
+    },
+  },
 ];
 
 export default t;

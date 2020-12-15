@@ -1,7 +1,12 @@
 import { ShipType } from '../../../../types';
 
 const t: ShipType = {
-  name: { en: 'GR-75 Medium Transport' },
+  name: {
+    en: 'GR-75 Medium Transport',
+    de: 'GR-75 mittelschwerer Transporter',
+    es: 'Transporte mediano GR-75',
+    fr: 'Transport Moyen GR-75',
+  },
   xws: 'gr75mediumtransport',
   size: 'Huge',
   dial: [
@@ -41,10 +46,21 @@ const t: ShipType = {
   },
   pilots: [
     {
-      name: { en: 'New Republic Volunteers' },
+      name: {
+        en: 'New Republic Volunteers',
+        de: 'Freiwillige der\nNeuen Republik',
+        es: 'Voluntarios de la Nueva República',
+        fr: 'Volontaires de la Nouvelle République',
+      },
       text: {
         en:
           'A craft used since before the Clone Wars, the CR90 corvette is favored by the Royal House of Alderaan for its versatility.',
+        de:
+          'Manche Gruppen der Neuen Republik nutzen diese Schiffe schon seit dem Galaktischen Bürgerkrieg für Liefer- und Hilfsmissionen.',
+        es:
+          'En uso desde la Guerra Civil Galáctica, algunos grupos pertenecientes a la Nueva República siguen utilizando el transporte mediano GR-75 para misiones de auxilio y reabastecimiento.',
+        fr:
+          "En service depuis la Guerre Civile Galactique, le transport moyen GR-75 est toujours utilisé par des membres de la Nouvelle République pour des missions d'approvisionnement et d'assistance.",
       },
       initiative: 7,
       engagement: 1,

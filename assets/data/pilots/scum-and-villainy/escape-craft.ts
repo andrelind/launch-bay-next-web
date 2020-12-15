@@ -1,16 +1,7 @@
 import { ShipType } from '../../../../types';
 
 const t: ShipType = {
-  name: {
-    en: 'Escape Craft',
-    de: 'Fluchtschiff',
-    fr: 'Vaisseau de secours',
-    it: 'FuorileggeNavetta di Fuga',
-    pl: 'Statek ewakuacyjny',
-    pt: 'Nave de Fuga',
-    zh: 'Escape Craft',
-    es: 'Nave de escape',
-  },
+  name: { en: 'Escape Craft' },
   xws: 'escapecraft',
   ffg: 48,
   size: 'Small',
@@ -58,20 +49,12 @@ const t: ShipType = {
         de: 'Autopilot-Drone',
         fr: 'Drone Automatique',
         es: 'Dron autopilotado',
-        it: 'Drone Autopilota',
-        pl: 'Dron-autopilot',
-        pt: 'Piloto Automático',
-        zh: '自动驾驶无人机',
       },
       caption: {
         en: 'Set to Blow',
         de: 'Bereit zur Detonation',
         fr: 'Prêt à Exploser',
         es: 'Preparado para explotar',
-        it: 'Regolato per Esplodere',
-        pl: 'Samozniszczenie',
-        pt: 'Prestes à Explodir',
-        zh: '集群',
       },
       initiative: 1,
       limited: 1,
@@ -85,11 +68,6 @@ const t: ShipType = {
           "Il est parfois utile d'ignorer les avertissements de sécurité préconisés par les fabricants…",
         es:
           'A veces, las advertencias del fabricante están hechas para ser ignoradas.',
-        it:
-          'A volte le avvertenze di fabbricazione sono fatte per essere ignorate.',
-        pl: 'Czasami trzeba ignorować ostrzeżenia producenta.',
-        pt: 'Às vezes, os avisos dosfabricantes devem ser desobedecidos.',
-        zh: '有的时候，制造商的"警告"就是用来打破的。',
       },
       charges: { value: 3, recovers: 0 },
       shipActions: [
@@ -135,25 +113,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'L3-37',
-        de: 'L3-37',
-        fr: 'L3-37',
-        es: 'L3-37',
-        it: 'L3-37',
-        pl: 'L3-37',
-        pt: 'L3-37',
-        zh: 'L3-37',
-      },
+      name: { en: 'L3-37' },
       caption: {
         en: 'Droid Revolutionary',
         de: 'Droiden-Revolutionärin',
         fr: 'Droïde Révolutionnaire',
         es: 'Revolucionaria droide',
-        it: 'Rivoluzionario Droide',
-        pl: 'Droid-rewolucjonista',
-        pt: 'Droide Revolucionário',
-        zh: '机器人革命家',
       },
       initiative: 2,
       limited: 1,
@@ -165,17 +130,9 @@ const t: ShipType = {
         de:
           'Falls du keine Schilde hast, verringere die Schwierigkeit deiner Drehmanöver ([Bank Left] und [Bank Right]) .',
         fr:
-          "Si vous n'êtes pas protégé, diminuez la difficulté de vos manœuvres de virages sur l'aile ([Bank Left] et [Bank Right]).",
+          "Si vous n'êtes pas protégé, diminuez la difficulté de vos manœuvres de virages sur l'aile ([Bank Left] et [Bank Right]). Copilote : tant que vous êtes arrimé, votre vaisseau porteur bénéficie de votre capacité de pilote en plus de la sienne.",
         es:
           'Si no estás protegido por escudos, reduce la dificultad de tus maniobras de inclinación ([Bank Left] y [Bank Right]).',
-        it:
-          'Se non possiedi scudi attivi, riduci la difficoltà delle tue manovre curva ([Bank Left] e [Bank Right]).',
-        pl:
-          'Jeżeli nie masz aktywnych osłon, zmniejsz trudność twoich manewrów skrętu ([Bank Left] oraz [Bank Right]).',
-        pt:
-          'Se você não tiver escudos,reduza a dificuldade das suasmanobras de curva ([Bank Left] e [Bank Right]).',
-        zh:
-          '如果你没有激活护盾，则降低你的斜向([Bank Left]和[Bank Right])移动难度。 副驾驶：当你完成停靠时，将你的飞行员能力添加到你的运载战机的飞行员能力。',
       },
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },
@@ -190,25 +147,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Lando Calrissian',
-        de: 'Lando Calrissian',
-        fr: 'Lando Calrissian',
-        es: 'Lando Calrissian',
-        it: 'Lando Calrissian',
-        pl: 'Lando Calrissian',
-        pt: 'Lando Calrissian',
-        zh: '兰多·卡瑞辛',
-      },
+      name: { en: 'Lando Calrissian' },
       caption: {
         en: 'Smooth-talking Gambler',
         de: 'Charmanter Spieler',
         fr: 'Joueur à la Voix Suave',
         es: 'Tahúr elocuente',
-        it: "Giocatore d'Azzardo Persuasivo",
-        pl: 'Wygadany hazardzista',
-        pt: 'Apostador Vigarista',
-        zh: '花言巧语的赌徒',
       },
       initiative: 4,
       limited: 1,
@@ -223,14 +167,6 @@ const t: ShipType = {
           "Après avoir lancé des dés, si vous n'êtes pas stressé, vous pouvez gagner 1 marqueur de stress pour relancer tous vos résultats vierges. Copilote : tant que vous êtes arrimé, votre vaisseau porteur bénéficie de votre capacité de pilote en plus de la sienne.",
         es:
           'Después de que tires los dados, si no estás bajo tensión, puedes recibir 1 ficha de Tensión para volver a tirar todos tus resultados de cara vacía.',
-        it:
-          'Dopo che hai tirato i dadi, se non sei in tensione, puoi ottenere 1 segnalino tensione per ripetere il tiro di tutti i tuoi risultati vuoto.',
-        pl:
-          'Gdy wykonasz rzut kośćmi, jeżeli nie posiadasz żetonu stresu, możesz otrzymać 1 żeton stresu, aby przerzucić wszystkie twoje puste wyniki.',
-        pt:
-          'Após rolar dados, se não estiver estressado, você pode receber1 ficha de estresse para rerrolartodos os seus resultados em branco.',
-        zh:
-          '在你掷骰之后，如果你未处于压力状态，则你可以获得1枚压力标记并重投本次掷骰结果中所有的空白面骰子。 副驾驶：当你完成停靠时，将你的飞行员能力添加到你的运载战机的飞行员能力。',
       },
       slots: ['Talent', 'Crew', 'Modification'],
       artwork:
@@ -245,20 +181,12 @@ const t: ShipType = {
         de: 'Pionier aus dem Outer Rim',
         fr: 'Colon de la Bordure Extérieure',
         es: 'Pionero del Borde Exterior',
-        it: 'Pioniere della Fascia Esterna',
-        pl: 'Pionier z Zewnętrznych Rubieży',
-        pt: 'Pioneiro da Orla Exterior',
-        zh: '外环星域开辟者',
       },
       caption: {
         en: 'Skillful Outlaw',
         de: 'Geschickter Gesetzloser',
         fr: 'Hors-la-loi Habile',
         es: 'Forajido ingenioso',
-        it: 'Abile Fuorilegge',
-        pl: 'Zaradny banita',
-        pt: 'Fora-da-Lei Habilidoso',
-        zh: '熟练的法外之徒',
       },
       initiative: 3,
       limited: 1,
@@ -270,17 +198,9 @@ const t: ShipType = {
         de:
           'Befreundete Schiffe in Reichweite 0-1 können Angriffe in Reichweite 0 zu Hindernissen durchführen.',
         fr:
-          'Les vaisseaux alliés à portée 0-1 peuvent effectuer des attaques en étant à portée 0 des obstacles.',
+          'Les vaisseaux alliés à portée 0-1 peuvent effectuer des attaques en étant à portée 0 des obstacles. Copilote : tant que vous êtes arrimé, votre vaisseau porteur bénéficie de votre capacité de pilote en plus de la sienne.',
         es:
           'Las naves aliadas que tienes a alcance 0-1 son capaces de efectuar ataques aunque estén situadas a alcance 0 de obstáculos.',
-        it:
-          'Le navi amiche a gittata 0-1 possono effettuare attacchi a gittata 0 dagli ostacoli.',
-        pl:
-          'Przyjaznym statkom w zasięgu 0 -1 wolno wykonywać ataki, gdy są w zasięgu 0 od przeszkód.',
-        pt:
-          'Naves amigas em alcance 0-1conseguem realizar ataques emalcance 0 de obstáculos.',
-        zh:
-          '与你距离为0~1的友方战机即使与障碍物距离为0，亦能进行攻击。 副驾驶：当你完成停靠时，将你的飞行员能力添加到你的运载战机的飞行员能力。',
       },
       slots: ['Talent', 'Crew', 'Modification'],
       artwork:

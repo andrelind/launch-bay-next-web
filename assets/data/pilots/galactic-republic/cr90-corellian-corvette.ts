@@ -1,7 +1,12 @@
 import { ShipType } from '../../../../types';
 
 const t: ShipType = {
-  name: { en: 'CR90 Corellian Corvette' },
+  name: {
+    en: 'CR90 Corellian Corvette',
+    de: 'CR90 Corellianische Korvette',
+    es: 'Corbeta corelliana CR90',
+    fr: 'Corvette Corellienne CR90',
+  },
   xws: 'cr90corelliancorvette',
   size: 'Huge',
   dial: [
@@ -44,10 +49,21 @@ const t: ShipType = {
   },
   pilots: [
     {
-      name: { en: 'Republic Judiciary' },
+      name: {
+        en: 'Republic Judiciary',
+        de: 'Judikative der \nRepublik',
+        es: 'Judicatura de la República',
+        fr: 'République Judiciaire',
+      },
       text: {
         en:
           'The Galactic Republic uses small, swift warships such as the CR90 corvette to respond rapidly to Separatist incursions across the galaxy.',
+        de:
+          'Die Galaktische Republik verwendet kleine, schnelle Kriegsschiffe wie die CR90-Korvette, um überall in der Galaxis schnell auf Übergriffe der Separatisten reagieren zu können.',
+        es:
+          'La República Galáctica emplea naves de guerra pequeñas y veloces como la corbeta CR90 para responder rápidamente a las incursiones separatistas por toda la galaxia.',
+        fr:
+          'La République Galactique utilise de petits vaisseaux de guerre véloces comme la corvette CR90 pour répondre rapidement aux incursions Séparatistes à travers la galaxie.',
       },
       initiative: 8,
       engagement: 0,

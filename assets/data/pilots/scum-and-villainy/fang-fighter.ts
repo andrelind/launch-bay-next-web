@@ -5,10 +5,6 @@ const t: ShipType = {
     en: 'Fang Fighter',
     de: 'Fangjäger',
     fr: 'Chasseur Fang',
-    it: 'Caccia Fang',
-    pl: 'Myśliwiec Fang',
-    pt: 'Caça Fang',
-    zh: '獠牙战斗机',
     es: 'Caza Colmillo',
   },
   xws: 'fangfighter',
@@ -85,25 +81,12 @@ const t: ShipType = {
   icon: 'https://sb-cdn.fantasyflightgames.com/ship_types/I_FangFighter.png',
   pilots: [
     {
-      name: {
-        en: 'Fenn Rau',
-        de: 'Fenn Rau',
-        fr: 'Fenn Rau',
-        es: 'Fenn Rau',
-        it: 'Fenn Rau',
-        pl: 'Fenn Rau',
-        pt: 'Fenn Rau',
-        zh: '芬恩·劳',
-      },
+      name: { en: 'Fenn Rau' },
       caption: {
         en: 'Skull Leader',
         de: 'Skull Eins',
         fr: 'Leader Skull',
         es: 'Jefe Calavera',
-        it: 'Capo Skull',
-        pl: 'Dowódca Czaszek',
-        pt: 'Líder Caveira',
-        zh: '骷髅领队',
       },
       initiative: 6,
       limited: 1,
@@ -118,14 +101,6 @@ const t: ShipType = {
           "Tant que vous défendez ou effectuez une attaque, si la portée d'attaque est 1, vous pouvez lancer 1 dé supplémentaire.",
         es:
           'Mientras te defiendes o efectúas un ataque, si el alcance de ataque es 1, puedes tirar 1 dado adicional.',
-        it:
-          "Mentre difendi o effettui un attacco, se la gittata di attacco è 1, puoi tirare 1 dado aggiuntivo. Carica Frontale di Concordia: Mentre difendi, se la gittata di attacco è 1 e sei nel [Front Arc] dell'attaccante, cambia 1 risultato in 1 risultato [Evade].",
-        pl:
-          'Gdy się bronisz albo wykonujesz atak i zasięg ataku wynosi 1, możesz rzucić 1 dodatkową kością.',
-        pt:
-          'Quando defender ou realizar umataque, se o alcance de ataque for 1, você pode rolar 1 dado adicional. Afronta de Concórdia: Quando você defender, se o alcance de ataque for 1 e você estiver no [Front Arc] do atacante, mude 1 resultado para um resultado [Evade].',
-        zh:
-          '当你进行防御或执行攻击时，如果本次攻击距离为1，你可以投1个额外的骰子。  康考迪亚对峙：当你进行防御时，如果本次攻击距离为1，且你位于攻击方的[Front Arc]内，将任意1个掷骰结果变为1[Evade]。',
       },
       slots: ['Talent', 'Torpedo'],
       artwork:
@@ -135,25 +110,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Joy Rekkoff',
-        de: 'Joy Rekkoff',
-        fr: 'Joy Rekkoff',
-        es: 'Joy Rekkoff',
-        it: 'Joy Rekkoff',
-        pl: 'Joy Rekkoff',
-        pt: 'Joy Rekkoff',
-        zh: '乔伊·瑞科夫',
-      },
+      name: { en: 'Joy Rekkoff' },
       caption: {
         en: 'Skull Squadron Ace',
         de: 'Fliegerass der Skull-Staffel',
         fr: "As de l'Escadron Skull",
         es: 'As del Escuadrón Calavera',
-        it: 'Asso della Squadriglia Skull',
-        pl: 'As Eskadry Czaszki',
-        pt: 'Ás do Esquadrão Caveira',
-        zh: '骷髅中队王牌飞行员',
       },
       initiative: 4,
       limited: 1,
@@ -168,14 +130,6 @@ const t: ShipType = {
           "Tant que vous effectuez une attaque, vous pouvez dépenser 1 [Charge] d'une amélioration [Torpedo] équipée. Dans ce cas, le défenseur lance 1 dé de défense en moins.",
         es:
           'Mientras efectúas un ataque, puedes gastar 1 [Charge] de una mejora [Torpedo] que tengas equipada. Si lo haces, el defensor tira 1 dado de defensa menos.',
-        it:
-          "Mentre effettui un attacco, puoi spendere 1 [Charge] da una miglioria [Torpedo] di cui sei dotato. Se lo fai, il difensore tira 1 dado di difesa in meno. Carica Frontale di Concordia: Mentre difendi, se la gittata di attacco è 1 e sei nel [Front Arc] dell'attaccante, cambia 1 risultato in 1 risultato [Evade].",
-        pl:
-          'Gdy wykonujesz atak, możesz wydać 1 [Charge] z wyposażonego rozwinięcia [Torpedo]. Jeśli tak zrobisz, obrońca rzuca 1 kością obrony mniej.',
-        pt:
-          'Quando realizar um ataque, vocêpode gastar 1 [Charge] de uma melhoria [Torpedo] equipada. Se fizer isso, o defensorrola 1 dado de defesa a menos. Afronta de Concórdia: Quando você defender, se o alcance de ataque for 1 e você estiver no [Front Arc] do atacante, mude 1 resultado para um resultado [Evade].',
-        zh:
-          '当你执行攻击时，你可以从已装备的[Torpedo]升级卡上花费1[Charge]，如果你如此做，防御方少投1个防御骰。 康考迪亚对峙：当你进行防御时，如果本次攻击距离为1，且你位于攻击方的[Front Arc]内，将任意1个掷骰结果变为1[Evade]。',
       },
       slots: ['Talent', 'Torpedo', 'Modification'],
       artwork:
@@ -185,25 +139,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Kad Solus',
-        de: 'Kad Solus',
-        fr: 'Kad Solus',
-        es: 'Kad Solus',
-        it: 'Kad Solus',
-        pl: 'Kad Solus',
-        pt: 'Kad Solus',
-        zh: '科安达·索吕',
-      },
+      name: { en: 'Kad Solus' },
       caption: {
         en: 'Skilled Commando',
         de: 'Versierter Kommandosoldat',
         fr: 'Commando Compétent',
         es: 'Comando experimentado',
-        it: 'Commando Abile',
-        pl: 'Doświadczony komandos',
-        pt: 'Comando Habilidoso',
-        zh: '熟练的突击队员',
       },
       initiative: 4,
       limited: 1,
@@ -217,14 +158,6 @@ const t: ShipType = {
           'Après avoir entièrement exécuté une manœuvre rouge, gagnez 2 marqueurs de concentration.',
         es:
           'Después de que ejecutes completamente una maniobra roja, recibes 2 fichas de Concentración.',
-        it:
-          "Dopo che hai eseguito completamente una manovra rossa, ottieni 2 segnalini concentrazione. Carica Frontale di Concordia: Mentre difendi, se la gittata di attacco è 1 e sei nel [Front Arc] dell'attaccante, cambia 1 risultato in 1 risultato [Evade].",
-        pl:
-          'Gdy wykonasz pełny czerwony manewr, otrzymujesz 2 żetony skupienia.',
-        pt:
-          'Após você executar completamente uma manobra vermelha, receba 2 fichas de foco. Afronta de Concórdia: Quando você defender, se o alcance de ataque for 1 e você estiver no [Front Arc] do atacante, mude 1 resultado para um resultado [Evade].',
-        zh:
-          '你完全地执行红色移动后，获得2枚专注标记。  康考迪亚对峙：当你进行防御时，如果本次攻击距离为1，且你位于攻击方的[Front Arc]内，将任意1个掷骰结果变为1[Evade]。',
       },
       slots: ['Talent', 'Torpedo', 'Modification'],
       artwork:
@@ -239,20 +172,12 @@ const t: ShipType = {
         de: 'Der alte Teroch',
         fr: 'Vieux Teroch',
         es: 'Viejo Teroch',
-        it: 'Old Teroch',
-        pl: 'Stary Teroch',
-        pt: 'Velho Teroch',
-        zh: '老特洛齐',
       },
       caption: {
         en: 'Mandalorian Mentor',
         de: 'Mandalorianischer Mentor',
         fr: 'Mentor Mandalorien',
         es: 'Mentor mandaloriano',
-        it: 'Mentore Mandaloriano',
-        pl: 'Mandaloriański mentor',
-        pt: 'Mentor Mandaloriano',
-        zh: '曼达洛导师',
       },
       initiative: 5,
       limited: 1,
@@ -267,14 +192,6 @@ const t: ShipType = {
           "Au début de la phase d'engagement, vous pouvez choisir 1 vaisseau ennemi à portée 1. Dans ce cas, si vous êtes dans son [Front Arc], il retire tous ses marqueurs verts.",
         es:
           'Al comienzo de la fase de Enfrentamiento, puedes elegir 1 nave enemiga que tengas a alcance 1. Si lo haces y estás en su [Front Arc], esa nave retira todas sus fichas verdes.',
-        it:
-          "All'inizio della Fase di Ingaggio, puoi scegliere 1 nave nemica a gittata 1. Se lo fai e sei nel suo [Front Arc], quella nave rimuove tutti i suoi segnalini verdi. Carica Frontale di Concordia: Mentre difendi, se la gittata di attacco è 1 e sei nel [Front Arc] dell'attaccante, cambia 1 risultato in 1 risultato [Evade].",
-        pl:
-          'Na początku fazy walki możesz wskazać 1 wrogi statek w zasięgu 1. Jeżeli tak zrobisz i znajdujesz się w jego [Front Arc], wskazany statek usuwa wszystkie swoje zielone żetony.',
-        pt:
-          'No início da Fase de Engajamento,você pode escolher 1 nave inimiga em alcance 1. Se você fizer isso e estiverno [Front Arc] da nave escolhida, ela removetodas as fichas verdes dela. Afronta de Concórdia: Quando você defender, se o alcance de ataque for 1e você estiver no [Front Arc] do atacante, mude1 resultado para um resultado [Evade].',
-        zh:
-          '在交战阶段开始时，你可以选1架距离为1的敌机。如果你位于该敌机的[Front Arc]内，移除其全部绿色标记。 康考迪亚对峙：当你进行防御时，如果本次攻击距离为1，且你位于攻击方的[Front Arc]内，将任意1个掷骰结果变为1[Evade]。',
       },
       slots: ['Talent', 'Torpedo', 'Modification'],
       artwork:
@@ -289,10 +206,6 @@ const t: ShipType = {
         de: 'Pilot der Skull-Staffel',
         fr: "Pilote de l'Escadron Skull",
         es: 'Piloto del Escuadrón Calavera',
-        it: 'Pilota dellaSquadriglia Skull',
-        pl: 'Pilot Eskadry Czaszki',
-        pt: 'Piloto do Esq. Caveira',
-        zh: '骷髅中队飞行员',
       },
       initiative: 4,
       limited: 0,
@@ -307,14 +220,6 @@ const t: ShipType = {
           "Les as de l'Escadron Skull privilégient une approche agressive, profitant de la technologie d'ailes montées sur pivot de leurs appareils, ce qui leur confère une maniabilité exceptionnelle quand ils poursuivent leurs proies.",
         es:
           'Los ases del Escuadrón Calavera prefieren los estilos de vuelo agresivos con los que gracias al diseño de ala pivotante de sus naves disfrutan de una agilidad insuperable mientras persiguen a sus presas.',
-        it:
-          "Gli assi della Squadriglia Skull prediligono un approccio aggressivo e usano la tecnologia ad ali ruotanti del loro vascello per acquisire un'agilità ineguagliata all'inseguimento delle loro prede.",
-        pl:
-          'Asy Eskadry Czaszki stosują agresywną taktykę i wykorzystują obracane skrzydła, aby wykorzystać w walce pełnię możliwości swoich maszyn i osiągnąć przewagę nad wrogiem.',
-        pt:
-          'Os ases do Esquadrão Caveira preferem aproximações agressivas, utilizando a tecnologia de asas pivotantes para alcançar uma agilidade imbatível durante perseguições.',
-        zh:
-          '骷髅中队的王牌飞行员倾向于采用侵略性战术，精通操纵机翼枢轴的技巧，使得机体的敏捷性能无与伦比，连猎物也为之叹服。',
       },
       slots: ['Talent', 'Torpedo', 'Modification'],
       artwork:
@@ -329,10 +234,6 @@ const t: ShipType = {
         de: 'Fanatischer Rekrut',
         fr: 'Recrue Zélée',
         es: 'Recluta entusiasta',
-        it: 'Recluta Zelante',
-        pl: 'Gorliwy rekrut',
-        pt: 'Recruta Diligente',
-        zh: '狂热的新兵',
       },
       initiative: 1,
       limited: 0,
@@ -347,14 +248,6 @@ const t: ShipType = {
           "Les pilotes de Chasseur Fang Mandalorien doivent maîtriser la manœuvre dite de l'Opposition Concordia, profitant du profil de leurs appareils pour mener des charges sans concession.",
         es:
           'Los pilotos del caza Colmillo mandaloriano deben dominar el Envite de Concordia, una maniobra que se vale de la estilizada silueta del vehículo para efectuar mortíferos asaltos frontales.',
-        it:
-          "I piloti dei Caccia Fang mandaloriani devono imparare a padroneggiare la Carica Frontale di Concordia, una manovra che sfrutta l'esile profilo di attacco delle loro navi per lanciarsi in una micidiale carica frontale.",
-        pl:
-          'Piloci Mandaloriańskich myśliwców Fang muszą w mistrzowski sposób opanować manewr Konfrontacji Concordyjskkiej, minimalizując profil ataku i wykonując groźne ataki na wprost.',
-        pt:
-          'Os pilotos do caça Mandaloriano Fang devem dominar a manobra Afronta de Concórdia, aproveitando a silhueta esguia de suas naves para executar ataques frontais mortais.',
-        zh:
-          '曼达洛的獠牙战斗机飞行员必须掌握康考迪亚对峙，借助自身机体精准的攻击模式，执行正面死亡冲锋。',
       },
       slots: ['Torpedo', 'Modification'],
       artwork:

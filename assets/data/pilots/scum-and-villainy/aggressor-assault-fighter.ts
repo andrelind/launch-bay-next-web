@@ -5,10 +5,6 @@ const t: ShipType = {
     en: 'Aggressor Assault Fighter',
     de: 'Aggressor-Angriffsjäger',
     fr: "Chasseur d'Assaut Aggressor",
-    it: "Caccia d'Assalto Aggressor",
-    pl: 'Myśliwiec szturmowy Aggressor',
-    pt: 'Caça de Assalto Aggressor',
-    zh: 'Aggressor Assault Fighter',
     es: 'Caza de asalto Agresor',
   },
   xws: 'aggressorassaultfighter',
@@ -75,25 +71,12 @@ const t: ShipType = {
   icon: 'https://sb-cdn.fantasyflightgames.com/ship_types/I_IG-2000.png',
   pilots: [
     {
-      name: {
-        en: 'IG-88A',
-        de: 'IG-88A',
-        fr: 'IG-88A',
-        es: 'IG-88A',
-        it: 'IG-88A',
-        pl: 'IG-88A',
-        pt: 'IG-88A',
-        zh: 'IG-88A',
-      },
+      name: { en: 'IG-88A' },
       caption: {
         en: 'Aggressive Automaton',
         de: 'Aggressiver Automat',
         fr: 'Robot Agressif',
         es: 'Autómata agresivo',
-        it: 'Automa Aggressivo',
-        pl: 'Agresywny automat',
-        pt: 'Autômato Agressivo',
-        zh: 'Aggressive Automaton',
       },
       initiative: 4,
       limited: 1,
@@ -108,14 +91,6 @@ const t: ShipType = {
           "Au début de la phase d'engagement, vous pouvez choisir 1 vaisseau allié à portée 1-3 avec [Calculate] dans sa barre d'action. Dans ce cas, transférez-lui 1 de vos marqueurs de calcul.",
         es:
           'Al comienzo de la fase de Enfrentamiento, puedes elegir 1 nave aliada que tengas a alcance 1-3 y en cuya barra de acciones figure [Calculate]. Si lo haces, transfiere 1 de tus fichas de Cálculos a esa nave.',
-        it:
-          "All'inizio della Fase di Ingaggio, puoi scegliere 1 nave amica a gittata 1-3 con [Calculate] nella sua barra delle azioni. Se lo fai, trasferisci 1 tuo segnalino calcolo a quella nave.",
-        pl:
-          'Na początku fazy walki możesz wskazać 1 przyjazny statek, który jest w zasięgu 1-3 i ma [Calculate] na pasku akcji. Jeżeli tak zrobisz, przenieś na wskazany statek 1 z twoich żetonów obliczeń.',
-        pt:
-          'No início da Fase de Engajamento,você pode escolher 1 nave amiga emalcance 1-3 que tenha [Calculate] na barra de ações. Se fizer isso, transfira 1 desuas fichas de cálculo para ela.',
-        zh:
-          'At the start of the Engagement Phase, you may choose 1 friendly ship with [Calculate] on its action bar at range 1-3. If you do, transfer 1 of your calculate tokens to it.',
       },
       slots: [
         'Talent',
@@ -134,25 +109,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'IG-88B',
-        de: 'IG-88B',
-        fr: 'IG-88B',
-        es: 'IG-88B',
-        it: 'IG-88B',
-        pl: 'IG-88B',
-        pt: 'IG-88B',
-        zh: 'IG-88B',
-      },
+      name: { en: 'IG-88B' },
       caption: {
         en: 'Brutal Battledroid',
         de: 'Brutaler Bot',
         fr: 'Droïde de Combat Brutal',
         es: 'Droide de combate brutal',
-        it: 'Bot Brutale',
-        pl: 'Okrutny droid bojowy',
-        pt: 'Droide de Batalha Brutal',
-        zh: 'Brutal Battledroid',
       },
       initiative: 4,
       limited: 1,
@@ -167,14 +129,6 @@ const t: ShipType = {
           'Après avoir effectué une attaque ratée, vous pouvez effectuer une attaque bonus [Cannon].',
         es:
           'Después de que efectúes un ataque que falle, puedes efectuar un ataque [Cannon] adicional.',
-        it:
-          'Dopo che hai effettuato un attacco che ha mancato, puoi effettuare 1 attacco [Cannon] bonus.',
-        pl:
-          'Gdy wykonasz atak, który chybił, możesz wykonać dodatkowy atak [Cannon].',
-        pt:
-          'Após realizar um ataque que errou, você pode realizar um ataque [Cannon] bônus.',
-        zh:
-          'After you perform an attack that misses, you may perform a bonus [Cannon] attack.',
       },
       alt: [
         {
@@ -200,25 +154,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'IG-88C',
-        de: 'IG-88C',
-        fr: 'IG-88C',
-        es: 'IG-88C',
-        it: 'IG-88C',
-        pl: 'IG-88C',
-        pt: 'IG-88C',
-        zh: 'IG-88C',
-      },
+      name: { en: 'IG-88C' },
       caption: {
         en: 'Conniving Contraption',
         de: 'Cleverer Computer',
         fr: 'Machine Trop Indulgente',
         es: 'Máquina confabuladora',
-        it: 'Costrutto Calcolatore',
-        pl: 'Podstępna maszyna',
-        pt: 'Engenhoca Calculista',
-        zh: 'Conniving Contraption',
       },
       initiative: 4,
       limited: 1,
@@ -233,13 +174,6 @@ const t: ShipType = {
           'Après avoir effectué une action [Boost], vous pouvez effectuer une action [Evade].',
         es:
           'Después de que efectúes una acción [Boost], puedes efectuar una acción [Evade].',
-        it:
-          "Dopo che hai effettuato un'azione [Boost], puoi effettuare 1 azione [Evade].",
-        pl: 'Gdy wykonasz akcję [Boost], możesz wykonać akcję [Evade].',
-        pt:
-          'Após realizar uma ação [Boost],você pode realizar uma ação [Evade].',
-        zh:
-          'After you perform a [Boost] action, you may perform an [Evade] action.',
       },
       slots: [
         'Talent',
@@ -258,25 +192,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'IG-88D',
-        de: 'IG-88D',
-        fr: 'IG-88D',
-        es: 'IG-88D',
-        it: 'IG-88D',
-        pl: 'IG-88D',
-        pt: 'IG-88D',
-        zh: 'IG-88D',
-      },
+      name: { en: 'IG-88D' },
       caption: {
         en: 'Deadly Device',
         de: 'Destruktiver Droide',
         fr: 'Dispositif Mortel',
         es: 'Artilugio mortífero',
-        it: 'Droide Devastante',
-        pl: 'Zabójcze urządzenie',
-        pt: 'Dispositivo Letal',
-        zh: 'Deadly Device',
       },
       initiative: 4,
       limited: 1,
@@ -291,14 +212,6 @@ const t: ShipType = {
           "Tant que vous exécutez une manœuvre Boucle de Segnor ([Segnor's Loop Left] ou [Segnor's Loop Right]), vous pouvez utiliser un autre gabarit de même vitesse à la place : soit le gabarit de virage ([Turn Left] ou [Turn Right]) de même direction, soit le gabarit de ligne droite ([Straight]).",
         es:
           "Mientras ejecutas una maniobra de giro de Segnor ([Segnor's Loop Left] o [Segnor's Loop Right]), puedes ejecutarla utilizando otra plantilla con la misma velocidad, ya sea una plantilla de giro ([Turn Left] o [Turn Right]) con la misma dirección o la plantilla de movimiento recto ([Straight]).",
-        it:
-          "Mentre esegui una manovra loop di Segnor ([Segnor's Loop Left] o [Segnor's Loop Right]), puoi invece usare il modello curva ([Turn Left] o [Turn Right]) con la stessa direzione e velocità oppure il modello dritta ([Straight]) con la stessa velocità.",
-        pl:
-          "Gdy wykonujesz pętlę Segnora ([Segnor's Loop Left] albo [Segnor's Loop Right]), zamiast standardowego wzronika możesz użyć wzornika zwrotu ([Turn Left] albo [Turn Right]) o tej samej prędkości i kierunku albo wzornika na wprost ([Straight]) o tej samej prędkości.",
-        pt:
-          "Quando executar uma manobra Loop de Segnor ([Segnor's Loop Left] ou [Segnor's Loop Right]), você pode usar, em vez desses, outro gabarito de mesma velocidade de: curva acentuada ([Turn Left] ou [Turn Right]) para a mesma direção ou linha reta ([Straight]).",
-        zh:
-          "While you execute a Segnor's Loop ([Segnor's Loop Left] or [Segnor's Loop Right]) maneuver, you may use another template of the same speed instead: either the turn ([Turn Left] or [Turn Right]) of the same direction or the straight ([Straight]) template.",
       },
       slots: [
         'Talent',

@@ -5,10 +5,6 @@ const t: ShipType = {
     en: 'VCX-100 Light Freighter',
     de: 'Leichter VCX-100-Frachter',
     fr: 'Cargo léger VCX-100',
-    it: 'Mercantile Leggero VCX-100',
-    pl: 'Lekki frachtowiec VCX-100',
-    pt: 'Cargueiro Leve VCX-100',
-    zh: 'VCX-100 Light Freighter',
     es: 'Carguero ligero VCX-100',
   },
   xws: 'vcx100lightfreighter',
@@ -78,26 +74,8 @@ const t: ShipType = {
   icon: 'https://sb-cdn.fantasyflightgames.com/ship_types/I_Ghost.png',
   pilots: [
     {
-      name: {
-        en: '"Chopper"',
-        de: '„Chopper"',
-        fr: '"Chopper"',
-        es: '"Chopper"',
-        it: '"Chopper"',
-        pl: '„Chopper"',
-        pt: 'Chopper"',
-        zh: '"Chopper"',
-      },
-      caption: {
-        en: 'Spectre-3',
-        de: 'Spectre-3',
-        fr: 'Spectre-3',
-        es: 'Espectro-3',
-        it: 'Spectre-3',
-        pl: 'Widmo-3',
-        pt: 'Espectro-3',
-        zh: 'Spectre-3',
-      },
+      name: { en: '"Chopper"', de: '„Chopper"' },
+      caption: { en: 'Spectre-3', es: 'Espectro-3' },
       initiative: 2,
       limited: 1,
       cost: 67,
@@ -111,14 +89,6 @@ const t: ShipType = {
           "Au début de la phase d'engagement, chaque vaisseau ennemi à portée 0 gagne 2 marqueurs de brouillage. Artillerie de Poupe : tant que vous avez un vaisseau arrimé, vous bénéficiez d'une arme principale [Rear Arc] avec une valeur d'attaque égale à celle de l'attaque principale [Front Arc] du vaisseau arrimé.",
         es:
           'Al comienzo de la fase de Enfrentamiento, toda nave enemiga que tengas a alcance 0 recibe 2 fichas de Interferencia.',
-        it:
-          "All'inizio della Fase di Ingaggio, ogni nave nemica a gittata 0 ottiene 2 segnalini disturbo.",
-        pl:
-          'Na początku fazy walki każdy wrogi statek w zasięgu 0 otrzymuje 2 żetony zakłócania.',
-        pt:
-          'No início da Fase de Engajamento,cada nave inimiga em alcance 0recebe 2 fichas de interferência.',
-        zh:
-          'At the start of the Engagement Phase, each enemy ship at range 0 gains 2 jam tokens.',
       },
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },
@@ -142,26 +112,8 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Hera Syndulla',
-        de: 'Hera Syndulla',
-        fr: 'Hera Syndulla',
-        es: 'Hera Syndulla',
-        it: 'Hera Syndulla',
-        pl: 'Hera Syndulla',
-        pt: 'Hera Syndulla',
-        zh: 'Hera Syndulla',
-      },
-      caption: {
-        en: 'Spectre-2',
-        de: 'Spectre-2',
-        fr: 'Spectre-2',
-        es: 'Espectro-2',
-        it: 'Spectre-2',
-        pl: 'Widmo-2',
-        pt: 'Espectro-2',
-        zh: 'Spectre-2',
-      },
+      name: { en: 'Hera Syndulla' },
+      caption: { en: 'Spectre-2', es: 'Espectro-2' },
       initiative: 5,
       limited: 1,
       cost: 72,
@@ -175,14 +127,6 @@ const t: ShipType = {
           "Après avoir révélé une manœuvre bleue ou rouge, vous pouvez régler votre cadran sur une autre manœuvre de même difficulté. Artillerie de Poupe : tant que vous avez un vaisseau arrimé, vous bénéficiez d'une arme principale [Rear Arc] avec une valeur d'attaque égale à celle de l'attaque principale [Front Arc] du vaisseau arrimé.",
         es:
           'Después de que reveles una maniobra de color rojo o azul, puedes establecer en tu selector otra maniobra con esa misma dificultad.',
-        it:
-          "Dopo che hai rivelato una manovra rossa o blu, puoi regolare il tuo indicatore su un'altra manovra della stessa difficoltà.",
-        pl:
-          'Po odsłonięciu czerwonego albo niebieskiego manewru, możesz ustawić na tarczy inny manewr o tej samej trudności.',
-        pt:
-          'Após revelar uma manobra vermelha ou azul, você pode rotacionar seu disco para outra manobra de mesma dificuldade.',
-        zh:
-          'After you reveal a red or blue maneuver, you may set your dial to another maneuver of the same difficulty.',
       },
       slots: [
         'Talent',
@@ -202,26 +146,8 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Kanan Jarrus',
-        de: 'Kanan Jarrus',
-        fr: 'Kanan Jarrus',
-        es: 'Kanan Jarrus',
-        it: 'Kanan Jarrus',
-        pl: 'Kanan Jarrus',
-        pt: 'Kanan Jarrus',
-        zh: 'Kanan Jarrus',
-      },
-      caption: {
-        en: 'Spectre-1',
-        de: 'Spectre-1',
-        fr: 'Spectre-1',
-        es: 'Espectro-1',
-        it: 'Spectre-1',
-        pl: 'Widmo-1',
-        pt: 'Espectro-1',
-        zh: 'Spectre-1',
-      },
+      name: { en: 'Kanan Jarrus' },
+      caption: { en: 'Spectre-1', es: 'Espectro-1' },
       initiative: 3,
       limited: 1,
       cost: 76,
@@ -235,14 +161,6 @@ const t: ShipType = {
           "Tant qu'un vaisseau allié situé dans votre arc de tir défend, vous pouvez dépenser 1 [Force]. Dans ce cas, l'attaquant lance 1 dé d'attaque en moins. Artillerie de Poupe : tant que vous avez un vaisseau arrimé, vous bénéficiez d'une arme principale [Rear Arc] avec une valeur d'attaque égale à celle de l'attaque principale [Front Arc] du vaisseau arrimé.",
         es:
           'Mientras una nave aliada situada en tu arco de fuego se defiende, puedes gastar 1 [Force]. Si lo haces, el atacante tira 1 dado de ataque menos.',
-        it:
-          "Mentre una nave amica nel tuo arco di fuoco difende, puoi spendere 1 [Force]. Se lo fai, l'attaccante tira 1 dado di attacco in meno.",
-        pl:
-          'Gdy przyjazny statek w twojej strefie rażenia się broni, możesz wydać 1 [Force]. Jeżeli tak zrobisz, atakujący rzuca 1 kością ataku mniej.',
-        pt:
-          'Quando uma nave amiga em seu arcode tiro defender, você pode gastar 1 [Force].Se você fizer isso, o atacante rola 1 dadode ataque a menos.',
-        zh:
-          'While a friendly ship in your firing arc defends, you may spend 1 [Force]. If you do, the attacker rolls 1 fewer attack die.',
       },
       force: { value: 2, recovers: 1, side: ['light'] },
       slots: [
@@ -268,10 +186,6 @@ const t: ShipType = {
         de: 'Rebell von Lothal',
         fr: 'Rebelle de Lothal',
         es: 'Rebelde de Lothal',
-        it: 'Ribelle di Lothal',
-        pl: 'Rebeliant z Lothal',
-        pt: 'Rebelde de Lothal',
-        zh: 'Lothal Rebel',
       },
       initiative: 2,
       limited: 0,
@@ -286,14 +200,6 @@ const t: ShipType = {
           'Autre réussite commerciale de la Corporation Technique Corellienne, le cargo VCX-100 est plus gros que les légendaires appareils de la série YT, et propose un espace de vie plus volumineux et de meilleures possibilités de personnalisation.',
         es:
           'Otro exitoso diseño de carguero de la Corporación de Ingeniería Corelliana, el VCX-100 es más grande que la ubicua serie YT, por lo que dispone de más espacio para la tripulación y la instalación de mejoras personalizadas.',
-        it:
-          'Il VCX-100, un altro modello di grande successo della Corellian Engineering Corporation, è più grande della diffusissima serie YT e offre spazi interni più ampi e maggiori opzioni di personalizzazione.',
-        pl:
-          'Kolejny udany frachtowiec Corellian Engineering Corporation. VCX-100, jest większy niż wszechobecne modele serii YT, ma większy przedział dla załogi i daje większe pole do modyfikacji.',
-        pt:
-          'Mais um projeto de sucesso de cargueiroda Corellian Engineering Corporation,o VCX-100 é maior que a popular série YT, dispondo de mais espaço interno e maior capacidade de personalização.',
-        zh:
-          'Another successful Corellian Engineering Corporation freighter design, the VCX-100 is larger than the ubiquitous YT-series, boasting more living space and customizability.',
       },
       slots: [
         'Sensor',
@@ -312,29 +218,11 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Alexsandr Kallus',
-        de: 'Alexsandr Kallus',
-        fr: 'Alexsandr Kallus',
-        es: 'Alexsandr Kallus',
-        it: 'Alexsandr Kallus',
-        pl: 'Alexsandr Kallus',
-        pt: 'Alexsandr Kallus',
-        zh: 'Alexsandr Kallus',
-      },
+      name: { en: 'Alexsandr Kallus' },
       xws: 'alexsandrkallus',
       initiative: 4,
       limited: 1,
-      caption: {
-        en: 'Fulcrum',
-        de: 'Fulcrum',
-        fr: 'Fulcrum',
-        es: 'Fulcrum',
-        it: 'Fulcrum',
-        pl: 'Fulcrum',
-        pt: 'Fulcrum',
-        zh: 'Fulcrum',
-      },
+      caption: { en: 'Fulcrum' },
       hyperspace: true,
       epic: true,
       slots: [
@@ -357,14 +245,6 @@ const t: ShipType = {
           "Tant que vous défendez, si l'attaquant a modifié n'importe quel dé d'attaque, vous pouvez lancer 1 dé de défense supplémentaire.",
         es:
           'Mientras te defiendes, si el atacante ha modificado algún dado de ataque, puedes tirar 1 dado de defensa adicional.',
-        it:
-          'While you defend, if the attacker modified any attack dice, you may roll 1 additional defense die.',
-        pl:
-          'While you defend, if the attacker modified any attack dice, you may roll 1 additional defense die.',
-        pt:
-          'While you defend, if the attacker modified any attack dice, you may roll 1 additional defense die.',
-        zh:
-          'While you defend, if the attacker modified any attack dice, you may roll 1 additional defense die.',
       },
       cost: 68,
       ffg: 631,

@@ -1,7 +1,12 @@
 import { ShipType } from '../../../../types';
 
 const t: ShipType = {
-  name: { en: 'C-ROC Cruiser' },
+  name: {
+    en: 'C-ROC Cruiser',
+    de: 'C-ROC-Kreuzer',
+    es: 'Crucero C-ROC',
+    fr: 'Croiseur C-ROC',
+  },
   xws: 'croccruiser',
   size: 'Huge',
   dial: [
@@ -44,10 +49,21 @@ const t: ShipType = {
   },
   pilots: [
     {
-      name: { en: 'Separatist Privateers' },
+      name: {
+        en: 'Separatist Privateers',
+        de: 'Kaperer der Separatisten',
+        es: 'Corsarios separatistas',
+        fr: 'Corsaires Séparatistes',
+      },
       text: {
         en:
           'The Separatist Alliance makes use of all manner of unsavory contacts in its fight against the Galactic Republic, including corsairs and criminal cartels.',
+        de:
+          'Die Allianz der Separatisten bedient sich sämtlicher widerlicher Kontakte in ihrem Kampf gegen die Galaktische Republik, einschließlich Kaperer und krimineller Kartelle.',
+        es:
+          'En su lucha contra la República Galáctica, la Alianza Separatista recurre a todo tipo de aliados de infame reputación, incluidos corsarios y cárteles criminales.',
+        fr:
+          "L'Alliance Séparatiste utilise tous les contacts douteux à sa disposition pour son combat contre la République Galactique, y compris des corsaires et des cartels criminels.",
       },
       initiative: 7,
       engagement: 1,

@@ -1,7 +1,12 @@
 import { ShipType } from '../../../../types';
 
 const t: ShipType = {
-  name: { en: 'C-ROC Cruiser' },
+  name: {
+    en: 'C-ROC Cruiser',
+    de: 'C-ROC-Kreuzer',
+    es: 'Crucero C-ROC',
+    fr: 'Croiseur C-ROC',
+  },
   xws: 'croccruiser',
   size: 'Huge',
   dial: [
@@ -44,10 +49,21 @@ const t: ShipType = {
   },
   pilots: [
     {
-      name: { en: 'Syndicate Smugglers' },
+      name: {
+        en: 'Syndicate Smugglers',
+        de: 'Schmuggler \ndes Syndikats',
+        es: 'Contrabandistas del sindicato',
+        fr: 'Contrebandiers du Syndicat',
+      },
       text: {
         en:
           'Vessels like the C-ROC Cruiser allow criminal operations across the Outer Rim to move massive amounts of illicit materials, or project power that can bully small colonies into compliance.',
+        de:
+          'Schiffe wie der C-ROC-Kreuzer erlauben kriminelle Operationen überall im Outer Rim, bei denen Massen an illegalen Waren transportiert werden, oder Machtdemonstrationen, um kleine Kolonien zu unterdrücken.',
+        es:
+          'Navíos como el crucero C-ROC permiten a las organizaciones criminales del Borde Exterior transportar cantidades ingentes de materiales ilícitos o efectuar demostraciones de fuerza para intimidar a pequeñas colonias.',
+        fr:
+          'Des vaisseaux comme le croiseur C-ROC facilitent les opérations criminelles à travers la Bordure Extérieure, en déplaçant de grandes quantités de matériels illicites ou en faisant étalage de leur puissance pour forcer les petites colonies à coopérer.',
       },
       initiative: 7,
       engagement: 1,

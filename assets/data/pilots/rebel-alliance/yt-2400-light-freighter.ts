@@ -5,10 +5,6 @@ const t: ShipType = {
     en: 'YT-2400 Light Freighter',
     de: 'Leichter YT-2400-Frachter',
     fr: 'Cargo léger YT-2400',
-    it: 'Mercantile Leggero YT-2400',
-    pl: 'Lekki frachtowiec YT-2400',
-    pt: 'Cargueiro Leve YT-2400',
-    zh: 'YT-2400 Light Freighter',
     es: 'Carguero ligero YT-2400',
   },
   xws: 'yt2400lightfreighter',
@@ -79,25 +75,11 @@ const t: ShipType = {
   icon: 'https://sb-cdn.fantasyflightgames.com/ship_types/I_YT-2400.png',
   pilots: [
     {
-      name: {
-        en: '"Leebo"',
-        de: '„Leebo"',
-        fr: '"Leebo"',
-        es: '"Leebo"',
-        it: '"Leebo"',
-        pl: '„Leebo"',
-        pt: '"Leebo"',
-        zh: '"Leebo"',
-      },
+      name: { en: '"Leebo"', de: '„Leebo"' },
       caption: {
         en: 'Dry-Witted Droid',
         de: 'Droide mit trockenem Humor',
-        fr: 'Dry-Witted Droid',
         es: 'Droide sarcástico',
-        it: 'Droide Sarcastico',
-        pl: 'Sarkastyczny droid',
-        pt: 'Droide Zombeteiro',
-        zh: 'Dry-Witted Droid',
       },
       initiative: 3,
       limited: 1,
@@ -112,14 +94,6 @@ const t: ShipType = {
           "Après avoir défendu ou effectué une attaque, si vous avez dépensé un marqueur de calcul, gagnez 1 marqueur de calcul. Angle Mort des Senseurs : tant que vous effectuez une attaque principale à portée d'attaque 0-1, n'appliquez pas le bonus de portée 0-1 et lancez 1 dé d'attaque en moins.",
         es:
           'Después de que te defiendas o efectúes un ataque, si gastaste una ficha de Cálculos, recibes 1 ficha de Cálculos.',
-        it:
-          'Dopo che hai difeso o effettuato un attacco, se hai speso segnalini calcolo, ottieni 1 segnalino calcolo.',
-        pl:
-          'Gdy zakończysz obronę albo atak, jeżeli wydałeś żeton obliczeń, otrzymujesz 1 żeton obliczeń.',
-        pt:
-          'Após defender ou realizar um ataque,se você gastou uma ficha de cálculo,receba 1 ficha de cálculo.',
-        zh:
-          'After you defend or perform an attack, if you spent a calculate token, gain 1 calculate token.',
       },
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },
@@ -142,25 +116,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Dash Rendar',
-        de: 'Dash Rendar',
-        fr: 'Dash Rendar',
-        es: 'Dash Rendar',
-        it: 'Dash Rendar',
-        pl: 'Dash Rendar',
-        pt: 'Dash Rendar',
-        zh: 'Dash Rendar',
-      },
+      name: { en: 'Dash Rendar' },
       caption: {
         en: 'Hotshot Mercenary',
         de: 'Erstklassiger Söldner',
         fr: 'Mercenaire Hors Pair',
         es: 'Hábil mercenario',
-        it: 'Mercenario Testa Calda',
-        pl: 'Narwany najemnik',
-        pt: 'Mercenário Excepcional',
-        zh: 'Hotshot Mercenary',
       },
       initiative: 5,
       limited: 1,
@@ -172,10 +133,6 @@ const t: ShipType = {
         fr:
           "Tant que vous vous déplacez, ignorez les obstacles. Angle Mort des Senseurs : tant que vous effectuez une attaque principale à portée d'attaque 0-1, n'appliquez pas le bonus de portée 0-1 et lancez 1 dé d'attaque en moins.",
         es: 'Mientras te mueves, ignoras los obstáculos.',
-        it: 'Mentre muovi, ignora gli ostacoli.',
-        pl: 'Gdy wykonujesz ruch, ignorujesz przeszkody.',
-        pt: 'Quando você se mover, ignore obstáculos.',
-        zh: 'While you move, you ignore obstacles.',
       },
       slots: [
         'Talent',
@@ -198,10 +155,6 @@ const t: ShipType = {
         de: 'Grenzgänger aus dem Wilden Raum',
         fr: "Frontalier de l'Espace Sauvage",
         es: 'Fronterizo del Espacio Salvaje',
-        it: 'Navigante dello Spazio Inesplorato',
-        pl: 'Pogranicznik z Dzikiej Przestrzeni',
-        pt: 'Marginal do Espaço Selvagem',
-        zh: 'Wild Space Fringer',
       },
       initiative: 1,
       limited: 0,
@@ -216,14 +169,6 @@ const t: ShipType = {
           "Certes, le cargo léger YT-2400 possédait une soute de bonne taille, mais celle-ci était souvent encombrée de systèmes d'armement modifiés et de moteurs énormes.",
         es:
           'Aunque un carguero ligero YT-2400 recién salido de fábrica dispone de mucho espacio para la carga, a menudo se aprovecha ese espacio para instalar sistemas modificados de armamento y motores sobredimensionados.',
-        it:
-          "Anche se i normali mercantili leggeri YT-2400 sono dotati di spazio in abbondanza per la merce, quello spazio viene spesso dedicato all'installazione di armamenti modificati e motori sovradimensionati.",
-        pl:
-          'Choć w standardowej wersji frachtowce YT-2400 mają mnóstwo przestrzeni ładunkowej, bardzo często jest ona wykorzystywana na zmodyfikowane systemy uzbrojenia i większe silniki.',
-        pt:
-          'Apesar de os cargueiros leves YT-2400 de fábrica possuírem um grande espaço de carga, esse espaço geralmente é ocupado por sistemas bélicos modificados e motores turbinados.',
-        zh:
-          'Although stock YT-2400 light freighters have plenty of room for cargo, that space is often annexed to support modified weapon systems and oversized engines.',
       },
       slots: ['Missile', 'Crew', 'Illicit', 'Modification', 'Title', 'Gunner'],
       artwork:

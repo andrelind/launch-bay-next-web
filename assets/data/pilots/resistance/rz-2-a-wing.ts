@@ -5,11 +5,7 @@ const t: ShipType = {
     en: 'RZ-2 A-wing',
     de: 'RZ-2-A-Flügler',
     fr: 'A-wing RZ-2',
-    it: 'Ala-A RZ-2',
-    pl: 'A-wing RZ-2',
-    pt: 'RZ-2 A-wing',
-    zh: 'RZ-2 A-wing',
-    es: 'RZ-2 ala-a',
+    es: 'RZ-2 Ala-A',
   },
   xws: 'rz2awing',
   ffg: 54,
@@ -80,25 +76,12 @@ const t: ShipType = {
   icon: 'https://sb-cdn.fantasyflightgames.com/ship_types/I_RZ-2_A-wing.png',
   pilots: [
     {
-      name: {
-        en: "L'ulo L'ampar",
-        de: "L'ulo L'ampar",
-        fr: "L'ulo L'ampar",
-        es: "L'ulo L'ampar",
-        it: "L'ulo L'ampar",
-        pl: "L'ulo L'ampar",
-        pt: "L'ulo L'ampar",
-        zh: "L'ulo L'ampar",
-      },
+      name: { en: "L'ulo L'ampar" },
       caption: {
         en: 'Luminous Mentor',
         de: 'Strahlender Mentor',
         fr: 'Mentor Éclairé',
         es: 'Mentor luminoso',
-        it: 'Mentore Brillante',
-        pl: 'Jaśniejący mentor',
-        pt: 'Luminous Mentor',
-        zh: 'Luminous Mentor',
       },
       initiative: 5,
       limited: 1,
@@ -113,14 +96,6 @@ const t: ShipType = {
           "Tant que vous défendez ou effectuez une attaque principale, si vous êtes stressé, vous devez lancer 1 dé de défense en moins ou 1 dé d'attaque supplémentaire.",
         es:
           'Mientras te defiendes o efectúas un ataque principal, si estás bajo tensión, debes tirar 1 dado de defensa menos o 1 dado de ataque adicional.',
-        it:
-          'Mentre difendi o effettui un attacco primario, se sei in tensione, devi tirare 1 dado di difesa in meno o 1 dado di attacco aggiuntivo.',
-        pl:
-          'Gdy się bronisz albo wykonujesz atak podstawowy, jeżeli posiadasz żeton stresu, musisz rzucić 1 kością obrony mniej albo 1 dodatkową kością ataku.',
-        pt:
-          'While you defend or perform a primary attack, if you are stressed, you must roll 1 fewer defense die or 1 additional attack die.',
-        zh:
-          'While you defend or perform a primary attack, if you are stressed, you must roll 1 fewer defense die or 1 additional attack die.',
       },
       slots: ['Talent', 'Talent', 'Missile', 'Tech'],
       artwork:
@@ -130,25 +105,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Tallissan Lintra',
-        de: 'Tallissan Lintra',
-        fr: 'Tallissan Lintra',
-        es: 'Tallissan Lintra',
-        it: 'Tallissan Lintra',
-        pl: 'Tallissan Lintra',
-        pt: 'Tallissan Lintra',
-        zh: 'Tallissan Lintra',
-      },
+      name: { en: 'Tallissan Lintra' },
       caption: {
         en: 'Deadly Approach',
         de: 'Tödliches Vorgehen',
         fr: 'Démarche Mortelle',
         es: 'Aproximación letal',
-        it: 'Avanguardia Letale',
-        pl: 'Zabójcze podejście',
-        pt: 'Deadly Approach',
-        zh: 'Deadly Approach',
       },
       initiative: 5,
       limited: 1,
@@ -160,17 +122,9 @@ const t: ShipType = {
         de:
           'Solange ein feindliches Schiff in deinem [Bullseye Arc] einen Angriff durchführt, darfst du 1 [Charge] ausgeben. Falls du das tust, wirft der Verteidiger 1 zusätzlichen Würfel.',
         fr:
-          "Tant qu'un vaisseau ennemi dans votre [Bullseye Arc] effectue une attaque, vous pouvez dépenser 1 [Charge]. Dans ce cas, le défenseur lance 1 dé supplémentaire..",
+          "Tant qu'un vaisseau ennemi dans votre [Bullseye Arc] effectue une attaque, vous pouvez dépenser 1 [Charge]. Dans ce cas, le défenseur lance 1 dé supplémentaire.",
         es:
           'Mientras una nave enemiga situada en tu [Bullseye Arc] efectúa un ataque, puedes gastar 1 [Charge]. Si lo haces, el defensor tira 1 dado adicional.',
-        it:
-          'Mentre una nave nemica nel tuo [Bullseye Arc] effettua un attacco, puoi spendere 1 [Charge]. Se lo fai, il difensore tira 1 dado aggiuntivo.',
-        pl:
-          'Gdy wrogi statek w twojej [Bullseye Arc] wykonuje atak, możesz wydać 1 [Charge]. Jeżeli tak zrobisz, obrońca rzuca 1 dodatkową kością.',
-        pt:
-          'While an enemy ship in your [Bullseye Arc] performs an attack, you may spend 1 [Charge]. If you do, the defender rolls 1 additional die.',
-        zh:
-          'While an enemy ship in your [Bullseye Arc] performs an attack, you may spend 1 [Charge]. If you do, the defender rolls 1 additional die.',
       },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/ee8c3c26ce6432d7581c5f61392597bc.jpg',
@@ -181,25 +135,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Zari Bangel',
-        de: 'Zari Bangel',
-        fr: 'Zari Bangel',
-        es: 'Zari Bangel',
-        it: 'Zari Bangel',
-        pl: 'Zari Bangel',
-        pt: 'Zari Bangel',
-        zh: 'Zari Bangel',
-      },
+      name: { en: 'Zari Bangel' },
       caption: {
         en: 'Aerial Exhibitionist',
         de: 'Flugschau-Pilotin',
         fr: 'Exhibitionniste Aérien',
         es: 'Experta en vuelo acrobático',
-        it: 'Esibizionista Aereo',
-        pl: 'Szpanerka',
-        pt: 'Aerial Exhibitionist',
-        zh: 'Aerial Exhibitionist',
       },
       initiative: 3,
       limited: 1,
@@ -214,14 +155,6 @@ const t: ShipType = {
           'Vous ne sautez pas votre étape « Effectuer une action » après avoir partiellement exécuté une manœuvre.',
         es:
           'Después de que ejecutes parcialmente una maniobra, no omites tu paso de "Realizar una acción".',
-        it:
-          'Dopo che hai eseguito parzialmente una manovra, non saltare il tuo passo "Effettuare l\'Azione".',
-        pl:
-          'Nie pomijasz swojego etapu wykonywania akcji, gdy wykonasz manewr częściowy.',
-        pt:
-          'You do not skip your Perform Action step after you partially execute a maneuver.',
-        zh:
-          'You do not skip your Perform Action step after you partially execute a maneuver.',
       },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/2fe44e1e5496645c16f4d2189a1746e3.jpg',
@@ -231,26 +164,8 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Greer Sonnel',
-        de: 'Greer Sonnel',
-        fr: 'Greer Sonnel',
-        es: 'Greer Sonnel',
-        it: 'Greer Sonnel',
-        pl: 'Greer Sonnel',
-        pt: 'Greer Sonnel',
-        zh: 'Greer Sonnel',
-      },
-      caption: {
-        en: 'Kothan Si',
-        de: 'Kothan Si',
-        fr: 'Kothan Si',
-        es: 'Kothan Si',
-        it: 'Kothan Si',
-        pl: 'Kothan Si',
-        pt: 'Kothan Si',
-        zh: 'Kothan Si',
-      },
+      name: { en: 'Greer Sonnel' },
+      caption: { en: 'Kothan Si' },
       initiative: 4,
       limited: 1,
       cost: 36,
@@ -264,14 +179,6 @@ const t: ShipType = {
           'Après avoir entièrement exécuté une manœuvre, vous pouvez pivoter votre [Single Turret Arc].',
         es:
           'Después de que ejecutes completamente una maniobra, puedes reorientar tu [Single Turret Arc].',
-        it:
-          'Dopo che hai eseguito completamente una manovra, puoi ruotare il tuo segnalatore [Single Turret Arc].',
-        pl:
-          'Gdy wykonasz pełny manewr, możesz obrócić twoją [Single Turret Arc].',
-        pt:
-          'After you fully execute a maneuver, you may rotate your [Single Turret Arc].',
-        zh:
-          'After you fully execute a maneuver, you may rotate your [Single Turret Arc].',
       },
       artwork:
         'https://sb-cdn.fantasyflightgames.com/card_art/84bf1ce21926d4500b54e122da01b162.jpg',
@@ -284,12 +191,7 @@ const t: ShipType = {
       name: {
         en: 'Green Squadron Expert',
         de: 'Elitepilot der \ngrünen Staffel',
-        fr: 'Green Squadron Expert',
         es: 'Experto del Escuadrón Verde',
-        it: 'Esperto della Squadriglia Verde',
-        pl: 'Ekspert Eskadry Zielonych',
-        pt: 'Green Squadron Expert',
-        zh: 'Green Squadron Expert',
       },
       initiative: 3,
       limited: 0,
@@ -304,14 +206,6 @@ const t: ShipType = {
           "Le RZ-2 intègre en série les modifications apportées au fil des ans à son prédécesseur. Les pilotes les plus audacieux considèrent que la meilleure fiabilité de ce modèle les autorise à repousser encore plus les limites de l'appareil.",
         es:
           'Años de modificaciones improvisadas acabaron siendo elementos de serie del diseño del RZ-2, pero para los pilotos más osados, las mejoras en la fiabilidad de la nave no son más que un incentivo para buscar nuevos límites a sus prestaciones.',
-        it:
-          'Il frutto di anni di modifiche e collaudi sul campo si è concretizzato nel modello RZ-2, ma i piloti più temerari vedono nella maggiore affidabilità della nave una sfida a spingere le sue prestazioni verso nuovi limiti.',
-        pl:
-          'W standardowej wersji RZ-2 zawarto wiele modyfikacji wprowadzanych przez lata w warunkach polowych. Jednak dla co odważniejszych pilotów większa niezawodność oznacza, że mogą próbować jeszcze bardziej niebezpiecznych manewrów.',
-        pt:
-          "Years of field-expedient modifications were standardized in the RZ-2 design, but daring pilots see the ship's improved reliability as a challenge to further push the limits of its performance.",
-        zh:
-          "Years of field-expedient modifications were standardized in the RZ-2 design, but daring pilots see the ship's improved reliability as a challenge to further push the limits of its performance.",
       },
       slots: ['Talent', 'Talent', 'Missile', 'Tech'],
       artwork:
@@ -326,10 +220,6 @@ const t: ShipType = {
         de: 'Rekrut der \nblauen Staffel',
         fr: "Recrue de l'Escadron Bleu",
         es: 'Recluta del Escuadrón Azul',
-        it: 'Recluta della Squadriglia Blu',
-        pl: 'Rekrut Eskadry Niebieskich',
-        pt: 'Blue Squadron Recruit',
-        zh: 'Blue Squadron Recruit',
       },
       initiative: 1,
       limited: 0,
@@ -344,14 +234,6 @@ const t: ShipType = {
           "Toute une génération a grandi avec des récits d'exploits héroïques lors de la Guerre Civile Galactique, et nombreux sont ceux qui ont appris à piloter dans les mêmes cockpits qui avaient accueilli leurs parents dans leur combat contre l'Empire.",
         es:
           'Jóvenes de toda la galaxia han crecido escuchando heroicos relatos de la Guerra Civil Galáctica, y muchos de ellos aprendieron a pilotar en las mismas carlingas en las que sus padres combatieron al Imperio.',
-        it:
-          "I giovani di tutta la galassia sono cresciuti ascoltando le storie degli atti eroici della Guerra Civile Galattica e molti di loro hanno imparato a volare negli stessi abitacoli in cui i loro genitori combatterono contro l'Impero.",
-        pl:
-          'Wielu pilotów wyrosło na opowieściach o bohaterach Galaktycznej Wojny Domowej, a niektórzy nawet uczyli się latać w tych samych kokpitach, w których ich rodzice walczyli z Imperium.',
-        pt:
-          'Young beings across the galaxy have grown up on tales of heroism in the Galactic Civil War, and many learned to fly in the same cockpits from which their parents fought the Empire.',
-        zh:
-          'Young beings across the galaxy have grown up on tales of heroism in the Galactic Civil War, and many learned to fly in the same cockpits from which their parents fought the Empire.',
       },
       slots: ['Talent', 'Missile', 'Tech'],
       artwork:
@@ -361,16 +243,7 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Zizi Tlo',
-        de: 'Zizi Tlo',
-        fr: 'Zizi Tlo',
-        es: 'Zizi Tlo',
-        it: 'Zizi Tlo',
-        pl: 'Zizi Tlo',
-        pt: 'Zizi Tlo',
-        zh: 'Zizi Tlo',
-      },
+      name: { en: 'Zizi Tlo' },
       initiative: 5,
       limited: 1,
       cost: 41,
@@ -384,14 +257,6 @@ const t: ShipType = {
           "Après avoir défendu ou effectué une attaque, vous pouvez dépenser 1 [Charge] pour gagner 1 marqueur de concentration ou d'évasion.",
         es:
           'Después de que te defiendas o efectúes un ataque, puedes gastar 1 [Charge] para recibir 1 ficha de Concentración o de Evasión.',
-        it:
-          'After you defend or perform an attack, you may spend 1 [Charge] to gain 1 focus or evade token.',
-        pl:
-          'After you defend or perform an attack, you may spend 1 [Charge] to gain 1 focus or evade token.',
-        pt:
-          'After you defend or perform an attack, you may spend 1 [Charge] to gain 1 focus or evade token.',
-        zh:
-          'After you defend or perform an attack, you may spend 1 [Charge] to gain 1 focus or evade token.',
       },
       charges: { value: 1, recovers: 1 },
       slots: ['Talent', 'Talent', 'Missile', 'Tech'],
@@ -403,23 +268,10 @@ const t: ShipType = {
         de: 'Engagierte Widerstandskämpferin',
         fr: 'Dévoué à la Cause',
         es: 'Comprometida con la causa',
-        it: 'Committed to the Cause',
-        pl: 'Committed to the Cause',
-        pt: 'Committed to the Cause',
-        zh: 'Committed to the Cause',
       },
     },
     {
-      name: {
-        en: 'Ronith Blario',
-        de: 'Ronith Blario',
-        fr: 'Ronith Blario',
-        es: 'Ronith Blario',
-        it: 'Ronith Blario',
-        pl: 'Ronith Blario',
-        pt: 'Ronith Blario',
-        zh: 'Ronith Blario',
-      },
+      name: { en: 'Ronith Blario' },
       initiative: 2,
       limited: 1,
       cost: 34,
@@ -433,14 +285,6 @@ const t: ShipType = {
           "Tant que vous défendez ou effectuez une attaque, si le vaisseau ennemi est dans l' [Single Turret Arc] d'un autre vaisseau allié, vous pouvez dépenser 1 marqueur de concentration de ce vaisseau allié pour changer 1 de vos résultats [Focus] en un résultat [Evade] ou [Hit].",
         es:
           'Mientras te defiendes o efectúas un ataque, si la nave enemiga se halla en el [Single Turret Arc] de otra nave aliada, puedes gastar 1 ficha de Concentración de esa nave aliada para cambiar 1 de tus resultados [Focus] por un resultado [Evade] o [Hit] .',
-        it:
-          "While you defend or perform an attack, if the enemy ship is in another friendly ship's [Single Turret Arc], you may spend 1 focus token from that friendly ship to change 1 of your [Focus] results to an [Evade] or [Hit] result.",
-        pl:
-          "While you defend or perform an attack, if the enemy ship is in another friendly ship's [Single Turret Arc], you may spend 1 focus token from that friendly ship to change 1 of your [Focus] results to an [Evade] or [Hit] result.",
-        pt:
-          "While you defend or perform an attack, if the enemy ship is in another friendly ship's [Single Turret Arc], you may spend 1 focus token from that friendly ship to change 1 of your [Focus] results to an [Evade] or [Hit] result.",
-        zh:
-          "While you defend or perform an attack, if the enemy ship is in another friendly ship's [Single Turret Arc], you may spend 1 focus token from that friendly ship to change 1 of your [Focus] results to an [Evade] or [Hit] result.",
       },
       slots: ['Talent', 'Missile', 'Tech'],
       hyperspace: true,
@@ -451,22 +295,29 @@ const t: ShipType = {
         de: 'Unerfahrener Draufgänger',
         fr: 'Débutant Inconscient',
         es: 'Novato temerario',
-        it: 'Reckless Rookie',
-        pl: 'Reckless Rookie',
-        pt: 'Reckless Rookie',
-        zh: 'Reckless Rookie',
       },
     },
     {
       xws: 'merlcobben',
       name: { en: 'Merl Cobben' },
-      caption: { en: 'Distracting Daredevil' },
+      caption: {
+        en: 'Distracting Daredevil',
+        de: 'Verwirrender Draufgänger',
+        es: 'Osado señuelo',
+        fr: 'Perturbateur Casse-Cou',
+      },
       cost: 32,
       initiative: 1,
       limited: 1,
       ability: {
         en:
           "While a friendly ship at range 0-2 performs a primary attack, if you are in the defender's [Bullseye Arc], the defender rolls 1 fewer defense die.",
+        de:
+          'Solange ein befreundetes Schiff in Reichweite 0-2 einen Primärangriff durchführt, falls du im [Bullseye Arc] des Verteidigers bist, wirft der Verteidiger 1 Verteidigungswürfel weniger. Optimierte Gyrostabilisatoren: Du kannst deinen [Single Turret Arc]-Anzeiger nur auf deinen [Front Arc]- oder [Rear Arc] rotieren. Nachdem du eine Aktion durchgeführt hast, darfst du eine rote [Boost]- oder eine rote [Rotate Arc]-Aktion durchführen.',
+        es:
+          'Mientras una nave aliada que tienes a alcance 0-2 efectúa un ataque principal, si estás situado en el [Bullseye Arc] del defensor, ese defensor tira 1 dado de defensa menos.',
+        fr:
+          "Tant qu'un vaisseau allié à portée 0-2 effectue une attaque principale, si vous êtes dans le [Bullseye Arc] du défenseur, ce dernier lance 1 dé de défense en moins.",
       },
       slots: ['Talent', 'Missile', 'Tech'],
       hyperspace: true,
@@ -476,13 +327,24 @@ const t: ShipType = {
     {
       xws: 'suralindajavos',
       name: { en: 'Suralinda Javos' },
-      caption: { en: 'Inquisitive Journalist' },
+      caption: {
+        en: 'Inquisitive Journalist',
+        de: 'Neugierige Journalistin',
+        es: 'Periodista inquisitiva',
+        fr: 'Journaliste Curieuse',
+      },
       cost: 35,
       initiative: 3,
       limited: 1,
       ability: {
         en:
           'After you partially execute a maneuver, you may gain 1 strain token to rotate 90˚ or 180˚.',
+        de:
+          'Nachdem du ein Manöver teilweise ausgeführt hast, darfst du 1 Anstrengungsmarker erhalten, um dich um 90˚ oder 180˚ zu drehen. Optimierte Gyrostabilisatoren: Du kannst deinen [Single Turret Arc]-Anzeiger nur auf deinen [Front Arc]- oder [Rear Arc] rotieren. Nachdem du eine Aktion durchgeführt hast, darfst du eine rote [Boost]- oder eine rote [Rotate Arc]-Aktion durchführen.',
+        es:
+          'Después de que ejecutes parcialmente una maniobra puedes recibir 1 ficha de Sobresfuerzo para girarte 90˚ o 180˚.',
+        fr:
+          'Après avoir partiellement exécuté une manœuvre, vous pouvez gagner 1 marqueur de contrainte pour pivoter de 90° ou 180°.',
       },
       slots: ['Talent', 'Talent', 'Missile', 'Tech'],
       hyperspace: true,
@@ -491,14 +353,25 @@ const t: ShipType = {
     },
     {
       xws: 'wrobietyce',
-      name: { en: 'Wrobie Tyce' },
-      caption: { en: 'Dynamic Aerialist' },
+      name: { en: 'Wrobie Tyce', es: 'Tyce Wrobie', fr: 'Tyce Wrobie' },
+      caption: {
+        en: 'Dynamic Aerialist',
+        de: 'Dynamische Luftakrobatin',
+        es: 'Artista de las acrobacias',
+        fr: 'Acrobate Dynamique',
+      },
       cost: 35,
       initiative: 4,
       limited: 1,
       ability: {
         en:
           'After you defend at attack range 1, if the attacker modified its dice, the attacker gains 1 deplete token.',
+        de:
+          'Nachdem du in Angriffsreichweite 1 verteidigt hast, falls der Angreifer seine Würfel modifiziert hat, erhält der Angreifer 1 Erschöpfungsmarker. Optimierte Gyrostabilisatoren: Du kannst deinen [Single Turret Arc]-Anzeiger nur auf deinen [Front Arc]- oder [Rear Arc] rotieren. Nachdem du eine Aktion durchgeführt hast, darfst du eine rote [Boost]- oder eine rote [Rotate Arc]-Aktion durchführen.',
+        es:
+          'Después de que te defiendas a alcance de ataque 1, si el atacante ha modificado sus dados, ese atacante recibe 1 ficha de Merma.',
+        fr:
+          "Après que vous avez défendu à portée d'attaque 1, si l'attaquant a modifié ses dés, il gagne un marqueur d'épuisement.",
       },
       slots: ['Talent', 'Talent', 'Missile', 'Tech'],
       hyperspace: true,
@@ -506,8 +379,13 @@ const t: ShipType = {
       ffg: 702,
     },
     {
-      name: { en: 'Seftin Vanik' },
-      caption: { en: 'Skillful Wingmate' },
+      name: { en: 'Seftin Vanik', es: 'Vanik Septin', fr: 'Vanik Septin' },
+      caption: {
+        en: 'Skillful Wingmate',
+        de: 'Geschickter Flügelmann',
+        es: 'Hábil compañero de ala',
+        fr: 'Ailier Compétent',
+      },
       initiative: 5,
       limited: 1,
       cost: 37,
@@ -515,6 +393,12 @@ const t: ShipType = {
       ability: {
         en:
           'After you perform a [Boost] action, you may transfer 1 evade token to a friendly ship at range 1.',
+        de:
+          'Nachdem du eine [Boost]-Aktion durchgeführt hast, darfst du 1 Ausweichmarker auf ein befreundetes Schiff in Reichweite 1 transferieren. Optimierte Gyrostabilisatoren: Du kannst deinen [Single Turret Arc]-Anzeiger nur auf deinen [Front Arc]- oder [Rear Arc] rotieren. Nachdem du eine Aktion durchgeführt hast, darfst du eine rote [Boost]- oder eine rote [Rotate Arc]-Aktion durchführen.',
+        es:
+          'Después de que realices una acción [Boost], puedes transferir 1 ficha de Evasión a una nave aliada que tengas a alcance 1.',
+        fr:
+          "Après avoir effectué une action [Boost], vous pouvez transférer 1 marqueur d'évasion à un vaisseau allié à portée 1.",
       },
       slots: ['Talent', 'Talent', 'Missile', 'Tech'],
       hyperspace: true,

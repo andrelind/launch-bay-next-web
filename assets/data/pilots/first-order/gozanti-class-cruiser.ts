@@ -1,7 +1,12 @@
 import { ShipType } from '../../../../types';
 
 const t: ShipType = {
-  name: { en: 'Gozanti-class Cruiser' },
+  name: {
+    en: 'Gozanti-class Cruiser',
+    de: 'Kreuzer der Gozanti-Klasse',
+    es: 'Crucero clase Gozanti',
+    fr: 'Croiseur de Classe Gozanti',
+  },
   xws: 'gozanticlasscruiser',
   size: 'Huge',
   dial: [
@@ -38,10 +43,21 @@ const t: ShipType = {
   },
   pilots: [
     {
-      name: { en: 'First Order Sympathizers' },
+      name: {
+        en: 'First Order Sympathizers',
+        de: 'Sympathisanten der Ersten Ordnung',
+        es: 'Simpatizantes de la Primera Orden',
+        fr: 'Sympathisants du Premier Ordre',
+      },
       text: {
         en:
           "The First Order's swift rise to power rests upon ruthless innovation. However, sympathizers often repurpose Imperial designs, like the venerable Gozanti-class cruiser, in surveillance and patrol operations.",
+        de:
+          'Der rasche Aufstieg der Ersten Ordnung zur Macht beruht auf gnadenloser Innovation. Allerdings funktionieren ihre Sympathisanten häufig Imperiale Schiffe für Überwachungen und Patroullien um, wie die altehrwürdigen Kreuzer der Gozanti-Klasse.',
+        es:
+          'A pesar de que el rápido ascenso al poder de la Primera Orden ha sido gracias a su despiadada innovación, sus simpatizantes suelen reutilizar diseños imperiales, como el del venerable crucero clase Gozanti, para operaciones de patrulla y vigilancia.',
+        fr:
+          'La montée rapide au pouvoir du Premier Ordre se base sur une innovation féroce. Cependant, des sympathisants réutilisent régulièrement des concepts Impériaux, comme ce croiseur ancestral de classe Gozanti, pour des opérations de surveillance ou de patrouille.',
       },
       initiative: 7,
       engagement: 1,

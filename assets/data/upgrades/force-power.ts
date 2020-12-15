@@ -11,10 +11,6 @@ const t: UpgradeBase[] = [
           de: 'Geschärfte Sinne',
           fr: 'Perception Renforcée',
           es: 'Percepción agudizada',
-          it: 'Percezione Ampliata',
-          pl: 'Wyczulone zmysły',
-          pt: 'Percepção Aguçada',
-          zh: '提高洞察力',
         },
         type: 'Force Power',
         ability: {
@@ -26,14 +22,6 @@ const t: UpgradeBase[] = [
             'Al comienzo de la fase de Enfrentamiento, puedes gastar 1 [Force]. Si lo haces, en esta fase intervienes con Iniciativa 7 en vez de tu valor de Iniciativa normal.',
           fr:
             "Au début de la phase d'engagement, vous pouvez dépenser 1 [Force]. Dans ce cas, pendant cette phase, engagez-vous à l'initiative 7 au lieu de le faire à votre valeur d'initiative standard.",
-          it:
-            "All'inizio della Fase di Ingaggio, puoi spendere 1 [Force]. Se lo fai, ingaggia a iniziativa 7 (invece che al tuo valore di iniziativa standard) per questa fase.",
-          pl:
-            'Na początku fazy walki możesz wydać 1 [Force]. Jeżeli tak zrobisz, w tej fazie walczysz z inicjatywą 7 zamiast twojej normalnej wartości inicjatywy.',
-          pt:
-            'No início da Fase de Engajamento,você pode gastar 1 [Force]. Se fizer isso, engaje em iniciativa 7 nesta fase em vez do seu valor de iniciativa normal.',
-          zh:
-            '在交战阶段开始时，你可以花费1[Force]。如果你如此做，则本阶段交战时视你的先攻值为7，取代你的基础先攻值。',
         },
         slots: ['Force Power'],
         artwork:
@@ -55,10 +43,6 @@ const t: UpgradeBase[] = [
           de: 'Instinktives Zielen',
           fr: 'Visée Instinctive',
           es: 'Puntería instintiva',
-          it: 'Mira Istintiva',
-          pl: 'Instynktowne celowanie',
-          pt: 'Mira Instintiva',
-          zh: '天生狙击手',
         },
         type: 'Force Power',
         ability: {
@@ -70,14 +54,6 @@ const t: UpgradeBase[] = [
             'Mientras efectúas un ataque especial, puedes gastar 1 [Force] para ignorar el requisito [Focus] o [Lock].',
           fr:
             'Tant que vous effectuez une attaque spéciale, vous pouvez dépenser 1 [Force] pour ignorer le prérequis [Focus] ou [Lock].',
-          it:
-            'Mentre effettui un attacco speciale, puoi spendere 1 [Force] per ignorare i requisiti [Focus] o [Lock].',
-          pl:
-            'Gdy wykonujesz atak specjalny, możesz wydać 1 [Force], aby zignorować wymóg [Focus] albo [Lock].',
-          pt:
-            'Quando realizar um ataqueespecial, você pode gastar1 [Force] para ignorar orequisito [Focus] ou [Lock].',
-          zh:
-            '当你执行一次特殊攻击时，你可以花费1[Force]来无视要求中的[Focus]或[Lock]。',
         },
         slots: ['Force Power'],
         artwork:
@@ -94,16 +70,7 @@ const t: UpgradeBase[] = [
     xws: 'sense',
     sides: [
       {
-        title: {
-          en: 'Sense',
-          de: 'Gespür',
-          fr: 'Sens',
-          es: 'Sentir',
-          it: 'Percezione della Forza',
-          pl: 'Wyczucie',
-          pt: 'Pressentimento',
-          zh: '感知',
-        },
+        title: { en: 'Sense', de: 'Gespür', fr: 'Sens', es: 'Sentir' },
         type: 'Force Power',
         ability: {
           en:
@@ -114,14 +81,6 @@ const t: UpgradeBase[] = [
             'Durante la fase de Sistemas, puedes elegir 1 nave que tengas a alcance 0-1 y mirar su selector de maniobras. Si gastas 1 [Force], en vez de eso puedes elegir una nave que tengas a alcance 0-3.',
           fr:
             'Pendant la phase de système, vous pouvez choisir 1 vaisseau à portée 0-1 et regarder son cadran. Si vous dépensez 1 [Force], vous pouvez choisir un vaisseau à portée 0-3 à la place.',
-          it:
-            'Durante la Fase di Sistema, puoi scegliere 1 nave a gittata 0-1 e guardare il suo indicatore. Se spendi 1 [Force], puoi invece scegliere 1 nave a gittata 0-3.',
-          pl:
-            'W fazie systemowej możesz wskazać 1 statek w zasięgu 0-1 i podejrzeć jego tarczę mnewrów. Jeżeli wydasz 1 [Force], możesz zamiast tego wskazać statek w zasięgu 0-3.',
-          pt:
-            'Durante a Fase de Sistema, vocêpode escolher 1 nave em alcance 0-1 e olhar o disco dela. Se gastar 1 [Force], você pode escolher, em vez disso,uma nave em alcance 0-3.',
-          zh:
-            '在系统阶段，你可以选择1架距离0~1的战机并查看其操作盘。如果花费1[Force]，则你可以改为选择1架距离0~3的战机。',
         },
         slots: ['Force Power'],
         artwork:
@@ -143,10 +102,6 @@ const t: UpgradeBase[] = [
           de: 'Übernatürliche Reflexe',
           fr: 'Réflexes Surnaturels',
           es: 'Reflejos sobrenaturales',
-          it: 'Riflessi Soprannaturali',
-          pl: 'Nadnaturalny refleks',
-          pt: 'Reflexos Sobrenaturais',
-          zh: '超自然反射',
         },
         type: 'Force Power',
         ability: {
@@ -158,14 +113,6 @@ const t: UpgradeBase[] = [
             'Antes de que te actives, puedes gastar 1 [Force] para realizar una acción [Barrel Roll] o [Boost]. Luego, si la acción que has realizado no figura en tu barra de acciones, sufres 1 de daño [Hit].',
           fr:
             "Avant votre activation, vous pouvez dépenser 1 [Force] pour effectuer une action [Barrel Roll] ou [Boost]. Puis, si vous avez effectué une action qui n'est pas dans votre barre d'action, subissez 1 dégât [Hit].",
-          it:
-            "Prima di attivarti, puoi spendere 1 [Force] per effettuare 1 azione [Barrel Roll] o [Boost]. Poi, se lo fai e non possiedi l'azione effettuata nella barra delle azioni,subisci 1 danno [Hit].",
-          pl:
-            'Zanim się aktywujesz, możesz wydać 1 [Force], aby wykonać akcję [Barrel Roll] albo [Boost].Następnie, jeżeli wykonałeś akcję, której nie masz na swoim pasku akcji, przyjmujesz 1 uszkodzenie [Hit].',
-          pt:
-            'Antes de ativar, você podegastar 1 [Force] para realizar umaação [Barrel Roll] ou [Boost]. Então, se você realizou uma ação que não está emsua barra de ações, sofra 1 dano [Hit].',
-          zh:
-            '在你执行启动之前，你可以花费1[Force]来执行1个[Barrel Roll]或[Boost]行动。 然后，如果你执行的行动不在你的行动条上，承受1[Hit]伤害。',
         },
         slots: ['Force Power'],
         artwork:
@@ -191,10 +138,6 @@ const t: UpgradeBase[] = [
           de: 'Brilliantes Ausweichmanöver',
           fr: 'As de la Manœuvre',
           es: 'Evasión impecable',
-          it: 'Schivata Mirabolante',
-          pl: 'Doskonały unik',
-          pt: 'Brilliant Evasion',
-          zh: 'Brilliant Evasion',
         },
         type: 'Force Power',
         ability: {
@@ -206,14 +149,6 @@ const t: UpgradeBase[] = [
             'Mientras te defiendes, si no estás situado en el [Bullseye Arc] del atacante, puedes gastar 1 [Force] para cambiar 2 de tus resultados [Focus] por resultados [Evade] .',
           fr:
             "Tant que vous défendez, si vous n'êtes pas dans le [Bullseye Arc] de l'attaquant, vous pouvez dépenser 1 [Force] pour changer 2 de vos résultats [Focus] en résultats [Evade].",
-          it:
-            "Mentre difendi, se non sei nel [Bullseye Arc] dell'attaccante, puoi spendere 1 [Force] per cambiare 2 tuoi risultati [Focus] in risultati [Evade].",
-          pl:
-            'Gdy się bronisz i nie znajdujesz się w [Bullseye Arc] atakującego, możesz wydać 1 [Force], aby zmienić 2 z twoich wyników [Focus] na wyniki [Evade] .',
-          pt:
-            "While you defend, if you are not in the attacker's [Bullseye Arc], you may spend 1 [Force] to change 2 of your [Focus] results to [Evade] results.",
-          zh:
-            "While you defend, if you are not in the attacker's [Bullseye Arc], you may spend 1 [Force] to change 2 of your [Focus] results to [Evade] results.",
         },
         slots: ['Force Power'],
         ffg: 536,
@@ -228,16 +163,7 @@ const t: UpgradeBase[] = [
     xws: 'hate',
     sides: [
       {
-        title: {
-          en: 'Hate',
-          de: 'Hass',
-          fr: 'Haine',
-          es: 'Odio',
-          it: 'Odio',
-          pl: 'Nienawiść',
-          pt: 'Hate',
-          zh: 'Hate',
-        },
+        title: { en: 'Hate', de: 'Hass', fr: 'Haine', es: 'Odio' },
         type: 'Force Power',
         ability: {
           en: 'After you suffer 1 or more damage, recover that many [Force].',
@@ -247,12 +173,6 @@ const t: UpgradeBase[] = [
             'Después de que sufras 1 o más de daño, recuperas esa misma cantidad de [Force].',
           fr:
             'Après avoir subi 1 ou plusieurs dégâts, récupérez autant de [Force].',
-          it:
-            'Dopo che hai subito 1 o più danni, recupera un pari ammontare di [Force].',
-          pl:
-            'Gdy przyjmiesz 1 albo więcej uszkodzeń, odzyskujesz tyle samo [Force].',
-          pt: 'After you suffer 1 or more damage, recover that many [Force].',
-          zh: 'After you suffer 1 or more damage, recover that many [Force].',
         },
         slots: ['Force Power'],
         artwork:
@@ -288,10 +208,6 @@ const t: UpgradeBase[] = [
           de: 'Vorausschauender Schuss',
           fr: 'Tir Prophétique',
           es: 'Tiro predictivo',
-          it: 'Colpo Precognitivo',
-          pl: 'Strzał wyprzedzający',
-          pt: 'Predictive Shot',
-          zh: 'Predictive Shot',
         },
         type: 'Force Power',
         ability: {
@@ -303,14 +219,6 @@ const t: UpgradeBase[] = [
             'Después de que declares un ataque, si el defensor está en tu [Bullseye Arc], puedes gastar 1 [Force]. Si lo haces, durante el paso de "Tirar dados de defensa", el defensor no puede tirar más dados de defensa que la cantidad total de tus resultados [Hit]/[Critical Hit].',
           fr:
             "Après avoir déclaré une attaque, si le défenseur est dans votre [Bullseye Arc], vous pouvez dépenser 1 [Force]. Dans ce cas, lors de l'étape « Lancez les dés de défense », le défenseur ne peut pas lancer plus de dés de défense que le nombre de vos résultats [Hit]/[Critical Hit].",
-          it:
-            'Dopo che hai dichiarato un attacco, se il difensore è nel tuo [Bullseye Arc], puoi spendere 1 [Force]. Se lo fai, durante il passo "Tirare i Dadi di Difesa", il difensore non può tirare più dadi di difesa del numero di tuoi risultati [Hit]/[Critical Hit].',
-          pl:
-            'Gdy zadeklarujesz atak, a obrońca znajduje się w twojej [Bullseye Arc], możeszwydać 1 [Force]. Jeżeli tak zrobisz,w etapie rzutów kośćmi obrony obrońca nie może rzucić większą liczbąkości obrony niż liczba twoichwyników [Hit]/[Critical Hit].',
-          pt:
-            'After you declare an attack, if the defender is in your [Bullseye Arc], you may spend 1 [Force]. If you do, during the Roll Defense Dice step, the defender cannot roll more defense dice than the number of your [Hit]/[Critical Hit] results.',
-          zh:
-            'After you declare an attack, if the defender is in your [Bullseye Arc], you may spend 1 [Force]. If you do, during the Roll Defense Dice step, the defender cannot roll more defense dice than the number of your [Hit]/[Critical Hit] results.',
         },
         slots: ['Force Power'],
         artwork:
@@ -332,10 +240,6 @@ const t: UpgradeBase[] = [
           de: 'Kampfmeditation',
           fr: 'Méditation de Bataille',
           es: 'Meditación de batalla',
-          it: 'Meditazione da Battaglia',
-          pl: 'Medytacja bitewna',
-          pt: 'Battle Meditation',
-          zh: 'Battle Meditation',
         },
         type: 'Force Power',
         ability: {
@@ -347,14 +251,6 @@ const t: UpgradeBase[] = [
             'No puedes coordinar naves limitadas. Mientras realizas una acción [Coordinate] violeta, puedes coordinar 1 nave aliada que no sea limitada adicional del mismo tipo. Ambas naves deben realizar la misma acción.',
           fr:
             'Vous ne pouvez pas coordonner des vaisseaux limités. Tant que vous effectuez une action [Coordinate] violette, vous pouvez coordonner 1 vaisseau allié non-limité supplémentaire du même type. Les deux vaisseaux doivent effectuer la même action.',
-          it:
-            "Non puoi coordinare le navi limitate. Mentre effettui un'azione [Coordinate] viola, puoi coordinare 1 nave non limitata amica aggiuntiva dello stesso tipo. Entrambe le navi devono effettuare la stessa azione.",
-          pl:
-            'Nie możesz koordynować limitowanych statków. Gdy wykonujesz fioletową akcję [Coordinate], możesz skoordynować 1 dodatkowy, przyjazny, nie limitowany statek tego samego rodzaju. Oba statki muszą wykonać tę samą akcję.',
-          pt:
-            'You cannot coordinate limited ships. While you perform a purple [Coordinate] action, you may coordinate 1 additional friendly non-limited ship of the same type. Both ships must perform the same action.',
-          zh:
-            'You cannot coordinate limited ships. While you perform a purple [Coordinate] action, you may coordinate 1 additional friendly non-limited ship of the same type. Both ships must perform the same action.',
         },
         slots: ['Force Power'],
         grants: [
@@ -381,10 +277,6 @@ const t: UpgradeBase[] = [
           de: 'Vorausahnung',
           fr: 'Clairvoyance',
           es: 'Intuición premonitoria',
-          it: 'Foresight',
-          pl: 'Przezorność',
-          pt: 'Foresight',
-          zh: 'Foresight',
         },
         type: 'Force Power',
         ability: {
@@ -396,14 +288,6 @@ const t: UpgradeBase[] = [
             'Después de que una nave enemiga ejecute una maniobra, puedes gastar 1 [Force] para efectuar este ataque contra esa nave como un ataque adicional. Ataque: Puedes cambiar 1 resultado [Focus] por un resultado [Hit] ; tus dados no pueden ser modificados de ninguna otra manera.',
           fr:
             "Après qu'un vaisseau ennemi a exécuté une manœuvre, vous pouvez dépenser 1 [Force] pour effectuer cette attaque contre lui en tant qu'attaque bonus. Attaque : vous pouvez changer\n1 résultat [Focus] en un résultat [Hit] ; vos dés ne peuvent pas être modifiés autrement.",
-          it:
-            'After an enemy ship executes a maneuver, you may spend 1 [Force] to perform this attack against it as a bonus attack. Attack: You may change 1 [Focus] result to a [Hit] result; your dice cannot be modified otherwise.',
-          pl:
-            'Gdy wrogi statek wykona manewr, możesz wydać 1 [Force], aby wykonać przeciwko niemu poniższy atak jako dodatkowy atak. Atak: Możesz zmienić 1 wynik [Focus] na wynik [Hit]; twoje kości nie mogą być modyfikowane w inny sposób.',
-          pt:
-            'After an enemy ship executes a maneuver, you may spend 1 [Force] to perform this attack against it as a bonus attack. Attack: You may change 1 [Focus] result to a [Hit] result; your dice cannot be modified otherwise.',
-          zh:
-            'After an enemy ship executes a maneuver, you may spend 1 [Force] to perform this attack against it as a bonus attack. Attack: You may change 1 [Focus] result to a [Hit] result; your dice cannot be modified otherwise.',
         },
         slots: ['Force Power'],
         attack: {
@@ -430,10 +314,6 @@ const t: UpgradeBase[] = [
           de: 'Hellseherische Reflexe',
           fr: 'Réflexes Prémonitoires',
           es: 'Reflejos precognitivos',
-          it: 'Precognitive Reflexes',
-          pl: 'Proroczy refleks',
-          pt: 'Precognitive Reflexes',
-          zh: 'Precognitive Reflexes',
         },
         type: 'Force Power',
         ability: {
@@ -445,14 +325,6 @@ const t: UpgradeBase[] = [
             'Después de que reveles tu selector, puedes gastar 1 [Force] para realizar una acción [Barrel Roll] o [Boost] . Luego, si has realizado una acción que no figura en tu barra de acciones, recibes 1 ficha de Sobresfuerzo. Si haces esto, no puedes realizar ninguna otra acción durante tu activación.',
           fr:
             "Après avoir révélé votre cadran, vous pouvez dépenser 1 [Force] pour effectuer une action [Barrel Roll] ou [Boost]. Puis, si vous avez effectué une action qui n'est pas dans votre barre d'action, gagnez 1 marqueur de contrainte. Si vous agissez ainsi, vous ne pouvez pas effectuer d'autre action pendant votre activation.",
-          it:
-            'After you reveal your dial, you may spend 1 [Force] to perform a [Barrel Roll] or [Boost] action. Then, if you performed an action you do not have on your action bar, gain 1 strain token. If you do, you cannot perform another action during your activation.',
-          pl:
-            'Gdy odsłonisz swoją tarczę manewrów, możesz wydać 1 [Force], aby wykonać akcję [Barrel Roll] albo [Boost]. Następnie, jeżeli wykonałeś akcję, której nie masz na swoim pasku akcji, otrzymujesz 1 żeton przeciążenia. Jeżeli tak zrobisz, nie możesz już wykonać kolejnej akcji podczas swojej aktywacji.',
-          pt:
-            'After you reveal your dial, you may spend 1 [Force] to perform a [Barrel Roll] or [Boost] action. Then, if you performed an action you do not have on your action bar, gain 1 strain token. If you do, you cannot perform another action during your activation.',
-          zh:
-            'After you reveal your dial, you may spend 1 [Force] to perform a [Barrel Roll] or [Boost] action. Then, if you performed an action you do not have on your action bar, gain 1 strain token. If you do, you cannot perform another action during your activation.',
         },
         slots: ['Force Power'],
         ffg: 614,
@@ -472,11 +344,17 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     sides: [
       {
-        title: { en: 'Patience' },
+        title: { en: 'Patience', de: 'Geduld', es: 'Paciencia' },
         type: 'Force Power',
         ability: {
           en:
             'At the start of the Engagement Phase, if there is an enemy ship in your [Front Arc], you may gain 1 deplete token to recover 1 [Force].',
+          de:
+            'Zu Beginn der Kampfphase, falls ein feindliches Schiff in deinem [Front Arc] ist, darfst du 1 Erschöpfungsmarker erhalten, um 1 [Force] wiederherzustellen.',
+          es:
+            'Al comienzo de la fase de Enfrentamiento, si hay alguna nave enemiga situada en tu [Front Arc], puedes recibir 1 ficha de Merma para recuperar 1 [Force].',
+          fr:
+            "Au début de la phase d'engagement, s'il y a un vaisseau ennemi dans votre [Front Arc], vous pouvez gagner 1 marqueur d'épuisement pour récupérer 1 [Force].",
         },
         slots: ['Force Power'],
         ffg: 849,
@@ -496,8 +374,19 @@ const t: UpgradeBase[] = [
         ability: {
           en:
             'While you perform a [Boost] action, you may spend 1 [Force] to use the turn ([Turn Left] or [Turn Right]) template instead.',
+          de:
+            'Solange du eine [Boost]-Aktion durchführst, darfst du 1  [Force]ausgeben, um stattdessen die ([Turn Left] oder [Turn Right])-Schablone zu verwenden.',
+          es:
+            'Mientras realizas una acción [Boost] , puedes gastar 1 [Force] para usar la plantilla de giro ([Turn Left] o [Turn Right]) en vez de las normales para esta acción.',
+          fr:
+            'Tant que vous effectuez une action [Boost], vous pouvez dépenser 1 [Force] pour utiliser le gabarit de virage ([Turn Left] ou [Turn Right]) à la place.',
         },
-        title: { en: 'Extreme Maneuvers' },
+        title: {
+          en: 'Extreme Maneuvers',
+          de: 'Extreme Manöver',
+          es: 'Maniobras extremas',
+          fr: 'Manœuvres Extrêmes',
+        },
         type: 'Force Power',
         slots: ['Force Power'],
         ffg: 848,

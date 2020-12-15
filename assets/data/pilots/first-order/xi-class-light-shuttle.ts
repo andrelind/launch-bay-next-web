@@ -5,11 +5,7 @@ const t: ShipType = {
     en: 'Xi-class Light Shuttle',
     de: 'Leichtes Shuttle der Xi-Klasse',
     fr: 'Navette Légère de Classe Xi',
-    it: 'Xi-class Light Shuttle',
-    pl: 'Xi-class Light Shuttle',
-    pt: 'Xi-class Light Shuttle',
-    zh: 'Xi-class Light Shuttle',
-    es: 'Lanzadera clase Xi',
+    es: 'Lanzadera ligera clase Xi',
   },
   xws: 'xiclasslightshuttle',
   size: 'Medium',
@@ -49,12 +45,7 @@ const t: ShipType = {
       ffg: 656,
       name: {
         en: 'Commander Malarus',
-        de: 'Commander Malarus',
         fr: 'Commandant Malarus',
-        it: 'Commander Malarus',
-        pl: 'Commander Malarus',
-        pt: 'Commander Malarus',
-        zh: 'Commander Malarus',
         es: 'Comandante Malarus',
       },
       cost: 45,
@@ -64,10 +55,6 @@ const t: ShipType = {
         en: 'Vindictive Taskmaster',
         de: 'Rachsüchtige Vorgesetzte',
         fr: "Maître d'Œuvre Vindicatif",
-        it: 'Vindictive Taskmaster',
-        pl: 'Vindictive Taskmaster',
-        pt: 'Vindictive Taskmaster',
-        zh: 'Vindictive Taskmaster',
         es: 'Supervisora vengativa',
       },
       slots: ['Talent', 'Crew', 'Crew', 'Modification', 'Tech', 'Tech'],
@@ -80,14 +67,6 @@ const t: ShipType = {
           'Solange ein befreundetes Schiff in Reichweite 0-2 einen Primärangriff durchführt, falls es 1 oder mehr Leerseiten-Ergebnisse hat, muss jenes Schiff 1 Anstrengungsmarker erhalten, um 1 Leerseiten-Ergebnis neu zu werfen, falls möglich.',
         fr:
           "Tant qu'un vaisseau allié à portée 0-2 effectue une attaque principale, s'il a au moins 1 résultat vierge, il doit gagner 1 marqueur de contrainte pour relancer 1 résultat vierge, si possible.",
-        it:
-          'While a friendly ship at range 0-2 performs a primary attack, if it has 1 or more blank results, that ship must gain 1 strain token to reroll 1 blank result, if able.',
-        pl:
-          'While a friendly ship at range 0-2 performs a primary attack, if it has 1 or more blank results, that ship must gain 1 strain token to reroll 1 blank result, if able.',
-        pt:
-          'While a friendly ship at range 0-2 performs a primary attack, if it has 1 or more blank results, that ship must gain 1 strain token to reroll 1 blank result, if able.',
-        zh:
-          'While a friendly ship at range 0-2 performs a primary attack, if it has 1 or more blank results, that ship must gain 1 strain token to reroll 1 blank result, if able.',
         es:
           'Mientras una nave aliada que tienes a alcance 0-2 efectúa un ataque principal, si obtiene 1 o más resultados de cara vacía, esa nave debe recibir 1 ficha de Sobresfuerzo para volver a tirar 1 resultado de cara vacía si le es posible.',
       },
@@ -95,16 +74,7 @@ const t: ShipType = {
     {
       xws: 'gideonhask-xiclasslightshuttle',
       ffg: 657,
-      name: {
-        en: 'Gideon Hask',
-        de: 'Gideon Hask',
-        fr: 'Gideon Hask',
-        it: 'Gideon Hask',
-        pl: 'Gideon Hask',
-        pt: 'Gideon Hask',
-        zh: 'Gideon Hask',
-        es: 'Gideon Hask',
-      },
+      name: { en: 'Gideon Hask' },
       cost: 40,
       limited: 1,
       initiative: 4,
@@ -112,10 +82,6 @@ const t: ShipType = {
         en: 'Merciless Hard-Liner',
         de: 'Gnadenloser Elitesoldat',
         fr: 'Intransigeant et Impitoyable',
-        it: 'Merciless Hard-Liner',
-        pl: 'Merciless Hard-Liner',
-        pt: 'Merciless Hard-Liner',
-        zh: 'Merciless Hard-Liner',
         es: 'Extremista despiadado',
       },
       slots: ['Talent', 'Crew', 'Crew', 'Modification', 'Tech', 'Tech'],
@@ -128,14 +94,6 @@ const t: ShipType = {
           'Solange du oder ein befreundetes kleines Schiff in Reichweite 0-2 einen Primärangriff gegen einen beschädigten Verteidiger durchführt, falls der Angreifer 2 oder weniger Angriffswürfel geworfen hat, darf er 1 Anstrengungsmarker erhalten, um 1 zusätzlichen Angriffswürfel zu werfen.',
         fr:
           "Tant que vous ou un petit vaisseau allié à portée 0-2 effectuez une attaque principale contre un défenseur endommagé, si l'attaquant a lancé 2 dés d'attaque ou moins, il peut gagner 1 marqueur de contrainte pour lancer 1 dé d'attaque supplémentaire.",
-        it:
-          'While you or a friendly small ship at range 0-2 performs a primary attack against a damaged defender, if the attacker rolled 2 or fewer attack dice, it may gain 1 strain token to roll 1 additional attack die.',
-        pl:
-          'While you or a friendly small ship at range 0-2 performs a primary attack against a damaged defender, if the attacker rolled 2 or fewer attack dice, it may gain 1 strain token to roll 1 additional attack die.',
-        pt:
-          'While you or a friendly small ship at range 0-2 performs a primary attack against a damaged defender, if the attacker rolled 2 or fewer attack dice, it may gain 1 strain token to roll 1 additional attack die.',
-        zh:
-          'While you or a friendly small ship at range 0-2 performs a primary attack against a damaged defender, if the attacker rolled 2 or fewer attack dice, it may gain 1 strain token to roll 1 additional attack die.',
         es:
           'Mientras tu nave o una nave pequeña aliada que tienes a alcance 0-2 efectúa un ataque principal contra un defensor dañado, si el atacante ha tirado 2 o menos dados de ataque, puede recibir 1 ficha de Sobresfuerzo para tirar 1 dado de ataque adicional.',
       },
@@ -143,16 +101,7 @@ const t: ShipType = {
     {
       xws: 'agentterex',
       ffg: 658,
-      name: {
-        en: 'Agent Terex',
-        de: 'Agent Terex',
-        fr: 'Agent Terex',
-        it: 'Agent Terex',
-        pl: 'Agent Terex',
-        pt: 'Agent Terex',
-        zh: 'Agent Terex',
-        es: 'Agente Terex',
-      },
+      name: { en: 'Agent Terex', es: 'Agente Terex' },
       cost: 42,
       limited: 1,
       initiative: 3,
@@ -160,10 +109,6 @@ const t: ShipType = {
         en: 'Devious Provocateur',
         de: 'Hinterhältiger Provokateur',
         fr: 'Provocateur Sournois',
-        it: 'Devious Provocateur',
-        pl: 'Devious Provocateur',
-        pt: 'Devious Provocateur',
-        zh: 'Devious Provocateur',
         es: 'Subversor taimado',
       },
       slots: [
@@ -186,14 +131,6 @@ const t: ShipType = {
           'Aufbau:Nachdem die Streitkräfte platziert worden sind, wähle eine beliebige Anzahl deiner ausgerüsteten [Illicit]-Aufwertungen und rüste befreundete TIE/EO- oder TIE/SE-Jäger mit ihnen aus. Jedem Schiff kann so nur 1 [Illicit] zugeordnet werden. Spielende: Lege alle [Illicit]-Aufwertungen zurück zu ihren ursprünglichen Schiffen.',
         fr:
           "Mise en Place : après avoir placé les forces, choisissez n'importe quel nombre de vos améliorations [Illicit] équipées et équipez-les à des chasseurs TIE/fo ou TIE/sf alliés. Chaque vaisseau ne peut se voir assigner que 1 seule amélioration [Illicit]par ce biais. Fin de Partie : remettez toutes les améliorations [Illicit] sur leurs vaisseaux d'origine.",
-        it:
-          'Setup: After placing forces, choose any number of your equipped [Illicit] upgrades and equip them to friendly TIE/fo or TIE/sf fighters. Each ship can be assigned only 1 [Illicit] this way. End of Game: Return all [Illicit] upgrades to their original ships.',
-        pl:
-          'Setup: After placing forces, choose any number of your equipped [Illicit] upgrades and equip them to friendly TIE/fo or TIE/sf fighters. Each ship can be assigned only 1 [Illicit] this way. End of Game: Return all [Illicit] upgrades to their original ships.',
-        pt:
-          'Setup: After placing forces, choose any number of your equipped [Illicit] upgrades and equip them to friendly TIE/fo or TIE/sf fighters. Each ship can be assigned only 1 [Illicit] this way. End of Game: Return all [Illicit] upgrades to their original ships.',
-        zh:
-          'Setup: After placing forces, choose any number of your equipped [Illicit] upgrades and equip them to friendly TIE/fo or TIE/sf fighters. Each ship can be assigned only 1 [Illicit] this way. End of Game: Return all [Illicit] upgrades to their original ships.',
         es:
           'Preparación: Después de desplegar las fuerzas, elige cualquier cantidad de tus mejoras [Illicit] equipadas y acto seguido equípalas en cazas TIE/fo o TIE/sf aliados. A cada nave sólo se le puede asignar 1 [Illicit] de esta manera. Final de la partida: Devuelve todas las mejoras [Illicit] a sus naves originales.',
       },
@@ -205,10 +142,6 @@ const t: ShipType = {
         en: 'First Order Courier',
         de: 'Kurier der \nErsten Ordnung',
         fr: 'Messager du Premier Ordre',
-        it: 'First Order Courier',
-        pl: 'First Order Courier',
-        pt: 'First Order Courier',
-        zh: 'First Order Courier',
         es: 'Mensajero de la Primera Orden',
       },
       cost: 38,
@@ -224,14 +157,6 @@ const t: ShipType = {
           'Die Erste Ordnung lauert in vielen versteckten Basen in den dunkelsten Ecken der Galaxis und vergrößert dort langsam und heimtückisch ihren Einfluss.',
         fr:
           'Le Premier Ordre se terre dans des bases dissimulées dans des secteurs discrets de la galaxie, répandant lentement son influence pernicieuse.',
-        it:
-          'The First Order lurks in many bases hidden in shadowy corners of the galaxy, slowly spreading its insidious influence.',
-        pl:
-          'The First Order lurks in many bases hidden in shadowy corners of the galaxy, slowly spreading its insidious influence.',
-        pt:
-          'The First Order lurks in many bases hidden in shadowy corners of the galaxy, slowly spreading its insidious influence.',
-        zh:
-          'The First Order lurks in many bases hidden in shadowy corners of the galaxy, slowly spreading its insidious influence.',
         es:
           'La Primera Orden se oculta en muchas bases secretas en lugares recónditos de la galaxia, extendiendo lentamente su insidiosa influencia.',
       },

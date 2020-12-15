@@ -5,10 +5,6 @@ const t: ShipType = {
     en: 'Quadrijet Transfer Spacetug',
     de: 'Quadrijet-Transferschlepper',
     fr: 'Remorqueur Spatial de Transfert Quadrimoteur',
-    it: 'Rimorchiatore Spaziale Quadrijet',
-    pl: 'Holownik transferowy Quadrijet',
-    pt: 'Rebocador Orbital Quadrijet',
-    zh: 'Quadrijet Transfer Spacetug',
     es: 'Remolcador espacial cuatrimotor',
   },
   xws: 'quadrijettransferspacetug',
@@ -80,23 +76,14 @@ const t: ShipType = {
     {
       name: {
         en: 'Constable Zuvio',
-        de: 'Constable Zuvio',
         fr: 'Officier Zuvio',
         es: 'Alguacil Zuvio',
-        it: 'Conestabile Zuvio',
-        pl: 'Konstabl Zuvio',
-        pt: 'Oficial da Lei Zuvio',
-        zh: 'Constable Zuvio',
       },
       caption: {
         en: 'Missing Sheriff of Niima Outpost',
         de: 'Verschollener Sheriff des Niima-Außenpostens',
         fr: "Shérif Porté Disparu de l'Avant-Poste Niima",
         es: 'Sheriff ausente del puesto Niima',
-        it: 'Sceriffo Scomparso di Niima',
-        pl: 'Zaginiony szeryf z przyczółku Niima',
-        pt: 'Xerife Desaparecido da Base de Niima',
-        zh: 'Missing Sherriff of Niima Outpost',
       },
       initiative: 4,
       limited: 1,
@@ -111,14 +98,6 @@ const t: ShipType = {
           'Si vous êtes censé larguer un engin, vous pouvez le lancer en utilisant un gabarit (1 [Straight]) à la place.',
         es:
           'Si vas a soltar un dispositivo, en vez de eso puedes lanzarlo utilizando una plantilla (1 [Straight]).',
-        it:
-          'Se stai per sganciare un congegno, puoi invece lanciarlo usando il modello (1 [Straight]).',
-        pl:
-          'Gdy masz zrzucić urządzenie, możesz zamiast tego wystrzelić je, korzystając z wzornika (1 [Straight]).',
-        pt:
-          'Se for soltar um dispositivo, você pode, em vez disso, lançá-lo usando um gabarito (1 [Straight]).',
-        zh:
-          'If you would drop a device, you may launch it using a (1 [Straight]) template instead.',
       },
       slots: ['Talent', 'Crew', 'Device', 'Illicit', 'Modification', 'Tech'],
       artwork:
@@ -133,10 +112,6 @@ const t: ShipType = {
         de: 'Waffenschmuggler von Jakku',
         fr: "Trafiquant d'Armes de Jakku",
         es: 'Traficante de armas de Jakku',
-        it: "Mercante d'Armidi Jakku",
-        pl: 'Szmugler broni z Jakku',
-        pt: 'Contrabandistade Armas de Jakku',
-        zh: 'Jakku Gunrunner',
       },
       initiative: 1,
       limited: 0,
@@ -151,14 +126,6 @@ const t: ShipType = {
           "Le Remorqueur Spatial de Transfert Quadrimoteur, surnommé « Quad jumper », était aussi manœuvrable sous atmosphère que dans l'espace, ce qui le rendait extrêmement populaire auprès des contrebandiers et des explorateurs.",
         es:
           'El remolcador espacial cuatrimotor para transferencia de carga, conocido popularmente como "saltador quad", es tan ágil en el espacio como en la atmósfera, lo que lo hace popular entre contrabandistas y exploradores por igual.',
-        it:
-          'Il Rimorchiatore Spaziale Quadrijet, comunemente chiamato "Quadjumper", è un vascello agile sia nello spazio che in atmosfera, qualità che lo rende popolare sia presso i contrabbandieri che gli esploratori.',
-        pl:
-          'Holownik transferowy Quadrijet, znany potocznie jako „Quadjumper" radzi sobie zarówno w przestrzeni kosmicznej, jak i w atmosferze, przez co jest niezwykle popularny wśród przemytników i odkrywców.',
-        pt:
-          'O rebocador orbital Quadrijet, comumentechamado de "Quadjumper", é ágil tanto noespaço quanto na atmosfera, o que o tornou popular entre contrabandistas e exploradores.',
-        zh:
-          'The Quadrijet transfer spacetug, commonly called a "Quadjumper," is nimble in space and atmosphere alike, making it popular among both smugglers and explorers.',
       },
       slots: ['Crew', 'Device', 'Illicit', 'Modification', 'Tech'],
       artwork:
@@ -168,25 +135,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Sarco Plank',
-        de: 'Sarco Plank',
-        fr: 'Sarco Plank',
-        es: 'Sarco Plank',
-        it: 'Sarco Plank',
-        pl: 'Sarco Plank',
-        pt: 'Sarco Plank',
-        zh: 'Sarco Plank',
-      },
+      name: { en: 'Sarco Plank' },
       caption: {
         en: 'The Scavenger',
         de: 'Der Schrottsammler',
         fr: 'Le Récupérateur',
         es: 'El carroñero',
-        it: 'Il Riciclatore',
-        pl: 'Złomiarz',
-        pt: 'Catador de Sucata',
-        zh: 'The Scavenger',
       },
       initiative: 2,
       limited: 1,
@@ -201,14 +155,6 @@ const t: ShipType = {
           "Tant que vous défendez, vous pouvez considérer que votre valeur d'agilité est égale à la vitesse de la manœuvre que vous exécutez à ce round.",
         es:
           'Mientras te defiendes, puedes considerar tu valor de Agilidad como si fuera igual a la velocidad de la maniobra que has ejecutado en esta ronda.',
-        it:
-          'Mentre difendi, puoi considerare il tuo valore di agilità come se fosse pari alla velocità della manovra che hai eseguito in questo round.',
-        pl:
-          'Gdy się bronisz, możesz traktować wartość swojej zwrotności jako równą prędkości manewru, który wykonałeś w tej rundzie.',
-        pt:
-          'Quando você defender, você podetratar seu valor de agilidade como sefosse igual à velocidade da manobraque você executou nesta rodada.',
-        zh:
-          'While you defend, you may treat your agility value as equal to the speed of the maneuver you executed this round.',
       },
       slots: ['Crew', 'Device', 'Illicit', 'Modification', 'Tech'],
       artwork:
@@ -218,25 +164,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Unkar Plutt',
-        de: 'Unkar Plutt',
-        fr: 'Unkar Plutt',
-        es: 'Unkar Plutt',
-        it: 'Unkar Plutt',
-        pl: 'Unkar Plutt',
-        pt: 'Unkar Plutt',
-        zh: 'Unkar Plutt',
-      },
+      name: { en: 'Unkar Plutt' },
       caption: {
         en: 'Miserly Portion Master',
         de: 'Geiziger Rationsmeister',
         fr: 'Maître des Portions Misérables',
         es: 'Chatarrero tacaño',
-        it: 'Avaro Dispensatore di Porzioni',
-        pl: 'Skąpy Zarządca',
-        pt: 'Senhor da Comida Racionada',
-        zh: 'Miserly Portion Master',
       },
       initiative: 2,
       limited: 1,
@@ -251,14 +184,6 @@ const t: ShipType = {
           "Au début de la phase d'engagement, si un ou plusieurs autres vaisseaux sont à portée 0, vous et chaque autre vaisseau à portée 0 gagnez 1 marqueur de rayon tracteur.",
         es:
           'Al comienzo de la fase de Enfrentamiento, si tienes una o más naves a alcance 0, tú y toda otra nave que tengas a alcance 0 recibís 1 ficha de Campo de tracción.',
-        it:
-          "All'inizio della Fase di Ingaggio, se ci sono altre navi a gittata 0, tu e ogni altra nave a gittata 0 ottenete 1 segnalino raggio traente.",
-        pl:
-          'Na początku fazy walki, jeżeli w zasięgu 0 znajduje się co najmniej jeden statek, ty i każdy statek w zasięgu 0 otrzymujecie po 1 żetonie wiązki ściągającej.',
-        pt:
-          'No início da Fase de Engajamento, se houver uma ou mais naves em alcance 0, você e cada outra nave em alcance 0 recebem 1 ficha de tração.',
-        zh:
-          'At the start of the Engagement Phase, if there are one or more other ships at range 0, you and each other ship at range 0 gain 1 tractor token.',
       },
       slots: ['Crew', 'Device', 'Illicit', 'Modification', 'Tech'],
       artwork:

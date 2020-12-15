@@ -1,16 +1,7 @@
 import { ShipType } from '../../../../types';
 
 const t: ShipType = {
-  name: {
-    en: 'TIE Reaper',
-    de: 'TIE-Schnitter',
-    fr: 'TIE Reaper',
-    it: 'TIE Reaper',
-    pl: 'TIE Reaper',
-    pt: 'TIE Reaper',
-    zh: 'TIE Reaper',
-    es: 'Segador TIE',
-  },
+  name: { en: 'TIE Reaper', de: 'TIE-Schnitter', es: 'Segador TIE' },
   xws: 'tiereaper',
   ffg: 43,
   size: 'Medium',
@@ -78,25 +69,12 @@ const t: ShipType = {
   icon: 'https://sb-cdn.fantasyflightgames.com/ship_types/I_TIEReaper.png',
   pilots: [
     {
-      name: {
-        en: '"Vizier"',
-        de: '„Wesir"',
-        fr: '"Vizier"',
-        es: '"Visir"',
-        it: '"Vizier"',
-        pl: '„Wezyr"',
-        pt: '"Vizier"',
-        zh: '"Vizier"',
-      },
+      name: { en: '"Vizier"', de: '„Wesir"', es: '"Visir"' },
       caption: {
         en: 'Ruthless Tactician',
         de: 'Gnadenloser Taktiker',
         fr: 'Tacticien Implacable',
         es: 'Estratega despiadado',
-        it: 'Tattico Spietato',
-        pl: 'Bezwzględny taktyk',
-        pt: 'Estrategista Inexorável',
-        zh: 'Ruthless Tactician',
       },
       initiative: 2,
       limited: 1,
@@ -111,14 +89,6 @@ const t: ShipType = {
           'Après avoir entièrement exécuté une manœuvre à vitesse 1 en utilisant votre capacité Ailerons Adaptables, vous pouvez effectuer une action [Coordinate]. Dans ce cas, sautez votre étape "Effectuer une action".',
         es:
           'Después de que ejecutes completamente una maniobra de velocidad 1 utilizando la capacidad Alerones adaptativos de tu nave, puedes realizar una acción [Coordinate]. Si lo haces, omite tu paso de "Realizar una acción".',
-        it:
-          'Dopo che hai eseguito completamente una manovra a velocità 1 usando la tua capacità di nave Alettoni ad Assetto Variabile, puoi effettuare 1 azione [Coordinate]. Se lo fai, salta il tuo passo "Effettuare l\'Azione". Alettoni ad Assetto Variabile: Prima di rivelare il tuo indicatore, se non sei in tensione, devi eseguire una manovra bianca (1 [Bank Left]), (1 [Straight]) o (1 [Bank Right]).',
-        pl:
-          'Gdy wykonasz pełny manewr o prędkości 1, korzystając ze zdolności Lotki adaptacyjne, możesz wykonać akcję [Coordinate]. Jeżeli tak zrobisz, pomijasz twój etap wykonywania akcji.',
-        pt:
-          'Após executar completamente uma manobra de velocidade 1 usando sua habilidade de nave Ailerons Adaptáveis, você pode realizar uma ação [Coordinate]. Se você fizer isso, pule o passo Realizar Ação. Ailerons Adaptáveis: Antes de revelarseu disco, se não estiver estressado,você deve executar uma manobra([Bank Left] 1], ([Straight] 1] ou ([Bank Right] 1] branca.',
-        zh:
-          'After you fully execute a speed 1 maneuver using your Adaptive Ailerons ship ability, you may perform a [Coordinate] action. If you do, skip your Perform Action step.',
       },
       slots: ['Crew', 'Crew', 'Modification'],
       artwork:
@@ -130,23 +100,14 @@ const t: ShipType = {
     {
       name: {
         en: 'Captain Feroph',
-        de: 'Captain Feroph',
         fr: 'Capitaine Feroph',
         es: 'Capitán Feroph',
-        it: 'Capitano Feroph',
-        pl: 'Kapitan Feroph',
-        pt: 'Capitão Feroph',
-        zh: 'Captain Feroph',
       },
       caption: {
         en: 'Imperial Courier',
         de: 'Imperial Kurier',
         fr: 'Messager Impérial',
         es: 'Mensajero imperial',
-        it: 'Corriere Imperiale',
-        pl: 'Imperialny kurier',
-        pt: 'Emissário Imperial',
-        zh: 'Imperial Courier',
       },
       initiative: 3,
       limited: 1,
@@ -161,14 +122,6 @@ const t: ShipType = {
           "Tant que vous défendez, si l'attaquant n'a aucun marqueur vert, vous pouvez changer 1 de vos résultats Vierge ou [Focus] en un résultat [Evade].",
         es:
           'Mientras te defiendes, si el atacante no tiene ninguna ficha verde, puedes cambiar 1 de tus resultados [Focus] o de cara vacía por un resultado [Evade].',
-        it:
-          "Mentre difendi, se l'attaccante non possiede segnalini verdi, puoi cambiare 1 tuo risultato [Focus]/vuoto in 1 risultato [Evade]. Alettoni ad Assetto Variabile: Prima di rivelare il tuo indicatore, se non sei in tensione, devi eseguire una manovra bianca (1 [Bank Left]), (1 [Straight]) o (1 [Bank Right]).",
-        pl:
-          'Gdy się bronisz, a atakujący nie ma zielonych żetonów, możesz zmienić 1 z twoich pustych albo [Focus] wyników na wynik [Evade].',
-        pt:
-          'Quando defender, se o atacante não tiver fichas verdes, você pode mudar 1 de seus resultados em branco ou [Focus] para um resultado [Evade]. Ailerons Adaptáveis: Antes de revelarseu disco, se não estiver estressado,você deve executar uma manobra([Bank Left] 1], ([Straight] 1] ou ([Bank Right] 1] branca.',
-        zh:
-          'While you defend, if the attacker does not have any green tokens, you may change 1 of your blank or [Focus] results to an [Evade] result.',
       },
       slots: ['Talent', 'Crew', 'Crew', 'Modification'],
       artwork:
@@ -178,25 +131,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Major Vermeil',
-        de: 'Major Vermeil',
-        fr: 'Major Vermeil',
-        es: 'Major Vermeil',
-        it: 'Maggiore Vermeil',
-        pl: 'Major Vermeil',
-        pt: 'Major Vermeil',
-        zh: 'Major Vermeil',
-      },
+      name: { en: 'Major Vermeil' },
       caption: {
         en: 'Veteran of Scarif',
         de: 'Veteran von Scarif',
         fr: 'Vétéran de Scarif',
         es: 'Veterano de Scarif',
-        it: 'Veterano di Scarif',
-        pl: 'Weteran ze Scarif',
-        pt: 'Veterano de Scarif',
-        zh: 'Veteran of Scarif',
       },
       initiative: 4,
       limited: 1,
@@ -211,14 +151,6 @@ const t: ShipType = {
           "Tant que vous effectuez une attaque, si le défenseur n'a aucun marqueur vert, vous pouvez changer 1 de vos résultats Vierge ou [Focus] en un résultat [Hit].",
         es:
           'Mientras efectúas un ataque, si el defensor no tiene ninguna ficha verde, puedes cambiar 1 de tus resultados [Focus] o de cara vacía por un resultado \n[Hit].',
-        it:
-          'Mentre effettui un attacco, se il difensore non possiede segnalini verdi, puoi cambiare 1 tuo risultato [Focus]/vuoto in 1 risultato [Hit]. Alettoni ad Assetto Variabile: Prima di rivelare il tuo indicatore, se non sei in tensione, devi eseguire una manovra bianca (1 [Bank Left]), (1 [Straight]) o (1 [Bank Right]).',
-        pl:
-          'Gdy wykonujesz atak, a obrońca nie ma zielonych żetonów, możesz zmienić 1 z twoich pustych albo [Focus] wyników na wynik [Hit].',
-        pt:
-          'Quando realizar um ataque, se o defensor não tiver fichas verdes, você pode mudar 1 de seus resultados em branco ou [Focus] para um resultado [Hit]. Ailerons Adaptáveis: Antes de revelarseu disco, se não estiver estressado,você deve executar uma manobra([Bank Left] 1], ([Straight] 1] ou ([Bank Right] 1] branca.',
-        zh:
-          'While you perform an attack, if the defender does not have any green tokens, you may change 1 of your blank or [Focus] results to a [Hit] result.',
       },
       slots: ['Talent', 'Crew', 'Crew', 'Modification'],
       artwork:
@@ -233,10 +165,6 @@ const t: ShipType = {
         de: 'Pilot der Scarif-Basis',
         fr: 'Pilote de la Base de Scarif',
         es: 'Piloto de la base de Scarif',
-        it: 'Pilota della Base di Scarif',
-        pl: 'Pilot z bazy na Scarif',
-        pt: 'Piloto da Base de Scarif',
-        zh: 'Scarif Base Pilot',
       },
       initiative: 1,
       limited: 0,
@@ -251,14 +179,6 @@ const t: ShipType = {
           "Le TIE Reaper fut conçu pour déposer des troupes d'élite sur les points chauds des champs de bataille, comme les terrifiants Death Troopers du Directeur Krennic lors de la Bataille de Scarif.",
         es:
           'El Segador TIE fue diseñado para transportar tropas de élite hasta los lugares más cruentos del campo de batalla, tal como hizo con los temidos soldados de la muerte del director Krennic durante la famosa batalla de Scarif.',
-        it:
-          'Il TIE Reaper era concepito per trasportare le truppe scelte nei punti più caldi delle battaglie ed era noto per aver trasportato i temibili assaltatori della morte del Direttore Krennic alla Battaglia di Scarif.',
-        pl:
-          'TIE Reaper został zaprojektowany do przewożenia elitarnych jednostek w newralgiczne miejsca na polu bitwy. Podczas Bitwy o Scariff z takich maszyn korzystali przerażający szturmowcy śmierci Dyrektora Krennica.',
-        pt:
-          'A TIE reaper foi desenvolvida para transportar tropas de elite até focos de conflito no campo de batalha, e deslocou notavelmente os temidos death troopers do Diretor Krennic durante a Batalha de Scarif.',
-        zh:
-          "The TIE reaper was designed to ferry elite troops to flashpoints on the battlefield, notably carrying Director Krennic's dreaded death troopers at the Battle of Scarif.",
       },
       alt: [
         {

@@ -5,10 +5,6 @@ const t: ShipType = {
     en: 'M12-L Kimogila Fighter',
     de: 'M12-L-Kimogila-Jäger',
     fr: 'Chasseur M12-L Kimogila',
-    it: 'Caccia Kimogila M12-L',
-    pl: 'Myśliwiec Kimogila M12-L',
-    pt: 'Caça M-12L Kimogila',
-    zh: 'M12-L Kimogila Fighter',
     es: 'Caza M12-L Kimogila',
   },
   xws: 'm12lkimogilafighter',
@@ -83,10 +79,6 @@ const t: ShipType = {
         de: 'Killer des Kartells',
         fr: 'Exécuteur du Cartel',
         es: 'Verdugo del Cártel',
-        it: 'Esecutore del Cartello',
-        pl: 'Egzekutor kartelu',
-        pt: 'Carrasco de Cartel',
-        zh: 'Cartel Executioner',
       },
       initiative: 3,
       limited: 0,
@@ -101,14 +93,6 @@ const t: ShipType = {
           "De nombreux pilotes chevronnés au service des kajidics Hutt et d'autres organisations criminelles utilisent le chasseur M12-L Kimogila à cause de sa puissance de feu et de la peur qu'il inspire.",
         es:
           'Muchos pilotos veteranos al servicio de los kajidics hutt y otras entidades criminales eligen el caza M12-L Kimogila tanto por su potencia de fuego como por su temible reputación.',
-        it:
-          'Molti piloti veterani al servizio dei kajidic degli Hutt e di altre organizzazioni criminali sceglievano il Kimogila M12-L sia per la sua potenza di fuoco che per la sua temibile reputazione.',
-        pl:
-          'Wielu doświadczonych pilotów na służbie Huttów i innych organizacji przestępczych wybiera statki M12-L Kimogila ze względu na potężną siłę ognia i zabójczą reputację.',
-        pt:
-          'Muitos pilotos veteranos a serviço dos kajidics Hutt e outras organizações criminosas escolhem a M12-L Kimogila devido à sua reputação aterradora e seu poder de fogo.',
-        zh:
-          'Many veteran pilots in the service of the Hutt kajidics and other criminal operations choose the M12-L Kimogila for its firepower and dreaded reputation alike.',
       },
       slots: [
         'Talent',
@@ -125,25 +109,11 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Dalan Oberos',
-        de: 'Dalan Oberos',
-        fr: 'Dalan Oberos',
-        es: 'Dalan Oberos',
-        it: 'Dalan Oberos',
-        pl: 'Dalan Oberos',
-        pt: 'Dalan Oberos',
-        zh: 'Dalan Oberos',
-      },
+      name: { en: 'Dalan Oberos' },
       caption: {
         en: 'Returned from the Grave',
         de: 'Auferstanden von den Toten',
-        fr: 'Returned from the Grave',
         es: 'Muerto redivivo',
-        it: 'Tornato dalla Tomba',
-        pl: 'Przywrócny zza grobu',
-        pt: 'Retornado dos Mortos',
-        zh: 'Returned from the Grave',
       },
       initiative: 3,
       limited: 1,
@@ -158,14 +128,6 @@ const t: ShipType = {
           "Au début de la phase d'engagement, vous pouvez choisir 1 vaisseau protégé dans votre [Bullseye Arc] et dépenser 1 [Charge]. Dans ce cas, ce vaisseau perd 1 bouclier et vous récupérez 1 bouclier.",
         es:
           'Al comienzo de la fase de Enfrentamiento, puedes elegir 1 nave que esté protegida por escudos y situada en tu [Bullseye Arc] y gastar 1 [Charge]. Si lo haces, esa nave pierde 1 escudo y tú recuperas 1 escudo.',
-        it:
-          "All'inizio della Fase di Ingaggio, puoi scegliere una nave dotata di scudi nel tuo [Bullseye Arc] e spendere 1 [Charge]. Se lo fai, quella nave perde 1 scudo e tu recuperi 1 scudo. Nessuna Via di Fuga: Mentre effettui un attacco, se il difensore è nel tuo [Bullseye Arc], i dadi di difesa non possono essere modificati usando segnalini verdi.",
-        pl:
-          'Na początku fazy walki możesz wskazać 1 statek w twojej [Bullseye Arc], który ma aktywne osłony i wydać 1 [Charge]. Jeżeli tak zrobisz, wskazany statek traci 1 osłonę, a ty odzyskujesz 1 osłonę.',
-        pt:
-          'No início da Fase de Engajamento, você pode escolher 1 nave com escudo em seu [Bullseye Arc] e gastar 1 ￼. Se você fizer isso, a nave escolhida perde 1 escudo e você recupera 1 escudo. Na Palma da Mão: Quando você realizarum ataque, se o defensor estiver em seu [Bullseye Arc],os dados de defesa não podem ser modificados por fichas verdes.',
-        zh:
-          'At the start of the Engagement Phase, you may choose 1 shielded ship in your [Bullseye Arc] and spend 1 [Charge]. If you do, that ship loses 1 shield and you recover 1 shield.',
       },
       charges: { value: 2, recovers: 0 },
       slots: [
@@ -183,25 +145,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Torani Kulda',
-        de: 'Torani Kulda',
-        fr: 'Torani Kulda',
-        es: 'Torani Kulda',
-        it: 'Torani Kulda',
-        pl: 'Torani Kulda',
-        pt: 'Torani Kulda',
-        zh: 'Torani Kulda',
-      },
+      name: { en: 'Torani Kulda' },
       caption: {
         en: 'Rodian Freelancer',
         de: 'Rodianische Auftragsmörderin',
         fr: 'Free-Lance Rodien',
         es: 'Mercenaria rodiana',
-        it: 'Agente Indipendente Rodiano',
-        pl: 'Rodiański wolny strzelec',
-        pt: 'Freelancer Rodiano',
-        zh: 'Rodian Freelancer',
       },
       initiative: 4,
       limited: 1,
@@ -216,14 +165,6 @@ const t: ShipType = {
           "Après avoir effectué une attaque, chaque vaisseau ennemi dans votre [Bullseye Arc] subit 1 dégât [Hit] sauf s'il retire 1 marqueur vert.",
         es:
           'Después de que efectúes un ataque, toda nave enemiga situada en tu [Bullseye Arc] sufre 1 de daño [Hit] a menos que retire 1 ficha verde.',
-        it:
-          'Dopo che hai effettuato un attacco, ogni nave nemica nel tuo [Bullseye Arc] subisce 1 danno [Hit] a meno che non rimuova 1 segnalino verde. Nessuna Via di Fuga: Mentre effettui un attacco, se il difensore è nel tuo [Bullseye Arc], i dadi di difesa non possono essere modificati usando segnalini verdi.',
-        pl:
-          'Gdy wykonasz atak, każdy wrogi statek w twojej [Bullseye Arc] przyjmuje 1 uszkodzenie [Hit], chyba że usunie 1 zielony żeton.',
-        pt:
-          'Após você realizar um ataque, cada nave inimiga em seu [Bullseye Arc] sofre 1 dano [Hit],a menos que ela remova 1 ficha verde. Na Palma da Mão: Quando você realizar um ataque, se o defensor estiver em seu [Bullseye Arc], os dados de defesa não podem ser modificados por fichas verdes.',
-        zh:
-          'After you perform an attack, each enemy ship in your [Bullseye Arc] suffers 1 [Hit] damage unless it removes 1 green token.',
       },
       slots: [
         'Talent',

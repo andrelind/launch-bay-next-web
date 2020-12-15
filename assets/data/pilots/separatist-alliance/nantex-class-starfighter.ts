@@ -4,11 +4,7 @@ const t: ShipType = {
   name: {
     en: 'Nantex-class Starfighter',
     de: 'Sternenjäger der Nantex-Klasse',
-    fr: 'Chasseur de classe Nantex',
-    it: 'Nantex-class Starfighter',
-    pl: 'Myśliwiec gwiezdny klasy Nantex',
-    pt: 'Nantex-class Starfighter',
-    zh: 'Nantex-class Starfighter',
+    fr: 'Chasseur de Classe Nantex',
     es: 'Caza estelar clase Nantex',
   },
   xws: 'nantexclassstarfighter',
@@ -82,10 +78,6 @@ const t: ShipType = {
         de: 'Schwarmgarde der Stalgasin-Kolonie',
         fr: 'Garde de la Ruche Stalgasin',
         es: 'Guardia de la Colmena Stalgasin',
-        it: 'Stalgasin Hive Guard',
-        pl: 'Strażnik Ula Stalgasin',
-        pt: 'Stalgasin Hive Guard',
-        zh: 'Stalgasin Hive Guard',
       },
       initiative: 3,
       limited: 0,
@@ -101,30 +93,13 @@ const t: ShipType = {
           'Conçu pour la physiologie spécifique des pilotes Géonosiens, les chasseurs de classe Nantex sont capables de manœuvres qui briseraient la plupart des vaisseaux et des pilotes.',
         es:
           'Diseñados para la particular fisiología de los pilotos geonosianos, los cazas estelares de clase Nantex son capaces de efectuar maniobras que harían pedazos a la mayoría de naves y pilotos.',
-        it:
-          'Designed for the unique physiology of Geonosian pilots, Nantex-class starfighters are capable of maneuvers that would rip most ships—and pilots—apart.',
-        pl:
-          'Przy projektowaniu myśliwca gwiezdnego klasy Nantex uwzględniono niezwykłą fizjologię geonosjańskich pilotów, umożliwiając wykonywanie manewrów, które dla zwykłego statku - i pilota - skończyłyby się rozerwaniem na kawałki.',
-        pt:
-          'Designed for the unique physiology of Geonosian pilots, Nantex-class starfighters are capable of maneuvers that would rip most ships—and pilots—apart.',
-        zh:
-          'Designed for the unique physiology of Geonosian pilots, Nantex-class starfighters are capable of maneuvers that would rip most ships—and pilots—apart.',
       },
       slots: ['Talent'],
       cost: 33,
       ffg: 609,
     },
     {
-      name: {
-        en: 'Sun Fac',
-        de: 'Sun Fac',
-        fr: 'Sun Fac',
-        es: 'Sun Fac',
-        it: 'Sun Fac',
-        pl: 'Sun Fac',
-        pt: 'Sun Fac',
-        zh: 'Sun Fac',
-      },
+      name: { en: 'Sun Fac' },
       initiative: 6,
       limited: 1,
       xws: 'sunfac',
@@ -137,14 +112,6 @@ const t: ShipType = {
           "Tant que vous effectuez une attaque principale, si le défenseur est tracté, lancez 1 dé d'attaque supplémentaire.",
         es:
           'Mientras efectúas un ataque principal, si el defensor está atrapado en un campo de tracción, tiras 1 dado de ataque adicional.',
-        it:
-          'While you perform a primary attack, if the defender is tractored, roll 1 additional attack die.',
-        pl:
-          'Gdy wykonujesz atak podstawowy i obrońca posiada żeton wiązki ściągającej, rzucasz 1 dodatkową kością ataku.',
-        pt:
-          'While you perform a primary attack, if the defender is tractored, roll 1 additional attack die.',
-        zh:
-          'While you perform a primary attack, if the defender is tractored, roll 1 additional attack die.',
       },
       hyperspace: true,
       epic: true,
@@ -156,23 +123,10 @@ const t: ShipType = {
         de: 'Vollstrecker des Erzherzogs',
         fr: "Homme de Main de l'Archiduc",
         es: 'Lugarteniente del Archiduque',
-        it: "Archduke's Enforcer",
-        pl: 'Egzekutor Arcyksięcia',
-        pt: "Archduke's Enforcer",
-        zh: "Archduke's Enforcer",
       },
     },
     {
-      name: {
-        en: 'Berwer Kret',
-        de: 'Berwer Kret',
-        fr: 'Berwer Kret',
-        es: 'Berwer Kret',
-        it: 'Berwer Kret',
-        pl: 'Berwer Kret',
-        pt: 'Berwer Kret',
-        zh: 'Berwer Kret',
-      },
+      name: { en: 'Berwer Kret' },
       xws: 'berwerkret',
       initiative: 5,
       limited: 1,
@@ -185,14 +139,6 @@ const t: ShipType = {
           "Après que vous avez effectué une attaque qui touche, chaque vaisseau allié avec [Calculate] dans sa barre d'action et un verrouillage sur le défenseur peut effectuer une action [Calculate] rouge.",
         es:
           'Después de que efectúes un ataque que impacte, toda nave aliada con [Calculate] en su barra de acciones y un Blanco fijado sobre el defensor puede realizar una acción [Calculate] roja.',
-        it:
-          'After you perform an attack that hits, each friendly ship with [Calculate] on its action bar and a lock on the defender may perform a red [Calculate] action.',
-        pl:
-          'Gdy wykonasz atak, który trafił, każdy przyjazny statek, który ma namierzenie na obrońcy i [Calculate] na pasku akcji, może wykonać czerwoną akcję [Calculate].',
-        pt:
-          'After you perform an attack that hits, each friendly ship with [Calculate] on its action bar and a lock on the defender may perform a red [Calculate] action.',
-        zh:
-          'After you perform an attack that hits, each friendly ship with [Calculate] on its action bar and a lock on the defender may perform a red [Calculate] action.',
       },
       hyperspace: true,
       epic: true,
@@ -204,23 +150,10 @@ const t: ShipType = {
         de: 'Captain der Schwarmgarde',
         fr: 'Capitaine de la Garde de la Ruche',
         es: 'Capitán de la guardia de la colmena',
-        it: 'Hive Guard Captain',
-        pl: 'Kapitan Gwardii Ula',
-        pt: 'Hive Guard Captain',
-        zh: 'Hive Guard Captain',
       },
     },
     {
-      name: {
-        en: 'Chertek',
-        de: 'Chertek',
-        fr: 'Chertek',
-        es: 'Chertek',
-        it: 'Chertek',
-        pl: 'Chertek',
-        pt: 'Chertek',
-        zh: 'Chertek',
-      },
+      name: { en: 'Chertek' },
       xws: 'chertek',
       initiative: 4,
       limited: 1,
@@ -233,14 +166,6 @@ const t: ShipType = {
           "Tant que vous effectuez une attaque principale, si le défenseur est tracté, vous pouvez relancer jusqu'à 2 dés d'attaque.",
         es:
           'Mientras efectúas un ataque principal, si el defensor está atrapado en un campo de tracción, puedes volver a tirar hasta 2 dados de ataque.',
-        it:
-          'While you perform a primary attack, if the defender is tractored, you may reroll up to 2 attack dice.',
-        pl:
-          'Gdy wykonujesz atak podstawowy i obrońca posiada żeton wiązki ściągającej, możesz przerzucić maksymalnie 2 kości ataku.',
-        pt:
-          'While you perform a primary attack, if the defender is tractored, you may reroll up to 2 attack dice.',
-        zh:
-          'While you perform a primary attack, if the defender is tractored, you may reroll up to 2 attack dice.',
       },
       hyperspace: true,
       epic: true,
@@ -252,23 +177,10 @@ const t: ShipType = {
         de: 'Opportunistisches Fliegerass',
         fr: 'As Opportuniste',
         es: 'As oportunista',
-        it: 'Opportunistic Ace',
-        pl: 'Oportunistyczny as',
-        pt: 'Opportunistic Ace',
-        zh: 'Opportunistic Ace',
       },
     },
     {
-      name: {
-        en: 'Gorgol',
-        de: 'Gorgol',
-        fr: 'Gorgol',
-        es: 'Gorgol',
-        it: 'Gorgol',
-        pl: 'Gorgol',
-        pt: 'Gorgol',
-        zh: 'Gorgol',
-      },
+      name: { en: 'Gorgol' },
       xws: 'gorgol',
       initiative: 2,
       limited: 1,
@@ -281,14 +193,6 @@ const t: ShipType = {
           'Pendant la phase de système, vous pouvez gagner 1 marqueur de désarmement et choisir un vaisseau allié à porté 1-2. Dans ce cas, il gagne 1 marqueur de rayon tracteur, puis il répare 1 de ses cartes de dégât face visible Vaisseau.',
         es:
           'Durante la fase de Sistemas, puedes recibir 1 ficha de Desarme y elegir una nave aliada que tengas a alcance 1-2. Si lo haces, esa nave recibe 1 ficha de Campo de tracción, y luego repara 1 de de sus cartas de Daño con el atributo Nave .',
-        it:
-          'During the System Phase, you may gain 1 disarm token and choose a friendly ship at range 1-2. If you do, it gains 1 tractor token, then repairs 1 of its faceup Ship trait damage cards.',
-        pl:
-          'W fazie systemowej możesz otrzymać 1 żeton rozbrojenia i wskazać przyjazny statek w zasięgu 1-2. Jeżeli tak zrobisz, wskazany statek otrzymuje 1 żeton wiązki ściągającej, a następnie naprawia 1 ze swoich odkrytych kart uszkodzeń Statek.',
-        pt:
-          'During the System Phase, you may gain 1 disarm token and choose a friendly ship at range 1-2. If you do, it gains 1 tractor token, then repairs 1 of its faceup Ship trait damage cards.',
-        zh:
-          'During the System Phase, you may gain 1 disarm token and choose a friendly ship at range 1-2. If you do, it gains 1 tractor token, then repairs 1 of its faceup Ship trait damage cards.',
       },
       hyperspace: true,
       epic: true,
@@ -300,10 +204,6 @@ const t: ShipType = {
         de: 'Geschickter Ingenieur',
         fr: 'Ingénieur Habile',
         es: 'Ingeniero mañoso',
-        it: 'Handy Engineer',
-        pl: 'Wprawny inżynier',
-        pt: 'Handy Engineer',
-        zh: 'Handy Engineer',
       },
     },
     {
@@ -312,10 +212,6 @@ const t: ShipType = {
         de: 'Ass der Petranaki-Arena',
         fr: "As de l'Arène Petranaki",
         es: 'As del coliseo Petranaki',
-        it: 'Petranaki Arena Ace',
-        pl: 'As Areny Petranaki',
-        pt: 'Petranaki Arena Ace',
-        zh: 'Petranaki Arena Ace',
       },
       cost: 35,
       ffg: 608,
@@ -331,14 +227,6 @@ const t: ShipType = {
           "L'Arène de Petranaki est un gigantesque édifice de Géonosis qui a été le lieu principal de la première bataille de la Guerre des Clones.",
         es:
           'El coliseo Petranaki es un edificio gigantesco de Geonosis que fue un lugar clave en la primera batalla de las Guerras Clon.',
-        it:
-          'The Petranaki Arena is a massive edifice on Geonosis that was a key site in the first battle of the Clone Wars.',
-        pl:
-          'Arena Petranaki to ogromna budowla na Geonosis i kluczowe miejsce związane z początkiem Wojen Klonów.',
-        pt:
-          'The Petranaki Arena is a massive edifice on Geonosis that was a key site in the first battle of the Clone Wars.',
-        zh:
-          'The Petranaki Arena is a massive edifice on Geonosis that was a key site in the first battle of the Clone Wars.',
       },
       hyperspace: false,
       epic: true,

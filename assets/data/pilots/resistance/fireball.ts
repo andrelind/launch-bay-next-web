@@ -1,16 +1,7 @@
 import { ShipType } from '../../../../types';
 
 const t: ShipType = {
-  name: {
-    en: 'Fireball',
-    de: 'Fireball',
-    fr: 'Fireball',
-    it: 'Fireball',
-    pl: 'Fireball',
-    pt: 'Fireball',
-    zh: 'Fireball',
-    es: 'Bola de Fuego',
-  },
+  name: { en: 'Fireball', es: 'Bola de Fuego' },
   xws: 'fireball',
   ffg: 70,
   size: 'Small',
@@ -85,10 +76,6 @@ const t: ShipType = {
         de: 'Mechaniker der Colossus-Station',
         fr: 'Mécanicien de la Station Colossus',
         es: 'Mecánico de la estación Coloso',
-        it: 'Colossus Station Mechanic',
-        pl: 'Colossus Station Mechanic',
-        pt: 'Colossus Station Mechanic',
-        zh: 'Colossus Station Mechanic',
       },
       initiative: 2,
       limited: 0,
@@ -114,36 +101,15 @@ const t: ShipType = {
           "Certains pilotes ambitieux et talentueux commencent leur carrière en tant qu'équipier au sol, travaillant sans relâche pour permettre à des vaisseaux rafistolés de voler dans les cieux de mondes éloignés comme Castilon.",
         es:
           'Algunos pilotos con tanto talento como ambición se inician en el mundo de la competición como miembros del personal de tierra, trabajando sin descanso para mantener en el aire naves de diseño improvisado en planetas lejados como Castilon.',
-        it:
-          'Some ambitious and talented pilots begin their racing careers as ground crew, working around the clock to keep cobbled-together ships in the sky on far-flung worlds like Castilon.',
-        pl:
-          'Some ambitious and talented pilots begin their racing careers as ground crew, working around the clock to keep cobbled-together ships in the sky on far-flung worlds like Castilon.',
-        pt:
-          'Some ambitious and talented pilots begin their racing careers as ground crew, working around the clock to keep cobbled-together ships in the sky on far-flung worlds like Castilon.',
-        zh:
-          'Some ambitious and talented pilots begin their racing careers as ground crew, working around the clock to keep cobbled-together ships in the sky on far-flung worlds like Castilon.',
       },
     },
     {
-      name: {
-        en: 'Jarek Yeager',
-        de: 'Jarek Yeager',
-        fr: 'Jarek Yeager',
-        es: 'Jarek Yeager',
-        it: 'Jarek Yeager',
-        pl: 'Jarek Yeager',
-        pt: 'Jarek Yeager',
-        zh: 'Jarek Yeager',
-      },
+      name: { en: 'Jarek Yeager' },
       caption: {
         en: 'Too Old for This',
         de: 'Zu alt für sowas',
         fr: 'Trop Vieux pour Ça',
         es: 'Demasiado viejo para esto',
-        it: 'Too Old for This',
-        pl: 'Too Old for This',
-        pt: 'Too Old for This',
-        zh: 'Too Old for This',
       },
       initiative: 5,
       limited: 1,
@@ -157,14 +123,6 @@ const t: ShipType = {
           'Tant que vous avez 2 marqueurs de stress ou moins, si vous êtes endommagé, vous pouvez exécuter des manœuvres basiques rouges, même si vous êtes stressé ; si vous êtes critiquement endommagé, vous pouvez exécuter des manœuvres avancées rouges, même si vous êtes stressé.',
         es:
           'Mientras tengas 2 o menos fichas de Tensión, si estás dañado, eres capaz de ejecutar maniobras básicas rojas incluso aunque estés bajo tensión; si estás dañado críticamente, eres capaz de ejecutar maniobras avanzadas rojas incluso aunque estés bajo tensión.',
-        it:
-          'While you have 2 or fewer stress tokens, if you are damaged, you can execute red basic maneuvers even while stressed; if you are critically damaged, you can execute red advanced maneuvers even while stressed.',
-        pl:
-          'While you have 2 or fewer stress tokens, if you are damaged, you can execute red basic maneuvers even while stressed; if you are critically damaged, you can execute red advanced maneuvers even while stressed.',
-        pt:
-          'While you have 2 or fewer stress tokens, if you are damaged, you can execute red basic maneuvers even while stressed; if you are critically damaged, you can execute red advanced maneuvers even while stressed.',
-        zh:
-          'While you have 2 or fewer stress tokens, if you are damaged, you can execute red basic maneuvers even while stressed; if you are critically damaged, you can execute red advanced maneuvers even while stressed.',
       },
       cost: 32,
       slots: [
@@ -181,25 +139,12 @@ const t: ShipType = {
       ffg: 620,
     },
     {
-      name: {
-        en: 'Kazuda Xiono',
-        de: 'Kazuda Xiono',
-        fr: 'Kazuda Xiono',
-        es: 'Kazuda Xiono',
-        it: 'Kazuda Xiono',
-        pl: 'Kazuda Xiono',
-        pt: 'Kazuda Xiono',
-        zh: 'Kazuda Xiono',
-      },
+      name: { en: 'Kazuda Xiono' },
       caption: {
         en: 'Best Pilot in the Galaxy',
         de: 'Bester Pilot der Galaxis',
         fr: 'Le Meilleur Pilote de la Galaxie',
         es: 'El mejor piloto de la galaxia',
-        it: 'Best Pilot in the Galaxy',
-        pl: 'Best Pilot in the Galaxy',
-        pt: 'Best Pilot in the Galaxy',
-        zh: 'Best Pilot in the Galaxy',
       },
       initiative: 4,
       limited: 1,
@@ -213,14 +158,6 @@ const t: ShipType = {
           "Tant que vous défendez ou effectuez une attaque principale, si l'initiative du vaisseau ennemi est plus élevée que le nombre de cartes de dégât que vous avez, vous pouvez lancer 1 dé supplémentaire.",
         es:
           'Mientras te defiendes o efectúas un ataque principal, si la Iniciativa de la nave enemiga es mayor que la cantidad de cartas de Daño que tienes, puedes tirar 1 dado adicional.',
-        it:
-          "While you defend or perform a primary attack, if the enemy ship's initiative is higher than the number of damage cards you have, you may roll 1 additional die.",
-        pl:
-          "While you defend or perform a primary attack, if the enemy ship's initiative is higher than the number of damage cards you have, you may roll 1 additional die.",
-        pt:
-          "While you defend or perform a primary attack, if the enemy ship's initiative is higher than the number of damage cards you have, you may roll 1 additional die.",
-        zh:
-          "While you defend or perform a primary attack, if the enemy ship's initiative is higher than the number of damage cards you have, you may roll 1 additional die.",
       },
       cost: 39,
       slots: [
@@ -237,26 +174,8 @@ const t: ShipType = {
       ffg: 621,
     },
     {
-      name: {
-        en: 'R1-J5',
-        de: 'R1-J5',
-        fr: 'R1-J5',
-        es: 'R1-J5',
-        it: 'R1-J5',
-        pl: 'R1-J5',
-        pt: 'R1-J5',
-        zh: 'R1-J5',
-      },
-      caption: {
-        en: 'Bucket',
-        de: 'Bucket',
-        fr: 'Bucket',
-        es: 'Cubo',
-        it: 'Bucket',
-        pl: 'Bucket',
-        pt: 'Bucket',
-        zh: 'Bucket',
-      },
+      name: { en: 'R1-J5' },
+      caption: { en: 'Bucket', es: 'Cubo' },
       initiative: 1,
       limited: 1,
       xws: 'r1j5',
@@ -269,14 +188,6 @@ const t: ShipType = {
           "Avant d'exposer 1 de vos cartes de dégât, vous pouvez regarder vos cartes de dégât face cachée, en choisir 1 et l'exposer à la place.",
         es:
           'Antes de que expongas 1 de tus cartas de Daño, en vez de eso puedes mirar tus cartas de Daño boca abajo, elegir 1 de ellas y exponerla.',
-        it:
-          'Before you expose 1 of your damage cards, you may look at your facedown damage cards, choose 1, and expose that card instead.',
-        pl:
-          'Before you expose 1 of your damage cards, you may look at your facedown damage cards, choose 1, and expose that card instead.',
-        pt:
-          'Before you expose 1 of your damage cards, you may look at your facedown damage cards, choose 1, and expose that card instead.',
-        zh:
-          'Before you expose 1 of your damage cards, you may look at your facedown damage cards, choose 1, and expose that card instead.',
       },
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },

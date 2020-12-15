@@ -11,10 +11,6 @@ const t: UpgradeBase[] = [
           de: 'Streubombengenerator',
           fr: 'Générateur de Sous-Munitions',
           es: 'Generador de minibombas',
-          it: 'Generatore di Bombe a Frammentazione',
-          pl: 'Wytwornica bomb kasetowych',
-          pt: 'Gerador de Bombas Fragmentadas',
-          zh: 'Bomblet Generator',
         },
         type: 'Device',
         ability: {
@@ -26,14 +22,6 @@ const t: UpgradeBase[] = [
             'Bomba Durante la fase de Sistemas, puedes gastar 1 [Charge] para soltar una Minibomba utilizando la plantilla (1 [Straight]). Al comienzo de la fase de Activación, puedes gastar 1 escudo para recuperar 2 [Charge].',
           fr:
             "Bombe Pendant la phase de système, vous pouvez dépenser 1 [Charge] pour larguer une sous-munition avec le gabarit (1 [Straight]). Au début de la phase d'activation, vous pouvez dépenser 1 bouclier pour récupérer 2 [Charge].",
-          it:
-            "Bomba Durante la Fase di Sistema, puoi spendere 1 [Charge] per sganciare 1 bomba a frammentazione usando il modello (1 [Straight]). All'inizio della Fase di Attivazione, puoi spendere 1 scudo per recuperare 2 [Charge].",
-          pl:
-            'Bomba W fazie systemowej możesz wydać 1 [Charge], aby zrzucić bombę kasetową, korzystając z wzornika (1 [Straight]). Na początku fazy aktywacji możesz wydać 1 osłonę, aby odzyskać 2 [Charge].',
-          pt:
-            'Bomba Durante a Fase de Sistema,você pode gastar 1 [Charge] para soltar uma Bomba Fragmentada com o gabarito (1 [Straight]). No início da Fase de Ativação, você pode gastar 1 escudopara recuperar 2 [Charge].',
-          zh:
-            'Bomb During the System Phase, you may spend 1 [Charge] to drop a Bomblet with the (1 [Straight]) template. At the start of the Activation Phase, you may spend 1 shield to recover 2 [Charge].',
         },
         slots: ['Device', 'Device'],
         charges: { value: 2, recovers: 0 },
@@ -62,10 +50,6 @@ const t: UpgradeBase[] = [
           de: 'Connernetz',
           fr: 'Filet Conner',
           es: 'Redes Conner',
-          it: 'Reti Conner',
-          pl: 'Sieć Connera',
-          pt: 'Rede Conner',
-          zh: 'Conner Nets',
         },
         type: 'Device',
         ability: {
@@ -77,14 +61,6 @@ const t: UpgradeBase[] = [
             'Mina Durante la fase de Sistemas, puedes gastar 1 [Charge] para soltar una Red Conner utilizando la plantilla (1 [Straight]). Las [Charge] de esta carta no pueden recuperarse.',
           fr:
             'Mine Pendant la phase de système, vous pouvez dépenser 1 [Charge] pour larguer un filet Conner en utilisant le gabarit (1 [Straight]). La [Charge] de cette carte ne peut pas être récupérée.',
-          it:
-            'Mina Durante la Fase di Sistema, puoi spendere 1 [Charge] per sganciare 1 rete conner usando il modello (1 [Straight]). Le [Charge] di questa carta non possono essere recuperate.',
-          pl:
-            'Mina W fazie systemowej możesz wydać 1 [Charge], aby zrzucić sieć Connera, korzystając z wzornika (1 [Straight]). Nie można odzyskać [Charge] tej karty.',
-          pt:
-            'Mina Durante a Fase de Sistema, você pode gastar 1 [Charge] para soltar uma Rede Conner com o gabarito (1 [Straight]). A [Charge] dessa carta nãopode ser recuperada.',
-          zh:
-            "Mine During the System Phase, you may spend 1 [Charge] to drop a Conner Net using the (1 [Straight]) template. This card's [Charge] cannot be recovered.",
         },
         slots: ['Device'],
         charges: { value: 1, recovers: 0 },
@@ -113,10 +89,6 @@ const t: UpgradeBase[] = [
           de: 'Protonenbomben',
           fr: 'Bombe à Protons',
           es: 'Bombas de protones',
-          it: 'Bombe Protoniche',
-          pl: 'Bomby protonowe',
-          pt: 'Bombas de Prótons',
-          zh: '质子榴弹',
         },
         type: 'Device',
         ability: {
@@ -128,14 +100,6 @@ const t: UpgradeBase[] = [
             'Bomba Durante la fase de Sistemas, puedes gastar 1 [Charge] para soltar una Bomba de protones utilizando la plantilla (1 [Straight]).',
           fr:
             'Bombe Pendant la phase de système, vous pouvez dépenser 1 [Charge] pour larguer une bombe à protons en utilisant le gabarit (1 [Straight]).',
-          it:
-            'Bomba Durante la Fase di Sistema, puoi spendere 1 [Charge] per sganciare 1 bomba protonica usando il modello (1 [Straight]).',
-          pl:
-            'Bomba W fazie systemowej możesz wydać 1 [Charge], aby zrzucić bombę protonową, korzystając z wzornika (1 [Straight]).',
-          pt:
-            'Bomba Durante a Fase de Sistema, você pode gastar 1 [Charge]para soltar umaBomba de Prótonscom o gabarito (1 [Straight]).',
-          zh:
-            '炸弹 在系统阶段，你可以花费1[Charge]来投下质子榴弹，使用(1[Straight])移动条。',
         },
         slots: ['Device'],
         charges: { value: 2, recovers: 0 },
@@ -164,10 +128,6 @@ const t: UpgradeBase[] = [
           de: 'Annäherungsminen',
           fr: 'Mine de Proximité',
           es: 'Minas de proximidad',
-          it: 'Mine di Prossimità',
-          pl: 'Miny zbliżeniowe',
-          pt: 'Minas de Proximidade',
-          zh: '感应地雷',
         },
         type: 'Device',
         ability: {
@@ -179,14 +139,6 @@ const t: UpgradeBase[] = [
             'Mina Durante la fase de Sistemas, puedes gastar 1 [Charge] para soltar una Mina de proximidad utilizando la plantilla (1 [Straight]). Las [Charge] de esta carta no pueden recuperarse.',
           fr:
             'Mine Pendant la phase de système, vous pouvez dépenser 1 [Charge] pour larguer une mine de proximité en utilisant le gabarit (1 [Straight]). Les [Charge] de cette carte ne peuvent pas être récupérées.',
-          it:
-            'Mina Durante la Fase di Sistema, puoi spendere 1 [Charge] per sganciare 1 mina di prossimità usando il modello (1 [Straight]). Le [Charge] di questa carta non possono essere recuperate.',
-          pl:
-            'Mina W fazie systemowej możesz wydać 1 [Charge], aby zrzucić minę zbliżeniową, korzystając z wzornika (1 [Straight]). Nie można odzyskać [Charge] tej karty.',
-          pt:
-            'Mina Durante a Fase deSistema, você pode gastar1 [Charge] para soltar uma Minade Proximidade como gabarito (1 [Straight]). A [Charge] dessa carta nãopode ser recuperada.',
-          zh:
-            '地雷 在系统阶段，你可以花费1[Charge]来投下感应地雷，使用(1[Straight])移动条。 本卡的[Charge]不会被恢复。',
         },
         slots: ['Device'],
         charges: { value: 2, recovers: 0 },
@@ -215,10 +167,6 @@ const t: UpgradeBase[] = [
           de: 'Seismische Bomben',
           fr: 'Charges Sismiques',
           es: 'Cargas sísmicas',
-          it: 'Cariche Sismiche',
-          pl: 'Ładunki sejsmiczne',
-          pt: 'Cargas Sísmicas',
-          zh: '震波炸弹',
         },
         type: 'Device',
         ability: {
@@ -230,14 +178,6 @@ const t: UpgradeBase[] = [
             'Bomba Durante la fase de Sistemas, puedes gastar 1 [Charge] para soltar una Carga sísmica con la plantilla (1 [Straight]).',
           fr:
             'Bombe Pendant la phase de système, vous pouvez dépenser 1 [Charge] pour larguer une charge sismique en utilisant le gabarit (1 [Straight]).',
-          it:
-            'Bomba Durante la Fase di Sistema, puoi spendere 1 [Charge] per sganciare 1 carica sismica usando il modello (1 [Straight]).',
-          pl:
-            'Bomba W fazie systemowej możesz wydać 1 [Charge], aby zrzucić ładunek sejsmiczny, korzystając z wzornika (1 [Straight]).',
-          pt:
-            'Bomba Durante a Fase de Sistema, você pode gastar 1 [Charge] para soltar uma Carga Sísmica com o gabarito (1 [Straight]).',
-          zh:
-            '炸弹 在系统阶段，你可以花费1 [Charge]来投下震波炸弹，使用(1[Straight])移动条。',
         },
         slots: ['Device'],
         charges: { value: 2, recovers: 0 },
@@ -266,10 +206,6 @@ const t: UpgradeBase[] = [
           de: 'DRK-1-Sondendroiden',
           fr: 'Droïdes Sondes DRK-1',
           es: 'Droides sonda DRK-1',
-          it: 'Droidi Sonda DRK-1',
-          pl: 'Droidy sondujące DRK-1',
-          pt: 'DRK-1 Probe Droids',
-          zh: 'DRK-1 Probe Droids',
         },
         type: 'Device',
         ability: {
@@ -281,14 +217,6 @@ const t: UpgradeBase[] = [
             'Durante la fase Final, puedes gastar 1 [Charge] para soltar o lanzar 1 droide sonda DRK-1 utilizando una plantilla de velocidad 3. Las [Charge] de esta carta no pueden recuperarse.',
           fr:
             'Pendant la phase de dénouement, vous pouvez dépenser 1 [Charge] pour larguer ou lancer 1 droïde sonde DRK-1 en utilisant un gabarit de vitesse 3. Les [Charge] de cette carte ne peuvent pas être récupérées.',
-          it:
-            'Durante la Fase Finale, puoi spendere 1 [Charge] per sganciare o lanciare 1 droide sonda DRK-1 usando un modello a velocità 3. Le [Charge] di questa carta non possono essere recuperate.',
-          pl:
-            'W fazie końcowej możesz wydać 1 [Charge], aby zrzucić albo wystrzelić 1 droida sondującego DRK-1, korzystając z wzornika dla prędkości 3. Nie można odzyskać [Charge] tej karty.',
-          pt:
-            "During the End Phase, you may spend 1 [Charge] to drop or launch 1 DRK-1 probe droid using a speed 3 template. This card's [Charge] cannot be recovered.",
-          zh:
-            "During the End Phase, you may spend 1 [Charge] to drop or launch 1 DRK-1 probe droid using a speed 3 template. This card's [Charge] cannot be recovered.",
         },
         slots: ['Device'],
         charges: { value: 2, recovers: 0 },
@@ -316,10 +244,6 @@ const t: UpgradeBase[] = [
           de: 'Elektro-Protonen-Bombe',
           fr: 'Bombe Électro-Protonique',
           es: 'Bomba de electroprotones',
-          it: 'Bomba Elettroprotonica',
-          pl: 'Bomba elektro-protonowa',
-          pt: 'Electro-Proton Bomb',
-          zh: 'Electro-Proton Bomb',
         },
         type: 'Device',
         ability: {
@@ -331,14 +255,6 @@ const t: UpgradeBase[] = [
             'Bomba Durante la fase de Sistemas, puedes gastar 1 [Charge] para soltar una Bomba de electroprotones utilizando la plantilla (1 [Straight]). Luego coloca 1 indicador de Espoleta sobre ese dispositivo. Las [Charge] de esta carta no pueden recuperarse.',
           fr:
             "Bombe Pendant la phase de système, vous pouvez dépenser 1 [Charge] pour larguer une Bombe Électro-Protonique avec le gabarit (1 [Straight]). Puis placez 1 marqueur d'amorce sur cet engin. La [Charge] de cette carte ne peut pas être récupérée.",
-          it:
-            'Bomba Durante la Fase di Sistema, puoi spendere 1 [Charge] per sganciare 1 bomba elettroprotonica usando il modello (1 [Straight]). Poi colloca 1 segnalino innesco su quel congegno. Le [Charge] di questa carta non possono essere recuperate.',
-          pl:
-            'Bomba W fazie systemowej możesz wydać 1 [Charge], aby zrzucić bombę elektro-protonową, korzystając z wzornika (1 [Straight]). Następnie umieść 1 znacznik opóźnienia na tym urządzeniu. Nie można odzyskać [Charge] tej karty.',
-          pt:
-            "Bomb During the System Phase, you may spend 1 [Charge] to drop an Electro-Proton Bomb with the (1 [Straight]) template. Then place 1 fuse marker on that device. This card's [Charge] cannot be recovered.",
-          zh:
-            "Bomb During the System Phase, you may spend 1 [Charge] to drop an Electro-Proton Bomb with the (1 [Straight]) template. Then place 1 fuse marker on that device. This card's [Charge] cannot be recovered.",
         },
         slots: ['Device', 'Modification'],
         charges: { value: 1, recovers: 0 },
@@ -366,10 +282,6 @@ const t: UpgradeBase[] = [
           de: 'Clusterminen',
           fr: 'Mines Groupées',
           es: 'Minas de racimo',
-          it: 'Cluster Mines',
-          pl: 'Cluster Mines',
-          pt: 'Cluster Mines',
-          zh: 'Cluster Mines',
         },
         type: 'Device',
         charges: { value: 1, recovers: 0 },
@@ -382,14 +294,6 @@ const t: UpgradeBase[] = [
             'Mina Durante la fase de Sistemas, puedes gastar 1 [Charge] para soltar un conjunto de Minas de racimo utilizando la plantilla (1 [Straight]). Las [Charge] de esta carta no pueden recuperarse.',
           fr:
             'Mine Pendant la phase de système, vous pouvez dépenser 1 [Charge] pour larguer une série de mines groupées en utilisant le gabarit (1 [Straight]). La [Charge] de cette carte ne peut pas être récupérée.',
-          it:
-            "Mine During the System Phase, you may spend 1 [Charge] to drop a Cluster Mine set using the (1 [Straight]) template. This card's [Charge] cannot be recovered.",
-          pl:
-            "Mine During the System Phase, you may spend 1 [Charge] to drop a Cluster Mine set using the (1 [Straight]) template. This card's [Charge] cannot be recovered.",
-          pt:
-            "Mine During the System Phase, you may spend 1 [Charge] to drop a Cluster Mine set using the (1 [Straight]) template. This card's [Charge] cannot be recovered.",
-          zh:
-            "Mine During the System Phase, you may spend 1 [Charge] to drop a Cluster Mine set using the (1 [Straight]) template. This card's [Charge] cannot be recovered.",
         },
         slots: ['Device'],
         device: {
@@ -415,10 +319,6 @@ const t: UpgradeBase[] = [
           de: 'Ionenbomben',
           fr: 'Bombe Ionique',
           es: 'Bombas de iones',
-          it: 'Ion Bombs',
-          pl: 'Ion Bombs',
-          pt: 'Ion Bombs',
-          zh: 'Ion Bombs',
         },
         type: 'Device',
         charges: { value: 2, recovers: 0 },
@@ -431,14 +331,6 @@ const t: UpgradeBase[] = [
             'Bomba Durante la fase de Sistemas, puedes gastar 1 [Charge] para soltar una Bomba de iones utilizando la plantilla (1 [Straight]).',
           fr:
             'Bombe Pendant la phase de système, vous pouvez dépenser 1 [Charge] pour larguer une bombe ionique en utilisant le gabarit (1 [Straight]).',
-          it:
-            'Bomb During the System Phase, you may spend 1 [Charge] to drop an Ion Bomb using the (1 [Straight]) template.',
-          pl:
-            'Bomb During the System Phase, you may spend 1 [Charge] to drop an Ion Bomb using the (1 [Straight]) template.',
-          pt:
-            'Bomb During the System Phase, you may spend 1 [Charge] to drop an Ion Bomb using the (1 [Straight]) template.',
-          zh:
-            'Bomb During the System Phase, you may spend 1 [Charge] to drop an Ion Bomb using the (1 [Straight]) template.',
         },
         slots: ['Device'],
         device: {
@@ -463,10 +355,6 @@ const t: UpgradeBase[] = [
           en: 'Concussion Bombs',
           de: 'Erschütterungsbomben',
           fr: 'Bombes à Concussion',
-          it: 'Concussion Bombs',
-          pl: 'Concussion Bombs',
-          pt: 'Concussion Bombs',
-          zh: 'Concussion Bombs',
           es: 'Bombas de impacto',
         },
         type: 'Device',
@@ -478,14 +366,6 @@ const t: UpgradeBase[] = [
             'Während der Systemphase, falls mindestens eine [Charge] dieser Karte inaktiv ist, musst du 1 [Charge] ausgeben, um 1 Erschütterungsbombe abzuwerfen, falls möglich. Ansonsten darfst du 1 [Charge] ausgeben, um 1 Erschütterungsbombe abzuwerfen.',
           fr:
             "Pendant la phase de système, si n'importe quelle [Charge] de cette carte est inactive, vous devez dépenser 1 [Charge] pour larguer 1 bombe à concussion, si possible. Sinon, vous pouvez dépenser 1 [Charge] pour larguer 1 bombe à concussion.",
-          it:
-            "During the System Phase, if any of this card's [Charge] are inactive, you must spend 1 [Charge] to drop 1 concussion bomb, if able. Otherwise, you may spend 1 [Charge] to drop 1 concussion bomb.",
-          pl:
-            "During the System Phase, if any of this card's [Charge] are inactive, you must spend 1 [Charge] to drop 1 concussion bomb, if able. Otherwise, you may spend 1 [Charge] to drop 1 concussion bomb.",
-          pt:
-            "During the System Phase, if any of this card's [Charge] are inactive, you must spend 1 [Charge] to drop 1 concussion bomb, if able. Otherwise, you may spend 1 [Charge] to drop 1 concussion bomb.",
-          zh:
-            "During the System Phase, if any of this card's [Charge] are inactive, you must spend 1 [Charge] to drop 1 concussion bomb, if able. Otherwise, you may spend 1 [Charge] to drop 1 concussion bomb.",
           es:
             'Durante la fase de Sistemas, si alguna de las [Charge] de esta carta está inactiva, debes gastar 1 [Charge] para soltar 1 bomba de impacto, si es posible. De lo contrario, puedes gastar 1 [Charge] para soltar 1 bomba de impacto.',
         },
@@ -506,8 +386,19 @@ const t: UpgradeBase[] = [
         ability: {
           en:
             'Bomb During the System Phase, you may spend up to 2 [Charge] to drop that many Thermal Detonators using the (1 [Straight]) or (2 [Straight]) template. Each must be placed using a different template. When you reload this card, recover 1 additional [Charge].',
+          de:
+            'Bombe Während der Systemphase darfst du bis zu 2 [Charge] ausgeben, um ebenso viele Thermaldetonatoren unter Verwendung der (1 [Straight]) oder (2 [Straight])-Schablone abzuwerfen. Jeder muss unter Verwendung einer anderen Schablone platziert werden. Sobald du diese Karte nachlädst, stellst du 1 zusätzliche [Charge] wieder her.',
+          es:
+            'Bomba Durante la fase de Sistemas, puedas gastar hasta 2 [Charge] para soltar esa misma cantidad de Detonadores térmicos utilizando la plantilla (1 [Straight]) o (2 [Straight]). Cada Detonador térmico debe ser colocado utilizando una plantilla distinta. Cuando recargues esta carta, recuperas 1 [Charge] adicional.',
+          fr:
+            "Bombe Pendant la phase de système, vous pouvez dépenser jusqu'à 2 [Charge] pour larguer autant de Détonateurs Thermiques en utilisant le gabarit (1 [Straight]) ou (2 [Straight]). Chacun doit être placé en utilisant un gabarit différent. Lorsque vous rechargez cette carte, récupérez 1 [Charge] supplémentaire.",
         },
-        title: { en: 'Thermal Detonators' },
+        title: {
+          en: 'Thermal Detonators',
+          de: 'Thermaldetonatoren',
+          es: 'Detonadores térmicos',
+          fr: 'Détonateurs Thermiques',
+        },
         type: 'Device',
         slots: ['Device'],
         ffg: 864,

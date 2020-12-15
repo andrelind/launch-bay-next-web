@@ -4,11 +4,7 @@ const t: ShipType = {
   name: {
     en: 'Vulture-class Droid Fighter',
     de: 'Droidenjäger der Vulture-Klasse',
-    fr: 'Chasseurs Droïde de classe Vulture',
-    it: 'Caccia Droide Classe Vulture',
-    pl: 'Droid-myśliwiec klasy Vulture',
-    pt: 'Vulture-class Droid Fighter',
-    zh: 'Vulture-class Droid Fighter',
+    fr: 'Chasseurs Droïde de Classe Vulture',
     es: 'Caza droide clase Buitre',
   },
   xws: 'vultureclassdroidfighter',
@@ -84,10 +80,6 @@ const t: ShipType = {
         de: 'Drohne der Handelsförderation',
         fr: 'Drone de la Fédération du Commerce',
         es: 'Dron de la Federación de Comercio',
-        it: 'Drone della Federazione dei Mercanti',
-        pl: 'Dron Federacji Handlowej',
-        pt: 'Trade Federation Drone',
-        zh: 'Trade Federation Drone',
       },
       initiative: 1,
       limited: 0,
@@ -101,14 +93,6 @@ const t: ShipType = {
           "La Fédération du Commerce a déployé d'innombrables droïdes Vulture lors de la Bataille de Naboo, et continue d'utiliser ces chasseurs peu coûteux durant la Guerre des Clones.",
         es:
           'La Federación de Comercio desplegó incontables droides Buitre en la batalla de Naboo, y continuó utilizando estos cazas estelares tan baratos en las Guerras Clon.',
-        it:
-          'La Federazione dei Mercanti schierò innumerevoli Droidi Vulture alla Battaglia di Naboo e continua a usare questi economici astrocaccia nelle Guerre dei Cloni.',
-        pl:
-          'Podczas Bitwy o Naboo Federacja Handlowa wystawiła olbrzymią liczbę droidów Vulture i wciąż wykorzystuje te tanie myśliwce w Wojnach Klonów.',
-        pt:
-          'The Trade Federation deployed countless Vulture Droids at the Battle of Naboo, and continues to use these inexpensive starfighters in the Clone Wars.',
-        zh:
-          'The Trade Federation deployed countless Vulture Droids at the Battle of Naboo, and continues to use these inexpensive starfighters in the Clone Wars.',
       },
       hyperspace: true,
       epic: true,
@@ -124,20 +108,12 @@ const t: ShipType = {
         de: 'Präzisionsjäger',
         fr: 'Chasseur Méticuleux',
         es: 'Cazador preciso',
-        it: 'Cacciatore Preciso',
-        pl: 'Precyzyjny łowca',
-        pt: 'Precise Hunter',
-        zh: 'Precise Hunter',
       },
       caption: {
         en: 'Pinpoint Protocols',
         de: 'Lokalisationsprotokolle',
         fr: 'Protocole de Géolocalisation',
         es: 'Protocolos de ajuste de tiro',
-        it: 'Protocolli di Puntamento',
-        pl: 'Protokoły precyzyjnego ostrzału',
-        pt: 'Pinpoint Protocols',
-        zh: 'Pinpoint Protocols',
       },
       limited: 3,
       initiative: 3,
@@ -151,14 +127,6 @@ const t: ShipType = {
           'Tant que vous effectuez une attaque, si le défenseur est dans votre [Bullseye Arc], vous pouvez relancer 1 résultat vierge.',
         es:
           'Mientras efectúas un ataque, si el defensor está situado en tu [Bullseye Arc], puedes volver a tirar 1 resultado de cara vacía.',
-        it:
-          'Mentre effettui un attacco, se il difensore è nel tuo [Bullseye Arc], puoi ripetere il tiro di 1 risultato vuoto.',
-        pl:
-          'Gdy wykonujesz atak i obrońca znajduje się w twoim [Bullseye Arc], możesz przerzucić 1 pusty wynik. Sieć obliczeniowa: Gdy się bronisz albo wykonujesz atak, możesz wydać 1 żeton obliczeń z przyjaznego statku w zasięgu 0-1, aby zmienić 1 wynik [Focus] na wynik [Evade] albo [Hit].',
-        pt:
-          'While you perform an attack, if the defender is in your [Bullseye Arc], you may reroll 1 blank result.',
-        zh:
-          'While you perform an attack, if the defender is in your [Bullseye Arc], you may reroll 1 blank result.',
       },
       hyperspace: true,
       epic: true,
@@ -174,20 +142,12 @@ const t: ShipType = {
         de: 'Prototyp von Haor Chall',
         fr: 'Prototype Haor Chall',
         es: 'Prototipo de Haor Chall',
-        it: 'Prototipo della Haor Chall',
-        pl: 'Prototyp Haor Chall',
-        pt: 'Haor Chall Prototype',
-        zh: 'Haor Chall Prototype',
       },
       caption: {
         en: 'Xi Char Offering',
         de: 'Geschenk der Xi-Char',
         fr: 'Offrande Xi Char',
         es: 'Ofrenda de Xi Char',
-        it: 'Offerta di Xi Char',
-        pl: 'Podarunek Xi Char',
-        pt: 'Xi Char Offering',
-        zh: 'Xi Char Offering',
       },
       limited: 2,
       initiative: 1,
@@ -201,14 +161,6 @@ const t: ShipType = {
           "Après qu'un vaisseau ennemi dans votre [Bullseye Arc] à portée 0-2 a déclaré un autre vaisseau allié pour être le défenseur, vous pouvez effectuer une action [Calculate] ou [Lock].",
         es:
           'Después de que una nave enemiga que tengas en tu [Bullseye Arc] a alcance 0-2 declare otra nave aliada como el defensor, puedes realizar una acción [Calculate] o [Lock].',
-        it:
-          "Dopo che una nave nemica nel tuo [Bullseye Arc] a gittata 0-2 ha dichiarato un'altra nave amica come difensore, puoi effettuare 1 azione [Calculate] o [Lock].",
-        pl:
-          'Gdy wrogi statek w twoim [Bullseye Arc] w zasięgu 0-2 wyznaczy inny przyjazny statek na obrońcę, możesz wykonać akcję [Calculate] albo [Lock]. Sieć obliczeniowa: Gdy się bronisz albo wykonujesz atak, możesz wydać 1 żeton obliczeń z przyjaznego statku w zasięgu 0-1, aby zmienić 1 wynik [Focus] na wynik [Evade] albo [Hit].',
-        pt:
-          'After an enemy ship in your [Bullseye Arc] at range 0-2 declares another friendly ship as the defender, you may perform a [Calculate] or [Lock] action.',
-        zh:
-          'After an enemy ship in your [Bullseye Arc] at range 0-2 declares another friendly ship as the defender, you may perform a [Calculate] or [Lock] action.',
       },
       hyperspace: true,
       epic: true,
@@ -219,16 +171,7 @@ const t: ShipType = {
         'https://sb-cdn.fantasyflightgames.com/card_art/18cdc19a9627a38d0ec2783ccd5cb183.jpg',
     },
     {
-      name: {
-        en: 'DFS-081',
-        de: 'DFS-081',
-        fr: 'DFS-081',
-        es: 'DFS-081',
-        it: 'DFS-081',
-        pl: 'DFS-081',
-        pt: 'DFS-081',
-        zh: 'DFS-081',
-      },
+      name: { en: 'DFS-081' },
       xws: 'dfs081',
       initiative: 3,
       limited: 1,
@@ -237,10 +180,6 @@ const t: ShipType = {
         de: 'Programmiert auf Funktionserhalt',
         fr: 'Programmation de Conservation',
         es: 'Programación de preservación',
-        it: 'Programma di Preservazione',
-        pl: 'Procedury asekuracji',
-        pt: 'Preservation Programming',
-        zh: 'Preservation Programming',
       },
       ability: {
         en:
@@ -251,14 +190,6 @@ const t: ShipType = {
           "Tant qu'un vaisseau allié à portée 0-1 défend, il peut dépenser 1 marqueur de calcul pour changer tous les résultats [Critical Hit] en résultats [Hit].",
         es:
           'Mientras una nave aliada que tienes a alcance 0-1 se defiende, esa nave puede gastar 1 ficha de Cálculos para cambiar todos los resultados [Critical Hit] por resultados [Hit] results.',
-        it:
-          'Mentre una nave amica a gittata 0-1 difende, può spendere 1 segnalino calcolo per cambiare tutti i risultati [Critical Hit] in risultati [Hit].',
-        pl:
-          'Gdy przyjazny statek w zasięgu 0-1 się broni, może wydać 1 żeton obliczeń, aby zmienić wszystkie wyniki [Critical Hit] na wyniki [Hit]. Sieć obliczeniowa: Gdy się bronisz albo wykonujesz atak, możesz wydać 1 żeton obliczeń z przyjaznego statku w zasięgu 0-1, aby zmienić 1 wynik [Focus] na wynik [Evade] albo [Hit].',
-        pt:
-          'While a friendly ship at range 0-1 defends, it may spend 1 calculate token to change all [Critical Hit] results to [Hit] results.',
-        zh:
-          'While a friendly ship at range 0-1 defends, it may spend 1 calculate token to change all [Critical Hit] results to [Hit] results.',
       },
       hyperspace: true,
       epic: true,
@@ -274,10 +205,6 @@ const t: ShipType = {
         de: 'Separatistendrohne',
         fr: 'Drone Séparatiste',
         es: 'Dron separatista',
-        it: 'Drone Separatista',
-        pl: 'Dron Separatystów',
-        pt: 'Separatist Drone',
-        zh: 'Separatist Drone',
       },
       initiative: 3,
       limited: 0,
@@ -291,14 +218,6 @@ const t: ShipType = {
           "Alors que la Guerre des Clones s'intensifie, l'Alliance Séparatiste continue d'améliorer la technologie des chasseurs droïdes, ainsi que les droïdes tactiques qui les dirigent.",
         es:
           'A medida que las Guerras Clon se recrudecen, la Alianza Separatista sigue desarrollando la tecnología de cazas estelares droide, así como la de los droides tácticos que los coordinan.',
-        it:
-          "Man mano che i conflitti delle Guerre dei Cloni si intensificano, l'Alleanza dei Separatisti continua a sviluppare sia la tecnologia degli astrocaccia droidi che i droidi tattici che li comandano.",
-        pl:
-          'Wojna Klonów nabiera tempa, zaś Sojusz Separatystów rozwija technologię zautomatyzowanych myśliwców gwiezdnych oraz droidów taktycznych, które nimi dowodzą.',
-        pt:
-          'As the Clone Wars escalate, the Separatist Alliance continues to develop the technology of droid starfighters, as well as the tactical droids that command them.',
-        zh:
-          'As the Clone Wars escalate, the Separatist Alliance continues to develop the technology of droid starfighters, as well as the tactical droids that command them.',
       },
       hyperspace: true,
       epic: true,
@@ -309,16 +228,7 @@ const t: ShipType = {
         'https://sb-cdn.fantasyflightgames.com/card_art/df638358903b64e7b246b3a56fa68af7.jpg',
     },
     {
-      name: {
-        en: 'DFS-311',
-        de: 'DFS-311',
-        fr: 'DFS-311',
-        es: 'DFS-311',
-        it: 'DFS-311',
-        pl: 'DFS-311',
-        pt: 'DFS-311',
-        zh: 'DFS-311',
-      },
+      name: { en: 'DFS-311' },
       xws: 'dfs311',
       initiative: 1,
       limited: 1,
@@ -327,10 +237,6 @@ const t: ShipType = {
         de: 'Aufklärungsdrohne',
         fr: 'Drone de Reconnaissance',
         es: 'Dron de reconocimiento',
-        it: 'Drone Esplorativo',
-        pl: 'Dron zwiadowczy',
-        pt: 'Scouting Drone',
-        zh: 'Scouting Drone',
       },
       ability: {
         en:
@@ -341,14 +247,6 @@ const t: ShipType = {
           "Au début de la phase d'engagement, vous pouvez transférer 1 de vos marqueurs de calcul à un autre vaisseau allié à portée 0-3.",
         es:
           'Al comienzo de la fase de Enfrentamiento, puedes transferir 1 de tus fichas de Cálculos a otra nave aliada que tengas a alcance 0-3.',
-        it:
-          "All'inizio della Fase di Ingaggio, puoi trasferire 1 tuo segnalino calcolo su un'altra nave amica a gittata 0-3.",
-        pl:
-          'Na początku fazy walki możesz przenieść 1 z twoich żetonów obliczeń na inny przyjazny statek w zasięgu 0-3. Sieć obliczeniowa: Gdy się bronisz albo wykonujesz atak, możesz wydać 1 żeton obliczeń z przyjaznego statku w zasięgu 0-1, aby zmienić 1 wynik [Focus] na wynik [Evade] albo [Hit].',
-        pt:
-          'At the start of the Engagement Phase, you may transfer 1 of your calculate tokens to another friendly ship at range 0-3.',
-        zh:
-          'At the start of the Engagement Phase, you may transfer 1 of your calculate tokens to another friendly ship at range 0-3.',
       },
       hyperspace: true,
       epic: true,

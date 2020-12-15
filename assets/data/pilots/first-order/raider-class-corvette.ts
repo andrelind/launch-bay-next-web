@@ -1,7 +1,12 @@
 import { ShipType } from '../../../../types';
 
 const t: ShipType = {
-  name: { en: 'Raider-class Corvette' },
+  name: {
+    en: 'Raider-class Corvette',
+    de: 'Korvette der Sturm-Klasse',
+    es: 'Corbeta clase Incursor',
+    fr: 'Corvette de Classe Raider',
+  },
   xws: 'raiderclasscorvette',
   size: 'Huge',
   dial: [
@@ -44,10 +49,21 @@ const t: ShipType = {
   },
   pilots: [
     {
-      name: { en: 'First Order Collaborators' },
+      name: {
+        en: 'First Order Collaborators',
+        de: 'Kollaborateure der Ersten Ordnung',
+        es: 'Colaboradores de la Primera Orden',
+        fr: 'Collaborateurs du Premier Ordre',
+      },
       text: {
         en:
           "The First Order's supporters make use of former Imperial vessels, such as the Raider-class corvette. Though it has outlived the regime that created it, this craft still spreads terror across the galaxy.",
+        de:
+          'Die Unterstützer der Ersten Ordnung nutzen ehemalige Imperiale Schiffe wie die Korvette der Sturm-Klasse. Obwohl sie das Regime, das sie erschuf, überdauert hat, verbreitet sie noch immer überall in der Galaxis Angst und Schrecken.',
+        es:
+          'Los partidarios de la Primera Orden se valen de antiguas naves imperiales como la corbeta clase Incursor. Aunque este navío ha sobrevivido al régimen que lo creó, sigue infundiendo el terror por toda la galaxia.',
+        fr:
+          "Les partisans du Premier Ordre utilisent souvent d'anciens vaisseaux Impériaux, comme la corvette de classe Raider. Bien qu'il ait survécu au régime qui l'a vu naître, cet appareil répand toujours la terreur à travers la galaxie.",
       },
       initiative: 8,
       engagement: 0,

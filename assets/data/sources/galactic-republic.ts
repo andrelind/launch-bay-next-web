@@ -221,10 +221,11 @@ export const t: Source[] = [
       pilots: {
         'anakinskywalker-eta2actis': 1,
         'obiwankenobi-eta2actis': 1,
-        'aaylasecura-eta2actis': 1,
         shaakti: 1,
         yoda: 1,
         jedigeneral: 1,
+        aaylasecura: 1,
+        transgalmegcontrollink: 1,
       },
       upgrades: {
         margsablclosure: 1,

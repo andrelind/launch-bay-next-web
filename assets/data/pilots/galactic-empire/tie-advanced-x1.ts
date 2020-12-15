@@ -4,11 +4,6 @@ const t: ShipType = {
   name: {
     en: 'TIE Advanced x1',
     de: 'TIE-x1-Turbojäger',
-    fr: 'TIE Advanced x1',
-    it: 'TIE Advanced x1',
-    pl: 'TIE Advanced x1',
-    pt: 'TIE Advanced x1',
-    zh: 'TIE高级X1战斗机',
     es: 'TIE avanzado x1',
   },
   xws: 'tieadvancedx1',
@@ -83,26 +78,8 @@ const t: ShipType = {
   icon: 'https://sb-cdn.fantasyflightgames.com/ship_types/I_TIEAdvanced.png',
   pilots: [
     {
-      name: {
-        en: 'Darth Vader',
-        de: 'Darth Vader',
-        fr: 'Darth Vader',
-        es: 'Darth Vader',
-        it: 'Darth Vader',
-        pl: 'Darth Vader',
-        pt: 'Darth Vader',
-        zh: '达斯·维德',
-      },
-      caption: {
-        en: 'Black Leader',
-        de: 'Schwarz Eins',
-        fr: 'Black Leader',
-        es: 'Jefe Negro',
-        it: 'Capo Nero',
-        pl: 'Dowódca Czarnych',
-        pt: 'Líder Preto',
-        zh: '黑色领队',
-      },
+      name: { en: 'Darth Vader' },
+      caption: { en: 'Black Leader', de: 'Schwarz Eins', es: 'Jefe Negro' },
       initiative: 6,
       limited: 1,
       cost: 66,
@@ -116,14 +93,6 @@ const t: ShipType = {
           'Après avoir effectué une action, vous pouvez dépenser 1 [Force] pour effectuer une action.',
         es:
           'Después de que realices una acción, puedes gastar 1 [Force] para realizar una acción.',
-        it:
-          "Dopo che hai effettuato un'azione, puoi spendere 1 [Force] per effettuare 1 azione. Computer d'Attacco Avanzato: Mentre effettui un attacco primario contro un difensore che hai acquisito come bersaglio, tira 1 dado di attacco aggiuntivo e cambia 1 risultato [Hit] in 1 risultato [Critical Hit].",
-        pl:
-          'Gdy wykonasz akcję, możesz wydać 1 [Force], aby wykonać kolejną akcję.',
-        pt:
-          'Após realizar uma ação, você podegastar 1 [Force] para realizar uma ação. Computador de Mira Avançado: Quando você realizar um ataque primário contra um defensor em quem você tem uma mira travada, role 1 dado de ataque adicional e mude 1 resultado [Hit] para um resultado [Critical Hit].',
-        zh:
-          '当你执行行动后，你可以花费1[Force]来再执行一个行动。 高级定位计算机：当你进行基础攻击且防御方已被你锁定时，多投1个攻击骰并将1[Hit]变为1[Critical Hit]。',
       },
       alt: [
         {
@@ -141,25 +110,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Maarek Stele',
-        de: 'Maarek Stele',
-        fr: 'Maarek Stele',
-        es: 'Maarek Stele',
-        it: 'Maarek Stele',
-        pl: 'Maarek Stele',
-        pt: 'Maarek Stele',
-        zh: '马雷克·斯泰勒',
-      },
+      name: { en: 'Maarek Stele' },
       caption: {
         en: 'Servant of the Empire',
         de: 'Diener des Imperiums',
         fr: "Serviteur de l'Empire",
         es: 'Servidor del Imperio',
-        it: "Servitore dell'Impero",
-        pl: 'Sługa Imperium',
-        pt: 'Servidor do Império',
-        zh: '银河帝国的仆从',
       },
       initiative: 5,
       limited: 1,
@@ -174,14 +130,6 @@ const t: ShipType = {
           'Tant que vous effectuez une attaque, si une carte de dégât devrait être attribuée face visible au défenseur, piochez 3 cartes de dégât à la place, choisissez-en 1, et défaussez les autres.',
         es:
           'Mientras efectúas un ataque, si al defensor se le va a infligir una carta de Daño boca arriba, en vez de eso roba 3 cartas de Daño, elige 1 de ellas a tu elección y descarta las otras.',
-        it:
-          "Mentre effettui un attacco, se al difensore sta per essere inflitta una carta danno a faccia in su, pesca invece 3 carte danno, scegline 1 e scarta le altre. Computer d'Attacco Avanzato: Mentre effettui un attacco primario contro un difensore che hai acquisito come bersaglio, tira 1 dado di attacco aggiuntivo e cambia 1 risultato [Hit] in 1 risultato [Critical Hit].",
-        pl:
-          'Gdy wykonujesz atak i obrońca ma otrzymać odkrytą kartę uszkodzenia, zamiast tego dobierz 3 karty uszkodzeń i wybierz 1, którą otrzyma obrońca. Niewybrane karty odrzuć.',
-        pt:
-          'Quando você realizar um ataque, se o defensor for receber uma carta de dano virada para cima, em vez disso, compre 3 cartas de dano, escolha 1 e descarte o resto. Computador de Mira Avançado: Quando você realizar um ataque primário contra um defensor em quem você tem uma mira travada, role 1 dado de ataque adicional e mude 1 resultado [Hit] para um resultado [Critical Hit].',
-        zh:
-          '当你执行攻击，且防御方将拿取一张面朝上的伤害卡时，改为拿取3张伤害卡，选择其中1张交给防御方并弃掉余下两张。  高级定位计算机：当你进行基础攻击且防御方已被你锁定时，多投1个攻击骰并将1[Hit]变为1[Critical Hit]。',
       },
       slots: ['Talent', 'Sensor', 'Missile', 'Modification'],
       artwork:
@@ -196,10 +144,6 @@ const t: ShipType = {
         de: 'Fliegerass der Storm-Staffel',
         fr: "As de l'Escadron Storm",
         es: 'As del Escuadrón Tormenta',
-        it: 'Asso dellaSquadriglia Storm',
-        pl: 'As Eskadry Sztormu',
-        pt: 'Ás do Esq. Tormenta',
-        zh: '暴风中队王牌飞行员',
       },
       initiative: 3,
       limited: 0,
@@ -214,14 +158,6 @@ const t: ShipType = {
           "Le Tie Advanced x1 a été produit en quantités limitées, mais les ingénieurs de Sienar incorporèrent la plus grande partie de ses innovations dans leur nouveau modèle de TIE : l'Intercepteur TIE.",
         es:
           'El caza TIE avanzado sólo se produjo en cantidades limitadas, pero los ingenieros de Sienar integraron muchas de sus prestaciones en el siguiente modelo TIE que desarrollaron: el interceptor TIE.',
-        it:
-          "Il TIE Advanced x1 fu prodotto in quantità limitate, ma in seguito gli ingegneri della Sienar incorporarono molte delle sue qualità migliori nel modello successivo: l'Intercettore TIE.",
-        pl:
-          'Myśliwce TIE Advanced x1 były produkowane w bardzo ograniczonej liczbie egzemplarzy, ale inżynierowie Sienar wykorzystali wiele najlepszych cech tego myśliwca, projektując kolejny model: TIE Interceptor.',
-        pt:
-          'A TIE Advanced x1 foi produzida em quantidade limitada, porém os engenheiros da Sienar incorporaram muitas de suas melhores qualidades em seu próximo modelo de TIE: a TIE Interceptor.',
-        zh:
-          'TIE高级X1战斗机并未大规模生产，但其设计团队均为西纳舰队系统公司最优秀的工程师，确保这架战机有着最顶尖的质量，接近TIE系列下一代机型：TIE拦截机。',
       },
       slots: ['Talent', 'Sensor', 'Missile', 'Modification'],
       artwork:
@@ -236,10 +172,6 @@ const t: ShipType = {
         de: 'Pilot der Tornado-Staffel',
         fr: "Pilote de l'Escadron Tempest",
         es: 'Piloto del Escuadrón Tempestad',
-        it: 'Pilota dellaSquadriglia Tempest',
-        pl: 'Pilot Eskadry Burzy',
-        pt: 'Piloto do Esq. Tempestade',
-        zh: '狂雨中队飞行员',
       },
       initiative: 2,
       limited: 0,
@@ -254,14 +186,6 @@ const t: ShipType = {
           "Le TIE Advanced est une version améliorée du célèbre chasseur TIE/ln disposant de boucliers, d'un meilleur système d'armement, de panneaux solaires incurvés et d'un hyperdrive.",
         es:
           'El caza TIE avanzado supuso una mejora del popular TIE/ln gracias a la incorporación de escudos, armamento más potente, paneles solares curvados y un hiperimpulsor.',
-        it:
-          "Il TIE Advanced x1 migliorò il popolare modello del TIE/ln con l'aggiunta di scudi, armamenti migliori, pannelli solari ricurvi e un'iperguida.",
-        pl:
-          'Myśliwiec TIE Advanced stanowił rozwinięcie popularnego modelu TIE/ln. Dodano osłony, lepsze uzbrojenie, zakrzywione panele słoneczne oraz hipernapęd.',
-        pt:
-          'A TIE Advanced aprimorou o projeto dopopular TIE/In ao adicionar escudo,um sistema de armas mais avançado,painéis solares curvos e um hiperpropulsor.',
-        zh:
-          '本TIE高级机型沿用了时下最流行的TIE/ln的设计，在其基础上增加了护盾、更好的武器、操作系统、曲面太阳能电池板、以及超空间驱进器。',
       },
       alt: [
         {
@@ -278,25 +202,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Ved Foslo',
-        de: 'Ved Foslo',
-        fr: 'Ved Foslo',
-        es: 'Ved Foslo',
-        it: 'Ved Foslo',
-        pl: 'Ved Foslo',
-        pt: 'Ved Foslo',
-        zh: '维德·弗斯洛',
-      },
+      name: { en: 'Ved Foslo' },
       caption: {
         en: 'Ambitious Engineer',
         de: 'Ambitionierter Ingenieur',
         fr: 'Ingénieur Ambitieux',
         es: 'Ingeniero ambicioso',
-        it: 'Ingegnere Ambizioso',
-        pl: 'Ambitny inżynier',
-        pt: 'Engenheiro Ambicioso',
-        zh: '野心勃勃的工程师',
       },
       initiative: 4,
       limited: 1,
@@ -311,14 +222,6 @@ const t: ShipType = {
           "Tant que vous exécutez une manœuvre, vous pouvez exécuter une manœuvre de même direction et de même difficulté mais avec une vitesse supérieure ou inférieure de 1 à la place. Ordinateur de Visée Avancé : tant que vous effectuez une attaque principale contre un défenseur que vous avez verrouillé, lancez 1 dé d'attaque supplémentaire et changez 1 résultat [Hit] en un résultat [Critical Hit].",
         es:
           'Mientras ejecutas una maniobra, en vez de esa maniobra puedes ejecutar otra que tenga su misma dirección y dificultad y cuya velocidad sea superior o inferior en 1 punto. Computadora de selección de blancos avanzada: Mientras efectúas un ataque principal contra un defensor que tienes fijado como blanco, tira 1 dado de ataque adicional y cambia 1 resultado [Hit] por un resultado [Critical Hit].',
-        it:
-          "Mentre esegui una manovra, puoi invece eseguire una manovra con la stessa traiettoria e difficoltà e con velocità superiore o inferiore di 1. Computer d'Attacco Avanzato: Mentre effettui un attacco primario contro un difensore che hai acquisito come bersaglio, tira 1 dado di attacco aggiuntivo e cambia 1 risultato [Hit] in 1 risultato [Critical Hit].",
-        pl:
-          'Gdy wykonujesz manewr, możesz zamiast niego wykonać manewr tego samego rodzaju, o tej samej trudności, ale o prędkości o 1 większej albo mniejszej.',
-        pt:
-          'Quando executar uma manobra, você pode executar uma manobra de mesma direção e dificuldade com velocidade 1 maior ou menor. Computador de Mira Avançado: Quando você realizar um ataque primário contra um defensor em quem você tem uma mira travada, role 1 dado de ataque adicional e mude 1 resultado [Hit] para um resultado [Critical Hit].',
-        zh:
-          '当你执行移动时，你可以改为执行方向与难度相同，而速度上升/下降一级的移动。 高级定位计算机：当你进行基础攻击且防御方已被你锁定时，多投1个攻击骰并将1[Hit]变为1[Critical Hit]。',
       },
       slots: ['Talent', 'Sensor', 'Missile', 'Modification'],
       artwork:
@@ -328,25 +231,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Zertik Strom',
-        de: 'Zertik Strom',
-        fr: 'Zertik Strom',
-        es: 'Zertik Strom',
-        it: 'Zertik Strom',
-        pl: 'Zertik Strom',
-        pt: 'Zertik Strom',
-        zh: '泽提克·斯特罗姆',
-      },
+      name: { en: 'Zertik Strom' },
       caption: {
         en: 'Pitiless Administrator',
         de: 'Gnadenloser Verwalter',
         fr: ' Administrateur Impitoyable',
         es: 'Administrador inmisericorde',
-        it: 'Amministratore Spietato',
-        pl: 'Bezlitosny nadzorca',
-        pt: 'Administrador Cruel',
-        zh: '铁面管理员',
       },
       initiative: 3,
       limited: 1,
@@ -361,14 +251,6 @@ const t: ShipType = {
           'Pendant la phase de dénouement, vous pouvez dépenser un marqueur de verrouillage que vous avez sur un vaisseau ennemi pour exposer 1 carte de dégât de ce dernier.',
         es:
           'Durante la fase Final, puedes gastar un Blanco fijado que tengas sobre una nave enemiga para exponer 1 de las cartas de Daño de esa nave.',
-        it:
-          "Durante la Fase Finale, puoi spendere 1 bersaglio acquisito che possiedi su una nave nemica per esporre 1 sua carta danno. Computer d'Attacco Avanzato: Mentre effettui un attacco primario contro un difensore che hai acquisito come bersaglio, tira 1 dado di attacco aggiuntivo e cambia 1 risultato [Hit] in 1 risultato [Critical Hit].",
-        pl:
-          'Podczas fazy końcowej możesz wydać twoje namierzenie z wrogiego statku, aby odkryć 1 z jego kart uszkodzeń.',
-        pt:
-          'Durante a Fase Final, você pode gastar uma mira que tiver em uma nave inimiga para expor 1 das cartas de dano dela. Computador de Mira Avançado: Quando você realizar um ataque primário contra um defensor em quem você tem uma mira travada, role 1 dado de ataque adicional e mude 1 resultado [Hit] para um resultado [Critical Hit].',
-        zh:
-          '在结束阶段，你可以花费1枚你放置在敌机上的锁定标记，以此来暴露1张该战机的伤害卡。 高级定位计算机：当你进行基础攻击且防御方已被你锁定时，多投1个攻击骰并将1[Hit]变为1[Critical Hit]。',
       },
       slots: ['Sensor', 'Missile', 'Modification'],
       artwork:

@@ -1,7 +1,12 @@
 import { ShipType } from '../../../../types';
 
 const t: ShipType = {
-  name: { en: 'CR90 Corellian Corvette' },
+  name: {
+    en: 'CR90 Corellian Corvette',
+    de: 'CR90 Corellianische Korvette',
+    es: 'Corbeta corelliana CR90',
+    fr: 'Corvette Corellienne CR90',
+  },
   xws: 'cr90corelliancorvette',
   size: 'Huge',
   dial: [
@@ -43,10 +48,21 @@ const t: ShipType = {
   },
   pilots: [
     {
-      name: { en: 'Alderaanian Guard' },
+      name: {
+        en: 'Alderaanian Guard',
+        de: 'Alderaanische Garde',
+        es: 'Guardia Alderaana',
+        fr: 'Garde Alderaanienne',
+      },
       text: {
         en:
           'A craft used since before the Clone Wars, the CR90 corvette is favored by the Royal House of Alderaan for its versatility.',
+        de:
+          'Die CR90-Korvette wurde schon vor den Klon­kriegen verwendet und wird vom alderaanischen Königshaus aufgrund ihrer Vielseitigkeit bevorzugt.',
+        es:
+          'La corbeta CR90, un vehículo que ya estaba en uso desde antes de las Guerras Clon, era muy apreciada por la Casa Real de Alderaan por su versatilidad.',
+        fr:
+          "Mise en service avant la Guerre des Clones, la corvette CR90 est privilégiée par la Maison Royale d'Alderaan pour sa polyvalence.",
       },
       initiative: 8,
       engagement: 0,

@@ -5,10 +5,6 @@ const t: ShipType = {
     en: 'TIE/sf Fighter',
     de: 'TIE/sf-Jäger',
     fr: 'Chasseur TIE/sf',
-    it: 'Caccia TIE/sf',
-    pl: 'Myśliwiec TIE/sf',
-    pt: 'TIE/sf Fighter',
-    zh: 'TIE/sf Fighter',
     es: 'Caza TIE/sf',
   },
   xws: 'tiesffighter',
@@ -98,25 +94,12 @@ const t: ShipType = {
   icon: 'https://sb-cdn.fantasyflightgames.com/ship_types/I_TIEsf.png',
   pilots: [
     {
-      name: {
-        en: '"Quickdraw"',
-        de: '„Quickdraw"',
-        fr: '"Quickdraw"',
-        es: '"Centella"',
-        it: '"Quickdraw"',
-        pl: '„Błysk"',
-        pt: '"Quickdraw"',
-        zh: '"Quickdraw"',
-      },
+      name: { en: '"Quickdraw"', de: '„Quickdraw"', es: '"Centella"' },
       caption: {
         en: 'Defiant Duelist',
         de: 'Kühner Zweikämpfer',
         fr: 'Duelliste Provocateur',
         es: 'Duelista desafiante',
-        it: 'Duellante Sprezzante',
-        pl: 'Żądna rywalizacji',
-        pt: 'Defiant Duelist',
-        zh: 'Defiant Duelist',
       },
       initiative: 6,
       limited: 1,
@@ -131,14 +114,6 @@ const t: ShipType = {
           'Après avoir perdu un bouclier, vous pouvez dépenser 1 [Charge]. Dans ce cas, vous pouvez effectuer une attaque principale bonus.',
         es:
           'Después de que pierdas un escudo, puedes gastar 1 [Charge]. Si lo haces, puedes efectuar un ataque principal adicional.',
-        it:
-          'Dopo che hai perso uno scudo, puoi spendere 1 [Charge]. Se lo fai, puoi effettuare 1 attacco primario bonus.',
-        pl:
-          'Gdy stracisz osłonę, możesz wydać 1 [Charge], aby wykonać dodatkowy atak podstawowy.',
-        pt:
-          'After you lose a shield, you may spend 1 [Charge]. If you do, you may perform a bonus primary attack.',
-        zh:
-          'After you lose a shield, you may spend 1 [Charge]. If you do, you may perform a bonus primary attack.',
       },
       slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Gunner', 'Tech'],
       charges: { value: 1, recovers: 1 },
@@ -149,25 +124,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: '"Backdraft"',
-        de: '„Backdraft"',
-        fr: '"Backdraft"',
-        es: '"Llamarada"',
-        it: '"Backdraft"',
-        pl: '„Podmuch"',
-        pt: '"Backdraft"',
-        zh: '"Backdraft"',
-      },
+      name: { en: '"Backdraft"', de: '„Backdraft"', es: '"Llamarada"' },
       caption: {
         en: 'Fiery Fanatic',
         de: 'Glühender Fanatiker',
         fr: 'Ardent Fanatique',
         es: 'Fanático furibundo',
-        it: 'Fanatico Furioso',
-        pl: 'Impulsywny fanatyk',
-        pt: 'Fiery Fanatic',
-        zh: 'Fiery Fanatic',
       },
       initiative: 4,
       limited: 1,
@@ -179,17 +141,9 @@ const t: ShipType = {
         de:
           'Solange du einen [Single Turret Arc]-Primärangriff durchführst, falls der Verteidiger in deinem [Rear Arc] ist, wirf 1 zusätzlichen Würfel.',
         fr:
-          'Tant que vous effectuez une attaque principale [Single Turret Arc], si le défenseur est dans votre [Rear Arc], lancez 1 dé supplémentaire..',
+          'Tant que vous effectuez une attaque principale [Single Turret Arc], si le défenseur est dans votre [Rear Arc], lancez 1 dé supplémentaire.',
         es:
           'Mientras efectúas un ataque principal [Single Turret Arc], si el defensor está en tu [Rear Arc], tira 1 dado adicional.',
-        it:
-          'Mentre effettui un attacco primario [Single Turret Arc], se il difensore è neltuo [Rear Arc], tira 1 dado aggiuntivo. .',
-        pl:
-          'Gdy wykonujesz atak podstawowy [Single Turret Arc], jeżeli obrońca znaajduje się w twojej [Rear Arc], rzucasz 1 dodatkową kością.',
-        pt:
-          'While you perform a [Single Turret Arc] primary attack, if the defender is in your [Rear Arc], roll 1 additional die.',
-        zh:
-          'While you perform a [Single Turret Arc] primary attack, if the defender is in your [Rear Arc], roll 1 additional die.',
       },
       slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Gunner', 'Tech'],
       artwork:
@@ -204,10 +158,6 @@ const t: ShipType = {
         de: 'Elitepilot der \nOmega-Staffel',
         fr: "Expert de l'Escadron Omega",
         es: 'Experto del Escuadrón Omega',
-        it: 'Esperto della Squadriglia Omega',
-        pl: 'Ekspert Eskadry Omega',
-        pt: 'Omega Squadron Expert',
-        zh: 'Omega Squadron Expert',
       },
       initiative: 3,
       limited: 0,
@@ -219,17 +169,9 @@ const t: ShipType = {
         de:
           'Der TIE/se ist ein vielseitiger Jäger, der mit seinen spezialisierten Waffen und Bordsystemen bestens für die Einsätze der Spezialeinheiten ausgerüstet ist.',
         fr:
-          "Le TIE/sf est un appareil polyvalent qui embarque de l'armement spécialisé et des systèmes expérimentaux utilisés lors des opérations à long rayon d'action des Forces spéciales du Premier Ordre..",
+          "Le TIE/sf est un appareil polyvalent qui embarque de l'armement spécialisé et des systèmes expérimentaux utilisés lors des opérations à long rayon d'action des Forces spéciales du Premier Ordre.",
         es:
           'El TIE/sf es un caza estelar muy versátil provisto de armamento especializado y sistemas experimentales para operaciones de largo alcance llevadas a cabo por las Fuerzas Especiales de la Primera Orden.',
-        it:
-          'Il TIE/sf è un astrocaccia versatile che monta armamenti specializzati e sistemi sperimentali per le operazioni a lungo raggio delle Forze Speciali del Primo Ordine.',
-        pl:
-          'TIE/sf to wszechstronny myśliwiec gwiezdny, który przenosi specjalistyczną broń i eksperymentalne systemy do operacji dalekiego zasięgu.',
-        pt:
-          'The TIE/sf is a versatile starfighter that carries specialized armament and experimental systems for long-range operations by First Order Special Forces.',
-        zh:
-          'The TIE/sf is a versatile starfighter that carries specialized armament and experimental systems for long-range operations by First Order Special Forces.',
       },
       slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Gunner', 'Tech'],
       artwork:
@@ -244,10 +186,6 @@ const t: ShipType = {
         de: 'Überlebender \nder Zeta-Staffel',
         fr: "Survivant de l'Escadron Zeta",
         es: 'Superviviente del Escuadrón Zeta',
-        it: 'Sopravvissuto della Squadriglia Zeta',
-        pl: 'Ocalały z Eskadry Zeta',
-        pt: 'Zeta Squadron Survivor',
-        zh: 'Zeta Squadron Survivor',
       },
       initiative: 2,
       limited: 0,
@@ -262,14 +200,6 @@ const t: ShipType = {
           'Humiliés par leur défaite, les pilotes rescapés de la base Starkiller sont impatients de démontrer leur talent face aux combattants de la Résistance.',
         es:
           'Humillados por su fracaso, los pilotos restantes de la base Starkiller están ansiosos por demostrar su valía mientras persiguen a la Resistencia.',
-        it:
-          'Umiliati dal loro fallimento, i piloti sopravvissuti della Base Starkiller sono impazienti di riscattarsi dando la caccia alle forze della Resistenza.',
-        pl:
-          'Pozostali przy życiu piloci z Bazy Starkiller próbują zmazać plamę na honorze, ścigając Ruch Oporu.',
-        pt:
-          'Humiliated by their failure, the remaining pilots from Starkiller Base are eager to prove their worth in pursuit of the Resistance.',
-        zh:
-          'Humiliated by their failure, the remaining pilots from Starkiller Base are eager to prove their worth in pursuit of the Resistance.',
       },
       slots: ['Sensor', 'Missile', 'Modification', 'Gunner', 'Tech'],
       artwork:
@@ -279,16 +209,7 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Lieutenant LeHuse',
-        de: 'Lieutenant LeHuse',
-        fr: 'Lieutenant LeHuse',
-        es: 'Teniente LeHuse',
-        it: 'Lieutenant LeHuse',
-        pl: 'Lieutenant LeHuse',
-        pt: 'Lieutenant LeHuse',
-        zh: 'Lieutenant LeHuse',
-      },
+      name: { en: 'Lieutenant LeHuse', es: 'Teniente LeHuse' },
       initiative: 5,
       limited: 1,
       cost: 37,
@@ -304,10 +225,6 @@ const t: ShipType = {
         de: 'Unnachgiebiger Scharfrichter',
         fr: 'Bourreau Indéfectible',
         es: 'Verdugo imperturbable',
-        it: 'Unflinching Executioner',
-        pl: 'Unflinching Executioner',
-        pt: 'Unflinching Executioner',
-        zh: 'Unflinching Executioner',
       },
       ability: {
         en:
@@ -318,26 +235,13 @@ const t: ShipType = {
           "Tant que vous effectuez une attaque, vous pouvez dépenser le verrouillage d'un autre vaisseau allié sur le défenseur pour relancer n'importe quel nombre de vos résultats.",
         es:
           'Mientras efectúas un ataque, puedes gastar el Blanco fijado que otra nave aliada tenga sobre el defensor para volver a tirar cualquier cantidad de tus resultados.',
-        it:
-          "While you perform an attack, you may spend another friendly ship's lock on the defender to reroll any number of your results.",
-        pl:
-          "While you perform an attack, you may spend another friendly ship's lock on the defender to reroll any number of your results.",
-        pt:
-          "While you perform an attack, you may spend another friendly ship's lock on the defender to reroll any number of your results.",
-        zh:
-          "While you perform an attack, you may spend another friendly ship's lock on the defender to reroll any number of your results.",
       },
     },
     {
       name: {
         en: 'Captain Phasma',
-        de: 'Captain Phasma',
         fr: 'Capitaine Phasma',
         es: 'Capitán Phasma',
-        it: 'Captain Phasma',
-        pl: 'Captain Phasma',
-        pt: 'Captain Phasma',
-        zh: 'Captain Phasma',
       },
       initiative: 4,
       limited: 1,
@@ -354,10 +258,6 @@ const t: ShipType = {
         de: 'Überlebende des Scyre-Angriffs',
         fr: 'Survivante du Clan Scyre',
         es: 'Superviviente del clan Scyre',
-        it: 'Scyre Survivor',
-        pl: 'Scyre Survivor',
-        pt: 'Scyre Survivor',
-        zh: 'Scyre Survivor',
       },
       ability: {
         en:
@@ -368,14 +268,6 @@ const t: ShipType = {
           "Tant que vous défendez, après l'étape « Neutraliser les résultats », un autre vaisseau allié à portée 0-1 doit subir 1 dégât [Hit]/[Critical Hit] pour annuler 1 résultat correspondant.",
         es:
           'Mientras te defiendes, después del paso de "Neutralizar resultados", otra nave aliada que tengas a alcance 0-1 debe sufrirr 1 de daño [Hit]/[Critical Hit] para anular 1 resultado equivalente.',
-        it:
-          'While you defend, after the Neutralize Results step, another friendly ship at range 0-1 must suffer 1 [Hit]/[Critical Hit] damage to cancel 1 matching result.',
-        pl:
-          'While you defend, after the Neutralize Results step, another friendly ship at range 0-1 must suffer 1 [Hit]/[Critical Hit] damage to cancel 1 matching result.',
-        pt:
-          'While you defend, after the Neutralize Results step, another friendly ship at range 0-1 must suffer 1 [Hit]/[Critical Hit] damage to cancel 1 matching result.',
-        zh:
-          'While you defend, after the Neutralize Results step, another friendly ship at range 0-1 must suffer 1 [Hit]/[Critical Hit] damage to cancel 1 matching result.',
       },
     },
   ],

@@ -5,10 +5,6 @@ const t: ShipType = {
     en: 'ARC-170 Starfighter',
     de: 'ARC-170-Sternenjäger',
     fr: 'Chasseur ARC-170',
-    it: 'Astrocaccia ARC-170',
-    pl: 'Myśliwiec gwiezdny ARC-170',
-    pt: 'Caça Estelar ARC-170',
-    zh: 'ARC-170 Starfighter',
     es: 'Caza estelar ARC-170',
   },
   xws: 'arc170starfighter',
@@ -47,26 +43,8 @@ const t: ShipType = {
   icon: 'https://sb-cdn.fantasyflightgames.com/ship_types/I_Arc-170.png',
   pilots: [
     {
-      name: {
-        en: 'Garven Dreis',
-        de: 'Garven Dreis',
-        fr: 'Garven Dreis',
-        es: 'Garven Dreis',
-        it: 'Garven Dreis',
-        pl: 'Garven Dreis',
-        pt: 'Garven Dreis',
-        zh: 'Garven Dreis',
-      },
-      caption: {
-        en: 'Red Leader',
-        de: 'Rot Eins',
-        fr: 'Red Leader',
-        es: 'Jefe Rojo',
-        it: 'Capo Rosso',
-        pl: 'Dowódca Czerwonych',
-        pt: 'Líder Vermelho',
-        zh: 'Red Leader',
-      },
+      name: { en: 'Garven Dreis' },
+      caption: { en: 'Red Leader', de: 'Rot Eins', es: 'Jefe Rojo' },
       initiative: 4,
       limited: 1,
       cost: 49,
@@ -80,14 +58,6 @@ const t: ShipType = {
           'Après avoir dépensé un marqueur de concentration, vous pouvez choisir 1 vaisseau allié à portée 1-3. Ce vaisseau allié gagne 1 marqueur de concentration.',
         es:
           'Después de que gastes una ficha de Concentración, puedes elegir 1 nave aliada que tengas a alcance 1-3. Esa nave recibe 1 ficha de Concentración.',
-        it:
-          'Dopo che hai speso un segnalino concentrazione, puoi scegliere 1 nave amica a gittata 1-3. Quella nave ottiene 1 segnalino concentrazione.',
-        pl:
-          'Gdy wydasz żeton skupienia, możesz wskazać 1 przyjazny statek w zasięgu 1-3. Wskazany statek otrzymuje 1 żeton skupienia.',
-        pt:
-          'Após gastar 1 ficha de foco, você pode escolher 1 nave amiga em alcance 1-3.A nave escolhida recebe 1 ficha de foco.',
-        zh:
-          'After you spend a focus token, you may choose 1 friendly ship at range 1-3. That ship gains 1 focus token.',
       },
       slots: [
         'Talent',
@@ -104,25 +74,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Ibtisam',
-        de: 'Ibtisam',
-        fr: 'Ibtisam',
-        es: 'Ibtisam',
-        it: 'Ibtisam',
-        pl: 'Ibtisam',
-        pt: 'Ibtisam',
-        zh: 'Ibtisam',
-      },
+      name: { en: 'Ibtisam' },
       caption: {
         en: 'Survivor of Endor',
         de: 'Überlebende von Endor',
         fr: "Survivant d'Endor",
         es: 'Superviviente de Endor',
-        it: 'Sopravvissuta di Endor',
-        pl: 'Ocalała z Endoru',
-        pt: 'Sobrevivente de Endor',
-        zh: 'Survivor of Endor',
       },
       initiative: 3,
       limited: 1,
@@ -137,14 +94,6 @@ const t: ShipType = {
           "Après avoir entièrement exécuté une manœuvre, si vous êtes stressé, vous pouvez lancer 1 dé d'attaque. Sur un résultat [Hit] ou [Critical Hit], retirez 1 marqueur de stress.",
         es:
           'Después de que ejecutes completamente una maniobra, si estás bajo tensión, puedes tirar 1 dado de ataque. Si sacas un resultado [Hit] o [Critical Hit], retiras 1 ficha de Tensión.',
-        it:
-          'Dopo che hai eseguito completamente una manovra, se sei in tensione, puoi tirare 1 dado di attacco. Con un risultato [Hit] o [Critical Hit], rimuovi 1 segnalino tensione.',
-        pl:
-          'Po wykonaniu pełnego manewru, jeżeli posiadasz żeton stresu, możesz rzucić 1 kością ataku. Jeżeli wypadnie [Hit] albo [Critical Hit], usuwasz 1 żeton stresu.',
-        pt:
-          'Após executar completamenteuma manobra, se estiver estressado, você pode rolar 1 dado de ataque.Em um resultado [Hit] ou [Critical Hit], remova1 ficha de estresse.',
-        zh:
-          'After you fully execute a maneuver, if you are stressed, you may roll 1 attack die. On a [Hit] or [Critical Hit] result, remove 1 stress token.',
       },
       slots: [
         'Talent',
@@ -161,25 +110,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Norra Wexley',
-        de: 'Norra Wexley',
-        fr: 'Norra Wexley',
-        es: 'Norra Wexley',
-        it: 'Norra Wexley',
-        pl: 'Norra Wexley',
-        pt: 'Norra Wexley',
-        zh: 'Norra Wexley',
-      },
+      name: { en: 'Norra Wexley' },
       caption: {
         en: 'Gold Nine',
         de: 'Gold Neun',
         fr: 'Gold Neuf',
         es: 'Oro Nueve',
-        it: 'Oro Nove',
-        pl: 'Złoty Dziewięć',
-        pt: 'Dourado Nove',
-        zh: 'Gold Nine',
       },
       initiative: 5,
       limited: 1,
@@ -194,14 +130,6 @@ const t: ShipType = {
           'Tant que vous défendez, si un vaisseau ennemi est à portée 0-1, vous pouvez ajouter 1 résultat [Evade] aux résultats de vos dés.',
         es:
           'Mientras te defiendes, si tienes al menos una nave enemiga a alcance 0-1, puedes añadir 1 resultado [Evade] a tus resultados de dados.',
-        it:
-          'Mentre difendi, se ci sono navi nemiche a gittata 0-1, puoi aggiungere 1 risultato [Evade] ai risultati dei tuoi dadi.',
-        pl:
-          'Gdy się bronisz i w zasięgu 0-1 znajduje się wrogi statek, dodaj do swoich wyników rzutu 1 wynik [Evade].',
-        pt:
-          'Quando defender, se houver uma nave inimiga em alcance 0-1, você pode adicionar 1 resultado [Evade] aos resultadosde seus dados.',
-        zh:
-          'While you defend, if there is an enemy ship at range 0-1, you may add 1 [Evade] result to your dice results.',
       },
       slots: [
         'Talent',
@@ -218,25 +146,12 @@ const t: ShipType = {
       epic: true,
     },
     {
-      name: {
-        en: 'Shara Bey',
-        de: 'Shara Bey',
-        fr: 'Shara Bey',
-        es: 'Shara Bey',
-        it: 'Shara Bey',
-        pl: 'Shara Bey',
-        pt: 'Shara Bey',
-        zh: 'Shara Bey',
-      },
+      name: { en: 'Shara Bey' },
       caption: {
         en: 'Green Four',
         de: 'Grün Vier',
         fr: 'Green Quatre',
         es: 'Verde Cuatro',
-        it: 'Verde Quattro',
-        pl: 'Zielony Cztery',
-        pt: 'Verde Quatro',
-        zh: 'Green Four',
       },
       initiative: 4,
       limited: 1,
@@ -251,14 +166,6 @@ const t: ShipType = {
           'Tant que vous défendez ou effectuez une attaque principale, vous pouvez dépenser 1 marqueur de verrouillage que vous avez sur le vaisseau ennemi pour ajouter 1 résultat [Focus] aux résultats de vos dés.',
         es:
           'Mientras te defiendes o efectúas un ataque principal, puedes gastar 1 Blanco fijado que tengas sobre la nave enemiga para añadir 1 resultado [Focus] a tus resultados de dados.',
-        it:
-          'Mentre difendi o effettui un attacco primario, puoi spendere 1 bersaglio acquisito che possiedi sulla nave nemica per aggiungere 1 risultato [Focus] ai risultati dei tuoi dadi.',
-        pl:
-          'Gdy się bronisz albo wykonujesz atak podstawowy, możesz wydać twoje namierzenie z wrogiego statku, z którym walczysz, aby dodać do twoich wyników rzutu 1 wynik [Focus].',
-        pt:
-          'Quando defender ou realizar umataque primário, você pode gastar1 mira travada na nave inimiga para adicionar 1 resultado [Focus] aoresultado de seus dados.',
-        zh:
-          'While you defend or perform a primary attack, you may spend 1 lock you have on the enemy ship to add 1 [Focus] result to your dice results.',
       },
       slots: [
         'Talent',

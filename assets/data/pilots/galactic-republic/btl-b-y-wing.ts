@@ -5,10 +5,6 @@ const t: ShipType = {
     en: 'BTL-B Y-wing',
     de: 'BTL-B-Y-Flügler',
     fr: 'Y-wing BTL-B',
-    it: 'BTL-B Y-wing',
-    pl: 'Y-wing BTL-B',
-    pt: 'BTL-B Y-wing',
-    zh: 'BTL-B Y-wing',
     es: 'BTL-B Ala-Y',
   },
   xws: 'btlbywing',
@@ -80,10 +76,6 @@ const t: ShipType = {
         de: 'Veteran der Schatten-Staffel',
         fr: "Vétéran de l'Escadron Shadow",
         es: 'Veterano del Escuadrón Sombra',
-        it: 'Shadow Squadron Veteran',
-        pl: 'Weteran Eskadry Cieni',
-        pt: 'Shadow Squadron Veteran',
-        zh: 'Shadow Squadron Veteran',
       },
       initiative: 3,
       limited: 0,
@@ -97,14 +89,6 @@ const t: ShipType = {
           "l'Escadron Shadow, actif depuis les tout premiers jours de la Guerre des Clones, a remporté des victoires prestigieuses à Kadavo et contre le vaisseau amiral de Grievous, le Malveillance.",
         es:
           'El Escuadrón Sombra ha prestado servicio desde los primeros días de las Guerras Clon, obteniendo célebres victorias en Kadavo y contra la nave insignia de Grievous, el Malevolencia.',
-        it:
-          'Shadow Squadron has served since the early days of the Clone Wars, winning victories at Kadavo and against the flagship of Grievous, Malevolence.',
-        pl:
-          'Eskadra Cieni wytrenowana przez wybitnego pilota Jedi, Anakina Skywalkera, walczy już od pierwszych dni Wojen Klonów i ma na swoim koncie kilka spektakularnych zwycięstw, jak choćby bitwa na Kadavo czy zniszczenie Malevolence, okrętu flagowego generała Grievousa.',
-        pt:
-          'Shadow Squadron has served since the early days of the Clone Wars, winning victories at Kadavo and against the flagship of Grievous, Malevolence.',
-        zh:
-          'Shadow Squadron has served since the early days of the Clone Wars, winning victories at Kadavo and against the flagship of Grievous, Malevolence.',
       },
       hyperspace: false,
       epic: true,
@@ -121,16 +105,7 @@ const t: ShipType = {
       ffg: 602,
     },
     {
-      name: {
-        en: 'Anakin Skywalker',
-        de: 'Anakin Skywalker',
-        fr: 'Anakin Skywalker',
-        es: 'Anakin Skywalker',
-        it: 'Anakin Skywalker',
-        pl: 'Anakin Skywalker',
-        pt: 'Anakin Skywalker',
-        zh: 'Anakin Skywalker',
-      },
+      name: { en: 'Anakin Skywalker' },
       initiative: 6,
       limited: 1,
       xws: 'anakinskywalker-btlbywing',
@@ -143,14 +118,6 @@ const t: ShipType = {
           "Après avoir entièrement exécuté une manœuvre, s'il y a un vaisseau ennemi dans votre [Front Arc] à portée 0-1 ou dans votre [Bullseye Arc], vous pouvez dépenser 1 [Force] pour retirer 1 marqueur de stress.",
         es:
           'Después de que ejecutes completamente una maniobra, si tienes alguna nave enemiga situada en tu [Front Arc] a alcance 0-1 o en tu [Bullseye Arc], puedes gastar 1 [Force] para retirar 1 ficha de Tensión.',
-        it:
-          'After you fully execute a maneuver, if there is an enemy ship in your [Front Arc] at range 0-1 or in your [Bullseye Arc], you may spend 1 [Force] to remove 1 stress token.',
-        pl:
-          'Gdy wykonasz pełny manewr, jeśli w twojej [Front Arc] w zasięgu 0-1 albo w twoim [Bullseye Arc] jest wrogi statek, możesz wydać 1 [Force], aby usunąć 1 żeton stresu.',
-        pt:
-          'After you fully execute a maneuver, if there is an enemy ship in your [Front Arc] at range 0-1 or in your [Bullseye Arc], you may spend 1 [Force] to remove 1 stress token.',
-        zh:
-          'After you fully execute a maneuver, if there is an enemy ship in your [Front Arc] at range 0-1 or in your [Bullseye Arc], you may spend 1 [Force] to remove 1 stress token.',
       },
       force: { value: 3, recovers: 1, side: ['light'] },
       hyperspace: true,
@@ -171,23 +138,10 @@ const t: ShipType = {
         de: 'Held der Republik',
         fr: 'Héros de la République',
         es: 'Héroe de la República',
-        it: 'Hero of the Republic',
-        pl: 'Bohater Republiki',
-        pt: 'Hero of the Republic',
-        zh: 'Hero of the Republic',
       },
     },
     {
-      name: {
-        en: 'R2-D2',
-        de: 'R2-D2',
-        fr: 'R2-D2',
-        es: 'R2-D2',
-        it: 'R2-D2',
-        pl: 'R2-D2',
-        pt: 'R2-D2',
-        zh: 'R2-D2',
-      },
+      name: { en: 'R2-D2' },
       xws: 'r2d2',
       initiative: 2,
       limited: 1,
@@ -200,14 +154,6 @@ const t: ShipType = {
           "Au début de la phase d'engagement, s'il y a un vaisseau ennemi dans votre [Rear Arc], gagnez 1 marqueur de calcul.",
         es:
           'Al comienzo de la fase de Enfrentamiento, si tienes alguna nave enemiga situada en tu [Rear Arc], recibes 1 ficha de Cálculos.',
-        it:
-          'At the start of the Engagement Phase, if there is an enemy ship in your [Rear Arc], gain 1 calculate token.',
-        pl:
-          'Na początku fazy walki, jeżeli w twojej [Rear Arc] jest wrogi statek, otrzymujesz ‭1 żeton obliczeń.',
-        pt:
-          'At the start of the Engagement Phase, if there is an enemy ship in your [Rear Arc], gain 1 calculate token.',
-        zh:
-          'At the start of the Engagement Phase, if there is an enemy ship in your [Rear Arc], gain 1 calculate token.',
       },
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },
@@ -233,10 +179,6 @@ const t: ShipType = {
         de: 'Schrotteimer',
         fr: 'Tas de Boulons',
         es: 'Montón de chatarra',
-        it: 'Bucket of Bolts',
-        pl: 'Kupa złomu',
-        pt: 'Bucket of Bolts',
-        zh: 'Bucket of Bolts',
       },
     },
     {
@@ -245,10 +187,6 @@ const t: ShipType = {
         de: '"Oddball"',
         fr: '"Oddball"',
         es: '"Oddball"',
-        it: '"Odd Ball"',
-        pl: '„Szajbus"',
-        pt: '"Odd Ball"',
-        zh: '"Odd Ball"',
       },
       xws: 'oddball-btlbywing',
       initiative: 5,
@@ -262,25 +200,8 @@ const t: ShipType = {
           "Après avoir entièrement exécuté une manœuvre rouge ou effectué une action rouge, s'il y a un vaisseau ennemi dans votre [Bullseye Arc], vous pouvez verrouiller ce vaisseau.",
         es:
           'Después de que ejecutes completamente una maniobra roja o realices una acción roja, si tienes alguna nave enemiga situada en tu [Bullseye Arc], puedes obtener un Blanco fijado sobre esa nave.',
-        it:
-          'After you fully execute a red maneuver or perform a red action, if there is an enemy ship in your [Bullseye Arc], you may acquire a lock on that ship.',
-        pl:
-          'Gdy wykonasz czerwony manewr albo czerwoną akcję, jeśli w twoim [Bullseye Arc] jest wrogi statek, możesz go namierzyć.',
-        pt:
-          'After you fully execute a red maneuver or perform a red action, if there is an enemy ship in your [Bullseye Arc], you may acquire a lock on that ship.',
-        zh:
-          'After you fully execute a red maneuver or perform a red action, if there is an enemy ship in your [Bullseye Arc], you may acquire a lock on that ship.',
       },
-      caption: {
-        en: 'CC-2237',
-        de: 'CC-2237',
-        fr: 'CC-2237',
-        es: 'CC-2237',
-        it: 'CC-2237',
-        pl: 'CC-2237',
-        pt: 'CC-2237',
-        zh: 'CC-2237',
-      },
+      caption: { en: 'CC-2237' },
       hyperspace: true,
       epic: true,
       slots: [
@@ -296,16 +217,7 @@ const t: ShipType = {
       ffg: 597,
     },
     {
-      name: {
-        en: '"Matchstick"',
-        de: '"Matchstick"',
-        fr: '"Matchstick"',
-        es: '"Matchstick"',
-        it: '"Matchstick"',
-        pl: '„Zapałka"',
-        pt: '"Matchstick"',
-        zh: '"Matchstick"',
-      },
+      name: { en: '"Matchstick"' },
       xws: 'matchstick',
       initiative: 4,
       limited: 1,
@@ -318,14 +230,6 @@ const t: ShipType = {
           "Tant que vous effectuez une attaque principale ou une attaque [Single Turret Arc], vous pouvez relancer 1 dé d'attaque pour chaque marqueur rouge que vous avez.",
         es:
           'Mientras efectúas un ataque principal o [Single Turret Arc], puedes volver a tirar 1 dado de ataque por cada ficha roja que tengas.',
-        it:
-          'While you perform a primary or [Single Turret Arc] attack, you may reroll 1 attack die for each red token you have.',
-        pl:
-          'Gdy wykonujesz atak podstawowy albo [Single Turret Arc], możesz przerzucić 1 kość ataku za każdy czerwony żeton, jaki posiadasz.',
-        pt:
-          'While you perform a primary or [Single Turret Arc] attack, you may reroll 1 attack die for each red token you have.',
-        zh:
-          'While you perform a primary or [Single Turret Arc] attack, you may reroll 1 attack die for each red token you have.',
       },
       hyperspace: true,
       epic: true,
@@ -345,23 +249,10 @@ const t: ShipType = {
         de: 'Schatten Zwei',
         fr: 'Shadow Deux',
         es: 'Sombra Dos',
-        it: 'Shadow Two',
-        pl: 'Cień Dwa',
-        pt: 'Shadow Two',
-        zh: 'Shadow Two',
       },
     },
     {
-      name: {
-        en: '"Broadside"',
-        de: '"Broadside"',
-        fr: '"Broadside"',
-        es: '"Broadside"',
-        it: '"Broadside"',
-        pl: '„Salwa"',
-        pt: '"Broadside"',
-        zh: '"Broadside"',
-      },
+      name: { en: '"Broadside"' },
       xws: 'broadside',
       initiative: 3,
       limited: 1,
@@ -374,14 +265,6 @@ const t: ShipType = {
           'Tant que vous effectuez une attaque [Single Turret Arc], si votre indicateur [Single Turret Arc] est dans votre [Left Arc] ou [Right Arc], vous pouvez changer 1 résultat vierge en un résultat [Focus].',
         es:
           'Mientras efectúas un ataque [Single Turret Arc] , si tu indicador [Single Turret Arc] está en tu [Left Arc] o [Right Arc], puedes cambiar 1 resultado de cara vacía por un resultado [Focus] .',
-        it:
-          'While you perform a [Single Turret Arc] attack, if your [Single Turret Arc] indicator is in your [Left Arc] or [Right Arc], you may change 1 blank result to a [Focus] result.',
-        pl:
-          'Gdy wykonujesz atak [Single Turret Arc] i twój wskaźnik [Single Turret Arc] jest ustawiony na twoją [Left Arc] albo [Right Arc], możesz zmienić 1 pusty wynik na wynik [Focus].',
-        pt:
-          'While you perform a [Single Turret Arc] attack, if your [Single Turret Arc] indicator is in your [Left Arc] or [Right Arc], you may change 1 blank result to a [Focus] result.',
-        zh:
-          'While you perform a [Single Turret Arc] attack, if your [Single Turret Arc] indicator is in your [Left Arc] or [Right Arc], you may change 1 blank result to a [Focus] result.',
       },
       hyperspace: true,
       epic: true,
@@ -401,23 +284,10 @@ const t: ShipType = {
         de: 'Schatten Drei',
         fr: 'Shadow Trois',
         es: 'Sombra Tres',
-        it: 'Shadow Three',
-        pl: 'Cień Trzy',
-        pt: 'Shadow Three',
-        zh: 'Shadow Three',
       },
     },
     {
-      name: {
-        en: '"Goji"',
-        de: '"Goji"',
-        fr: '"Goji"',
-        es: '"Goji"',
-        it: '"Goji"',
-        pl: '„Goji"',
-        pt: '"Goji"',
-        zh: '"Goji"',
-      },
+      name: { en: '"Goji"' },
       xws: 'goji',
       initiative: 2,
       limited: 1,
@@ -430,14 +300,6 @@ const t: ShipType = {
           "Tant qu'un vaisseau allié à portée 0-3 défend, il peut lancer 1 dé de défense supplémentaire pour chaque bombe ou mine alliée à portée 0-1 de lui.",
         es:
           'Mientras una nave aliada que tienes a alcance 0-3 se defiende, esa nave puede tirar 1 dado de defensa adicioan por cada bomba o mina aliada que tenga a alcance 0-1.',
-        it:
-          'While a friendly ship at range 0-3 defends, it may roll 1 additional defense die for each friendly bomb at range 0-1 of it.',
-        pl:
-          'Gdy przyjazny statek w zasięgu 0-3 się broni, może rzucić 1 dodatkową kością obrony za każdą przyjazną bombę i minę w zasięgu 0-1 od niego.',
-        pt:
-          'While a friendly ship at range 0-3 defends, it may roll 1 additional defense die for each friendly bomb at range 0-1 of it.',
-        zh:
-          'While a friendly ship at range 0-3 defends, it may roll 1 additional defense die for each friendly bomb at range 0-1 of it.',
       },
       hyperspace: true,
       epic: true,
@@ -456,10 +318,6 @@ const t: ShipType = {
         de: 'Bombenspezialist',
         fr: 'Spécialiste du Chargement',
         es: 'Especialista en cabezas explosivas',
-        it: 'Payload Specialist',
-        pl: 'Specjalista załadunku',
-        pt: 'Payload Specialist',
-        zh: 'Payload Specialist',
       },
     },
     {
@@ -468,10 +326,6 @@ const t: ShipType = {
         de: 'Bomber der Roten Staffel',
         fr: "Bombardier de l'Escadron Rouge",
         es: 'Bombardero del Escuadrón Rojo',
-        it: 'Red Squadron Bomber',
-        pl: 'Bombardier Eskadry Czerwonych',
-        pt: 'Red Squadron Bomber',
-        zh: 'Red Squadron Bomber',
       },
       xws: 'redsquadronbomber',
       initiative: 2,
@@ -485,14 +339,6 @@ const t: ShipType = {
           "Durant la bataille de Géonosis, l'Escadron Rouge a fourni une couverture indispensable aux canonnières TO/BA déployées pour sécuriser la surface.",
         es:
           'En la batalla de Geonosis, el Escuadrón Rojo proporcionó una cobertura indispensable a las cañoneras LAAT desplegadas para ocupar la superficie.',
-        it:
-          'At the battle of Geonosis, Red Squadron provided vital cover to the LAAT gunships deployed to secure the surface.',
-        pl:
-          'Eskadra Czerwonych odegrała kluczową rolę w bitwie o Geonosis, zapewniając osłonę wysłanym na planetę kanonierkom szturmowym LAAT.',
-        pt:
-          'At the battle of Geonosis, Red Squadron provided vital cover to the LAAT gunships deployed to secure the surface.',
-        zh:
-          'At the battle of Geonosis, Red Squadron provided vital cover to the LAAT gunships deployed to secure the surface.',
       },
       hyperspace: false,
       epic: true,
