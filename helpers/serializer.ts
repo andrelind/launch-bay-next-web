@@ -11,7 +11,7 @@ const rep = (c: string, t: string, d: string) => {
 };
 
 const getKeyByValue = (object: any, value: string) => {
-  const o = Object.keys(object).find((key) => object[key] === value);
+  const o = Object.keys(object).find(key => object[key] === value);
   return parseInt(o || '0') || value;
 };
 
@@ -46,14 +46,14 @@ export const serialize = (o: SquadronXWS) => {
     o.cost,
     getKeyByValue(ffgXws.factions, o.faction),
     o.format === 'Extended' ? 0 : 1,
-    ...o.pilots.map((p) => {
+    ...o.pilots.map(p => {
       const upgrades: (string | number)[][] = [];
-      slotKeys.forEach((key) => {
+      slotKeys.forEach(key => {
         const up = p.upgrades && p.upgrades[key];
         if (up && up.length > 0) {
           upgrades.push([
             getKeyByValue(ffgXws.slots, key),
-            ...((p.upgrades && p.upgrades[key]) || []).map((u) =>
+            ...((p.upgrades && p.upgrades[key]) || []).map(u =>
               getKeyByValue(ffgXws.upgrades, u)
             ),
           ]);
@@ -109,6 +109,7 @@ export const deserialize = (o: string, uid?: string): SquadronXWS => {
       const parsedUpgrades: { [key in SlotKey]?: string[] } = {};
       (upgrades || []).forEach((u: any) => {
         const [key, ...list] = u;
+        console.log({ key });
         parsedUpgrades[ffgXws.slots[key]] = list.map(
           (l: string) => ffgXws.upgrades[l] || l
         );

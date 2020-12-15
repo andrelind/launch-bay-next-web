@@ -34,9 +34,7 @@ export const xwsFromSquadron = (squadron: Squadron): SquadronXWS => {
       slotKeys.forEach(key => {
         const u = ship.upgrades && ship.upgrades[key];
         if (u) {
-          // YASB uses 'force-power' and crashes otherwise
-          const real = key === 'forcepower' ? 'force-power' : key;
-          upgrades[real] = u.map(p => p.xws);
+          upgrades[key] = u.map(p => p.xws);
         }
       });
 

@@ -1,6 +1,5 @@
 // import { Alert, Clipboard } from 'react-native';
 import uuid from 'uuid/v4';
-
 import xwsMap from '../assets/data/ffg-xws';
 import upgradeData from '../assets/data/upgrades';
 import { Faction, FactionKey, SlotKey, Squadron, SquadronXWS } from '../types';
@@ -212,12 +211,23 @@ export const exportAsXws = (squadron: Squadron) => {
     faction: getFactionKey(xws.faction),
     points: xws.cost,
     version: xws.version || '2.0.0',
-    pilots: xws.pilots.map(p => ({
-      id: p.name,
-      ship: p.ship,
-      points: p.cost || 0,
-      upgrades: p.upgrades || {},
-    })),
+    pilots: xws.pilots.map(p => {
+      const upgrades: { [s: string]: string[] } = {};
+      Object.keys(p.upgrades || {}).map(key => {
+        const real = key === 'forcepower' ? 'force-power' : key;
+        if (p.upgrades) {
+          // @ts-ignore
+          upgrades[real] = p.upgrades[key as SlotKey];
+        }
+      });
+
+      return {
+        id: p.name,
+        ship: p.ship,
+        points: p.cost || 0,
+        upgrades,
+      };
+    }),
     vendor: {
       lbn: {
         builder: 'Launch Bay Next',
