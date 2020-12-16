@@ -1,11 +1,11 @@
-import { Transition } from "@tailwindui/react";
-import { useLocalized } from "lbn-core/dist/helpers/i18n";
-import { AppState } from "lbn-core/dist/state";
-import { Language, ShipType, Translation } from "lbn-core/dist/types";
-import React, { FC, useState } from "react";
-import { useSelector } from "react-redux";
-import { popoverStyle } from "../helpers/popover";
-import { ShipFont } from "./fonts/ships";
+import { Transition } from '@tailwindui/react';
+import { useLocalized } from 'lbn-core/dist/helpers/i18n';
+import { AppState } from 'lbn-core/dist/state';
+import { Language, ShipType, Translation } from 'lbn-core/dist/types';
+import React, { FC, useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
+import { popoverStyle } from '../helpers/popover';
+import { ShipFont } from './fonts/ships';
 
 type Props = {
   value?: ShipType;
@@ -20,7 +20,7 @@ const renderShipType = (
   <span className="flex items-center justify-between">
     <div className="flex items-center text-xs sm:text-sm">
       <ShipFont
-        className={`${!shipType && "text-gray-500"}`}
+        className={`${!shipType && 'text-gray-500'}`}
         icon={shipType?.xws}
       />
 
@@ -41,6 +41,10 @@ export const ShipPopover: FC<Props> = ({ value, options, onChange }) => {
   const [showMenu, setShowMenu] = useState(false);
   //   const [showDetails, setShowDetails] = useState<ShipType | undefined>();
   const [selected, setSelected] = useState(value);
+
+  useEffect(() => {
+    setSelected(value);
+  }, [value]);
 
   const [pos, setPos] = useState({ x: 0, y: 0 });
 
