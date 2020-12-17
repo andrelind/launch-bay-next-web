@@ -1,19 +1,19 @@
-import { Transition } from "@tailwindui/react";
-import { red } from "lbn-core/dist/assets/colors";
-import { useLocalized } from "lbn-core/dist/helpers/i18n";
-import { AppState } from "lbn-core/dist/state";
+import { Transition } from '@tailwindui/react';
+import { red } from 'lbn-core/dist/assets/colors';
+import { useLocalized } from 'lbn-core/dist/helpers/i18n';
+import { AppState } from 'lbn-core/dist/state';
 import {
   Language,
   Pilot,
   Ship,
   ShipType,
   Translation,
-} from "lbn-core/dist/types";
-import React, { FC, useState } from "react";
-import { useSelector } from "react-redux";
-import { popoverDetailStyle, popoverStyle } from "../helpers/popover";
-import PilotComponent from "./pilot";
-import { StatsComponent } from "./ship-stats";
+} from 'lbn-core/dist/types';
+import React, { FC, useState } from 'react';
+import { useSelector } from 'react-redux';
+import { popoverDetailStyle, popoverStyle } from '../helpers/popover';
+import PilotComponent from './pilot';
+import { StatsComponent } from './ship-stats';
 
 type Props = {
   value?: Pilot;
@@ -39,7 +39,7 @@ const renderPilot = (
           <span className="font-medium mr-1">
             {pilot?.limited !== undefined &&
               pilot?.limited > 0 &&
-              `${"•".repeat(pilot?.limited)} `}
+              `${'•'.repeat(pilot?.limited)} `}
             {t(pilot?.name)}
           </span>
           <span className="italic text-gray-400 sm:visible">
@@ -60,7 +60,9 @@ const renderPilot = (
           charges={pilot?.charges}
         />
       )}
-      <span className="font-medium">{(ship as Ship)?.pointsWithUpgrades}</span>
+      <span className="font-medium">
+        {(ship as Ship)?.pointsWithUpgrades || pilot?.cost}
+      </span>
     </div>
   </span>
 );
@@ -85,7 +87,11 @@ export const PilotPopover: FC<Props> = ({
   return (
     <div className="mt-1 relative">
       <button
-        onClick={() => setShowMenu(!showMenu)}
+        onClick={(e) => {
+          const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
+          setPos({ x: rect.x, y: rect.y });
+          setShowMenu(!showMenu);
+        }}
         type="button"
         aria-haspopup="listbox"
         aria-expanded="true"
@@ -138,7 +144,7 @@ export const PilotPopover: FC<Props> = ({
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
         className={`absolute mt-1 w-full ${
-          halfWidth && "sm:w-1/2"
+          halfWidth && 'sm:w-1/2'
         } rounded-md bg-white shadow-lg z-10`}
         style={popoverStyle(pos)}
       >

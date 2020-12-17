@@ -97,7 +97,6 @@ const EditPage: NextPage<Props> = ({ uid }) => {
       console.log('Update url');
       const url = `?lbx=${newLbx}&uid=${uid}`;
       router.push(url, `?lbx=${newLbx}`, { shallow: true });
-      // history.pushState("", "", url);
     } else {
       // Om vi är inloggade, uppdatera på servern
       console.log('Update server');

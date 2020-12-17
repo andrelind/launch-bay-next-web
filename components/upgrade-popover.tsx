@@ -1,20 +1,20 @@
-import { Transition } from "@tailwindui/react";
-import { red } from "lbn-core/dist/assets/colors";
-import { useLocalized } from "lbn-core/dist/helpers/i18n";
-import { AppState } from "lbn-core/dist/state";
+import { Transition } from '@tailwindui/react';
+import { red } from 'lbn-core/dist/assets/colors';
+import { useLocalized } from 'lbn-core/dist/helpers/i18n';
+import { AppState } from 'lbn-core/dist/state';
 import {
   Language,
   Slot,
   Translation,
   Upgrade,
   UpgradeSide,
-} from "lbn-core/dist/types";
-import React, { FC, useState } from "react";
-import { useSelector } from "react-redux";
-import { popoverDetailStyle, popoverStyle } from "../helpers/popover";
-import { XwingFont } from "./fonts/xwing";
-import StatsComponent from "./ship-stats";
-import UpgradeComponent from "./upgrade";
+} from 'lbn-core/dist/types';
+import React, { FC, useState } from 'react';
+import { useSelector } from 'react-redux';
+import { popoverDetailStyle, popoverStyle } from '../helpers/popover';
+import { XwingFont } from './fonts/xwing';
+import StatsComponent from './ship-stats';
+import UpgradeComponent from './upgrade';
 
 type Props = {
   slot: Slot;
@@ -32,15 +32,15 @@ const renderUpgrade = (
 ) => (
   <span className="flex items-center justify-between text-xs sm:text-sm">
     <div className="flex items-center">
-      <XwingFont className={`${!upgrade && "text-gray-500"}`} icon={slot} />
+      <XwingFont className={`${!upgrade && 'text-gray-500'}`} icon={slot} />
 
       {upgrade && (
         <span className="ml-2 word-wrap font-medium">
-          {upgrade.limited > 0 && `${"•".repeat(upgrade.limited)} `}
+          {upgrade.limited > 0 && `${'•'.repeat(upgrade.limited)} `}
           {t(side?.title)}
         </span>
       )}
-      <StatsComponent charges={side?.charges} />
+      <StatsComponent charges={side?.charges} force={side?.force} />
       {!upgrade && <span className="ml-3 truncate text-gray-500">{slot}</span>}
     </div>
     <span className="ml-1 pr-1 sm:ml-3 font-medium truncate">
@@ -75,7 +75,11 @@ export const UpgradePopover: FC<Props> = ({
   return (
     <div className="mt-1 relative">
       <button
-        onClick={() => setShowMenu(!showMenu)}
+        onClick={(e) => {
+          const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
+          setPos({ x: rect.x, y: rect.y });
+          setShowMenu(!showMenu);
+        }}
         type="button"
         aria-haspopup="listbox"
         aria-expanded="true"

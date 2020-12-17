@@ -51,7 +51,11 @@ export const ShipPopover: FC<Props> = ({ value, options, onChange }) => {
   return (
     <div className="mt-1 relative">
       <button
-        onClick={() => setShowMenu(!showMenu)}
+        onClick={(e) => {
+          const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
+          setPos({ x: rect.x, y: rect.y });
+          setShowMenu(!showMenu);
+        }}
         type="button"
         aria-haspopup="listbox"
         aria-expanded="true"

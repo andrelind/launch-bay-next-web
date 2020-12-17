@@ -89,15 +89,13 @@ export const Layout: FC<Props> = ({
                 <div className="hidden md:block">
                   <div className="ml-4 flex items-center md:ml-6">
                     {loggedIn && (
-                      <span className="shadow-sm rounded-md relative">
-                        <button
-                          onClick={() => setShowPanel(!showPanel)}
-                          type="button"
-                          className="inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-gray-600 hover:bg-gray-500 focus:outline-none focus:shadow-outline-gray focus:border-gray-700 active:bg-gray-700 transition duration-150 ease-in-out"
-                        >
-                          Load squadron
-                        </button>
-                      </span>
+                      <button
+                        onClick={() => setShowPanel(!showPanel)}
+                        type="button"
+                        className="inline-flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded shadow-sm text-white bg-gray-600 hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700"
+                      >
+                        Load squadron
+                      </button>
                     )}
 
                     {/* <!-- Profile dropdown --> */}
@@ -105,13 +103,13 @@ export const Layout: FC<Props> = ({
                       <div>
                         <button
                           onClick={() => setShowMenu(!showMenu)}
-                          className="max-w-xs flex items-center text-sm rounded-full text-white focus:outline-none focus:shadow-solid"
+                          className="max-w-xs flex items-center text-sm rounded-full focus:outline-none focus:shadow-solid text-gray-500"
                           id="user-menu"
                           aria-label="User menu"
                           aria-haspopup="true"
                         >
                           <svg
-                            className="w-6 h-6"
+                            className="w-7 h-7"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
