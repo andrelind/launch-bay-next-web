@@ -1,4 +1,4 @@
-const merge = require('lodash.merge');
+import merge from 'lodash.merge';
 
 const files = [
   require('./blueprints/resolver'),
@@ -8,4 +8,6 @@ const files = [
   require('./user/resolver'),
 ];
 
-files.reduce((all, file) => merge(all, file), module.exports);
+export default files.reduce((all, file) => merge(all, file));
+
+// files.reduce((all, file) => merge(all, file), module.exports);
