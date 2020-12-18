@@ -1,21 +1,31 @@
-const { getUser, generateTimestamp } = require('../helpers');
-const { Squadron, Deleted } = require('../models');
+import { ApolloError } from 'apollo-server-micro';
+import { Context, generateTimestamp, getUser } from '../helpers';
+import DeletedModel from './../models/deleted';
+import SquadronModel from './../models/squadron';
+
+// const { Squadron, Deleted } = require('../models');
 
 const resolvers = {
   Query: {
-    async squadron(parent, { uid }) {
-      const squadron = await Squadron.findOne({ uid });
-      return squadron.squadron;
+    squadron: async (_parent: any, _args: any, { ctx, db }: Context) => {
+      try {
+        const squadron = await SquadronModel(db).findOne({ uid: ctx.uid });
+        return squadron?.squadron;
+      } catch (error) {
+        throw new ApolloError('Error retrieving squadron');
+      }
     },
 
-    async squadrons(test, input, ctx) {
-      const user = await getUser(ctx);
-      const squadrons = await Squadron.find({ userUid: user.uid });
-      return squadrons.map(o => o.squadron);
+    squadrons: async (_parent: any, _args: any, { ctx, db }: Context) => {
+      const user = await getUser(ctx, db);
+      const squadrons = await SquadronModel(db).find({ userUid: user.uid });
+      return squadrons.map((o) => o.squadron);
     },
 
-    async removed(parent, args, ctx) {
-      const user = await getUser(ctx);
+    removed: async (_parent: any, _args: any, { ctx, db }: Context) => {
+      const user = await getUser(ctx, db);
+
+      const Deleted = DeletedModel(db);
       const deleted = await Deleted.find({ userUid: user.uid });
 
       if (deleted) {
@@ -31,16 +41,17 @@ const resolvers = {
         }
       }
 
-      return (deleted || []).map(o => o.uid);
+      return (deleted || []).map((o) => o.uid);
     },
   },
   Mutation: {
-    async set(parent, { squadron }, ctx) {
-      const user = await getUser(ctx);
-
+    set: async (_parent: any, { squadron }: any, { ctx, db }: Context) => {
+      const user = await getUser(ctx, db);
       if (!squadron.uid) {
-        throw new Error('No uid supplied');
+        throw new ApolloError('No uid supplied');
       }
+
+      const Squadron = SquadronModel(db);
 
       const current = await Squadron.findOne({
         uid: squadron.uid,
@@ -72,10 +83,11 @@ const resolvers = {
       }
     },
 
-    async remove(parent, { uid }, ctx) {
-      const user = await getUser(ctx);
+    remove: async (_parent: any, { uid }: any, { ctx, db }: Context) => {
+      const user = await getUser(ctx, db);
 
-      await Squadron.findOneAndRemove({ uid, userUid: user.uid });
+      const Deleted = DeletedModel(db);
+      await SquadronModel(db).findOneAndRemove({ uid, userUid: user.uid });
 
       const alreadyDeleted = await Deleted.findOne({ uid, userUid: user.uid });
       if (!alreadyDeleted) {

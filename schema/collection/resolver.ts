@@ -1,11 +1,14 @@
-const { getUser, generateTimestamp } = require('../helpers');
-const { Collection, DeletedBlueprint } = require('../models');
+import { Context, generateTimestamp, getUser } from '../helpers';
+import CollectionModel from './../models/collection';
 
 const resolvers = {
   Query: {
-    async collection(parent, args, ctx, info) {
-      const user = await getUser(ctx);
-      const collection = await Collection.findOne({ userUid: user.uid });
+    collection: async (_parent: any, _args: any, { ctx, db }: Context) => {
+      const user = await getUser(ctx, db);
+
+      const collection = await CollectionModel(db).findOne({
+        userUid: user.uid,
+      });
 
       if (!collection) {
         return {
@@ -27,16 +30,15 @@ const resolvers = {
     },
   },
   Mutation: {
-    async collection(
-      parent,
-      { expansions, ships, pilots, upgrades },
-      ctx,
-      info
-    ) {
-      const user = await getUser(ctx);
+    collection: async (
+      _parent: any,
+      { expansions, ships, pilots, upgrades }: any,
+      { ctx, db }: Context
+    ) => {
+      const user = await getUser(ctx, db);
 
       // console.log({ expansions }, { ships }, { pilots }, { upgrades });
-
+      const Collection = CollectionModel(db);
       const oldCollection = await Collection.findOne({ userUid: user.uid });
       if (oldCollection) {
         oldCollection.expansions = expansions || [];
@@ -44,7 +46,6 @@ const resolvers = {
         oldCollection.pilots = pilots || [];
         oldCollection.upgrades = upgrades || [];
         oldCollection.timestamp = generateTimestamp();
-        delete oldCollection.items;
         await oldCollection.save();
         return { success: true, timestamp: oldCollection.timestamp };
       }

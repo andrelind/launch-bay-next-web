@@ -325,7 +325,6 @@ export const getServerSideProps = wrapper.getServerSideProps(
     if (req) {
       const user: UserState = await getSession(req as NextApiRequest);
       if (user) {
-        console.log({ user });
         dispatch(userDidLogin(user));
         const { data } = await requests.syncRequest(user);
         dispatch(importAllSync(data));

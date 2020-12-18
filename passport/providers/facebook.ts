@@ -1,6 +1,6 @@
-import requests from "lbn-core/dist/requests";
-import { Strategy } from "passport-facebook";
-import appConfig from "../config";
+import requests from 'lbn-core/dist/requests';
+import { Strategy } from 'passport-facebook';
+import appConfig from '../config';
 
 const strategy = new Strategy(
   appConfig.facebook,
@@ -12,8 +12,10 @@ const strategy = new Strategy(
         profile.emails && profile.emails.length > 0
           ? profile.emails[0].value
           : undefined,
-      provider: "Facebook",
+      provider: 'Facebook',
     });
+
+    console.log({ result: result.data.registerUser });
 
     cb(null, result.data.registerUser);
   }

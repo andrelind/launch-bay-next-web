@@ -1,12 +1,17 @@
-const webtoken = require('jsonwebtoken');
-const { SECRET } = require('../helpers');
-const { User } = require('../models');
-const mongoose = require('mongoose');
+import webtoken from 'jsonwebtoken';
+import mongoose from 'mongoose';
+import { Context, SECRET } from '../helpers';
+import UserModel from '../models/user';
 
 const resolvers = {
   Query: {},
   Mutation: {
-    async registerUser(parent, { name, id, provider, email }) {
+    async registerUser(
+      _parent: any,
+      { name, id, provider, email }: any,
+      { db }: Context
+    ) {
+      const User = UserModel(db);
       const userObject = await User.findOne({ id, provider });
       if (!userObject) {
         const object = new User();

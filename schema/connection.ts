@@ -1,71 +1,17 @@
-/**
- * This middleware relies on Express
- *
- * @see https://developer.mongodb.com/how-to/nextjs-building-modern-applications
- * @see https://docs.atlas.mongodb.com/best-practices-connecting-to-aws-lambda/
- * @see https://github.com/vercel/next.js/discussions/12229
- */
-
-import debug from 'debug';
-import { Request, Response } from 'express';
 import mongoose from 'mongoose';
-// Import mongoose models here
-import './models';
 
-export async function closeDbConnection() {
-  try {
-    await mongoose.connection.close();
-  } catch (err) {
-    // Catch locally error
-    console.error(err);
-  }
-}
+const uri = process.env.DB_URI;
+let conn: mongoose.Connection | null = null;
 
-const debugMongo = debug('vns:mongo');
-
-// trigger the initial connection on app startup
-export const connectToDb = async (mongoUri: string) => {
-  if (![1, 2].includes(mongoose.connection.readyState)) {
-    debugMongo('Call mongoose connect');
-    return await mongoose.connect(mongoUri, {
+export const getConnection = async (): Promise<mongoose.Connection> => {
+  if (conn == null) {
+    conn = await mongoose.createConnection(uri as string, {
+      bufferCommands: false, // Disable mongoose buffering
+      bufferMaxEntries: 0, // and MongoDB driver buffering
       useNewUrlParser: true,
       useUnifiedTopology: true,
+      useCreateIndex: true,
     });
   }
-  debugMongo('Ran connectToDb, already connected or connecting to Mongo');
-  return false;
-};
-
-const mongoConnectionMiddleware = () => {
-  const mongoUri = process.env.DB_URI;
-  if (!mongoUri) throw new Error('DB_URI env variable is not defined');
-  // init the first database connection on server startup
-  connectToDb(mongoUri);
-  // mongoose.set("useFindAndModify", false);
-
-  // then return a middleware that checks the connection on every call
-  return async (_req: Request, res: Response, next: any) => {
-    try {
-      // To debug the number of connections in Mongo client: db.serverStatus().connections
-      await connectToDb(mongoUri);
-
-      // Do not forget to close connection on finish and close events
-      // NOTE: actually we don't need this. Db connection close should happen on lambda destruction instead.
-      // res.on("finish", closeDbConnection);
-      // res.on("close", closeDbConnection);
-      next();
-    } catch (err) {
-      res.status(500);
-      res.send(err);
-    }
-  };
-};
-
-export default mongoConnectionMiddleware;
-
-// We need to add a converter between Mongoose ID and Apollo Server
-// @see https://github.com/apollographql/apollo-server/issues/1633
-const ObjectId = require('mongoose').Types.ObjectId;
-ObjectId.prototype.valueOf = function () {
-  return this.toString();
+  return conn;
 };

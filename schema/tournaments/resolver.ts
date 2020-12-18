@@ -1,16 +1,23 @@
-const { getUser, generateTimestamp } = require('../helpers');
-const { Tournament, DeletedTournament } = require('../models');
+import { ApolloError } from 'apollo-server-micro';
+import { Context, generateTimestamp, getUser } from '../helpers';
+import DeletedTournamentModel from '../models/deletedTournament';
+import TournamentModel from '../models/tournament';
 
 const resolvers = {
   Query: {
-    async tournaments(test, input, ctx) {
-      const user = await getUser(ctx);
-      const tournaments = await Tournament.find({ userUid: user.uid });
-      return tournaments.map(o => o.tournament);
+    tournaments: async (_parent: any, _args: any, { ctx, db }: Context) => {
+      const user = await getUser(ctx, db);
+      const tournaments = await TournamentModel(db).find({ userUid: user.uid });
+      return tournaments.map((o) => o.tournament);
     },
 
-    async removedTournaments(parent, args, ctx, info) {
-      const user = await getUser(ctx);
+    removedTournaments: async (
+      _parent: any,
+      _args: any,
+      { ctx, db }: Context
+    ) => {
+      const user = await getUser(ctx, db);
+      const DeletedTournament = DeletedTournamentModel(db);
       const deleted = await DeletedTournament.find({ userUid: user.uid });
 
       if (deleted) {
@@ -29,17 +36,21 @@ const resolvers = {
         }
       }
 
-      return (deleted || []).map(o => o.uid);
+      return (deleted || []).map((o) => o.uid);
     },
   },
   Mutation: {
-    async setTournament(parent, { tournament }, ctx, info) {
-      const user = await getUser(ctx);
-
+    setTournament: async (
+      _parent: any,
+      { tournament }: any,
+      { ctx, db }: Context
+    ) => {
+      const user = await getUser(ctx, db);
       if (!tournament.uid) {
-        throw new Error('No uid supplied');
+        throw new ApolloError('No uid supplied');
       }
 
+      const Tournament = TournamentModel(db);
       const current = await Tournament.findOne({
         uid: tournament.uid,
         userUid: user.uid,
@@ -68,11 +79,15 @@ const resolvers = {
       }
     },
 
-    async removeTournament(parent, { uid }, ctx, info) {
-      const user = await getUser(ctx);
+    removeTournament: async (
+      _parent: any,
+      { uid }: any,
+      { ctx, db }: Context
+    ) => {
+      const user = await getUser(ctx, db);
+      await TournamentModel(db).findOneAndRemove({ uid, userUid: user.uid });
 
-      await Tournament.findOneAndRemove({ uid, userUid: user.uid });
-
+      const DeletedTournament = DeletedTournamentModel(db);
       const alreadyDeleted = await DeletedTournament.findOne({
         uid,
         userUid: user.uid,
