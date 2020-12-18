@@ -38,7 +38,7 @@ export const connectToDb = async (mongoUri: string) => {
 
 const mongoConnectionMiddleware = () => {
   const mongoUri = process.env.DB_URI;
-  if (!mongoUri) throw new Error('MONGO_URI env variable is not defined');
+  if (!mongoUri) throw new Error('DB_URI env variable is not defined');
   // init the first database connection on server startup
   connectToDb(mongoUri);
   // mongoose.set("useFindAndModify", false);
@@ -56,7 +56,7 @@ const mongoConnectionMiddleware = () => {
       next();
     } catch (err) {
       res.status(500);
-      res.send('Could not connect to db');
+      res.send(err);
     }
   };
 };
