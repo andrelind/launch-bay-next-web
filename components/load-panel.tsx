@@ -1,14 +1,16 @@
-import { Transition } from "@tailwindui/react";
-import { removeSquadron } from "lbn-core/dist/actions/squadrons";
-import { useLocalized } from "lbn-core/dist/helpers/i18n";
-import { loadSquadron } from "lbn-core/dist/helpers/unit";
-import { AppState } from "lbn-core/dist/state";
-import { Ship, SquadronXWS } from "lbn-core/dist/types";
-import Link from "next/link";
-import React, { FC } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { colorForFaction } from "../helpers/colors";
-import XwingFont from "./fonts/xwing";
+import { Transition } from '@tailwindui/react';
+import { requests } from 'lbn-core';
+import { removeSquadron } from 'lbn-core/dist/actions/squadrons';
+import { useLocalized } from 'lbn-core/dist/helpers/i18n';
+import { loadSquadron } from 'lbn-core/dist/helpers/unit';
+import { UserState } from 'lbn-core/dist/reducers/user';
+import { AppState } from 'lbn-core/dist/state';
+import { Ship, SquadronXWS } from 'lbn-core/dist/types';
+import { useRouter } from 'next/router';
+import React, { FC } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { colorForFaction } from '../helpers/colors';
+import XwingFont from './fonts/xwing';
 
 type Props = {
   show: boolean;
@@ -23,6 +25,8 @@ export const SavedSquadronsPanel: FC<Props> = ({
 }) => {
   const { t } = useLocalized();
   const dispatch = useDispatch();
+  const router = useRouter();
+  const user = useSelector<AppState, UserState>((s) => s.app.user);
   const squadronXws = useSelector<AppState, SquadronXWS[]>((s) => s.app.xws);
   const squadrons = squadronXws.map((x) => loadSquadron(x));
 
@@ -48,17 +52,17 @@ export const SavedSquadronsPanel: FC<Props> = ({
         }
         return t(name);
       })
-      .join(", ");
+      .join(', ');
   };
 
   return (
     <div
       className={`fixed inset-0 overflow-hidden z-10 ${
-        !show && "pointer-events-none"
+        !show && 'pointer-events-none'
       }`}
       onClick={(e) => {
         // @ts-ignore
-        e.target.id === "background" && onClose();
+        e.target.id === 'background' && onClose();
       }}
     >
       <div id="background" className="absolute inset-0 overflow-hidden">
@@ -115,44 +119,54 @@ export const SavedSquadronsPanel: FC<Props> = ({
                 {/* <div className="mt-6 relative flex-1 px-4 sm:px-6"> */}
                 <ul className="divide-y divide-gray-200 overflow-y-auto">
                   {squadrons?.map((s, i) => {
-                    if (!s) {
+                    if (!s || s.ships.length === 0) {
                       return null;
                     }
-                    const joinedPilots = getUnique(s.ships) || "";
+                    const joinedPilots = getUnique(s.ships) || '';
                     return (
                       <li
                         key={`${s.uid}_${i}`}
                         className="px-6 py-5 relative hover:bg-gray-50"
                       >
                         <div className="flex justify-between items-center">
-                          <Link href={`/?uid=${s.uid}`}>
-                            <a className="-m-1 p-1 block">
-                              <div
-                                className="absolute inset-0"
-                                aria-hidden="true"
-                              ></div>
-                              <div className="flex-1 flex items-center min-w-0 relative cursor-pointer">
-                                <span className="flex-shrink-0 inline-block relative">
-                                  <XwingFont
-                                    className="text-lg"
-                                    icon={s.faction}
-                                    color={colorForFaction(s.faction)}
-                                  />
-                                </span>
-                                <div className="ml-4 truncate">
-                                  <p className="text-sm font-medium text-gray-900 truncate">
-                                    {s.name}
-                                  </p>
-                                  <p className="text-sm text-gray-500 truncate">
-                                    {joinedPilots}
-                                  </p>
-                                </div>
+                          {/* <Link href={`/?uid=${s.uid}`}> */}
+                          <a
+                            className="-m-1 p-1 flex flex-1"
+                            onClick={() => {
+                              router.push(`/?uid=${s.uid}`);
+                              onClose();
+                            }}
+                          >
+                            <div
+                              className="absolute inset-0"
+                              aria-hidden="true"
+                            ></div>
+                            <div className="flex-1 flex items-center min-w-0 relative cursor-pointer">
+                              <span className="flex-shrink-0 inline-block relative">
+                                <XwingFont
+                                  className="text-lg"
+                                  icon={s.faction}
+                                  color={colorForFaction(s.faction)}
+                                />
+                              </span>
+                              <div className="ml-4 truncate flex flex-col flex-1">
+                                <p className="text-sm font-medium text-gray-900 truncate flex flex-1 justify-between">
+                                  <span>{s.name}</span>
+                                  <span>{s.cost}</span>
+                                </p>
+                                <p className="text-sm text-gray-500 truncate">
+                                  {joinedPilots}
+                                </p>
                               </div>
-                            </a>
-                          </Link>
+                            </div>
+                          </a>
+                          {/* </Link> */}
                           <div className="ml-2 relative inline-block text-left">
                             <button
-                              onClick={() => dispatch(removeSquadron(s.uid))}
+                              onClick={async () => {
+                                dispatch(removeSquadron(s.uid));
+                                requests.default.deleteSquadron(s.uid, user);
+                              }}
                               className="group relative w-8 h-8 bg-white rounded-full inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                             >
                               <svg

@@ -1,17 +1,11 @@
-import { Action } from "lbn-core/dist/actions";
-import { AppState, rootReducer } from "lbn-core/dist/state";
-import { createWrapper, HYDRATE } from "next-redux-wrapper";
-import { applyMiddleware, createStore, Store } from "redux";
-import createSagaMiddleware, { Task } from "redux-saga";
-import thunkMiddleware from "redux-thunk";
-
-export interface SagaStore extends Store<AppState, Action> {
-  sagaTask: Task;
-}
+import { rootReducer } from 'lbn-core/dist/state';
+import { createWrapper, HYDRATE } from 'next-redux-wrapper';
+import { applyMiddleware, createStore } from 'redux';
+import thunkMiddleware from 'redux-thunk';
 
 const bindMiddleware = (middleware: any) => {
-  if (process.env.NODE_ENV !== "production") {
-    const { composeWithDevTools } = require("redux-devtools-extension");
+  if (process.env.NODE_ENV !== 'production') {
+    const { composeWithDevTools } = require('redux-devtools-extension');
     return composeWithDevTools(applyMiddleware(...middleware));
   }
   return applyMiddleware(...middleware);
@@ -30,16 +24,8 @@ const reducer = (state: any, action: any) => {
   }
 };
 
-const sagaMiddleware = createSagaMiddleware();
-
 const initStore = () => {
-  const store = createStore(
-    reducer,
-    bindMiddleware([thunkMiddleware, sagaMiddleware])
-  );
-  // (store as SagaStore).sagaTask = sagaMiddleware.run(sagas.default);
-
-  return store;
+  return createStore(reducer, bindMiddleware([thunkMiddleware]));
 };
 
 export const wrapper = createWrapper(initStore);

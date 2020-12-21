@@ -32,7 +32,10 @@ const renderUpgrade = (
 ) => (
   <span className="flex items-center justify-between text-xs sm:text-sm">
     <div className="flex items-center">
-      <XwingFont className={`${!upgrade && 'text-gray-500'}`} icon={slot} />
+      <XwingFont
+        className={`${!upgrade && 'text-gray-500'}`}
+        icon={side?.slots[0] || slot}
+      />
 
       {upgrade && (
         <span className="ml-2 word-wrap font-medium">

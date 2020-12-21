@@ -21,7 +21,11 @@ const resolvers = {
     },
   },
   Mutation: {
-    async blueprint(_parent: any, { blueprint }: any, { ctx, db }: Context) {
+    blueprint: async (
+      _parent: any,
+      { blueprint }: any,
+      { ctx, db }: Context
+    ) => {
       const user = await getUser(ctx, db);
       if (!blueprint.uid) {
         throw new ApolloError('No uid supplied');
@@ -57,7 +61,11 @@ const resolvers = {
       }
     },
 
-    async removeBlueprint(_parent: any, { uid }: any, { ctx, db }: Context) {
+    removeBlueprint: async (
+      _parent: any,
+      { uid }: any,
+      { ctx, db }: Context
+    ) => {
       const user = await getUser(ctx, db);
       await Blueprint(db).findOneAndRemove({ uid, userUid: user.uid });
 

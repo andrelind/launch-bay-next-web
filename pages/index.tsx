@@ -12,9 +12,10 @@ import {
 import { UserState } from 'lbn-core/dist/reducers/user';
 import requests from 'lbn-core/dist/requests';
 import { AppState } from 'lbn-core/dist/state';
-import { Language, Ship, ShipType, Slot, Upgrade } from 'lbn-core/dist/types';
+import { Ship, ShipType, Slot, Upgrade } from 'lbn-core/dist/types';
 import { NextApiRequest, NextPage } from 'next';
 import { useRouter } from 'next/router';
+import { parseCookies, setCookie } from 'nookies';
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { AnyAction, Store } from 'redux';
@@ -25,7 +26,6 @@ import { ShipPopover } from '../components/ship-popover';
 import { UpgradePopover } from '../components/upgrade-popover';
 import { copyToClipboard } from '../helpers/clipboard';
 import { useJWT, useSquadronXWS } from '../helpers/hooks';
-import { renderHardpoint } from '../page-components/render';
 import { getSession } from '../passport/iron';
 import { wrapper } from '../store';
 
@@ -59,15 +59,13 @@ export type DataItem = {
   slotOptions?: Slot[];
 };
 
-type Props = { uid: string };
+type Props = { uid: string; cookies: { [key: string]: string } };
 
-const EditPage: NextPage<Props> = ({ uid }) => {
+const EditPage: NextPage<Props> = ({ uid, cookies }) => {
   const router = useRouter();
   const dispatch = useDispatch();
-  const language = useSelector<AppState, Language | undefined>(
-    (s) => s.app.user.language
-  );
-  const { t, c } = useLocalized(language);
+  const user = useSelector<AppState, UserState>((s) => s.app.user);
+  const { t, c } = useLocalized(user.language);
   const jwt = useJWT();
 
   const { lbx } = router.query;
@@ -76,7 +74,7 @@ const EditPage: NextPage<Props> = ({ uid }) => {
   const collection = useSelector<AppState, any>((s) => s.app.collection);
 
   const [shipBase, setShipBase] = useState<ShipType>();
-  const [columns, setColumns] = useState(false);
+  const [grid, setGrid] = useState(cookies['grid'] === 'true');
 
   const p: { [s: string]: Slot } = {};
   squadron?.ships.forEach((s) => {
@@ -85,7 +83,6 @@ const EditPage: NextPage<Props> = ({ uid }) => {
     );
     u && (p[s.uid] = u);
   });
-  const [hardpoints, setHardpoints] = useState<{ [s: string]: Slot | null }>(p);
 
   useEffect(() => {
     if (!xws || xws?.uid !== uid) {
@@ -97,9 +94,19 @@ const EditPage: NextPage<Props> = ({ uid }) => {
       console.log('Update url');
       const url = `?lbx=${newLbx}&uid=${uid}`;
       router.push(url, `?lbx=${newLbx}`, { shallow: true });
-    } else {
+
       // Om vi är inloggade, uppdatera på servern
-      console.log('Update server');
+      // lbx är inte satt när vi först laddar en sparad lista
+      if (!user.jwt || !lbx) {
+        return;
+      }
+      console.log('Update server', { newLbx, lbx });
+      const run = async () => {
+        const res = await requests.setSquadron(xws, user);
+        console.log({ res });
+      };
+      run();
+    } else {
     }
   }, [xws]);
 
@@ -141,31 +148,35 @@ const EditPage: NextPage<Props> = ({ uid }) => {
       onPrint={() =>
         xws && window.open(`/print?lbx=${serialize(xws)}`, '_ blank')
       }
-      columns={columns}
-      setColumns={setColumns}
+      grid={grid}
+      setGrid={(v) => {
+        setGrid(v);
+        setCookie(null, 'grid', `${v}`, {});
+      }}
       actions={actions}
     >
       <div
         className={`flex flex-1 flex-col grid grid-cols-1 ${
-          columns && 'sm:grid-cols-2'
+          grid && 'sm:grid-cols-2'
         } gap-x-3 gap-y-3`}
       >
         {squadron.ships.map((s) => {
           const showHardpointPicker =
-            s.ability &&
-            s.upgrades &&
-            s.ability.slotOptions &&
-            !s.ability.slotOptions.find(
-              (sl) => s.upgrades && s.upgrades[keyFromSlot(sl)]
-            );
+            s.ability?.slotOptions &&
+            !s.ability?.slotOptions.find((sl) => s.upgrades?.[keyFromSlot(sl)]);
 
-          const upgrades = getUpgrades(
-            squadron,
-            s,
-            // @ts-ignore
-            hardpoints[s.uid] ? [hardpoints[s.uid]] : []
+          const hardpointOptions = () => [
+            ...upgradesForSlot(squadron, s, 'Cannon', t, c, true),
+            ...upgradesForSlot(squadron, s, 'Missile', t, c, true),
+            ...upgradesForSlot(squadron, s, 'Torpedo', t, c, true),
+          ];
+
+          const shipType = shipTypeForXws(
+            squadron.faction,
+            squadron.format,
+            s.xws
           );
-          const shipType = shipTypeForXws(squadron.faction, s.xws);
+          const upgrades = getUpgrades(squadron.format, s);
 
           return (
             <div
@@ -196,7 +207,7 @@ const EditPage: NextPage<Props> = ({ uid }) => {
 
               <div
                 className={`mt-1 grid grid-cols-2 gap-1 lg:grid-cols-${
-                  columns ? '2' : '4'
+                  grid ? '2' : '4'
                 } md:mr-5`}
               >
                 {upgrades.map((upgrade, index) => (
@@ -239,11 +250,44 @@ const EditPage: NextPage<Props> = ({ uid }) => {
                     />
                   </div>
                 ))}
-                {showHardpointPicker &&
+                {showHardpointPicker && (
+                  <UpgradePopover
+                    side={0}
+                    slot={'Hardpoint'}
+                    // value={}
+                    options={hardpointOptions()}
+                    onChange={(newValue) => {
+                      const slot = newValue?.sides[0].slots[0] || 'Hardpoint';
+
+                      const getSlotIndex = () => {
+                        let slotIndex = 0;
+                        for (let i = 0; i < s.pilot.slots.length; i++) {
+                          if (s.pilot.slots[i] === slot) {
+                            if (i === 0) {
+                              return slotIndex;
+                            }
+                            slotIndex += 1;
+                          }
+                        }
+                        return 0;
+                      };
+                      dispatch(
+                        setUpgrade(
+                          squadron.uid,
+                          s.uid,
+                          slot,
+                          getSlotIndex(),
+                          newValue
+                        )
+                      );
+                    }}
+                  />
+                )}
+                {/* {showHardpointPicker &&
                   renderHardpoint(hardpoints[s.uid], squadron, (v) => {
                     hardpoints[s.uid] = v;
                     setHardpoints({ ...hardpoints });
-                  })}
+                  })} */}
               </div>
 
               <button
@@ -315,11 +359,10 @@ const EditPage: NextPage<Props> = ({ uid }) => {
 };
 
 export const getServerSideProps = wrapper.getServerSideProps(
-  async ({ store, req, query }) => {
+  async ({ store, req, res, query }) => {
     let { lbx, uid } = query;
 
     const appStore: Store<AppState, AnyAction> = store;
-
     const { getState, dispatch } = appStore;
 
     if (req) {
@@ -344,9 +387,13 @@ export const getServerSideProps = wrapper.getServerSideProps(
       }
     }
 
+    // @ts-ignore
+    const cookies = parseCookies({ req: req as NextApiRequest, res });
+
     return {
       props: {
         uid,
+        cookies,
       },
     };
   }

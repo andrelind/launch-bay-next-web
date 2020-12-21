@@ -16,8 +16,8 @@ type Props = {
   xws: SquadronXWS;
   onChangeFormat: () => void;
   onPrint: () => void;
-  columns: boolean;
-  setColumns: (c: boolean) => void;
+  grid: boolean;
+  setGrid: (c: boolean) => void;
   actions?: { title: string; className?: string; onClick: () => void }[];
 };
 
@@ -27,8 +27,8 @@ export const Layout: FC<Props> = ({
   onChangeFormat,
   onPrint,
   actions,
-  columns,
-  setColumns,
+  grid,
+  setGrid,
   children,
 }) => {
   const [showMenu, setShowMenu] = useState(false);
@@ -92,9 +92,9 @@ export const Layout: FC<Props> = ({
                       <button
                         onClick={() => setShowPanel(!showPanel)}
                         type="button"
-                        className="inline-flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded shadow-sm text-white bg-gray-600 hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700"
+                        className="inline-flex items-center px-3 py-2 border border-transparent text-sm font-medium rounded shadow-sm text-white bg-gray-600 hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700"
                       >
-                        Load squadron
+                        Squadrons
                       </button>
                     )}
 
@@ -314,9 +314,9 @@ export const Layout: FC<Props> = ({
               <div className="mt-4 flex md:mt-0 md:ml-4">
                 <button
                   className="text-gray-500 mr-3 hidden sm:block"
-                  onClick={() => setColumns(!columns)}
+                  onClick={() => setGrid(!grid)}
                 >
-                  {columns && (
+                  {grid && (
                     <svg
                       className="w-6 h-6"
                       fill="none"
@@ -332,7 +332,7 @@ export const Layout: FC<Props> = ({
                       />
                     </svg>
                   )}
-                  {!columns && (
+                  {!grid && (
                     <svg
                       className="w-6 h-6"
                       fill="none"

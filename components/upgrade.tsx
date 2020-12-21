@@ -1,10 +1,10 @@
-import { purple, red, yellow } from "lbn-core/dist/assets/colors";
-import { Upgrade } from "lbn-core/dist/types";
-import React from "react";
-import Error from "./error";
-import XwingFont from "./fonts/xwing";
-import { FormattedText } from "./formatted-text";
-import Grants from "./grants";
+import { purple, red, yellow } from 'lbn-core/dist/assets/colors';
+import { Upgrade } from 'lbn-core/dist/types';
+import React from 'react';
+import Error from './error';
+import XwingFont from './fonts/xwing';
+import { FormattedText } from './formatted-text';
+import Grants from './grants';
 
 type Props = {
   upgrade: Upgrade;
@@ -14,6 +14,8 @@ type Props = {
   limitWarning?: boolean;
   minimized: boolean;
 };
+
+// TODO: Should show BOTH sides of a card!
 
 const UpgradeComponent = ({
   upgrade,

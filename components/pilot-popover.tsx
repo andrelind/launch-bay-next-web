@@ -1,5 +1,4 @@
 import { Transition } from '@tailwindui/react';
-import { red } from 'lbn-core/dist/assets/colors';
 import { useLocalized } from 'lbn-core/dist/helpers/i18n';
 import { AppState } from 'lbn-core/dist/state';
 import {
@@ -155,7 +154,7 @@ export const PilotPopover: FC<Props> = ({
           aria-activedescendant="listbox-item-3"
           className="relative max-h-56 rounded-md py-1 text-xs sm:text-sm ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm"
         >
-          {selected && (
+          {/* {selected && (
             <li
               role="option"
               className="text-gray-900 cursor-default select-none relative py-2 px-1 sm:px-3 hover:bg-gray-100"
@@ -172,7 +171,7 @@ export const PilotPopover: FC<Props> = ({
                 Remove pilot
               </span>
             </li>
-          )}
+          )} */}
 
           {options.map((option) => (
             <li
