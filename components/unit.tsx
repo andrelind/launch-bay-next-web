@@ -1,8 +1,8 @@
-import { slotKeys } from "lbn-core/dist/helpers/enums";
-import { Ship } from "lbn-core/dist/types";
-import React from "react";
-import { ActionsComponent } from "./actions";
-import ShipStats from "./ship-stats";
+import { slotKeys } from 'lbn-core/dist/helpers/enums';
+import { Ship } from 'lbn-core/dist/types';
+import React from 'react';
+import { ActionsComponent } from './actions';
+import ShipStats from './ship-stats';
 
 type Props = {
   ship: Ship;
@@ -48,7 +48,7 @@ const Unit = ({
             </span>
             <div>
               <div className="font-medium mr-1">
-                {ship.pilot.limited > 0 && `${"•".repeat(ship.pilot.limited)} `}
+                {ship.pilot.limited > 0 && `${'•'.repeat(ship.pilot.limited)} `}
                 {ship.pilot.name.en}
               </div>
               <div className="italic text-gray-400 text-xs">
@@ -72,14 +72,11 @@ const Unit = ({
         </div>
 
         <div className="hidden sm:block">
-          {ship.pilot && ship.pilot.shipActions && (
-            <ActionsComponent
-              minimized={minimized}
-              actions={ship.pilot.shipActions}
-            />
+          {ship.pilot?.shipActions && (
+            <ActionsComponent actions={ship.pilot.shipActions} />
           )}
-          {ship.pilot && !ship.pilot.shipActions && (
-            <ActionsComponent minimized={minimized} actions={ship.actions} />
+          {!ship.pilot?.shipActions && (
+            <ActionsComponent actions={ship.actions} />
           )}
         </div>
       </div>

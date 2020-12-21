@@ -8,7 +8,7 @@ import {
 } from 'lbn-core/dist/assets/colors';
 import { Difficulty, Grant } from 'lbn-core/dist/types';
 import React from 'react';
-import { Block, Icon, Text, Wrapper } from './styles';
+import XwingFont from './fonts/xwing';
 
 type Props = {
   grants: Grant[];
@@ -46,36 +46,39 @@ const mod = (grant: Grant) => {
 
 const GrantsComponent = ({ grants }: Props) => {
   return (
-    <Block>
+    <div className="flex items-end">
       {grants.map((grant, index) => (
-        <Wrapper key={`${grant.value}_${index}`}>
-          {grant.slot && <Icon icon={grant.slot} />}
+        <div className="flex items-center" key={`${grant.value}_${index}`}>
+          {grant.slot && <XwingFont icon={grant.slot} />}
           {grant.stat && (
-            <Wrapper>
-              <Text style={{ color: colorForType(grant.stat) }}>
+            <div className="flex items-center">
+              <span
+                className="font-medium"
+                style={{ color: colorForType(grant.stat) }}
+              >
                 {mod(grant)}
-              </Text>
-              <Icon icon={grant.stat} color={colorForType(grant.stat)} />
-            </Wrapper>
+              </span>
+              <XwingFont icon={grant.stat} color={colorForType(grant.stat)} />
+            </div>
           )}
           {grant.action && (
-            <Wrapper>
-              <Icon
+            <div className="flex items-center">
+              <XwingFont
                 icon={grant.action.type}
                 color={colorForDifficulty(grant.action.difficulty)}
               />
               {grant.action.linked && ' -> '}
               {grant.action.linked && (
-                <Icon
+                <XwingFont
                   icon={grant.action.linked.type}
                   color={colorForDifficulty(grant.action.linked.difficulty)}
                 />
               )}
-            </Wrapper>
+            </div>
           )}
-        </Wrapper>
+        </div>
       ))}
-    </Block>
+    </div>
   );
 };
 

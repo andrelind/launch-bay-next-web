@@ -39,7 +39,6 @@ const {
   copyShip,
   importSquadron,
   removeShip,
-  removeSquadron,
   toggleFormat,
 } = squadrons;
 const { deserialize, serialize } = serializer;
@@ -120,25 +119,18 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
     onClick: () => void;
   }[] = [
     {
-      title: 'Export XWS',
+      title: 'XWS',
       onClick: () => copyToClipboard(exportAsXws(squadron)),
     },
     {
-      title: 'Export TTS',
+      title: 'TTS',
       onClick: () => copyToClipboard(exportAsTTS(squadron, t)),
     },
     {
-      title: 'Export as text',
+      title: 'As text',
       onClick: () => copyToClipboard(exportAsText(squadron, t)),
     },
   ];
-  if (jwt) {
-    actions.push({
-      title: 'Delete squadron',
-      className: 'text-red-500',
-      onClick: () => dispatch(removeSquadron(uid as string)),
-    });
-  }
 
   return (
     <Layout

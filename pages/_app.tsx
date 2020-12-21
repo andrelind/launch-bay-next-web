@@ -1,6 +1,5 @@
 import App, { AppContext, AppInitialProps } from 'next/app';
 import React from 'react';
-import { GlobalStyles } from '../page-components/theme';
 import '../public/static/css/tailwind.css';
 import { wrapper } from '../store';
 
@@ -21,7 +20,6 @@ class LaunchBayNextApp extends App<AppInitialProps> {
 
     return (
       <div>
-        <GlobalStyles />
         <Component {...pageProps} />
       </div>
     );

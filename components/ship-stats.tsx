@@ -6,28 +6,28 @@ import {
   purple,
   red,
   yellow,
-} from "lbn-core/dist/assets/colors";
-import { Stat } from "lbn-core/dist/types";
-import React, { FC } from "react";
-import XwingFont from "./fonts/xwing";
+} from 'lbn-core/dist/assets/colors';
+import { Stat } from 'lbn-core/dist/types';
+import React, { FC } from 'react';
+import XwingFont from './fonts/xwing';
 
 export const colorForStat = (stat: string) => {
   switch (stat) {
-    case "attack":
+    case 'attack':
       return red;
-    case "agility":
+    case 'agility':
       return green;
-    case "hull":
+    case 'hull':
       return yellow;
-    case "initiative":
+    case 'initiative':
       return orange;
-    case "shields":
+    case 'shields':
       return blue;
-    case "Force Power":
+    case 'Force Power':
       return purple;
-    case "charge":
+    case 'charge':
       return yellow;
-    case "energy":
+    case 'energy':
       return pink;
 
     default:
@@ -47,12 +47,12 @@ const renderValue = (
       key={`${type}_${stat.value}`}
     >
       {stat.arc && <XwingFont icon={stat.arc} color={color} />}
-      {!stat.arc && type !== "initiative" && (
+      {!stat.arc && type !== 'initiative' && (
         <XwingFont icon={type} color={color} />
       )}
-      {recovers.length === 1 && <XwingFont icon={"recurring"} color={color} />}
+      {recovers.length === 1 && <XwingFont icon={'recurring'} color={color} />}
       {recovers.length >= 2 && (
-        <XwingFont icon={"doublerecurring"} color={color} />
+        <XwingFont icon={'doublerecurring'} color={color} />
       )}
 
       <span
@@ -69,6 +69,7 @@ type Props = {
   stats?: Stat[];
   force?: { value: number; recovers: number };
   charges?: { value: number; recovers: number };
+  vertical?: boolean;
 };
 
 export const StatsComponent: FC<Props> = ({
@@ -77,13 +78,14 @@ export const StatsComponent: FC<Props> = ({
   stats,
   force,
   charges,
+  vertical,
 }) => (
-  <div className="flex items-center">
-    {initiative && renderValue({ value: initiative }, "initiative")}
-    {engagement && renderValue({ value: engagement }, "engagement")}
+  <div className={`flex items-center ${vertical && 'flex-col'}`}>
+    {initiative && renderValue({ value: initiative }, 'initiative')}
+    {engagement && renderValue({ value: engagement }, 'engagement')}
     {stats && stats.map((stat) => renderValue(stat, stat.type))}
-    {charges && renderValue(charges, "charge")}
-    {force && renderValue(force, "Force Power")}
+    {charges && renderValue(charges, 'charge')}
+    {force && renderValue(force, 'Force Power')}
   </div>
 );
 

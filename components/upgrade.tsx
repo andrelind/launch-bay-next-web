@@ -1,7 +1,6 @@
 import { purple, red, yellow } from 'lbn-core/dist/assets/colors';
 import { Upgrade } from 'lbn-core/dist/types';
 import React from 'react';
-import Error from './error';
 import XwingFont from './fonts/xwing';
 import { FormattedText } from './formatted-text';
 import Grants from './grants';
@@ -17,17 +16,11 @@ type Props = {
 
 // TODO: Should show BOTH sides of a card!
 
-const UpgradeComponent = ({
-  upgrade,
-  side,
-  showType,
-  limitWarning,
-  minimized,
-}: Props) => {
-  let errorText;
-  if (limitWarning) {
-    errorText = `Only ${upgrade.limited} allowed in a squadron`;
-  }
+const UpgradeComponent = ({ upgrade, side, showType, minimized }: Props) => {
+  // let errorText;
+  // if (limitWarning) {
+  //   errorText = `Only ${upgrade.limited} allowed in a squadron`;
+  // }
 
   let upgradeSide = upgrade.sides[side || 0];
   if (!upgradeSide) {
@@ -89,7 +82,7 @@ const UpgradeComponent = ({
             );
           })} */}
 
-        {errorText && <Error text={errorText} />}
+        {/* {errorText && <Error text={errorText} />} */}
       </div>
 
       <div className="flex flex-col items-end ml-1">

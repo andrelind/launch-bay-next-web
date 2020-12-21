@@ -1,42 +1,40 @@
-import { ShipType } from "lbn-core/dist/types";
-import React, { FC } from "react";
-import BaseSize from "./base-size";
-import ShipFont from "./fonts/ships";
-import XwingFont from "./fonts/xwing";
-import ShipStats from "./ship-stats";
+import { ShipType } from 'lbn-core/dist/types';
+import React, { FC } from 'react';
+import { AbilityComponent } from './ability';
+import ActionsComponent from './actions';
+import BaseSize from './base-size';
+import { DialComponent } from './dial';
+import XwingFont from './fonts/xwing';
+import { StatsComponent } from './ship-stats';
 
 type Props = {
   shipType: ShipType;
-  count?: number;
 };
 
-export const ShipTypeComponent: FC<Props> = ({ shipType, count }) => {
+export const ShipTypeComponent: FC<Props> = ({ shipType }) => {
   return (
-    <div className="grid grid-cols-1 gap-3 sm:grid-cols-4 lg:grid-cols-4">
-      <div className="flex flex-row items-center">
-        <ShipFont icon={shipType.xws} className="mr-1" />
-
-        <span className="flex flex-1 flex-wrap text-sm">
-          {shipType.name.en}
-          {count !== undefined && (
-            <span className="text-sm font-thin text-gray-400"> ({count})</span>
-          )}
-        </span>
-      </div>
-
-      <div className="flex flex-row justify-between items-center hidden sm:block">
-        <ShipStats stats={shipType.stats} />
-      </div>
-
+    <div className="flex flex-1 flex-col m-2">
       <div className="flex flex-row items-center hidden sm:block">
-        {shipType.pilots.length > 0 &&
-          shipType.pilots
-            .sort((a, b) => a.initiative - b.initiative)[0]
-            .slots.map((s, i) => (
-              <XwingFont key={`${s}_${i}`} icon={s} className="mr-1" />
-            ))}
+        <div className="flex flex-1 flex-col sm:flex-row justify-between">
+          <StatsComponent stats={shipType?.stats} vertical />
+          {shipType && <DialComponent dial={shipType?.dial} />}
+          {shipType && (
+            <ActionsComponent actions={shipType?.actions} vertical />
+          )}
+        </div>
       </div>
-      <div className="hidden sm:block">
+
+      {shipType?.ability && <AbilityComponent ability={shipType.ability} />}
+
+      <div className="flex-1 justify-between items-center hidden sm:flex">
+        <span>
+          {shipType.pilots.length > 0 &&
+            shipType.pilots
+              .sort((a, b) => a.initiative - b.initiative)[0]
+              .slots.map((s, i) => (
+                <XwingFont key={`${s}_${i}`} icon={s} className="mr-1" />
+              ))}
+        </span>
         <BaseSize size={shipType.size} />
       </div>
     </div>

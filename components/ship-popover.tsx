@@ -4,8 +4,9 @@ import { AppState } from 'lbn-core/dist/state';
 import { Language, ShipType, Translation } from 'lbn-core/dist/types';
 import React, { FC, useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { popoverStyle } from '../helpers/popover';
+import { popoverDetailStyle, popoverStyle } from '../helpers/popover';
 import { ShipFont } from './fonts/ships';
+import { ShipTypeComponent } from './ship-type';
 
 type Props = {
   value?: ShipType;
@@ -39,7 +40,7 @@ export const ShipPopover: FC<Props> = ({ value, options, onChange }) => {
   const { t } = useLocalized(language);
 
   const [showMenu, setShowMenu] = useState(false);
-  //   const [showDetails, setShowDetails] = useState<ShipType | undefined>();
+  const [showDetails, setShowDetails] = useState<ShipType | undefined>();
   const [selected, setSelected] = useState(value);
 
   useEffect(() => {
@@ -64,8 +65,9 @@ export const ShipPopover: FC<Props> = ({ value, options, onChange }) => {
         onMouseEnter={(e) => {
           const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
           setPos({ x: rect.x, y: rect.y });
-          // setShowDetails(selected);
-        }} // onMouseLeave={() => setShowDetails(undefined)}
+          setShowDetails(selected);
+        }}
+        onMouseLeave={() => setShowDetails(undefined)}
       >
         {renderShipType(t, selected)}
         <span className="ml-3 absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
@@ -142,15 +144,15 @@ export const ShipPopover: FC<Props> = ({ value, options, onChange }) => {
                 setShowMenu(false);
                 onChange(option);
               }}
-              //   onMouseEnter={() => setShowDetails(option)}
-              //   onMouseLeave={() => setShowDetails(undefined)}
+              onMouseEnter={() => setShowDetails(option)}
+              onMouseLeave={() => setShowDetails(undefined)}
             >
               {renderShipType(t, option)}
             </li>
           ))}
         </ul>
 
-        {/* <Transition
+        <Transition
           show={Boolean(showDetails) && showMenu}
           enter="transition ease-out duration-100"
           enterFrom="transform opacity-0 scale-95"
@@ -158,15 +160,14 @@ export const ShipPopover: FC<Props> = ({ value, options, onChange }) => {
           leave="transition ease-in duration-75"
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
-          className="absolute mt-1 w-full rounded-md bg-white shadow-lg z-10 p-1"
+          className="absolute w-full rounded-md bg-white shadow-lg z-10 p-1 hidden sm:block"
+          style={popoverDetailStyle(pos)}
         >
-          {showDetails && (
-            <ShipTypeComponent shipType={showDetails} minimized={false} />
-          )}
-        </Transition> */}
+          {showDetails && <ShipTypeComponent shipType={showDetails} />}
+        </Transition>
       </Transition>
 
-      {/* <Transition
+      <Transition
         show={Boolean(showDetails) && !showMenu}
         enter="transition ease-out duration-100"
         enterFrom="transform opacity-0 scale-95"
@@ -175,11 +176,10 @@ export const ShipPopover: FC<Props> = ({ value, options, onChange }) => {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
         className="absolute mt-1 w-full rounded-md bg-white shadow-lg z-10 p-1"
+        style={popoverStyle(pos)}
       >
-        {showDetails && (
-          <ShipTypeComponent shipType={showDetails} minimized={false} />
-        )}
-      </Transition> */}
+        {showDetails && <ShipTypeComponent shipType={showDetails} />}
+      </Transition>
     </div>
   );
 };
