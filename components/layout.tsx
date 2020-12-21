@@ -6,10 +6,11 @@ import Link from 'next/link';
 import React, { FC, useState } from 'react';
 import { v4 as uuid } from 'uuid';
 import { colorForFaction } from '../helpers/colors';
+import { CollectionsPanel } from './collection';
 import XwingFont from './fonts/xwing';
 import FormatComponent from './format';
-import { SavedSquadronsPanel } from './load-panel';
 import { LogoComponent } from './logo';
+import { SavedSquadronsPanel } from './saved-squadrons-panel';
 
 type Props = {
   loggedIn: boolean;
@@ -31,9 +32,11 @@ export const Layout: FC<Props> = ({
   setGrid,
   children,
 }) => {
+  const [showAdd, setShowAdd] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const [showActions, setShowActions] = useState(false);
   const [showPanel, setShowPanel] = useState(false);
+  const [showCollection, setShowCollection] = useState(false);
 
   return (
     <div>
@@ -48,62 +51,127 @@ export const Layout: FC<Props> = ({
                   </div>
                   <div className="hidden md:block">
                     <div className="ml-10 flex items-baseline space-x-4">
-                      {factions.map((f) => {
-                        const classes =
-                          xws.faction === f
-                            ? 'px-3 py-2 rounded-md text-sm font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700 cursor-pointer'
-                            : 'px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 cursor-pointer';
-
-                        const s: SquadronXWS = {
-                          uid: uuid(),
-                          name: 'New Faction',
-                          format: 'Hyperspace',
-                          faction: f,
-                          cost: 0,
-                          favourite: false,
-                          pilots: [],
-                        };
-
-                        return (
-                          <Link
-                            key={f}
-                            href={`/?lbx=${serializer.serialize(s)}`}
+                      <div className="relative inline-block text-left">
+                        <div>
+                          <button
+                            onClick={() => setShowAdd(!showAdd)}
+                            type="button"
+                            className={`inline-flex ${
+                              showAdd
+                                ? 'bg-gray-900 text-white'
+                                : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                            } px-3 py-2 rounded-md text-sm font-medium`}
+                            id="options-menu"
+                            aria-haspopup="true"
+                            aria-expanded="true"
                           >
-                            <a className={classes}>
-                              <XwingFont
-                                icon={f}
-                                className="text-xl"
-                                color={
-                                  f !== 'First Order' && f !== 'Galactic Empire'
-                                    ? colorForFaction(f)
-                                    : undefined
-                                }
+                            New squadron
+                            {/* <!-- Heroicon name: chevron-down --> */}
+                            <svg
+                              className="-mr-1 ml-2 h-5 w-5"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                              aria-hidden="true"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"
                               />
-                            </a>
-                          </Link>
-                        );
-                      })}
+                            </svg>
+                          </button>
+                        </div>
+
+                        <Transition
+                          show={showAdd}
+                          enter="transition ease-out duration-100"
+                          enterFrom="transform opacity-0 scale-95"
+                          enterTo="transform opacity-100 scale-100"
+                          leave="transition ease-in duration-75"
+                          leaveFrom="transform opacity-100 scale-100"
+                          leaveTo="transform opacity-0 scale-95"
+                          className="origin-top-center absolute overflow-hidden left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 z-10"
+                          role="menu"
+                          aria-orientation="vertical"
+                          aria-labelledby="options-menu"
+                        >
+                          {factions.map((f) => {
+                            const s: SquadronXWS = {
+                              uid: uuid(),
+                              name: 'New Faction',
+                              format: 'Hyperspace',
+                              faction: f,
+                              cost: 0,
+                              favourite: false,
+                              pilots: [],
+                            };
+
+                            return (
+                              <Link
+                                key={f}
+                                href={`/?lbx=${serializer.serialize(s)}`}
+                              >
+                                <a
+                                  className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 cursor-pointer"
+                                  role="menuitem"
+                                >
+                                  {/* <!-- Heroicon name: pencil-alt --> */}
+                                  <XwingFont
+                                    icon={f}
+                                    className="text-xl w-7"
+                                    color={
+                                      f !== 'First Order' &&
+                                      f !== 'Galactic Empire'
+                                        ? colorForFaction(f)
+                                        : undefined
+                                    }
+                                  />
+                                  {f}
+                                </a>
+                              </Link>
+                            );
+                          })}
+                        </Transition>
+                      </div>
+
+                      {loggedIn && (
+                        <button
+                          onClick={() => setShowPanel(!showPanel)}
+                          type="button"
+                          className={
+                            showPanel
+                              ? 'bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium'
+                              : 'text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
+                          }
+                        >
+                          Squadrons
+                        </button>
+                      )}
+                      {loggedIn && (
+                        <button
+                          onClick={() => setShowCollection(!showCollection)}
+                          type="button"
+                          className={
+                            showCollection
+                              ? 'bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium'
+                              : 'text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
+                          }
+                        >
+                          Collection
+                        </button>
+                      )}
                     </div>
                   </div>
                 </div>
                 <div className="hidden md:block">
                   <div className="ml-4 flex items-center md:ml-6">
-                    {loggedIn && (
-                      <button
-                        onClick={() => setShowPanel(!showPanel)}
-                        type="button"
-                        className="inline-flex items-center px-3 py-2 border border-transparent text-sm font-medium rounded shadow-sm text-white bg-gray-600 hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700"
-                      >
-                        Squadrons
-                      </button>
-                    )}
-
                     {/* <!-- Profile dropdown --> */}
                     <div className="ml-3 relative">
                       <div>
                         <button
                           onClick={() => setShowMenu(!showMenu)}
-                          className="max-w-xs flex items-center text-sm rounded-full focus:outline-none focus:shadow-solid text-gray-500"
+                          className="max-w-xs flex items-center text-sm rounded-full focus:outline-none focus:shadow-solid text-gray-300 hover:text-white"
                           id="user-menu"
                           aria-label="User menu"
                           aria-haspopup="true"
@@ -173,7 +241,7 @@ export const Layout: FC<Props> = ({
                   >
                     {/* <!-- Menu open: "hidden", Menu closed: "block" --> */}
                     <svg
-                      className="block h-6 w-6"
+                      className={`${showMenu ? 'hidden' : 'block'} h-6 w-6`}
                       stroke="currentColor"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -187,7 +255,7 @@ export const Layout: FC<Props> = ({
                     </svg>
                     {/* <!-- Menu open: "block", Menu closed: "hidden" --> */}
                     <svg
-                      className="hidden h-6 w-6"
+                      className={`${showMenu ? 'block' : 'hidden'} h-6 w-6`}
                       stroke="currentColor"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -403,9 +471,14 @@ export const Layout: FC<Props> = ({
         <div className="max-w-7xl mx-auto pb-12 px-0 sm:px-6 lg:px-8">
           {loggedIn && (
             <SavedSquadronsPanel
-              // squadrons={squadrons}
               show={showPanel}
               onClose={() => setShowPanel(!showPanel)}
+            />
+          )}
+          {loggedIn && (
+            <CollectionsPanel
+              show={showCollection}
+              onClose={() => setShowCollection(!showCollection)}
             />
           )}
           {children}

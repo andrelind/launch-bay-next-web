@@ -1,4 +1,5 @@
 import { ApolloError } from 'apollo-server-micro';
+import { isBefore, subDays } from 'date-fns';
 import { Context, generateTimestamp, getUser } from '../helpers';
 import DeletedModel from './../models/deleted';
 import SquadronModel from './../models/squadron';
@@ -29,16 +30,15 @@ const resolvers = {
       const deleted = await Deleted.find({ userUid: user.uid });
 
       if (deleted) {
-        for (var i = 1; i < deleted.length; i++) {
-          const d = deleted[i];
-          const checkDate = new Date();
-          checkDate.setDate(checkDate.getDate() - 14);
-
-          const date = new Date(d.timestamp * 1000);
-          if (date < checkDate) {
-            await Deleted.findOneAndRemove({ uid: d.uid, userUid: user.uid });
-          }
-        }
+        const refDate = subDays(new Date(), 14);
+        await Promise.all(
+          deleted.map(async (d) => {
+            const date = new Date(d.timestamp * 1000);
+            if (isBefore(date, refDate)) {
+              await Deleted.deleteOne({ uid: d.uid });
+            }
+          })
+        );
       }
 
       return (deleted || []).map((o) => o.uid);

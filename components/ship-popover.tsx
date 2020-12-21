@@ -94,7 +94,7 @@ export const ShipPopover: FC<Props> = ({ value, options, onChange }) => {
             className="absolute inset-0"
             onClick={() => {
               setShowMenu(!showMenu);
-              // setShowDetails(undefined);
+              setShowDetails(undefined);
             }}
           ></div>
         </div>
@@ -141,6 +141,7 @@ export const ShipPopover: FC<Props> = ({ value, options, onChange }) => {
               className="text-gray-900 cursor-default select-none relative py-2 px-1 sm:px-3 hover:bg-gray-100"
               onClick={() => {
                 setSelected(option);
+                setShowDetails(undefined);
                 setShowMenu(false);
                 onChange(option);
               }}

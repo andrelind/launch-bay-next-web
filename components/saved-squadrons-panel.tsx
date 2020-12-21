@@ -15,14 +15,9 @@ import XwingFont from './fonts/xwing';
 type Props = {
   show: boolean;
   onClose: () => void;
-  // squadrons: (Squadron | undefined)[];
 };
 
-export const SavedSquadronsPanel: FC<Props> = ({
-  show,
-  onClose,
-  // squadrons,
-}) => {
+export const SavedSquadronsPanel: FC<Props> = ({ show, onClose }) => {
   const { t } = useLocalized();
   const dispatch = useDispatch();
   const router = useRouter();
