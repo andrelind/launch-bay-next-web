@@ -1,13 +1,10 @@
 import { Transition } from '@tailwindui/react';
 import sources, { SourceKey } from 'lbn-core/dist/assets/sources';
 import { factions } from 'lbn-core/dist/helpers/enums';
-import { useLocalized } from 'lbn-core/dist/helpers/i18n';
 import { State as CollectionState } from 'lbn-core/dist/reducers/collection';
-import { UserState } from 'lbn-core/dist/reducers/user';
 import { AppState } from 'lbn-core/dist/state';
-import { useRouter } from 'next/router';
 import React, { FC, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { colorForFaction } from '../helpers/colors';
 import XwingFont from './fonts/xwing';
 
@@ -33,10 +30,10 @@ const extraKeys: (
 const keys: SourceKey[] = [...extraKeys, ...factions];
 
 export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
-  const { t } = useLocalized();
-  const dispatch = useDispatch();
-  const router = useRouter();
-  const user = useSelector<AppState, UserState>((s) => s.app.user);
+  // const { t } = useLocalized();
+  // const dispatch = useDispatch();
+  // const router = useRouter();
+  // const user = useSelector<AppState, UserState>((s) => s.app.user);
   const collection = useSelector<AppState, CollectionState>(
     (s) => s.app.collection
   );
