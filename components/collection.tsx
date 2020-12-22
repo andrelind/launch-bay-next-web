@@ -1,7 +1,7 @@
 import { Transition } from '@tailwindui/react';
 import sources, { SourceKey } from 'lbn-core/dist/assets/sources';
 import { factions } from 'lbn-core/dist/helpers/enums';
-import { State as CollectionState } from 'lbn-core/dist/reducers/collection';
+import { CollectionState } from 'lbn-core/dist/reducers/collection';
 import { AppState } from 'lbn-core/dist/state';
 import React, { FC, useState } from 'react';
 import { useSelector } from 'react-redux';
@@ -119,9 +119,9 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
                           aria-hidden="true"
                         >
                           <path
-                            fill-rule="evenodd"
+                            fillRule="evenodd"
                             d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                            clip-rule="evenodd"
+                            clipRule="evenodd"
                           />
                         </svg>
                       </button>

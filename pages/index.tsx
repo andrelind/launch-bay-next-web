@@ -362,7 +362,6 @@ export const getServerSideProps = wrapper.getServerSideProps(
       if (user) {
         dispatch(userDidLogin(user));
         const { data } = await requests.syncRequest(user);
-        console.log(data);
         dispatch(importAllSync(data));
       }
     }

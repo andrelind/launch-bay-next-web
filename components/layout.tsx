@@ -75,9 +75,9 @@ export const Layout: FC<Props> = ({
                               aria-hidden="true"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                clip-rule="evenodd"
+                                clipRule="evenodd"
                               />
                             </svg>
                           </button>
@@ -99,7 +99,7 @@ export const Layout: FC<Props> = ({
                           {factions.map((f) => {
                             const s: SquadronXWS = {
                               uid: uuid(),
-                              name: 'New Faction',
+                              name: 'New Squadron',
                               format: 'Hyperspace',
                               faction: f,
                               cost: 0,
@@ -164,18 +164,51 @@ export const Layout: FC<Props> = ({
                     </div>
                   </div>
                 </div>
-                <div className="hidden md:block">
-                  <div className="ml-4 flex items-center md:ml-6">
-                    {/* <!-- Profile dropdown --> */}
-                    <div className="ml-3 relative">
-                      <div>
-                        <button
-                          onClick={() => setShowMenu(!showMenu)}
-                          className="max-w-xs flex items-center text-sm rounded-full focus:outline-none focus:shadow-solid text-gray-300 hover:text-white"
-                          id="user-menu"
-                          aria-label="User menu"
-                          aria-haspopup="true"
+
+                <div className="flex-1 flex justify-center px-2 lg:ml-6 lg:justify-end">
+                  <div className="max-w-lg w-full lg:max-w-xs">
+                    <label htmlFor="search" className="sr-only">
+                      Search
+                    </label>
+                    <div className="relative">
+                      <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg
+                          className="h-5 w-5 text-gray-400"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          aria-hidden="true"
                         >
+                          <path
+                            fillRule="evenodd"
+                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </div>
+                      <input
+                        id="search"
+                        name="search"
+                        className="block w-full pl-10 pr-3 py-2 border border-transparent rounded-md leading-5 bg-gray-700 text-gray-300 placeholder-gray-400 focus:outline-none focus:bg-white focus:border-white focus:ring-white focus:text-gray-900 sm:text-sm"
+                        placeholder="Search"
+                        type="search"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="hidden md:block">
+                  {/* <!-- Profile dropdown --> */}
+                  <div className="ml-3 relative">
+                    <div>
+                      <button
+                        onClick={() => setShowMenu(!showMenu)}
+                        className="max-w-xs flex items-center text-sm rounded-full focus:outline-none focus:shadow-solid text-gray-300 hover:text-white"
+                        id="user-menu"
+                        aria-label="User menu"
+                        aria-haspopup="true"
+                      >
+                        {loggedIn && (
                           <svg
                             className="w-7 h-7"
                             fill="none"
@@ -190,47 +223,63 @@ export const Layout: FC<Props> = ({
                               d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                             ></path>
                           </svg>
-                        </button>
-                      </div>
-
-                      <Transition
-                        show={showMenu}
-                        enter="transition ease-out duration-100"
-                        enterFrom="transform opacity-0 scale-95"
-                        enterTo="transform opacity-100 scale-100"
-                        leave="transition ease-in duration-75"
-                        leaveFrom="transform opacity-100 scale-100"
-                        leaveTo="transform opacity-0 scale-95"
-                        className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg z-10"
-                      >
-                        <div className="py-1 rounded-md bg-white shadow-xs">
-                          {loggedIn && (
-                            <a
-                              href="/logout"
-                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                            >
-                              Logout
-                            </a>
-                          )}
-                          {!loggedIn && (
-                            <a
-                              href="/api/auth/facebook"
-                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                            >
-                              Login with Facebook
-                            </a>
-                          )}
-                          {!loggedIn && (
-                            <a
-                              href="/api/auth/google"
-                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                            >
-                              Login with Google
-                            </a>
-                          )}
-                        </div>
-                      </Transition>
+                        )}
+                        {!loggedIn && (
+                          <svg
+                            className="w-6 h-6"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
+                            ></path>
+                          </svg>
+                        )}
+                      </button>
                     </div>
+
+                    <Transition
+                      show={showMenu}
+                      enter="transition ease-out duration-100"
+                      enterFrom="transform opacity-0 scale-95"
+                      enterTo="transform opacity-100 scale-100"
+                      leave="transition ease-in duration-75"
+                      leaveFrom="transform opacity-100 scale-100"
+                      leaveTo="transform opacity-0 scale-95"
+                      className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg z-10"
+                    >
+                      <div className="py-1 rounded-md bg-white shadow-xs">
+                        {loggedIn && (
+                          <a
+                            href="/logout"
+                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          >
+                            Logout
+                          </a>
+                        )}
+                        {!loggedIn && (
+                          <a
+                            href="/api/auth/facebook"
+                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          >
+                            Login with Facebook
+                          </a>
+                        )}
+                        {!loggedIn && (
+                          <a
+                            href="/api/auth/google"
+                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          >
+                            Login with Google
+                          </a>
+                        )}
+                      </div>
+                    </Transition>
                   </div>
                 </div>
                 <div className="-mr-2 flex md:hidden">
@@ -293,7 +342,7 @@ export const Layout: FC<Props> = ({
 
                 const s: SquadronXWS = {
                   uid: uuid(),
-                  name: 'New Faction',
+                  name: 'New Squadron',
                   format: 'Hyperspace',
                   faction: f,
                   cost: 0,
