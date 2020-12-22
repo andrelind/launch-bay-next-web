@@ -15,8 +15,6 @@ const strategy = new Strategy(
       provider: 'Facebook',
     });
 
-    console.log({ result: result.data.registerUser });
-
     cb(null, result.data.registerUser);
   }
 );

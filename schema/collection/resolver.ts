@@ -37,7 +37,6 @@ const resolvers = {
     ) => {
       const user = await getUser(ctx, db);
 
-      // console.log({ expansions }, { ships }, { pilots }, { upgrades });
       const Collection = CollectionModel(db);
       const oldCollection = await Collection.findOne({ userUid: user.uid });
       if (oldCollection) {

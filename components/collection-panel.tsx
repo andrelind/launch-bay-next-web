@@ -1,10 +1,24 @@
 import { Transition } from '@tailwindui/react';
+import {
+  decreaseAdditionalPilot,
+  decreaseAdditionalShip,
+  decreaseAdditionalUpgrade,
+  decreaseSourceExpansion,
+  increaseAdditionalPilot,
+  increaseAdditionalShip,
+  increaseAdditionalUpgrade,
+  increaseSourceExpansion,
+} from 'lbn-core/dist/actions/collection';
+import { pilots, upgrades } from 'lbn-core/dist/assets';
 import sources, { SourceKey } from 'lbn-core/dist/assets/sources';
-import { factions } from 'lbn-core/dist/helpers/enums';
+import { factions, slotKeys } from 'lbn-core/dist/helpers/enums';
 import { CollectionState } from 'lbn-core/dist/reducers/collection';
+import { UserState } from 'lbn-core/dist/reducers/user';
+import requests from 'lbn-core/dist/requests';
 import { AppState } from 'lbn-core/dist/state';
-import React, { FC, useState } from 'react';
-import { useSelector } from 'react-redux';
+import { Faction } from 'lbn-core/dist/types';
+import React, { FC, useEffect, useRef, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { colorForFaction } from '../helpers/colors';
 import XwingFont from './fonts/xwing';
 
@@ -31,16 +45,106 @@ const keys: SourceKey[] = [...extraKeys, ...factions];
 
 export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
   // const { t } = useLocalized();
-  // const dispatch = useDispatch();
-  // const router = useRouter();
-  // const user = useSelector<AppState, UserState>((s) => s.app.user);
+  const dispatch = useDispatch();
+  const user = useSelector<AppState, UserState>((s) => s.app.user);
   const collection = useSelector<AppState, CollectionState>(
     (s) => s.app.collection
   );
 
   const [sourceKey, setSourceKey] = useState<SourceKey>('Core Sets');
   const [showDropdown, setShowDropdown] = useState(false);
-  console.log(collection);
+  const [data, setData] = useState<
+    {
+      xws: string;
+      name: string;
+      count: number;
+      wave?: number;
+      faction?: Faction;
+    }[]
+  >([]);
+
+  const isInitialMount = useRef(true);
+  useEffect(() => {
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+    } else {
+      const runner = async () => {
+        await requests.setCollection(collection, user);
+      };
+      runner();
+      setSourceKey(sourceKey);
+    }
+  }, [collection]);
+
+  useEffect(() => {
+    switch (sourceKey) {
+      case 'Additional Pilots': {
+        const all = factions.map((f) =>
+          Object.keys(pilots[f]).map((key) => {
+            const ship = pilots[f][key];
+            return ship.pilots.map((p) => ({
+              xws: p.xws,
+              name: p.name.en,
+              count: collection.pilots[p.xws],
+              faction: f,
+            }));
+          })
+        );
+        const some = all.reduce((a, c) => [...a, ...c], []);
+        setData(
+          some
+            .reduce((a, c) => [...a, ...c], [])
+            .sort((a, b) => a.name.localeCompare(b.name))
+        );
+        return;
+      }
+      case 'Additional Ships': {
+        const all = factions.map((f) =>
+          Object.keys(pilots[f]).map((key) => {
+            const ship = pilots[f][key];
+            return {
+              xws: ship.xws,
+              name: ship.name.en,
+              count: collection.ships[ship.xws],
+              faction: f,
+            };
+          })
+        );
+        setData(
+          all
+            .reduce((a, c) => [...a, ...c], [])
+            .sort((a, b) => a.name.localeCompare(b.name))
+        );
+        return;
+      }
+      case 'Additional Upgrades': {
+        const all = slotKeys.map((key) =>
+          upgrades[key]?.map((u) => ({
+            xws: u.xws,
+            name: u.sides[0].title.en,
+            count: collection.upgrades[u.xws],
+          }))
+        );
+        setData(
+          all
+            .reduce((a, c) => [...a, ...c], [])
+            .sort((a, b) => a.name.localeCompare(b.name))
+        );
+        return;
+      }
+      default: {
+        setData(
+          sources[sourceKey].map((s) => ({
+            xws: s.xws,
+            name: s.name,
+            count: collection.expansions[s.xws],
+            wave: s.wave,
+          }))
+        );
+        return;
+      }
+    }
+  }, [sourceKey, collection]);
 
   return (
     <div
@@ -90,9 +194,9 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
                           aria-hidden="true"
                         >
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M6 18L18 6M6 6l12 12"
                           />
                         </svg>
@@ -187,30 +291,14 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
                 </div>
 
                 <ul className="divide-y divide-gray-200 overflow-y-auto">
-                  {sources[sourceKey].map((s) => {
-                    let count = 0;
-                    if (sourceKey === 'Additional Ships') {
-                      count = collection.ships[s.xws] || 0;
-                    } else if (sourceKey === 'Additional Pilots') {
-                      count = collection.pilots[s.xws] || 0;
-                    } else if (sourceKey === 'Additional Upgrades') {
-                      count = collection.upgrades[s.xws] || 0;
-                    } else {
-                      count = collection.expansions[s.xws] || 0;
-                    }
+                  {data.map((s, i) => {
                     return (
                       <li
-                        key={`${s.xws}`}
+                        key={`${s.xws}_${i}`}
                         className="px-6 py-5 relative hover:bg-gray-50"
                       >
                         <div className="flex justify-between items-center">
-                          <a
-                            className="-m-1 p-1 flex flex-1"
-                            // onClick={() => {
-                            //   router.push(`/?uid=${s.uid}`);
-                            //   onClose();
-                            // }}
-                          >
+                          <div className="-m-1 p-1 flex flex-1">
                             <div
                               className="absolute inset-0"
                               aria-hidden="true"
@@ -223,22 +311,38 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
                                   color={colorForFaction(s.faction)}
                                 /> */}
                               </span>
-                              <div className="ml-4 truncate flex flex-col flex-1">
+                              <div className="truncate flex flex-col flex-1">
                                 <p className="text-sm font-medium text-gray-900 truncate">
                                   {s.name}
                                 </p>
-                                <p className="text-sm text-gray-500 truncate">
-                                  Wave {s.wave}
-                                </p>
+                                {Boolean(s.wave) && (
+                                  <p className="text-sm text-gray-500 truncate">
+                                    Wave {s.wave}
+                                  </p>
+                                )}
+                                {s.faction && (
+                                  <p className="text-sm text-gray-500 truncate">
+                                    {s.faction}
+                                  </p>
+                                )}
                               </div>
                             </div>
-                          </a>
+                          </div>
 
                           <div className="ml-2 relative inline-block text-center flex items-center">
                             <button
                               onClick={async () => {
-                                // dispatch(removeSquadron(s.uid));
-                                // requests.default.deleteSquadron(s.uid, user);
+                                if (sourceKey === 'Additional Ships') {
+                                  dispatch(decreaseAdditionalShip(s.xws));
+                                } else if (sourceKey === 'Additional Pilots') {
+                                  dispatch(decreaseAdditionalPilot(s.xws));
+                                } else if (
+                                  sourceKey === 'Additional Upgrades'
+                                ) {
+                                  dispatch(decreaseAdditionalUpgrade(s.xws));
+                                } else {
+                                  dispatch(decreaseSourceExpansion(s.xws));
+                                }
                               }}
                               className="group relative w-8 h-8 bg-white rounded-full inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lbnred"
                             >
@@ -257,11 +361,20 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
                                 ></path>
                               </svg>
                             </button>
-                            <span className="mx-1">{count}</span>
+                            <span className="mx-1">{`${s.count || 0}`}</span>
                             <button
                               onClick={async () => {
-                                // dispatch(removeSquadron(s.uid));
-                                // requests.default.deleteSquadron(s.uid, user);
+                                if (sourceKey === 'Additional Ships') {
+                                  dispatch(increaseAdditionalShip(s.xws));
+                                } else if (sourceKey === 'Additional Pilots') {
+                                  dispatch(increaseAdditionalPilot(s.xws));
+                                } else if (
+                                  sourceKey === 'Additional Upgrades'
+                                ) {
+                                  dispatch(increaseAdditionalUpgrade(s.xws));
+                                } else {
+                                  dispatch(increaseSourceExpansion(s.xws));
+                                }
                               }}
                               className="group relative w-8 h-8 bg-white rounded-full inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lbnred"
                             >

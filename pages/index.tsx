@@ -90,7 +90,6 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
 
     const newLbx = serialize(xws);
     if (decodeURIComponent(newLbx) !== lbx) {
-      console.log('Update url');
       const url = `?lbx=${newLbx}&uid=${uid}`;
       router.push(url, `?lbx=${newLbx}`, { shallow: true });
 
@@ -100,10 +99,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
         return;
       }
       console.log('Update server', { newLbx, lbx });
-      const run = async () => {
-        const res = await requests.setSquadron(xws, user);
-        console.log({ res });
-      };
+      const run = async () => requests.setSquadron(xws, user);
       run();
     } else {
     }
@@ -362,7 +358,7 @@ export const getServerSideProps = wrapper.getServerSideProps(
       if (user) {
         dispatch(userDidLogin(user));
         const { data } = await requests.syncRequest(user);
-        console.log(data.collection);
+        data.tournaments = [];
         dispatch(importAllSync(data));
       }
     }
