@@ -37,9 +37,10 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
   const collection = useSelector<AppState, CollectionState>(
     (s) => s.app.collection
   );
-  const [sourceKey, setSourceKey] = useState<SourceKey>('Core Sets');
 
+  const [sourceKey, setSourceKey] = useState<SourceKey>('Core Sets');
   const [showDropdown, setShowDropdown] = useState(false);
+  console.log(collection);
 
   return (
     <div

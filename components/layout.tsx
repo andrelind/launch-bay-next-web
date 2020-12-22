@@ -6,7 +6,7 @@ import Link from 'next/link';
 import React, { FC, useState } from 'react';
 import { v4 as uuid } from 'uuid';
 import { colorForFaction } from '../helpers/colors';
-import { CollectionsPanel } from './collection';
+import { CollectionsPanel } from './collection-panel';
 import XwingFont from './fonts/xwing';
 import FormatComponent from './format';
 import { LogoComponent } from './logo';
