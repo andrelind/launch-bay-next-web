@@ -1,8 +1,10 @@
 import { Transition } from '@tailwindui/react';
 import { red } from 'lbn-core/dist/assets/colors';
 import { useLocalized } from 'lbn-core/dist/helpers/i18n';
+import { upgradeFormatWarning } from 'lbn-core/dist/helpers/unique';
 import { AppState } from 'lbn-core/dist/state';
 import {
+  Format,
   Language,
   Slot,
   Translation,
@@ -13,16 +15,9 @@ import React, { FC, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { popoverDetailStyle, popoverStyle } from '../helpers/popover';
 import { XwingFont } from './fonts/xwing';
+import { FormatError } from './format-error';
 import StatsComponent from './ship-stats';
 import UpgradeComponent from './upgrade';
-
-type Props = {
-  slot: Slot;
-  value?: Upgrade;
-  options: Upgrade[];
-  side: number;
-  onChange: (value?: Upgrade) => void;
-};
 
 const renderUpgrade = (
   t: (translation?: Translation | undefined) => string,
@@ -52,12 +47,22 @@ const renderUpgrade = (
   </span>
 );
 
+type Props = {
+  slot: Slot;
+  value?: Upgrade;
+  format: Format;
+  options: Upgrade[];
+  side: number;
+  onChange: (value?: Upgrade) => void;
+};
+
 export const UpgradePopover: FC<Props> = ({
   slot,
   value,
   options,
   side = 0,
   onChange,
+  format,
 }) => {
   const language = useSelector<AppState, Language | undefined>(
     (s) => s.app.user.language
@@ -74,6 +79,8 @@ export const UpgradePopover: FC<Props> = ({
   if (!upgradeSide) {
     upgradeSide = selected?.sides[0];
   }
+
+  const formatWarning = selected && upgradeFormatWarning(selected, format);
 
   return (
     <div className="mt-1 relative">
@@ -98,6 +105,7 @@ export const UpgradePopover: FC<Props> = ({
         }}
       >
         {renderUpgrade(t, slot, selected, upgradeSide)}
+        {formatWarning && <FormatError />}
         <span className="ml-1 sm:ml-3 absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
           {/* <!-- Heroicon name: selector --> */}
           <svg

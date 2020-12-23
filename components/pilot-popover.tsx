@@ -1,7 +1,11 @@
 import { Transition } from '@tailwindui/react';
 import { useLocalized } from 'lbn-core/dist/helpers/i18n';
+import { pilotFormatWarning } from 'lbn-core/dist/helpers/unique';
+import { pilotOptions } from 'lbn-core/dist/loader';
 import { AppState } from 'lbn-core/dist/state';
 import {
+  Faction,
+  Format,
   Language,
   Pilot,
   Ship,
@@ -11,16 +15,9 @@ import {
 import React, { FC, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { popoverDetailStyle, popoverStyle } from '../helpers/popover';
+import { FormatError } from './format-error';
 import PilotComponent from './pilot';
 import { StatsComponent } from './ship-stats';
-
-type Props = {
-  value?: Pilot;
-  ship?: Ship | ShipType;
-  options: Pilot[];
-  onChange: (value?: Pilot) => void;
-  halfWidth?: boolean;
-};
 
 const renderPilot = (
   t: (translation?: Translation | undefined) => string,
@@ -66,12 +63,22 @@ const renderPilot = (
   </span>
 );
 
+type Props = {
+  value?: Pilot;
+  ship: Ship | ShipType;
+  faction: Faction;
+  format: Format;
+  onChange: (value?: Pilot) => void;
+  halfWidth?: boolean;
+};
+
 export const PilotPopover: FC<Props> = ({
   value,
-  options,
   onChange,
   halfWidth,
   ship,
+  format,
+  faction,
 }) => {
   const language = useSelector<AppState, Language | undefined>(
     (s) => s.app.user.language
@@ -82,6 +89,9 @@ export const PilotPopover: FC<Props> = ({
   const [showDetails, setShowDetails] = useState<Pilot | undefined>();
   const [selected, setSelected] = useState(value);
   const [pos, setPos] = useState({ x: 0, y: 0 });
+
+  const options = pilotOptions(faction, format, ship.xws, t);
+  const formatWarning = pilotFormatWarning(value, ship?.size, format);
 
   return (
     <div className="mt-1 relative">
@@ -104,6 +114,7 @@ export const PilotPopover: FC<Props> = ({
         onMouseLeave={() => !showMenu && setShowDetails(undefined)}
       >
         {renderPilot(t, selected, selected && ship)}
+        {formatWarning && <FormatError />}
         <span className="ml-1 sm:ml-3 absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
           {/* <!-- Heroicon name: selector --> */}
           <svg

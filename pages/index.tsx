@@ -4,8 +4,6 @@ import { importAllSync } from 'lbn-core/dist/actions/sync';
 import { userDidLogin } from 'lbn-core/dist/actions/user';
 import {
   getUpgrades,
-  pilotOptions,
-  shipTypeForXws,
   shipTypeOptions,
   upgradesForSlot,
 } from 'lbn-core/dist/loader';
@@ -109,6 +107,8 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
     return null;
   }
 
+  const { faction, format } = squadron;
+
   const actions: {
     title: string;
     className?: string;
@@ -159,12 +159,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
             ...upgradesForSlot(squadron, s, 'Torpedo', t, c, true),
           ];
 
-          const shipType = shipTypeForXws(
-            squadron.faction,
-            squadron.format,
-            s.xws
-          );
-          const upgrades = getUpgrades(squadron.format, s);
+          const upgrades = getUpgrades(format, s);
 
           return (
             <div
@@ -175,8 +170,9 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
                 <PilotPopover
                   halfWidth
                   value={s.pilot}
+                  faction={faction}
+                  format={format}
                   ship={s}
-                  options={pilotOptions(shipType, t)}
                   onChange={(p) => {
                     dispatch(
                       changePilotAction(
@@ -204,12 +200,12 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
                       side={0}
                       slot={upgrade.slot}
                       value={upgrade.upgrade}
+                      format={format}
                       options={upgradesForSlot(
                         squadron,
                         s,
                         upgrade.slot,
-                        t,
-                        c,
+                        { t, c },
                         true
                       )}
                       onChange={(newValue) => {
@@ -242,7 +238,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
                   <UpgradePopover
                     side={0}
                     slot={'Hardpoint'}
-                    // value={}
+                    format={format}
                     options={hardpointOptions()}
                     onChange={(newValue) => {
                       const slot = newValue?.sides[0].slots[0] || 'Hardpoint';
@@ -332,7 +328,8 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
         {shipBase && (
           <PilotPopover
             ship={shipBase}
-            options={pilotOptions(shipBase, t)}
+            faction={faction}
+            format={format}
             onChange={(v) => {
               if (v) {
                 dispatch(addShipAction(squadron.uid, shipBase.xws, v.xws));
