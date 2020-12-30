@@ -1,6 +1,9 @@
 import { Transition } from '@tailwindui/react';
 import { useLocalized } from 'lbn-core/dist/helpers/i18n';
-import { pilotFormatWarning } from 'lbn-core/dist/helpers/unique';
+import {
+  limitedWarning,
+  pilotFormatWarning,
+} from 'lbn-core/dist/helpers/unique';
 import { pilotOptions } from 'lbn-core/dist/loader';
 import { AppState } from 'lbn-core/dist/state';
 import {
@@ -16,6 +19,7 @@ import React, { FC, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { popoverDetailStyle, popoverStyle } from '../helpers/popover';
 import { FormatError } from './format-error';
+import { LimitError } from './limit-error';
 import PilotComponent from './pilot';
 import { StatsComponent } from './ship-stats';
 
@@ -68,6 +72,7 @@ type Props = {
   ship: Ship | ShipType;
   faction: Faction;
   format: Format;
+  usedXws: string[];
   onChange: (value?: Pilot) => void;
   halfWidth?: boolean;
 };
@@ -79,6 +84,7 @@ export const PilotPopover: FC<Props> = ({
   ship,
   format,
   faction,
+  usedXws,
 }) => {
   const language = useSelector<AppState, Language | undefined>(
     (s) => s.app.user.language
@@ -90,8 +96,12 @@ export const PilotPopover: FC<Props> = ({
   const [selected, setSelected] = useState(value);
   const [pos, setPos] = useState({ x: 0, y: 0 });
 
-  const options = pilotOptions(faction, format, ship.xws, t);
+  const options = pilotOptions(faction, format, ship.xws, t).filter(
+    (f) => f.xws !== selected?.xws
+  );
   const formatWarning = pilotFormatWarning(value, ship?.size, format);
+  const warning =
+    value && limitedWarning(value?.xws, value?.limited, usedXws, false);
 
   return (
     <div className="mt-1 relative">
@@ -115,6 +125,7 @@ export const PilotPopover: FC<Props> = ({
       >
         {renderPilot(t, selected, selected && ship)}
         {formatWarning && <FormatError />}
+        {warning && <LimitError limit={value?.limited || 0} />}
         <span className="ml-1 sm:ml-3 absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
           {/* <!-- Heroicon name: selector --> */}
           <svg
@@ -198,6 +209,9 @@ export const PilotPopover: FC<Props> = ({
               onMouseLeave={() => setShowDetails(undefined)}
             >
               {renderPilot(t, option)}
+              {limitedWarning(option.xws, option.limited, usedXws, true) && (
+                <LimitError limit={option.limited} />
+              )}
             </li>
           ))}
         </ul>

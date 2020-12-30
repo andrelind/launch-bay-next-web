@@ -2,6 +2,7 @@ import { actions, helpers } from 'lbn-core';
 import { addSquadron, setUpgrade } from 'lbn-core/dist/actions/squadrons';
 import { importAllSync } from 'lbn-core/dist/actions/sync';
 import { userDidLogin } from 'lbn-core/dist/actions/user';
+import { usedSquadronXWS } from 'lbn-core/dist/helpers/unique';
 import {
   getUpgrades,
   shipTypeOptions,
@@ -72,6 +73,8 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
 
   const [shipBase, setShipBase] = useState<ShipType>();
   const [grid, setGrid] = useState(cookies['grid'] === 'true');
+
+  const usedXws = usedSquadronXWS(squadron);
 
   const p: { [s: string]: Slot } = {};
   squadron?.ships.forEach((s) => {
@@ -154,9 +157,9 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
             !s.ability?.slotOptions.find((sl) => s.upgrades?.[keyFromSlot(sl)]);
 
           const hardpointOptions = () => [
-            ...upgradesForSlot(squadron, s, 'Cannon', t, c, true),
-            ...upgradesForSlot(squadron, s, 'Missile', t, c, true),
-            ...upgradesForSlot(squadron, s, 'Torpedo', t, c, true),
+            ...upgradesForSlot(squadron, s, 'Cannon', { t, c }, true),
+            ...upgradesForSlot(squadron, s, 'Missile', { t, c }, true),
+            ...upgradesForSlot(squadron, s, 'Torpedo', { t, c }, true),
           ];
 
           const upgrades = getUpgrades(format, s);
@@ -172,6 +175,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
                   value={s.pilot}
                   faction={faction}
                   format={format}
+                  usedXws={usedXws}
                   ship={s}
                   onChange={(p) => {
                     dispatch(
@@ -330,6 +334,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
             ship={shipBase}
             faction={faction}
             format={format}
+            usedXws={usedXws}
             onChange={(v) => {
               if (v) {
                 dispatch(addShipAction(squadron.uid, shipBase.xws, v.xws));
