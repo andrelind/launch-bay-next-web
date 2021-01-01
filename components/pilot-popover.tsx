@@ -42,7 +42,7 @@ const renderPilot = (
               `${'•'.repeat(pilot?.limited)} `}
             {t(pilot?.name)}
           </span>
-          <span className="italic text-gray-400 sm:visible">
+          <span className="italic text-gray-400 sm:visible text-xs">
             {t(pilot?.caption)}
           </span>
         </div>
@@ -75,6 +75,7 @@ type Props = {
   usedXws: string[];
   onChange: (value?: Pilot) => void;
   halfWidth?: boolean;
+  shadow?: boolean;
 };
 
 export const PilotPopover: FC<Props> = ({
@@ -85,6 +86,7 @@ export const PilotPopover: FC<Props> = ({
   format,
   faction,
   usedXws,
+  shadow,
 }) => {
   const language = useSelector<AppState, Language | undefined>(
     (s) => s.app.user.language
@@ -99,9 +101,11 @@ export const PilotPopover: FC<Props> = ({
   const options = pilotOptions(faction, format, ship.xws, t).filter(
     (f) => f.xws !== selected?.xws
   );
-  const formatWarning = pilotFormatWarning(value, ship?.size, format);
+  const formatWarning =
+    selected && pilotFormatWarning(selected, ship?.size, format);
   const warning =
-    value && limitedWarning(value?.xws, value?.limited, usedXws, false);
+    selected &&
+    limitedWarning(selected?.xws, selected?.limited, usedXws, false);
 
   return (
     <div className="mt-1 relative">
@@ -115,7 +119,9 @@ export const PilotPopover: FC<Props> = ({
         aria-haspopup="listbox"
         aria-expanded="true"
         aria-labelledby="listbox-label"
-        className="relative w-full bg-white hover:shadow-md rounded-md pl-1 sm:pl-3 pr-8 sm:pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-lbnred-500 focus:border-lbnred-500 text-xs sm:text-sm cursor-pointer"
+        className={`relative w-full bg-white ${
+          shadow ? 'shadow' : 'hover:shadow'
+        } rounded-md pl-1 sm:pl-3 pr-8 sm:pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-lbnred-500 focus:border-lbnred-500 text-xs sm:text-sm cursor-pointer`}
         onMouseEnter={(e) => {
           const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
           setPos({ x: rect.x, y: rect.y });
@@ -145,14 +151,18 @@ export const PilotPopover: FC<Props> = ({
       </button>
 
       {showMenu && (
-        <div className="fixed inset-0 transition-opacity" aria-hidden="true">
-          <div
-            className="absolute inset-0"
-            onClick={() => {
+        <div
+          className="fixed inset-0 z-10"
+          aria-hidden="true"
+          onClick={(e) => {
+            // @ts-ignore
+            if (e.target.id === 'background') {
               setShowMenu(!showMenu);
               setShowDetails(undefined);
-            }}
-          ></div>
+            }
+          }}
+        >
+          <div id="background" className="absolute inset-0" />
         </div>
       )}
 

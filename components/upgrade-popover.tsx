@@ -94,7 +94,7 @@ export const UpgradePopover: FC<Props> = ({
         aria-haspopup="listbox"
         aria-expanded="true"
         aria-labelledby="listbox-label"
-        className="relative w-full bg-white hover:shadow-md rounded-md pl-1 sm:pl-3 pr-8 sm:pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-lbnred-500 focus:border-lbnred-500 text-xs sm:text-sm cursor-pointer"
+        className="relative w-full bg-white hover:shadow rounded-md pl-1 sm:pl-3 pr-8 sm:pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-lbnred-500 focus:border-lbnred-500 text-xs sm:text-sm cursor-pointer"
         onMouseEnter={(e) => {
           const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
           setPos({ x: rect.x, y: rect.y });
@@ -125,14 +125,18 @@ export const UpgradePopover: FC<Props> = ({
       </button>
 
       {showMenu && (
-        <div className="fixed inset-0 transition-opacity" aria-hidden="true">
-          <div
-            className="absolute inset-0"
-            onClick={() => {
+        <div
+          className="fixed inset-0 z-10"
+          aria-hidden="true"
+          onClick={(e) => {
+            // @ts-ignore
+            if (e.target.id === 'background') {
               setShowMenu(!showMenu);
               setShowDetails(undefined);
-            }}
-          ></div>
+            }
+          }}
+        >
+          <div id="background" className="absolute inset-0" />
         </div>
       )}
 
@@ -205,7 +209,6 @@ export const UpgradePopover: FC<Props> = ({
           {showDetails && (
             <UpgradeComponent
               upgrade={showDetails}
-              side={side}
               showType={true}
               minimized={false}
             />
@@ -227,7 +230,6 @@ export const UpgradePopover: FC<Props> = ({
         {showDetails && (
           <UpgradeComponent
             upgrade={showDetails}
-            side={side}
             showType={true}
             minimized={false}
           />

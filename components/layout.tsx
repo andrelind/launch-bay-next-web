@@ -3,7 +3,7 @@ import { serializer } from 'lbn-core/dist/helpers';
 import { factions } from 'lbn-core/dist/helpers/enums';
 import { SquadronXWS } from 'lbn-core/dist/types';
 import Link from 'next/link';
-import React, { FC, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import { v4 as uuid } from 'uuid';
 import { colorForFaction } from '../helpers/colors';
 import { CollectionsPanel } from './collection-panel';
@@ -15,6 +15,7 @@ import { SavedSquadronsPanel } from './saved-squadrons-panel';
 type Props = {
   loggedIn: boolean;
   xws: SquadronXWS;
+  onChangeName: (name: string) => void;
   onChangeFormat: () => void;
   onPrint: () => void;
   grid: boolean;
@@ -25,6 +26,7 @@ type Props = {
 export const Layout: FC<Props> = ({
   loggedIn,
   xws,
+  onChangeName,
   onChangeFormat,
   onPrint,
   actions,
@@ -37,6 +39,11 @@ export const Layout: FC<Props> = ({
   const [showActions, setShowActions] = useState(false);
   const [showPanel, setShowPanel] = useState(false);
   const [showCollection, setShowCollection] = useState(false);
+  const [name, setName] = useState(xws.name);
+
+  useEffect(() => {
+    setName(xws.name);
+  }, [xws]);
 
   return (
     <div>
@@ -66,22 +73,23 @@ export const Layout: FC<Props> = ({
                             aria-expanded="true"
                           >
                             New squadron
-                            {/* <!-- Heroicon name: chevron-down --> */}
-                            <svg
-                              className="-mr-1 ml-2 h-5 w-5"
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                              aria-hidden="true"
-                            >
-                              <path
-                                fillRule="evenodd"
-                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                clipRule="evenodd"
-                              />
-                            </svg>
                           </button>
                         </div>
+
+                        {showAdd && (
+                          <div
+                            className="fixed inset-0 z-10"
+                            aria-hidden="true"
+                            onClick={(e) => {
+                              // @ts-ignore
+                              if (e.target.id === 'background') {
+                                setShowAdd(!showAdd);
+                              }
+                            }}
+                          >
+                            <div id="background" className="absolute inset-0" />
+                          </div>
+                        )}
 
                         <Transition
                           show={showAdd}
@@ -199,7 +207,7 @@ export const Layout: FC<Props> = ({
 
                 <div className="hidden md:block">
                   {/* <!-- Profile dropdown --> */}
-                  <div className="ml-3 relative">
+                  <div className="ml-1 relative">
                     <div>
                       <button
                         onClick={() => setShowMenu(!showMenu)}
@@ -210,22 +218,6 @@ export const Layout: FC<Props> = ({
                       >
                         {loggedIn && (
                           <svg
-                            className="w-7 h-7"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                            ></path>
-                          </svg>
-                        )}
-                        {!loggedIn && (
-                          <svg
                             className="w-6 h-6"
                             fill="none"
                             stroke="currentColor"
@@ -233,15 +225,47 @@ export const Layout: FC<Props> = ({
                             xmlns="http://www.w3.org/2000/svg"
                           >
                             <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                            ></path>
+                            <path
                               strokeLinecap="round"
                               strokeLinejoin="round"
                               strokeWidth="2"
-                              d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
+                              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
                             ></path>
                           </svg>
                         )}
+                        {!loggedIn && (
+                          <span
+                            className={
+                              showMenu
+                                ? 'bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium'
+                                : 'text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
+                            }
+                          >
+                            Login
+                          </span>
+                        )}
                       </button>
                     </div>
+
+                    {showMenu && (
+                      <div
+                        className="fixed inset-0 z-10"
+                        aria-hidden="true"
+                        onClick={(e) => {
+                          // @ts-ignore
+                          if (e.target.id === 'background') {
+                            setShowMenu(!showMenu);
+                          }
+                        }}
+                      >
+                        <div id="background" className="absolute inset-0" />
+                      </div>
+                    )}
 
                     <Transition
                       show={showMenu}
@@ -415,7 +439,16 @@ export const Layout: FC<Props> = ({
                       icon={xws.faction}
                       color={colorForFaction(xws.faction)}
                     />
-                    <span className="ml-1">{xws.name}</span>
+                    <input
+                      type="text"
+                      name="email"
+                      id="email"
+                      className="text-2xl font-bold bg-transparent border-none focus:outline-none leading-7 text-white sm:text-3xl sm:leading-9 sm:truncate flex items-center"
+                      placeholder="Squadron name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      onBlur={() => onChangeName(name)}
+                    />
                   </h2>
                 </span>
                 <div className="flex text-sm sm:text-lg font-normal">

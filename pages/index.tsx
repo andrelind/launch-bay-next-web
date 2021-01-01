@@ -1,5 +1,9 @@
 import { actions, helpers } from 'lbn-core';
-import { addSquadron, setUpgrade } from 'lbn-core/dist/actions/squadrons';
+import {
+  addSquadron,
+  renameSquadron,
+  setUpgrade,
+} from 'lbn-core/dist/actions/squadrons';
 import { importAllSync } from 'lbn-core/dist/actions/sync';
 import { userDidLogin } from 'lbn-core/dist/actions/user';
 import { usedSquadronXWS } from 'lbn-core/dist/helpers/unique';
@@ -135,6 +139,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
     <Layout
       loggedIn={Boolean(jwt)}
       xws={xws}
+      onChangeName={(n) => dispatch(renameSquadron(squadron.uid, n))}
       onChangeFormat={() => dispatch(toggleFormat(squadron.uid))}
       onPrint={() =>
         xws && window.open(`/print?lbx=${serialize(xws)}`, '_ blank')
@@ -322,7 +327,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
         })}
       </div>
 
-      <div className="my-3 bg-white rounded-lg shadow px-2 py-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 gap-1">
+      <div className="my-3 py-4 grid grid-cols-1 sm:grid-cols-2 gap-1">
         <ShipPopover
           value={shipBase}
           options={shipTypeOptions(squadron, t, collection, true)}
@@ -335,6 +340,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
             faction={faction}
             format={format}
             usedXws={usedXws}
+            shadow
             onChange={(v) => {
               if (v) {
                 dispatch(addShipAction(squadron.uid, shipBase.xws, v.xws));

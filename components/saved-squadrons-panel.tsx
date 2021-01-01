@@ -11,6 +11,7 @@ import React, { FC } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { colorForFaction } from '../helpers/colors';
 import XwingFont from './fonts/xwing';
+import { colorForFormat } from './format';
 
 type Props = {
   show: boolean;
@@ -123,33 +124,35 @@ export const SavedSquadronsPanel: FC<Props> = ({ show, onClose }) => {
                         key={`${s.uid}_${i}`}
                         className="px-6 py-5 relative hover:bg-gray-50"
                       >
-                        <div className="flex justify-between items-center">
+                        <div className="flex items-center">
                           {/* <Link href={`/?uid=${s.uid}`}> */}
                           <a
-                            className="-m-1 p-1 flex flex-1"
+                            className="flex flex-1"
                             onClick={() => {
                               router.push(`/?uid=${s.uid}`);
                               onClose();
                             }}
                           >
-                            <div
-                              className="absolute inset-0"
-                              aria-hidden="true"
-                            ></div>
-                            <div className="flex-1 flex items-center min-w-0 relative cursor-pointer">
-                              <span className="flex-shrink-0 inline-block relative">
-                                <XwingFont
-                                  className="text-lg"
-                                  icon={s.faction}
-                                  color={colorForFaction(s.faction)}
-                                />
-                              </span>
-                              <div className="ml-4 truncate flex flex-col flex-1">
+                            <span className="flex-shrink-0 inline-block relative text-center">
+                              <XwingFont
+                                className="text-lg"
+                                icon={s.faction}
+                                color={colorForFaction(s.faction)}
+                              />
+                              <div
+                                className="text-sm font-medium"
+                                style={{ color: colorForFormat(s.format) }}
+                              >
+                                {s.format.substr(0, 1)}
+                              </div>
+                            </span>
+                            <div className="flex flex-1 flex-col justify-center cursor-pointer">
+                              <div className="ml-4 flex flex-col flex-1">
                                 <p className="text-sm font-medium text-gray-900 truncate flex flex-1 justify-between">
                                   <span>{s.name}</span>
                                   <span>{s.cost}</span>
                                 </p>
-                                <p className="text-sm text-gray-500 truncate">
+                                <p className="text-xs text-gray-500">
                                   {joinedPilots}
                                 </p>
                               </div>
