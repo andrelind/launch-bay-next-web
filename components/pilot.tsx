@@ -6,6 +6,7 @@ import ActionsComponent from './actions';
 import { DialComponent } from './dial';
 import FormattedText from './formatted-text';
 import StatsComponent from './ship-stats';
+import { SlimPilot } from './slim/pilot';
 
 type Props = {
   pilot: Pilot;
@@ -22,6 +23,7 @@ const PilotComponent: FC<Props> = ({ pilot, ship }) => {
 
   return (
     <div className="flex flex-1 flex-col m-2">
+      <SlimPilot pilot={pilot} />
       <div className="flex flex-row items-center hidden sm:block">
         <div className="flex flex-1 flex-col sm:flex-row justify-between">
           <StatsComponent

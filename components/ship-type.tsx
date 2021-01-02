@@ -6,6 +6,7 @@ import BaseSize from './base-size';
 import { DialComponent } from './dial';
 import XwingFont from './fonts/xwing';
 import { StatsComponent } from './ship-stats';
+import { SlimShip } from './slim/ship';
 
 type Props = {
   shipType: ShipType;
@@ -14,6 +15,8 @@ type Props = {
 export const ShipTypeComponent: FC<Props> = ({ shipType }) => {
   return (
     <div className="flex flex-1 flex-col m-2">
+      <SlimShip shipType={shipType} />
+
       <div className="flex flex-row items-center hidden sm:block">
         <div className="flex flex-1 flex-col sm:flex-row justify-between">
           <StatsComponent stats={shipType?.stats} vertical />

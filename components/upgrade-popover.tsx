@@ -1,51 +1,12 @@
 import { Transition } from '@tailwindui/react';
 import { red } from 'lbn-core/dist/assets/colors';
-import { useLocalized } from 'lbn-core/dist/helpers/i18n';
 import { upgradeFormatWarning } from 'lbn-core/dist/helpers/unique';
-import { AppState } from 'lbn-core/dist/state';
-import {
-  Format,
-  Language,
-  Slot,
-  Translation,
-  Upgrade,
-  UpgradeSide,
-} from 'lbn-core/dist/types';
+import { Format, Slot, Upgrade } from 'lbn-core/dist/types';
 import React, { FC, useState } from 'react';
-import { useSelector } from 'react-redux';
 import { popoverDetailStyle, popoverStyle } from '../helpers/popover';
-import { XwingFont } from './fonts/xwing';
 import { FormatError } from './format-error';
-import StatsComponent from './ship-stats';
+import { SlimUpgrade } from './slim/upgrade';
 import UpgradeComponent from './upgrade';
-
-const renderUpgrade = (
-  t: (translation?: Translation | undefined) => string,
-  slot: Slot,
-  upgrade?: Upgrade,
-  side?: UpgradeSide
-) => (
-  <span className="flex items-center justify-between text-xs sm:text-sm">
-    <div className="flex items-center">
-      <XwingFont
-        className={`${!upgrade && 'text-gray-500'}`}
-        icon={side?.slots[0] || slot}
-      />
-
-      {upgrade && (
-        <span className="ml-2 word-wrap font-medium">
-          {upgrade.limited > 0 && `${'•'.repeat(upgrade.limited)} `}
-          {t(side?.title)}
-        </span>
-      )}
-      <StatsComponent charges={side?.charges} force={side?.force} />
-      {!upgrade && <span className="ml-3 truncate text-gray-500">{slot}</span>}
-    </div>
-    <span className="ml-1 pr-1 sm:ml-3 font-medium truncate">
-      {upgrade?.finalCost}
-    </span>
-  </span>
-);
 
 type Props = {
   slot: Slot;
@@ -64,26 +25,16 @@ export const UpgradePopover: FC<Props> = ({
   onChange,
   format,
 }) => {
-  const language = useSelector<AppState, Language | undefined>(
-    (s) => s.app.user.language
-  );
-  const { t } = useLocalized(language);
-
   const [showMenu, setShowMenu] = useState(false);
   const [showDetails, setShowDetails] = useState<Upgrade | undefined>();
   const [selected, setSelected] = useState(value);
 
   const [pos, setPos] = useState({ x: 0, y: 0 });
 
-  let upgradeSide = selected?.sides[side];
-  if (!upgradeSide) {
-    upgradeSide = selected?.sides[0];
-  }
-
   const formatWarning = selected && upgradeFormatWarning(selected, format);
 
   return (
-    <div className="mt-1 relative">
+    <div className="relative">
       <button
         onClick={(e) => {
           const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
@@ -104,7 +55,8 @@ export const UpgradePopover: FC<Props> = ({
           !showMenu && setShowDetails(undefined);
         }}
       >
-        {renderUpgrade(t, slot, selected, upgradeSide)}
+        <SlimUpgrade slot={slot} upgrade={selected} side={side} />
+
         {formatWarning && <FormatError />}
         <span className="ml-1 sm:ml-3 absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
           {/* <!-- Heroicon name: selector --> */}
@@ -190,7 +142,7 @@ export const UpgradePopover: FC<Props> = ({
               onMouseEnter={() => setShowDetails(upgrade)}
               onMouseLeave={() => setShowDetails(undefined)}
             >
-              {renderUpgrade(t, slot, upgrade, upgrade.sides[side])}
+              <SlimUpgrade slot={slot} upgrade={upgrade} side={side} />
             </li>
           ))}
         </ul>
@@ -206,13 +158,7 @@ export const UpgradePopover: FC<Props> = ({
           className="absolute w-full rounded-md bg-white shadow-lg z-10 p-1 hidden sm:block"
           style={popoverDetailStyle(pos)}
         >
-          {showDetails && (
-            <UpgradeComponent
-              upgrade={showDetails}
-              showType={true}
-              minimized={false}
-            />
-          )}
+          {showDetails && <UpgradeComponent upgrade={showDetails} />}
         </Transition>
       </Transition>
 
@@ -227,13 +173,7 @@ export const UpgradePopover: FC<Props> = ({
         className="absolute mt-1 w-full rounded-md bg-white shadow-lg z-10 p-1"
         style={popoverStyle(pos)}
       >
-        {showDetails && (
-          <UpgradeComponent
-            upgrade={showDetails}
-            showType={true}
-            minimized={false}
-          />
-        )}
+        {showDetails && <UpgradeComponent upgrade={showDetails} />}
       </Transition>
     </div>
   );

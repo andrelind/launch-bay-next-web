@@ -13,7 +13,6 @@ import {
   Pilot,
   Ship,
   ShipType,
-  Translation,
 } from 'lbn-core/dist/types';
 import React, { FC, useState } from 'react';
 import { useSelector } from 'react-redux';
@@ -21,51 +20,7 @@ import { popoverDetailStyle, popoverStyle } from '../helpers/popover';
 import { FormatError } from './format-error';
 import { LimitError } from './limit-error';
 import PilotComponent from './pilot';
-import { StatsComponent } from './ship-stats';
-
-const renderPilot = (
-  t: (translation?: Translation | undefined) => string,
-  pilot?: Pilot,
-  ship?: Ship | ShipType
-) => (
-  <span className="flex items-center justify-between text-xs sm:text-sm">
-    <div className="flex flex-1 flex-row justify-between items-center">
-      <div className="flex flex-row items-center">
-        <span className="font-medium text-yellow-400 mr-1">
-          {pilot?.initiative}
-        </span>
-
-        <div className="flex flex-col">
-          <span className="font-medium mr-1">
-            {pilot?.limited !== undefined &&
-              pilot?.limited > 0 &&
-              `${'•'.repeat(pilot?.limited)} `}
-            {t(pilot?.name)}
-          </span>
-          <span className="italic text-gray-400 sm:visible text-xs">
-            {t(pilot?.caption)}
-          </span>
-        </div>
-
-        {/* {count !== undefined && (
-            <span className="text-gray-400"> ({count})</span>
-          )} */}
-
-        {!pilot && <span className="truncate text-gray-500">Select pilot</span>}
-      </div>
-      {ship && (
-        <StatsComponent
-          stats={ship?.stats}
-          force={pilot?.force}
-          charges={pilot?.charges}
-        />
-      )}
-      <span className="font-medium">
-        {(ship as Ship)?.pointsWithUpgrades || pilot?.cost}
-      </span>
-    </div>
-  </span>
-);
+import { SlimPilot } from './slim/pilot';
 
 type Props = {
   value?: Pilot;
@@ -108,7 +63,7 @@ export const PilotPopover: FC<Props> = ({
     limitedWarning(selected?.xws, selected?.limited, usedXws, false);
 
   return (
-    <div className="mt-1 relative">
+    <div className="relative">
       <button
         onClick={(e) => {
           const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
@@ -129,7 +84,8 @@ export const PilotPopover: FC<Props> = ({
         }}
         onMouseLeave={() => !showMenu && setShowDetails(undefined)}
       >
-        {renderPilot(t, selected, selected && ship)}
+        <SlimPilot pilot={selected} ship={ship} />
+
         {formatWarning && <FormatError />}
         {warning && <LimitError limit={value?.limited || 0} />}
         <span className="ml-1 sm:ml-3 absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
@@ -218,7 +174,7 @@ export const PilotPopover: FC<Props> = ({
               onMouseEnter={() => setShowDetails(option)}
               onMouseLeave={() => setShowDetails(undefined)}
             >
-              {renderPilot(t, option)}
+              <SlimPilot pilot={option} />
               {limitedWarning(option.xws, option.limited, usedXws, true) && (
                 <LimitError limit={option.limited} />
               )}

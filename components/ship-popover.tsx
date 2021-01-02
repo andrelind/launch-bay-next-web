@@ -1,12 +1,9 @@
 import { Transition } from '@tailwindui/react';
-import { useLocalized } from 'lbn-core/dist/helpers/i18n';
-import { AppState } from 'lbn-core/dist/state';
-import { Language, ShipType, Translation } from 'lbn-core/dist/types';
+import { ShipType } from 'lbn-core/dist/types';
 import React, { FC, useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
 import { popoverDetailStyle, popoverStyle } from '../helpers/popover';
-import { ShipFont } from './fonts/ships';
 import { ShipTypeComponent } from './ship-type';
+import { SlimShip } from './slim/ship';
 
 type Props = {
   value?: ShipType;
@@ -14,31 +11,7 @@ type Props = {
   onChange: (value?: ShipType) => void;
 };
 
-const renderShipType = (
-  t: (translation?: Translation | undefined) => string,
-  shipType?: ShipType
-) => (
-  <span className="flex items-center justify-between">
-    <div className="flex items-center text-xs sm:text-sm">
-      <ShipFont
-        className={`${!shipType && 'text-gray-500'}`}
-        icon={shipType?.xws}
-      />
-
-      {shipType && (
-        <span className="ml-2 truncate font-medium">{t(shipType?.name)}</span>
-      )}
-      {!shipType && <span className="truncate text-gray-500">Select ship</span>}
-    </div>
-  </span>
-);
-
 export const ShipPopover: FC<Props> = ({ value, options, onChange }) => {
-  const language = useSelector<AppState, Language | undefined>(
-    (s) => s.app.user.language
-  );
-  const { t } = useLocalized(language);
-
   const [showMenu, setShowMenu] = useState(false);
   const [showDetails, setShowDetails] = useState<ShipType | undefined>();
   const [selected, setSelected] = useState(value);
@@ -50,7 +23,7 @@ export const ShipPopover: FC<Props> = ({ value, options, onChange }) => {
   const [pos, setPos] = useState({ x: 0, y: 0 });
 
   return (
-    <div className="mt-1 relative">
+    <div className="relative">
       <button
         onClick={(e) => {
           const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
@@ -69,7 +42,7 @@ export const ShipPopover: FC<Props> = ({ value, options, onChange }) => {
         }}
         onMouseLeave={() => setShowDetails(undefined)}
       >
-        {renderShipType(t, selected)}
+        <SlimShip shipType={selected} />
         <span className="ml-3 absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
           {/* <!-- Heroicon name: selector --> */}
           <svg
@@ -152,7 +125,7 @@ export const ShipPopover: FC<Props> = ({ value, options, onChange }) => {
               onMouseEnter={() => setShowDetails(option)}
               onMouseLeave={() => setShowDetails(undefined)}
             >
-              {renderShipType(t, option)}
+              <SlimShip shipType={option} />
             </li>
           ))}
         </ul>
