@@ -9,9 +9,10 @@ import { StatsComponent } from '../ship-stats';
 type Props = {
   pilot?: Pilot;
   ship?: Ship | ShipType;
+  hideStats?: boolean;
 };
 
-export const SlimPilot: FC<Props> = ({ pilot, ship }) => {
+export const SlimPilot: FC<Props> = ({ pilot, ship, hideStats }) => {
   const language = useSelector<AppState, Language | undefined>(
     (s) => s.app.user.language
   );
@@ -48,7 +49,7 @@ export const SlimPilot: FC<Props> = ({ pilot, ship }) => {
             <span className="truncate text-gray-500">Select pilot</span>
           )}
         </div>
-        {ship && (
+        {ship && !hideStats && (
           <StatsComponent
             stats={ship?.stats}
             force={pilot?.force}

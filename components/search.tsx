@@ -188,7 +188,7 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
               }}
               onMouseLeave={() => setShowPilot(undefined)}
             >
-              <SlimPilot key={s.pilot.xws} pilot={s.pilot} />
+              <SlimPilot key={s.pilot.xws} pilot={s.pilot} ship={s} hideStats />
             </div>
           ))}
         {(tab === TabOption.All || tab === TabOption.Upgrades) &&

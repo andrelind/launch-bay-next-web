@@ -421,7 +421,7 @@ export const Layout: FC<Props> = ({
                   />
                 </h2>
 
-                <div className="flex text-sm sm:text-lg font-normal">
+                <div className="flex text-sm sm:text-lg font-normal -mt-3">
                   <FormatComponent
                     format={xws.format}
                     onClick={onChangeFormat}
