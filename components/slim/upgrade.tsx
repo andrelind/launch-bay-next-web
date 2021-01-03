@@ -3,6 +3,7 @@ import { AppState } from 'lbn-core/dist/state';
 import { Language, Slot, Upgrade } from 'lbn-core/dist/types';
 import React, { FC } from 'react';
 import { useSelector } from 'react-redux';
+import { getUpgradeCost } from '../../helpers/cost';
 import { XwingFont } from '../fonts/xwing';
 import { StatsComponent } from '../ship-stats';
 
@@ -44,8 +45,10 @@ export const SlimUpgrade: FC<Props> = ({ slot, upgrade, side }) => {
           <span className="ml-3 truncate text-gray-500">{slot}</span>
         )}
       </div>
-      <span className="ml-1 pr-1 sm:ml-3 font-medium truncate">
-        {upgrade?.finalCost}
+      <span className="ml-1 pr-1 sm:ml-3 font-medium text-right word-wrap">
+        {upgrade?.finalCost === -1
+          ? getUpgradeCost(upgrade?.cost)
+          : upgrade?.finalCost}
       </span>
     </span>
   );

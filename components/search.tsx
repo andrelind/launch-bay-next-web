@@ -125,6 +125,21 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
   const notSelectedTab =
     'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300';
 
+  const getCount = (o: TabOption) => {
+    switch (o) {
+      case TabOption.All:
+        return (
+          filteredShips.length + filteredPilots.length + filteredUpgrades.length
+        );
+      case TabOption.Ships:
+        return filteredShips.length;
+      case TabOption.Pilots:
+        return filteredPilots.length;
+      case TabOption.Upgrades:
+        return filteredUpgrades.length;
+    }
+  };
+
   return (
     <div className="absolute mt-1 w-full rounded-md bg-white shadow-lg z-10">
       <div className="sm:hidden">
@@ -152,9 +167,10 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
                 onClick={() => setTab(o)}
                 className={`${
                   tab === o ? selectedTab : notSelectedTab
-                } w-1/4 py-3 px-1 text-center border-b-2 font-medium text-sm`}
+                } w-1/4 py-3 text-center border-b-2 font-medium text-xs`}
               >
                 {o}
+                <span className="font-normal">{` (${getCount(o)})`}</span>
               </button>
             ))}
           </nav>
@@ -164,7 +180,7 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
         {(tab === TabOption.All || tab === TabOption.Ships) &&
           filteredShips.map((s) => (
             <div
-              key={s.xws}
+              key={`${s.faction}_${s.xws}`}
               className="py-1 px-3 hover:bg-gray-100"
               onMouseEnter={(e) => {
                 const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
@@ -173,13 +189,13 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
               }}
               onMouseLeave={() => setShowShip(undefined)}
             >
-              <SlimShip shipType={s} />
+              <SlimShip shipType={s} showFaction />
             </div>
           ))}
         {(tab === TabOption.All || tab === TabOption.Pilots) &&
           filteredPilots.map((s) => (
             <div
-              key={s.pilot.xws}
+              key={`${s.faction}_${s.xws}_${s.pilot.xws}`}
               className="py-1 px-3 hover:bg-gray-100"
               onMouseEnter={(e) => {
                 const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
@@ -188,7 +204,7 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
               }}
               onMouseLeave={() => setShowPilot(undefined)}
             >
-              <SlimPilot key={s.pilot.xws} pilot={s.pilot} ship={s} hideStats />
+              <SlimPilot pilot={s.pilot} ship={s} hideStats showFaction />
             </div>
           ))}
         {(tab === TabOption.All || tab === TabOption.Upgrades) &&
@@ -206,7 +222,7 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
               <SlimUpgrade
                 key={s.xws}
                 slot={s.sides[0].slots[0]}
-                upgrade={{ ...s, available: 0, finalCost: 0 }}
+                upgrade={{ ...s, finalCost: -1, available: 0 }}
               />
             </div>
           ))}
@@ -223,7 +239,7 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
         className="absolute mt-1 w-full rounded-md bg-white shadow-lg z-10 p-1 right-full mr-0.5"
         style={{ top: pos.y - 65 }}
       >
-        {showShip && <ShipTypeComponent shipType={showShip} />}
+        {showShip && <ShipTypeComponent shipType={showShip} showFaction />}
       </Transition>
 
       <Transition
@@ -238,7 +254,11 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
         style={{ top: pos.y - 65 }}
       >
         {showPilot && (
-          <PilotComponent pilot={showPilot.pilot} ship={showPilot} />
+          <PilotComponent
+            pilot={showPilot.pilot}
+            ship={showPilot}
+            showFaction
+          />
         )}
       </Transition>
 
@@ -255,7 +275,7 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
       >
         {showUpgrade && (
           <UpgradeComponent
-            upgrade={{ ...showUpgrade, finalCost: 0, available: 0 }}
+            upgrade={{ ...showUpgrade, finalCost: -1, available: 0 }}
           />
         )}
       </Transition>

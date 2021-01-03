@@ -327,14 +327,12 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
         })}
       </div>
 
-      <div className=" grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-1">
-        <div className="mt-2.5">
-          <ShipPopover
-            value={shipBase}
-            options={shipTypeOptions(squadron, t, collection, true)}
-            onChange={setShipBase}
-          />
-        </div>
+      <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-1">
+        <ShipPopover
+          value={shipBase}
+          options={shipTypeOptions(squadron, t, collection, true)}
+          onChange={setShipBase}
+        />
 
         {shipBase && (
           <PilotPopover

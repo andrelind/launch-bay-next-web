@@ -13,9 +13,10 @@ type Props = {
   ship?: Ship | ShipType;
   count?: number;
   limitWarning?: boolean;
+  showFaction?: boolean;
 };
 
-const PilotComponent: FC<Props> = ({ pilot, ship }) => {
+const PilotComponent: FC<Props> = ({ pilot, ship, showFaction }) => {
   // let errorText;
   // if (limitWarning) {
   //   errorText = `Only ${pilot.limited} allowed in a squadron`;
@@ -23,7 +24,12 @@ const PilotComponent: FC<Props> = ({ pilot, ship }) => {
 
   return (
     <div className="flex flex-1 flex-col m-2">
-      <SlimPilot pilot={pilot} />
+      <SlimPilot
+        pilot={pilot}
+        ship={ship}
+        hideStats
+        showFaction={showFaction}
+      />
       <div className="flex flex-row items-center hidden sm:block">
         <div className="flex flex-1 flex-col sm:flex-row justify-between">
           <StatsComponent

@@ -4,8 +4,7 @@ import { SearchComponent } from './search';
 
 export const SearchInput: FC<{}> = () => {
   const [needle, setNeedle] = useState<string>();
-
-  const show = (needle?.length || 0) > 2;
+  const [showPanel, setShowPanel] = useState(false);
 
   return (
     <div className="flex-1 flex justify-center px-2 lg:ml-6 lg:justify-end">
@@ -33,7 +32,7 @@ export const SearchInput: FC<{}> = () => {
             id="search"
             name="search"
             className={`block w-full pl-10 pr-3 py-2 border border-transparent rounded-md leading-5 ${
-              show
+              showPanel
                 ? 'bg-white border-white text-gray-900'
                 : 'bg-gray-700 text-gray-300'
             } placeholder-gray-400 focus:outline-none focus:bg-white focus:border-white focus:ring-white focus:text-gray-900 sm:text-sm`}
@@ -41,16 +40,18 @@ export const SearchInput: FC<{}> = () => {
             type="search"
             value={needle}
             onChange={(e) => setNeedle(e.target.value)}
+            onFocus={() => setShowPanel(true)}
           />
 
-          {show && (
+          {showPanel && (
             <div
-              className="fixed inset-0 z-10"
+              className="fixed inset-0 top-14 z-10"
               aria-hidden="true"
               onClick={(e) => {
+                console.log(e.target);
                 // @ts-ignore
                 if (e.target.id === 'background') {
-                  setNeedle('');
+                  setShowPanel(false);
                 }
               }}
             >
@@ -59,7 +60,7 @@ export const SearchInput: FC<{}> = () => {
           )}
 
           <Transition
-            show={show}
+            show={showPanel}
             enter="transition ease-out duration-100"
             enterFrom="transform opacity-0 scale-95"
             enterTo="transform opacity-100 scale-100"

@@ -1,6 +1,6 @@
 import { red } from 'lbn-core/dist/assets/colors';
 import { Upgrade } from 'lbn-core/dist/types';
-import React from 'react';
+import React, { FC } from 'react';
 import XwingFont from './fonts/xwing';
 import { FormattedText } from './formatted-text';
 import Grants from './grants';
@@ -8,14 +8,13 @@ import { SlimUpgrade } from './slim/upgrade';
 
 type Props = {
   upgrade: Upgrade;
-
   count?: number;
   limitWarning?: boolean;
 };
 
 // TODO: Should show BOTH sides of a card!
 
-const UpgradeComponent = ({ upgrade }: Props) => {
+const UpgradeComponent: FC<Props> = ({ upgrade }) => {
   // let errorText;
   // if (limitWarning) {
   //   errorText = `Only ${upgrade.limited} allowed in a squadron`;
