@@ -42,7 +42,7 @@ export const SlimUpgrade: FC<Props> = ({ slot, upgrade, side }) => {
           force={upgradeSide?.force}
         />
         {!upgrade && slot && (
-          <span className="ml-3 truncate text-gray-500">{slot}</span>
+          <span className="ml-2 word-wrap text-gray-500">{slot}</span>
         )}
       </div>
       <span className="ml-1 pr-1 sm:ml-3 font-medium text-right word-wrap">

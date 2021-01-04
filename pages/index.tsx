@@ -172,7 +172,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
           return (
             <div
               key={s.uid}
-              className="bg-white rounded-lg shadow px-2 py-6 md:px-5 md:py-4 relative"
+              className="bg-white rounded-lg shadow px-2 py-6 md:px-3 md:py-4 relative"
             >
               <div className="divide-y divide-gray-200 md:mr-5">
                 <PilotPopover
@@ -288,7 +288,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
                 onClick={() => dispatch(removeShip(squadron.uid, s.uid))}
               >
                 <svg
-                  className="w-6 h-6"
+                  className="w-4 h-4 sm:w-5 sm:h-5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -308,7 +308,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
                 onClick={() => dispatch(copyShip(squadron.uid, s.uid))}
               >
                 <svg
-                  className="w-6 h-6"
+                  className="w-4 h-4 sm:w-5 sm:h-5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

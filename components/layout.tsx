@@ -413,7 +413,7 @@ export const Layout: FC<Props> = ({
                     type="text"
                     name="email"
                     id="email"
-                    className="ml-0.5 sm:ml-1 text-2xl font-bold bg-transparent border-none leading-7 text-white sm:text-3xl sm:leading-9 rounded-md focus:ring-2 focus:ring-lbnred"
+                    className="ml-1 px-1 p-0 w-full sm:w-1/3 text-2xl font-bold bg-transparent border-none rounded-md focus:ring-2 focus:ring-lbnred"
                     placeholder="Squadron name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
@@ -421,7 +421,7 @@ export const Layout: FC<Props> = ({
                   />
                 </h2>
 
-                <div className="flex text-sm sm:text-lg font-normal -mt-3">
+                <div className="flex text-sm sm:text-lg font-normal -mt-1 sm:-mt-2">
                   <FormatComponent
                     format={xws.format}
                     onClick={onChangeFormat}
