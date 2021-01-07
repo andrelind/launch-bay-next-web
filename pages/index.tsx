@@ -24,9 +24,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { AnyAction, Store } from 'redux';
 import { v4 as uuid } from 'uuid';
 import { Layout } from '../components/layout';
-import { PilotPopover } from '../components/pilot-popover';
-import { ShipPopover } from '../components/ship-popover';
-import { UpgradePopover } from '../components/upgrade-popover';
+import { PilotPopover } from '../components/popover/pilot';
+import { ShipPopover } from '../components/popover/ship';
+import { UpgradePopover } from '../components/popover/upgrade';
 import { copyToClipboard } from '../helpers/clipboard';
 import { useJWT, useSquadronXWS } from '../helpers/hooks';
 import { getSession } from '../passport/iron';
@@ -335,19 +335,21 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
         />
 
         {shipBase && (
-          <PilotPopover
-            ship={shipBase}
-            faction={faction}
-            format={format}
-            usedXws={usedXws}
-            shadow
-            onChange={(v) => {
-              if (v) {
-                dispatch(addShipAction(squadron.uid, shipBase.xws, v.xws));
-              }
-              setShipBase(undefined);
-            }}
-          />
+          <div className="shadow">
+            <PilotPopover
+              ship={shipBase}
+              faction={faction}
+              format={format}
+              usedXws={usedXws}
+              shadow
+              onChange={(v) => {
+                if (v) {
+                  dispatch(addShipAction(squadron.uid, shipBase.xws, v.xws));
+                }
+                setShipBase(undefined);
+              }}
+            />
+          </div>
         )}
       </div>
     </Layout>

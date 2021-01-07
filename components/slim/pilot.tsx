@@ -13,6 +13,7 @@ type Props = {
   ship?: Ship | ShipType;
   hideStats?: boolean;
   showFaction?: boolean;
+  showBaseCost?: boolean;
 };
 
 export const SlimPilot: FC<Props> = ({
@@ -20,6 +21,7 @@ export const SlimPilot: FC<Props> = ({
   ship,
   hideStats,
   showFaction,
+  showBaseCost,
 }) => {
   const language = useSelector<AppState, Language | undefined>(
     (s) => s.app.user.language
@@ -52,7 +54,7 @@ export const SlimPilot: FC<Props> = ({
                 `${'•'.repeat(pilot?.limited)} `}
               {t(pilot?.name)}
             </span>
-            <span className="pl-1 italic text-gray-400 sm:visible text-xs">
+            <span className="pl-1 italic text-gray-400 sm:block text-xs">
               {t(pilot?.caption)}
             </span>
           </div>
@@ -73,7 +75,7 @@ export const SlimPilot: FC<Props> = ({
           />
         )}
         <span className="font-medium">
-          {(ship as Ship)?.pointsWithUpgrades || pilot?.cost}
+          {(!showBaseCost && (ship as Ship)?.pointsWithUpgrades) || pilot?.cost}
         </span>
       </div>
     </li>

@@ -16,11 +16,11 @@ import {
 } from 'lbn-core/dist/types';
 import React, { FC, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { popoverDetailStyle, popoverStyle } from '../helpers/popover';
-import { FormatError } from './format-error';
-import { LimitError } from './limit-error';
-import PilotComponent from './pilot';
-import { SlimPilot } from './slim/pilot';
+import { popoverDetailStyle, popoverStyle } from '../../helpers/popover';
+import { FormatError } from '../format-error';
+import { LimitError } from '../limit-error';
+import PilotComponent from '../pilot';
+import { SlimPilot } from '../slim/pilot';
 
 type Props = {
   value?: Pilot;
@@ -74,10 +74,11 @@ export const PilotPopover: FC<Props> = ({
         aria-haspopup="listbox"
         aria-expanded="true"
         aria-labelledby="listbox-label"
-        className={`relative w-full bg-white ${
-          shadow ? 'shadow' : 'hover:shadow'
-        } rounded-md pl-1 sm:pl-3 pr-8 sm:pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-lbnred-500 focus:border-lbnred-500 text-xs sm:text-sm cursor-pointer`}
+        className="relative w-full bg-white hover:shadow rounded-md pl-2 pr-5 sm:pl-3 sm:pr-10 py-2 text-left focus:outline-none focus:ring-1 focus:ring-lbnred-500 focus:border-lbnred-500 text-xs sm:text-sm cursor-pointer"
         onMouseEnter={(e) => {
+          if (!process.browser || window.innerWidth < 640) {
+            return;
+          }
           const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
           setPos({ x: rect.x, y: rect.y });
           setShowDetails(selected);
@@ -88,7 +89,8 @@ export const PilotPopover: FC<Props> = ({
 
         {formatWarning && <FormatError />}
         {warning && <LimitError limit={value?.limited || 0} />}
-        <span className="ml-1 sm:ml-3 absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+
+        <span className="hidden sm:inline-block ml-1 sm:ml-3 absolute inset-y-0 top-2 right-0 pr-2">
           {/* <!-- Heroicon name: selector --> */}
           <svg
             className="h-4 w-4 sm:h-5 sm:w-5 text-gray-400"
@@ -106,14 +108,41 @@ export const PilotPopover: FC<Props> = ({
         </span>
       </button>
 
-      {showMenu && (
+      {selected && (
+        <button
+          className="sm:hidden absolute inset-y-0 right-0.5 text-gray-400"
+          onClick={(e) => {
+            const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
+            setPos({ x: rect.x, y: rect.y });
+            setShowDetails(selected);
+          }}
+        >
+          <svg
+            className="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            ></path>
+          </svg>
+        </button>
+      )}
+
+      {(showMenu ||
+        (showDetails && process.browser && window.innerWidth < 640)) && (
         <div
           className="fixed inset-0 z-10"
           aria-hidden="true"
           onClick={(e) => {
             // @ts-ignore
             if (e.target.id === 'background') {
-              setShowMenu(!showMenu);
+              setShowMenu(false);
               setShowDetails(undefined);
             }
           }}
@@ -193,7 +222,9 @@ export const PilotPopover: FC<Props> = ({
           className="absolute w-full rounded-md bg-white shadow-lg z-10 p-1 hidden sm:block"
           style={popoverDetailStyle(pos)}
         >
-          {showDetails && <PilotComponent pilot={showDetails} ship={ship} />}
+          {showDetails && (
+            <PilotComponent pilot={showDetails} ship={ship} showBaseCost />
+          )}
         </Transition>
       </Transition>
 
@@ -208,7 +239,9 @@ export const PilotPopover: FC<Props> = ({
         className="absolute mt-1 w-full rounded-md bg-white shadow-lg z-10 p-1"
         style={popoverStyle(pos)}
       >
-        {showDetails && <PilotComponent pilot={showDetails} ship={ship} />}
+        {showDetails && (
+          <PilotComponent pilot={showDetails} ship={ship} showBaseCost />
+        )}
       </Transition>
     </div>
   );

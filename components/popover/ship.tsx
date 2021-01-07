@@ -1,9 +1,9 @@
 import { Transition } from '@tailwindui/react';
 import { ShipType } from 'lbn-core/dist/types';
 import React, { FC, useEffect, useState } from 'react';
-import { popoverDetailStyle, popoverStyle } from '../helpers/popover';
-import { ShipTypeComponent } from './ship-type';
-import { SlimShip } from './slim/ship';
+import { popoverDetailStyle, popoverStyle } from '../../helpers/popover';
+import { ShipTypeComponent } from '../ship-type';
+import { SlimShip } from '../slim/ship';
 
 type Props = {
   value?: ShipType;
@@ -34,7 +34,7 @@ export const ShipPopover: FC<Props> = ({ value, options, onChange }) => {
         aria-haspopup="listbox"
         aria-expanded="true"
         aria-labelledby="listbox-label"
-        className="relative w-full bg-white shadow rounded-md pl-1 sm:pl-3 pr-8 sm:pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-lbnred-500 focus:border-lbnred-500 text-xs sm:text-sm cursor-pointer"
+        className="relative w-full bg-white hover:shadow rounded-md pl-2 pr-5 sm:pl-3 sm:pr-10 py-2 text-left focus:outline-none focus:ring-1 focus:ring-lbnred-500 focus:border-lbnred-500 text-xs sm:text-sm cursor-pointer"
         onMouseEnter={(e) => {
           const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
           setPos({ x: rect.x, y: rect.y });

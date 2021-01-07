@@ -3,10 +3,10 @@ import { red } from 'lbn-core/dist/assets/colors';
 import { upgradeFormatWarning } from 'lbn-core/dist/helpers/unique';
 import { Format, Slot, Upgrade } from 'lbn-core/dist/types';
 import React, { FC, useState } from 'react';
-import { popoverDetailStyle, popoverStyle } from '../helpers/popover';
-import { FormatError } from './format-error';
-import { SlimUpgrade } from './slim/upgrade';
-import UpgradeComponent from './upgrade';
+import { popoverDetailStyle, popoverStyle } from '../../helpers/popover';
+import { FormatError } from '../format-error';
+import { SlimUpgrade } from '../slim/upgrade';
+import UpgradeComponent from '../upgrade';
 
 type Props = {
   slot: Slot;
@@ -103,7 +103,8 @@ export const UpgradePopover: FC<Props> = ({
         </button>
       )}
 
-      {(showMenu || showDetails) && (
+      {(showMenu ||
+        (showDetails && process.browser && window.innerWidth < 640)) && (
         <div
           className="fixed inset-0 z-10"
           aria-hidden="true"
