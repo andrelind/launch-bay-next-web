@@ -194,7 +194,6 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
                     );
                   }}
                 />
-
                 <div className="mt-1"></div>
               </div>
 
@@ -276,11 +275,6 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
                     }}
                   />
                 )}
-                {/* {showHardpointPicker &&
-                  renderHardpoint(hardpoints[s.uid], squadron, (v) => {
-                    hardpoints[s.uid] = v;
-                    setHardpoints({ ...hardpoints });
-                  })} */}
               </div>
 
               <button
@@ -328,14 +322,16 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
       </div>
 
       <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-1">
-        <ShipPopover
-          value={shipBase}
-          options={shipTypeOptions(squadron, t, collection, true)}
-          onChange={setShipBase}
-        />
+        <div className="shadow rounded-md">
+          <ShipPopover
+            value={shipBase}
+            options={shipTypeOptions(squadron, t, collection, true)}
+            onChange={setShipBase}
+          />
+        </div>
 
         {shipBase && (
-          <div className="shadow">
+          <div className="shadow rounded-md">
             <PilotPopover
               ship={shipBase}
               faction={faction}

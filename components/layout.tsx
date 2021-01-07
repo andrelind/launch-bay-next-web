@@ -3,9 +3,12 @@ import { serializer } from 'lbn-core/dist/helpers';
 import { factions } from 'lbn-core/dist/helpers/enums';
 import { SquadronXWS } from 'lbn-core/dist/types';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { setCookie } from 'nookies';
 import React, { FC, useEffect, useState } from 'react';
 import { v4 as uuid } from 'uuid';
 import { colorForFaction } from '../helpers/colors';
+import { ACCESS_TOKEN } from '../passport/auth-cookies';
 import { CollectionsPanel } from './collection-panel';
 import XwingFont from './fonts/xwing';
 import FormatComponent from './format';
@@ -41,6 +44,8 @@ export const Layout: FC<Props> = ({
   const [showPanel, setShowPanel] = useState(false);
   const [showCollection, setShowCollection] = useState(false);
   const [name, setName] = useState(xws.name);
+
+  const router = useRouter();
 
   useEffect(() => {
     setName(xws.name);
@@ -251,8 +256,14 @@ export const Layout: FC<Props> = ({
                       <div className="py-1 rounded-md bg-white shadow-xs">
                         {loggedIn && (
                           <a
-                            href="/logout"
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                            onClick={() => {
+                              setCookie(null, ACCESS_TOKEN, '', {
+                                path: '/',
+                                maxAge: -1,
+                              });
+                              router.push('/');
+                            }}
                           >
                             Logout
                           </a>
@@ -271,6 +282,14 @@ export const Layout: FC<Props> = ({
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                           >
                             Login with Google
+                          </a>
+                        )}
+                        {!loggedIn && (
+                          <a
+                            href="/api/auth/apple"
+                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          >
+                            Login with Apple
                           </a>
                         )}
                       </div>
