@@ -319,7 +319,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
         })}
       </div>
 
-      <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-1">
+      <div className="mx-3 sm:mx-0 mt-3 grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-1">
         <div className="shadow rounded-md">
           <ShipPopover
             value={shipBase}

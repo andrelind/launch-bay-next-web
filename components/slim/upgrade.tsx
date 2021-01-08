@@ -3,6 +3,7 @@ import { AppState } from 'lbn-core/dist/state';
 import { Language, Slot, Upgrade } from 'lbn-core/dist/types';
 import React, { FC } from 'react';
 import { useSelector } from 'react-redux';
+import { colorForFaction } from '../../helpers/colors';
 import { getUpgradeCost } from '../../helpers/cost';
 import { XwingFont } from '../fonts/xwing';
 import { StatsComponent } from '../ship-stats';
@@ -21,9 +22,16 @@ export const SlimUpgrade: FC<Props> = ({ slot, upgrade, side }) => {
 
   const upgradeSide = upgrade?.sides[side || 0];
 
+  const factions = upgrade?.restrictions
+    ?.map((r) => r.factions)
+    .reduce((a, c) => [...(a || []), ...(c || [])], []);
+
   return (
     <span className="flex items-center justify-between text-xs sm:text-sm">
       <div className="flex items-center">
+        {factions?.map((f) => (
+          <XwingFont icon={f} className="mr-1" color={colorForFaction(f)} />
+        ))}
         {upgradeSide?.slots.map((s, i) => (
           <XwingFont key={`${s}_${i}`} icon={s} />
         ))}
