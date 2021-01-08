@@ -269,6 +269,7 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
                 key={s.xws}
                 slot={s.sides[0].slots[0]}
                 upgrade={{ ...s, finalCost: -1, available: 0 }}
+                showFactions
               />
             </div>
           ))}

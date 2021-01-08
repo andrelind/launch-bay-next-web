@@ -12,9 +12,15 @@ type Props = {
   slot?: Slot;
   upgrade?: Upgrade;
   side?: number;
+  showFactions?: boolean;
 };
 
-export const SlimUpgrade: FC<Props> = ({ slot, upgrade, side }) => {
+export const SlimUpgrade: FC<Props> = ({
+  slot,
+  upgrade,
+  side,
+  showFactions,
+}) => {
   const language = useSelector<AppState, Language | undefined>(
     (s) => s.app.user.language
   );
@@ -29,9 +35,10 @@ export const SlimUpgrade: FC<Props> = ({ slot, upgrade, side }) => {
   return (
     <span className="flex items-center justify-between text-xs sm:text-sm">
       <div className="flex items-center">
-        {factions?.map((f) => (
-          <XwingFont icon={f} className="mr-1" color={colorForFaction(f)} />
-        ))}
+        {showFactions &&
+          factions?.map((f) => (
+            <XwingFont icon={f} className="mr-1" color={colorForFaction(f)} />
+          ))}
         {upgradeSide?.slots.map((s, i) => (
           <XwingFont key={`${s}_${i}`} icon={s} />
         ))}
