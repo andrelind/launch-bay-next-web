@@ -17,7 +17,7 @@ import requests from 'lbn-core/dist/requests';
 import { AppState } from 'lbn-core/dist/state';
 import { Ship, ShipType, Slot, Upgrade } from 'lbn-core/dist/types';
 import { NextApiRequest, NextPage } from 'next';
-import { getSession as getSession2 } from 'next-auth/client';
+import { getSession } from 'next-auth/client';
 import { useRouter } from 'next/router';
 import { parseCookies, setCookie } from 'nookies';
 import React, { useEffect, useState } from 'react';
@@ -357,28 +357,27 @@ export const getServerSideProps = wrapper.getServerSideProps(
     const { getState, dispatch } = appStore;
 
     if (req) {
-      const session = await getSession2({ req });
+      const session = await getSession({ req });
       if (session?.user) {
         // @ts-ignore
         const user: UserState = session.user;
-        dispatch(userDidLogin(user));
-        const { data } = await requests.syncRequest(user);
-        data.tournaments = [];
-        dispatch(importAllSync(data));
+        if (user && user.jwt) {
+          dispatch(userDidLogin(user));
+          const { data } = await requests.syncRequest(user);
+          data.tournaments = [];
+          dispatch(importAllSync(data));
+        }
       }
-      // console.log({ session });
-
-      // const user: UserState = await getSession(req as NextApiRequest);
-      // if (user) {
-      //   dispatch(userDidLogin(user));
-      //   const { data } = await requests.syncRequest(user);
-      //   data.tournaments = [];
-      //   dispatch(importAllSync(data));
-      // }
     }
 
-    // Om vi inte har den sparad så är det dax att skapa, vi sätter nytt uid då
-    if (!getState().app.xws.find((x) => x && x.uid === uid)) {
+    // Först kolla om vi har en exakt likadan lista redan
+    const identicalSquad = getState().app.xws.find(
+      (x) => decodeURIComponent(serialize(x)) === (lbx as string)
+    );
+    if (identicalSquad) {
+      uid = identicalSquad.uid;
+    } else if (!getState().app.xws.find((x) => x && x.uid === uid)) {
+      // Om vi inte har den sparad så är det dax att skapa, vi sätter nytt uid då
       if (lbx) {
         // Importera utifrån
         const xws = deserialize(lbx as string, uuid());

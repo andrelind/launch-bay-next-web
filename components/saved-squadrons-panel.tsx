@@ -115,7 +115,8 @@ export const SavedSquadronsPanel: FC<Props> = ({ show, onClose }) => {
                 {/* <div className="mt-6 relative flex-1 px-4 sm:px-6"> */}
                 <ul className="divide-y divide-gray-200 overflow-y-auto">
                   {squadrons?.map((s, i) => {
-                    if (!s || s.ships.length === 0) {
+                    if (!s) {
+                      // if (!s || s.ships.length === 0) {
                       return null;
                     }
                     const joinedPilots = getUnique(s.ships) || '';

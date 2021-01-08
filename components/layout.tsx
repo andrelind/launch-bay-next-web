@@ -44,6 +44,12 @@ export const Layout: FC<Props> = ({
   const [showCollection, setShowCollection] = useState(false);
   const [name, setName] = useState(xws.name);
 
+  const providers = [
+    { id: 'apple', title: 'Login with Apple' },
+    { id: 'facebook', title: 'Login with Facebook' },
+    { id: 'google', title: 'Login with Google' },
+  ];
+
   useEffect(() => {
     setName(xws.name);
   }, [xws]);
@@ -259,30 +265,17 @@ export const Layout: FC<Props> = ({
                             Logout
                           </a>
                         )}
-                        {!session && (
-                          <a
-                            onClick={() => signIn('apple')}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                          >
-                            Login with Apple
-                          </a>
-                        )}
-                        {!session && (
-                          <a
-                            onClick={() => signIn('facebook')}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                          >
-                            Login with Facebook
-                          </a>
-                        )}
-                        {!session && (
-                          <a
-                            onClick={() => signIn('google')}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                          >
-                            Login with Google
-                          </a>
-                        )}
+
+                        {!session &&
+                          providers.map((p) => (
+                            <a
+                              key={`${p.id}_desktop`}
+                              onClick={() => signIn(p.id)}
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                            >
+                              {p.title}
+                            </a>
+                          ))}
                       </div>
                     </Transition>
                   </div>
@@ -381,31 +374,24 @@ export const Layout: FC<Props> = ({
               >
                 {session && (
                   <a
-                    href="/logout"
+                    onClick={() => signOut()}
                     className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
                     role="menuitem"
                   >
                     Logout
                   </a>
                 )}
-                {!session && (
-                  <a
-                    href="/api/auth/facebook"
-                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
-                    role="menuitem"
-                  >
-                    Login with Facebook
-                  </a>
-                )}
-                {!session && (
-                  <a
-                    href="/api/auth/google"
-                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
-                    role="menuitem"
-                  >
-                    Login with Google
-                  </a>
-                )}
+                {!session &&
+                  providers.map((p) => (
+                    <a
+                      key={`${p.id}_mobile`}
+                      onClick={() => signIn(p.id)}
+                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+                      role="menuitem"
+                    >
+                      {p.title}
+                    </a>
+                  ))}
               </div>
             </div>
           </div>

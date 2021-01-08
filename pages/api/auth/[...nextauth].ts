@@ -37,6 +37,11 @@ const options = {
     }),
   ],
   callbacks: {
+    session: async (session: any, user: any) => {
+      // console.log('Session', { session, user });
+      session.user = user;
+      return Promise.resolve(session);
+    },
     jwt: async (token: any, user: Token, account: Account) => {
       // profile: any,
       // isNewUser: boolean | undefined
