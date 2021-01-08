@@ -364,6 +364,7 @@ export const getServerSideProps = wrapper.getServerSideProps(
         if (user && user.jwt) {
           dispatch(userDidLogin(user));
           const { data } = await requests.syncRequest(user);
+          console.log({ user, data });
           data.tournaments = [];
           dispatch(importAllSync(data));
         }
