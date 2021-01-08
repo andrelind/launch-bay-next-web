@@ -102,7 +102,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
       if (!user.jwt || !lbx) {
         return;
       }
-      console.log('Update server', { newLbx, lbx });
+      // console.log('Update server', { newLbx, lbx });
       const run = async () => requests.setSquadron(xws, user);
       run();
     } else {
@@ -364,7 +364,7 @@ export const getServerSideProps = wrapper.getServerSideProps(
         if (user && user.jwt) {
           dispatch(userDidLogin(user));
           const { data } = await requests.syncRequest(user);
-          console.log({ user, data });
+          // console.log({ user, data });
           data.tournaments = [];
           dispatch(importAllSync(data));
         }

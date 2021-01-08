@@ -48,7 +48,6 @@ export const SearchInput: FC<{}> = () => {
               className="fixed inset-0 top-14 z-10"
               aria-hidden="true"
               onClick={(e) => {
-                console.log(e.target);
                 // @ts-ignore
                 if (e.target.id === 'background') {
                   setShowPanel(false);
