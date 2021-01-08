@@ -20,16 +20,12 @@ export const getUser = async (ctx: any, db: mongoose.Connection) => {
 
   try {
     // @ts-ignore
-    const { id, name, provider } = webtoken.verify(token, SECRET);
-    if (!id || !name || !provider) {
+    const { id, provider } = webtoken.verify(token, SECRET);
+    if (!id || !provider) {
       throw 'Invalid credentials - beta';
     }
 
-    const user = await UserModel(db).findOne({
-      id,
-      name,
-      provider,
-    });
+    const user = await UserModel(db).findOne({ id, provider });
     if (!user) {
       throw new ApolloError('Could not get user');
     }
