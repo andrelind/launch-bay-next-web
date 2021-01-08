@@ -74,122 +74,120 @@ export const SavedSquadronsPanel: FC<Props> = ({ show, onClose }) => {
             leave="transform transition ease-in-out duration-500 sm:duration-700"
             leaveFrom="translate-x-0"
             leaveTo="translate-x-full"
-            className="w-screen max-w-md"
+            className="w-screen max-w-md h-screen"
           >
-            <div className="w-screen max-w-md h-screen">
-              <div className="h-full flex flex-col py-6 bg-white shadow-xl overflow-y-scroll">
-                <div className="px-4 sm:px-6 pb-6 border-b border-gray-200">
-                  <div className="flex items-start justify-between">
-                    <h2
-                      id="slide-over-heading"
-                      className="text-lg font-medium text-gray-900"
+            <div className="h-full flex flex-col py-6 bg-white shadow-xl overflow-y-scroll">
+              <div className="px-4 sm:px-6 pb-6 border-b border-gray-200">
+                <div className="flex items-start justify-between">
+                  <h2
+                    id="slide-over-heading"
+                    className="text-lg font-medium text-gray-900"
+                  >
+                    Squadrons
+                  </h2>
+                  <div className="ml-3 h-7 flex items-center">
+                    <button
+                      onClick={onClose}
+                      className="bg-white rounded-md text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                     >
-                      Squadrons
-                    </h2>
-                    <div className="ml-3 h-7 flex items-center">
-                      <button
-                        onClick={onClose}
-                        className="bg-white rounded-md text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                      <span className="sr-only">Close panel</span>
+                      {/* <!-- Heroicon name: x --> */}
+                      <svg
+                        className="h-6 w-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        aria-hidden="true"
                       >
-                        <span className="sr-only">Close panel</span>
-                        {/* <!-- Heroicon name: x --> */}
-                        <svg
-                          className="h-6 w-6"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          aria-hidden="true"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M6 18L18 6M6 6l12 12"
-                          />
-                        </svg>
-                      </button>
-                    </div>
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M6 18L18 6M6 6l12 12"
+                        />
+                      </svg>
+                    </button>
                   </div>
                 </div>
-                {/* <div className="mt-6 relative flex-1 px-4 sm:px-6"> */}
-                <ul className="divide-y divide-gray-200 overflow-y-auto">
-                  {squadrons?.map((s, i) => {
-                    if (!s) {
-                      // if (!s || s.ships.length === 0) {
-                      return null;
-                    }
-                    const joinedPilots = getUnique(s.ships) || '';
-                    return (
-                      <li
-                        key={`${s.uid}_${i}`}
-                        className="px-6 py-5 relative hover:bg-gray-50"
-                      >
-                        <div className="flex items-center">
-                          {/* <Link href={`/?uid=${s.uid}`}> */}
-                          <a
-                            className="flex flex-1"
-                            onClick={() => {
-                              router.push(`/?uid=${s.uid}`);
-                              onClose();
-                            }}
-                          >
-                            <span className="flex-shrink-0 inline-block relative text-center">
-                              <XwingFont
-                                className="text-lg"
-                                icon={s.faction}
-                                color={colorForFaction(s.faction)}
-                              />
-                              <div
-                                className="text-sm font-medium"
-                                style={{ color: colorForFormat(s.format) }}
-                              >
-                                {s.format.substr(0, 1)}
-                              </div>
-                            </span>
-                            <div className="flex flex-1 flex-col justify-center cursor-pointer">
-                              <div className="ml-4 flex flex-col flex-1">
-                                <p className="text-sm font-medium text-gray-900 truncate flex flex-1 justify-between">
-                                  <span>{s.name}</span>
-                                  <span>{s.cost}</span>
-                                </p>
-                                <p className="text-xs text-gray-500">
-                                  {joinedPilots}
-                                </p>
-                              </div>
-                            </div>
-                          </a>
-                          {/* </Link> */}
-                          <div className="ml-2 relative inline-block text-left">
-                            <button
-                              onClick={async () => {
-                                dispatch(removeSquadron(s.uid));
-                                requests.default.deleteSquadron(s.uid, user);
-                              }}
-                              className="group relative w-8 h-8 bg-white rounded-full inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                            >
-                              <svg
-                                className="w-5 h-5 text-gray-400 group-hover:text-gray-500"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth="2"
-                                  d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
-                                ></path>
-                              </svg>
-                            </button>
-                          </div>
-                        </div>
-                      </li>
-                    );
-                  })}
-                </ul>
               </div>
+              {/* <div className="mt-6 relative flex-1 px-4 sm:px-6"> */}
+              <ul className="divide-y divide-gray-200 overflow-y-auto">
+                {squadrons?.map((s, i) => {
+                  if (!s) {
+                    // if (!s || s.ships.length === 0) {
+                    return null;
+                  }
+                  const joinedPilots = getUnique(s.ships) || '';
+                  return (
+                    <li
+                      key={`${s.uid}_${i}`}
+                      className="px-4 py-3 sm:px-6 sm:py-5 relative hover:bg-gray-50"
+                    >
+                      <div className="flex items-center">
+                        {/* <Link href={`/?uid=${s.uid}`}> */}
+                        <a
+                          className="flex flex-1"
+                          onClick={() => {
+                            router.push(`/?uid=${s.uid}`);
+                            onClose();
+                          }}
+                        >
+                          <span className="flex-shrink-0 inline-block relative text-center">
+                            <XwingFont
+                              className="text-lg"
+                              icon={s.faction}
+                              color={colorForFaction(s.faction)}
+                            />
+                            <div
+                              className="text-sm font-medium"
+                              style={{ color: colorForFormat(s.format) }}
+                            >
+                              {s.format.substr(0, 1)}
+                            </div>
+                          </span>
+                          <div className="flex flex-1 flex-col justify-center cursor-pointer">
+                            <div className="ml-4 flex flex-col flex-1">
+                              <p className="text-sm font-medium text-gray-900 truncate flex flex-1 justify-between">
+                                <span>{s.name}</span>
+                                <span>{s.cost}</span>
+                              </p>
+                              <p className="text-xs text-gray-500">
+                                {joinedPilots}
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                        {/* </Link> */}
+                        <div className="ml-2 -mr-2 relative inline-block text-left">
+                          <button
+                            onClick={async () => {
+                              dispatch(removeSquadron(s.uid));
+                              requests.default.deleteSquadron(s.uid, user);
+                            }}
+                            className="group relative w-8 h-8 bg-white rounded-full inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                          >
+                            <svg
+                              className="w-5 h-5 text-gray-400 group-hover:text-gray-500"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                              ></path>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
           </Transition>
         </section>

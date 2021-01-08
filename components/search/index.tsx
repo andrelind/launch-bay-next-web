@@ -6,12 +6,13 @@ import { loadPilot } from 'lbn-core/dist/helpers/unit';
 import { Ship, ShipType, UpgradeBase } from 'lbn-core/dist/types';
 import React, { FC, useEffect, useState } from 'react';
 import { v4 as uuid } from 'uuid';
-import PilotComponent from './pilot';
-import { ShipTypeComponent } from './ship-type';
-import { SlimPilot } from './slim/pilot';
-import { SlimShip } from './slim/ship';
-import { SlimUpgrade } from './slim/upgrade';
-import UpgradeComponent from './upgrade';
+import { Modal } from '../modal';
+import PilotComponent from '../pilot';
+import { ShipTypeComponent } from '../ship-type';
+import { SlimPilot } from '../slim/pilot';
+import { SlimShip } from '../slim/ship';
+import { SlimUpgrade } from '../slim/upgrade';
+import UpgradeComponent from '../upgrade';
 
 type Props = {
   needle?: string;
@@ -180,14 +181,29 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
         {(tab === TabOption.All || tab === TabOption.Ships) &&
           filteredShips.map((s) => (
             <div
+              onClick={(e) => {
+                if (process.browser && window.innerWidth < 640) {
+                  const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
+                  setPos({ x: rect.x, y: rect.y });
+                  setShowShip(s);
+                }
+              }}
               key={`${s.faction}_${s.xws}`}
               className="py-1 px-3 hover:bg-gray-100"
               onMouseEnter={(e) => {
+                if (!process.browser || window.innerWidth < 640) {
+                  return;
+                }
                 const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
                 setPos({ x: rect.x, y: rect.y });
                 setShowShip(s);
               }}
-              onMouseLeave={() => setShowShip(undefined)}
+              onMouseLeave={() => {
+                if (!process.browser || window.innerWidth < 640) {
+                  return;
+                }
+                setShowShip(undefined);
+              }}
             >
               <SlimShip shipType={s} showFaction />
             </div>
@@ -195,14 +211,29 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
         {(tab === TabOption.All || tab === TabOption.Pilots) &&
           filteredPilots.map((s) => (
             <div
+              onClick={(e) => {
+                if (process.browser && window.innerWidth < 640) {
+                  const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
+                  setPos({ x: rect.x, y: rect.y });
+                  setShowPilot(s);
+                }
+              }}
               key={`${s.faction}_${s.xws}_${s.pilot.xws}`}
               className="py-1 px-3 hover:bg-gray-100"
               onMouseEnter={(e) => {
+                if (!process.browser || window.innerWidth < 640) {
+                  return;
+                }
                 const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
                 setPos({ x: rect.x, y: rect.y });
                 setShowPilot(s);
               }}
-              onMouseLeave={() => setShowPilot(undefined)}
+              onMouseLeave={() => {
+                if (!process.browser || window.innerWidth < 640) {
+                  return;
+                }
+                setShowPilot(undefined);
+              }}
             >
               <SlimPilot pilot={s.pilot} ship={s} hideStats showFaction />
             </div>
@@ -210,14 +241,29 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
         {(tab === TabOption.All || tab === TabOption.Upgrades) &&
           filteredUpgrades.map((s) => (
             <div
+              onClick={(e) => {
+                if (process.browser && window.innerWidth < 640) {
+                  const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
+                  setPos({ x: rect.x, y: rect.y });
+                  setShowUpgrade(s);
+                }
+              }}
               key={s.xws}
               className="py-1 px-3 hover:bg-gray-100"
               onMouseEnter={(e) => {
+                if (!process.browser || window.innerWidth < 640) {
+                  return;
+                }
                 const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
                 setPos({ x: rect.x, y: rect.y });
                 setShowUpgrade(s);
               }}
-              onMouseLeave={() => setShowUpgrade(undefined)}
+              onMouseLeave={() => {
+                if (!process.browser || window.innerWidth < 640) {
+                  return;
+                }
+                setShowUpgrade(undefined);
+              }}
             >
               <SlimUpgrade
                 key={s.xws}
@@ -229,7 +275,11 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
       </ul>
 
       <Transition
-        show={Boolean(showShip)}
+        show={
+          (Boolean(showShip) || Boolean(showPilot) || Boolean(showUpgrade)) &&
+          process.browser &&
+          window.innerWidth >= 640
+        }
         enter="transition ease-out duration-100"
         enterFrom="transform opacity-0 scale-95"
         enterTo="transform opacity-100 scale-100"
@@ -240,19 +290,6 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
         style={{ top: pos.y - 65 }}
       >
         {showShip && <ShipTypeComponent shipType={showShip} showFaction />}
-      </Transition>
-
-      <Transition
-        show={Boolean(showPilot)}
-        enter="transition ease-out duration-100"
-        enterFrom="transform opacity-0 scale-95"
-        enterTo="transform opacity-100 scale-100"
-        leave="transition ease-in duration-75"
-        leaveFrom="transform opacity-100 scale-100"
-        leaveTo="transform opacity-0 scale-95"
-        className="absolute mt-1 w-full rounded-md bg-white shadow-lg z-10 p-1 right-full mr-0.5"
-        style={{ top: pos.y - 65 }}
-      >
         {showPilot && (
           <PilotComponent
             pilot={showPilot.pilot}
@@ -260,25 +297,39 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
             showFaction
           />
         )}
-      </Transition>
-
-      <Transition
-        show={Boolean(showUpgrade)}
-        enter="transition ease-out duration-100"
-        enterFrom="transform opacity-0 scale-95"
-        enterTo="transform opacity-100 scale-100"
-        leave="transition ease-in duration-75"
-        leaveFrom="transform opacity-100 scale-100"
-        leaveTo="transform opacity-0 scale-95"
-        className="absolute mt-1 w-full rounded-md bg-white shadow-lg z-10 p-1 right-full mr-0.5"
-        style={{ top: pos.y - 65 }}
-      >
         {showUpgrade && (
           <UpgradeComponent
             upgrade={{ ...showUpgrade, finalCost: -1, available: 0 }}
           />
         )}
       </Transition>
+
+      <Modal
+        show={
+          (Boolean(showShip) || Boolean(showPilot) || Boolean(showUpgrade)) &&
+          process.browser &&
+          window.innerWidth < 640
+        }
+        onDismiss={() => {
+          setShowShip(undefined);
+          setShowPilot(undefined);
+          setShowUpgrade(undefined);
+        }}
+      >
+        {showShip && <ShipTypeComponent shipType={showShip} showFaction />}
+        {showPilot && (
+          <PilotComponent
+            pilot={showPilot.pilot}
+            ship={showPilot}
+            showFaction
+          />
+        )}
+        {showUpgrade && (
+          <UpgradeComponent
+            upgrade={{ ...showUpgrade, finalCost: -1, available: 0 }}
+          />
+        )}
+      </Modal>
     </div>
   );
 };

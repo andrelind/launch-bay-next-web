@@ -1,6 +1,6 @@
 import { Transition } from '@tailwindui/react';
 import React, { FC, useState } from 'react';
-import { SearchComponent } from './search';
+import { SearchComponent } from '.';
 
 export const SearchInput: FC<{}> = () => {
   const [needle, setNeedle] = useState<string>();

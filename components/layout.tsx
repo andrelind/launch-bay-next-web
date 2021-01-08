@@ -12,7 +12,7 @@ import XwingFont from './fonts/xwing';
 import FormatComponent from './format';
 import { LogoComponent } from './logo';
 import { SavedSquadronsPanel } from './saved-squadrons-panel';
-import { SearchInput } from './search-input';
+import { SearchInput } from './search/input';
 
 type Props = {
   xws: SquadronXWS;
@@ -34,8 +34,7 @@ export const Layout: FC<Props> = ({
   setGrid,
   children,
 }) => {
-  const [session, loading] = useSession();
-  console.log({ loading });
+  const [session] = useSession();
 
   const [showAdd, setShowAdd] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
@@ -331,13 +330,8 @@ export const Layout: FC<Props> = ({
               showMenu ? 'block' : 'hidden'
             } border-b border-gray-700 md:hidden`}
           >
-            <div className="px-2 py-3 space-y-1 sm:px-3 grid grid-cols-7">
+            <div className="px-2 py-3 grid grid-cols-7">
               {factions.map((f) => {
-                const classes =
-                  xws.faction === f
-                    ? 'block text-center py-2 rounded-md text-base font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700'
-                    : 'block text-center py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700';
-
                 const s: SquadronXWS = {
                   uid: uuid(),
                   name: 'New Squadron',
@@ -350,7 +344,7 @@ export const Layout: FC<Props> = ({
 
                 return (
                   <Link key={f} href={`/?lbx=${serializer.serialize(s)}`}>
-                    <a className={classes}>
+                    <a className="block text-center py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">
                       <XwingFont
                         icon={f}
                         className="text-xl"
@@ -365,13 +359,31 @@ export const Layout: FC<Props> = ({
                 );
               })}
             </div>
-            <div className="pt-3 pb-3 border-t border-gray-700">
+            <div className="py-3 border-t border-gray-700">
               <div
-                className="mt-3 px-2 space-y-1"
+                className="px-2 space-y-1"
                 role="menu"
                 aria-orientation="vertical"
                 aria-labelledby="user-menu"
               >
+                {session && (
+                  <a
+                    onClick={() => setShowPanel(!showPanel)}
+                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+                    role="menuitem"
+                  >
+                    Squadrons
+                  </a>
+                )}
+                {session && (
+                  <a
+                    onClick={() => setShowCollection(!showCollection)}
+                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+                    role="menuitem"
+                  >
+                    Collection
+                  </a>
+                )}
                 {session && (
                   <a
                     onClick={() => signOut()}
@@ -491,7 +503,7 @@ export const Layout: FC<Props> = ({
                     leave="transition ease-in duration-75"
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
-                    className="origin-top-right right-0 absolute mt-2 w-48 rounded-md shadow-lg z-10"
+                    className="origin-top left-0 sm:origin-top-right sm:right-0 absolute mt-2 w-48 rounded-md shadow-lg z-10"
                   >
                     <div className="py-1 rounded-md bg-white shadow-xs">
                       {actions?.map((a) => (
