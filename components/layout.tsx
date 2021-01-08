@@ -2,13 +2,11 @@ import { Transition } from '@tailwindui/react';
 import { serializer } from 'lbn-core/dist/helpers';
 import { factions } from 'lbn-core/dist/helpers/enums';
 import { SquadronXWS } from 'lbn-core/dist/types';
+import { signIn, signOut, useSession } from 'next-auth/client';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { setCookie } from 'nookies';
 import React, { FC, useEffect, useState } from 'react';
 import { v4 as uuid } from 'uuid';
 import { colorForFaction } from '../helpers/colors';
-import { ACCESS_TOKEN } from '../passport/auth-cookies';
 import { CollectionsPanel } from './collection-panel';
 import XwingFont from './fonts/xwing';
 import FormatComponent from './format';
@@ -17,7 +15,6 @@ import { SavedSquadronsPanel } from './saved-squadrons-panel';
 import { SearchInput } from './search-input';
 
 type Props = {
-  loggedIn: boolean;
   xws: SquadronXWS;
   onChangeName: (name: string) => void;
   onChangeFormat: () => void;
@@ -28,7 +25,6 @@ type Props = {
 };
 
 export const Layout: FC<Props> = ({
-  loggedIn,
   xws,
   onChangeName,
   onChangeFormat,
@@ -38,14 +34,15 @@ export const Layout: FC<Props> = ({
   setGrid,
   children,
 }) => {
+  const [session, loading] = useSession();
+  console.log({ loading });
+
   const [showAdd, setShowAdd] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const [showActions, setShowActions] = useState(false);
   const [showPanel, setShowPanel] = useState(false);
   const [showCollection, setShowCollection] = useState(false);
   const [name, setName] = useState(xws.name);
-
-  const router = useRouter();
 
   useEffect(() => {
     setName(xws.name);
@@ -149,7 +146,7 @@ export const Layout: FC<Props> = ({
                         </Transition>
                       </div>
 
-                      {loggedIn && (
+                      {session && (
                         <button
                           onClick={() => setShowPanel(!showPanel)}
                           type="button"
@@ -162,7 +159,7 @@ export const Layout: FC<Props> = ({
                           Squadrons
                         </button>
                       )}
-                      {loggedIn && (
+                      {session && (
                         <button
                           onClick={() => setShowCollection(!showCollection)}
                           type="button"
@@ -192,7 +189,7 @@ export const Layout: FC<Props> = ({
                         aria-label="User menu"
                         aria-haspopup="true"
                       >
-                        {loggedIn && (
+                        {session && (
                           <svg
                             className="w-6 h-6"
                             fill="none"
@@ -214,7 +211,7 @@ export const Layout: FC<Props> = ({
                             ></path>
                           </svg>
                         )}
-                        {!loggedIn && (
+                        {!session && (
                           <span
                             className={
                               showMenu
@@ -254,42 +251,36 @@ export const Layout: FC<Props> = ({
                       className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg z-10"
                     >
                       <div className="py-1 rounded-md bg-white shadow-xs">
-                        {loggedIn && (
+                        {session && (
                           <a
+                            onClick={() => signOut()}
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                            onClick={() => {
-                              setCookie(null, ACCESS_TOKEN, '', {
-                                path: '/',
-                                maxAge: -1,
-                              });
-                              router.push('/');
-                            }}
                           >
                             Logout
                           </a>
                         )}
-                        {!loggedIn && (
+                        {!session && (
                           <a
-                            href="/api/auth/facebook"
+                            onClick={() => signIn('apple')}
+                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          >
+                            Login with Apple
+                          </a>
+                        )}
+                        {!session && (
+                          <a
+                            onClick={() => signIn('facebook')}
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                           >
                             Login with Facebook
                           </a>
                         )}
-                        {!loggedIn && (
+                        {!session && (
                           <a
-                            href="/api/auth/google"
+                            onClick={() => signIn('google')}
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                           >
                             Login with Google
-                          </a>
-                        )}
-                        {!loggedIn && (
-                          <a
-                            href="/api/auth/apple"
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                          >
-                            Login with Apple
                           </a>
                         )}
                       </div>
@@ -388,7 +379,7 @@ export const Layout: FC<Props> = ({
                 aria-orientation="vertical"
                 aria-labelledby="user-menu"
               >
-                {loggedIn && (
+                {session && (
                   <a
                     href="/logout"
                     className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
@@ -397,7 +388,7 @@ export const Layout: FC<Props> = ({
                     Logout
                   </a>
                 )}
-                {!loggedIn && (
+                {!session && (
                   <a
                     href="/api/auth/facebook"
                     className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
@@ -406,7 +397,7 @@ export const Layout: FC<Props> = ({
                     Login with Facebook
                   </a>
                 )}
-                {!loggedIn && (
+                {!session && (
                   <a
                     href="/api/auth/google"
                     className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
@@ -540,13 +531,13 @@ export const Layout: FC<Props> = ({
 
       <main className="-mt-32">
         <div className="max-w-7xl mx-auto pb-12 px-0 sm:px-6 lg:px-8">
-          {loggedIn && (
+          {session && (
             <SavedSquadronsPanel
               show={showPanel}
               onClose={() => setShowPanel(!showPanel)}
             />
           )}
-          {loggedIn && (
+          {session && (
             <CollectionsPanel
               show={showCollection}
               onClose={() => setShowCollection(!showCollection)}

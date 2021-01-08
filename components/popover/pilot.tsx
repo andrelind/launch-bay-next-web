@@ -30,7 +30,6 @@ type Props = {
   usedXws: string[];
   onChange: (value?: Pilot) => void;
   halfWidth?: boolean;
-  shadow?: boolean;
 };
 
 export const PilotPopover: FC<Props> = ({
@@ -41,7 +40,6 @@ export const PilotPopover: FC<Props> = ({
   format,
   faction,
   usedXws,
-  shadow,
 }) => {
   const language = useSelector<AppState, Language | undefined>(
     (s) => s.app.user.language

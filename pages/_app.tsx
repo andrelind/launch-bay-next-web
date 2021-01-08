@@ -1,3 +1,4 @@
+import { Provider } from 'next-auth/client';
 import App, { AppContext, AppInitialProps } from 'next/app';
 import React from 'react';
 import '../public/static/css/tailwind.css';
@@ -19,9 +20,9 @@ class LaunchBayNextApp extends App<AppInitialProps> {
     const { Component, pageProps } = this.props;
 
     return (
-      <div>
+      <Provider session={pageProps.session}>
         <Component {...pageProps} />
-      </div>
+      </Provider>
     );
   }
 }
