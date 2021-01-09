@@ -25,7 +25,7 @@ const UpgradeComponent: FC<Props> = ({ upgrade }) => {
       {upgrade.sides.map((upgradeSide, i) => {
         const { attack, device, grants } = upgradeSide;
         return (
-          <div className="py-2 px-2">
+          <div key={`${upgradeSide.type}_${i}`} className="py-2 px-2">
             <SlimUpgrade upgrade={upgrade} side={i} />
 
             <div className="flex flex-1 flex-row items-center text-xs sm:text-sm">

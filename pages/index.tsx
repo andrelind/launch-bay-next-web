@@ -76,7 +76,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
   const collection = useSelector<AppState, any>((s) => s.app.collection);
 
   const [shipBase, setShipBase] = useState<ShipType>();
-  const [grid, setGrid] = useState(cookies['grid'] !== 'true'); // inverted I know...
+  const [rowLayout, setRowLayout] = useState(cookies['rowLayout'] === 'true');
   const [notificationTitle, setNotificationTitle] = useState<string>();
   const [notificationMessage, setNotificationMessage] = useState<string>();
 
@@ -154,16 +154,16 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
       onPrint={() =>
         xws && window.open(`/print?lbx=${serialize(xws)}`, '_ blank')
       }
-      grid={grid}
-      setGrid={(v) => {
-        setGrid(v);
-        setCookie(null, 'grid', `${v}`, {});
+      rowLayout={rowLayout}
+      setRowLayout={(v) => {
+        setRowLayout(v);
+        setCookie(null, 'rowLayout', `${v}`, {});
       }}
       actions={actions}
     >
       <div
         className={`flex flex-1 flex-col grid grid-cols-1 ${
-          grid && 'sm:grid-cols-2'
+          !rowLayout && 'sm:grid-cols-2'
         } gap-x-3 gap-y-3`}
       >
         {squadron.ships.map((s) => {
@@ -209,7 +209,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
 
               <div
                 className={`mt-1 grid grid-cols-2 gap-1 lg:grid-cols-${
-                  grid ? '2' : '4'
+                  !rowLayout ? '2' : '4'
                 } md:mr-5`}
               >
                 {upgrades.map((upgrade, index) => (

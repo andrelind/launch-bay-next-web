@@ -11,6 +11,7 @@ import { AboutComponent } from './about';
 import { CollectionsPanel } from './collection-panel';
 import XwingFont from './fonts/xwing';
 import FormatComponent from './format';
+import { ImportComponent } from './import';
 import { LogoComponent } from './logo';
 import { Modal } from './modal';
 import { SavedSquadronsPanel } from './saved-squadrons-panel';
@@ -21,8 +22,8 @@ type Props = {
   onChangeName: (name: string) => void;
   onChangeFormat: () => void;
   onPrint: () => void;
-  grid: boolean;
-  setGrid: (c: boolean) => void;
+  rowLayout: boolean;
+  setRowLayout: (c: boolean) => void;
   actions?: { title: string; className?: string; onClick: () => void }[];
 };
 
@@ -32,18 +33,19 @@ export const Layout: FC<Props> = ({
   onChangeFormat,
   onPrint,
   actions,
-  grid,
-  setGrid,
+  rowLayout,
+  setRowLayout,
   children,
 }) => {
   const [session] = useSession();
 
-  const [showAdd, setShowAdd] = useState(false);
-  const [showMenu, setShowMenu] = useState(false);
-  const [showActions, setShowActions] = useState(false);
-  const [showPanel, setShowPanel] = useState(false);
-  const [showCollection, setShowCollection] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
+  const [showActions, setShowActions] = useState(false);
+  const [showAdd, setShowAdd] = useState(false);
+  const [showCollection, setShowCollection] = useState(false);
+  const [showImport, setShowImport] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+  const [showPanel, setShowPanel] = useState(false);
   const [name, setName] = useState(xws.name);
 
   const providers = [
@@ -70,22 +72,20 @@ export const Layout: FC<Props> = ({
                   <div className="hidden md:block">
                     <div className="ml-10 flex items-baseline space-x-4">
                       <div className="relative inline-block text-left">
-                        <div>
-                          <button
-                            onClick={() => setShowAdd(!showAdd)}
-                            type="button"
-                            className={`inline-flex ${
-                              showAdd
-                                ? 'bg-gray-900 text-white'
-                                : 'text-gray-300 hover:bg-gray-700 hover:text-white'
-                            } px-3 py-2 rounded-md text-sm font-medium`}
-                            id="options-menu"
-                            aria-haspopup="true"
-                            aria-expanded="true"
-                          >
-                            New squadron
-                          </button>
-                        </div>
+                        <button
+                          onClick={() => setShowAdd(!showAdd)}
+                          type="button"
+                          className={`inline-flex ${
+                            showAdd
+                              ? 'bg-gray-900 text-white'
+                              : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                          } px-3 py-2 rounded-md text-sm font-medium`}
+                          id="options-menu"
+                          aria-haspopup="true"
+                          aria-expanded="true"
+                        >
+                          Add/Import
+                        </button>
 
                         {showAdd && (
                           <div
@@ -115,6 +115,30 @@ export const Layout: FC<Props> = ({
                           aria-orientation="vertical"
                           aria-labelledby="options-menu"
                         >
+                          <button
+                            onClick={() => {
+                              setShowImport(true);
+                              setShowAdd(false);
+                            }}
+                            className="w-full flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 cursor-pointer"
+                            role="menuitem"
+                          >
+                            <svg
+                              className="w-5 h-5"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                              ></path>
+                            </svg>
+                            <span className="ml-2">Import from XWS</span>
+                          </button>
                           {factions.map((f) => {
                             const s: SquadronXWS = {
                               uid: uuid(),
@@ -273,7 +297,7 @@ export const Layout: FC<Props> = ({
                             <a
                               key={`${p.id}_desktop`}
                               onClick={() => signIn(p.id)}
-                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer"
                             >
                               {p.title}
                             </a>
@@ -354,6 +378,15 @@ export const Layout: FC<Props> = ({
               showMenu ? 'block' : 'hidden'
             } border-b border-gray-700 md:hidden`}
           >
+            <div className="pt-3 px-2">
+              <a
+                onClick={() => setShowImport(true)}
+                className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+                role="menuitem"
+              >
+                Import from XWS
+              </a>
+            </div>
             <div className="px-2 py-3 grid grid-cols-7">
               {factions.map((f) => {
                 const s: SquadronXWS = {
@@ -473,9 +506,9 @@ export const Layout: FC<Props> = ({
               <div className="mt-4 flex md:mt-0 md:ml-4">
                 <button
                   className="text-gray-500 mr-3 hidden sm:block"
-                  onClick={() => setGrid(!grid)}
+                  onClick={() => setRowLayout(!rowLayout)}
                 >
-                  {grid && (
+                  {!rowLayout && (
                     <svg
                       className="w-6 h-6"
                       fill="none"
@@ -491,7 +524,7 @@ export const Layout: FC<Props> = ({
                       />
                     </svg>
                   )}
-                  {!grid && (
+                  {rowLayout && (
                     <svg
                       className="w-6 h-6"
                       fill="none"
@@ -575,8 +608,13 @@ export const Layout: FC<Props> = ({
           {children}
         </div>
       </main>
+
       <Modal show={showAbout} onDismiss={() => setShowAbout(false)}>
         <AboutComponent onClose={() => setShowAbout(false)} />
+      </Modal>
+
+      <Modal show={showImport} onDismiss={() => setShowImport(false)}>
+        <ImportComponent onClose={() => setShowImport(false)} />
       </Modal>
     </div>
   );
