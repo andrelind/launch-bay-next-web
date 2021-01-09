@@ -7,10 +7,12 @@ import Link from 'next/link';
 import React, { FC, useEffect, useState } from 'react';
 import { v4 as uuid } from 'uuid';
 import { colorForFaction } from '../helpers/colors';
+import { AboutComponent } from './about';
 import { CollectionsPanel } from './collection-panel';
 import XwingFont from './fonts/xwing';
 import FormatComponent from './format';
 import { LogoComponent } from './logo';
+import { Modal } from './modal';
 import { SavedSquadronsPanel } from './saved-squadrons-panel';
 import { SearchInput } from './search/input';
 
@@ -41,6 +43,7 @@ export const Layout: FC<Props> = ({
   const [showActions, setShowActions] = useState(false);
   const [showPanel, setShowPanel] = useState(false);
   const [showCollection, setShowCollection] = useState(false);
+  const [showAbout, setShowAbout] = useState(false);
   const [name, setName] = useState(xws.name);
 
   const providers = [
@@ -279,6 +282,27 @@ export const Layout: FC<Props> = ({
                     </Transition>
                   </div>
                 </div>
+
+                <div className="hidden md:block">
+                  <button
+                    onClick={() => setShowAbout(!showAbout)}
+                    className="max-w-xs flex items-center text-sm rounded-full focus:outline-none focus:shadow-solid text-gray-300 hover:text-white"
+                    id="user-menu"
+                    aria-label="User menu"
+                    aria-haspopup="true"
+                  >
+                    <span
+                      className={
+                        showAbout
+                          ? 'bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium'
+                          : 'text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
+                      }
+                    >
+                      About
+                    </span>
+                  </button>
+                </div>
+
                 <div className="-mr-2 flex md:hidden">
                   {/* <!-- Mobile menu button --> */}
                   <button
@@ -366,6 +390,13 @@ export const Layout: FC<Props> = ({
                 aria-orientation="vertical"
                 aria-labelledby="user-menu"
               >
+                <a
+                  onClick={() => setShowAbout(!showAbout)}
+                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+                  role="menuitem"
+                >
+                  About
+                </a>
                 {session && (
                   <a
                     onClick={() => setShowPanel(!showPanel)}
@@ -544,6 +575,9 @@ export const Layout: FC<Props> = ({
           {children}
         </div>
       </main>
+      <Modal show={showAbout} onDismiss={() => setShowAbout(false)}>
+        <AboutComponent onClose={() => setShowAbout(false)} />
+      </Modal>
     </div>
   );
 };

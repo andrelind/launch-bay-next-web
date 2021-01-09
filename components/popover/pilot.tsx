@@ -72,7 +72,7 @@ export const PilotPopover: FC<Props> = ({
         aria-haspopup="listbox"
         aria-expanded="true"
         aria-labelledby="listbox-label"
-        className="relative w-full bg-white hover:shadow rounded-md pl-2 pr-5 sm:pl-3 sm:pr-10 py-2 text-left focus:outline-none focus:ring-1 focus:ring-lbnred-500 focus:border-lbnred-500 text-xs sm:text-sm cursor-pointer"
+        className="relative w-full bg-white hover:shadow rounded-md pl-2 pr-6 sm:pl-3 sm:pr-10 py-2 text-left focus:outline-none focus:ring-1 focus:ring-lbnred-500 focus:border-lbnred-500 text-xs sm:text-sm cursor-pointer"
         onMouseEnter={(e) => {
           if (!process.browser || window.innerWidth < 640) {
             return;
@@ -88,7 +88,7 @@ export const PilotPopover: FC<Props> = ({
         {formatWarning && <FormatError />}
         {warning && <LimitError limit={value?.limited || 0} />}
 
-        <span className="hidden sm:inline-block ml-1 sm:ml-3 absolute inset-y-0 top-2 right-0 pr-2">
+        <span className="hidden sm:inline-block ml-1 sm:ml-3 absolute inset-y-0 top-4 right-0 pr-2">
           {/* <!-- Heroicon name: selector --> */}
           <svg
             className="h-4 w-4 sm:h-5 sm:w-5 text-gray-400"
@@ -189,7 +189,7 @@ export const PilotPopover: FC<Props> = ({
           )} */}
 
           {options.map((option) => (
-            <li
+            <div
               key={option.xws}
               role="option"
               className="text-gray-900 cursor-default select-none relative py-2 px-1 sm:px-3 hover:bg-gray-100"
@@ -205,7 +205,7 @@ export const PilotPopover: FC<Props> = ({
               {limitedWarning(option.xws, option.limited, usedXws, true) && (
                 <LimitError limit={option.limited} />
               )}
-            </li>
+            </div>
           ))}
         </ul>
 

@@ -25,6 +25,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { AnyAction, Store } from 'redux';
 import { v4 as uuid } from 'uuid';
 import { Layout } from '../components/layout';
+import { Notification } from '../components/notification';
 import { PilotPopover } from '../components/popover/pilot';
 import { ShipPopover } from '../components/popover/ship';
 import { UpgradePopover } from '../components/popover/upgrade';
@@ -76,6 +77,8 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
 
   const [shipBase, setShipBase] = useState<ShipType>();
   const [grid, setGrid] = useState(cookies['grid'] === 'true');
+  const [notificationTitle, setNotificationTitle] = useState<string>();
+  const [notificationMessage, setNotificationMessage] = useState<string>();
 
   const usedXws = usedSquadronXWS(squadron);
 
@@ -122,15 +125,24 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
   }[] = [
     {
       title: 'XWS',
-      onClick: () => copyToClipboard(exportAsXws(squadron)),
+      onClick: () => {
+        copyToClipboard(exportAsXws(squadron));
+        setNotificationTitle('XWS data copied to clipboard');
+      },
     },
     {
       title: 'TTS',
-      onClick: () => copyToClipboard(exportAsTTS(squadron, t)),
+      onClick: () => {
+        copyToClipboard(exportAsTTS(squadron, t));
+        setNotificationTitle('TTS data copied to clipboard');
+      },
     },
     {
       title: 'As text',
-      onClick: () => copyToClipboard(exportAsText(squadron, t)),
+      onClick: () => {
+        copyToClipboard(exportAsText(squadron, t));
+        setNotificationTitle('Plaint text copied to clipboard');
+      },
     },
   ];
 
@@ -345,6 +357,14 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
           </div>
         )}
       </div>
+
+      <Notification
+        title={notificationTitle}
+        onClear={() => {
+          setNotificationTitle(undefined);
+          setNotificationMessage(undefined);
+        }}
+      />
     </Layout>
   );
 };
