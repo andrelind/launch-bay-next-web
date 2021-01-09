@@ -76,7 +76,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
   const collection = useSelector<AppState, any>((s) => s.app.collection);
 
   const [shipBase, setShipBase] = useState<ShipType>();
-  const [grid, setGrid] = useState(cookies['grid'] === 'true');
+  const [grid, setGrid] = useState(cookies['grid'] !== 'true'); // inverted I know...
   const [notificationTitle, setNotificationTitle] = useState<string>();
   const [notificationMessage, setNotificationMessage] = useState<string>();
 
