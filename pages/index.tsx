@@ -360,6 +360,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
 
       <Notification
         title={notificationTitle}
+        message={notificationMessage}
         onClear={() => {
           setNotificationTitle(undefined);
           setNotificationMessage(undefined);
