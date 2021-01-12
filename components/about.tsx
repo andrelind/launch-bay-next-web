@@ -38,13 +38,28 @@ export const AboutComponent: FC<Props> = ({ onClose }) => {
       <div className="mt-5 prose prose-indigo text-gray-500">
         <h3>Bugs or feature requests</h3>
 
-        <a href="">Report them here</a>
+        <a href="https://github.com/andrelind/launch-bay-next-web/issues/new/choose">
+          Report them here
+        </a>
 
         <h3>Like the builder?</h3>
         <p>
           Please consider donating, either via{' '}
           <a href="https://www.patreon.com/andrelind">Patreon</a> or{' '}
           <a href="https://paypal.me/launchbaynext">PayPal</a>
+        </p>
+        <p>
+          Want to help out?
+          <div>
+            <a href="https://github.com/andrelind/launch-bay-next-web/">
+              Web repo (branch feature/new-setup for now)
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/andrelind/lbn-core">
+              Core (shared with app)
+            </a>
+          </div>
         </p>
 
         <h3>Credits</h3>
