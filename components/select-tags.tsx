@@ -1,15 +1,16 @@
 import { setSquadronTagsAction } from 'lbn-core/dist/actions/squadrons';
+import { xwsFromSquadron } from 'lbn-core/dist/helpers/convert';
 import { bumpPatch } from 'lbn-core/dist/helpers/versioning';
 import { UserState } from 'lbn-core/dist/reducers/user';
 import requests from 'lbn-core/dist/requests';
 import { AppState } from 'lbn-core/dist/state';
-import { SquadronXWS } from 'lbn-core/dist/types';
+import { Squadron } from 'lbn-core/dist/types';
 import { FC, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { TagComponent } from './tag';
 
 type Props = {
-  squadron: SquadronXWS;
+  squadron: Squadron;
   onClose: () => void;
 };
 
@@ -45,7 +46,7 @@ export const SelectTagsComponent: FC<Props> = ({ squadron, onClose }) => {
               dispatch(setSquadronTagsAction(squadron.uid, tags));
               squadron.tags = tags;
               squadron.version = bumpPatch(squadron.version || '2.0.0');
-              await requests.setSquadron(squadron, user);
+              await requests.setSquadron(xwsFromSquadron(squadron), user);
             }}
           />
         ))}
@@ -66,7 +67,7 @@ export const SelectTagsComponent: FC<Props> = ({ squadron, onClose }) => {
               dispatch(setSquadronTagsAction(squadron.uid, tags));
               squadron.tags = tags;
               squadron.version = bumpPatch(squadron.version || '2.0.0');
-              await requests.setSquadron(squadron, user);
+              await requests.setSquadron(xwsFromSquadron(squadron), user);
             }}
           />
         ))}
@@ -94,7 +95,7 @@ export const SelectTagsComponent: FC<Props> = ({ squadron, onClose }) => {
                 dispatch(setSquadronTagsAction(squadron.uid, tags));
                 squadron.tags = tags;
                 squadron.version = bumpPatch(squadron.version || '2.0.0');
-                await requests.setSquadron(squadron, user);
+                await requests.setSquadron(xwsFromSquadron(squadron), user);
               }}
               className="ml-3  inline-flex items-center justify-center px-4 py-2 border border-transparent shadow-sm font-medium rounded-md text-white bg-lbnred hover:bg-lbnred focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lbnred sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
             >

@@ -1,7 +1,7 @@
 import { Transition } from '@tailwindui/react';
 import { serializer } from 'lbn-core/dist/helpers';
 import { factions } from 'lbn-core/dist/helpers/enums';
-import { SquadronXWS } from 'lbn-core/dist/types';
+import { Squadron, SquadronXWS } from 'lbn-core/dist/types';
 import { signIn, signOut, useSession } from 'next-auth/client';
 import Link from 'next/link';
 import React, { FC, useEffect, useState } from 'react';
@@ -19,7 +19,7 @@ import { SearchInput } from './search/input';
 import { SelectTagsComponent } from './select-tags';
 
 type Props = {
-  xws: SquadronXWS;
+  squadron: Squadron;
   onChangeName: (name: string) => void;
   onChangeFormat: () => void;
   onPrint: () => void;
@@ -29,7 +29,7 @@ type Props = {
 };
 
 export const Layout: FC<Props> = ({
-  xws,
+  squadron,
   onChangeName,
   onChangeFormat,
   onPrint,
@@ -49,7 +49,7 @@ export const Layout: FC<Props> = ({
   const [showPanel, setShowPanel] = useState(false);
   const [showTags, setShowTags] = useState(false);
 
-  const [name, setName] = useState(xws.name);
+  const [name, setName] = useState(squadron.name);
 
   const providers = [
     { id: 'apple', title: 'Login with Apple' },
@@ -58,8 +58,8 @@ export const Layout: FC<Props> = ({
   ];
 
   useEffect(() => {
-    setName(xws.name);
-  }, [xws]);
+    setName(squadron.name);
+  }, [squadron]);
 
   return (
     <div>
@@ -481,13 +481,13 @@ export const Layout: FC<Props> = ({
               <div className="flex-1 min-w-0">
                 <h2 className="text-2xl font-bold leading-7 text-white sm:text-3xl sm:leading-9 flex items-center">
                   <XwingFont
-                    icon={xws.faction}
-                    color={colorForFaction(xws.faction)}
+                    icon={squadron.faction}
+                    color={colorForFaction(squadron.faction)}
                   />
                   <input
                     type="text"
-                    name="email"
-                    id="email"
+                    name="squadron_name"
+                    id="squadron_name"
                     className="ml-1 px-1 p-0 w-full sm:w-1/3 text-2xl font-bold bg-transparent border-none rounded-md focus:ring-2 focus:ring-lbnred"
                     placeholder="Squadron name"
                     value={name}
@@ -498,11 +498,11 @@ export const Layout: FC<Props> = ({
 
                 <div className="flex text-sm sm:text-lg font-normal -mt-1 sm:-mt-2">
                   <FormatComponent
-                    format={xws.format}
+                    format={squadron.format}
                     onClick={onChangeFormat}
                   />
                   <h3 className="ml-1 text-gray-500 sm:truncate">
-                    {xws.cost} points
+                    {squadron.cost} points
                   </h3>
                 </div>
               </div>
@@ -675,7 +675,7 @@ export const Layout: FC<Props> = ({
 
       <Modal show={showTags} onDismiss={() => setShowTags(false)}>
         <SelectTagsComponent
-          squadron={xws}
+          squadron={squadron}
           onClose={() => setShowTags(false)}
         />
       </Modal>

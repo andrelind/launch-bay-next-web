@@ -149,7 +149,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
 
   return (
     <Layout
-      xws={xws}
+      squadron={squadron}
       onChangeName={(n) => dispatch(renameSquadron(squadron.uid, n))}
       onChangeFormat={() => dispatch(toggleFormat(squadron.uid))}
       onPrint={() =>
