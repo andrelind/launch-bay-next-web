@@ -651,6 +651,7 @@ export const Layout: FC<Props> = ({
         <div className="max-w-7xl mx-auto pb-12 px-0 sm:px-6 lg:px-8">
           {session && (
             <SavedSquadronsPanel
+              currentUid={squadron.uid}
               show={showPanel}
               onClose={() => setShowPanel(!showPanel)}
             />

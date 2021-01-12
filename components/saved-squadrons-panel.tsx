@@ -1,20 +1,22 @@
 import { Transition } from '@tailwindui/react';
-import { requests } from 'lbn-core';
 import {
   setFirstSorting,
   setSecondSorting,
   SortingType,
 } from 'lbn-core/dist/actions/filter';
 import { removeSquadron } from 'lbn-core/dist/actions/squadrons';
+import { serializer } from 'lbn-core/dist/helpers';
 import { useLocalized } from 'lbn-core/dist/helpers/i18n';
 import { loadSquadron } from 'lbn-core/dist/helpers/unit';
 import { FilterState } from 'lbn-core/dist/reducers/filter';
 import { UserState } from 'lbn-core/dist/reducers/user';
+import { deleteSquadron } from 'lbn-core/dist/requests/squadron';
 import { AppState } from 'lbn-core/dist/state';
 import { Ship, Squadron, SquadronXWS } from 'lbn-core/dist/types';
 import { useRouter } from 'next/router';
 import React, { FC } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { v4 as uuid } from 'uuid';
 import { colorForFaction } from '../helpers/colors';
 import XwingFont from './fonts/xwing';
 import { colorForFormat } from './format';
@@ -30,11 +32,16 @@ const sortings: SortingType[] = [
 ];
 
 type Props = {
+  currentUid: string;
   show: boolean;
   onClose: () => void;
 };
 
-export const SavedSquadronsPanel: FC<Props> = ({ show, onClose }) => {
+export const SavedSquadronsPanel: FC<Props> = ({
+  currentUid,
+  show,
+  onClose,
+}) => {
   const { t } = useLocalized();
   const dispatch = useDispatch();
   const router = useRouter();
@@ -295,8 +302,31 @@ export const SavedSquadronsPanel: FC<Props> = ({ show, onClose }) => {
                           <div className="ml-2 -mr-2 relative inline-block text-left">
                             <button
                               onClick={async () => {
-                                dispatch(removeSquadron(s.uid));
-                                requests.default.deleteSquadron(s.uid, user);
+                                await deleteSquadron(s.uid, user);
+                                if (s.uid !== currentUid) {
+                                  dispatch(removeSquadron(s.uid));
+                                } else if (squadronXws.length > 1) {
+                                  // Load another
+                                  const first = squadronXws.find(
+                                    (s) => s.uid !== currentUid
+                                  );
+                                  router.push(`/?uid=${first?.uid}`);
+                                  onClose();
+                                } else {
+                                  // Just get a new one
+                                  const s: SquadronXWS = {
+                                    uid: uuid(),
+                                    name: 'New Squadron',
+                                    format: 'Hyperspace',
+                                    faction: 'Rebel Alliance',
+                                    cost: 0,
+                                    favourite: false,
+                                    pilots: [],
+                                  };
+                                  router.push(
+                                    `/?lbx=${serializer.serialize(s)}`
+                                  );
+                                }
                               }}
                               className="group relative w-8 h-8 bg-white rounded-full inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lbnred"
                             >
