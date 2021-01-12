@@ -29,6 +29,7 @@ import { Notification } from '../components/notification';
 import { PilotPopover } from '../components/popover/pilot';
 import { ShipPopover } from '../components/popover/ship';
 import { UpgradePopover } from '../components/popover/upgrade';
+import { TagComponent } from '../components/tag';
 import { copyToClipboard } from '../helpers/clipboard';
 import { useSquadronXWS } from '../helpers/hooks';
 import { wrapper } from '../store';
@@ -161,6 +162,12 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
       }}
       actions={actions}
     >
+      <div className="mb-2 text-gray-400 flex flew-wrap items-center">
+        {squadron.tags?.map((tag) => (
+          <TagComponent key={tag} label={tag} />
+        ))}
+      </div>
+
       <div
         className={`flex flex-1 flex-col grid grid-cols-1 ${
           !rowLayout && 'sm:grid-cols-2'
@@ -385,7 +392,7 @@ export const getServerSideProps = wrapper.getServerSideProps(
         if (user && user.jwt) {
           dispatch(userDidLogin(user));
           const { data } = await requests.syncRequest(user);
-          // console.log({ user, data });
+          // console.log(JSON.stringify(data));
           data.tournaments = [];
           dispatch(importAllSync(data));
         }

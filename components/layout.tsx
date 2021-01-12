@@ -16,6 +16,7 @@ import { LogoComponent } from './logo';
 import { Modal } from './modal';
 import { SavedSquadronsPanel } from './saved-squadrons-panel';
 import { SearchInput } from './search/input';
+import { SelectTagsComponent } from './select-tags';
 
 type Props = {
   xws: SquadronXWS;
@@ -46,6 +47,8 @@ export const Layout: FC<Props> = ({
   const [showImport, setShowImport] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const [showPanel, setShowPanel] = useState(false);
+  const [showTags, setShowTags] = useState(false);
+
   const [name, setName] = useState(xws.name);
 
   const providers = [
@@ -84,7 +87,7 @@ export const Layout: FC<Props> = ({
                           aria-haspopup="true"
                           aria-expanded="true"
                         >
-                          Add/Import
+                          New / Import
                         </button>
 
                         {showAdd && (
@@ -120,7 +123,7 @@ export const Layout: FC<Props> = ({
                               setShowImport(true);
                               setShowAdd(false);
                             }}
-                            className="w-full flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 cursor-pointer"
+                            className="w-full flex items-center px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 cursor-pointer"
                             role="menuitem"
                           >
                             <svg
@@ -541,12 +544,51 @@ export const Layout: FC<Props> = ({
                     </svg>
                   )}
                 </button>
+                {session && (
+                  <span className="shadow-sm rounded-md relative mr-3">
+                    <button
+                      onClick={() => setShowTags(true)}
+                      type="button"
+                      className="inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-gray-600 hover:bg-gray-500 focus:outline-none focus:shadow-outline-gray focus:border-gray-700 active:bg-gray-700 transition duration-150 ease-in-out"
+                    >
+                      <svg
+                        className="-ml-1 mr-2 h-5 w-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"
+                        ></path>
+                      </svg>
+                      Tags
+                    </button>
+                  </span>
+                )}
                 <span className="shadow-sm rounded-md relative">
                   <button
                     onClick={onPrint}
                     type="button"
                     className="inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-gray-600 hover:bg-gray-500 focus:outline-none focus:shadow-outline-gray focus:border-gray-700 active:bg-gray-700 transition duration-150 ease-in-out"
                   >
+                    <svg
+                      className="-ml-1 mr-2 h-5 w-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"
+                      ></path>
+                    </svg>
                     Print
                   </button>
                 </span>
@@ -556,6 +598,20 @@ export const Layout: FC<Props> = ({
                     type="button"
                     className="inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-gray-600 hover:bg-gray-500 focus:outline-none focus:shadow-outline-gray focus:border-gray-700 active:bg-gray-700 transition duration-150 ease-in-out"
                   >
+                    <svg
+                      className="-ml-1 mr-2 h-5 w-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      ></path>
+                    </svg>
                     Export
                   </button>
 
@@ -615,6 +671,13 @@ export const Layout: FC<Props> = ({
 
       <Modal show={showImport} onDismiss={() => setShowImport(false)}>
         <ImportComponent onClose={() => setShowImport(false)} />
+      </Modal>
+
+      <Modal show={showTags} onDismiss={() => setShowTags(false)}>
+        <SelectTagsComponent
+          squadron={xws}
+          onClose={() => setShowTags(false)}
+        />
       </Modal>
     </div>
   );

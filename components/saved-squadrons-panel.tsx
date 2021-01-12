@@ -12,6 +12,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { colorForFaction } from '../helpers/colors';
 import XwingFont from './fonts/xwing';
 import { colorForFormat } from './format';
+import { TagComponent } from './tag';
 
 type Props = {
   show: boolean;
@@ -155,6 +156,11 @@ export const SavedSquadronsPanel: FC<Props> = ({ show, onClose }) => {
                               <p className="text-xs text-gray-500">
                                 {joinedPilots}
                               </p>
+                            </div>
+                            <div className="ml-4">
+                              {s.tags?.map((tag) => (
+                                <TagComponent key={tag} label={tag} />
+                              ))}
                             </div>
                           </div>
                         </a>
