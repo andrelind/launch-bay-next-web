@@ -179,9 +179,30 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
             !s.ability?.slotOptions.find((sl) => s.upgrades?.[keyFromSlot(sl)]);
 
           const hardpointOptions = () => [
-            ...upgradesForSlot(squadron, s, 'Cannon', { t, c }, true),
-            ...upgradesForSlot(squadron, s, 'Missile', { t, c }, true),
-            ...upgradesForSlot(squadron, s, 'Torpedo', { t, c }, true),
+            ...upgradesForSlot(
+              squadron,
+              s,
+              'Cannon',
+              collection,
+              { t, c },
+              true
+            ),
+            ...upgradesForSlot(
+              squadron,
+              s,
+              'Missile',
+              collection,
+              { t, c },
+              true
+            ),
+            ...upgradesForSlot(
+              squadron,
+              s,
+              'Torpedo',
+              collection,
+              { t, c },
+              true
+            ),
           ];
 
           const upgrades = getUpgrades(format, s);
@@ -230,6 +251,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
                         squadron,
                         s,
                         upgrade.slot,
+                        collection,
                         { t, c },
                         true
                       )}
