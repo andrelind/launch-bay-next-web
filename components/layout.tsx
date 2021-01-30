@@ -287,6 +287,18 @@ export const Layout: FC<Props> = ({
                     >
                       <div className="py-1 rounded-md bg-white shadow-xs">
                         {session && (
+                          <div className="block px-4 py-2 text-sm text-gray-700 border-b border-gray-200">
+                            <div className="font-medium">
+                              {session.user.name}
+                            </div>
+                            <div>
+                              {/* @ts-ignore */}
+                              {session.user.provider}
+                            </div>
+                            <div>{session.user.email}</div>
+                          </div>
+                        )}
+                        {session && (
                           <a
                             onClick={() => signOut()}
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer"
