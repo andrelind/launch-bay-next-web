@@ -289,13 +289,12 @@ export const Layout: FC<Props> = ({
                         {session && (
                           <div className="block px-4 py-2 text-sm text-gray-700 border-b border-gray-200">
                             <div className="font-medium">
-                              {session.user.name}
+                              {session.user.email}
                             </div>
-                            <div>
+                            <div className="text-xs">
                               {/* @ts-ignore */}
                               {session.user.provider}
                             </div>
-                            <div>{session.user.email}</div>
                           </div>
                         )}
                         {session && (
