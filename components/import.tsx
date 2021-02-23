@@ -55,14 +55,12 @@ export const ImportComponent: FC<Props> = ({ onClose }) => {
                   placeholder="Paste your XWS data here"
                   onChange={(e) => {
                     if (e.target.value?.length > 0) {
-                      canImportXws(e.target.value, (xws, error) => {
-                        console.log({ error, xws });
-                        if (error) {
-                          setError(error);
-                        } else {
-                          setXws(xws);
-                        }
-                      });
+                      try {
+                        const xws = canImportXws(e.target.value);
+                        setXws(xws);
+                      } catch (error) {
+                        setError(error);
+                      }
                     } else {
                       setXws(undefined);
                       setError(undefined);
