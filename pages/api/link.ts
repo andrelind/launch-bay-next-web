@@ -7,7 +7,7 @@ export const getLink = async (req: NextApiRequest, res: NextApiResponse) => {
     const xws = canImportXws(JSON.stringify(req.body));
     const link = serialize(xws);
 
-    res.json(`https://launchbaynext.app/print?lbx=${link}`);
+    res.json(`https://launchbaynext.app/?lbx=${link}`);
     return;
   }
 
