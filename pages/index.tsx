@@ -75,6 +75,7 @@ type Props = {
   uid: string;
   cookies: { [key: string]: string };
   stats: BidStatistics[];
+  foundOnServer: boolean;
 };
 
 const EditPage: NextPage<Props> = ({ uid, cookies, stats }) => {
@@ -93,6 +94,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies, stats }) => {
   const [notificationTitle, setNotificationTitle] = useState<string>();
   const [notificationMessage, setNotificationMessage] = useState<string>();
 
+  // const [onServer, setOnServer] = useState(foundOnServer);
   const usedXws = usedSquadronXWS(squadron);
 
   const p: { [s: string]: Slot } = {};
@@ -116,6 +118,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies, stats }) => {
       // Om vi är inloggade, uppdatera på servern
       // lbx är inte satt när vi först laddar en sparad lista
       if (!user.jwt || !lbx) {
+        // if (!user.jwt || !lbx || !onServer) {
         return;
       }
       // console.log('Update server', { newLbx, lbx });
@@ -179,6 +182,8 @@ const EditPage: NextPage<Props> = ({ uid, cookies, stats }) => {
           <TagComponent key={tag} label={tag} />
         ))}
       </div>
+
+      {/* {!onServer && user.jwt && <div>Save button</div>} */}
 
       <div
         className={`flex flex-1 flex-col grid grid-cols-1 ${
@@ -457,8 +462,10 @@ export const getServerSideProps = wrapper.getServerSideProps(
     const identicalSquad = getState().app.xws.find(
       (x) => decodeURIComponent(serialize(x)) === (lbx as string)
     );
+    let foundOnServer: boolean;
     if (identicalSquad) {
       uid = identicalSquad.uid;
+      foundOnServer = true;
     } else if (!getState().app.xws.find((x) => x && x.uid === uid)) {
       // Om vi inte har den sparad så är det dax att skapa, vi sätter nytt uid då
       if (lbx) {
@@ -470,6 +477,9 @@ export const getServerSideProps = wrapper.getServerSideProps(
         // Skapa helt ny
         uid = dispatch(addSquadron('Rebel Alliance', 'Hyperspace', uuid())).uid;
       }
+      foundOnServer = false;
+    } else {
+      foundOnServer = true;
     }
 
     // @ts-ignore
@@ -497,6 +507,7 @@ export const getServerSideProps = wrapper.getServerSideProps(
         uid,
         cookies,
         stats,
+        foundOnServer,
       },
     };
   }
