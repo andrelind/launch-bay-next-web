@@ -5044,10 +5044,10 @@ klona@^2.0.4:
   resolved "https://registry.yarnpkg.com/klona/-/klona-2.0.4.tgz#7bb1e3affb0cb8624547ef7e8f6708ea2e39dfc0"
   integrity sha512-ZRbnvdg/NxqzC7L9Uyqzf4psi1OM4Cuc+sJAkQPjO6XkQIJTNbfK2Rsmbw8fx1p2mkZdp2FZYo2+LwXYY/uwIA==
 
-lbn-core@^1.0.46:
-  version "1.0.46"
-  resolved "https://registry.yarnpkg.com/lbn-core/-/lbn-core-1.0.46.tgz#603ad116d142cb388e0b954e19597fd5cb58682c"
-  integrity sha512-ZsBfLy95f75+rrHiNdaHvIbvMndFehco8NBWAgmX6gkXoKuie0wzyNOuEOYyQiq0k6qBGR57htKWj2Knw/rHfQ==
+lbn-core@^1.0.47:
+  version "1.0.47"
+  resolved "https://registry.yarnpkg.com/lbn-core/-/lbn-core-1.0.47.tgz#5ad0d5423c620ba2a9bcbfb698d04bd491a7c1f6"
+  integrity sha512-b22VQRXK8tu6KnsutXS16G/QEmq1gFB58CJjZQPOF8FGNmVKEujVaPI+j9rY4H5djtbbJjncGz6z7ACMVZQCCA==
   dependencies:
     redux "^4.0.5"
     uuid "^8.3.1"
