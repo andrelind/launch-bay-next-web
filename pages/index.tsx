@@ -342,7 +342,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies, stats }) => {
 
               {bidInfo && (
                 <div className="absolute bottom-2 left-3 right-8 text-xs font-normal pt-1 text-gray-500">
-                  {`Bid gives a ${bidInfo?.movelast}% chance of moving last and is meaningful in ${bidInfo.meaningful}% of games`}
+                  {`Bid gives a ${bidInfo.movelast}% chance of moving last and is meaningful in ${bidInfo.meaningful}% of games`}
                 </div>
               )}
 
