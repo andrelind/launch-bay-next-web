@@ -30,7 +30,7 @@
     "graphql": "^15.4.0",
     "graphql-type-json": "^0.3.2",
     "jsonwebtoken": "^8.5.1",
-    "lbn-core": "^1.0.53",
+    "lbn-core": "^1.0.54",
     "lodash.merge": "^4.6.2",
     "mongoose": "^5.11.12",
     "next": "^10.0.5",
