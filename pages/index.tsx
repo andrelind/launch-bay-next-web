@@ -313,25 +313,22 @@ const EditPage: NextPage<Props> = ({ uid, cookies, stats }) => {
                     options={hardpointOptions()}
                     onChange={(newValue) => {
                       const slot = newValue?.sides[0].slots[0] || 'Hardpoint';
-
-                      const getSlotIndex = () => {
-                        let slotIndex = 0;
-                        for (let i = 0; i < s.pilot.slots.length; i++) {
-                          if (s.pilot.slots[i] === slot) {
-                            if (i === 0) {
-                              return slotIndex;
-                            }
-                            slotIndex += 1;
+                      let slotIndex = 0;
+                      for (let i = 0; i < s.pilot.slots.length; i++) {
+                        if (s.pilot.slots[i] === slot) {
+                          if (i === 0) {
+                            return slotIndex;
                           }
+                          slotIndex += 1;
                         }
-                        return 0;
-                      };
+                      }
+
                       dispatch(
                         setUpgrade(
                           squadron.uid,
                           s.uid,
                           slot,
-                          getSlotIndex(),
+                          slotIndex,
                           newValue
                         )
                       );
