@@ -68,4 +68,5 @@ const options = {
 };
 
 export default (req: NextApiRequest, res: NextApiResponse) =>
+  // @ts-ignore
   NextAuth(req, res, options);
