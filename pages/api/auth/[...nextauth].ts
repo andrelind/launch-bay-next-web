@@ -35,7 +35,7 @@ export default (req: NextApiRequest, res: NextApiResponse) =>
       jwt: async (token, user, account) => {
         // profile: any,
         // isNewUser: boolean | undefined
-        // console.log('JWT', { token, user, account, profile, isNewUser });
+        console.log('JWT', { token, user, account });
         if (token.jwt) {
           return Promise.resolve(token);
         }
