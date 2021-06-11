@@ -60,7 +60,7 @@ const options = {
 
       const { data } = await registerUser(userState);
       // console.log({ jwt: data.registerUser });
-      return Promise.resolve(data.registerUser);
+      return Promise.resolve(data?.registerUser || false);
     },
   },
   // A database is optional, but required to persist accounts in a database

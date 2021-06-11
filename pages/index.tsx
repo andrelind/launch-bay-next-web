@@ -434,80 +434,81 @@ const EditPage: NextPage<Props> = ({ uid, cookies, stats }) => {
 };
 
 export const getServerSideProps = wrapper.getServerSideProps(
-  async ({ store, req, res, query }) => {
-    let { lbx, uid } = query;
+  (store) =>
+    async ({ req, res, query }) => {
+      let { lbx, uid } = query;
 
-    const appStore: Store<AppState, AnyAction> = store;
-    const { getState, dispatch } = appStore;
+      const appStore: Store<AppState, AnyAction> = store;
+      const { getState, dispatch } = appStore;
 
-    if (req) {
-      const session = await getSession({ req });
-      if (session?.user) {
-        // @ts-ignore
-        const user: UserState = session.user;
-        if (user && user.jwt) {
-          dispatch(userDidLogin(user));
-          const { data } = await requests.syncRequest(user);
-          // console.log(JSON.stringify(data));
-          data.tournaments = [];
-          dispatch(importAllSync(data));
+      if (req) {
+        const session = await getSession({ req });
+        if (session?.user) {
+          // @ts-ignore
+          const user: UserState = session.user;
+          if (user && user.jwt) {
+            dispatch(userDidLogin(user));
+            const { data } = await requests.syncRequest(user);
+            // console.log(JSON.stringify(data));
+            data.tournaments = [];
+            dispatch(importAllSync(data));
+          }
         }
       }
-    }
 
-    // Först kolla om vi har en exakt likadan lista redan
-    const identicalSquad = getState().app.xws.find(
-      (x) => decodeURIComponent(serialize(x)) === (lbx as string)
-    );
-    let foundOnServer: boolean;
-    if (identicalSquad) {
-      uid = identicalSquad.uid;
-      foundOnServer = true;
-    } else if (!getState().app.xws.find((x) => x && x.uid === uid)) {
-      // Om vi inte har den sparad så är det dax att skapa, vi sätter nytt uid då
-      if (lbx) {
-        // Importera utifrån
-        const xws = deserialize(lbx as string, uuid());
-        uid = xws.uid;
-        dispatch(importSquadron(xws));
-      } else {
-        // Skapa helt ny
-        uid = dispatch(addSquadron('Rebel Alliance', 'Hyperspace', uuid())).uid;
-      }
-      foundOnServer = false;
-    } else {
-      foundOnServer = true;
-    }
-
-    // @ts-ignore
-    const cookies = parseCookies({ req: req as NextApiRequest, res });
-
-    const stats = await fetch(
-      'https://www.pinksquadron.dk/pbm/api/initiativegrid.php'
-    )
-      .then((r) => r.json())
-      .then((r: any[]) =>
-        r.map(
-          (s) =>
-            ({
-              format: s.format === 'hs' ? 'Hyperspace' : 'Extended',
-              listpoints: parseInt(s.listpoints),
-              initiative: parseInt(s.initiative),
-              meaningful: new Number(s.meaningfulpercentage).valueOf(),
-              movelast: new Number(s.movelastpercentage).valueOf(),
-            } as BidStatistics)
-        )
+      // Först kolla om vi har en exakt likadan lista redan
+      const identicalSquad = getState().app.xws.find(
+        (x) => decodeURIComponent(serialize(x)) === (lbx as string)
       );
+      let foundOnServer: boolean;
+      if (identicalSquad) {
+        uid = identicalSquad.uid;
+        foundOnServer = true;
+      } else if (!getState().app.xws.find((x) => x && x.uid === uid)) {
+        // Om vi inte har den sparad så är det dax att skapa, vi sätter nytt uid då
+        if (lbx) {
+          // Importera utifrån
+          const xws = deserialize(lbx as string, uuid());
+          uid = xws.uid;
+          dispatch(importSquadron(xws));
+        } else {
+          // Skapa helt ny
+          uid = dispatch(addSquadron('Rebel Alliance', 'Extended', uuid())).uid;
+        }
+        foundOnServer = false;
+      } else {
+        foundOnServer = true;
+      }
 
-    return {
-      props: {
-        uid,
-        cookies,
-        stats,
-        foundOnServer,
-      },
-    };
-  }
+      // @ts-ignore
+      const cookies = parseCookies({ req: req as NextApiRequest, res });
+
+      const stats = await fetch(
+        'https://www.pinksquadron.dk/pbm/api/initiativegrid.php'
+      )
+        .then((r) => r.json())
+        .then((r: any[]) =>
+          r.map(
+            (s) =>
+              ({
+                format: s.format === 'hs' ? 'Hyperspace' : 'Extended',
+                listpoints: parseInt(s.listpoints),
+                initiative: parseInt(s.initiative),
+                meaningful: new Number(s.meaningfulpercentage).valueOf(),
+                movelast: new Number(s.movelastpercentage).valueOf(),
+              } as BidStatistics)
+          )
+        );
+
+      return {
+        props: {
+          uid,
+          cookies,
+          stats,
+          foundOnServer,
+        },
+      };
+    }
 );
 
 export default EditPage;

@@ -35,7 +35,7 @@ export const AboutComponent: FC<Props> = ({ onClose }) => {
         </div>
       </div>
 
-      <div className="mt-5 prose prose-indigo text-gray-500">
+      <div className="mt-5 prose prose-lbn text-gray-500">
         <h3>Bugs or feature requests</h3>
 
         <a href="https://github.com/andrelind/launch-bay-next-web/issues/new/choose">

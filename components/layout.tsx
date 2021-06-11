@@ -146,7 +146,7 @@ export const Layout: FC<Props> = ({
                             const s: SquadronXWS = {
                               uid: uuid(),
                               name: 'New Squadron',
-                              format: 'Hyperspace',
+                              format: 'Extended',
                               faction: f,
                               cost: 0,
                               favourite: false,
@@ -289,11 +289,11 @@ export const Layout: FC<Props> = ({
                         {session && (
                           <div className="block px-4 py-2 text-sm text-gray-700 border-b border-gray-200">
                             <div className="font-medium">
-                              {session.user.email}
+                              {session.user?.email}
                             </div>
                             <div className="text-xs">
                               {/* @ts-ignore */}
-                              {session.user.provider}
+                              {session.user?.provider}
                             </div>
                           </div>
                         )}
@@ -406,7 +406,7 @@ export const Layout: FC<Props> = ({
                 const s: SquadronXWS = {
                   uid: uuid(),
                   name: 'New Squadron',
-                  format: 'Hyperspace',
+                  format: 'Extended',
                   faction: f,
                   cost: 0,
                   favourite: false,
