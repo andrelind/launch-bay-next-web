@@ -52,7 +52,7 @@ export const AboutComponent: FC<Props> = ({ onClose }) => {
           Want to help out?
           <div>
             <a href="https://github.com/andrelind/launch-bay-next-web/">
-              Web repo (branch feature/new-setup for now)
+              Web repo
             </a>
           </div>
           <div>
