@@ -53,10 +53,8 @@ export default (req: NextApiRequest, res: NextApiResponse) =>
         };
 
         const { data } = await registerUser(userState);
-        if (data?.registerUser?.success) {
-          return Promise.resolve(userState);
-        }
-        return Promise.reject('Not logged in');
+        console.log({ data });
+        return Promise.resolve(userState);
       },
     },
   });
