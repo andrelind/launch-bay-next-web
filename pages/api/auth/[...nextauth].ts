@@ -53,8 +53,10 @@ export default (req: NextApiRequest, res: NextApiResponse) =>
         };
 
         const { data } = await registerUser(userState);
-        console.log({ data });
-        return Promise.resolve(userState);
+        if (data) {
+          return Promise.resolve(data.registerUser as any);
+        }
+        return Promise.reject('No provider');
       },
     },
   });
