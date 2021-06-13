@@ -271,6 +271,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies, stats }) => {
                       slot={upgrade.slot}
                       value={upgrade.upgrade}
                       format={format}
+                      usedXws={usedXws}
                       options={upgradesForSlot(
                         squadron,
                         s,
@@ -310,6 +311,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies, stats }) => {
                     side={0}
                     slot={'Hardpoint'}
                     format={format}
+                    usedXws={usedXws}
                     options={hardpointOptions()}
                     onChange={(newValue) => {
                       const slot = newValue?.sides[0].slots[0] || 'Hardpoint';

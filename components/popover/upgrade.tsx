@@ -1,12 +1,13 @@
 import { Transition } from '@tailwindui/react';
 import { red } from 'lbn-core/dist/assets/colors';
-import { upgradeFormatWarning } from 'lbn-core/dist/helpers/unique';
+import { limitedWarning, upgradeFormatWarning } from 'lbn-core/dist/helpers/unique';
 import { Format, Slot, Upgrade } from 'lbn-core/dist/types';
 import React, { FC, useState } from 'react';
 import { popoverDetailStyle, popoverStyle } from '../../helpers/popover';
 import { FormatError } from '../format-error';
 import { SlimUpgrade } from '../slim/upgrade';
 import UpgradeComponent from '../upgrade';
+import { LimitError } from "../limit-error";
 
 type Props = {
   slot: Slot;
@@ -14,6 +15,7 @@ type Props = {
   format: Format;
   options: Upgrade[];
   side: number;
+  usedXws: string[];
   onChange: (value?: Upgrade) => void;
 };
 
@@ -24,6 +26,7 @@ export const UpgradePopover: FC<Props> = ({
   side = 0,
   onChange,
   format,
+  usedXws
 }) => {
   const [showMenu, setShowMenu] = useState(false);
   const [showDetails, setShowDetails] = useState<Upgrade | undefined>();
@@ -58,6 +61,9 @@ export const UpgradePopover: FC<Props> = ({
       >
         <SlimUpgrade slot={slot} upgrade={selected} side={side} />
         {formatWarning && <FormatError />}
+        {selected && limitedWarning(selected.xws, selected.limited, usedXws, true) && (
+            <LimitError limit={selected.limited} />
+        )}
 
         <span className="hidden sm:inline-block ml-1 sm:ml-3 absolute inset-y-0 top-2 right-0 pr-2">
           {/* <!-- Heroicon name: selector --> */}
