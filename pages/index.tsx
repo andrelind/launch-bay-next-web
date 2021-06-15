@@ -18,6 +18,7 @@ import { AppState } from 'lbn-core/dist/state';
 import { Format, Ship, ShipType, Slot, Upgrade } from 'lbn-core/dist/types';
 import { NextApiRequest, NextPage } from 'next';
 import { getSession } from 'next-auth/client';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { parseCookies, setCookie } from 'nookies';
 import React, { useEffect, useState } from 'react';
@@ -429,6 +430,12 @@ const EditPage: NextPage<Props> = ({ uid, cookies, stats }) => {
           setNotificationMessage(undefined);
         }}
       />
+
+      <Link href={'/privacy'}>
+        <a className="hidden md:block absolute left-1 bottom-1 text-xs font-normal text-gray-500">
+          Privacy policy
+        </a>
+      </Link>
     </Layout>
   );
 };
