@@ -110,7 +110,9 @@ export const PilotPopover: FC<Props> = ({
         <button
           className="sm:hidden absolute inset-y-0 right-0.5 text-gray-400"
           onClick={(e) => {
-            const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
+            const rect = (
+              e.target as HTMLButtonElement
+            ).getBoundingClientRect();
             setPos({ x: rect.x, y: rect.y });
             setShowDetails(selected);
           }}

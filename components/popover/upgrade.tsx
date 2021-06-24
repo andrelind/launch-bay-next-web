@@ -1,13 +1,16 @@
 import { Transition } from '@tailwindui/react';
 import { red } from 'lbn-core/dist/assets/colors';
-import { limitedWarning, upgradeFormatWarning } from 'lbn-core/dist/helpers/unique';
+import {
+  limitedWarning,
+  upgradeFormatWarning,
+} from 'lbn-core/dist/helpers/unique';
 import { Format, Slot, Upgrade } from 'lbn-core/dist/types';
 import React, { FC, useState } from 'react';
 import { popoverDetailStyle, popoverStyle } from '../../helpers/popover';
 import { FormatError } from '../format-error';
+import { LimitError } from '../limit-error';
 import { SlimUpgrade } from '../slim/upgrade';
 import UpgradeComponent from '../upgrade';
-import { LimitError } from "../limit-error";
 
 type Props = {
   slot: Slot;
@@ -26,7 +29,7 @@ export const UpgradePopover: FC<Props> = ({
   side = 0,
   onChange,
   format,
-  usedXws
+  usedXws,
 }) => {
   const [showMenu, setShowMenu] = useState(false);
   const [showDetails, setShowDetails] = useState<Upgrade | undefined>();
@@ -61,9 +64,10 @@ export const UpgradePopover: FC<Props> = ({
       >
         <SlimUpgrade slot={slot} upgrade={selected} side={side} />
         {formatWarning && <FormatError />}
-        {selected && limitedWarning(selected.xws, selected.limited, usedXws, true) && (
+        {selected &&
+          limitedWarning(selected.xws, selected.limited, usedXws, false) && (
             <LimitError limit={selected.limited} />
-        )}
+          )}
 
         <span className="hidden sm:inline-block ml-1 sm:ml-3 absolute inset-y-0 top-2 right-0 pr-2">
           {/* <!-- Heroicon name: selector --> */}
@@ -87,7 +91,9 @@ export const UpgradePopover: FC<Props> = ({
         <button
           className="sm:hidden absolute inset-y-0 right-0.5 text-gray-400"
           onClick={(e) => {
-            const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
+            const rect = (
+              e.target as HTMLButtonElement
+            ).getBoundingClientRect();
             setPos({ x: rect.x, y: rect.y });
             setShowDetails(selected);
           }}
