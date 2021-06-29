@@ -4662,10 +4662,10 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
 
-lbn-core@^1.0.80:
-  version "1.0.80"
-  resolved "https://registry.yarnpkg.com/lbn-core/-/lbn-core-1.0.80.tgz#b521bba1beca79b761bff99644836956c906e1b8"
-  integrity sha512-T8v9JSnv/Beted6J8uCJ4HYBU3aSgJzhEL7lvPkm31rDqNToG3npuZuZd3JF7rXDMLiIEgl29edQBOCCHqZ6lg==
+lbn-core@^1.0.82:
+  version "1.0.82"
+  resolved "https://registry.yarnpkg.com/lbn-core/-/lbn-core-1.0.82.tgz#1ca0814308834d6038eef5f0eac59661d333b73b"
+  integrity sha512-pIA2YyJ8bQphQ0V74S+9dqUWP1o2rgPRgpsgbXQr5U8K/S0G9UOaQYxfVYX6xOFcWTzE0jNMkE7baZOrXsTsfA==
   dependencies:
     redux "^4.0.5"
     uuid "^8.3.1"
