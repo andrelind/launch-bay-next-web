@@ -33,7 +33,7 @@
     "lbn-core": "^1.0.83",
     "lodash.merge": "^4.6.2",
     "mongoose": "^5.12.14",
-    "next": "^11.0.1",
+    "next": "^11.1.0",
     "next-auth": "3.27.0",
     "next-connect": "^0.10.1",
     "next-redux-wrapper": "^7.0.2",
