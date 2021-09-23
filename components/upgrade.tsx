@@ -45,20 +45,6 @@ const UpgradeComponent: FC<Props> = ({ upgrade }) => {
                     text={`<strong>Effect:</strong> ${device.effect}`}
                   />
                 )}
-
-                {/* {!minimized &&
-          conditions &&
-          conditions.map((c) => {
-            const condition = conditionData.find((cc) => cc.xws === c);
-            return (
-              <FormattedText
-                key={c}
-                text={`<strong>${condition?.name}:</strong> ${condition?.ability}`}
-              />
-            );
-          })} */}
-
-                {/* {errorText && <Error text={errorText} />} */}
               </div>
 
               <div className="flex flex-col items-end ml-1">

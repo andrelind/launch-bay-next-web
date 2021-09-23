@@ -1,5 +1,5 @@
-import iconHelper from "lbn-core/dist/helpers/icon";
-import React from "react";
+import { xwingIcons } from 'lbn-core/dist/helpers/icon';
+import React from 'react';
 
 type Props = {
   icon: string;
@@ -9,7 +9,7 @@ type Props = {
 
 export const XwingFont = ({ icon, color, className }: Props) => (
   <span className={`font-xwing text-md ${className}`} style={{ color }}>
-    {iconHelper(icon)}
+    {xwingIcons(icon)}
   </span>
 );
 
