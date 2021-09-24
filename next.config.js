@@ -1,4 +1,9 @@
 module.exports = {
+  eslint: {
+    // Warning: This allows production builds to successfully complete even if
+    // your project has ESLint errors.
+    ignoreDuringBuilds: true,
+  },
   env: {
     DB_URI: process.env.DB_URI,
     FACEBOOK_ID: process.env.FACEBOOK_ID,
@@ -10,11 +15,11 @@ module.exports = {
   async headers() {
     return [
       {
-        source: "/.well-known/apple-app-site-association",
+        source: '/.well-known/apple-app-site-association',
         headers: [
           {
-            key: "Content-Type",
-            value: "application/json",
+            key: 'Content-Type',
+            value: 'application/json',
           },
         ],
       },
