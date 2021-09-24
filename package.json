@@ -66,6 +66,7 @@
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "babel-preset-flow": "^6.23.0",
     "eslint": "^7.29.0",
+    "eslint-config-next": "^11.1.2",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "postcss-flexbugs-fixes": "^5.0.2",
