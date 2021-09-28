@@ -396,13 +396,6 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
         )}
       </div>
 
-      <div className="text-xs font-normal mt-5 text-gray-500 text-center">
-        Statistics powered by{' '}
-        <a href="https://www.pinksquadron.dk/pbm/" className="text-pink-400">
-          Pink Brain Matter
-        </a>
-      </div>
-
       <Notification
         title={notificationTitle}
         message={notificationMessage}
