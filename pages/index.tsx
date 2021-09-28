@@ -15,7 +15,7 @@ import {
 import { UserState } from 'lbn-core/dist/reducers/user';
 import requests from 'lbn-core/dist/requests';
 import { AppState } from 'lbn-core/dist/state';
-import { Format, Ship, ShipType, Slot, Upgrade } from 'lbn-core/dist/types';
+import { Ship, ShipType, Slot, Upgrade } from 'lbn-core/dist/types';
 import { NextApiRequest, NextPage } from 'next';
 import { getSession } from 'next-auth/client';
 import Link from 'next/link';
@@ -64,22 +64,13 @@ export type DataItem = {
   slotOptions?: Slot[];
 };
 
-type BidStatistics = {
-  format: Format;
-  listpoints: number;
-  initiative: number;
-  meaningful: number;
-  movelast: number;
-};
-
 type Props = {
   uid: string;
   cookies: { [key: string]: string };
-  stats: BidStatistics[];
   foundOnServer: boolean;
 };
 
-const EditPage: NextPage<Props> = ({ uid, cookies, stats }) => {
+const EditPage: NextPage<Props> = ({ uid, cookies }) => {
   const router = useRouter();
   const dispatch = useDispatch();
   const user = useSelector<AppState, UserState>((s) => s.app.user);
@@ -224,12 +215,6 @@ const EditPage: NextPage<Props> = ({ uid, cookies, stats }) => {
           ];
 
           const upgrades = getUpgrades(format, s);
-          const bidInfo = stats.find(
-            (stat) =>
-              stat.format === squadron.format &&
-              stat.initiative === s.pilot.initiative &&
-              stat.listpoints == squadron.cost
-          );
 
           return (
             <div
@@ -263,7 +248,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies, stats }) => {
               <div
                 className={`mt-1 grid grid-cols-2 gap-1 lg:grid-cols-${
                   !rowLayout ? '2' : '4'
-                } md:mr-5 ${bidInfo ? 'mb-3' : 'mb-0'}`}
+                } md:mr-5 mb-0`}
               >
                 {upgrades.map((upgrade, index) => (
                   <div key={uuid()}>
@@ -339,12 +324,6 @@ const EditPage: NextPage<Props> = ({ uid, cookies, stats }) => {
                   />
                 )}
               </div>
-
-              {bidInfo && (
-                <div className="absolute bottom-2 left-3 right-8 text-xs font-normal pt-1 text-gray-500">
-                  {`Bid gives a ${bidInfo.movelast}% chance of moving last and is meaningful in ${bidInfo.meaningful}% of games`}
-                </div>
-              )}
 
               <button
                 className="pointer absolute top-2 right-2 text-red-400 hover:text-red-500"
@@ -492,28 +471,10 @@ export const getServerSideProps = wrapper.getServerSideProps(
       // @ts-ignore
       const cookies = parseCookies({ req: req as NextApiRequest, res });
 
-      const stats = await fetch(
-        'https://www.pinksquadron.dk/pbm/api/initiativegrid.php'
-      )
-        .then((r) => r.json())
-        .then((r: any[]) =>
-          r.map(
-            (s) =>
-              ({
-                format: s.format === 'hs' ? 'Hyperspace' : 'Extended',
-                listpoints: parseInt(s.listpoints),
-                initiative: parseInt(s.initiative),
-                meaningful: new Number(s.meaningfulpercentage).valueOf(),
-                movelast: new Number(s.movelastpercentage).valueOf(),
-              } as BidStatistics)
-          )
-        );
-
       return {
         props: {
           uid,
           cookies,
-          stats,
           foundOnServer,
         },
       };
