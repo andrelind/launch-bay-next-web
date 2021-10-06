@@ -14,6 +14,7 @@ module.exports = {
         ships: ['x-wing-ships'],
       },
       colors: {
+        dark: '#0E1218',
         lbnred: '#FF3069',
         lbn: {
           DEFAULT: '#FF3069',
