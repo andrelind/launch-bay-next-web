@@ -38,7 +38,6 @@ import { wrapper } from '../store';
 const { squadrons } = actions;
 const { convert, importExport, serializer, unit, i18n } = helpers;
 const { useLocalized } = i18n;
-
 const {
   addShipAction,
   changePilotAction,
