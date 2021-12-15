@@ -1,8 +1,6 @@
 import { useLocalized } from 'lbn-core/dist/helpers/i18n';
-import { AppState } from 'lbn-core/dist/state';
-import { Language, Slot, Upgrade } from 'lbn-core/dist/types';
+import { Slot, Upgrade } from 'lbn-core/dist/types';
 import React, { FC } from 'react';
-import { useSelector } from 'react-redux';
 import { colorForFaction } from '../../helpers/colors';
 import { getUpgradeCost } from '../../helpers/cost';
 import { XwingFont } from '../fonts/xwing';
@@ -21,10 +19,7 @@ export const SlimUpgrade: FC<Props> = ({
   side,
   showFactions,
 }) => {
-  const language = useSelector<AppState, Language | undefined>(
-    (s) => s.app.user.language
-  );
-  const { t } = useLocalized(language);
+  const { t } = useLocalized('en');
 
   const upgradeSide = upgrade?.sides[side || 0];
 

@@ -1,35 +1,33 @@
-import { setSquadronTagsAction } from 'lbn-core/dist/actions/squadrons';
-import { xwsFromSquadron } from 'lbn-core/dist/helpers/convert';
-import { bumpPatch } from 'lbn-core/dist/helpers/versioning';
-import { UserState } from 'lbn-core/dist/reducers/user';
-import requests from 'lbn-core/dist/requests';
-import { AppState } from 'lbn-core/dist/state';
-import { Squadron } from 'lbn-core/dist/types';
 import { FC, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import useSwr from 'swr';
+import { get } from '../helpers/request';
+import { XWS } from '../helpers/types';
 import { TagComponent } from './tag';
 
 type Props = {
-  squadron: Squadron;
+  xws: XWS;
+  setTags: (t: string[]) => void;
   onClose: () => void;
 };
 
-export const SelectTagsComponent: FC<Props> = ({ squadron, onClose }) => {
-  const dispatch = useDispatch();
+const getter = () => get<XWS[]>('/lists');
 
-  const user = useSelector<AppState, UserState>((s) => s.app.user);
+export const SelectTagsComponent: FC<Props> = ({ xws, setTags, onClose }) => {
+  const { data: lists } = useSwr('/lists', getter);
+
   const [newTag, setNewTag] = useState<string>();
 
-  const allTags = useSelector((s: AppState) => s.app.xws)
-    .map((xws) => xws.tags || [])
-    .reduce((a, c) => {
-      (c || []).forEach((tag) => {
-        if (!a?.includes(tag) && !squadron.tags?.includes(tag)) {
-          a?.push(tag);
-        }
-      });
-      return a;
-    }, [] as string[]);
+  const allTags =
+    lists
+      ?.map((xws) => xws.vendor.lbn.tags || [])
+      .reduce((a, c) => {
+        (c || []).forEach((tag) => {
+          if (!a?.includes(tag)) {
+            a?.push(tag);
+          }
+        });
+        return a;
+      }, [] as string[]) || [];
 
   return (
     <div className="text-left m-3 sm:m-0">
@@ -37,20 +35,17 @@ export const SelectTagsComponent: FC<Props> = ({ squadron, onClose }) => {
         <h3 className="text-lg leading-6 font-medium text-gray-900">
           Selected
         </h3>
-        {squadron.tags?.map((tag) => (
+        {xws.vendor.lbn.tags?.map((tag) => (
           <TagComponent
             key={`${tag}_selected`}
             label={tag}
             onClick={async () => {
-              const tags = (squadron.tags || []).filter((t) => tag !== t);
-              dispatch(setSquadronTagsAction(squadron.uid, tags));
-              squadron.tags = tags;
-              squadron.version = bumpPatch(squadron.version || '2.0.0');
-              await requests.setSquadron(xwsFromSquadron(squadron), user);
+              const tags = (xws.vendor.lbn.tags || []).filter((t) => tag !== t);
+              setTags(tags);
             }}
           />
         ))}
-        {!squadron.tags?.length && (
+        {!xws.vendor.lbn.tags?.length && (
           <div className="font-normal text-gray-400 text-sm">None selected</div>
         )}
       </div>
@@ -63,11 +58,8 @@ export const SelectTagsComponent: FC<Props> = ({ squadron, onClose }) => {
             key={`${tag}_all`}
             label={tag}
             onClick={async () => {
-              const tags = [...(squadron.tags || []), tag];
-              dispatch(setSquadronTagsAction(squadron.uid, tags));
-              squadron.tags = tags;
-              squadron.version = bumpPatch(squadron.version || '2.0.0');
-              await requests.setSquadron(xwsFromSquadron(squadron), user);
+              const tags = [...(xws.vendor.lbn.tags || []), tag];
+              setTags(tags);
             }}
           />
         ))}
@@ -91,11 +83,8 @@ export const SelectTagsComponent: FC<Props> = ({ squadron, onClose }) => {
                 if (!newTag || newTag.length < 1) {
                   return;
                 }
-                const tags = [...(squadron.tags || []), newTag];
-                dispatch(setSquadronTagsAction(squadron.uid, tags));
-                squadron.tags = tags;
-                squadron.version = bumpPatch(squadron.version || '2.0.0');
-                await requests.setSquadron(xwsFromSquadron(squadron), user);
+                const tags = [...(xws.vendor.lbn.tags || []), newTag];
+                setTags(tags);
               }}
               className="ml-3  inline-flex items-center justify-center px-4 py-2 border border-transparent shadow-sm font-medium rounded-md text-white bg-lbnred hover:bg-lbnred focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lbnred sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
             >

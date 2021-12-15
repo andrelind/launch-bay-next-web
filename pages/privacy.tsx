@@ -2,8 +2,8 @@ import React from 'react';
 
 const PrivacyPage = () => {
   return (
-    <div className="m-10">
-      <h1 className="mt-2 text-xl leading-8 font-extrabold tracking-tight text-gray-900">
+    <div className="m-10 text-gray-500">
+      <h1 className="mt-2 text-xl leading-8 font-extrabold tracking-tight text-lbn-500">
         Privacy Policy
       </h1>
 
@@ -29,10 +29,10 @@ const PrivacyPage = () => {
       </div>
 
       <div className="mb-10">
-        <h1 className="mt-2 text-xl leading-8 font-extrabold tracking-tight text-gray-900">
+        <h1 className="mt-2 text-xl leading-8 font-extrabold tracking-tight text-lbn-500">
           Interpretation and Definitions
         </h1>
-        <h2 className="mt-2 text-md leading-8 font-extrabold tracking-tight text-gray-900">
+        <h2 className="mt-2 text-md leading-8 font-extrabold tracking-tight text-lbn-500">
           Interpretation
         </h2>
         <p>
@@ -44,7 +44,7 @@ const PrivacyPage = () => {
           whether they appear in singular or in plural.
         </p>
 
-        <h2 className="mt-2 text-md leading-8 font-extrabold tracking-tight text-gray-900">
+        <h2 className="mt-2 text-md leading-8 font-extrabold tracking-tight text-lbn-500">
           Definitions
         </h2>
         <p>For the purposes of this Privacy Policy:</p>
@@ -123,14 +123,14 @@ const PrivacyPage = () => {
       </div>
 
       <div className="mb-10">
-        <h1 className="mt-2 text-xl leading-8 font-extrabold tracking-tight text-gray-900">
+        <h1 className="mt-2 text-xl leading-8 font-extrabold tracking-tight text-lbn-500">
           Collecting and Using Your Personal Data
         </h1>
-        <h2 className="mt-2 text-md leading-8 font-extrabold tracking-tight text-gray-900">
+        <h2 className="mt-2 text-md leading-8 font-extrabold tracking-tight text-lbn-500">
           Types of Data Collected
         </h2>
 
-        <h3 className="mt-2 leading-8 font-extrabold tracking-tight text-gray-900">
+        <h3 className="mt-2 leading-8 font-extrabold tracking-tight text-lbn-500">
           Personal Data
         </h3>
         <p>
@@ -144,7 +144,7 @@ const PrivacyPage = () => {
           <li>Usage Data</li>
         </ul>
 
-        <h3 className="mt-2 leading-8 font-extrabold tracking-tight text-gray-900">
+        <h3 className="mt-2 leading-8 font-extrabold tracking-tight text-lbn-500">
           Usage Data
         </h3>
         <p>Usage Data is collected automatically when using the Service.</p>
@@ -169,7 +169,7 @@ const PrivacyPage = () => {
           mobile device.
         </p>
 
-        <h3 className="mt-2 leading-8 font-extrabold tracking-tight text-gray-900">
+        <h3 className="mt-2 leading-8 font-extrabold tracking-tight text-lbn-500">
           Tracking Technologies and Cookies
         </h3>
         <p>
@@ -238,7 +238,7 @@ const PrivacyPage = () => {
         </p>
       </div>
 
-      <h2 className="mt-2 text-xl leading-8 font-extrabold tracking-tight text-gray-900">
+      <h2 className="mt-2 text-xl leading-8 font-extrabold tracking-tight text-lbn-500">
         Use of Your Personal Data
       </h2>
       <p>The Company may use Personal Data for the following purposes:</p>
@@ -318,7 +318,7 @@ const PrivacyPage = () => {
         </li>
       </ul>
 
-      <h2 className="mt-2 text-md leading-8 font-extrabold tracking-tight text-gray-900">
+      <h2 className="mt-2 text-md leading-8 font-extrabold tracking-tight text-lbn-500">
         Retention of Your Personal Data
       </h2>
       <p>
@@ -337,7 +337,7 @@ const PrivacyPage = () => {
         data for longer time periods.
       </p>
 
-      <h2 className="mt-2 text-md leading-8 font-extrabold tracking-tight text-gray-900">
+      <h2 className="mt-2 text-md leading-8 font-extrabold tracking-tight text-lbn-500">
         Transfer of Your Personal Data
       </h2>
       <p>
@@ -360,7 +360,7 @@ const PrivacyPage = () => {
         security of Your data and other personal information.
       </p>
 
-      <h2 className="mt-2 text-md leading-8 font-extrabold tracking-tight text-gray-900">
+      <h2 className="mt-2 text-md leading-8 font-extrabold tracking-tight text-lbn-500">
         Deletion of Your Personal Data
       </h2>
       <p>
@@ -368,10 +368,10 @@ const PrivacyPage = () => {
         at email: andre@lindapp.se
       </p>
 
-      <h2 className="mt-2 text-md leading-8 font-extrabold tracking-tight text-gray-900">
+      <h2 className="mt-2 text-md leading-8 font-extrabold tracking-tight text-lbn-500">
         Disclosure of Your Personal Data
       </h2>
-      <h3 className="mt-2 leading-8 font-extrabold tracking-tight text-gray-900">
+      <h3 className="mt-2 leading-8 font-extrabold tracking-tight text-lbn-500">
         Business Transactions
       </h3>
       <p>
@@ -380,7 +380,7 @@ const PrivacyPage = () => {
         Personal Data is transferred and becomes subject to a different Privacy
         Policy.
       </p>
-      <h3 className="mt-2 leading-8 font-extrabold tracking-tight text-gray-900">
+      <h3 className="mt-2 leading-8 font-extrabold tracking-tight text-lbn-500">
         Law enforcement
       </h3>
       <p>
@@ -388,7 +388,7 @@ const PrivacyPage = () => {
         Your Personal Data if required to do so by law or in response to valid
         requests by public authorities (e.g. a court or a government agency).
       </p>
-      <h3 className="mt-2 leading-8 font-extrabold tracking-tight text-gray-900">
+      <h3 className="mt-2 leading-8 font-extrabold tracking-tight text-lbn-500">
         Other legal requirements
       </h3>
       <p>
@@ -408,7 +408,7 @@ const PrivacyPage = () => {
         <li>Protect against legal liability</li>
       </ul>
 
-      <h2 className="mt-2 text-md leading-8 font-extrabold tracking-tight text-gray-900">
+      <h2 className="mt-2 text-md leading-8 font-extrabold tracking-tight text-lbn-500">
         Security of Your Personal Data
       </h2>
       <p>

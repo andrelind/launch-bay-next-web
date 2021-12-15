@@ -4,7 +4,6 @@ import { canImportXws } from 'lbn-core/dist/helpers/import+export';
 import { SquadronXWS } from 'lbn-core/dist/types';
 import { useRouter } from 'next/router';
 import { FC, useState } from 'react';
-import { useDispatch } from 'react-redux';
 
 type Props = {
   onClose: () => void;
@@ -15,7 +14,6 @@ export const ImportComponent: FC<Props> = ({ onClose }) => {
   const [xws, setXws] = useState<SquadronXWS>();
 
   const router = useRouter();
-  const dispatch = useDispatch();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -24,7 +22,7 @@ export const ImportComponent: FC<Props> = ({ onClose }) => {
       return;
     }
 
-    const result = dispatch(importSquadron(xws));
+    const result = importSquadron(xws);
     console.log(result);
     router.push(`/?lbx=${serializer.serialize(result.squadron)}`);
     onClose();
@@ -59,7 +57,7 @@ export const ImportComponent: FC<Props> = ({ onClose }) => {
                         const xws = canImportXws(e.target.value);
                         setXws(xws);
                       } catch (error) {
-                        setError(error);
+                        // setError(error);
                       }
                     } else {
                       setXws(undefined);

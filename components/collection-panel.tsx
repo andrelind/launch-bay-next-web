@@ -1,25 +1,13 @@
 import { Transition } from '@tailwindui/react';
-import {
-  decreaseAdditionalPilot,
-  decreaseAdditionalShip,
-  decreaseAdditionalUpgrade,
-  decreaseSourceExpansion,
-  increaseAdditionalPilot,
-  increaseAdditionalShip,
-  increaseAdditionalUpgrade,
-  increaseSourceExpansion,
-} from 'lbn-core/dist/actions/collection';
 import { pilots, upgrades } from 'lbn-core/dist/assets';
 import sources, { SourceKey } from 'lbn-core/dist/assets/sources';
 import { factions, slotKeys } from 'lbn-core/dist/helpers/enums';
-import { CollectionState } from 'lbn-core/dist/reducers/collection';
-import { UserState } from 'lbn-core/dist/reducers/user';
-import requests from 'lbn-core/dist/requests';
-import { AppState } from 'lbn-core/dist/state';
 import { Faction } from 'lbn-core/dist/types';
-import React, { FC, useEffect, useRef, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React, { FC, useEffect, useState } from 'react';
+import useSwr, { useSWRConfig } from 'swr';
 import { colorForFaction } from '../helpers/colors';
+import { get, post } from '../helpers/request';
+import { CollectionState } from '../helpers/types';
 import XwingFont from './fonts/xwing';
 
 type Props = {
@@ -44,11 +32,9 @@ const extraKeys: (
 const keys: SourceKey[] = [...extraKeys, ...factions];
 
 export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
-  // const { t } = useLocalized();
-  const dispatch = useDispatch();
-  const user = useSelector<AppState, UserState>((s) => s.app.user);
-  const collection = useSelector<AppState, CollectionState>(
-    (s) => s.app.collection
+  const { mutate } = useSWRConfig();
+  const { data: collection } = useSwr('/collection', () =>
+    get<CollectionState>('/collection')
   );
 
   const [sourceKey, setSourceKey] = useState<SourceKey>('Core Sets');
@@ -63,19 +49,6 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
     }[]
   >([]);
 
-  const isInitialMount = useRef(true);
-  useEffect(() => {
-    if (isInitialMount.current) {
-      isInitialMount.current = false;
-    } else {
-      const runner = async () => {
-        await requests.setCollection(collection, user);
-      };
-      runner();
-      setSourceKey(sourceKey);
-    }
-  }, [collection]);
-
   useEffect(() => {
     switch (sourceKey) {
       case 'Additional Pilots': {
@@ -85,7 +58,7 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
             return ship.pilots.map((p) => ({
               xws: p.xws,
               name: p.name.en,
-              count: collection.pilots[p.xws],
+              count: collection?.pilots[p.xws] || 0,
               faction: f,
             }));
           })
@@ -105,7 +78,7 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
             return {
               xws: ship.xws,
               name: ship.name.en,
-              count: collection.ships[ship.xws],
+              count: collection?.ships[ship.xws] || 0,
               faction: f,
             };
           })
@@ -122,7 +95,7 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
           upgrades[key]?.map((u) => ({
             xws: u.xws,
             name: u.sides[0].title.en,
-            count: collection.upgrades[u.xws],
+            count: collection?.upgrades[u.xws] || 0,
           }))
         );
         setData(
@@ -137,7 +110,7 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
           sources[sourceKey].map((s) => ({
             xws: s.xws,
             name: s.name,
-            count: collection.expansions[s.xws],
+            count: collection?.expansions[s.xws] || 0,
             wave: s.wave,
           }))
         );
@@ -145,6 +118,10 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
       }
     }
   }, [sourceKey, collection]);
+
+  if (!collection) {
+    return null;
+  }
 
   return (
     <div
@@ -304,15 +281,6 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
                             aria-hidden="true"
                           ></div>
                           <div className="flex-1 flex items-center min-w-0 relative cursor-pointer">
-                            {/* <span className="flex-shrink-0 inline-block relative">
-                              {s.faction && (
-                                <XwingFont
-                                  className="text-lg"
-                                  icon={s.faction}
-                                  color={colorForFaction(s.faction)}
-                                />
-                              )}
-                            </span> */}
                             <div className="flex flex-col flex-1">
                               <p className="text-sm font-medium text-gray-900 word-wrap">
                                 {s.name}
@@ -335,14 +303,30 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
                           <button
                             onClick={async () => {
                               if (sourceKey === 'Additional Ships') {
-                                dispatch(decreaseAdditionalShip(s.xws));
+                                collection.ships[s.xws] -= 1;
+                                if (collection.ships[s.xws] === 0) {
+                                  delete collection.ships[s.xws];
+                                }
                               } else if (sourceKey === 'Additional Pilots') {
-                                dispatch(decreaseAdditionalPilot(s.xws));
+                                collection.pilots[s.xws] -= 1;
+                                if (collection.pilots[s.xws] === 0) {
+                                  delete collection.pilots[s.xws];
+                                }
                               } else if (sourceKey === 'Additional Upgrades') {
-                                dispatch(decreaseAdditionalUpgrade(s.xws));
+                                collection.upgrades[s.xws] -= 1;
+                                if (collection.upgrades[s.xws] === 0) {
+                                  delete collection.upgrades[s.xws];
+                                }
                               } else {
-                                dispatch(decreaseSourceExpansion(s.xws));
+                                collection.expansions[s.xws] -= 1;
+                                if (collection.expansions[s.xws] === 0) {
+                                  delete collection.expansions[s.xws];
+                                }
                               }
+
+                              mutate('/collection', { ...collection }, false);
+                              await post('/collection', collection);
+                              mutate('/collection');
                             }}
                             className="group relative w-8 h-8 bg-white rounded-full inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lbnred"
                           >
@@ -365,14 +349,29 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
                           <button
                             onClick={async () => {
                               if (sourceKey === 'Additional Ships') {
-                                dispatch(increaseAdditionalShip(s.xws));
+                                collection.ships[s.xws] += 1;
+                                if (collection.ships[s.xws] === 0) {
+                                  delete collection.ships[s.xws];
+                                }
                               } else if (sourceKey === 'Additional Pilots') {
-                                dispatch(increaseAdditionalPilot(s.xws));
+                                collection.pilots[s.xws] += 1;
+                                if (collection.pilots[s.xws] === 0) {
+                                  delete collection.pilots[s.xws];
+                                }
                               } else if (sourceKey === 'Additional Upgrades') {
-                                dispatch(increaseAdditionalUpgrade(s.xws));
+                                collection.upgrades[s.xws] += 1;
+                                if (collection.upgrades[s.xws] === 0) {
+                                  delete collection.upgrades[s.xws];
+                                }
                               } else {
-                                dispatch(increaseSourceExpansion(s.xws));
+                                collection.expansions[s.xws] += 1;
+                                if (collection.expansions[s.xws] === 0) {
+                                  delete collection.expansions[s.xws];
+                                }
                               }
+                              mutate('/collection', { ...collection }, false);
+                              await post('/collection', collection);
+                              mutate('/collection');
                             }}
                             className="group relative w-8 h-8 bg-white rounded-full inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lbnred"
                           >

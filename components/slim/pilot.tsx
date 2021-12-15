@@ -1,16 +1,15 @@
 import { useLocalized } from 'lbn-core/dist/helpers/i18n';
-import { AppState } from 'lbn-core/dist/state';
-import { Language, Pilot, Ship, ShipType } from 'lbn-core/dist/types';
+import { Pilot, ShipType } from 'lbn-core/dist/types';
 import React, { FC } from 'react';
-import { useSelector } from 'react-redux';
 import { colorForFaction } from '../../helpers/colors';
+import { TShip } from '../../helpers/loading';
 import ShipFont from '../fonts/ships';
 import XwingFont from '../fonts/xwing';
 import { StatsComponent } from '../ship-stats';
 
 type Props = {
   pilot?: Pilot;
-  ship?: Ship | ShipType;
+  ship?: TShip | ShipType;
   hideStats?: boolean;
   showFaction?: boolean;
   showBaseCost?: boolean;
@@ -23,10 +22,7 @@ export const SlimPilot: FC<Props> = ({
   showFaction,
   showBaseCost,
 }) => {
-  const language = useSelector<AppState, Language | undefined>(
-    (s) => s.app.user.language
-  );
-  const { t } = useLocalized(language);
+  const { t } = useLocalized('en');
 
   return (
     <li className="flex items-center justify-between text-xs sm:text-sm">
@@ -75,7 +71,8 @@ export const SlimPilot: FC<Props> = ({
           />
         )}
         <span className="font-medium">
-          {(!showBaseCost && (ship as Ship)?.pointsWithUpgrades) || pilot?.cost}
+          {(!showBaseCost && (ship as TShip)?.pointsWithUpgrades) ||
+            pilot?.cost}
         </span>
       </div>
     </li>

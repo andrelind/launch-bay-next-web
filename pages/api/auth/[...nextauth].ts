@@ -1,42 +1,62 @@
+import { isBefore } from 'date-fns';
 import { Provider } from 'lbn-core/dist/actions/user';
 import { UserState } from 'lbn-core/dist/reducers/user';
-import { registerUser } from 'lbn-core/dist/requests/user';
 import { NextApiRequest, NextApiResponse } from 'next';
 import NextAuth from 'next-auth';
-import Providers from 'next-auth/providers';
+import AppleProvider from 'next-auth/providers/apple';
+import FacebookProvider from 'next-auth/providers/facebook';
+import GoogleProvider from 'next-auth/providers/google';
+import { post } from '../../../helpers/request';
 
 export default (req: NextApiRequest, res: NextApiResponse) =>
   NextAuth(req, res, {
+    secret: process.env.JWT_SECRET,
     providers: [
-      Providers.Apple({
+      AppleProvider({
         clientId: process.env.APPLE_CLIENT_ID || '',
-        clientSecret: {
-          appleId: process.env.APPLE_CLIENT_ID || '',
-          keyId: process.env.APPLE_KEY_ID || '',
-          teamId: process.env.APPLE_TEAM_ID || '',
-          privateKey: process.env.APPLE_SECRET || '',
-        },
+        clientSecret: process.env.APPLE_CLIENT_SECRET || '',
       }),
-      Providers.Facebook({
+      FacebookProvider({
         clientId: process.env.FACEBOOK_ID || '',
         clientSecret: process.env.FACEBOOK_SECRET || '',
       }),
-      Providers.Google({
+      GoogleProvider({
         clientId: process.env.GOOGLE_ID || '',
         clientSecret: process.env.GOOGLE_SECRET || '',
       }),
     ],
     callbacks: {
-      session: async (session: any, user: any) => {
+      session: async ({ session, token }) => {
         // console.log('Session', { session, user });
-        session.user = user;
+        session.user = token;
         return Promise.resolve(session);
       },
-      jwt: async (token, user, account) => {
+      jwt: async ({ token, user, account }) => {
         // profile: any,
         // isNewUser: boolean | undefined
-        console.log('JWT', { token, user, account });
+        // console.log('JWT', {
+        //   token,
+        // });
+
         if (token.jwt) {
+          // @ts-ignore
+          if (isBefore(new Date(token.iat * 1000), new Date(2021, 11, 15))) {
+            console.log('REFRESH TOKEN');
+            // Migrate
+            const { accessToken } = await post<{ accessToken: string }>(
+              `/auth/migrate/${token.provider}`,
+              {
+                name: token.name,
+                email: token.email,
+                providerId: token.id,
+              }
+            );
+            delete token.iat;
+            delete token.exp;
+            token.jwt = accessToken;
+            return Promise.resolve(token);
+          }
+
           return Promise.resolve(token);
         }
 
@@ -45,16 +65,54 @@ export default (req: NextApiRequest, res: NextApiResponse) =>
         }
 
         const userState: UserState = {
-          id: account?.id,
+          id: account?.providerAccountId,
           name: user?.name || 'No name',
           provider: (account.provider.charAt(0).toUpperCase() +
             account.provider.slice(1)) as Provider,
           email: user?.email || '',
         };
 
-        const { data } = await registerUser(userState);
-        if (data) {
-          return Promise.resolve(data.registerUser as any);
+        switch (userState.provider) {
+          case 'Apple': {
+            const { accessToken } = await post<{ accessToken: string }>(
+              '/auth/apple/login',
+              {
+                providerId: userState.id,
+                name: userState.name,
+                email: userState.email,
+              }
+            );
+            userState.jwt = accessToken;
+            break;
+          }
+          case 'Facebook': {
+            const { accessToken } = await post<{ accessToken: string }>(
+              '/auth/facebook/login',
+              {
+                providerId: account?.id,
+                accessToken: account?.accessToken,
+              }
+            );
+            userState.jwt = accessToken;
+            break;
+          }
+          case 'Google': {
+            const { accessToken } = await post<{ accessToken: string }>(
+              '/auth/google/login',
+              {
+                providerId: userState.id,
+                name: userState.name,
+                email: userState.email,
+              }
+            );
+            userState.jwt = accessToken;
+            break;
+          }
+        }
+
+        // const { data } = await registerUser(userState);
+        if (userState.jwt) {
+          return Promise.resolve(userState as any);
         }
         return Promise.reject('No provider');
       },

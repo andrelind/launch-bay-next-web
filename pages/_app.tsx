@@ -1,9 +1,8 @@
-import { Provider } from 'next-auth/client';
+import { SessionProvider } from 'next-auth/react';
 import App, { AppContext, AppInitialProps } from 'next/app';
 import Head from 'next/head';
 import React from 'react';
 import '../public/static/css/tailwind.css';
-import { wrapper } from '../store';
 
 class LaunchBayNextApp extends App<AppInitialProps> {
   public static getInitialProps = async ({ Component, ctx }: AppContext) => {
@@ -21,7 +20,7 @@ class LaunchBayNextApp extends App<AppInitialProps> {
     const { Component, pageProps } = this.props;
 
     return (
-      <Provider session={pageProps.session}>
+      <SessionProvider session={pageProps.session}>
         <Head>
           <title>Launch Bay Next</title>
           <meta property="og:title" content="Launch Bay Next" key="title" />
@@ -58,9 +57,9 @@ class LaunchBayNextApp extends App<AppInitialProps> {
           <meta name="theme-color" content="#242a2e" />
         </Head>
         <Component {...pageProps} />
-      </Provider>
+      </SessionProvider>
     );
   }
 }
 
-export default wrapper.withRedux(LaunchBayNextApp);
+export default LaunchBayNextApp;

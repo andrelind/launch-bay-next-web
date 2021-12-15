@@ -1,12 +1,20 @@
+import {
+  CloudIcon,
+  CogIcon,
+  ExternalLinkIcon,
+  MenuIcon,
+  PlusCircleIcon,
+  PrinterIcon,
+  TagIcon,
+  XIcon,
+} from '@heroicons/react/outline';
 import { Transition } from '@tailwindui/react';
-import { serializer } from 'lbn-core/dist/helpers';
 import { factions } from 'lbn-core/dist/helpers/enums';
-import { Squadron, SquadronXWS } from 'lbn-core/dist/types';
-import { signIn, signOut, useSession } from 'next-auth/client';
-import Link from 'next/link';
+import { getFactionKey } from 'lbn-core/dist/helpers/serializer';
+import { signIn, signOut, useSession } from 'next-auth/react';
 import React, { FC, useEffect, useState } from 'react';
-import { v4 as uuid } from 'uuid';
-import { colorForFaction } from '../helpers/colors';
+import { colorForFaction, colorForFactionKey } from '../helpers/colors';
+import { XWS } from '../helpers/types';
 import { AboutComponent } from './about';
 import { CollectionsPanel } from './collection-panel';
 import XwingFont from './fonts/xwing';
@@ -14,31 +22,31 @@ import FormatComponent from './format';
 import { ImportComponent } from './import';
 import { LogoComponent } from './logo';
 import { Modal } from './modal';
+import { SavePanel } from './save-panel';
 import { SavedSquadronsPanel } from './saved-squadrons-panel';
 import { SearchInput } from './search/input';
 import { SelectTagsComponent } from './select-tags';
 
 type Props = {
-  squadron: Squadron;
+  xws: XWS;
+  setTags: (t: string[]) => void;
   onChangeName: (name: string) => void;
   onChangeFormat: () => void;
   onPrint: () => void;
-  rowLayout: boolean;
-  setRowLayout: (c: boolean) => void;
   actions?: { title: string; className?: string; onClick: () => void }[];
 };
 
 export const Layout: FC<Props> = ({
-  squadron,
+  xws,
+  setTags,
   onChangeName,
   onChangeFormat,
   onPrint,
   actions,
-  rowLayout,
-  setRowLayout,
   children,
 }) => {
-  const [session] = useSession();
+  const { data: session } = useSession();
+  console.log({ session });
 
   const [showAbout, setShowAbout] = useState(false);
   const [showActions, setShowActions] = useState(false);
@@ -48,8 +56,9 @@ export const Layout: FC<Props> = ({
   const [showMenu, setShowMenu] = useState(false);
   const [showPanel, setShowPanel] = useState(false);
   const [showTags, setShowTags] = useState(false);
+  const [showSave, setShowSave] = useState(false);
 
-  const [name, setName] = useState(squadron.name);
+  const [name, setName] = useState(xws.name);
 
   const providers = [
     { id: 'apple', title: 'Login with Apple' },
@@ -58,8 +67,8 @@ export const Layout: FC<Props> = ({
   ];
 
   useEffect(() => {
-    setName(squadron.name);
-  }, [squadron]);
+    setName(xws.name);
+  }, [xws]);
 
   return (
     <div>
@@ -126,56 +135,30 @@ export const Layout: FC<Props> = ({
                             className="w-full flex items-center px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 cursor-pointer"
                             role="menuitem"
                           >
-                            <svg
-                              className="w-5 h-5"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                              ></path>
-                            </svg>
+                            <PlusCircleIcon className="w-5 h-5" />
                             <span className="ml-2">Import from XWS</span>
                           </button>
                           {factions.map((f) => {
-                            const s: SquadronXWS = {
-                              uid: uuid(),
-                              name: 'New Squadron',
-                              format: 'Extended',
-                              faction: f,
-                              cost: 0,
-                              favourite: false,
-                              pilots: [],
-                            };
-
                             return (
-                              <Link
+                              <a
                                 key={f}
-                                href={`/?lbx=${serializer.serialize(s)}`}
+                                className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 cursor-pointer"
+                                role="menuitem"
+                                href={`/?faction=${getFactionKey(f)}`}
                               >
-                                <a
-                                  className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 cursor-pointer"
-                                  role="menuitem"
-                                >
-                                  {/* <!-- Heroicon name: pencil-alt --> */}
-                                  <XwingFont
-                                    icon={f}
-                                    className="text-xl w-7"
-                                    color={
-                                      f !== 'First Order' &&
-                                      f !== 'Galactic Empire'
-                                        ? colorForFaction(f)
-                                        : undefined
-                                    }
-                                  />
-                                  {f}
-                                </a>
-                              </Link>
+                                {/* <!-- Heroicon name: pencil-alt --> */}
+                                <XwingFont
+                                  icon={f}
+                                  className="text-xl w-7"
+                                  color={
+                                    f !== 'First Order' &&
+                                    f !== 'Galactic Empire'
+                                      ? colorForFaction(f)
+                                      : undefined
+                                  }
+                                />
+                                {f}
+                              </a>
                             );
                           })}
                         </Transition>
@@ -225,26 +208,10 @@ export const Layout: FC<Props> = ({
                         aria-haspopup="true"
                       >
                         {session && (
-                          <svg
-                            className="w-6 h-6"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                            ></path>
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                            ></path>
-                          </svg>
+                          <CogIcon
+                            className="ml-1 mr-1 h-6 w-6"
+                            aria-hidden="true"
+                          />
                         )}
                         {!session && (
                           <span
@@ -348,33 +315,13 @@ export const Layout: FC<Props> = ({
                     className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
                   >
                     {/* <!-- Menu open: "hidden", Menu closed: "block" --> */}
-                    <svg
+                    <MenuIcon
                       className={`${showMenu ? 'hidden' : 'block'} h-6 w-6`}
-                      stroke="currentColor"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M4 6h16M4 12h16M4 18h16"
-                      />
-                    </svg>
-                    {/* <!-- Menu open: "block", Menu closed: "hidden" --> */}
-                    <svg
+                    />
+
+                    <XIcon
                       className={`${showMenu ? 'block' : 'hidden'} h-6 w-6`}
-                      stroke="currentColor"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M6 18L18 6M6 6l12 12"
-                      />
-                    </svg>
+                    />
                   </button>
                 </div>
               </div>
@@ -403,30 +350,22 @@ export const Layout: FC<Props> = ({
             </div>
             <div className="px-2 py-3 grid grid-cols-7">
               {factions.map((f) => {
-                const s: SquadronXWS = {
-                  uid: uuid(),
-                  name: 'New Squadron',
-                  format: 'Extended',
-                  faction: f,
-                  cost: 0,
-                  favourite: false,
-                  pilots: [],
-                };
-
                 return (
-                  <Link key={f} href={`/?lbx=${serializer.serialize(s)}`}>
-                    <a className="block text-center py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">
-                      <XwingFont
-                        icon={f}
-                        className="text-xl"
-                        color={
-                          f !== 'First Order' && f !== 'Galactic Empire'
-                            ? colorForFaction(f)
-                            : undefined
-                        }
-                      />
-                    </a>
-                  </Link>
+                  <a
+                    key={f}
+                    className="block text-center py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+                    href={`/?faction=${getFactionKey(f)}`}
+                  >
+                    <XwingFont
+                      icon={f}
+                      className="text-xl"
+                      color={
+                        f !== 'First Order' && f !== 'Galactic Empire'
+                          ? colorForFaction(f)
+                          : undefined
+                      }
+                    />
+                  </a>
                 );
               })}
             </div>
@@ -492,8 +431,8 @@ export const Layout: FC<Props> = ({
               <div className="flex-1 min-w-0">
                 <h2 className="text-2xl font-bold leading-7 text-white sm:text-3xl sm:leading-9 flex items-center">
                   <XwingFont
-                    icon={squadron.faction}
-                    color={colorForFaction(squadron.faction)}
+                    icon={xws.faction}
+                    color={colorForFactionKey(xws.faction)}
                   />
                   <input
                     type="text"
@@ -509,52 +448,28 @@ export const Layout: FC<Props> = ({
 
                 <div className="flex text-sm sm:text-lg font-normal -mt-1 sm:-mt-2">
                   <FormatComponent
-                    format={squadron.format}
+                    format={xws.format}
                     onClick={onChangeFormat}
                   />
                   <h3 className="ml-1 text-gray-500 sm:truncate">
-                    {squadron.cost} points
+                    {xws.points} points
                   </h3>
                 </div>
               </div>
               <div className="mt-4 flex md:mt-0 md:ml-4">
-                <button
-                  className="text-gray-500 mr-3 hidden sm:block"
-                  onClick={() => setRowLayout(!rowLayout)}
-                >
-                  {!rowLayout && (
-                    <svg
-                      className="w-6 h-6"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
-                      />
-                    </svg>
-                  )}
-                  {rowLayout && (
-                    <svg
-                      className="w-6 h-6"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M4 6h16M4 10h16M4 14h16M4 18h16"
-                      />
-                    </svg>
-                  )}
-                </button>
+                {session && (
+                  <button
+                    type="button"
+                    className="mr-3 inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-lbn-500 hover:bg-lbn-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lbn-400"
+                    onClick={() => setShowSave(true)}
+                  >
+                    <CloudIcon
+                      className="-ml-1 mr-2 h-5 w-5"
+                      aria-hidden="true"
+                    />
+                    Save
+                  </button>
+                )}
                 {session && (
                   <span className="shadow-sm rounded-md relative mr-3">
                     <button
@@ -562,20 +477,7 @@ export const Layout: FC<Props> = ({
                       type="button"
                       className="inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-gray-600 hover:bg-gray-500 focus:outline-none focus:shadow-outline-gray focus:border-gray-700 active:bg-gray-700 transition duration-150 ease-in-out"
                     >
-                      <svg
-                        className="-ml-1 mr-2 h-5 w-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"
-                        ></path>
-                      </svg>
+                      <TagIcon className="-ml-1 mr-2 h-5 w-5" />
                       Tags
                     </button>
                   </span>
@@ -586,20 +488,7 @@ export const Layout: FC<Props> = ({
                     type="button"
                     className="inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-gray-600 hover:bg-gray-500 focus:outline-none focus:shadow-outline-gray focus:border-gray-700 active:bg-gray-700 transition duration-150 ease-in-out"
                   >
-                    <svg
-                      className="-ml-1 mr-2 h-5 w-5"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"
-                      ></path>
-                    </svg>
+                    <PrinterIcon className="-ml-1 mr-2 h-5 w-5" />
                     Print
                   </button>
                 </span>
@@ -609,20 +498,7 @@ export const Layout: FC<Props> = ({
                     type="button"
                     className="inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-gray-600 hover:bg-gray-500 focus:outline-none focus:shadow-outline-gray focus:border-gray-700 active:bg-gray-700 transition duration-150 ease-in-out"
                   >
-                    <svg
-                      className="-ml-1 mr-2 h-5 w-5"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                      ></path>
-                    </svg>
+                    <ExternalLinkIcon className="-ml-1 mr-2 h-5 w-5" />
                     Export
                   </button>
 
@@ -634,7 +510,7 @@ export const Layout: FC<Props> = ({
                     leave="transition ease-in duration-75"
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
-                    className="origin-top left-0 sm:origin-top-right sm:right-0 absolute mt-2 w-48 rounded-md shadow-lg z-10"
+                    className="origin-top right-0 sm:origin-top-right absolute mt-2 w-48 rounded-md shadow-lg z-10"
                   >
                     <div className="py-1 rounded-md bg-white shadow-xs">
                       {actions?.map((a) => (
@@ -662,7 +538,6 @@ export const Layout: FC<Props> = ({
         <div className="max-w-7xl mx-auto pb-12 px-0 sm:px-6 lg:px-8">
           {session && (
             <SavedSquadronsPanel
-              currentUid={squadron.uid}
               show={showPanel}
               onClose={() => setShowPanel(!showPanel)}
             />
@@ -687,9 +562,14 @@ export const Layout: FC<Props> = ({
 
       <Modal show={showTags} onDismiss={() => setShowTags(false)}>
         <SelectTagsComponent
-          squadron={squadron}
+          xws={xws}
+          setTags={setTags}
           onClose={() => setShowTags(false)}
         />
+      </Modal>
+
+      <Modal show={showSave} onDismiss={() => setShowSave(false)}>
+        <SavePanel xws={xws} onClose={() => setShowSave(false)} />
       </Modal>
     </div>
   );

@@ -1,44 +1,46 @@
-import { exportAsQR } from "lbn-core/dist/helpers/import+export";
-import { deserialize } from "lbn-core/dist/helpers/serializer";
-import { loadSquadron } from "lbn-core/dist/helpers/unit";
-import { Ship, SlotKey, Squadron } from "lbn-core/dist/types";
-import { NextPage } from "next";
-import QRCode from "qrcode.react";
-import React from "react";
-import Logo from "../components/logo";
+import { SlotKey } from 'lbn-core/dist/types';
+import { NextPage } from 'next';
+import QRCode from 'qrcode.react';
+import React from 'react';
+import Logo from '../components/logo';
+import { deserialize, exportAsXws } from '../helpers/export';
+import { loadShip2, TShip } from '../helpers/loading';
+import { XWS } from '../helpers/types';
 
 type Props = {
-  squadron?: Squadron;
+  xws?: XWS;
 };
 
-const PrintPage: NextPage<Props> = ({ squadron }) => {
-  if (!squadron) {
+const PrintPage: NextPage<Props> = ({ xws }) => {
+  if (!xws) {
     return <div />;
   }
 
-  const threshold = (ship: Ship) => {
-    const shields = ship.stats.filter((s) => s.type === "shields")[0]
-      ? ship.stats.filter((s) => s.type === "shields")[0].value
+  const ships = xws?.pilots.map((p) => loadShip2(p, xws.faction, xws.format));
+
+  const threshold = (ship: TShip) => {
+    const shields = ship.stats.filter((s) => s.type === 'shields')[0]
+      ? ship.stats.filter((s) => s.type === 'shields')[0].value
       : 0;
 
-    const hull = ship.stats.filter((s) => s.type === "hull")[0]
-      ? ship.stats.filter((s) => s.type === "hull")[0].value
+    const hull = ship.stats.filter((s) => s.type === 'hull')[0]
+      ? ship.stats.filter((s) => s.type === 'hull')[0].value
       : 0;
 
     return Math.ceil((shields + hull) * 0.5);
   };
 
-  const lbx = exportAsQR(squadron);
+  const lbx = exportAsXws(xws);
 
   return (
-    <div className="bg-white">
+    <div className="bg-white" style={{ height: '100vh' }}>
       <div className="flex flex-1 justify-between items-center m-3">
         <Logo />
         <div className="flex flex-col items-center font-medium text-md">
           <div>
-            {squadron.name} [{squadron.format}]
+            {xws.name} [{xws.format}]
           </div>
-          <div>{squadron.cost} points</div>
+          <div>{xws.points} points</div>
         </div>
         <QRCode
           value={`https://launchbaynext.app/?lbx=${lbx}`}
@@ -46,18 +48,18 @@ const PrintPage: NextPage<Props> = ({ squadron }) => {
           size={92}
         />
       </div>
-      {squadron.ships.map((s) => (
+      {ships.map((s, i) => (
         <div
           className="block"
           style={{
-            pageBreakAfter: "auto",
-            pageBreakBefore: "auto",
-            pageBreakInside: "avoid",
+            pageBreakAfter: 'auto',
+            pageBreakBefore: 'auto',
+            pageBreakInside: 'avoid',
           }}
-          key={s.uid}
+          key={`${s.xws}_${s.pilot?.xws}_${i}`}
         >
           <div className="flex flex-1 items-center justify-between bg-gray-200 mx-3 p-1 text-xs font-medium">
-            <span>{s.pilot.name.en}</span>
+            <span>{s.pilot?.name.en}</span>
             <span>
               <span className="mr-2">
                 Half points: {Math.ceil(s.pointsWithUpgrades / 2)}
@@ -91,8 +93,7 @@ PrintPage.getInitialProps = (ctx: any) => {
   const { lbx } = ctx.query;
   if (lbx) {
     const xws = deserialize(lbx);
-    const squadron = loadSquadron(xws);
-    return { squadron };
+    return { xws };
   }
 
   return {};

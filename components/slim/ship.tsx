@@ -1,8 +1,6 @@
 import { useLocalized } from 'lbn-core/dist/helpers/i18n';
-import { AppState } from 'lbn-core/dist/state';
-import { Language, ShipType } from 'lbn-core/dist/types';
+import { ShipType } from 'lbn-core/dist/types';
 import React, { FC } from 'react';
-import { useSelector } from 'react-redux';
 import { colorForFaction } from '../../helpers/colors';
 import ShipFont from '../fonts/ships';
 import XwingFont from '../fonts/xwing';
@@ -13,10 +11,7 @@ type Props = {
 };
 
 export const SlimShip: FC<Props> = ({ shipType, showFaction }) => {
-  const language = useSelector<AppState, Language | undefined>(
-    (s) => s.app.user.language
-  );
-  const { t } = useLocalized(language);
+  const { t } = useLocalized('en');
 
   return (
     <li className="flex items-center justify-between">

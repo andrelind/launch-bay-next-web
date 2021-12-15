@@ -1,23 +1,14 @@
 import { Transition } from '@tailwindui/react';
-import {
-  setFirstSorting,
-  setSecondSorting,
-  SortingType,
-} from 'lbn-core/dist/actions/filter';
-import { removeSquadron } from 'lbn-core/dist/actions/squadrons';
-import { serializer } from 'lbn-core/dist/helpers';
 import { useLocalized } from 'lbn-core/dist/helpers/i18n';
-import { loadSquadron } from 'lbn-core/dist/helpers/unit';
-import { FilterState } from 'lbn-core/dist/reducers/filter';
-import { UserState } from 'lbn-core/dist/reducers/user';
-import { deleteSquadron } from 'lbn-core/dist/requests/squadron';
-import { AppState } from 'lbn-core/dist/state';
-import { Ship, Squadron, SquadronXWS } from 'lbn-core/dist/types';
 import { useRouter } from 'next/router';
-import React, { FC } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { v4 as uuid } from 'uuid';
-import { colorForFaction } from '../helpers/colors';
+import React, { FC, useState } from 'react';
+import useSwr from 'swr';
+import { colorForFactionKey } from '../helpers/colors';
+import { serialize } from '../helpers/export';
+import { compare } from '../helpers/misc';
+import { pilotName } from '../helpers/names';
+import { get } from '../helpers/request';
+import { SortingType, XWS } from '../helpers/types';
 import XwingFont from './fonts/xwing';
 import { colorForFormat } from './format';
 import { TagComponent } from './tag';
@@ -29,106 +20,24 @@ const sortings: SortingType[] = [
   'Wins',
   'Created Date',
   'Format',
+  'Custom',
 ];
 
 type Props = {
-  currentUid: string;
   show: boolean;
   onClose: () => void;
 };
 
-export const SavedSquadronsPanel: FC<Props> = ({
-  currentUid,
-  show,
-  onClose,
-}) => {
+export const SavedSquadronsPanel: FC<Props> = ({ show, onClose }) => {
   const { t } = useLocalized();
-  const dispatch = useDispatch();
   const router = useRouter();
-  const user = useSelector<AppState, UserState>((s) => s.app.user);
-  const squadronXws = useSelector<AppState, SquadronXWS[]>((s) => s.app.xws);
-  const squadrons = squadronXws.map((x) => loadSquadron(x));
 
-  const { firstSorting, secondSorting } = useSelector<AppState, FilterState>(
-    (s) => s.app.filter
-  );
+  const { data: lists } = useSwr('/lists', () => get<XWS[]>('/lists'));
+
+  const [first, setFirst] = useState<SortingType>('Faction');
+  const [second, setSecond] = useState<SortingType>('Alphabetically');
 
   // console.log(sorting);
-
-  const compare = (
-    a: Squadron | undefined,
-    b: Squadron | undefined,
-    sorting: SortingType
-  ): number => {
-    if (!a || !b) {
-      return 0;
-    }
-
-    if (sorting === 'Alphabetically') {
-      if (!a || !a.name || !b || !b.name) {
-        return 0;
-      }
-      return a.name.localeCompare(b.name);
-    }
-    if (sorting === 'Faction') {
-      return a.faction.localeCompare(b.faction);
-    }
-    if (sorting === 'Points') {
-      if (a.cost > b.cost) {
-        return -1;
-      }
-      if (a.cost < b.cost) {
-        return 1;
-      }
-    } else if (sorting === 'Wins') {
-      if (a.wins > b.wins) {
-        return -1;
-      }
-      if (a.wins < b.wins) {
-        return 1;
-      }
-    } else if (sorting === 'Created Date') {
-      if (a.created > b.created) {
-        return -1;
-      }
-      if (a.created < b.created) {
-        return 1;
-      }
-    } else if (sorting === 'Format') {
-      if (a.format > b.format) {
-        return -1;
-      }
-      if (a.format < b.format) {
-        return 1;
-      }
-    }
-    return 0;
-  };
-
-  const getUnique = (units: Ship[]) => {
-    if (units.length === 0) {
-      return undefined;
-    }
-
-    const all = units.map((u) => u.pilot.xws);
-    const unique = [...new Set(all)];
-    const fullCount = unique.map((u) => ({
-      xws: u,
-      count: all.filter((a) => a === u).length,
-    }));
-
-    return fullCount
-      .map((u) => {
-        const { name } = units.filter(
-          (unit) => unit.pilot.xws === u.xws
-        )[0].pilot;
-        if (u.count > 1) {
-          return `${u.count}x ${t(name)}`;
-        }
-        return t(name);
-      })
-      .join(', ');
-  };
 
   return (
     <div
@@ -203,10 +112,10 @@ export const SavedSquadronsPanel: FC<Props> = ({
                       id="location"
                       name="location"
                       className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-lbnred focus:border-lbnred sm:text-sm rounded-md"
-                      value={firstSorting}
+                      value={first}
                       onChange={(e) => {
                         const s = sortings[e.target.selectedIndex];
-                        dispatch(setFirstSorting(s));
+                        setFirst(s);
                       }}
                     >
                       {sortings.map((s) => (
@@ -225,10 +134,10 @@ export const SavedSquadronsPanel: FC<Props> = ({
                       id="location"
                       name="location"
                       className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-lbnred focus:border-lbnred sm:text-sm rounded-md"
-                      value={secondSorting}
+                      value={second}
                       onChange={(e) => {
                         const s = sortings[e.target.selectedIndex];
-                        dispatch(setSecondSorting(s));
+                        setSecond(s);
                       }}
                     >
                       {sortings.map((s) => (
@@ -240,23 +149,44 @@ export const SavedSquadronsPanel: FC<Props> = ({
               </div>
               {/* <div className="mt-6 relative flex-1 px-4 sm:px-6"> */}
               <ul className="divide-y divide-gray-200 overflow-y-auto">
-                {squadrons
+                {lists
                   ?.sort((a, b) => {
-                    const first = compare(a, b, firstSorting);
-                    if (first === 0) {
-                      return compare(a, b, secondSorting);
+                    const f = compare(a, b, first);
+                    if (f === 0) {
+                      return compare(a, b, second);
                     }
-                    return first;
+                    return f;
                   })
                   .map((s, i) => {
                     if (!s) {
                       // if (!s || s.ships.length === 0) {
                       return null;
                     }
-                    const joinedPilots = getUnique(s.ships) || '';
+
+                    const all = s.pilots.map((p) => p.id);
+                    const fullCount = [...new Set(all)].map((u) => ({
+                      xws: u,
+                      count: all.filter((a) => a === u).length,
+                    }));
+
+                    const joinedPilots = fullCount
+                      .map((u) => {
+                        const pilot = s.pilots.find((p) => p.id === u.xws);
+                        if (!pilot) {
+                          return '';
+                        }
+
+                        const name = t(pilotName(pilot, s.faction));
+                        if (u.count > 1) {
+                          return `${u.count}x ${name}`;
+                        }
+                        return name;
+                      })
+                      .join(', ');
+
                     return (
                       <li
-                        key={`${s.uid}_${i}`}
+                        key={`${s.vendor.lbn.uid}_${i}`}
                         className="px-4 py-3 sm:px-6 sm:py-5 relative hover:bg-gray-50"
                       >
                         <div className="flex items-center">
@@ -264,15 +194,16 @@ export const SavedSquadronsPanel: FC<Props> = ({
                           <a
                             className="flex flex-1"
                             onClick={() => {
-                              router.push(`/?uid=${s.uid}`);
+                              router.push(`/?lbx=${serialize(s)}`);
                               onClose();
+                              // router.push(`/?uid=${s.uid}`);
                             }}
                           >
                             <span className="flex-shrink-0 inline-block relative text-center">
                               <XwingFont
                                 className="text-lg"
                                 icon={s.faction}
-                                color={colorForFaction(s.faction)}
+                                color={colorForFactionKey(s.faction)}
                               />
                               <div
                                 className="text-sm font-medium"
@@ -285,14 +216,14 @@ export const SavedSquadronsPanel: FC<Props> = ({
                               <div className="ml-4 flex flex-col flex-1">
                                 <p className="text-sm font-medium text-gray-900 truncate flex flex-1 justify-between">
                                   <span>{s.name}</span>
-                                  <span>{s.cost}</span>
+                                  <span>{s.points}</span>
                                 </p>
                                 <p className="text-xs text-gray-500">
                                   {joinedPilots}
                                 </p>
                               </div>
                               <div className="ml-4">
-                                {s.tags?.map((tag) => (
+                                {s.vendor.lbn.tags?.map((tag) => (
                                   <TagComponent key={tag} label={tag} />
                                 ))}
                               </div>
@@ -302,31 +233,31 @@ export const SavedSquadronsPanel: FC<Props> = ({
                           <div className="ml-2 -mr-2 relative inline-block text-left">
                             <button
                               onClick={async () => {
-                                await deleteSquadron(s.uid, user);
-                                if (s.uid !== currentUid) {
-                                  dispatch(removeSquadron(s.uid));
-                                } else if (squadronXws.length > 1) {
-                                  // Load another
-                                  const first = squadronXws.find(
-                                    (s) => s.uid !== currentUid
-                                  );
-                                  router.push(`/?uid=${first?.uid}`);
-                                  onClose();
-                                } else {
-                                  // Just get a new one
-                                  const s: SquadronXWS = {
-                                    uid: uuid(),
-                                    name: 'New Squadron',
-                                    format: 'Hyperspace',
-                                    faction: 'Rebel Alliance',
-                                    cost: 0,
-                                    favourite: false,
-                                    pilots: [],
-                                  };
-                                  router.push(
-                                    `/?lbx=${serializer.serialize(s)}`
-                                  );
-                                }
+                                // await deleteSquadron(s.uid, user);
+                                // if (s.uid !== currentUid) {
+                                //   dispatch(removeSquadron(s.uid));
+                                // } else if (squadronXws.length > 1) {
+                                //   // Load another
+                                //   const first = squadronXws.find(
+                                //     (s) => s.uid !== currentUid
+                                //   );
+                                //   router.push(`/?uid=${first?.uid}`);
+                                //   onClose();
+                                // } else {
+                                //   // Just get a new one
+                                //   const s: SquadronXWS = {
+                                //     uid: uuid(),
+                                //     name: 'New Squadron',
+                                //     format: 'Hyperspace',
+                                //     faction: 'Rebel Alliance',
+                                //     cost: 0,
+                                //     favourite: false,
+                                //     pilots: [],
+                                //   };
+                                //   router.push(
+                                //     `/?lbx=${serializer.serialize(s)}`
+                                //   );
+                                // }
                               }}
                               className="group relative w-8 h-8 bg-white rounded-full inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lbnred"
                             >

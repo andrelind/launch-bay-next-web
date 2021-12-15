@@ -1,29 +1,10 @@
-import { actions, helpers } from 'lbn-core';
-import {
-  addSquadron,
-  renameSquadron,
-  setUpgrade,
-} from 'lbn-core/dist/actions/squadrons';
-import { importAllSync } from 'lbn-core/dist/actions/sync';
-import { userDidLogin } from 'lbn-core/dist/actions/user';
-import { usedSquadronXWS } from 'lbn-core/dist/helpers/unique';
-import {
-  getUpgrades,
-  shipTypeOptions,
-  upgradesForSlot,
-} from 'lbn-core/dist/loader';
-import { UserState } from 'lbn-core/dist/reducers/user';
-import requests from 'lbn-core/dist/requests';
-import { AppState } from 'lbn-core/dist/state';
-import { Ship, ShipType, Slot, Upgrade } from 'lbn-core/dist/types';
-import { NextApiRequest, NextPage } from 'next';
-import { getSession } from 'next-auth/client';
+import { DuplicateIcon, XIcon } from '@heroicons/react/outline';
+import { keyFromSlot } from 'lbn-core/dist/helpers/convert';
+import { FactionKey, Ship, ShipType, Slot, Upgrade } from 'lbn-core/dist/types';
+import { NextPage } from 'next';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { parseCookies, setCookie } from 'nookies';
 import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { AnyAction, Store } from 'redux';
 import { v4 as uuid } from 'uuid';
 import { Layout } from '../components/layout';
 import { Notification } from '../components/notification';
@@ -32,24 +13,26 @@ import { ShipPopover } from '../components/popover/ship';
 import { UpgradePopover } from '../components/popover/upgrade';
 import { TagComponent } from '../components/tag';
 import { copyToClipboard } from '../helpers/clipboard';
-import { useSquadronXWS } from '../helpers/hooks';
-import { wrapper } from '../store';
-
-const { squadrons } = actions;
-const { convert, importExport, serializer, unit, i18n } = helpers;
-const { useLocalized } = i18n;
-const {
-  addShipAction,
-  changePilotAction,
-  copyShip,
-  importSquadron,
-  removeShip,
+import {
+  addShip2,
+  changePilot2,
+  copyShip2,
+  removeShip2,
+  setTags,
+  setUpgrade2,
   toggleFormat,
-} = squadrons;
-const { deserialize, serialize } = serializer;
-const { keyFromSlot } = convert;
-const { exportAsText, exportAsTTS, exportAsXws } = importExport;
-const { loadSquadron } = unit;
+} from '../helpers/edit';
+import {
+  deserialize,
+  exportAsText,
+  exportAsTTS,
+  exportAsXws,
+  serialize,
+} from '../helpers/export';
+import { useLocalized } from '../helpers/i18n';
+import { loadShip2, loadUpgrades2 } from '../helpers/loading';
+import { shipTypes, upgradesForSlot2, usedXWS } from '../helpers/select';
+import { XWS } from '../helpers/types';
 
 export type DataItem = {
   type: 'Ship' | 'Upgrade' | 'Empty' | 'SlotOptions';
@@ -63,67 +46,53 @@ export type DataItem = {
   slotOptions?: Slot[];
 };
 
-type Props = {
-  uid: string;
-  cookies: { [key: string]: string };
-  foundOnServer: boolean;
-};
+type Props = {};
 
-const EditPage: NextPage<Props> = ({ uid, cookies }) => {
+const MainPage: NextPage<Props> = () => {
   const router = useRouter();
-  const dispatch = useDispatch();
-  const user = useSelector<AppState, UserState>((s) => s.app.user);
-  const { t, c } = useLocalized(user.language);
+  const { t } = useLocalized();
 
-  const { lbx } = router.query;
-  const xws = useSquadronXWS(uid);
-  const squadron = loadSquadron(xws);
-  const collection = useSelector<AppState, any>((s) => s.app.collection);
+  // Either we get a squad from url or we create one
+  const initialXws: XWS = router.query.lbx
+    ? deserialize(router.query.lbx as string)
+    : {
+        name: 'New Squadron',
+        description: '',
+        faction: (router.query.faction as FactionKey) || 'rebelalliance',
+        format: 'Extended',
+        pilots: [],
+        points: 0,
+        version: '2.0.0',
+        vendor: {
+          lbn: {
+            uid: uuid(),
+            wins: 0,
+            losses: 0,
+            tags: [],
+            created: new Date(),
+          },
+        },
+      };
+
+  const [xws, setXws] = useState<XWS>(initialXws);
+  const ships = xws?.pilots.map((p) => loadShip2(p, xws.faction, xws.format));
 
   const [shipBase, setShipBase] = useState<ShipType>();
-  const [rowLayout, setRowLayout] = useState(cookies['rowLayout'] === 'true');
+
   const [notificationTitle, setNotificationTitle] = useState<string>();
   const [notificationMessage, setNotificationMessage] = useState<string>();
 
-  // const [onServer, setOnServer] = useState(foundOnServer);
-  const usedXws = usedSquadronXWS(squadron);
-
-  const p: { [s: string]: Slot } = {};
-  squadron?.ships.forEach((s) => {
-    const u = s.ability?.slotOptions?.find(
-      (sl) => s.upgrades?.[keyFromSlot(sl)]
-    );
-    u && (p[s.uid] = u);
-  });
+  const usedXws = usedXWS(ships);
 
   useEffect(() => {
-    if (!xws || xws?.uid !== uid) {
-      return;
+    if (router.query.lbx) {
+      setXws(deserialize(router.query.lbx as string));
     }
+  }, [router.query]);
 
-    const newLbx = serialize(xws);
-    if (decodeURIComponent(newLbx) !== lbx) {
-      const url = `?lbx=${newLbx}&uid=${uid}`;
-      router.push(url, `?lbx=${newLbx}`, { shallow: true });
-
-      // Om vi är inloggade, uppdatera på servern
-      // lbx är inte satt när vi först laddar en sparad lista
-      if (!user.jwt || !lbx) {
-        // if (!user.jwt || !lbx || !onServer) {
-        return;
-      }
-      // console.log('Update server', { newLbx, lbx });
-      const run = async () => requests.setSquadron(xws, user);
-      run();
-    } else {
-    }
-  }, [xws]);
-
-  if (!xws || !squadron) {
+  if (!xws) {
     return null;
   }
-
-  const { faction, format } = squadron;
 
   const actions: {
     title: string;
@@ -133,21 +102,21 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
     {
       title: 'XWS',
       onClick: () => {
-        copyToClipboard(exportAsXws(squadron));
+        copyToClipboard(exportAsXws(xws));
         setNotificationTitle('XWS data copied to clipboard');
       },
     },
     {
       title: 'TTS',
       onClick: () => {
-        copyToClipboard(exportAsTTS(squadron, t));
+        copyToClipboard(exportAsTTS(xws, t));
         setNotificationTitle('TTS data copied to clipboard');
       },
     },
     {
       title: 'As text',
       onClick: () => {
-        copyToClipboard(exportAsText(squadron, t));
+        copyToClipboard(exportAsText(xws, t));
         setNotificationTitle('Plaint text copied to clipboard');
       },
     },
@@ -155,122 +124,89 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
 
   return (
     <Layout
-      squadron={squadron}
-      onChangeName={(n) => dispatch(renameSquadron(squadron.uid, n))}
-      onChangeFormat={() => dispatch(toggleFormat(squadron.uid))}
-      onPrint={() =>
-        xws && window.open(`/print?lbx=${serialize(xws)}`, '_ blank')
-      }
-      rowLayout={rowLayout}
-      setRowLayout={(v) => {
-        setRowLayout(v);
-        setCookie(null, 'rowLayout', `${v}`, {});
+      xws={xws}
+      setTags={(t) => setXws(setTags(xws, t))}
+      onChangeName={(n) => {
+        xws.name = n;
+        setXws({ ...xws });
       }}
+      onChangeFormat={() => setXws(toggleFormat(xws))}
+      onPrint={() =>
+        xws && window.open(`/print?lbx=${serialize(xws)}`, '_blank')
+      }
       actions={actions}
     >
       <div className="mb-2 text-gray-400 flex flew-wrap items-center">
-        {squadron.tags?.map((tag) => (
+        {xws.vendor.lbn.tags?.map((tag) => (
           <TagComponent key={tag} label={tag} />
         ))}
       </div>
 
-      {/* {!onServer && user.jwt && <div>Save button</div>} */}
-
       <div
-        className={`flex flex-1 flex-col grid grid-cols-1 ${
-          !rowLayout && 'sm:grid-cols-2'
-        } gap-x-3 gap-y-3`}
+        className={`flex flex-1 flex-col grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-3`}
       >
-        {squadron.ships.map((s) => {
+        {ships?.map((s, pilotIndex) => {
           const showHardpointPicker =
             s.ability?.slotOptions &&
             !s.ability?.slotOptions.find((sl) => s.upgrades?.[keyFromSlot(sl)]);
 
           const hardpointOptions = () => [
-            ...upgradesForSlot(
-              squadron,
-              s,
-              'Cannon',
-              collection,
-              { t, c },
-              true
-            ),
-            ...upgradesForSlot(
-              squadron,
-              s,
-              'Missile',
-              collection,
-              { t, c },
-              true
-            ),
-            ...upgradesForSlot(
-              squadron,
-              s,
-              'Torpedo',
-              collection,
-              { t, c },
-              true
-            ),
+            ...upgradesForSlot2(s, 'Cannon', xws.format, [], true),
+            ...upgradesForSlot2(s, 'Missile', xws.format, [], true),
+            ...upgradesForSlot2(s, 'Torpedo', xws.format, [], true),
           ];
 
-          const upgrades = getUpgrades(format, s);
+          const upgrades = loadUpgrades2(s, xws.format);
 
           return (
             <div
-              key={s.uid}
+              key={`${s.xws}_${pilotIndex}`}
               className="bg-white rounded-lg shadow px-2 py-6 md:px-3 md:py-4 relative"
             >
               <div className="divide-y divide-gray-200 md:mr-5">
                 <PilotPopover
                   halfWidth
                   value={s.pilot}
-                  faction={faction}
-                  format={format}
+                  faction={xws.faction}
+                  format={xws.format}
                   usedXws={usedXws}
                   ship={s}
-                  onChange={(p) => {
-                    dispatch(
-                      changePilotAction(
-                        squadron.uid,
-                        s.uid,
-                        p?.xws || '',
-                        Boolean(s.pilot.slots.find((s) => s === 'Force Power')),
-                        Boolean(s.pilot.slots.find((s) => s === 'Talent'))
-                      )
-                    );
-                  }}
+                  onChange={(p) =>
+                    setXws(changePilot2(xws, pilotIndex, p?.xws || ''))
+                  }
                 />
 
                 <div className="mt-1"></div>
               </div>
 
               <div
-                className={`mt-1 grid grid-cols-2 gap-1 lg:grid-cols-${
-                  !rowLayout ? '2' : '4'
-                } md:mr-5 mb-0`}
+                className={`mt-1 grid grid-cols-2 gap-1 lg:grid-cols-2 md:mr-5 mb-0`}
               >
-                {upgrades.map((upgrade, index) => (
+                {upgrades.map((upgrade, upgradeIndex) => (
                   <div key={uuid()}>
                     <UpgradePopover
                       side={0}
                       slot={upgrade.slot}
                       value={upgrade.upgrade}
-                      format={format}
+                      format={xws.format}
                       usedXws={usedXws}
-                      options={upgradesForSlot(
-                        squadron,
+                      options={upgradesForSlot2(
                         s,
                         upgrade.slot,
-                        collection,
-                        { t, c },
+                        xws.format,
+                        ships,
                         true
                       )}
                       onChange={(newValue) => {
                         const getSlotIndex = () => {
                           let slotIndex = 0;
-                          for (let i = 0; i < s.pilot.slots.length; i++) {
-                            if (s.pilot.slots[i] === upgrade.slot) {
-                              if (i === index) {
+                          for (
+                            let i = 0;
+                            i < (s.pilot?.slots?.length || 0);
+                            i++
+                          ) {
+                            if (s.pilot?.slots?.[i] === upgrade.slot) {
+                              if (i === upgradeIndex) {
                                 return slotIndex;
                               }
                               slotIndex += 1;
@@ -278,11 +214,12 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
                           }
                           return 0;
                         };
-                        dispatch(
-                          setUpgrade(
-                            squadron.uid,
-                            s.uid,
-                            upgrade.slot,
+
+                        setXws(
+                          setUpgrade2(
+                            xws,
+                            pilotIndex,
+                            keyFromSlot(upgrade.slot),
                             getSlotIndex(),
                             newValue
                           )
@@ -295,26 +232,24 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
                   <UpgradePopover
                     side={0}
                     slot={'Hardpoint'}
-                    format={format}
-                    usedXws={usedXws}
+                    format={xws.format}
                     options={hardpointOptions()}
                     onChange={(newValue) => {
                       const slot = newValue?.sides[0].slots[0] || 'Hardpoint';
                       let slotIndex = 0;
-                      for (let i = 0; i < s.pilot.slots.length; i++) {
-                        if (s.pilot.slots[i] === slot) {
+                      for (let i = 0; i < (s.pilot?.slots.length || 0); i++) {
+                        if (s.pilot?.slots[i] === slot) {
                           if (i === 0) {
                             return slotIndex;
                           }
                           slotIndex += 1;
                         }
                       }
-
-                      dispatch(
-                        setUpgrade(
-                          squadron.uid,
-                          s.uid,
-                          slot,
+                      setXws(
+                        setUpgrade2(
+                          xws,
+                          pilotIndex,
+                          keyFromSlot(slot),
                           slotIndex,
                           newValue
                         )
@@ -326,42 +261,16 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
 
               <button
                 className="pointer absolute top-2 right-2 text-red-400 hover:text-red-500"
-                onClick={() => dispatch(removeShip(squadron.uid, s.uid))}
+                onClick={() => setXws(removeShip2(xws, pilotIndex))}
               >
-                <svg
-                  className="w-4 h-4 sm:w-5 sm:h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  ></path>
-                </svg>
+                <XIcon className="w-4 h-4 sm:w-5 sm:h-5" />
               </button>
 
               <button
-                className="pointer absolute bottom-2 right-2 text-gray-400 hover:text-gray-500"
-                onClick={() => dispatch(copyShip(squadron.uid, s.uid))}
+                className="posinter absolute bottom-2 right-2 text-gray-400 hover:text-gray-500"
+                onClick={() => setXws(copyShip2(xws, pilotIndex))}
               >
-                <svg
-                  className="w-4 h-4 sm:w-5 sm:h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
-                  ></path>
-                </svg>
+                <DuplicateIcon className="w-4 h-4 sm:w-5 sm:h-5" />
               </button>
             </div>
           );
@@ -372,7 +281,7 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
         <div className="shadow rounded-md">
           <ShipPopover
             value={shipBase}
-            options={shipTypeOptions(squadron, t, collection, true)}
+            options={shipTypes(xws)}
             onChange={setShipBase}
           />
         </div>
@@ -381,14 +290,13 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
           <div className="shadow rounded-md">
             <PilotPopover
               ship={shipBase}
-              faction={faction}
-              format={format}
-              usedXws={usedXws}
+              faction={xws.faction}
+              format={xws.format}
               onChange={(v) => {
-                if (v) {
-                  dispatch(addShipAction(squadron.uid, shipBase.xws, v.xws));
+                if (v && shipBase) {
+                  setXws(addShip2(xws, shipBase.xws, v.xws));
+                  setShipBase(undefined);
                 }
-                setShipBase(undefined);
               }}
             />
           </div>
@@ -413,64 +321,4 @@ const EditPage: NextPage<Props> = ({ uid, cookies }) => {
   );
 };
 
-export const getServerSideProps = wrapper.getServerSideProps(
-  (store) =>
-    async ({ req, res, query }) => {
-      let { lbx, uid } = query;
-
-      const appStore: Store<AppState, AnyAction> = store;
-      const { getState, dispatch } = appStore;
-
-      if (req) {
-        const session = await getSession({ req });
-        if (session?.user) {
-          // @ts-ignore
-          const user: UserState = session.user;
-          if (user && user.jwt) {
-            dispatch(userDidLogin(user));
-            const { data } = await requests.syncRequest(user);
-            // console.log(JSON.stringify(data));
-            data.tournaments = [];
-            dispatch(importAllSync(data));
-          }
-        }
-      }
-
-      // Först kolla om vi har en exakt likadan lista redan
-      const identicalSquad = getState().app.xws.find(
-        (x) => decodeURIComponent(serialize(x)) === (lbx as string)
-      );
-      let foundOnServer: boolean;
-      if (identicalSquad) {
-        uid = identicalSquad.uid;
-        foundOnServer = true;
-      } else if (!getState().app.xws.find((x) => x && x.uid === uid)) {
-        // Om vi inte har den sparad så är det dax att skapa, vi sätter nytt uid då
-        if (lbx) {
-          // Importera utifrån
-          const xws = deserialize(lbx as string, uuid());
-          uid = xws.uid;
-          dispatch(importSquadron(xws));
-        } else {
-          // Skapa helt ny
-          uid = dispatch(addSquadron('Rebel Alliance', 'Extended', uuid())).uid;
-        }
-        foundOnServer = false;
-      } else {
-        foundOnServer = true;
-      }
-
-      // @ts-ignore
-      const cookies = parseCookies({ req: req as NextApiRequest, res });
-
-      return {
-        props: {
-          uid,
-          cookies,
-          foundOnServer,
-        },
-      };
-    }
-);
-
-export default EditPage;
+export default MainPage;

@@ -10,7 +10,7 @@ const apolloServer = new ApolloServer({
     const db = await getConnection();
     return { db, ctx };
   },
-  playground: true,
+  // playground: true,
   introspection: true,
 });
 

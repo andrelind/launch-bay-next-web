@@ -18,7 +18,7 @@ type Props = {
   format: Format;
   options: Upgrade[];
   side: number;
-  usedXws: string[];
+  usedXws?: string[];
   onChange: (value?: Upgrade) => void;
 };
 
@@ -65,9 +65,12 @@ export const UpgradePopover: FC<Props> = ({
         <SlimUpgrade slot={slot} upgrade={selected} side={side} />
         {formatWarning && <FormatError />}
         {selected &&
-          limitedWarning(selected.xws, selected.limited, usedXws, false) && (
-            <LimitError limit={selected.limited} />
-          )}
+          limitedWarning(
+            selected.xws,
+            selected.limited,
+            usedXws || [],
+            false
+          ) && <LimitError limit={selected.limited} />}
 
         <span className="hidden sm:inline-block ml-1 sm:ml-3 absolute inset-y-0 top-2 right-0 pr-2">
           {/* <!-- Heroicon name: selector --> */}

@@ -1,6 +1,7 @@
 import conditionData from 'lbn-core/dist/assets/conditions';
-import { Pilot, Ship, ShipType } from 'lbn-core/dist/types';
+import { Pilot, ShipType } from 'lbn-core/dist/types';
 import React, { FC } from 'react';
+import { TShip } from '../helpers/loading';
 import AbilityComponent from './ability';
 import ActionsComponent from './actions';
 import { DialComponent } from './dial';
@@ -10,7 +11,7 @@ import { SlimPilot } from './slim/pilot';
 
 type Props = {
   pilot: Pilot;
-  ship?: Ship | ShipType;
+  ship?: TShip | ShipType;
   count?: number;
   limitWarning?: boolean;
   showFaction?: boolean;

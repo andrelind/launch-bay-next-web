@@ -5,17 +5,10 @@ import {
   pilotFormatWarning,
 } from 'lbn-core/dist/helpers/unique';
 import { pilotOptions } from 'lbn-core/dist/loader';
-import { AppState } from 'lbn-core/dist/state';
-import {
-  Faction,
-  Format,
-  Language,
-  Pilot,
-  Ship,
-  ShipType,
-} from 'lbn-core/dist/types';
+import { FactionKey, Format, Pilot, ShipType } from 'lbn-core/dist/types';
 import React, { FC, useState } from 'react';
-import { useSelector } from 'react-redux';
+import { factionFromKey } from '../../helpers/convert';
+import { TShip } from '../../helpers/loading';
 import { popoverDetailStyle, popoverStyle } from '../../helpers/popover';
 import { FormatError } from '../format-error';
 import { LimitError } from '../limit-error';
@@ -24,10 +17,10 @@ import { SlimPilot } from '../slim/pilot';
 
 type Props = {
   value?: Pilot;
-  ship: Ship | ShipType;
-  faction: Faction;
+  ship: TShip | ShipType;
+  faction: FactionKey;
   format: Format;
-  usedXws: string[];
+  usedXws?: string[];
   onChange: (value?: Pilot) => void;
   halfWidth?: boolean;
 };
@@ -41,24 +34,24 @@ export const PilotPopover: FC<Props> = ({
   faction,
   usedXws,
 }) => {
-  const language = useSelector<AppState, Language | undefined>(
-    (s) => s.app.user.language
-  );
-  const { t } = useLocalized(language);
+  const { t } = useLocalized('en');
 
   const [showMenu, setShowMenu] = useState(false);
   const [showDetails, setShowDetails] = useState<Pilot | undefined>();
   const [selected, setSelected] = useState(value);
   const [pos, setPos] = useState({ x: 0, y: 0 });
 
-  const options = pilotOptions(faction, format, ship.xws, t).filter(
-    (f) => f.xws !== selected?.xws
-  );
+  const options = pilotOptions(
+    factionFromKey(faction),
+    format,
+    ship.xws,
+    t
+  ).filter((f) => f.xws !== selected?.xws);
   const formatWarning =
     selected && pilotFormatWarning(selected, ship?.size, format);
   const warning =
     selected &&
-    limitedWarning(selected?.xws, selected?.limited, usedXws, false);
+    limitedWarning(selected?.xws, selected?.limited, usedXws || [], false);
 
   return (
     <div className="relative">
@@ -171,25 +164,6 @@ export const PilotPopover: FC<Props> = ({
           aria-activedescendant="listbox-item-3"
           className="relative max-h-56 rounded-md py-1 text-xs sm:text-sm ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm"
         >
-          {/* {selected && (
-            <li
-              role="option"
-              className="text-gray-900 cursor-default select-none relative py-2 px-1 sm:px-3 hover:bg-gray-100"
-              onClick={() => {
-                setSelected(undefined);
-                setShowMenu(false);
-                onChange(undefined);
-              }}
-            >
-              <span
-                className="font-normal truncate text-xs sm:text-sm"
-                style={{ color: red }}
-              >
-                Remove pilot
-              </span>
-            </li>
-          )} */}
-
           {options.map((option) => (
             <div
               key={option.xws}
@@ -198,15 +172,19 @@ export const PilotPopover: FC<Props> = ({
               onClick={() => {
                 setSelected(option);
                 setShowMenu(false);
+                setShowDetails(undefined);
                 onChange(option);
               }}
               onMouseEnter={() => setShowDetails(option)}
               onMouseLeave={() => setShowDetails(undefined)}
             >
               <SlimPilot pilot={option} />
-              {limitedWarning(option.xws, option.limited, usedXws, true) && (
-                <LimitError limit={option.limited} />
-              )}
+              {limitedWarning(
+                option.xws,
+                option.limited,
+                usedXws || [],
+                true
+              ) && <LimitError limit={option.limited} />}
             </div>
           ))}
         </ul>
