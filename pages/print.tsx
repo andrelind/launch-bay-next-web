@@ -33,59 +33,70 @@ const PrintPage: NextPage<Props> = ({ xws }) => {
   const lbx = exportAsXws(xws);
 
   return (
-    <div className="bg-white" style={{ height: '100vh' }}>
-      <div className="flex flex-1 justify-between items-center m-3">
-        <Logo />
-        <div className="flex flex-col items-center font-medium text-md">
-          <div>
-            {xws.name} [{xws.format}]
+    <>
+      <div className="bg-white">
+        <div className="flex flex-1 justify-between items-center m-3">
+          <Logo />
+          <div className="flex flex-col items-center font-medium text-md">
+            <div>
+              {xws.name} [{xws.format}]
+            </div>
+            <div>{xws.points} points</div>
           </div>
-          <div>{xws.points} points</div>
+          <QRCode
+            value={`https://launchbaynext.app/?lbx=${lbx}`}
+            renderAs="svg"
+            size={92}
+          />
         </div>
-        <QRCode
-          value={`https://launchbaynext.app/?lbx=${lbx}`}
-          renderAs="svg"
-          size={92}
-        />
-      </div>
-      {ships.map((s, i) => (
-        <div
-          className="block"
-          style={{
-            pageBreakAfter: 'auto',
-            pageBreakBefore: 'auto',
-            pageBreakInside: 'avoid',
-          }}
-          key={`${s.xws}_${s.pilot?.xws}_${i}`}
-        >
-          <div className="flex flex-1 items-center justify-between bg-gray-200 mx-3 p-1 text-xs font-medium">
-            <span>{s.pilot?.name.en}</span>
-            <span>
-              <span className="mr-2">
-                Half points: {Math.ceil(s.pointsWithUpgrades / 2)}
+        {ships.map((s, i) => (
+          <div
+            className="block"
+            style={{
+              pageBreakAfter: 'auto',
+              pageBreakBefore: 'auto',
+              pageBreakInside: 'avoid',
+            }}
+            key={`${s.xws}_${s.pilot?.xws}_${i}`}
+          >
+            <div className="flex flex-1 items-center justify-between bg-gray-200 mx-3 p-1 text-xs font-medium">
+              <span>{s.pilot?.name.en}</span>
+              <span>
+                <span className="mr-2">
+                  Half points: {Math.ceil(s.pointsWithUpgrades / 2)}
+                </span>
+                <span className="mr-2">Threshold: {threshold(s)}</span>
+                <span>Total: {s.pointsWithUpgrades}</span>
               </span>
-              <span className="mr-2">Threshold: {threshold(s)}</span>
-              <span>Total: {s.pointsWithUpgrades}</span>
-            </span>
-          </div>
-          <div className="grid grid-cols-4 gap-3 m-2">
-            {s.upgrades &&
-              Object.keys(s.upgrades).map((key) => {
-                const upgrades = s.upgrades?.[key as SlotKey];
-                if (!upgrades) {
-                  return;
-                }
+            </div>
+            <div className="grid grid-cols-4 gap-3 m-2">
+              {s.upgrades &&
+                Object.keys(s.upgrades).map((key) => {
+                  const upgrades = s.upgrades?.[key as SlotKey];
+                  if (!upgrades) {
+                    return;
+                  }
 
-                return upgrades.map((u) => (
-                  <div key={u.xws} className="col-span-1 m-1 text-xs font-400">
-                    {u.sides[0].title.en}
-                  </div>
-                ));
-              })}
+                  return upgrades.map((u) => (
+                    <div
+                      key={u.xws}
+                      className="col-span-1 m-1 text-xs font-400"
+                    >
+                      {u.sides[0].title.en}
+                    </div>
+                  ));
+                })}
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+      <style jsx global>{`
+        body {
+          background-color: #ffffff;
+          -webkit-print-color-adjust: exact;
+        }
+      `}</style>
+    </>
   );
 };
 
