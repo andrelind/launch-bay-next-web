@@ -133,7 +133,10 @@ export const pointsForUpgrade2 = (cost: any, ship: TShip): number => {
   }
   if (cost.variable && cost.variable === 'agility') {
     const typedCost = cost as UpgradeCostAgility;
-    const agility = ship.stats.find((s) => s.type === 'agility');
+    const fresh: ShipType = JSON.parse(
+      JSON.stringify(pilotData[ship.faction][ship.xws])
+    );
+    const agility = fresh.stats.find((s) => s.type === 'agility');
     if (agility) {
       return typedCost.values[agility.value];
     }
