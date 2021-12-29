@@ -90,7 +90,8 @@ export default (req: NextApiRequest, res: NextApiResponse) =>
               '/auth/facebook/login',
               {
                 providerId: userState.id,
-                accessToken: account?.accessToken,
+                name: userState.name,
+                email: userState.email,
               }
             );
             userState.jwt = accessToken;
