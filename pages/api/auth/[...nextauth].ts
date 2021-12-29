@@ -89,7 +89,7 @@ export default (req: NextApiRequest, res: NextApiResponse) =>
             const { accessToken } = await post<{ accessToken: string }>(
               '/auth/facebook/login',
               {
-                providerId: account?.id,
+                providerId: userState.id,
                 accessToken: account?.accessToken,
               }
             );
