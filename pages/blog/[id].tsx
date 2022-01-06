@@ -45,10 +45,10 @@ export const Blog = () => {
             <div className="text-base max-w-prose mx-auto lg:max-w-none">
               <h3 className="text-lbnred">1.0</h3>
               <p className="text-md font-medium text-gray-500">
-                So, during spring 2021 I came to a conclusion. The by now pretty
-                old code base of LBN wasn't really viable to continue working
-                on. Here's just a short history summary of LBN and why I came to
-                the conclusion to throw it all out the window...
+                So, during the spring of 2021 I came to a conclusion. The by now
+                pretty old code base of LBN wasn't really viable to continue
+                working on. Here's just a short history summary of LBN and why I
+                came to the conclusion to throw it all out the window...
               </p>
             </div>
             <div className="mt-5 prose prose-lbnred text-gray-500 mx-auto lg:max-w-none text-sm lg:row-start-1 lg:col-start-1">
@@ -94,26 +94,29 @@ export const Blog = () => {
               <h3 className="text-lbnred">A new dawn</h3>
               <p>
                 Fast forward a few years, and by now X-Wing 2.0 has been out for
-                several years (now a new 2.5 is even on the verge of being
-                released.)
+                quite a while (with 2.5 is even on the verge of being released.)
                 <br />
-                LBN in itself was getting more and more tedious to maintain also
-                now I also had a web version to sync every single release with.
+                LBN itself was getting more and more tedious to maintain also
+                since now I had a web version to sync every single release with.
                 So during the spring I just came to the conclusion that starting
                 from a clean slate would be a better idea than to continue to
-                battle with the old code base.
+                battle with the old code base. The initial idea was that core
+                functionality should be shared between the platforms, freeing up
+                precious time to do cool stuff instead 😅
               </p>
               <p>
-                So I began to setup a new app from scratch, using more modern
+                So I began to setup a new app from scratch, using modern
                 frameworks, standard components of both iOS and Android, a
-                unified UI library etc etc in order to build a better and more
+                unified UI library etc. etc. in order to build a better and more
                 easily maintainable application.
                 <br />
               </p>
-              So about 8 months later the app was finally released to the
-              public. A complete rewrite of the app from scratch! And also, a
-              lot more features and tweaks! 😄 <br />
-              So here's a short list of the new stuff
+              <p>
+                So about 8 months later the app was finally released to the
+                public. A complete rewrite of the app from scratch! And also, a
+                few new features and long sought after tweaks! 😄 <br />
+                So here's a short list of the new stuff
+              </p>
               <ul role="list">
                 <li>Card images everywhere</li>
                 <li>iPad support!</li>
@@ -128,12 +131,13 @@ export const Blog = () => {
                 </li>
               </ul>
               <p>
-                Another big thing that is now showing is that a completely new
-                backend (API) was released also, giving me a better way to
-                support the app and also the community going forward.
+                Another big thing that is not showing anywhere is that a
+                completely new backend (API) was built also during this time,
+                giving me a better way to support the app and also the community
+                going forward.
               </p>
               <p>
-                So now that it's been out for a few weeks and is pretty stable I
+                So now that it's been out for a few weeks and is mostly stable I
                 can finally start working on the final missing pieces/features
                 and be ready for whatever AMG pulls out of their magic hat by
                 the end of January.
