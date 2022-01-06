@@ -10,6 +10,13 @@ export const Blog = () => {
             <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-lbnred sm:text-4xl">
               Launch Bay Next
             </h3>
+
+            <p className="text-md font-medium text-gray-500">
+              So, during the spring of 2021 I came to a conclusion. The by now
+              pretty old code base of LBN wasn't really viable to continue
+              working on. Here's just a short history summary of LBN and why I
+              came to the conclusion to throw it all out the window...
+            </p>
           </div>
         </div>
         <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
@@ -42,15 +49,10 @@ export const Blog = () => {
             </div>
           </div>
           <div className="mt-8 lg:mt-0">
-            <div className="text-base max-w-prose mx-auto lg:max-w-none">
-              <h3 className="text-lbnred">1.0</h3>
-              <p className="text-md font-medium text-gray-500">
-                So, during the spring of 2021 I came to a conclusion. The by now
-                pretty old code base of LBN wasn't really viable to continue
-                working on. Here's just a short history summary of LBN and why I
-                came to the conclusion to throw it all out the window...
-              </p>
+            <div className="prose prose-lbnred text-gray-500 mx-auto lg:max-w-none text-sm lg:row-start-1 lg:col-start-1">
+              <h3 className="text-md font-medium text-lbnred">X-Wing 1.0</h3>
             </div>
+
             <div className="mt-5 prose prose-lbnred text-gray-500 mx-auto lg:max-w-none text-sm lg:row-start-1 lg:col-start-1">
               <p>
                 The main part of LBN was really based on a tech evaluation
@@ -61,7 +63,7 @@ export const Blog = () => {
               </p>
               <p>
                 This also meant I could never release it as an open source
-                project :-/
+                project 😭
               </p>
               <p>
                 The app was released (I think) by wave 8 or 9 of X-Wing 1.0, and
@@ -73,6 +75,7 @@ export const Blog = () => {
                 I was really looking forward to the app so that I could focus on
                 just playing the game and having fun 😄 <br />
                 So I actually had no thoughts on "upgrading" Launch Bay for 2.0
+                in any way, shape or form.
                 <br />
                 Then during the summer FFG released some points but still no app
                 (it would be released when 2.0 would officially launch during
@@ -88,21 +91,26 @@ export const Blog = () => {
               <p>
                 Then came the FFG app...
                 <br />
-                We all know what that means, so all in all, I just continued on
-                LBN, rebuilding features again for the community
+                We all know what that means so no need to bash on it,but all in
+                all, I just continued working on LBN, rebuilding features again
+                for the community
               </p>
               <h3 className="text-lbnred">A new dawn</h3>
               <p>
                 Fast forward a few years, and by now X-Wing 2.0 has been out for
                 quite a while (with 2.5 is even on the verge of being released.)
                 <br />
-                LBN itself was getting more and more tedious to maintain also
-                since now I had a web version to sync every single release with.
-                So during the spring I just came to the conclusion that starting
-                from a clean slate would be a better idea than to continue to
-                battle with the old code base. The initial idea was that core
-                functionality should be shared between the platforms, freeing up
-                precious time to do cool stuff instead 😅
+                LBN itself was getting more and more tedious to maintain in
+                itself with no way of upgrading some packages and getting them
+                to work with newer versions of iOS/Android.
+              </p>
+              <p>
+                And now I also had a web version to sync every single release
+                with, so during the spring I just came to the conclusion that
+                starting from a clean slate would be a better idea than to
+                continue to battle with the old code base. The initial idea was
+                that core functionality should be shared between the platforms,
+                freeing up precious time to do cool stuff instead 😅
               </p>
               <p>
                 So I began to setup a new app from scratch, using modern
@@ -129,6 +137,7 @@ export const Blog = () => {
                   A unified core library that syncs all content between app and
                   web version
                 </li>
+                <li>Will be open sourced!</li>
               </ul>
               <p>
                 Another big thing that is not showing anywhere is that a
