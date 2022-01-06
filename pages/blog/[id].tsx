@@ -19,7 +19,7 @@ export const Blog = () => {
             </p>
           </div>
         </div>
-        <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
+        <div className="mt-2 lg:grid lg:grid-cols-2 lg:gap-8">
           <div className="relative lg:row-start-1 lg:col-start-2">
             <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
               <Image
