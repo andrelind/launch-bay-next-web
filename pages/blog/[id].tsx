@@ -152,7 +152,7 @@ export const Blog = () => {
                 the end of January.
               </p>
               <p>
-                Thanks for everything and best regards, <br />
+                Best regards, <br />
                 André
               </p>
               <h3 className="text-lbnred">Like Launch Bay Next?</h3>
