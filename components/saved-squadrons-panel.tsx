@@ -2,12 +2,12 @@ import { Transition } from '@tailwindui/react';
 import { useLocalized } from 'lbn-core/dist/helpers/i18n';
 import { useRouter } from 'next/router';
 import React, { FC, useState } from 'react';
-import useSwr from 'swr';
+import useSwr, { useSWRConfig } from 'swr';
 import { colorForFactionKey } from '../helpers/colors';
 import { serialize } from '../helpers/export';
 import { compare } from '../helpers/misc';
 import { pilotName } from '../helpers/names';
-import { get } from '../helpers/request';
+import { get, post } from '../helpers/request';
 import { SortingType, XWS } from '../helpers/types';
 import XwingFont from './fonts/xwing';
 import { colorForFormat } from './format';
@@ -32,6 +32,7 @@ export const SavedSquadronsPanel: FC<Props> = ({ show, onClose }) => {
   const { t } = useLocalized();
   const router = useRouter();
 
+  const { mutate } = useSWRConfig();
   const { data: lists } = useSwr('/lists', () => get<XWS[]>('/lists'));
 
   const [first, setFirst] = useState<SortingType>('Faction');
@@ -233,31 +234,17 @@ export const SavedSquadronsPanel: FC<Props> = ({ show, onClose }) => {
                           <div className="ml-2 -mr-2 relative inline-block text-left">
                             <button
                               onClick={async () => {
-                                // await deleteSquadron(s.uid, user);
-                                // if (s.uid !== currentUid) {
-                                //   dispatch(removeSquadron(s.uid));
-                                // } else if (squadronXws.length > 1) {
-                                //   // Load another
-                                //   const first = squadronXws.find(
-                                //     (s) => s.uid !== currentUid
-                                //   );
-                                //   router.push(`/?uid=${first?.uid}`);
-                                //   onClose();
-                                // } else {
-                                //   // Just get a new one
-                                //   const s: SquadronXWS = {
-                                //     uid: uuid(),
-                                //     name: 'New Squadron',
-                                //     format: 'Hyperspace',
-                                //     faction: 'Rebel Alliance',
-                                //     cost: 0,
-                                //     favourite: false,
-                                //     pilots: [],
-                                //   };
-                                //   router.push(
-                                //     `/?lbx=${serializer.serialize(s)}`
-                                //   );
-                                // }
+                                mutate(
+                                  '/lists',
+                                  lists?.filter(
+                                    (l) => l.vendor.lbn.uid !== s.vendor.lbn.uid
+                                  ),
+                                  false
+                                );
+                                await post<void>('/lists/remove', [
+                                  s.vendor.lbn.uid,
+                                ]);
+                                mutate('/lists');
                               }}
                               className="group relative w-8 h-8 bg-white rounded-full inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lbnred"
                             >
