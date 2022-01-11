@@ -13,7 +13,7 @@ const rep = (c: string, t: string, d: string) => {
   return d;
 };
 
-const getKeyByValue = (object: any, value: string) => {
+const getKeyByValue = (object: { [s: string]: string }, value: string) => {
   const o = Object.keys(object).find((key) => object[key] === value);
   return parseInt(o || '0', 10) || value;
 };
@@ -96,7 +96,7 @@ export const deserialize = (o: string, uid?: string): XWS => {
     faction: keyFromFaction(ffgXws.factions[faction]),
     format: parseInt(format, 10) === 1 ? 'Hyperspace' : 'Extended',
     pilots: pilots.map((p: any): PilotXWS => {
-      const [id, name, ...upgrades] = p;
+      const [ship, id, ...upgrades] = p;
       const parsedUpgrades: { [key in SlotKey]?: string[] } = {};
       (upgrades || []).forEach((u: any) => {
         const [key, ...list] = u;
@@ -106,10 +106,10 @@ export const deserialize = (o: string, uid?: string): XWS => {
       });
 
       return {
-        id: ffgXws.pilots[name] || name,
-        ship: ffgXws.ships[id] || id,
-        upgrades: parsedUpgrades,
+        id: ffgXws.pilots[`${id}`] || id,
+        ship: ffgXws.ships[`${ship}`] || ship,
         points: 0,
+        upgrades: parsedUpgrades,
       };
     }),
     version: '2.0.0',
