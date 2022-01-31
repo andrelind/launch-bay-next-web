@@ -89,12 +89,15 @@ export const deserialize = (o: string, uid?: string): XWS => {
   const d = JSON.parse(o);
   const [squadName, cost, faction, format, ...pilots] = d;
 
+  const fa = keyFromFaction(ffgXws.factions[faction]);
+  const fo = parseInt(format, 10) === 1 ? 'Hyperspace' : 'Extended';
+
   const xws: XWS = {
     name: decodeURIComponent(squadName),
     description: '',
     points: parseInt(cost, 10),
-    faction: keyFromFaction(ffgXws.factions[faction]),
-    format: parseInt(format, 10) === 1 ? 'Hyperspace' : 'Extended',
+    faction: fa,
+    format: fo,
     pilots: pilots.map((p: any): PilotXWS => {
       const [ship, id, ...upgrades] = p;
       const parsedUpgrades: { [key in SlotKey]?: string[] } = {};
@@ -105,11 +108,18 @@ export const deserialize = (o: string, uid?: string): XWS => {
         );
       });
 
-      return {
+      const pp = {
         id: ffgXws.pilots[`${id}`] || id,
         ship: ffgXws.ships[`${ship}`] || ship,
         points: 0,
         upgrades: parsedUpgrades,
+      };
+
+      const s = loadShip2(pp, fa, fo);
+
+      return {
+        ...pp,
+        points: s.pointsWithUpgrades,
       };
     }),
     version: '2.0.0',
@@ -138,6 +148,7 @@ export const exportAsXws = (xws: XWS) => {
     faction: xws.faction,
     points: xws.points,
     version: xws.version || '2.0.0',
+    obstacles: xws.obstacles,
     pilots: xws.pilots.map((p) => {
       const upgrades: { [s: string]: string[] } = {};
       Object.keys(p.upgrades || {}).map((key) => {

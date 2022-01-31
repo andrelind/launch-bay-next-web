@@ -46,7 +46,7 @@ export const Layout: FC<Props> = ({
   children,
 }) => {
   const { data: session } = useSession();
-  console.log({ session });
+  // console.log({ session });
 
   const [showAbout, setShowAbout] = useState(false);
   const [showActions, setShowActions] = useState(false);
