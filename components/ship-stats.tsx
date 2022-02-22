@@ -39,7 +39,8 @@ const renderValue = (
   stat: { value: number; recovers?: number; arc?: string },
   type: string
 ) => {
-  const recovers = new Array(stat.recovers || 0).fill(0);
+  console.log(stat);
+  const recovers = new Array(Math.abs(stat.recovers || 0)).fill(0);
   const color = colorForStat(type);
   return (
     <div
