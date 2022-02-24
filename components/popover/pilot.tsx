@@ -1,15 +1,14 @@
 import { Transition } from '@tailwindui/react';
-import { useLocalized } from 'lbn-core/dist/helpers/i18n';
 import {
   limitedWarning,
   pilotFormatWarning,
 } from 'lbn-core/dist/helpers/unique';
-import { pilotOptions } from 'lbn-core/dist/loader';
 import { FactionKey, Format, Pilot, ShipType } from 'lbn-core/dist/types';
 import React, { FC, useState } from 'react';
 import { factionFromKey } from '../../helpers/convert';
 import { TShip } from '../../helpers/loading';
 import { popoverDetailStyle, popoverStyle } from '../../helpers/popover';
+import { pilotOptions } from '../../helpers/select';
 import { FormatError } from '../format-error';
 import { LimitError } from '../limit-error';
 import PilotComponent from '../pilot';
@@ -34,8 +33,6 @@ export const PilotPopover: FC<Props> = ({
   faction,
   usedXws,
 }) => {
-  const { t } = useLocalized('en');
-
   const [showMenu, setShowMenu] = useState(false);
   const [showDetails, setShowDetails] = useState<Pilot | undefined>();
   const [selected, setSelected] = useState(value);
@@ -44,8 +41,7 @@ export const PilotPopover: FC<Props> = ({
   const options = pilotOptions(
     factionFromKey(faction),
     format,
-    ship.xws,
-    t
+    ship.xws
   ).filter((f) => f.xws !== selected?.xws);
   const formatWarning =
     selected && pilotFormatWarning(selected, ship?.size, format);

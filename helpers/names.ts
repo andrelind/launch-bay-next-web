@@ -1,11 +1,11 @@
 import pilotData from 'lbn-core/dist/assets/pilots';
 import upgradeData from 'lbn-core/dist/assets/upgrades';
 import { getFaction } from 'lbn-core/dist/helpers/import+export';
-import { FactionKey, SlotKey, Translation } from 'lbn-core/dist/types';
+import { FactionKey, SlotKey } from 'lbn-core/dist/types';
 import { PilotXWS } from './types';
 
-let pilots: { [s: string]: Translation } = {};
-let upgrades: { [s: string]: Translation } = {};
+let pilots: { [s: string]: string } = {};
+let upgrades: { [s: string]: string } = {};
 
 export const pilotName = (pilot: PilotXWS, faction: FactionKey) => {
   if (pilots[pilot.id]) {

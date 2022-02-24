@@ -1,4 +1,3 @@
-import { useLocalized } from 'lbn-core/dist/helpers/i18n';
 import { Slot, Upgrade } from 'lbn-core/dist/types';
 import React, { FC } from 'react';
 import { colorForFaction } from '../../helpers/colors';
@@ -19,8 +18,6 @@ export const SlimUpgrade: FC<Props> = ({
   side,
   showFactions,
 }) => {
-  const { t } = useLocalized('en');
-
   const upgradeSide = upgrade?.sides[side || 0];
 
   const factions = upgrade?.restrictions
@@ -44,7 +41,7 @@ export const SlimUpgrade: FC<Props> = ({
         {upgrade && (
           <span className="ml-2 word-wrap font-medium">
             {upgrade.limited > 0 && `${'•'.repeat(upgrade.limited)} `}
-            {t(upgradeSide?.title)}
+            {upgradeSide?.title}
           </span>
         )}
         <StatsComponent

@@ -57,7 +57,7 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
             const ship = pilots[f][key];
             return ship.pilots.map((p) => ({
               xws: p.xws,
-              name: p.name.en,
+              name: p.name,
               count: collection?.pilots[p.xws] || 0,
               faction: f,
             }));
@@ -77,7 +77,7 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
             const ship = pilots[f][key];
             return {
               xws: ship.xws,
-              name: ship.name.en,
+              name: ship.name,
               count: collection?.ships[ship.xws] || 0,
               faction: f,
             };
@@ -94,7 +94,7 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
         const all = slotKeys.map((key) =>
           upgrades[key]?.map((u) => ({
             xws: u.xws,
-            name: u.sides[0].title.en,
+            name: u.sides[0].title,
             count: collection?.upgrades[u.xws] || 0,
           }))
         );

@@ -49,10 +49,8 @@ const PilotComponent: FC<Props> = ({
           {ship && <DialComponent dial={ship?.dial} />}
           {ship && <ActionsComponent actions={ship?.actions} vertical />}
         </div>
-        {pilot.ability && <FormattedText text={pilot.ability.en} />}
-        {pilot.text && (
-          <FormattedText text={pilot.text.en} fontStyle="italic" />
-        )}
+        {pilot.ability && <FormattedText text={pilot.ability} />}
+        {pilot.text && <FormattedText text={pilot.text} fontStyle="italic" />}
         {ship?.ability && <AbilityComponent ability={ship.ability} />}
 
         {pilot.conditions &&

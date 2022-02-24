@@ -1,4 +1,3 @@
-import { useLocalized } from 'lbn-core/dist/helpers/i18n';
 import { Pilot, ShipType } from 'lbn-core/dist/types';
 import React, { FC } from 'react';
 import { colorForFaction } from '../../helpers/colors';
@@ -20,10 +19,7 @@ export const SlimPilot: FC<Props> = ({
   ship,
   hideStats,
   showFaction,
-  showBaseCost,
 }) => {
-  const { t } = useLocalized('en');
-
   return (
     <li className="flex items-center justify-between text-xs sm:text-sm">
       <div className="flex flex-1 flex-row justify-between items-center">
@@ -48,10 +44,10 @@ export const SlimPilot: FC<Props> = ({
               {pilot?.limited !== undefined &&
                 pilot?.limited > 0 &&
                 `${'•'.repeat(pilot?.limited)} `}
-              {t(pilot?.name)}
+              {pilot?.name}
             </span>
             <span className="pl-1 italic text-gray-400 sm:block text-xs">
-              {t(pilot?.caption)}
+              {pilot?.caption}
             </span>
           </div>
 
@@ -70,10 +66,24 @@ export const SlimPilot: FC<Props> = ({
             charges={pilot?.charges}
           />
         )}
-        <span className="font-medium">
-          {(!showBaseCost && (ship as TShip)?.pointsWithUpgrades) ||
-            pilot?.cost}
-        </span>
+
+        {Boolean(pilot) && (
+          <div className="flex flex-col items-center">
+            <span className="font-medium">{pilot?.cost}</span>
+            {ship && (
+              <span className="font-normal text-xs">
+                {`${
+                  // @ts-ignore
+                  (ship?.pointsWithUpgrades || pilot?.cost || 0) -
+                  (pilot?.cost || 0)
+                }/${pilot?.loadout}`}
+              </span>
+            )}
+            {!ship && (
+              <span className="font-normal text-xs">{pilot?.loadout}</span>
+            )}
+          </div>
+        )}
       </div>
     </li>
   );

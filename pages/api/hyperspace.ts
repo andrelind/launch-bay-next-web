@@ -12,7 +12,7 @@ export const hyperspaceLegal = async (
       const xws = canImportXws(JSON.stringify(req.body));
       const squadron = loadSquadron(xws);
       if (squadron) {
-        squadron.format = 'Hyperspace';
+        squadron.format = 'Standard';
         if (squadronFormatWarning(squadron)) {
           res.status(400).end();
           return;

@@ -1,5 +1,4 @@
 import { Transition } from '@tailwindui/react';
-import { useLocalized } from 'lbn-core/dist/helpers/i18n';
 import { useRouter } from 'next/router';
 import React, { FC, useState } from 'react';
 import useSwr, { useSWRConfig } from 'swr';
@@ -29,7 +28,6 @@ type Props = {
 };
 
 export const SavedSquadronsPanel: FC<Props> = ({ show, onClose }) => {
-  const { t } = useLocalized();
   const router = useRouter();
 
   const { mutate } = useSWRConfig();
@@ -177,7 +175,7 @@ export const SavedSquadronsPanel: FC<Props> = ({ show, onClose }) => {
                           return '';
                         }
 
-                        const name = t(pilotName(pilot, s.faction));
+                        const name = pilotName(pilot, s.faction);
                         if (u.count > 1) {
                           return `${u.count}x ${name}`;
                         }

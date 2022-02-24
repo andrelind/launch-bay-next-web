@@ -12,7 +12,7 @@ export const colorForFormat = (f: Format) => {
   switch (f) {
     case 'Extended':
       return red;
-    case 'Hyperspace':
+    case 'Standard':
       return blue;
     case 'Epic':
       return yellow;

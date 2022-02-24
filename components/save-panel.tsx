@@ -2,7 +2,6 @@ import React from 'react';
 import useSwr, { useSWRConfig } from 'swr';
 import { v4 as uuid } from 'uuid';
 import { colorForFactionKey } from '../helpers/colors';
-import { useLocalized } from '../helpers/i18n';
 import { pilotName } from '../helpers/names';
 import { get, post } from '../helpers/request';
 import { XWS } from '../helpers/types';
@@ -16,7 +15,6 @@ type Props = {
 };
 
 export const SavePanel: React.FC<Props> = ({ xws, onClose }) => {
-  const { t } = useLocalized();
   const { mutate } = useSWRConfig();
   const { data: lists } = useSwr('/lists', () => get<XWS[]>('/lists'));
 
@@ -42,7 +40,7 @@ export const SavePanel: React.FC<Props> = ({ xws, onClose }) => {
                   return '';
                 }
 
-                const name = t(pilotName(pilot, s.faction));
+                const name = pilotName(pilot, s.faction);
                 if (u.count > 1) {
                   return `${u.count}x ${name}`;
                 }

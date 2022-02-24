@@ -60,7 +60,7 @@ const PrintPage: NextPage<Props> = ({ xws }) => {
             key={`${s.xws}_${s.pilot?.xws}_${i}`}
           >
             <div className="flex flex-1 items-center justify-between bg-gray-200 mx-3 p-1 text-xs font-medium">
-              <span>{s.pilot?.name.en}</span>
+              <span>{s.pilot?.name}</span>
               <span>
                 <span className="mr-2">
                   Half points: {Math.ceil(s.pointsWithUpgrades / 2)}
@@ -82,7 +82,7 @@ const PrintPage: NextPage<Props> = ({ xws }) => {
                       key={u.xws}
                       className="col-span-1 m-1 text-xs font-400"
                     >
-                      {u.sides[0].title.en}
+                      {u.sides[0].title}
                     </div>
                   ));
                 })}

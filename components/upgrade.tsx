@@ -31,13 +31,10 @@ const UpgradeComponent: FC<Props> = ({ upgrade }) => {
             <div className="flex flex-1 flex-row items-center text-xs sm:text-sm">
               <div className="flex flex-1 flex-col justify-center sm:mx-1">
                 {upgradeSide.ability && (
-                  <FormattedText text={upgradeSide.ability.en} />
+                  <FormattedText text={upgradeSide.ability} />
                 )}
                 {upgradeSide.text && (
-                  <FormattedText
-                    text={upgradeSide.text.en}
-                    fontStyle="italic"
-                  />
+                  <FormattedText text={upgradeSide.text} fontStyle="italic" />
                 )}
 
                 {device && (

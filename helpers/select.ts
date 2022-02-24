@@ -3,7 +3,9 @@ import upgradeData from 'lbn-core/dist/assets/upgrades';
 import { keyFromSlot } from 'lbn-core/dist/helpers/convert';
 import { allSlots, slotKeys } from 'lbn-core/dist/helpers/enums';
 import {
+  Faction,
   Format,
+  Pilot,
   ShipType,
   Slot,
   SlotKey,
@@ -14,7 +16,6 @@ import {
   UpgradeCostValue,
 } from 'lbn-core/dist/types';
 import { factionFromKey } from './convert';
-import { getLocalized } from './i18n';
 import { freeSlotsForShip2, pointsForUpgrade2, TShip } from './loading';
 import { XWS } from './types';
 
@@ -57,7 +58,6 @@ export const upgradesForSlot2 = (
   showUnavailable: boolean,
   needle?: string
 ): Upgrade[] => {
-  const { t, c } = getLocalized();
   const freeSlots = freeSlotsForShip2(ship);
   const allXws = usedShipXws2(ship);
 
@@ -80,8 +80,8 @@ export const upgradesForSlot2 = (
       switch (format) {
         case 'Extended':
           return true;
-        case 'Hyperspace':
-          return u.hyperspace;
+        case 'Standard':
+          return u.standard;
         case 'Epic':
           return u.epic;
       }
@@ -266,14 +266,14 @@ export const upgradesForSlot2 = (
 
       const lcNeedle = needle.toLowerCase();
       if (
-        c(t(u.sides[0].title)).toLowerCase().indexOf(lcNeedle) >= 0 ||
-        t(u.sides[0].ability).toLowerCase().indexOf(lcNeedle) >= 0
+        u.sides[0].title.toLowerCase().indexOf(lcNeedle) >= 0 ||
+        (u.sides[0].ability || '').toLowerCase().indexOf(lcNeedle) >= 0
       ) {
         return true;
       }
       if (
         u.sides.length > 1 &&
-        t(u.sides[1].ability).toLowerCase().indexOf(lcNeedle) >= 0
+        (u.sides[1].ability || '').toLowerCase().indexOf(lcNeedle) >= 0
       ) {
         return true;
       }
@@ -287,7 +287,7 @@ export const upgradesForSlot2 = (
       if (a.finalCost > b.finalCost) {
         return 1;
       }
-      return c(t(a.sides[0].title)).localeCompare(c(t(b.sides[0].title)));
+      return a.sides[0].title.localeCompare(b.sides[0].title);
     });
 
   return data;
@@ -298,7 +298,6 @@ export const shipTypes = (
   // showUnavailable: boolean,
   needle?: string
 ): ShipType[] => {
-  const { t } = getLocalized();
   // const collection = collectionStore();
 
   return (
@@ -308,8 +307,8 @@ export const shipTypes = (
         switch (xws.format) {
           case 'Extended':
             return s.size !== 'Huge';
-          case 'Hyperspace':
-            return s.pilots.filter((p) => p.hyperspace).length > 0;
+          case 'Standard':
+            return s.pilots.filter((p) => p.standard).length > 0;
           case 'Epic':
             return s.pilots.filter((p) => p.epic).length > 0;
         }
@@ -325,23 +324,72 @@ export const shipTypes = (
         if (!needle) {
           return true;
         }
-        return t(p.name).toLowerCase().indexOf(needle.toLowerCase()) >= 0;
+        return p.name.toLowerCase().indexOf(needle.toLowerCase()) >= 0;
       })
-      .sort((a, b) => a.name.en.localeCompare(b.name.en))
+      .sort((a, b) => a.name.localeCompare(b.name))
       .map((s) => ({
         ...s,
         pilots: s.pilots.filter((p) => {
           switch (xws.format) {
             case 'Extended':
               return true;
-            case 'Hyperspace':
-              return p.hyperspace;
+            case 'Standard':
+              return p.standard;
             case 'Epic':
               return p.epic;
           }
         }),
       }))
   );
+};
+
+export const pilotOptions = (
+  faction: Faction,
+  format: Format,
+  shipXws: string,
+  needle?: string
+): Pilot[] => {
+  const ship = Object.keys(pilotData[faction])
+    .map((key) => pilotData[faction][key])
+    .find((s) => s.xws === shipXws);
+
+  if (ship) {
+    const shipType = Object.assign({}, ship);
+    shipType.pilots = shipType.pilots.filter((p: Pilot) => {
+      switch (format) {
+        case 'Extended':
+          return true;
+        case 'Standard':
+          return p.standard;
+        case 'Epic':
+          return p.epic;
+      }
+    });
+    return shipType.pilots
+      .filter((p) => {
+        if (!needle) {
+          return true;
+        }
+        return (
+          p.name.toLowerCase().indexOf(needle.toLowerCase()) >= 0 ||
+          (p.ability &&
+            p.ability.toLowerCase().indexOf(needle.toLowerCase()) >= 0)
+        );
+      })
+      .sort((a, b) => {
+        if (a.initiative < b.initiative) {
+          return 1;
+        } else if (a.initiative > b.initiative) {
+          return -1;
+        } else if (a.cost < b.cost) {
+          return 1;
+        } else if (a.cost > b.cost) {
+          return -1;
+        }
+        return a.name.toLowerCase().localeCompare(b.name.toLowerCase());
+      });
+  }
+  return [];
 };
 
 export const usedXWS = (ships?: TShip[]) => {

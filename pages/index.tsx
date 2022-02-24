@@ -29,7 +29,6 @@ import {
   exportAsXws,
   serialize,
 } from '../helpers/export';
-import { useLocalized } from '../helpers/i18n';
 import { loadShip2, loadUpgrades2 } from '../helpers/loading';
 import { shipTypes, upgradesForSlot2, usedXWS } from '../helpers/select';
 import { XWS } from '../helpers/types';
@@ -50,7 +49,6 @@ type Props = {};
 
 const MainPage: NextPage<Props> = () => {
   const router = useRouter();
-  const { t } = useLocalized();
 
   // Either we get a squad from url or we create one
   const initialXws: XWS = router.query.lbx
@@ -59,7 +57,7 @@ const MainPage: NextPage<Props> = () => {
         name: 'New Squadron',
         description: '',
         faction: (router.query.faction as FactionKey) || 'rebelalliance',
-        format: 'Extended',
+        format: 'Standard',
         pilots: [],
         points: 0,
         version: '2.0.0',
@@ -109,14 +107,14 @@ const MainPage: NextPage<Props> = () => {
     {
       title: 'TTS',
       onClick: () => {
-        copyToClipboard(exportAsTTS(xws, t));
+        copyToClipboard(exportAsTTS(xws));
         setNotificationTitle('TTS data copied to clipboard');
       },
     },
     {
       title: 'As text',
       onClick: () => {
-        copyToClipboard(exportAsText(xws, t));
+        copyToClipboard(exportAsText(xws));
         setNotificationTitle('Plaint text copied to clipboard');
       },
     },

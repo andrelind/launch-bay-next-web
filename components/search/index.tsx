@@ -1,7 +1,6 @@
 import { Transition } from '@tailwindui/react';
 import { conditions, pilots, upgrades } from 'lbn-core/dist/assets';
 import { factions, slotKeys } from 'lbn-core/dist/helpers/enums';
-import { useLocalized } from 'lbn-core/dist/helpers/i18n';
 import { loadPilot } from 'lbn-core/dist/helpers/unit';
 import { Ship, ShipType, UpgradeBase } from 'lbn-core/dist/types';
 import React, { FC, useEffect, useState } from 'react';
@@ -33,8 +32,6 @@ const options = [
 ];
 
 export const SearchComponent: FC<Props> = ({ needle }) => {
-  const { t } = useLocalized();
-
   const [tab, setTab] = useState<TabOption>(TabOption.All);
   const [filteredShips, setFilteredShips] = useState<ShipType[]>([]);
   const [filteredPilots, setFilteredPilots] = useState<Ship[]>([]);
@@ -62,16 +59,16 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
     factions.forEach((faction) => {
       Object.keys(pilots[faction]).forEach((key) => {
         const ship: ShipType = pilots[faction][key];
-        if (t(ship.name).toLowerCase().includes(lc)) {
+        if (ship.name.toLowerCase().includes(lc)) {
           fShips.push(ship);
         }
 
         const filtered = ship.pilots.filter(
           (p) =>
-            t(p.name).toLowerCase().includes(lc) ||
-            (p.ability && t(p.ability).toLowerCase().includes(lc)) ||
-            (ship.ability && t(ship.ability.name).toLowerCase().includes(lc)) ||
-            (ship.ability && t(ship.ability.text).toLowerCase().includes(lc))
+            p.name.toLowerCase().includes(lc) ||
+            p.ability?.toLowerCase().includes(lc) ||
+            ship.ability?.name.toLowerCase().includes(lc) ||
+            ship.ability?.text.toLowerCase().includes(lc)
         );
         if (filtered.length > 0) {
           fPilots.push(
@@ -96,7 +93,7 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
 
     slotKeys.forEach((slot) => {
       upgrades[slot].forEach((upgrade) => {
-        if (t(upgrade.sides[0].title).toLowerCase().indexOf(lc) >= 0) {
+        if (upgrade.sides[0].title.toLowerCase().indexOf(lc) >= 0) {
           fUpgrades.push(upgrade);
         } else if (upgrade.sides[0].conditions) {
           upgrade.sides[0].conditions.forEach((x) => {
@@ -183,7 +180,9 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
             <div
               onClick={(e) => {
                 if (process.browser && window.innerWidth < 640) {
-                  const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
+                  const rect = (
+                    e.target as HTMLButtonElement
+                  ).getBoundingClientRect();
                   setPos({ x: rect.x, y: rect.y });
                   setShowShip(s);
                 }
@@ -194,7 +193,9 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
                 if (!process.browser || window.innerWidth < 640) {
                   return;
                 }
-                const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
+                const rect = (
+                  e.target as HTMLButtonElement
+                ).getBoundingClientRect();
                 setPos({ x: rect.x, y: rect.y });
                 setShowShip(s);
               }}
@@ -213,7 +214,9 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
             <div
               onClick={(e) => {
                 if (process.browser && window.innerWidth < 640) {
-                  const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
+                  const rect = (
+                    e.target as HTMLButtonElement
+                  ).getBoundingClientRect();
                   setPos({ x: rect.x, y: rect.y });
                   setShowPilot(s);
                 }
@@ -224,7 +227,9 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
                 if (!process.browser || window.innerWidth < 640) {
                   return;
                 }
-                const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
+                const rect = (
+                  e.target as HTMLButtonElement
+                ).getBoundingClientRect();
                 setPos({ x: rect.x, y: rect.y });
                 setShowPilot(s);
               }}
@@ -243,7 +248,9 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
             <div
               onClick={(e) => {
                 if (process.browser && window.innerWidth < 640) {
-                  const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
+                  const rect = (
+                    e.target as HTMLButtonElement
+                  ).getBoundingClientRect();
                   setPos({ x: rect.x, y: rect.y });
                   setShowUpgrade(s);
                 }
@@ -254,7 +261,9 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
                 if (!process.browser || window.innerWidth < 640) {
                   return;
                 }
-                const rect = (e.target as HTMLButtonElement).getBoundingClientRect();
+                const rect = (
+                  e.target as HTMLButtonElement
+                ).getBoundingClientRect();
                 setPos({ x: rect.x, y: rect.y });
                 setShowUpgrade(s);
               }}

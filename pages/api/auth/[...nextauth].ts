@@ -1,6 +1,4 @@
 import { isBefore } from 'date-fns';
-import { Provider } from 'lbn-core/dist/actions/user';
-import { UserState } from 'lbn-core/dist/reducers/user';
 import { NextApiRequest, NextApiResponse } from 'next';
 import NextAuth from 'next-auth';
 import AppleProvider from 'next-auth/providers/apple';
@@ -64,11 +62,18 @@ export default (req: NextApiRequest, res: NextApiResponse) =>
           return Promise.reject('No provider');
         }
 
-        const userState: UserState = {
+        const userState: {
+          id: string;
+          name: string;
+          provider: string;
+          email: string;
+          jwt?: string;
+        } = {
           id: account?.providerAccountId,
           name: user?.name || 'No name',
-          provider: (account.provider.charAt(0).toUpperCase() +
-            account.provider.slice(1)) as Provider,
+          provider:
+            account.provider.charAt(0).toUpperCase() +
+            account.provider.slice(1),
           email: user?.email || '',
         };
 

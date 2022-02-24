@@ -1,6 +1,6 @@
 import ffgXws from 'lbn-core/dist/assets/ffg-xws';
 import { slotKeys } from 'lbn-core/dist/helpers/enums';
-import { SlotKey, Translation } from 'lbn-core/dist/types';
+import { SlotKey } from 'lbn-core/dist/types';
 import { v4 as uuid } from 'uuid';
 import { factionFromKey, keyFromFaction } from './convert';
 import { loadShip2 } from './loading';
@@ -90,7 +90,7 @@ export const deserialize = (o: string, uid?: string): XWS => {
   const [squadName, cost, faction, format, ...pilots] = d;
 
   const fa = keyFromFaction(ffgXws.factions[faction]);
-  const fo = parseInt(format, 10) === 1 ? 'Hyperspace' : 'Extended';
+  const fo = parseInt(format, 10) === 1 ? 'Standard' : 'Extended';
 
   const xws: XWS = {
     name: decodeURIComponent(squadName),
@@ -119,7 +119,7 @@ export const deserialize = (o: string, uid?: string): XWS => {
 
       return {
         ...pp,
-        points: s.pointsWithUpgrades,
+        points: s.pilot?.cost || 0,
       };
     }),
     version: '2.0.0',
@@ -183,48 +183,40 @@ const cleanText = (text?: string) => {
   return text?.replace(/ *\([^)]*\) */g, '');
 };
 
-export const exportAsText = (
-  xws: XWS,
-  t: (translation?: Translation) => string
-) => {
+export const exportAsText = (xws: XWS) => {
   let text = `${xws.name}\n`;
 
   xws.pilots.map((p) => {
     const ship = loadShip2(p, xws.faction, xws.format);
-    text += `\n(${ship?.pilot?.cost}) ${t(ship?.pilot?.name)} [${t(
-      ship?.name
-    )}]`;
+    text += `\n(${ship?.pilot?.cost}) ${ship?.pilot?.name} [${ship?.name}]`;
 
     slotKeys.forEach((key) => {
       const up = ship.upgrades && ship.upgrades[key];
       if (up) {
         up.forEach((u) => {
-          text += `\n(${u.finalCost}) ${cleanText(t(u.sides[0].title))}`;
+          text += `\n(${u.finalCost}) ${cleanText(u.sides[0].title)}`;
         });
       }
     });
-    text += `\nPoints: ${ship.pointsWithUpgrades}\n`;
+    text += `\nPoints: ${ship.pilot?.cost || 0}\n`;
   });
 
   text += `\nTotal points: ${xws.points}`;
   return text;
 };
 
-export const exportAsTTS = (
-  xws: XWS,
-  t: (translation?: Translation) => string
-) => {
+export const exportAsTTS = (xws: XWS) => {
   let text = '';
   xws.pilots.map((p) => {
     // Get ship
     const ship = loadShip2(p, xws.faction, xws.format);
-    text += t(ship.pilot?.name);
+    text += ship.pilot?.name;
 
     slotKeys.forEach((key) => {
       const up = ship.upgrades && ship.upgrades[key];
       if (up) {
         up.forEach((u) => {
-          text += ` + ${cleanText(t(u.sides[0].title))}`;
+          text += ` + ${cleanText(u.sides[0].title)}`;
         });
       }
     });

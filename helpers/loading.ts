@@ -46,7 +46,7 @@ export const pilotExists2 = (pilotXws: PilotXWS, faction: FactionKey) => {
 export const pointsForSquadron2 = (xws: XWS): number => {
   return xws.pilots
     .filter((pilot) => pilotExists2(pilot, xws.faction))
-    .map((pilot) => pointsForShip2(loadShip2(pilot, xws.faction, xws.format)))
+    .map((pilot) => loadShip2(pilot, xws.faction, xws.format).pilot?.cost || 0)
     .reduce((s, p) => s + p, 0);
 };
 

@@ -1,4 +1,3 @@
-import { useLocalized } from 'lbn-core/dist/helpers/i18n';
 import { ShipType } from 'lbn-core/dist/types';
 import React, { FC } from 'react';
 import { colorForFaction } from '../../helpers/colors';
@@ -11,8 +10,6 @@ type Props = {
 };
 
 export const SlimShip: FC<Props> = ({ shipType, showFaction }) => {
-  const { t } = useLocalized('en');
-
   return (
     <li className="flex items-center justify-between">
       <div className="flex items-center text-xs sm:text-sm">
@@ -29,7 +26,7 @@ export const SlimShip: FC<Props> = ({ shipType, showFaction }) => {
         />
 
         {shipType && (
-          <span className="ml-2 truncate font-medium">{t(shipType?.name)}</span>
+          <span className="ml-2 truncate font-medium">{shipType?.name}</span>
         )}
         {!shipType && (
           <span className="truncate text-gray-500">Select ship</span>

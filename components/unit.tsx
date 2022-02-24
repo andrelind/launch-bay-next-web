@@ -29,7 +29,7 @@ const Unit = ({
   slotKeys.forEach((key) => {
     const slots = ship.upgrades && ship.upgrades[key];
     if (slots) {
-      upgrades.push(...slots.map((u) => u.sides[0].title.en));
+      upgrades.push(...slots.map((u) => u.sides[0].title));
     }
   });
 
@@ -49,10 +49,10 @@ const Unit = ({
             <div>
               <div className="font-medium mr-1">
                 {ship.pilot.limited > 0 && `${'•'.repeat(ship.pilot.limited)} `}
-                {ship.pilot.name.en}
+                {ship.pilot.name}
               </div>
               <div className="italic text-gray-400 text-xs">
-                {ship.pilot.caption?.en}
+                {ship.pilot.caption}
               </div>
               {count !== undefined && (
                 <span className="text-gray-400"> ({count})</span>
@@ -81,109 +81,10 @@ const Unit = ({
         </div>
       </div>
       <div className="font-medium text-sm text-right self-start lg:self-center">
-        {ship.pointsWithUpgrades} points
+        {ship.pilot.cost} points
       </div>
     </div>
   );
-
-  // return (
-  //   <Block>
-  //     <TopWrapper>
-  //       <div
-  //         style={{
-  //           display: 'flex',
-  //           flexDirection: minimized ? 'row' : 'column',
-  //           alignItems: minimized ? 'center' : 'flex-start',
-  //         }}
-  //       >
-  //         <div style={{ marginRight: 5 }}>
-  //           <ShipStats
-  //             initiative={minimized ? ship.pilot.initiative : undefined}
-  //             engagement={ship.pilot.engagement}
-  //             minimized={minimized}
-  //           />
-  //         </div>
-
-  //         {(!hideName || minimized) && (
-  //           <Name thin={thinName}>
-  //             {ship.pilot.limited > 0 && `${'•'.repeat(ship.pilot.limited)} `}
-  //             {ship.pilot.name.en}
-  //             {count !== undefined && <Count> ({count})</Count>}
-  //           </Name>
-  //         )}
-  //         {!minimized && (
-  //           <ShipWrapper>
-  //             <ShipIcon icon={ship.xws} />
-  //             <ShipText>{ship.name.en}</ShipText>
-  //           </ShipWrapper>
-  //         )}
-  //       </div>
-
-  //       <div
-  //         style={{
-  //           alignItems: 'flex-end',
-  //           display: 'flex',
-  //           flexDirection: 'column',
-  //         }}
-  //       >
-  //         {showCostWithUpgrades && <Points>{ship.pointsWithUpgrades}</Points>}
-  //         {!showCostWithUpgrades && <Points>{ship.pilot.cost}</Points>}
-  //         {!minimized && <BaseSize size={ship.size} />}
-  //       </div>
-  //     </TopWrapper>
-
-  //     <StatsWrapper minimized={minimized}>
-  //       <ShipStats
-  //         initiative={minimized ? undefined : ship.pilot.initiative}
-  //         engagement={ship.pilot.engagement}
-  //         stats={ship.stats}
-  //         force={ship.pilot.force}
-  //         charges={ship.pilot.charges}
-  //         minimized={minimized}
-  //       />
-
-  //       {!minimized && <Dial dial={ship.dial} />}
-
-  //       {ship.pilot && ship.pilot.shipActions && (
-  //         <Actions minimized={minimized} actions={ship.pilot.shipActions} />
-  //       )}
-  //       {ship.pilot && !ship.pilot.shipActions && (
-  //         <Actions minimized={minimized} actions={ship.actions} />
-  //       )}
-  //     </StatsWrapper>
-
-  //     {!minimized && ship.pilot.ability && (
-  //       <FormattedText text={ship.pilot.ability.en} />
-  //     )}
-  //     {!minimized && ship.ability && (
-  //       <Ability ability={ship.ability} style={{ marginTop: 5 }} />
-  //     )}
-  //     {!minimized &&
-  //       !ship.pilot.ability &&
-  //       !ship.ability &&
-  //       ship.pilot.text && (
-  //         <FormattedText text={ship.pilot.text.en} fontStyle="italic" />
-  //       )}
-
-  //     {!minimized &&
-  //       ship.pilot &&
-  //       ship.pilot.conditions &&
-  //       ship.pilot.conditions.map(c => {
-  //         const condition = conditionData.filter(cc => cc.xws === c)[0];
-  //         return (
-  //           <FormattedText
-  //             key={c}
-  //             text={`<strong>${condition.name}:</strong> ${condition.ability}`}
-  //           />
-  //         );
-  //       })}
-
-  //     {!hideUpgrades && upgrades.length > 0 && (
-  //       <Upgrades>{upgrades.join(', ')}</Upgrades>
-  //     )}
-  //     {errorText && <Error text={errorText} />}
-  //   </Block>
-  // );
 };
 
 export default Unit;

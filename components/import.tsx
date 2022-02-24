@@ -1,4 +1,3 @@
-import { importSquadron } from 'lbn-core/dist/actions/squadrons';
 import { serializer } from 'lbn-core/dist/helpers';
 import { canImportXws } from 'lbn-core/dist/helpers/import+export';
 import { SquadronXWS } from 'lbn-core/dist/types';
@@ -22,9 +21,7 @@ export const ImportComponent: FC<Props> = ({ onClose }) => {
       return;
     }
 
-    const result = importSquadron(xws);
-    console.log(result);
-    router.push(`/?lbx=${serializer.serialize(result.squadron)}`);
+    router.push(`/?lbx=${serializer.serialize(xws)}`);
     onClose();
   };
 
