@@ -198,7 +198,7 @@ export const exportAsText = (xws: XWS) => {
         });
       }
     });
-    text += `\nPoints: ${ship.pilot?.cost || 0}\n`;
+    text += `\nPoints: ${ship?.pilot?.cost}\n`;
   });
 
   text += `\nTotal points: ${xws.points}`;
@@ -207,7 +207,7 @@ export const exportAsText = (xws: XWS) => {
 
 export const exportAsTTS = (xws: XWS) => {
   let text = '';
-  xws.pilots.map((p) => {
+  xws.pilots.map((p, i) => {
     // Get ship
     const ship = loadShip2(p, xws.faction, xws.format);
     text += ship.pilot?.name;
@@ -221,7 +221,18 @@ export const exportAsTTS = (xws: XWS) => {
       }
     });
 
-    text += ' / ';
+    if (i < xws.pilots.length - 1) {
+      text += ' / ';
+    }
   });
+
+  if (xws.obstacles && xws.obstacles?.length > 0) {
+    xws.obstacles?.map((o, i) => {
+      i === 0
+        ? (text += ` | ${o.replace('obstacle-', '')}`)
+        : (text += ` / ${o.replace('obstacle-', '')}`);
+    });
+  }
+
   return text;
 };
