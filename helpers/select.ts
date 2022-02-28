@@ -79,7 +79,7 @@ export const upgradesForSlot2 = (
     .filter((u: Upgrade) => {
       switch (format) {
         case 'Extended':
-          return true;
+          return u.extended;
         case 'Standard':
           return u.standard;
         case 'Epic':
@@ -306,7 +306,7 @@ export const shipTypes = (
       .filter((s: ShipType) => {
         switch (xws.format) {
           case 'Extended':
-            return s.size !== 'Huge';
+            return s.pilots.filter((p) => p.extended).length > 0;
           case 'Standard':
             return s.pilots.filter((p) => p.standard).length > 0;
           case 'Epic':
@@ -332,7 +332,7 @@ export const shipTypes = (
         pilots: s.pilots.filter((p) => {
           switch (xws.format) {
             case 'Extended':
-              return true;
+              return p.extended;
             case 'Standard':
               return p.standard;
             case 'Epic':
@@ -358,7 +358,7 @@ export const pilotOptions = (
     shipType.pilots = shipType.pilots.filter((p: Pilot) => {
       switch (format) {
         case 'Extended':
-          return true;
+          return p.extended;
         case 'Standard':
           return p.standard;
         case 'Epic':
