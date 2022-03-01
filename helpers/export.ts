@@ -8,7 +8,7 @@ import { PilotXWS, XWS } from './types';
 
 const rep = (c: string, t: string, d: string | number) => {
   if (typeof d === 'number') {
-    return d;
+    return `${d}`;
   }
 
   while (d.indexOf(c) >= 0) {
