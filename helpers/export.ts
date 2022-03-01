@@ -99,13 +99,18 @@ export const deserialize = (o: string, uid?: string): XWS => {
     faction: fa,
     format: fo,
     pilots: pilots.map((p: any): PilotXWS => {
-      const [ship, id, ...upgrades] = p;
+      const [dShip, dId, ...upgrades] = p;
+      const ship = rep(']', 'r', rep('[', 'l', dShip));
+      const id = rep(']', 'r', rep('[', 'l', dId));
+
       const parsedUpgrades: { [key in SlotKey]?: string[] } = {};
       (upgrades || []).forEach((u: any) => {
         const [key, ...list] = u;
-        parsedUpgrades[ffgXws.slots[key]] = list.map(
-          (l: string) => ffgXws.upgrades[l] || l
-        );
+
+        parsedUpgrades[ffgXws.slots[key]] = list.map((l: string) => {
+          const xws = rep(']', 'r', rep('[', 'l', l));
+          return ffgXws.upgrades[xws] || xws;
+        });
       });
 
       const pp = {
