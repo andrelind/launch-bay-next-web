@@ -98,6 +98,15 @@ const MainPage: NextPage<Props> = () => {
     onClick: () => void;
   }[] = [
     {
+      title: 'Link',
+      onClick: () => {
+        const lbx = serialize(xws);
+        const url = `https://launchbaynext.app/?lbx=${lbx}`;
+        copyToClipboard(url);
+        setNotificationTitle('Link copied to clipboard');
+      },
+    },
+    {
       title: 'XWS',
       onClick: () => {
         copyToClipboard(exportAsXws(xws));

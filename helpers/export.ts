@@ -2,7 +2,12 @@ import ffgXws from 'lbn-core/dist/assets/ffg-xws';
 import { slotKeys } from 'lbn-core/dist/helpers/enums';
 import { SlotKey } from 'lbn-core/dist/types';
 import { v4 as uuid } from 'uuid';
-import { factionFromKey, keyFromFaction } from './convert';
+import {
+  factionFromKey,
+  keyFromFaction,
+  keyFromObstacle,
+  obstacleFromKey,
+} from './convert';
 import { loadShip2 } from './loading';
 import { PilotXWS, XWS } from './types';
 
@@ -32,7 +37,7 @@ export const serialize = (o?: XWS) => {
     o.points,
     getKeyByValue(ffgXws.factions, factionFromKey(o.faction)),
     o.format === 'Extended' ? 0 : 1,
-    ...o.pilots.map((p) => {
+    o.pilots.map((p) => {
       const upgrades: (string | number)[][] = [];
       slotKeys.forEach((key) => {
         const up = p.upgrades && p.upgrades[key as SlotKey];
@@ -56,6 +61,7 @@ export const serialize = (o?: XWS) => {
       }
       return data;
     }),
+    o.obstacles?.map((p) => keyFromObstacle(p)) || [],
   ];
 
   let d = JSON.stringify(lbx);
@@ -91,10 +97,18 @@ export const deserialize = (o: string, uid?: string): XWS => {
   }
 
   const d = JSON.parse(o);
-  const [squadName, cost, faction, format, ...pilots] = d;
+  const [squadName, cost, faction, format, pilots, obstacles, ...rest] = d;
 
   const fa = keyFromFaction(ffgXws.factions[faction]);
   const fo = parseInt(format, 10) === 1 ? 'Standard' : 'Extended';
+
+  const getPilots = () => {
+    if (Array.isArray(pilots[0]) || pilots.length === 0) {
+      return pilots;
+    } else {
+      return [pilots, obstacles, ...rest];
+    }
+  };
 
   const xws: XWS = {
     name: decodeURIComponent(squadName),
@@ -102,7 +116,10 @@ export const deserialize = (o: string, uid?: string): XWS => {
     points: parseInt(cost, 10),
     faction: fa,
     format: fo,
-    pilots: pilots.map((p: any): PilotXWS => {
+    obstacles: Array.isArray(pilots[0])
+      ? obstacles?.map((p: any) => obstacleFromKey(p))
+      : undefined,
+    pilots: getPilots().map((p: any): PilotXWS => {
       const [dShip, dId, ...upgrades] = p;
       const ship = rep(']', 'r', rep('[', 'l', dShip));
       const id = rep(']', 'r', rep('[', 'l', dId));
@@ -110,7 +127,6 @@ export const deserialize = (o: string, uid?: string): XWS => {
       const parsedUpgrades: { [key in SlotKey]?: string[] } = {};
       (upgrades || []).forEach((u: any) => {
         const [key, ...list] = u;
-
         parsedUpgrades[ffgXws.slots[key]] = list.map((l: string) => {
           const xws = rep(']', 'r', rep('[', 'l', l));
           return ffgXws.upgrades[xws] || xws;
@@ -128,7 +144,7 @@ export const deserialize = (o: string, uid?: string): XWS => {
 
       return {
         ...pp,
-        points: s.pilot?.cost || 0,
+        points: s.pointsWithUpgrades,
       };
     }),
     version: '2.0.0',
