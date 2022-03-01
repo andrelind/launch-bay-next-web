@@ -69,5 +69,5 @@ export const keyFromObstacle = (o: string) => {
   return obstacles.indexOf(o.replace('obstacle-', ''));
 };
 export const obstacleFromKey = (i: number | string) => {
-  return 'obstacle-' + obstacles[parseInt(`${i}`)];
+  return obstacles[parseInt(`${i}`)];
 };
