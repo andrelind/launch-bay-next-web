@@ -6,7 +6,11 @@ import { factionFromKey, keyFromFaction } from './convert';
 import { loadShip2 } from './loading';
 import { PilotXWS, XWS } from './types';
 
-const rep = (c: string, t: string, d: string) => {
+const rep = (c: string, t: string, d: string | number) => {
+  if (typeof d === 'number') {
+    return d;
+  }
+
   while (d.indexOf(c) >= 0) {
     d = d.replace(c, t);
   }
