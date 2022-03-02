@@ -1,14 +1,16 @@
-import { canImportXws } from 'lbn-core/dist/helpers/import+export';
-import { serialize } from 'lbn-core/dist/helpers/serializer';
 import { NextApiRequest, NextApiResponse } from 'next';
+import { serialize } from '../../helpers/export';
+import { xwsFromString } from '../../helpers/import';
 
 export const getLink = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.body) {
-    const xws = canImportXws(JSON.stringify(req.body));
-    const link = serialize(xws);
+    const xws = await xwsFromString(JSON.stringify(req.body));
 
-    res.json(`https://launchbaynext.app/?lbx=${link}`);
-    return;
+    if (xws) {
+      const link = serialize(xws);
+      res.json(`https://launchbaynext.app/?lbx=${link}`);
+      return;
+    }
   }
 
   res.status(404).end();

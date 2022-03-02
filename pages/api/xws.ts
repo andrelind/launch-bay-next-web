@@ -1,17 +1,13 @@
-import { exportAsXws } from "lbn-core/dist/helpers/import+export";
-import { deserialize } from "lbn-core/dist/helpers/serializer";
-import { loadSquadron } from "lbn-core/dist/helpers/unit";
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextApiRequest, NextApiResponse } from 'next';
+import { deserialize, exportAsXws } from '../../helpers/export';
 
 export const getXws = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.query.lbx) {
     const { lbx } = req.query;
     const squadronXws = deserialize(lbx as string);
-    // FIXME!
-    // Converts to Squadron just to have it converted back againg
-    const squadron = loadSquadron(squadronXws);
-    if (squadron) {
-      const xws = exportAsXws(squadron);
+
+    if (squadronXws) {
+      const xws = exportAsXws(squadronXws);
       res.json(xws);
       return;
     }
