@@ -224,6 +224,19 @@ export const upgradesForSlot2 = (
           res.keywords.forEach((keyword) => {
             if (ship?.pilot?.keywords?.includes(keyword)) {
               found = true;
+            } else {
+              ships.forEach((s) => {
+                slotKeys.forEach((key) => {
+                  // We need to check all the upgrades also...
+                  const ups = s.upgrades?.[key];
+                  if (!ups) {
+                    return false;
+                  }
+                  if (ups.find((uu) => uu.keywords?.includes(keyword))) {
+                    found = true;
+                  }
+                });
+              });
             }
           });
         }
