@@ -141,10 +141,9 @@ export const deserialize = (o: string, uid?: string): XWS => {
       };
 
       const s = loadShip2(pp, fa, fo);
-
       return {
         ...pp,
-        points: s.pointsWithUpgrades,
+        points: s.pilot?.cost || 0,
       };
     }),
     version: '2.0.0',
