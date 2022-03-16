@@ -225,39 +225,35 @@ export const upgradesForSlot2 = (
             if (ship?.pilot?.keywords?.includes(keyword)) {
               found = true;
             } else {
-              ships.forEach((s) => {
-                slotKeys.forEach((key) => {
-                  // We need to check all the upgrades also...
-                  const ups = s.upgrades?.[key];
-                  if (!ups) {
-                    return false;
-                  }
-                  if (ups.find((uu) => uu.keywords?.includes(keyword))) {
-                    found = true;
-                  }
-                });
+              slotKeys.forEach((key) => {
+                // We need to check all the upgrades also...
+                const ups = ship?.upgrades?.[key];
+                if (!ups) {
+                  return false;
+                }
+                if (ups.find((uu) => uu.keywords?.includes(keyword))) {
+                  found = true;
+                }
               });
             }
           });
         }
 
         if (res.character) {
+          const chars = res.character;
           ships.forEach((s) => {
-            if (
-              res.character &&
-              s?.pilot &&
-              res.character.indexOf(s?.pilot?.xws) >= 0
-            ) {
+            const p = s?.pilot?.name || '';
+            if (chars?.includes(p)) {
               found = true;
-            } else if (res.character) {
-              res.character.forEach((char) => {
+            } else {
+              chars.forEach((char) => {
                 slotKeys.forEach((key) => {
                   // We need to check all the upgrades also...
                   const ups = s.upgrades?.[key];
                   if (!ups) {
                     return false;
                   }
-                  if (ups.find((uu) => uu.xws === char)) {
+                  if (ups.find((uu) => uu.sides[0].title.includes(char))) {
                     found = true;
                   }
                 });
