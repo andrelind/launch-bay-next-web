@@ -63,10 +63,10 @@ const PrintPage: NextPage<Props> = ({ xws }) => {
               <span>{s.pilot?.name}</span>
               <span>
                 <span className="mr-2">
-                  Half points: {Math.ceil(s.pointsWithUpgrades / 2)}
+                  Half points: {Math.floor((s.pilot?.cost || 0) / 2)}
                 </span>
                 <span className="mr-2">Threshold: {threshold(s)}</span>
-                <span>Total: {s.pointsWithUpgrades}</span>
+                <span>Total: {s.pilot?.cost}</span>
               </span>
             </div>
             <div className="grid grid-cols-4 gap-3 m-2">
