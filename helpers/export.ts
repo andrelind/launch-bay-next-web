@@ -85,6 +85,7 @@ export const deserialize = (o: string, uid?: string): XWS => {
       return s;
     })
     .join('.');
+  o = rep('%27%27', '%27%20%27', o);
   o = rep('.', ',', o);
 
   o = rep('(', '[', o);
