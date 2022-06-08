@@ -76,6 +76,8 @@ export const serialize = (o?: XWS) => {
 
 export const deserialize = (o: string, uid?: string): XWS => {
   // New format, replace "l with (" and "r with )"
+  o = rep('%27%27', '%27%20%27', o);
+  o = rep("''", "' '", o);
   o = o
     .split('.')
     .map((s, i) => {
@@ -85,7 +87,6 @@ export const deserialize = (o: string, uid?: string): XWS => {
       return s;
     })
     .join('.');
-  o = rep('%27%27', '%27%20%27', o);
   o = rep('.', ',', o);
 
   o = rep('(', '[', o);
