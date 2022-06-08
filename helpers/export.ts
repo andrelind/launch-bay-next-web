@@ -96,71 +96,75 @@ export const deserialize = (o: string, uid?: string): XWS => {
     o = `[${o}]`;
   }
 
-  const d = JSON.parse(o);
-  const [squadName, cost, faction, format, pilots, obstacles, ...rest] = d;
+  try {
+    const d = JSON.parse(o);
+    const [squadName, cost, faction, format, pilots, obstacles, ...rest] = d;
 
-  const fa = keyFromFaction(ffgXws.factions[faction]);
-  const fo = parseInt(format, 10) === 1 ? 'Standard' : 'Extended';
+    const fa = keyFromFaction(ffgXws.factions[faction]);
+    const fo = parseInt(format, 10) === 1 ? 'Standard' : 'Extended';
 
-  const getPilots = () => {
-    if (Array.isArray(pilots[0]) || pilots.length === 0) {
-      return pilots;
-    } else {
-      return [pilots, obstacles, ...rest];
-    }
-  };
+    const getPilots = () => {
+      if (Array.isArray(pilots[0]) || pilots.length === 0) {
+        return pilots;
+      } else {
+        return [pilots, obstacles, ...rest];
+      }
+    };
 
-  const xws: XWS = {
-    name: decodeURIComponent(squadName),
-    description: '',
-    points: parseInt(cost, 10),
-    faction: fa,
-    format: fo,
-    obstacles: Array.isArray(pilots[0])
-      ? obstacles?.map((p: any) => obstacleFromKey(p))
-      : undefined,
-    pilots: getPilots().map((p: any): PilotXWS => {
-      const [dShip, dId, ...upgrades] = p;
-      const ship = rep(']', 'r', rep('[', 'l', dShip));
-      const id = rep(']', 'r', rep('[', 'l', dId));
+    const xws: XWS = {
+      name: decodeURIComponent(squadName),
+      description: '',
+      points: parseInt(cost, 10),
+      faction: fa,
+      format: fo,
+      obstacles: Array.isArray(pilots[0])
+        ? obstacles?.map((p: any) => obstacleFromKey(p))
+        : undefined,
+      pilots: getPilots().map((p: any): PilotXWS => {
+        const [dShip, dId, ...upgrades] = p;
+        const ship = rep(']', 'r', rep('[', 'l', dShip));
+        const id = rep(']', 'r', rep('[', 'l', dId));
 
-      const parsedUpgrades: { [key in SlotKey]?: string[] } = {};
-      (upgrades || []).forEach((u: any) => {
-        const [key, ...list] = u;
-        parsedUpgrades[ffgXws.slots[key]] = list.map((l: string) => {
-          const xws = rep(']', 'r', rep('[', 'l', l));
-          return ffgXws.upgrades[xws] || xws;
+        const parsedUpgrades: { [key in SlotKey]?: string[] } = {};
+        (upgrades || []).forEach((u: any) => {
+          const [key, ...list] = u;
+          parsedUpgrades[ffgXws.slots[key]] = list.map((l: string) => {
+            const xws = rep(']', 'r', rep('[', 'l', l));
+            return ffgXws.upgrades[xws] || xws;
+          });
         });
-      });
 
-      const pp = {
-        id: ffgXws.pilots[`${id}`] || id,
-        ship: ffgXws.ships[`${ship}`] || ship,
-        points: 0,
-        upgrades: parsedUpgrades,
-      };
+        const pp = {
+          id: ffgXws.pilots[`${id}`] || id,
+          ship: ffgXws.ships[`${ship}`] || ship,
+          points: 0,
+          upgrades: parsedUpgrades,
+        };
 
-      const s = loadShip2(pp, fa, fo);
-      return {
-        ...pp,
-        points: s.pilot?.cost || 0,
-      };
-    }),
-    version: '2.0.0',
-    vendor: {
-      lbn: {
-        uid: uid || uuid(),
-        wins: 0,
-        losses: 0,
-        tags: [],
-        created: new Date(),
+        const s = loadShip2(pp, fa, fo);
+        return {
+          ...pp,
+          points: s.pilot?.cost || 0,
+        };
+      }),
+      version: '2.5.0',
+      vendor: {
+        lbn: {
+          uid: uid || uuid(),
+          wins: 0,
+          losses: 0,
+          tags: [],
+          created: new Date(),
+        },
       },
-    },
-  };
+    };
+    // console.log({ xws: JSON.stringify(xws) });
 
-  // console.log({ xws: JSON.stringify(xws) });
-
-  return xws;
+    return xws;
+  } catch (error) {
+    console.log(o);
+    throw error;
+  }
 };
 
 export const exportAsXws = (xws: XWS) => {
