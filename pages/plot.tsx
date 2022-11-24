@@ -1,6 +1,5 @@
 import { NextPage } from 'next';
 import dynamic from 'next/dynamic';
-import React from 'react';
 import json from '../public/static/plot_data.json';
 
 const Plot = dynamic(() => import('react-plotly.js'), {
@@ -28,8 +27,8 @@ const PlotPage: NextPage<Props> = ({}) => {
   const cis = json.filter((j) => j.faction === 'Separatist Alliance');
 
   const line = {
-    x: [0, 100],
-    y: [0, 100],
+    x: [0, 11],
+    y: [0, 11],
     mode: 'lines',
     type: 'scatter',
     name: 'Reference line',
