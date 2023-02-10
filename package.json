@@ -26,7 +26,7 @@
     "jwt-decode": "^3.1.2",
     "lbn-core": "^1.0.207",
     "next": "^12.1.0",
-    "next-auth": "4.2.1",
+    "next-auth": "4.10.3",
     "plotly.js": "^2.9.0",
     "postcss": "^8.4.6",
     "qrcode.react": "^1.0.1",
