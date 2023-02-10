@@ -6,10 +6,7 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "lib": [
-      "dom",
-      "es2017"
-    ],
+    "lib": ["dom", "es2017"],
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
@@ -22,13 +19,6 @@
     "target": "esnext",
     "incremental": true
   },
-  "exclude": [
-    ".next",
-    "scripts/**/*.*"
-  ],
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "components/select"
-  ]
+  "exclude": [".next", "scripts/**/*.*"],
+  "include": ["**/*.ts", "**/*.tsx", "components/select"]
 }
