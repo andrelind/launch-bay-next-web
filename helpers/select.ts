@@ -16,7 +16,7 @@ import {
   UpgradeCostValue,
 } from 'lbn-core/dist/types';
 import { factionFromKey } from './convert';
-import { freeSlotsForShip2, pointsForUpgrade2, TShip } from './loading';
+import { TShip, freeSlotsForShip2, pointsForUpgrade2 } from './loading';
 import { XWS } from './types';
 
 export const getUpgradeCost = (cost: any) => {
@@ -76,6 +76,12 @@ export const upgradesForSlot2 = (
       available: 0,
       //   available: countForUpgrade(u.xws, collection, squadron),
     }))
+    .filter((u: Upgrade) => {
+      if (u.standardLoadoutOnly) {
+        return false;
+      }
+      return true;
+    })
     .filter((u: Upgrade) => {
       switch (format) {
         case 'Extended':
